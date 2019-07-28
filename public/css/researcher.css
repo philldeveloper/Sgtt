@@ -1,0 +1,111 @@
+
+.table, thead th{
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+}
+
+.table td, .table th{
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+}
+.bg-gradient-earth {
+  background-color: #805212 !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #805212), to(#543305));
+  background-image: linear-gradient(180deg, #805212 10%, #543305 100%);
+  background-size: cover;
+}
+
+.border-bottom-spd{
+  border-bottom: 1px solid #29487d;
+}
+
+.text-spd{
+  color: #29487d;
+}
+
+.bg-primary-spd{
+  background-color: #29487d;
+}
+.btn-earth{
+	background-color: #805212 !important;
+}.btn-earth:hover{
+	color: white !important;
+}
+
+
+.btn-xl-next{
+	padding: 1em 2rem !important;
+    font-size: .85rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    border: none !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    background-color: #4e73df !important;
+}
+
+.btn-xl-prev{
+  padding: 1em 2rem !important;
+    font-size: .85rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    border: none !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    background-color: #6c757d !important;
+}
+
+
+.btn-xl-teste:hover{
+	font-weight: 700 !important;
+	box-shadow: 1px 1px #cdcdcd !important;
+}
+.text-black{
+	color: black !important;
+}
+.card-res-hover:hover{
+	background-color: #f8f9fc !important;
+	box-shadow: 1px 1px #cdcdcd !important;
+}
+
+.times-font{
+	font-family: "Times New Roman", Times, serif !important;
+}
+
+.roboto-font{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400 !important;
+}
+
+.roboto-font-700{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700 !important;
+}
+
+
+
+.nav-tabs .nav-link {
+    border-left: none !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    background-color: #fafafa !important;
+    font-weight: bolder !important;
+}
+
+.nav-tabs .nav-link.active{
+    background-color: #224abe !important;
+    color: white !important;
+    font-weight: bolder !important;
+}
+
+
+.nav-tabs {
+    border-bottom: none !important;
+}
