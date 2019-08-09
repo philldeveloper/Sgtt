@@ -8,33 +8,45 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
 
 <!-- Begin Page Content -->
-<div class="container-fluid p-2 pb-0">
-  <div class="d-sm-flex align-items-center justify-content-between mb-3 pt-4 pl-3 pr-3">
-    <h1 class="h3 roboto-font-700">Novo Contrato</h1>
-    <nav aria-label="breadcrumb float-right">
-      <ol class="breadcrumb bg-light rounded-0 border-left-primary">
-        <li class="breadcrumb-item"><a href="{{route('pesquisador')}}">Início</a></li>
-        <li class="breadcrumb-item"><a href="#">Contratos</a></li>
-        <li class="breadcrumb-item active" aria-current="page">TT</li>
+<div class="container-fluid pb-3">
+<div class="row justify-content-center">
+  <div class="col-lg-8">
+    <div class="d-sm-flex align-items-center justify-content-between mb-3 pt-3 mr-auto py-auto">
+      <div class="card-header border-left-primary bg-light border border-light rounded-0">
+      <h6 class="text-uppercase font-weight-bold roboto-font text-black mt-2">TRANSFERÊNCIA DE TECNOLOGIA: NOVO CONTRATO
+      </div>
+    </div>        
+  </div>
+
+  <div class="col-lg-4 d-lg-flex">
+    <nav aria-label="breadcrumb" class="ml-auto my-auto mt-3 pt-3">
+      <ol class="breadcrumb bg-primary rounded-0 border border-primary border-left-primary">
+        <li class="breadcrumb-item"><a href="{{route('pesquisador')}}" class="text-light">Início</a></li>
+        <li class="breadcrumb-item"><a href="#" class="text-light">Contratos</a></li>
+        <li class="breadcrumb-item active" aria-current="page" class="font-weight-bold" style="color: white !important"><b>TT</b></li>
       </ol>
     </nav>
   </div>
-</div>
+</div><!--row-->
+</div><!--container-->
 
+<!--div class="container-fluid">
+<div class="align-items-center justify-content-between pb-3 pt-2 mr-auto py-auto">
+  <div class="card-header bg-clean-rose rounded-0">
+    <h6 class="text-uppercase font-weight-bold roboto-font text-black mt-2">ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI CELEBRAM <span class="text-primary">IF-SERTÃO</span> E <span class="text-primary">UNIVASF</span> NA FORMA ABAIXO.</h6>
+  </div>
+</div>
+</div-->
 
 <!-- Begin Page Content -->
 <div class="container-fluid pb-5">
 
-  <!-- Content Row -->
-  <div class="card-header border-left-primary bg-light border border-light rounded-0">
-    <h5 class="text-uppercase font-weight-bold roboto-font text-black mt-2">ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI CELEBRAM <span class="text-primary">IF-SERTÃO</span> E <span class="text-primary">UNIVASF</span> NA FORMA ABAIXO.</h5>
-  </div>
-  <div class="card-body bg-white pb-5">
+  <div class="card-body bg-white border border-primary">
 
   <div class="col-12">
     <div class="tab-content" id="v-pills-tabContent">
 
-    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+    <div class="tab-pane fade show active pt-3" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
 
       <ul class="nav nav-tabs rounded-0 row justify-content-center" id="myTab" role="tablist">
         <li class="nav-item rounded-0">
@@ -59,22 +71,22 @@
           <a class="nav-link mb-2" id="clausula3-tab" data-toggle="tab" href="#clausula3" role="tab" aria-controls="clausula3" aria-selected="false">7</a>
         </li>
         <li class="nav-item rounded-0">
-          <a class="nav-link mb-2" id="clausulaX-tab" data-toggle="tab" href="#clausulaX" role="tab" aria-controls="clausulaX" aria-selected="false">8</a>
+          <a class="nav-link mb-2" id="clausula3_a-tab" data-toggle="tab" href="#clausula3_a" role="tab" aria-controls="clausula3_a" aria-selected="false">8</a>
         </li>
         <li class="nav-item rounded-0">
-          <a class="nav-link mb-2" id="clausulaX-tab" data-toggle="tab" href="#clausulaX" role="tab" aria-controls="clausulaX" aria-selected="false">9</a>
+          <a class="nav-link mb-2" id="clausula3_b-tab" data-toggle="tab" href="#clausula3_b" role="tab" aria-controls="clausula3_b" aria-selected="false">9</a>
         </li>
         <li class="nav-item rounded-0">
-          <a class="nav-link mb-2" id="clausulaX-tab" data-toggle="tab" href="#clausulaX" role="tab" aria-controls="clausulaX" aria-selected="false">10</a>
+          <a class="nav-link mb-2" id="clausula3_c-tab" data-toggle="tab" href="#clausula3_c" role="tab" aria-controls="clausula3_c" aria-selected="false">10</a>
         </li>
         <li class="nav-item rounded-0">
-          <a class="nav-link mb-2" id="clausulaX-tab" data-toggle="tab" href="#clausulaX" role="tab" aria-controls="clausulaX" aria-selected="false">11</a>
+          <a class="nav-link mb-2" id="clausula3_d-tab" data-toggle="tab" href="#clausula3_d" role="tab" aria-controls="clausula3_d" aria-selected="false">11</a>
         </li>
         <li class="nav-item rounded-0">
-          <a class="nav-link mb-2" id="clausulaX-tab" data-toggle="tab" href="#clausulaX" role="tab" aria-controls="clausulaX" aria-selected="false">12</a>
+          <a class="nav-link mb-2" id="clausula4-tab" data-toggle="tab" href="#clausula4" role="tab" aria-controls="clausula4" aria-selected="false">12</a>
         </li>
         <li class="nav-item rounded-0">
-          <a class="nav-link mb-2" id="clausulaX-tab" data-toggle="tab" href="#clausulaX" role="tab" aria-controls="clausulaX" aria-selected="false">13</a>
+          <a class="nav-link mb-2" id="clausula4_a-tab" data-toggle="tab" href="#clausula4_a" role="tab" aria-controls="clausula4_a" aria-selected="false">13</a>
         </li>
         <li class="nav-item rounded-0">
           <a class="nav-link mb-2" id="clausulaX-tab" data-toggle="tab" href="#clausulaX" role="tab" aria-controls="clausulaX" aria-selected="false">14</a>
@@ -95,15 +107,17 @@
           <a class="nav-link mb-2" id="clausulaX-tab" data-toggle="tab" href="#clausulaX" role="tab" aria-controls="clausulaX" aria-selected="false">19</a>
         </li>
         <li class="nav-item rounded-0">
-          <a class="nav-link mb-2" id="clausulaX-tab" data-toggle="tab" href="#clausulaX" role="tab" aria-controls="clausulaX" aria-selected="false">20</a>
+          <a class="nav-link mb-2" id="clausulaF-tab" data-toggle="tab" href="#clausulaF" role="tab" aria-controls="clausulaF" aria-selected="false">20</a>
         </li>
       </ul>
 
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
           <div class="container-fluid p-0 mt-5 m-0">
+
+            <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI CELEBRAM <input type="text" class="m-2 p-0"> E <input type="text" class="m-0 p-0"> NA FORMA ABAIXO.</h5><br>
+
             <form class="p-0 m-0">
-            
             <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-5 bg-light p-2">1º PARCEIRO</h5>
 
             <div class="form-row">
@@ -411,17 +425,17 @@
           <div class="container-fluid p-0 mt-5 m-0">
             <div class="text-justify text-black">
               
-              <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-5 bg-light p-2">2. CLÁUSULA TERCEIRA – DAS ATRIBUIÇÕES E RESPONSABILIDADES <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+              <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-5 bg-light p-2">3 CLÁUSULA TERCEIRA – DAS ATRIBUIÇÕES E RESPONSABILIDADES <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
   
               <p><b>3.1 </b>São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I:</p>
               
-              <p class="ml-2 bg-light roboto-font"><b>3.1.1 Do(a) ICT OU AGÊNCIA DE FOMENTO:</b></p>
+              <p class="ml-2 bg-light roboto-font"><b>3.1.1. Do(a) ICT OU AGÊNCIA DE FOMENTO:</b></p>
               <p class="ml-2">
-                a)  Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD&I ;
-                b)  Manter rigoroso controle das despesas efetuadas e dos respectivos comprovantes com vistas à prestação de contas da execução do objeto deste Acordo;
-                c)  Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;
-                d)  Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;
-                e)  Monitorar, avaliar e prestar contas nos termos deste Acordo; </p>
+                <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div> Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD&I ;<br>
+                <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div> Manter rigoroso controle das despesas efetuadas e dos respectivos comprovantes com vistas à prestação de contas da execução do objeto deste Acordo;<br>
+                <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;<br>
+                <div class="badge badge-primary p-2 mb-1 font-weight-bold">D)</div> Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;<br>
+                <div class="badge badge-primary p-2 mb-1 font-weight-bold">E)</div> Monitorar, avaliar e prestar contas nos termos deste Acordo; </p>
             </div>
           </div>
 
@@ -429,14 +443,149 @@
 
       <!------------------------------------------------------------------------->
 
-      <div class="tab-pane fade" id="clausulaX" role="tabpanel" aria-labelledby="clausulaX-tab">
+      <div class="tab-pane fade" id="clausula3_a" role="tabpanel" aria-labelledby="clausula3_a-tab">
           <div class="container-fluid p-0 mt-5 m-0">
-            <div class="text-justify text-black">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid temporibus enim molestias aliquam! Aliquid odit nemo repudiandae cupiditate tempore rerum provident cumque ad, perferendis, iure obcaecati vitae debitis. Vel.
+            <div class="text-justify text-black">              
+              <p class="ml-2 bg-light roboto-font"><b>3.1.2.  Do(a) XXXX:(PARCEIRO PRIVADO):</b></p>
+              <p class="ml-2">
+                <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div>Transferir os recursos financeiros acordados, segundo o Cronograma de Desembolso constante no Plano de Trabalho, por meio do aporte de recursos financeiros de sua responsabilidade; <br><div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div> Indicar coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução; <br>
+                <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div> Colaborar, nos termos do plano de trabalho, para que o Acordo alcance os objetivos nele descritos;
+             </p>
             </div>
           </div>
       </div>
       <!------------------------------------------------------------------------->
+
+      <!------------------------------------------------------------------------->
+
+      <div class="tab-pane fade" id="clausula3_b" role="tabpanel" aria-labelledby="clausula3_b-tab">
+          <div class="container-fluid p-0 mt-5 m-0">
+            <div class="text-justify text-black">              
+              <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a) XXXX: (FUNDAÇÃO DE APOIO – QUANDO HOUVER):</b></p>
+              <p class="ml-2">
+                <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div>  Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD& I; <br>
+                <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div>  Prestar à ICT informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;<br>
+                <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div>  Indicar coordenador, no prazo de 15 (quinze) dias úteis, contados da assinatura deste Acordo, para acompanhar a sua execução;<br>
+                <div class="badge badge-primary p-2 mb-1 font-weight-bold">D)</div>  Executar a gestão administrativa e financeira dos recursos transferidos para a execução do objeto deste Acordo, em conta específica.;<br>
+                <div class="badge badge-primary p-2 mb-1 font-weight-bold">E)</div>  Informar previamente ao PARCEIRO PRIVADO os dados bancários e cadastrais necessários à realização dos aportes financeiros, cuidando para que a conta corrente a qual serão destinados os recursos seja específica para o projeto executado em conformidade com este Acordo de Parceria.<br>
+                <div class="badge badge-primary p-2 mb-1 font-weight-bold">F)</div>  Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, inclusive os provenientes das receitas obtidas nas aplicações financeiras realizadas, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação;
+                <br>
+             </p>
+            </div>
+          </div>
+      </div>
+      <!------------------------------------------------------------------------->
+      
+      <!------------------------------------------------------------------------->
+
+      <div class="tab-pane fade" id="clausula3_c" role="tabpanel" aria-labelledby="clausula3_c-tab">
+          <div class="container-fluid p-0 mt-5 m-0">
+            <div class="text-justify text-black">              
+              <p class="ml-2 bg-light roboto-font"><b>3.1.3.  OU:</b></p>
+              <p class="ml-2">
+                <div class="badge badge-primary p-2 mb-1 font-weight-bold">D)</div> Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação;
+                <br>
+                <div class="badge badge-primary p-2 mb-1 font-weight-bold">G)</div>  Responsabilizar-se pelo recolhimento de impostos, taxas, contribuições e outros encargos porventura devidos em decorrência das atividades vinculadas a este Acordo de Parceria;<br>
+                <div class="badge badge-primary p-2 mb-1 font-weight-bold">H)</div>  Manter, durante toda a execução do Acordo de Parceria, todas as condições de habilitação e de qualificação exigidas para a sua celebração, responsabilizando-se pela boa e integral execução das atividades ora descritas;<br>
+                <div class="badge badge-primary p-2 mb-1 font-weight-bold">I)</div>  Nas compras de bens e nas contratações de serviços, observar as regras do Decreto nº 8.241/2014;<br>
+                <div class="badge badge-primary p-2 mb-1 font-weight-bold">J)</div>  Observar os princípios da legalidade, eficiência, moralidade, publicidade, economicidade, legalidade e impessoalidade, nas aquisições e contratações realizadas, bem como no desenvolvimento de todas as suas ações no âmbito deste Acordo de Parceria;
+                <br>
+                <div class="badge badge-primary p-2 mb-1 font-weight-bold">K)</div>  Manter registros contábeis, fiscais e financeiros completos e fidedignos relativamente à aplicação dos aportes recebidos do PARCEIRO PRIVADO por este Acordo de Parceria, fazendo-o em estrita observância às normas tributário-fiscais em vigor e, especialmente, à legislação que instituiu contrapartidas em atividades de PD&I para a concessão de incentivos ou de benefícios dos quais o PARCEIRO PRIVADO seja ou se torne beneficiária;<br>
+             </p>
+            </div>
+          </div>
+      </div>
+      <!------------------------------------------------------------------------->
+
+
+      <!------------------------------------------------------------------------->
+
+      <div class="tab-pane fade" id="clausula3_d" role="tabpanel" aria-labelledby="clausula3_d-tab">
+          <div class="container-fluid p-0 mt-5 m-0">
+            <div class="text-justify text-black">
+              <p><b>3.2.</b> Os Coordenadores de projeto poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.<br>
+
+              <p><b>3.3.</b> Os <b>PARCEIROS</b> são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente <b>Acordo de Parceria para PD&I</b> ou de publicações a ele referentes.</p>
+            </div>
+          </div>
+      </div><!--end of tab-content: insert all these here!-->
+
+      <!------------------------------------------------------------------------->
+
+      <!------------------------------------------------------------------------->
+
+      <div class="tab-pane fade" id="clausula4" role="tabpanel" aria-labelledby="clausula4-tab">
+          <div class="container-fluid p-0 mt-5 m-0">
+            <div class="text-justify text-black">
+              
+              <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-5 bg-light p-2">4 CLÁUSULA QUARTA – DOS RECURSOS FINANCEIROS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+              
+              <p>
+                <b>4.1.</b>O (A) PARCEIRO PRIVADO transferirá recursos financeiros no valor total de R$ <input class="border border-dark font-weight-bold text-black text-uppercase p-2" type="text" placeholder="(VALOR POR EXTENSO)"> conforme cronograma de desembolso constante no Plano de Trabalho, anexo a este Acordo. <br>
+                <b>4.2.</b> Os valores especificados no item acima serão recebidos pela FUNDAÇÃO DE APOIO em conta específica.<br>
+                <b>4.3.</b> O PARCEIRO PRIVADO efetuará os aportes financeiros previstos no Plano de Trabalho através de depósitos em conta corrente  específica, servindo o  comprovante da operação bancária como recibo, para fins de direito, do repasse dos recursos financeiros previstos por este Acordo de Parceira.<br>
+                <b>4.4.</b>  Eventuais ganhos financeiros com aplicação serão revertidos para garantir a integral execução do objeto desta Parceria.<br>
+                <b>4.4.1.</b> Após execução total do projeto, havendo ainda saldos provenientes das receitas obtidas de aplicações financeiras, esses serão devolvidos para o Parceiro Privado ou destinados para ação congênere, nos termos de instrumento jurídico próprio a ser firmado pelas partes. <br>
+              </p>
+            </div>
+          </div>
+
+      </div><!--end of tab-content: insert all these here!-->
+
+      <!------------------------------------------------------------------------->
+
+      <!------------------------------------------------------------------------->
+
+      <div class="tab-pane fade" id="clausula4_a" role="tabpanel" aria-labelledby="clausula4_a-tab">
+          <div class="container-fluid p-0 mt-5 m-0">
+            <div class="text-justify text-black">
+              
+              <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-5 bg-light p-2">4 CLÁUSULA QUARTA – DOS RECURSOS FINANCEIROS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+              
+              <p>
+                <b>4.5.</b>  Observadas as demais disposições previstas neste Acordo de Parceria, os PARCEIROS acordam, desde já, que os valores mencionados no Plano de Trabalho são estimados com base nas premissas e termos especificados no mencionado Anexo. <br>
+                <b>4.6.</b>  Qualquer aumento ao orçamento do Plano de Trabalho executado por este Acordo de Parceria, que torne necessário o aporte de recursos adicionais pelo PARCEIRO PRIVADO deverá ser prévia e formalmente analisado e aprovado pelas Parceiros, devendo ser implementado tão somente após celebração de termo aditivo a este Acordo de Parceria. <br>
+                <b>4.7.</b>  Do valor total repassado, (a) FUNDAÇÃO DE APOIO poderá utilizar até 15% (quinze por cento) para custear despesas operacionais, definidas e justificadas no Plano de Trabalho.
+              </p>
+            </div>
+          </div>
+
+      </div><!--end of tab-content: insert all these here!-->
+
+      <!------------------------------------------------------------------------->
+
+      <div class="tab-pane fade" id="clausulaF" role="tabpanel" aria-labelledby="clausulaF-tab">
+          <div class="container-fluid p-0 mt-5 m-0">
+            <div class="text-black">
+              
+              <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black bg-light p-2 mb-3">SEU CONTRATO ESTÁ PRONTO PARA ANÁLISE. <a href="#"><i class="fas fa-fw fa-check ml-2"></i></a></h5>
+
+              <p>Seu contrato será revisado em até de 30 dias e uma resposta será gerada. Aguarde a confirmação do sistema. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolores excepturi ipsum rem, enim accusantium quam similique assumenda eum veniam saepe, quas earum nisi hic neque voluptate consectetur ex quo!</p><br>
+              
+              <div class="row justify-content-right">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                  <a href="#" class="btn btn-block d-fluid p-2 rounded-0 bg-white border-dark font-weight-bold text-uppercase text-black text-center"><i class="fas fa-2x fa-envelope-open-text p-2"></i><br>
+                    SALVAR NO EMAIL
+                  </a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                  <a href="#" class="btn btn-block d-fluid p-2 rounded-0 bg-white border-dark font-weight-bold text-uppercase text-black text-center"><i class="fas fa-2x fa-file-pdf p-2"></i><br>
+                    BAIXAR PDF
+                  </a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                  <a href="#" class="btn btn-block d-fluid p-2 rounded-0 bg-primary text-light font-weight-bold text-uppercase text-black text-center"><i class="fas fa-2x fa-print p-2"></i><br>
+                    IMPRIMIR
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div><!--end of tab-content: insert all these here!-->
+
+      <!------------------------------------------------------------------------->
+
 
 
     </div>

@@ -17,15 +17,15 @@
   <div class="row">
 
     <!-- Earnings (Monthly) Card Example -->
-    <div class="col-xl-3 col-md-6 mt-4 mb-4">
-      <div class="card card-res-hover border-left-danger  h-100 py-2">
-        <div class="card-body">
+    <div class="col-xl-3 col-md-6 mt-4 mb-4 rounded-0">
+      <div class="card card-res-hover border-left-danger border-danger rounded-0 h-100 py-2">
+        <div class="card-body rounded-0">
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="h5 mb-0 font-weight-bold text-gray-800">Perguntas Frequentes</div>
             </div>
             <div class="col-auto">
-              <i class="fas fa-hands-helping fa-2x text-gray-300"></i>
+              <i class="fas fa-question-circle fa-2x text-danger"></i>
             </div>
           </div>
         </div>
@@ -33,15 +33,15 @@
     </div>
 
     <!-- Earnings (Monthly) Card Example -->
-    <div class="col-xl-3 col-md-6 mt-4 mb-4">
-      <div class="card card-res-hover border-left-primary  h-100 py-2">
-        <div class="card-body">
+    <div class="col-xl-3 col-md-6 mt-4 mb-4 rounded-0">
+      <div class="card card-res-hover border-left-primary border-primary rounded-0 h-100 py-2">
+        <div class="card-body rounded-0">
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="h5 mb-0 font-weight-bold text-gray-800">Tutoriais em Vídeo</div>
             </div>
             <div class="col-auto">
-              <i class="fas fa-calendar fa-2x text-gray-300"></i>
+              <i class="fas fa-calendar fa-2x text-primary"></i>
             </div>
           </div>
         </div>
@@ -50,9 +50,9 @@
 
 
     <!-- Earnings (Monthly) Card Example -->
-    <div class="col-xl-3 col-md-6 mt-4 mb-4">
-      <div class="card card-res-hover border-left-info  h-100 py-2">
-        <div class="card-body">
+    <div class="col-xl-3 col-md-6 mt-4 mb-4 rounded-0">
+      <div class="card card-res-hover border-left-info border-info border rounded-0 h-100 py-2">
+        <div class="card-body rounded-0">
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
               <div class="row no-gutters align-items-center">
@@ -62,7 +62,7 @@
               </div>
             </div>
             <div class="col-auto">
-              <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+              <i class="fas fa-clipboard-list fa-2x text-info"></i>
             </div>
           </div>
         </div>

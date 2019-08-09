@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/contratos', function () {
+    return view('contratos.tt.index');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -25,4 +29,4 @@ Route::get('/pesquisador', 'ResearcherController@index')->name('pesquisador');
 
 Route::get('/faq', 'ResearcherController@faqindex')->name('faq');
 
-Route::get('/contratos/tt/new', 'ResearcherController@cttindex')->name('ctt.create');
+Route::get('/contratos/tt/new', 'ResearcherController@cttindex')->name('ctt');

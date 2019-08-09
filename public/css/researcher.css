@@ -1,4 +1,7 @@
 
+.bg-clean-rose{
+  background-color: #FEF1F1 !important;
+}
 .table, thead th{
   border-top: none !important;
   border-left: none !important;
@@ -89,13 +92,16 @@
 
 
 .nav-tabs .nav-link {
+    padding: 15px !important;
+    margin: 2px;
+    display: inline-flex !important;
     border-left: none !important;
-    border-top: none !important;
     border-right: none !important;
-    border-bottom: 1px solid !important;
+    border: none !important;
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
-    background-color: #fafafa !important;
+    border-color: none !important;
+    background-color: #F4F4F4 !important;
     font-weight: bolder !important;
 }
 

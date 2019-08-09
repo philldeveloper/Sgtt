@@ -1,95 +1,114 @@
 @extends('layouts.researcher')
 
 @section('content')
+<style>
+  body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400 !important;
+  }
+  .nav-tabs .nav-link:hover{
+    box-shadow: 0 .125rem .25rem 0 rgba(58,59,69,.2)!important;
+  }
+</style>
+
+
+
+<div class="container-fluid">
+
+  <br>
+
+  <h4 class="mb-3 font-italic text-secondary lead">Para iniciar um novo contrato, escolha uma opção abaixo:</h4>
+
+  <ul class="nav nav-tabs rounded-0" id="myTab" role="tablist">
+    <li class="nav-item rounded-0">
+      <a class="nav-link mb-2 active" id="cooperacao-tab" data-toggle="tab" href="#cooperacao" role="tab" aria-controls="cooperacao" aria-selected="true">
+      <i class="fas fa-hands-helping float-left text-primary mr-4"></i>
+      Acordo de Cooperação
+    </a>
+    </li>
+    <li class="nav-item rounded-0">
+      <a class="nav-link mb-2" id="tecnologia-tab" data-toggle="tab" href="#tecnologia" role="tab" aria-controls="tecnologia" aria-selected="false">
+      <i class="fas fa-chalkboard-teacher float-left text-primary mr-4"></i>
+      Transferência de Tecnologia
+      </a>
+    </li>
+    <li class="nav-item rounded-0">
+      <a class="nav-link mb-2" id="patentes-tab" data-toggle="tab" href="#patentes" role="tab" aria-controls="patentes" aria-selected="false">
+        <i class="fas fa-chalkboard-teacher float-left text-primary mr-4"></i>
+        Patentes
+      </a>
+    </li>
+    <li class="nav-item rounded-0">
+      <a class="nav-link mb-2" id="lorem-tab" data-toggle="tab" href="#lorem" role="tab" aria-controls="lorem" aria-selected="false">
+      <i class="fas fa-search-location float-left text-primary mr-4"></i>
+      Lorem Ipsum
+      </a>
+    </li>
+    <li class="nav-item rounded-0">
+      <a class="nav-link mb-2" id="outros-tab" data-toggle="tab" href="#outros" role="tab" aria-controls="outros" aria-selected="false">
+      <i class="fas fa-search-location float-left text-primary mr-4"></i>
+      Transferência de Tecn.
+      </a>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="myTabContent">
+  <!-- cooperação -->      
+    <div class="tab-pane fade show active" id="cooperacao" role="tabpanel" aria-labelledby="cooperacao-tab">
+      <div class="container-fluid bg-white border-left-primary border-primary border p-4 mt-3 m-0">
+        <h3 class="font-weight-bold text-primary">Acordo de Cooperação</h3><hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dolorum pariatur dolores repudiandae consectetur iste eos voluptates, libero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+        <a href="{{asset('/contratos')}}" class="btn btn-lg btn-success float-right rounded-0">Novo contrato</a>
+      </div>
+    </div>
+
+    <!-- tecnologia -->
+    <div class="tab-pane fade" id="tecnologia" role="tabpanel" aria-labelledby="tecnologia-tab">
+      <div class="container-fluid bg-white border-left-primary border-primary border p-4 mt-3 m-0">
+        <h3 class="font-weight-bold text-primary">Transferência de Tecnologia</h3><hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dolorum pariatur dolores repudiandae consectetur iste eos voluptates, libero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+        <div class="btn btn-lg btn-success float-right rounded-0">Novo contrato</div>
+      </div>
+    </div>
+
+    <!-- patentes -->
+    <div class="tab-pane fade" id="patentes" role="tabpanel" aria-labelledby="patentes-tab">
+      <div class="container-fluid bg-white border-left-primary border-primary border p-4 mt-3 m-0">
+        <h3 class="font-weight-bold text-primary">Patentes</h3><hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dolorum pariatur dolores repudiandae consectetur iste eos voluptates, libero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+        <div class="btn btn-lg btn-success float-right rounded-0">Novo contrato</div>
+      </div>
+    </div>
+
+    <!-- Lorem -->
+    <div class="tab-pane fade" id="lorem" role="tabpanel" aria-labelledby="lorem-tab">
+      <div class="container-fluid bg-white border-left-primary border-primary border p-4 mt-3 m-0">
+        <h3 class="font-weight-bold text-primary">Lorem Ipsum</h3><hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dolorum pariatur dolores repudiandae consectetur iste eos voluptates, libero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+        <div class="btn btn-lg btn-success float-right rounded-0">Novo contrato</div>
+      </div>
+    </div>
+
+    <!-- teste -->
+    <div class="tab-pane fade" id="outros" role="tabpanel" aria-labelledby="outros-tab">
+      <div class="container-fluid bg-white border-left-primary border-primary border p-4 mt-3 m-0">
+        <h3 class="font-weight-bold text-primary">Outros</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dolorum pariatur dolores repudiandae consectetur iste eos voluptates, libero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+        <div class="btn btn-lg btn-success float-right rounded-0">Novo contrato</div>
+      </div>
+    </div>
+
+  </div><!--end of tab-content-->
+</div><!--container-fluid-->
+
+
 <!-- Begin Page Content -->
-<div class="container-fluid bg-white pt-5">
-
-  <!-- Page Heading -->
-  <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800 font-weight-bold">Novo Contrato</h1>
-    <!--a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a-->
-  </div>
-
-  <!-- Content Row -->
-  <div class="row justify-content-left p-2">
-
-    <!-- Earnings (Monthly) Card Example -->
-    <div class="mb-4 col-lg-4 col-md-6 col-sm-12">
-      <a href="{{route('ctt.create')}}" style="text-decoration: none !important">
-        <div style="background-color: white !important" class="p-3 card-footer border-left-danger border border-danger rounded-0">
-          <h6 class="text-right text-uppercase font-weight-bold roboto-font text-black">
-            <i class="fas fa-hands-helping fa-2x text-danger float-left"></i>
-            Acordo de Cooperação
-          </h6>
-        </div>
-      </a>
-    </div>
-
-    <!-- Earnings (Monthly) Card Example -->
-    <div class="mb-4 col-lg-4 col-md-6 col-sm-12">
-      <a href="{{route('ctt.create')}}" style="text-decoration: none !important">
-        <div style="background-color: white !important" class="p-3 card-footer border-left-info border border-info rounded-0 text-right">
-          <h6 class="text-uppercase font-weight-bold roboto-font text-black">
-            <i class="fas fa-hands-helping fa-2x text-info float-left"></i>
-            Transf. de Tecnologia
-          </h6>
-        </div>
-      </a>
-    </div>
-
-    <!-- Earnings (Monthly) Card Example -->
-    <div class="mb-4 col-lg-4 col-md-6 col-sm-12">
-      <a href="{{route('ctt.create')}}" style="text-decoration: none !important">
-        <div style="background-color: white !important" class="p-3 card-footer border-left-dark border border-dark rounded-0">
-          <h6 class="text-right text-uppercase font-weight-bold roboto-font text-black">
-            <i class="fas fa-hands-helping fa-2x float-left text-dark"></i>
-            Acordo de Cooperação
-          </h6>
-        </div>
-      </a>
-    </div>
-
-    <!-- Earnings (Monthly) Card Example -->
-    <div class="mb-4 col-lg-4 col-md-6 col-sm-12">
-      <a href="{{route('ctt.create')}}" style="text-decoration: none !important">
-        <div style="background-color: white !important" class="p-3 card-footer border-left-dark border border-dark rounded-0">
-          <h6 class="text-right text-uppercase font-weight-bold roboto-font text-black">
-            <i class="fas fa-hands-helping fa-2x float-left text-dark"></i>
-            Lorem Ipsum
-          </h6>
-        </div>
-      </a>
-    </div>
-
-    <!-- Earnings (Monthly) Card Example -->
-    <div class="mb-4 col-lg-4 col-md-6 col-sm-12">
-      <a href="{{route('ctt.create')}}" style="text-decoration: none !important">
-        <div style="background-color: white !important" class="p-3 card-footer border-left-dark border border-dark rounded-0">
-          <h6 class="text-right text-uppercase font-weight-bold roboto-font text-black">
-            <i class="fas fa-hands-helping fa-2x float-left text-dark"></i>
-            Lorem Dormu
-          </h6>
-        </div>
-      </a>
-    </div>
-
-    <div class="mb-4 col-lg-4 col-md-6 col-sm-12">
-      <a href="{{route('ctt.create')}}" style="text-decoration: none !important">
-        <div style="background-color: white !important" class="p-3 card-footer border-left-dark border border-dark rounded-0">
-          <h6 class="text-right text-uppercase font-weight-bold roboto-font text-black">
-            <i class="fas fa-hands-helping fa-2x float-left text-danger"></i>
-            Acordo de Cooperação
-          </h6>
-        </div>
-      </a>
-    </div>
-
-  </div><!--row-->
+<div class="container-fluid bg-white pt-4">
 
   
   <!-- Page Heading -->
-  <div class="d-sm-flex align-items-center justify-content-between mt-2 mb-2">
-    <h1 class="h3 mb-0 text-gray-800 font-weight-bold pb-3">Meus Contratos</h1>
+  <div class="d-sm-flex align-items-center justify-content-between">
+    <h1 class="h3 mb-0 font-weight-bold pb-3 text-primary">Meus Contratos</h1>
     <!--a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a-->
   </div>
 
@@ -99,16 +118,12 @@
     <!-- Area Chart -->
     <div class="col-xl-12 col-lg-12">
 
-    
-
       <div class="card rounded-0 p-0 mb-3">
-        <!-- Card Header - Dropdown -->
-        
         <!-- Card Body -->
-        <div class="card-body p-0 m-0 rounded-0">
+        <div class="card-body p-0 m-0 rounded-0 border-primary border">
           <div class="table-responsive rounded-0">
             <table class="table table-hover mb-0 rounded-0">
-              <thead class="font-weight-bold text-dark rounded-0 bg-light" style="font-size: 1.25rem">
+              <thead class="roboto-font font-weight-bold text-dark rounded-0 border-left-primary  bg-light" style="font-size: 1.25rem">
                 <tr>
                   <th scope="col">#</th>
                   <th scope="col">Nome</th>
@@ -118,20 +133,37 @@
                 </tr>
               </thead>
               <tbody class="mb-0 font-weight-bold text-dark rounded-0">
-                <tr>
+                <tr class="">
                   <th scope="row">1</th>
                   <td>Contrato Sindical</td>
                   <td>Transferencia de Tecnologia</td>
                   <td>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                    <div class="progress rounded-0">
+                      <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Apreciação</div>
                     </div>
                   </td>
                   <td>
                     <div class="btn-group" role="group" aria-label="Basic example">
-                      <button type="button" class="btn btn-outline-primary font-weight-bold rounded-0">Ver</button>
-                      <button type="button" class="btn btn-dark font-weight-bold rounded-0">Editar</button>
-                      <button type="button" class="btn btn-danger font-weight-bold rounded-0">Deletar</button>
+                      <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold rounded-0">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold rounded-0">Editar</button>
+                      <button type="button" class="btn btn-sm btn-danger font-weight-bold rounded-0">Deletar</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="">
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Otto</td>
+                  <td>
+                    <div class="progress rounded-0">
+                      <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Recepção</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold rounded-0">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold rounded-0">Editar</button>
+                      <button type="button" class="btn btn-sm btn-danger font-weight-bold rounded-0">Deletar</button>
                     </div>
                   </td>
                 </tr>
@@ -140,32 +172,15 @@
                   <td>Jacob</td>
                   <td>Otto</td>
                   <td>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 59%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">59%</div>
+                    <div class="progress rounded-0">
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Aprovado</div>
                     </div>
                   </td>
                   <td>
                     <div class="btn-group" role="group" aria-label="Basic example">
-                      <button type="button" class="btn btn-outline-primary font-weight-bold rounded-0">Ver</button>
-                      <button type="button" class="btn btn-dark font-weight-bold rounded-0">Editar</button>
-                      <button type="button" class="btn btn-danger font-weight-bold rounded-0">Deletar</button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Otto</td>
-                  <td>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 59%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">59%</div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                      <button type="button" class="btn btn-outline-primary font-weight-bold rounded-0">Ver</button>
-                      <button type="button" class="btn btn-dark font-weight-bold rounded-0">Editar</button>
-                      <button type="button" class="btn btn-danger font-weight-bold rounded-0">Deletar</button>
+                      <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold rounded-0">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold rounded-0">Editar</button>
+                      <button type="button" class="btn btn-sm btn-danger font-weight-bold rounded-0">Deletar</button>
                     </div>
                   </td>
                 </tr>
