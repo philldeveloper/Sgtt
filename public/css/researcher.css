@@ -1,4 +1,6 @@
-
+.border-right-secondary{
+  border-right: .25rem solid #858796!important;
+}
 
 .myform-control{
     /*display: block; */

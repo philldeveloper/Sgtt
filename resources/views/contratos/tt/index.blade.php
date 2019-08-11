@@ -115,7 +115,7 @@
 <!-- Begin Page Content -->
 <div class="container-fluid pt-4 pb-0 mb-5">
 
-  <div class="card-body bg-light p-3">
+  <div class="card-body bg-light border-right-secondary p-3" style="box-shadow: 0 0.125rem .05rem 0 rgba(58,59,69,.2)!important">
 
   <div class="col-12">
     <div class="tab-content" id="v-pills-tabContent">
@@ -139,17 +139,17 @@
               <div class="form-group col-md-4">
                 <label for="inputEmail4" class="font-weight-bold text-black">Nome</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary rounded-0" id="inputEmail4" placeholder="Nome">
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputEmail4" placeholder="Nome">
               </div>
               <div class="form-group col-md-4">
                 <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary rounded-0" id="inputPassword4" placeholder="Natureza Jurídica">
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="Natureza Jurídica">
               </div>
               <div class="form-group col-md-4">
                 <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary rounded-0" id="inputPassword4" placeholder="CNPJ">
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="CNPJ">
               </div>
             </div>
 
@@ -157,22 +157,22 @@
               <div class="form-group col-md-5">
                 <label for="inputCity" class="font-weight-bold text-black">Endereço</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary rounded-0" id="inputCity">
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputCity">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputCity" class="font-weight-bold text-black">Cidade</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary rounded-0" id="inputCity">
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputCity">
               </div>
               <div class="form-group col-md-2">
                 <label for="inputState" class="font-weight-bold text-black">UF</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control border-left-primary rounded-0" id="inputCity">
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputCity">
               </div>
               <div class="form-group col-md-2">
                 <label for="inputZip" class="font-weight-bold text-black">CEP</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary rounded-0" id="inputZip">
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputZip">
               </div>
             </div>
 
@@ -180,22 +180,22 @@
             <div class="form-group col-md-4">
               <label for="inputEmail4" class="font-weight-bold text-black">Representante Legal</label>
               <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control border-left-primary rounded-0" id="inputEmail4" placeholder="Nome">
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputEmail4" placeholder="Nome">
             </div>
             <div class="form-group col-md-3">
               <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
               <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control border-left-primary rounded-0" id="inputPassword4" placeholder="">
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
             </div>
             <div class="form-group col-md-3">
               <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
               <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control border-left-primary rounded-0" id="inputPassword4" placeholder="">
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
             </div>
             <div class="form-group col-md-2">
               <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
               <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control border-left-primary rounded-0" id="inputPassword4" placeholder="">
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
             </div>
            </div>
 
@@ -203,22 +203,22 @@
             <div class="form-group col-md-3">
               <label for="inputEmail4" class="font-weight-bold text-black">Nacionalidade</label>
               <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control border-left-primary rounded-0" id="inputEmail4" placeholder="Nacionalidade">
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputEmail4" placeholder="Nacionalidade">
             </div>
             <div class="form-group col-md-3">
               <label for="inputPassword4" class="font-weight-bold text-black">Estado Civil</label>
               <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control border-left-primary rounded-0" id="inputPassword4" placeholder="Estado Civil">
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="Estado Civil">
             </div>
             <div class="form-group col-md-3">
               <label for="inputPassword4" class="font-weight-bold text-black">Ato de Nomeação</label>
               <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control border-left-primary rounded-0" id="inputPassword4" placeholder="Ato de Nomeação">
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="Ato de Nomeação">
             </div>
             <div class="form-group col-md-3">
               <label for="inputPassword4" class="font-weight-bold text-black">Doravante Denominado</label>
               <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control border-left-primary rounded-0" id="inputPassword4" placeholder="ICT/Agência de Fomento">
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="ICT/Agência de Fomento">
             </div>
            </div><!-- /.row-->
            <br>
@@ -235,17 +235,17 @@
               <div class="form-group col-md-4">
                 <label for="inputEmail4" class="font-weight-bold text-black">Instituição</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary rounded-0" id="inputEmail4" placeholder="Nome">
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputEmail4" placeholder="Nome">
               </div>
               <div class="form-group col-md-4">
                 <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary rounded-0" id="inputPassword4" placeholder="Natureza Jurídica">
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="Natureza Jurídica">
               </div>
               <div class="form-group col-md-4">
                 <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary rounded-0" id="inputPassword4" placeholder="CNPJ">
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="CNPJ">
               </div>
             </div>
 
@@ -253,22 +253,22 @@
               <div class="form-group col-md-5">
                 <label for="inputCity" class="font-weight-bold text-black">Endereço</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary rounded-0" id="inputCity">
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputCity">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputCity" class="font-weight-bold text-black">Cidade</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary rounded-0" id="inputCity">
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputCity">
               </div>
               <div class="form-group col-md-2">
                 <label for="inputState" class="font-weight-bold text-black">UF</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control border-left-primary rounded-0" id="inputCity">
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputCity">
               </div>
               <div class="form-group col-md-2">
                 <label for="inputZip" class="font-weight-bold text-black">CEP</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary rounded-0" id="inputZip">
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputZip">
               </div>
             </div>
 
@@ -276,27 +276,27 @@
             <div class="form-group col-md-4">
               <label for="inputEmail4" class="font-weight-bold text-black">Representante Legal</label>
               <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control border-left-primary rounded-0" id="inputEmail4" placeholder="Nome">
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputEmail4" placeholder="Nome">
             </div>
             <div class="form-group col-md-3">
               <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
               <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control border-left-primary rounded-0" id="inputPassword4" placeholder="">
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
             </div>
             <div class="form-group col-md-3">
               <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
               <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control border-left-primary rounded-0" id="inputPassword4" placeholder="">
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
             </div>
             <div class="form-group col-md-2">
               <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
               <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control border-left-primary rounded-0" id="inputPassword4" placeholder="">
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
             </div>
             <div class="form-group col-md-2">
               <label for="inputPassword4" class="font-weight-bold text-black">Cargo</label>
               <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control border-left-primary rounded-0" id="inputPassword4" placeholder="">
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
             </div>
            </div>
           </form>
@@ -310,17 +310,17 @@
               <div class="form-group col-md-4">
                 <label for="inputEmail4" class="font-weight-bold text-black">Instituição</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary rounded-0" id="inputEmail4" placeholder="Nome">
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputEmail4" placeholder="Nome">
               </div>
               <div class="form-group col-md-4">
                 <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary rounded-0" id="inputPassword4" placeholder="Natureza Jurídica">
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="Natureza Jurídica">
               </div>
               <div class="form-group col-md-4">
                 <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary rounded-0" id="inputPassword4" placeholder="CNPJ">
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="CNPJ">
               </div>
             </div>
 
@@ -328,22 +328,22 @@
               <div class="form-group col-md-5">
                 <label for="inputCity" class="font-weight-bold text-black">Endereço</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary rounded-0" id="inputCity">
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputCity">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputCity" class="font-weight-bold text-black">Cidade</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary rounded-0" id="inputCity">
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputCity">
               </div>
               <div class="form-group col-md-2">
                 <label for="inputState" class="font-weight-bold text-black">UF</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control border-left-primary rounded-0" id="inputCity">
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputCity">
               </div>
               <div class="form-group col-md-2">
                 <label for="inputZip" class="font-weight-bold text-black">CEP</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary rounded-0" id="inputZip">
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputZip">
               </div>
             </div>
 
@@ -351,27 +351,27 @@
             <div class="form-group col-md-4">
               <label for="inputEmail4" class="font-weight-bold text-black">Representante Legal</label>
               <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control border-left-primary rounded-0" id="inputEmail4" placeholder="Nome">
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputEmail4" placeholder="Nome">
             </div>
             <div class="form-group col-md-3">
               <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
               <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control border-left-primary rounded-0" id="inputPassword4" placeholder="">
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
             </div>
             <div class="form-group col-md-3">
               <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
               <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control border-left-primary rounded-0" id="inputPassword4" placeholder="">
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
             </div>
             <div class="form-group col-md-2">
               <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
               <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control border-left-primary rounded-0" id="inputPassword4" placeholder="">
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
             </div>
             <div class="form-group col-md-2">
               <label for="inputPassword4" class="font-weight-bold text-black">Cargo</label>
               <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control border-left-primary rounded-0" id="inputPassword4" placeholder="">
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
             </div>
            </div>
           </form>
