@@ -1,4 +1,19 @@
 
+
+.myform-control{
+    /*display: block; */
+    /* width: 100%; */
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6e707e;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #d1d3e2;
+    border-radius: .35rem;
+}
 .bg-clean-rose{
   background-color: #FEF1F1 !important;
 }
@@ -114,4 +129,18 @@
 
 .nav-tabs {
     border-bottom: none !important;
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
 }

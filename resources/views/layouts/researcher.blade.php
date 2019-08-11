@@ -38,13 +38,52 @@
     <!-- Sidebar -->
     <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #29487d !important;">
 
-      <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center text-light mb-5" id="teste">
-        <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laptop fa-2x"></i>
+      <a class="sidebar-brand d-flex align-items-center justify-content-center mb-5" href="/">
+        <div class="sidebar-brand-icon">
+          <i class="fab fa-windows fa-5x"></i>
         </div>
         <div class="sidebar-brand-text mx-3">SGTT</div>
       </a>
+      
+
+      <div class="d-xl-block d-none">
+        <!-- Heading -->
+        <div class="sidebar-heading mb-2">
+          Dados Pessoais
+        </div>
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item">
+          <a class="nav-link">
+            <span class="font-weight-bold text-white">BEM VINDO,
+              <span class="font-italic text-warning">Philip Santos</span>
+            </span>
+          </a>
+        </li>
+        <div class="container-fluid form-group row align-items-left justify-content-between mb-5">
+            <div class="btn btn-outline-light font-weight-bold rounded-0">Meu Perfil</div>
+            <div class="btn btn-outline-light font-weight-bold rounded-0">Sair</div>
+        </div>
+      </div>
+
+
+      <div class="d-xl-none d-md-block d-none">
+        <!-- Heading -->
+        <div class="sidebar-heading mb-2">
+          Dados Pessoais
+        </div>
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item">
+          <a class="nav-link">
+            <span class="font-weight-bold text-white">BEM VINDO,
+              <span class="font-italic text-warning">Philip Santos</span>
+            </span>
+          </a>
+        </li>
+        <div class="container-fluid form-group row justify-content-center mb-5">
+            <div class="btn btn-outline-light font-weight-bold rounded-0">1</div>
+            <div class="btn btn-dark font-weight-bold rounded-0">2</div>
+        </div>
+      </div>
 
       <!-- Heading -->
       <div class="sidebar-heading mb-2">
@@ -65,12 +104,6 @@
           <span>Contábil</span></a>
       </li>
       
-      <!-- Nav Item - Tables -->
-      <li class="nav-item border-left-danger">
-        <a class="nav-link" href="#">
-          <i class="fas fa-fw fa-cog"></i>
-          <span>Ajustes</span></a>
-      </li>
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item border-left-warning">
@@ -105,87 +138,36 @@
       <div id="content">
 
         <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light topbar static-top border-bottom border-light" style="background-color: #f7f7f7 !important;">
+        <nav class="d-lg-none d-md-none d-block pt-3 navbar navbar-expand navbar-light topbar static-top border-bottom border-light" style="background-color: #f7f7f7 !important;">
 
-          <!-- Sidebar Toggle (Topbar) -->
-          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-            <i class="fa fa-bars"></i>
-          </button>
+          
+          <div class="float-left">
+            <!-- Sidebar Toggle (Topbar) -->
+            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
 
-          <!-- Topbar Navbar -->
-          <ul class="navbar-nav ml-auto">
+          <a class="nav-link dropdown-toggle d-md-none float-right rounded-circle mr-3" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="d-md-inline font-weight-bold text-gray-800">Philip</span>
+          </a>
 
-            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-            <li class="nav-item dropdown no-arrow d-sm-none">
-              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-search fa-fw"></i>
-              </a>
-              <!-- Dropdown - Messages -->
-              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
-                <form class="form-inline mr-auto w-100 navbar-search">
-                  <div class="input-group">
-                    <input type="text" class="form-control bg-light border-0 small" placeholder="Procure por..." aria-label="Search" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary" type="button">
-                        <i class="fas fa-search fa-sm"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </li>
+          <div class="float-right pt-0 pb-0 mr-3 dropdown-menu dropdown-menu-right rounded-0 border-left-primary border-primary shadow animated--grow-in" aria-labelledby="userDropdown">
+            <a class="dropdown-item font-weight-bold p-2 rounded-0" href="#">
+              <i class="fas fa-user fa-sm fa-fw mr-2 text-dark"></i>
+              Meu Perfil
+            </a>
+            <a class="dropdown-item font-weight-bold p-2 rounded-0" href="#" data-toggle="modal" data-target="#logoutModal">
+              <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-primary"></i>
+              Sair
+            </a>
+          </div>
 
-            
-            {{--
-            <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-bell fa-fw"></i>
-                <!-- Counter - Alerts -->
-                <span class="badge badge-danger badge-counter">3+</span>
-              </a>
-              <!-- Dropdown - Alerts -->
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
-                <h6 class="dropdown-header">
-                  Alerts Center
-                </h6>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-warning">
-                      <i class="fas fa-exclamation-triangle text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">December 2, 2019</div>
-                    Spending Alert: We've noticed unusually high spending for your account.
-                  </div>
-                </a>
-              </div>
-            </li>--}}
-            
-            {{--@guest
-            @else--}}
-            <!-- Nav Item - User Information -->
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-800">Philip</span>
-                <img class="img-profile rounded-circle" src="https://source.unsplash.com/random/60x60">
-              </a>
-              <!-- Dropdown - User Information -->
-              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Profile
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
-                </a>
-              </div>
-            </li>
-            {{--@endguest--}}
-          </ul>
-
+          <div class="text-center">
+            <a href="{{route('pesquisador')}}">
+              <i class="fab fa-connectdevelop text-primary fa-2x mx-auto d-md-none"></i>
+            </a>
+          </div>
         </nav>
         <!-- End of Topbar -->
 
