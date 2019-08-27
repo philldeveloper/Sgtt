@@ -12,6 +12,10 @@
     border: 1px solid #224abe !important;
     color: black !important;    
   }
+  .nav-tabs .nav-link{
+    border: 1px solid transparent !important;
+    color: black !important;    
+  }
 </style>
 
 
@@ -39,12 +43,6 @@
       <a class="nav-link mb-2" id="patentes-tab" data-toggle="tab" href="#patentes" role="tab" aria-controls="patentes" aria-selected="false">
         <i class="fas fa-chalkboard-teacher float-left text-primary mr-4"></i>
         Patentes
-      </a>
-    </li>
-    <li class="nav-item rounded-0">
-      <a class="nav-link mb-2" id="lorem-tab" data-toggle="tab" href="#lorem" role="tab" aria-controls="lorem" aria-selected="false">
-      <i class="fas fa-search-location float-left text-primary mr-4"></i>
-      Lorem Ipsum
       </a>
     </li>
     <li class="nav-item rounded-0">

@@ -3,6 +3,11 @@
 @section('content')
 
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
+
+
 <h4 class="text-secondary lead m-4 mb-0">
     <span class="h3 font-weight-bold">Novo Contrato</span>
     <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
@@ -118,16 +123,109 @@
     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
 
       <div class="tab-content" id="myTabContent">
-        <!-- Start Carrousel -->
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item">
-          <div class="tab-pane slider fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+        <div class="tab-pane fade show active" id="start" role="tabpanel" aria-labelledby="start-tab">
+          <div class="container-fluid pb-5 pt-5 mt-0 m-0">
+              <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI <br>CELEBRAM <input type="text" class="myform-control m-2 p-0"> E <input type="text" class="myform-control m-0 p-0"> NA FORMA A SEGUIR.</h5><br>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="container-fluid p-0 mt-0 m-0">
+            <form class="p-0 m-0">
+            <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">1º PARCEIRO</h5>
+
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputEmail4" class="font-weight-bold text-black">Nome</label>
+                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputEmail4" placeholder="Nome">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
+                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="Natureza Jurídica">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
+                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="CNPJ">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-5">
+                <label for="inputCity" class="font-weight-bold text-black">Endereço</label>
+                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputCity">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputCity" class="font-weight-bold text-black">Cidade</label>
+                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputCity">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputState" class="font-weight-bold text-black">UF</label>
+                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputCity">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip" class="font-weight-bold text-black">CEP</label>
+                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputZip">
+              </div>
+            </div>
+
+           <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="inputEmail4" class="font-weight-bold text-black">Representante Legal</label>
+              <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputEmail4" placeholder="Nome">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
+              <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
+              <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
+              <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
+            </div>
+           </div>
+
+           <div class="form-row">
+            <div class="form-group col-md-3">
+              <label for="inputEmail4" class="font-weight-bold text-black">Nacionalidade</label>
+              <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputEmail4" placeholder="Nacionalidade">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="inputPassword4" class="font-weight-bold text-black">Estado Civil</label>
+              <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="Estado Civil">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="inputPassword4" class="font-weight-bold text-black">Ato de Nomeação</label>
+              <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="Ato de Nomeação">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="inputPassword4" class="font-weight-bold text-black">Doravante Denominado</label>
+              <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+              <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="ICT/Agência de Fomento">
+            </div>
+           </div><!-- /.row-->
+           <br>
+          </form>
+          </div><!--end of content-->
+        </div><!--end-pane-->
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
           <div class="container-fluid p-0 mt-0 m-0">
             <form class="p-0 m-0">
             
@@ -204,21 +302,7 @@
           </form>
           </div><!--end of content-->
         </div><!--end pane-->
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-      <!-- End Carrousel -->
-     
-      
-        <div class="tab-pane slider fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
           <div class="container-fluid p-0 mt-0 m-0">
             <form class="p-0 m-0">
             <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">3º PARCEIRO (Fundação de Apoio)</h5>
@@ -296,7 +380,7 @@
         
         <!------------------------------------------------------------------------->
 
-        <div class="tab-pane slider fade" id="clausula1" role="tabpanel" aria-labelledby="clausula1-tab">
+        <div class="tab-pane fade" id="clausula1" role="tabpanel" aria-labelledby="clausula1-tab">
           <div class="container-fluid p-0 mt-0 m-0">
             <div class="text-justify text-black">
               <p>Os <b>PARCEIROS</b>, anteriormente qualificados, resolvem celebrar
@@ -318,7 +402,7 @@
 
       <!------------------------------------------------------------------------->
 
-      <div class="tab-pane slider fade" id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
+      <div class="tab-pane fade" id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
           <div class="container-fluid p-0 mt-0 m-0">
             <div class="text-justify text-black">
               
@@ -334,7 +418,7 @@
 
       <!------------------------------------------------------------------------->
 
-      <div class="tab-pane slider fade" id="clausula2a" role="tabpanel" aria-labelledby="clausula2a-tab">
+      <div class="tab-pane fade" id="clausula2a" role="tabpanel" aria-labelledby="clausula2a-tab">
           <div class="container-fluid p-0 mt-0 m-0">
             <div class="text-justify text-black">
   
@@ -352,7 +436,7 @@
 
       <!------------------------------------------------------------------------->
 
-      <div class="tab-pane slider fade" id="clausula3" role="tabpanel" aria-labelledby="clausula3-tab">
+      <div class="tab-pane fade" id="clausula3" role="tabpanel" aria-labelledby="clausula3-tab">
           <div class="container-fluid p-0 mt-0 m-0">
             <div class="text-justify text-black">
               
@@ -374,7 +458,7 @@
 
       <!------------------------------------------------------------------------->
 
-      <div class="tab-pane slider fade" id="clausula3_a" role="tabpanel" aria-labelledby="clausula3_a-tab">
+      <div class="tab-pane fade" id="clausula3_a" role="tabpanel" aria-labelledby="clausula3_a-tab">
           <div class="container-fluid p-0 mt-0 m-0">
             <div class="text-justify text-black">              
               <p class="ml-2 bg-light roboto-font"><b>3.1.2.  Do(a) XXXX:(PARCEIRO PRIVADO):</b></p>
@@ -389,7 +473,7 @@
 
       <!------------------------------------------------------------------------->
 
-      <div class="tab-pane slider fade" id="clausula3_b" role="tabpanel" aria-labelledby="clausula3_b-tab">
+      <div class="tab-pane fade" id="clausula3_b" role="tabpanel" aria-labelledby="clausula3_b-tab">
           <div class="container-fluid p-0 mt-0 m-0">
             <div class="text-justify text-black">              
               <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a) XXXX: (FUNDAÇÃO DE APOIO – QUANDO HOUVER):</b></p>
@@ -409,7 +493,7 @@
       
       <!------------------------------------------------------------------------->
 
-      <div class="tab-pane slider fade" id="clausula3_c" role="tabpanel" aria-labelledby="clausula3_c-tab">
+      <div class="tab-pane fade" id="clausula3_c" role="tabpanel" aria-labelledby="clausula3_c-tab">
           <div class="container-fluid p-0 mt-0 m-0">
             <div class="text-justify text-black">              
               <p class="ml-2 bg-light roboto-font"><b>3.1.3.  OU:</b></p>
@@ -431,7 +515,7 @@
 
       <!------------------------------------------------------------------------->
 
-      <div class="tab-pane slider fade" id="clausula3_d" role="tabpanel" aria-labelledby="clausula3_d-tab">
+      <div class="tab-pane fade" id="clausula3_d" role="tabpanel" aria-labelledby="clausula3_d-tab">
           <div class="container-fluid p-0 mt-0 m-0">
             <div class="text-justify text-black">
               <p><b>3.2.</b> Os Coordenadores de projeto poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.<br>
@@ -445,7 +529,7 @@
 
       <!------------------------------------------------------------------------->
 
-      <div class="tab-pane slider fade" id="clausula4" role="tabpanel" aria-labelledby="clausula4-tab">
+      <div class="tab-pane fade" id="clausula4" role="tabpanel" aria-labelledby="clausula4-tab">
           <div class="container-fluid p-0 mt-0 m-0">
             <div class="text-justify text-black">
               
@@ -467,7 +551,7 @@
 
       <!------------------------------------------------------------------------->
 
-      <div class="tab-pane slider fade" id="clausula4_a" role="tabpanel" aria-labelledby="clausula4_a-tab">
+      <div class="tab-pane fade" id="clausula4_a" role="tabpanel" aria-labelledby="clausula4_a-tab">
           <div class="container-fluid p-0 mt-0 m-0">
             <div class="text-justify text-black">
               
@@ -485,7 +569,7 @@
 
       <!------------------------------------------------------------------------->
 
-      <div class="tab-pane slider fade" id="clausulaF" role="tabpanel" aria-labelledby="clausulaF-tab">
+      <div class="tab-pane fade" id="clausulaF" role="tabpanel" aria-labelledby="clausulaF-tab">
           <div class="container-fluid p-0 mt-0 m-0">
             <div class="text-black">
               
@@ -528,20 +612,6 @@
 
 </div>
 
-<!-- <script>
- const elems = document.getElementsByClassName("slider")
-  const carrousel = document.getElementsByClassName("carousel-inner")[0]
-  for (let i = 0; i < elems.length; i++) {
-  carrousel.appendChild(elems[i])
-   const div = document.createElement("div");
-   var att = document.createAttribute("class");  
-   att.value = "carousel-item";
-   div.setAttributeNode(att);  
-  div.appendChild(carrousel)
-   console.log(div)
-  }
-    console.log(carrousel)    
-</script> -->
-
+  
 
 @endsection

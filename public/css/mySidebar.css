@@ -1,0 +1,45 @@
+#page-top{
+    -webkit-font-smoothing: antialiased;
+}
+
+.my-sidebar{
+    width: 350px;
+  
+    border-right: 1px solid rgba(0,0,0,.1);
+  
+}
+
+.container-profile{
+    padding: 10px 40px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-end;
+}
+
+.container-profile span {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.logo{
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo > img {
+   width: 84px;
+}
+
+.logo .title-logo{
+    font-weight: bold;
+    font-size: 32px;
+}
