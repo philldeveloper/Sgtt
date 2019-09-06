@@ -13,43 +13,89 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
 
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&display=swap" rel="stylesheet">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/mySidebar.css') }}" rel="stylesheet">
     <link href="{{ asset('css/researcher.css') }}" rel="stylesheet">
     <link href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
-
+    <link href="{{ asset('css/step-form.css') }}" rel="stylesheet">
 </head>
 
 <style>
   a#teste:hover{color:white !important;}
-  #wrapper #content-wrapper {background-color: white !important;}
+  #wrapper #content-wrapper {background-color: #f5f5f5}
 </style>
 
 <body id="page-top">
 
   <!-- Page Wrapper -->
   <div id="wrapper">
-
    <div class="my-sidebar">
      <div class="container-profile">
-       <div class="logo">
+       <img class="rounded-circle" src="https://image.flaticon.com/icons/svg/149/149071.svg">
+       <!-- <div class="logo">
          <img src="{{ asset('assets/logo-pibiti.svg') }}" alt="SGTT">
-         <span class="title-logo">SGTT</span>
+         <span class="title-logo text-white">SGTT</span>
+       </div> -->
+       <div class="info-user">
+         <span class="name-desc text-white">Tauan Almeida</span>
+         <span class="email-desc">tauan@hotmail.com</span>
        </div>
-        <span class="name-desc bold">Tauan Almeida</span>
-        <span class="email-desc ">Tauan@hotmail.com</span>
-        <div class="dropdown-divider"></div>
-     </div>
-
+      </div>
+      <div class="dropdown-divider"></div>
+      <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="margin-left:35px; padding-top:40px; height: auto;">
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item active">
+          <a class="nav-link" href="{{route('pesquisador')}}">
+            <i class="fas fa-fw fa-hands-helping"></i>
+            <span>Contratos</span></a>
+        </li>
+        <!-- Nav Item - Charts -->
+        <li class="nav-item">
+          <a class="nav-link" href="charts.html">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Contábil</span></a>
+        </li>
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-question-circle"></i>
+            <span>Faq</span>
+          </a>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Escolha uma opção:</h6>
+              <a class="collapse-item" href="{{asset('faq')}}">Principal</a>
+              <a class="collapse-item" href="#">Tutoriais</a>
+              <a class="collapse-item" href="#">Documentação</a>
+            </div>
+          </div>
+        </li>
+        <div class="dropdown-divider" style="margin: 15px;"></div>
+        <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal">
+            <i class="fas fa-sign-out-alt"></i>
+              <span>Sair</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+            <i class="fas fa-tools"></i>
+              <span>Meu Perfil</span></a>  
+          </li>
+      </ul>
    </div>
-    <!-- End of Sidebar -->
 
+
+<!-- End of Sidebar -->
+
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+
+<!-- Main Content -->
+<div id="content">
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
 
@@ -95,9 +141,6 @@
     </div>
   </div>
 
-  <!-- Bootstrap core JavaScript-->
-
-
   <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
   <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
@@ -113,6 +156,8 @@
   <!-- Page level custom scripts -->
   <script src="{{asset('js/demo/chart-area-demo.js')}}"></script>
   <script src="{{asset('js/demo/chart-pie-demo.js')}}"></script>
+  
+
 
 </body>
 </html>

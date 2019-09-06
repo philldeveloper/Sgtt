@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+  }
+  
+  #regForm {
+    background-color: #ffffff;
+    font-family: Raleway;
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    min-width: 300px;
+  
+  }
+  
+  .buttonsControl{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  
+  }
+  
+  h1 {
+    text-align: center;  
+  }
+  
+
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+    height: 100%;
+  }
+
+  .tab > .active{
+   padding-top: 10%;
+  }
+
+  #tab-here{
+    height: 100%;
+  }
+  
+  button {
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  #prevBtn {
+    background-color: #bbbbbb;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #17a673;
+  }
+  
+  .step-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
