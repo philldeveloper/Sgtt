@@ -15,11 +15,6 @@
   -moz-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
 }
-
-.col > .card{
-  
-}
-
 </style>
 
 <!-- Begin Page Content -->

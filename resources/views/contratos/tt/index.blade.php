@@ -493,7 +493,7 @@
           </div>
           <!-- Circles which indicates the steps of the form: -->
           <div class="buttonsControl pb-5" style="overflow:auto;">
-            <div style="">
+            <div>
               <button type="button" class="btn-sm btn-success" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
               <button type="button" class="btn-sm btn-success" id="nextBtn" onclick="nextPrev(1)">Proximo</button>
             </div>
