@@ -1,3 +1,40 @@
+@media screen and (max-width: 800px) {
+    .info-user {
+        display: none !important;
+    }
+    
+    .container-profile img {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .my-sidebar > .sidebar {
+        width: 140% !important;
+    }
+}
+
+@media screen and (max-width: 1040px) and (min-width: 450px) {
+    .container-profile {
+        padding: 40px 10px;
+        height: 100px;
+        height: 105px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column
+    }
+
+    .container-profile img {
+        align-self: center;
+    }
+    
+    .my-sidebar > .sidebar {
+        width: 100% !important;
+    }
+}
+
+
+
 #page-top{
     -webkit-font-smoothing: antialiased;
     font-family: 'Raleway', sans-serif;
@@ -25,9 +62,12 @@
 }
 
 .my-sidebar{
-    width: 350px;
+    width: 20%;
+
     height: auto;
-   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #3447B7;
 }
 
@@ -61,7 +101,6 @@
     padding: 10px 40px;
     height: 100px;
     display: flex;
-   
     justify-content: center;
 }
 
@@ -73,7 +112,6 @@
 .container-profile img {
     width: 64px;
     margin-right: 12px;
-
 }
 
 .bold{

@@ -28,8 +28,10 @@
     -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
     -moz-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
-    min-width: 300px;
+
+    
   }
+  
 
   .card-shadow:hover{
     border: 1px solid #fafafa;
@@ -50,10 +52,11 @@
     font-weight: bold;
     font-size: 18px;
     color: #212529 !important;
+    height: 48px;
   }
 
   .card-body .subtitle{
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .card-body .container-button{
@@ -76,6 +79,11 @@
     margin: 0 auto !important;
     display: flex;
     align-items: center;
+  }
+
+  .container-button button a{
+    text-decoration: none;
+    color: white;
   }
 
   /* Section Documents */
@@ -107,7 +115,7 @@
 <!-- Begin Page Content -->
 <div class="container-fluid">
     <div class="row">
-      <div class="col col-sm-12 col-md-4 col-lg-4">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
         <div class="card card-shadow mb-4">
           <div class="card-body">
             <div class="img-category mb-4">
@@ -116,12 +124,12 @@
             <span class="mt-5 title">Acordo de Cooperação</span>
             <p class="subtitle pt-2">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
             <div class="container-button">
-              <button class="btn-sm btn-success">Iniciar</button>
+              <button class="btn-sm btn-success"><a href="/contratos">Iniciar</a></button>
             </div>
           </div>
         </div>
       </div>
-      <div class="col col-sm-12 col-md-4 col-lg-4">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
         <div class="card card-shadow mb-4">
           <div class="card-body">
             <div class="img-category mb-4">             
@@ -135,7 +143,7 @@
           </div>
         </div>
       </div>
-      <div class="col col-sm-12 col-md-4 col-lg-4">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
         <div class="card card-shadow mb-4">
           <div class="card-body">
             <div class="img-category mb-4">
@@ -149,7 +157,7 @@
           </div>
         </div>
       </div>
-      <div class="col col-sm-12 col-md-4 col-lg-4">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
         <div class="card card-shadow mb-4">
           <div class="card-body">
             <div class="img-category mb-4">
@@ -158,12 +166,12 @@
             <span class="mt-5 title">Transferencia de Software</span>
             <p class="subtitle pt-2">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
             <div class="container-button">
-              <button class="btn-sm btn-success">Iniciar</button>
+              <button class="btn-sm btn-success"><a href="/contratos">Iniciar</a></button>
             </div>
           </div>
         </div>
       </div>
-      <div class="col col-sm-12 col-md-4 col-lg-4">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
         <div class="card card-shadow mb-4">
           <div class="card-body">
             <div class="img-category mb-4">

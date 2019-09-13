@@ -13,7 +13,6 @@
     height: auto;
     min-height: 500px;
     min-width: 300px;
-  
   }
   
   .buttonsControl{
@@ -22,14 +21,11 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-  
   }
   
   h1 {
     text-align: center;  
   }
-  
-
   
   /* Hide all steps by default: */
   .tab {

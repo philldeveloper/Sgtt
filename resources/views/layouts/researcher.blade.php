@@ -46,7 +46,7 @@
        </div>
       </div>
       <div class="dropdown-divider"></div>
-      <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="margin-left:35px; padding-top:40px; height: auto;">
+      <ul class="mt-5 navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
           <a class="nav-link" href="{{route('pesquisador')}}">
