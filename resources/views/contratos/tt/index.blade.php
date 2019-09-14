@@ -11,15 +11,57 @@
 <div class="card mt-5 color-card">
   <div class="card-body p-3">
   <div class="tab-pane  show active" id="start" role="tabpanel" aria-labelledby="start-tab">
+    <div class="alert alert-warning" role="alert">      
+      <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+      NOTAS EXPLICATIVAS!
+      <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal">Saiba mais</button>
+  </div>
+  <!-- Modal -->
+        <div class="modal-alert modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">NOTAS EXPLICATIVAS!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+                <div class="modal-body">
+                ESTA MINUTA DEVE SER UTILIZADA PARA ACORDOS DE PARCERIA PARA
+                PD&I QUANDO NÃO HOUVER REPASSE DE RECURSOS ENTRE OS PARCEIROS.<br/>
+                Este tipo de Acordo é apropriado para ser utilizado na construção de ambientes inovadores
+                (como parques tecnológico, co-working, entre outras possibilidades), servindo como
+                instrumento que estabelece as regras de interação entre os parceiros. Pode tanto ser usado em
+                relações bilaterais como multilaterais.
+                BASE LEGAL: ARTIGO 9º DA LEI Nº 10.973/04.
+                Caso se trate da hipótese de Acordo com transferência de recursos do parceiro privado para o
+                projeto (§§ 6º e 7º do Artigo 35 do Decreto nº 9.283/18.), deverá ser utilizada a outra minuta
+                apropriada para esta situação.
+                Alguns itens receberão notas explicativas destacadas para compreensão do agente ou setor
+                responsável pela elaboração das minutas, que deverão ser devidamente suprimidas quando da
+                finalização do documento. 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn-sm btn-light bg-light" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+          </div>
+        </div>
             <div class="container-fluid pb-5 pt-5 mt-0 m-0">
-                <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI <br>CELEBRAM <input type="text" class="myform-control m-2 p-0"> E <input type="text" class="myform-control m-0 p-0"> NA FORMA A SEGUIR.</h5><br>
+                <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">
+                  ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI
+                  CELEBRAM <input type="text" class="myform-control m-2 p-0"> E 
+                  <input type="text" class="myform-control m-0 p-0"> 
+                  NA FORMA A SEGUIR.</h5><br>
             </div>
           </div>
   
           <div class="tab-pane " id="home" role="tabpanel" aria-labelledby="home-tab">
             <div class="container-fluid p-0 mt-0 m-0">
               <form class="p-0 m-0">
-              <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">1º PARCEIRO</h5>
+              <h5 
+              class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">
+              1º PARCEIRO</h5>
   
               <div class="form-row">
                 <div class="form-group col-md-4">
@@ -115,7 +157,7 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <form class="p-0 m-0">
               
-              <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">2º PARCEIRO (Entidade Privada)</h5>
+              <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">2º PARCEIRO</h5>
   
               <div class="form-row">
                 <div class="form-group col-md-4">
@@ -297,23 +339,12 @@
                 <p><b>2.1 </b>O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
   
                 <p><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a ICT/Agência de Fomento, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
-              </div>
-            </div>
-  
-        </div><!--end of tab-content: insert all these here!-->
-  
-        <!------------------------------------------------------------------------->
-  
-        <div class="tab-pane " id="clausula2a" role="tabpanel" aria-labelledby="clausula2a-tab">
-            <div class="container-fluid p-0 mt-0 m-0">
-              <div class="text-justify text-black">
-    
                 <p><b>2.3 </b>Na execução do Plano de Trabalho, a atuação dos PARTÍCIPES dar-se-á sempre de forma associada. Para tanto, os PARTÍCIPES indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.</p>
   
                 <p><b>2.4 </b>Recaem sobre o Coordenador do Projeto, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.</p>
-  
+
                 <p><b>2.5 </b>Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.</p>
-  
+
                 <p><b>2.6 </b>A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo.</p>
               </div>
             </div>
@@ -330,60 +361,29 @@
     
                 <p><b>3.1 </b>São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I:</p>
                 
-                <p class="ml-2 bg-light roboto-font"><b>3.1.1. Do(a) ICT OU AGÊNCIA DE FOMENTO:</b></p>
-                <p class="ml-2">
+                <p class="ml-2 bg-light roboto-font"><b>3.1.1. Do(a) ICT:</b></p>
+           
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div> Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD&I ;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div> Manter rigoroso controle das despesas efetuadas e dos respectivos comprovantes com vistas à prestação de contas da execução do objeto deste Acordo;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">D)</div> Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">E)</div> Monitorar, avaliar e prestar contas nos termos deste Acordo; </p>
-              </div>
-            </div>
-  
-        </div><!--end of tab-content: insert all these here!-->
-  
-        <!------------------------------------------------------------------------->
-  
-        <div class="tab-pane " id="clausula3_a" role="tabpanel" aria-labelledby="clausula3_a-tab">
-            <div class="container-fluid p-0 mt-0 m-0">
-              <div class="text-justify text-black">              
-                <p class="ml-2 bg-light roboto-font"><b>3.1.2.  Do(a) XXXX:(PARCEIRO PRIVADO):</b></p>
-                <p class="ml-2">
+                  <p class="ml-2 bg-light roboto-font"><b>3.1.2.  Do(a) XXXX:(PARCEIRO PRIVADO):</b></p>
+               
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div>Transferir os recursos financeiros acordados, segundo o Cronograma de Desembolso constante no Plano de Trabalho, por meio do aporte de recursos financeiros de sua responsabilidade; <br><div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div> Indicar coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução; <br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div> Colaborar, nos termos do plano de trabalho, para que o Acordo alcance os objetivos nele descritos;
-               </p>
-              </div>
-            </div>
-        </div>
-        <!------------------------------------------------------------------------->
-  
-        <!------------------------------------------------------------------------->
-  
-        <div class="tab-pane " id="clausula3_b" role="tabpanel" aria-labelledby="clausula3_b-tab">
-            <div class="container-fluid p-0 mt-0 m-0">
-              <div class="text-justify text-black">              
-                <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a) XXXX: (FUNDAÇÃO DE APOIO – QUANDO HOUVER):</b></p>
-                <p class="ml-2">
-                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div>  Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD& I; <br>
-                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div>  Prestar à ICT informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;<br>
-                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div>  Indicar coordenador, no prazo de 15 (quinze) dias úteis, contados da assinatura deste Acordo, para acompanhar a sua execução;<br>
-                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">D)</div>  Executar a gestão administrativa e financeira dos recursos transferidos para a execução do objeto deste Acordo, em conta específica.;<br>
-                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">E)</div>  Informar previamente ao PARCEIRO PRIVADO os dados bancários e cadastrais necessários à realização dos aportes financeiros, cuidando para que a conta corrente a qual serão destinados os recursos seja específica para o projeto executado em conformidade com este Acordo de Parceria.<br>
-                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">F)</div>  Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, inclusive os provenientes das receitas obtidas nas aplicações financeiras realizadas, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação;
-                  <br>
-               </p>
-              </div>
-            </div>
-        </div>
-        <!------------------------------------------------------------------------->
-        
-        <!------------------------------------------------------------------------->
-  
-        <div class="tab-pane " id="clausula3_c" role="tabpanel" aria-labelledby="clausula3_c-tab">
-            <div class="container-fluid p-0 mt-0 m-0">
-              <div class="text-justify text-black">              
-                <p class="ml-2 bg-light roboto-font"><b>3.1.3.  OU:</b></p>
-                <p class="ml-2">
+                  <br><br>
+                  <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a) XXXX: (FUNDAÇÃO DE APOIO – QUANDO HOUVER):</b></p>
+                 
+                    <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div>  Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD& I; <br>
+                    <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div>  Prestar à ICT informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;<br>
+                    <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div>  Indicar coordenador, no prazo de 15 (quinze) dias úteis, contados da assinatura deste Acordo, para acompanhar a sua execução;<br>
+                    <div class="badge badge-primary p-2 mb-1 font-weight-bold">D)</div>  Executar a gestão administrativa e financeira dos recursos transferidos para a execução do objeto deste Acordo, em conta específica.;<br>
+                    <div class="badge badge-primary p-2 mb-1 font-weight-bold">E)</div>  Informar previamente ao PARCEIRO PRIVADO os dados bancários e cadastrais necessários à realização dos aportes financeiros, cuidando para que a conta corrente a qual serão destinados os recursos seja específica para o projeto executado em conformidade com este Acordo de Parceria.<br>
+                    <div class="badge badge-primary p-2 mb-1 font-weight-bold">F)</div>  Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, inclusive os provenientes das receitas obtidas nas aplicações financeiras realizadas, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação;
+                    <br><br>
+                    <p class="ml-2 bg-light roboto-font"><b>3.1.3.  OU:</b></p>
+                
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">D)</div> Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação;
                   <br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">G)</div>  Responsabilizar-se pelo recolhimento de impostos, taxas, contribuições e outros encargos porventura devidos em decorrência das atividades vinculadas a este Acordo de Parceria;<br>
@@ -392,27 +392,15 @@
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">J)</div>  Observar os princípios da legalidade, eficiência, moralidade, publicidade, economicidade, legalidade e impessoalidade, nas aquisições e contratações realizadas, bem como no desenvolvimento de todas as suas ações no âmbito deste Acordo de Parceria;
                   <br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">K)</div>  Manter registros contábeis, fiscais e financeiros completos e fidedignos relativamente à aplicação dos aportes recebidos do PARCEIRO PRIVADO por este Acordo de Parceria, fazendo-o em estrita observância às normas tributário-fiscais em vigor e, especialmente, à legislação que instituiu contrapartidas em atividades de PD&I para a concessão de incentivos ou de benefícios dos quais o PARCEIRO PRIVADO seja ou se torne beneficiária;<br>
-               </p>
-              </div>
+                  <br>
+                  <p><b>3.2.</b> Os Coordenadores de projeto poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.<br>
+  
+                  <p><b>3.3.</b> Os <b>PARCEIROS</b> são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente <b>Acordo de Parceria para PD&I</b> ou de publicações a ele referentes.</p>
+                </p>
+                </div>
             </div>
-        </div>
-        <!------------------------------------------------------------------------->
   
-  
-        <!------------------------------------------------------------------------->
-  
-        <div class="tab-pane " id="clausula3_d" role="tabpanel" aria-labelledby="clausula3_d-tab">
-            <div class="container-fluid p-0 mt-0 m-0">
-              <div class="text-justify text-black">
-                <p><b>3.2.</b> Os Coordenadores de projeto poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.<br>
-  
-                <p><b>3.3.</b> Os <b>PARCEIROS</b> são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente <b>Acordo de Parceria para PD&I</b> ou de publicações a ele referentes.</p>
-              </div>
-            </div>
         </div><!--end of tab-content: insert all these here!-->
-  
-        <!------------------------------------------------------------------------->
-  
         <!------------------------------------------------------------------------->
   
         <div class="tab-pane " id="clausula4" role="tabpanel" aria-labelledby="clausula4-tab">
@@ -432,10 +420,6 @@
             </div>
   
         </div><!--end of tab-content: insert all these here!-->
-  
-        <!------------------------------------------------------------------------->
-  
-        <!------------------------------------------------------------------------->
   
         <div class="tab-pane " id="clausula4_a" role="tabpanel" aria-labelledby="clausula4_a-tab">
             <div class="container-fluid p-0 mt-0 m-0">
@@ -485,9 +469,11 @@
         </div>
   
         <form id="regForm" action="/action_page.php">
-        <div id="step-container" class="step-container">
-          
+          <div id="step-container" class="step-container">
+            
           </div>
+          
+         
           <div id="tab-here">
 
           </div>
