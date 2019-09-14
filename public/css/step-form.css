@@ -22,11 +22,13 @@
     justify-content: flex-end;
     align-items: flex-end;
   }
-  
+
   h1 {
     text-align: center;  
   }
-  
+  .img-alert{
+    width: 32px;
+  }
   /* Hide all steps by default: */
   .tab {
     display: none;
@@ -34,12 +36,13 @@
   }
 
   .tab > .active{
-   padding-top: 10%;
+  /*  padding-top: 10%; */
   }
 
   #tab-here{
     height: 100%;
   }
+  
   
   button {
     color: #ffffff;
@@ -78,6 +81,7 @@
   /* Mark the steps that are finished and valid: */
   .step.finish {
     background-color: #17a673;
+  
   }
   
   .step-container{
