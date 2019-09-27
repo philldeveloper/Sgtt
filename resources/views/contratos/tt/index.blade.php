@@ -507,15 +507,79 @@
                                 dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a
                                 execução das tarefas, deveres ou contratos relacionados com a informação divulgada. 
                 </p>
-                <p><b>7.6.</b>As obrigações de sigilo em relação às INFORMAÇÕES CONFIDENCIAIS serão mantidas durante o período de vigência deste Acordo e pelo prazo de 5 (cinco) anos após sua extinção.</p>
-                <p><b>7.7.</b>Para efeito dessa cláusula, todas as informações referentes ao “processo/serviço/projeto........” serão consideradas como INFORMAÇÃO CONFIDENCIAL, retroagindo às informações obtidas antes da assinatura do acordo.</p>
-                <p><b>7.8.</b>Para efeito dessa cláusula, a classificação das informações como confidenciais será de responsabilidade de seu titular, devendo indicar os conhecimentos ou informações classificáveis como CONFIDENCIAIS por qualquer meio.</p>
+                <p class="text-blue"><b>7.6.</b>As obrigações de sigilo em relação às INFORMAÇÕES CONFIDENCIAIS serão mantidas durante o período de vigência deste Acordo e pelo prazo de 5 (cinco) anos após sua extinção.</p>
+                <p class="text-blue"><b>7.7.</b>Para efeito dessa cláusula, todas as informações referentes ao “processo/serviço/projeto........” serão consideradas como INFORMAÇÃO CONFIDENCIAL, retroagindo às informações obtidas antes da assinatura do acordo.</p>
+                <p class="text-blue"><b>7.8.</b>Para efeito dessa cláusula, a classificação das informações como confidenciais será de responsabilidade de seu titular, devendo indicar os conhecimentos ou informações classificáveis como CONFIDENCIAIS por qualquer meio.</p>
       
+              </div>
+            </div>
+            <!------------------------------------------------------------------------->
+  
+        <div class="tab-pane " id="clausula3" role="tabpanel" aria-labelledby="clausula3-tab">
+            <div class="container-fluid p-0 mt-0 m-0">
+              <div class="text-justify text-blue">
+                
+                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">8 CLÁUSULA OITAVA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+    
+                <p class="text-blue"><b>8.1</b> Os PARCEIROS deverão tomar todas as medidas necessárias, observados os princípios de civilidade e legalidade, e de acordo com as boas práticas empresariais para cumprir e assegurar que  (i) seus conselheiros, diretores, empregados qualquer pessoa agindo em seu nome, inclusive prepostos e subcontratados, quando houver (todos doravante referidos como “Partes Relacionadas” e, cada uma delas, como “uma Parte Relacionada”) obedecerão a todas as leis aplicáveis, incluindo àquelas  relativas ao combate à corrupção, suborno e lavagem de dinheiro, bem como àquelas  relativas a sanções econômicas, vigentes nas jurisdições em que os PARCEIROS estão constituídos e na jurisdição em que o Acordo de Parceria será cumprido (se diferentes), para impedir qualquer atividade fraudulenta por si ou por uma Parte Relacionada com relação ao cumprimento deste Acordo de Parceria.</p>
+                <p class="text-blue"><b>8.2</b> Um PARCEIRO deverá notificar imediatamente o outro sobre eventual suspeita de qualquer fraude tenha ocorrido, esteja ocorrendo, ou provavelmente ocorrerá, para que sejam tomadas as medidas necessárias para apurá-las.</p>
+                <p class="text-blue"><b>8.1*</b> Os PARCEIROS obrigam-se a observar rigidamente as condições contidas nos itens abaixo, sob pena de imediata e justificada rescisão do acordo. </p>
+                <p class="text-blue"><b>8.2*</b> Os PARCEIROS declaram-se cientes de que seus Departamentos Jurídicos e/ou advogados contratados estão autorizados, em caso de práticas que atentem contra os preceitos dessa cláusula, a solicitar a imediata abertura dos procedimentos criminais, cíveis e administrativos cabíveis à cada hipótese:</p>
+                
+                
+                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div> Os PARCEIROS não poderão, em hipótese alguma, dar ou oferecer nenhum tipo de presente, viagens, vantagens a qualquer empregado, servidor, preposto ou diretor de outro PARCEIRO, especialmente àqueles responsáveis pela fiscalização do presente Acordo. Serão admitidos apenas, em épocas específicas, a entrega de brindes, tais como canetas, agendas, folhinhas, cadernos etc;<br>
+                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div>  Os PARCEIROS somente poderão representar outro PARCEIRO perante órgãos públicos quando devidamente autorizado para tal, seja no corpo do próprio Acordo, seja mediante autorização prévia, expressa e escrita de seu representante com poderes para assim proceder;<br>
+                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div> Os PARCEIROS e seus empregados/prepostos, quando agirem em nome ou defendendo interesses deste Acordo perante órgãos, autoridades ou agentes públicos, não poderão dar, receber ou oferecer quaisquer presentes, vantagens ou favores a agentes públicos, sobretudo no intuito de obter qualquer tipo de favorecimento para os PARCEIROS;<br>
+                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">D)</div> Os PARCEIROS, quando agirem em nome ou defendendo seus interesses, não poderão fornecer informações sigilosas a terceiros ou a agentes públicos, mesmo que isso venha a facilitar, de alguma forma, o cumprimento desse Acordo;<br>
+                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">E)</div> Os PARCEIROS, ao tomar conhecimento de que algum de seus prepostos ou empregados descumpriram as premissas e obrigações acima pactuadas, denunciarão espontaneamente o fato, de forma que, juntas, elaborem e executem um plano de ação para (i) afastar o empregado ou preposto imediatamente; (ii) evitar que tais atos se repitam e (iii) garantir que o Acordo tenha condições de continuar vigente. </p>
               </div>
             </div>
   
         </div><!--end of tab-content: insert all these here!-->
-
+        <!------------------------------------------------------------------------->
+         <!------------------------------------------------------------------------->
+  
+         <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
+            <div class="container-fluid p-0 mt-0 m-0">
+              <div class="text-justify text-black">
+                
+                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">9 CLÁUSULA NONA - DO ACOMPANHAMENTO<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+    
+                <p><b>9.1</b>Aos coordenadores indicados pelos PARCEIROS competirá dirimir as dúvidas que surgirem na sua execução e de tudo dará ciência às respectivas autoridades.</p>
+                <p><b>9.2</b>O coordenador do projeto indicado pela ICT/AGÊNCIA DE FOMENTO anotará, em registro próprio, as ocorrências relacionadas com a execução do objeto, recomendando as medidas necessárias à autoridade competente para regularização das inconsistências observadas. </p>
+                <p><b>9.3</b>O acompanhamento do projeto pelos coordenadores não exclui nem reduz a responsabilidade dos PARCEIROS perante terceiros. </p>
+                <p><b>9.4</b>A impossibilidade técnica ou científica quanto ao cumprimento de qualquer fase do Plano de Trabalho, que seja devidamente comprovada e justificada, acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou término do Plano de Trabalho e consequente extinção deste Acordo. </p>
+              </div>
+            </div>
+            <!------------------------------------------------------------------------->
+        </div><!--end of tab-content: insert all these here!-->
+         <!------------------------------------------------------------------------->
+  
+         <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
+            <div class="container-fluid p-0 mt-0 m-0">
+              <div class="text-justify text-black">
+                
+                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">10. CLÁUSULA DÉCIMA - DA VIGÊNCIA E DA PRORROGAÇÃO<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+    
+                <p><b>10.1</b>O presente Acordo de Parceria para PD&I vigerá pelo prazo de <input type="text" name="date" placeholder="De (XXXX) anos" id=""> anos, a partir da data de sua assinatura, prorrogáveis.</p>
+                <p><b>10.2</b>10.2. Este Acordo de Parceria poderá ser prorrogado por meio de termo aditivo, com as respectivas alterações no Plano de Trabalho, mediante a apresentação de justifica técnica.</p>
+            
+              </div>
+            </div>
+            <!------------------------------------------------------------------------->
+            <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
+            <div class="container-fluid p-0 mt-0 m-0">
+              <div class="text-justify text-black">
+                
+                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">11. CLÁUSULA DÉCIMA PRIMEIRA- DAS ALTERAÇÕES<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+    
+                <p><b>11.1</b>As cláusulas e condições estabelecidas no presente instrumento poderão ser alteradas mediante celebração de termo aditivo.</p>
+                <p><b>11.2</b>A proposta de alteração, devidamente justificada, deverá ser apresentada por escrito, dentro da vigência do instrumento.</p>
+                <p><b>11.3</b> É vedado o aditamento do presente Acordo com o intuito de alterar o seu objeto, sob pena de nulidade do ato e responsabilidade do agente que o praticou.</p>
+            
+              </div>
+            </div>
+            <!------------------------------------------------------------------------->
         <div class="tab-pane " id="clausulaF" role="tabpanel" aria-labelledby="clausulaF-tab">
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-black">
