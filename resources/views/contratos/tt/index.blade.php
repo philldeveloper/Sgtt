@@ -513,6 +513,7 @@
       
               </div>
             </div>
+        </div>
             <!------------------------------------------------------------------------->
   
         <div class="tab-pane " id="clausula3" role="tabpanel" aria-labelledby="clausula3-tab">
@@ -566,6 +567,7 @@
             
               </div>
             </div>
+          </div>
             <!------------------------------------------------------------------------->
             <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
             <div class="container-fluid p-0 mt-0 m-0">
@@ -578,6 +580,7 @@
                 <p><b>11.3</b> É vedado o aditamento do presente Acordo com o intuito de alterar o seu objeto, sob pena de nulidade do ato e responsabilidade do agente que o praticou.</p>
             
               </div>
+            </div>
             </div>
             <!------------------------------------------------------------------------->
         <div class="tab-pane " id="clausulaF" role="tabpanel" aria-labelledby="clausulaF-tab">
