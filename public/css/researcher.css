@@ -2,6 +2,10 @@
   border-right: .25rem solid #858796!important;
 }
 
+.text-blue{
+  color: blue !important;
+}
+
 .myform-control{
     /*display: block; */
     /* width: 100%; */
@@ -85,7 +89,7 @@
 	box-shadow: 1px 1px #cdcdcd !important;
 }
 .text-black{
-	color: black !important;
+	color: black;
 }
 .card-res-hover:hover{
 	background-color: #f8f9fc !important;

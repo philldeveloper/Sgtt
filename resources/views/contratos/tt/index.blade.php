@@ -338,14 +338,14 @@
     
                 <p><b>2.1 </b>O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
   
-                <p><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a ICT/Agência de Fomento, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
-                <p><b>2.3 </b>Na execução do Plano de Trabalho, a atuação dos PARTÍCIPES dar-se-á sempre de forma associada. Para tanto, os PARTÍCIPES indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.</p>
+                <p class="text-blue"><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a ICT/Agência de Fomento, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
+                <p class="text-blue"><b>2.3 </b>Na execução do Plano de Trabalho, a atuação dos PARTÍCIPES dar-se-á sempre de forma associada. Para tanto, os PARTÍCIPES indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.</p>
   
-                <p><b>2.4 </b>Recaem sobre o Coordenador do Projeto, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.</p>
+                <p class="text-blue"><b>2.4 </b>Recaem sobre o Coordenador do Projeto, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.</p>
 
-                <p><b>2.5 </b>Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.</p>
+                <p class="text-blue"><b>2.5 </b>Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.</p>
 
-                <p><b>2.6 </b>A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo.</p>
+                <p class="text-blue"><b>2.6 </b>A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo.</p>
               </div>
             </div>
   
@@ -360,20 +360,20 @@
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">3 CLÁUSULA TERCEIRA – DAS ATRIBUIÇÕES E RESPONSABILIDADES <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
     
                 <p><b>3.1 </b>São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I:</p>
-                
-                <p class="ml-2 bg-light roboto-font"><b>3.1.1. Do(a) ICT:</b></p>
+                 
+                <p class="ml-2 bg-light roboto-font"><b>3.1.1. Do(a) ICT:</b><input type="text" name="ICT" placeholder="Instituição"></p>
            
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div> Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD&I ;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div> Manter rigoroso controle das despesas efetuadas e dos respectivos comprovantes com vistas à prestação de contas da execução do objeto deste Acordo;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">D)</div> Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">E)</div> Monitorar, avaliar e prestar contas nos termos deste Acordo; </p>
-                  <p class="ml-2 bg-light roboto-font"><b>3.1.2.  Do(a) XXXX:(PARCEIRO PRIVADO):</b></p>
+                  <p class="ml-2 bg-light roboto-font"><b>3.1.2.  Do(a) <input type="text" name="ICT" placeholder="Instituição">:(PARCEIRO PRIVADO)</b></p>
                
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div>Transferir os recursos financeiros acordados, segundo o Cronograma de Desembolso constante no Plano de Trabalho, por meio do aporte de recursos financeiros de sua responsabilidade; <br><div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div> Indicar coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução; <br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div> Colaborar, nos termos do plano de trabalho, para que o Acordo alcance os objetivos nele descritos;
                   <br><br>
-                  <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a) XXXX: (FUNDAÇÃO DE APOIO – QUANDO HOUVER):</b></p>
+                  <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a) <input type="text" name="ICT" placeholder="Instituição">:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p>
                  
                     <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div>  Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD& I; <br>
                     <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div>  Prestar à ICT informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;<br>
@@ -395,7 +395,7 @@
                   <br>
                   <p><b>3.2.</b> Os Coordenadores de projeto poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.<br>
   
-                  <p><b>3.3.</b> Os <b>PARCEIROS</b> são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente <b>Acordo de Parceria para PD&I</b> ou de publicações a ele referentes.</p>
+                  <p class="text-blue"><b>3.3.</b> Os <b>PARCEIROS</b> são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente <b>Acordo de Parceria para PD&I</b> ou de publicações a ele referentes.</p>
                 </p>
                 </div>
             </div>
@@ -407,14 +407,17 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">4 CLÁUSULA QUARTA – DOS RECURSOS FINANCEIROS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">4. CLÁUSULA QUARTA - DO PESSOAL <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
                 
                 <p>
-                  <b>4.1.</b>O (A) PARCEIRO PRIVADO transferirá recursos financeiros no valor total de R$ <input class="border border-dark font-weight-bold myform-control text-black text-uppercase p-2" type="text" placeholder="(VALOR POR EXTENSO)"> conforme cronograma de desembolso constante no Plano de Trabalho, anexo a este Acordo. <br>
-                  <b>4.2.</b> Os valores especificados no item acima serão recebidos pela FUNDAÇÃO DE APOIO em conta específica.<br>
-                  <b>4.3.</b> O PARCEIRO PRIVADO efetuará os aportes financeiros previstos no Plano de Trabalho através de depósitos em conta corrente  específica, servindo o  comprovante da operação bancária como recibo, para fins de direito, do repasse dos recursos financeiros previstos por este Acordo de Parceira.<br>
-                  <b>4.4.</b>  Eventuais ganhos financeiros com aplicação serão revertidos para garantir a integral execução do objeto desta Parceria.<br>
-                  <b>4.4.1.</b> Após execução total do projeto, havendo ainda saldos provenientes das receitas obtidas de aplicações financeiras, esses serão devolvidos para o Parceiro Privado ou destinados para ação congênere, nos termos de instrumento jurídico próprio a ser firmado pelas partes. <br>
+                  <b>4.1.</b> Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações
+                   trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si 
+                   e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem 
+                   na execução do objeto deste Acordo, de forma que não se estabelecerá, em hipótese alguma,
+                  vínculo empregatício ou de qualquer outra natureza com a <input type="text" name="empresa" placeholder="Empresa parceira"> e
+                  o pessoal <input type="text" name="empresa" placeholder="ICT ou Agência de fomento"> vice-versa, cabendo a cada PARCEIRO a responsabilidade 
+                  pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a
+                  documentação comprobatória da regularidade na contratação.<br>
                 </p>
               </div>
             </div>
@@ -425,13 +428,31 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">4 CLÁUSULA QUARTA – DOS RECURSOS FINANCEIROS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">5. CLÁUSULA QUINTA - DA PROPRIEDADE INTELECTUAL E DA CRIAÇÃO PROTEGIDA <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
                 
-                <p>
-                  <b>4.5.</b>  Observadas as demais disposições previstas neste Acordo de Parceria, os PARCEIROS acordam, desde já, que os valores mencionados no Plano de Trabalho são estimados com base nas premissas e termos especificados no mencionado Anexo. <br>
-                  <b>4.6.</b>  Qualquer aumento ao orçamento do Plano de Trabalho executado por este Acordo de Parceria, que torne necessário o aporte de recursos adicionais pelo PARCEIRO PRIVADO deverá ser prévia e formalmente analisado e aprovado pelas Parceiros, devendo ser implementado tão somente após celebração de termo aditivo a este Acordo de Parceria. <br>
-                  <b>4.7.</b>  Do valor total repassado, (a) FUNDAÇÃO DE APOIO poderá utilizar até 15% (quinze por cento) para custear despesas operacionais, definidas e justificadas no Plano de Trabalho.
+                <p class="text-blue">
+                <b>5.1.</b> Todos os dados, técnicas, tecnologia, know-how, marcas, patentes e quaisquer outros bens ou direitos de propriedade intelectual/industrial de um parceiro que este venha a utilizar para execução do Projeto continuarão a ser de sua propriedade exclusiva, não podendo o outro parceiro cedê-los, transferi-los, aliená-los, divulgá-los ou empregá-los em quaisquer outros projetos ou sob qualquer outra forma sem o prévio consentimento escrito do seu proprietário. <br>
+                <br/><b>5.2.</b> Todo desenvolvimento tecnológico passível de proteção intelectual, em qualquer modalidade, proveniente da execução do presente Acordo de Parceria, deverá ter a sua propriedade compartilhada entre os PARCEIROS, na mesma proporção em que cada instituição contribuiu com recursos humanos, além do conhecimento pré-existente aplicado, conforme previsto no art. 9º, § 3°, da Lei nº 10.973/2004.<br>
+                <br/><b>5.3.</b> A divisão da titularidade sobre a propriedade intelectual prevista na cláusula anterior será definida por meio de instrumento próprio, respeitando-se o percentual de x% (x por cento) para a ICT/AGÊNCIA DE FOMENTO.           
+                <br><br><b>5.4</b> O instrumento previsto na subcláusula 5.3 deverá observar os requisitos legais e formais necessários para sua celebração e averbação junto aos órgãos competentes.
+                <br>
+                <br/><b>5.5</b> Eventuais impedimentos de um dos parceiros não prejudicará a titularidade e/ou a exploração dos direitos da Propriedade Intelectual pelos demais.
+                <br>
+                <br/><b>5.6</b> Os PARCEIROS devem assegurar, na medida de suas respectivas responsabilidades, que os projetos propostos e que a alocação dos recursos tecnológicos correspondentes não infrinjam direitos autorais, patentes ou outros direitos intelectuais, assim como direitos de terceiros.
+                <br>
+                <br/><b>5.7</b> Na hipótese de eventual infração de qualquer direito de propriedade intelectual relacionada às tecnologias resultantes, os parceiros concordam que as medidas judiciais cabíveis visando coibir a infração do respectivo direito podem ser adotadas em conjunto ou separadamente.
+                <br>
+                <br/><b>5.8</b> Os depósitos de pedidos de proteção de propriedade intelectual devem ser iniciados necessariamente junto ao Instituto Nacional de Propriedade Industrial - INPI e registrados no sistema de acompanhamento da ICT/AGÊNCIA DE FOMENTO.
+                <br><br/><b>5.9</b> Caberá ao PARCEIRO PRIVADO, com exclusividade, a responsabilidade de preparar, arquivar, processar e manter pedidos de patente no Brasil e em ouros países.
+                <br><br/><b>5.10</b> As decisões relacionadas à preparação, processamento e manutenção de pedido de patente das tecnologias resultantes deste instrumento, no Brasil e em outros países, devem ser tomadas em conjunto pelos PARCEIROS ora acordantes.
+                <br>
+                <br/><b>5.11</b> Na hipótese de eventual infração de qualquer patente relacionada às tecnologias resultantes, os PARCEIROS concordam que as medidas judiciais cabíveis visando a coibir a infração da respectiva patente podem ser adotadas pelos PARCEIROS, em conjunto ou separadamente.
+                <br>
+                <br/><b>5.12</b> Tanto no que se refere à proteção da propriedade intelectual quanto às medidas judiciais, os PARCEIROS concordam que as despesas deverão ser suportadas de acordo com os percentuais definidos na exploração comercial das tecnologias.
+                <br>
+                <br/><b>5.13</b> A ICT/AGÊNCIA DE FOMENTO poderá outorgar poderes ao PARCEIRO PRIVADO para praticar todo e qualquer ato necessário para o depósito, acompanhamento e manutenção de pedido de patente das tecnologias resultantes do presente instrumento, no Brasil e em outros países.</b>
                 </p>
+             
               </div>
             </div>
   
@@ -439,6 +460,62 @@
   
         <!------------------------------------------------------------------------->
   
+        <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
+            <div class="container-fluid p-0 mt-0 m-0">
+              <div class="text-justify text-black">
+                
+                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">6. CLÁUSULA SEXTA - DA DIVULGAÇÃO E DAS PUBLICAÇÕES <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+    
+                <p><b>6.1 </b>Os PARCEIROS concordam em não utilizar o nome do outro PARCEIRO ou de seus empregados em qualquer propaganda, informação à imprensa ou publicidade relativa ao acordo ou a qualquer produto ou serviço decorrente deste, sem a prévia aprovação por escrito do PARCEIRO referido.</p>
+  
+                <p class="text-blue"><b>6.2 </b>Fica vedado aos PARCEIROS utilizar, no âmbito deste Acordo de Parceria, nomes, símbolos e imagens que caracterizem promoção pessoal de autoridades ou servidores públicos.</p>
+                <p class="text-blue"><b>6.3 </b>Os PARCEIROS não poderão utilizar o nome, logomarca ou símbolo um do outro em promoções e atividades afins alheias ao objeto deste Acordo, sem prévia autorização do respectivo PARCEIRO sob pena de responsabilidade civil em decorrência do uso indevido do seu nome e da imagem.</p>
+  
+                <p class="text-blue"><b>6.4 </b>As publicações, materiais de divulgação e resultados materiais, relacionados com os recursos do presente Acordo, deverão mencionar expressamente o apoio recebido dos PARCEIROS.</p>
+
+              </div>
+            </div>
+  
+        </div><!--end of tab-content: insert all these here!-->
+  
+        <!------------------------------------------------------------------------->
+  
+        <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
+            <div class="container-fluid p-0 mt-0 m-0">
+              <div class="text-justify text-black">
+                
+                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">7 CLÁUSULA SÉTIMA - DAS INFORMAÇÕES CONFIDENCIAIS E SIGILOSAS<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+    
+                <p><b>7.1 </b>Os PARCEIROS adotarão todas as medidas necessárias para proteger o sigilo das INFORMAÇÕES CONFIDENCIAIS recebidas em função da celebração, desenvolvimento e execução do presente Acordo de Parceria, inclusive na adoção de medidas que assegurem a tramitação do processo, não as divulgando a terceiros, sem a prévia e escrita autorização da outro PARCEIRO.</p>
+  
+                <p><b>7.2 </b>Fica vedado aos PARCEIROS utilizar, no âmbito deste Acordo de Parceria, nomes, símbolos e imagens que caracterizem promoção pessoal de autoridades ou servidores públicos.Os PARCEIROS informarão aos seus funcionários e prestadores de serviços e consultores que necessitem ter acesso às informações e conhecimentos que envolvem o objeto do Acordo, acerca das obrigações de sigilo assumidas, responsabilizando-se integralmente por eventuais infrações que estes possam cometer. </p>
+                <p><b>7.3 </b>As PARCEIROS farão com que cada pessoa de sua organização, ou sob o seu controle, que receba informações confidenciais, assuma o compromisso de confidencialidade, por meio assinatura de Termo de Confidencialidade.</p>
+  
+                <p><b>7.4 </b>Não haverá violação das obrigações de CONFIDENCIALIDADE previstas no Acordo de Parceria nas seguintes hipóteses: </p>
+                <p><b>7.4.1.</b> Informações técnicas ou comerciais que já sejam do conhecimento dos PARCEIROS na data da divulgação, ou que tenham sido comprovadamente desenvolvidas de maneira independente e sem relação com o Acordo pelo PARCEIRO que a revele; 
+                   <br><br>  <b>7.4.2.</b> Informações técnicas ou comerciais que sejam ou se tornem de domínio público, sem culpa da(s) PARCEIROS (S);
+                   <br><br> <b>7.4.2.1.</b> Qualquer informação que tenha sido revelada somente em termos gerais, não será considerada de conhecimento ou domínio público. 
+                   <br><br> <b>7.4.3.</b> Informações técnicas ou comerciais que sejam recebidas de um terceiro que não esteja sob obrigação de manter as informações técnicas ou comerciais em confidencialidade;
+                   <br><br> <b>7.4.4.</b> Informações que possam ter divulgação exigida por lei, decisão judicial ou administrativa;
+                   <br><br> <b>7.4.5.</b> Revelação expressamente autorizada, por escrito, pelos PARCEIROS.
+                </p>
+                <p><b>7.5.</b> A divulgação científica, por meio de artigos em congressos, revistas e outros meios,
+                                relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito
+                                dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a
+                                execução das tarefas, deveres ou contratos relacionados com a informação divulgada. A divulgação científica, por meio de artigos em congressos, revistas e outros meios,
+                                relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito
+                                dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a
+                                execução das tarefas, deveres ou contratos relacionados com a informação divulgada. 
+                </p>
+                <p><b>7.6.</b>As obrigações de sigilo em relação às INFORMAÇÕES CONFIDENCIAIS serão mantidas durante o período de vigência deste Acordo e pelo prazo de 5 (cinco) anos após sua extinção.</p>
+                <p><b>7.7.</b>Para efeito dessa cláusula, todas as informações referentes ao “processo/serviço/projeto........” serão consideradas como INFORMAÇÃO CONFIDENCIAL, retroagindo às informações obtidas antes da assinatura do acordo.</p>
+                <p><b>7.8.</b>Para efeito dessa cláusula, a classificação das informações como confidenciais será de responsabilidade de seu titular, devendo indicar os conhecimentos ou informações classificáveis como CONFIDENCIAIS por qualquer meio.</p>
+      
+              </div>
+            </div>
+  
+        </div><!--end of tab-content: insert all these here!-->
+
         <div class="tab-pane " id="clausulaF" role="tabpanel" aria-labelledby="clausulaF-tab">
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-black">
