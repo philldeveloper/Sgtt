@@ -100,108 +100,58 @@
   }
 </style>
 
-
-<div class="title-header">
-    <span class="h3 ml-3">Novo Contrato</span>
+<div class="container-fluid mt-5 mb-5">
+    <span class="h3 font-weight-bold">Novo Contrato</span>
     <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
 </div>
-
-<div class="container-fluid mt-4">
-</div><!--container-fluid-->
 
 
 <!-- Begin Page Content -->
 <div class="container-fluid">
     <div class="row">
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+      <div class="col-6">
         <div class="card card-shadow mb-4">
           <div class="card-body">
-            <div class="img-category mb-4">
+            <h3 class="mt-2 font-weight-bold ml-auto">Acordo de Cooperação <span class="badge badge-primary p-2 ml-2"><b>SEM REPASSE</b></span></h3>
+            <hr>
+            <div class="img-category mb-4 float-left mr-3">
               <img src="https://www.flaticon.com/premium-icon/icons/svg/2081/2081811.svg" alt="Shield">
             </div>
-            <span class="mt-5 title">Acordo de Cooperação</span>
-            <p class="subtitle pt-2">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+
+            <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
             <div class="container-button">
-              <button class="btn-sm btn-success"><a href="/contratos">Iniciar</a></button>
+              <button class="btn-lg btn-success"><a href="/contratos">Criar Contrato</a></button>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+      <div class="col-6">
         <div class="card card-shadow mb-4">
           <div class="card-body">
-            <div class="img-category mb-4">             
+            <h3 class="mt-2 font-weight-bold ml-auto">Acordo de Cooperação <span class="badge badge-dark p-2 ml-2"><b>COM REPASSE</b></span></h3>
+            <hr>
+            <div class="img-category mb-4 float-left mr-3">
               <img src="https://image.flaticon.com/icons/svg/747/747001.svg" alt="Shield">
             </div>
-            <span class="mt-5 title">Transferencia de Tecnologia</span>
-            <p class="subtitle pt-2">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+
+            <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
             <div class="container-button">
-              <button class="btn-sm btn-success">Iniciar</button>
+              <button class="btn-lg btn-success"><a href="/contratos">Criar Contrato</a></button>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
-        <div class="card card-shadow mb-4">
-          <div class="card-body">
-            <div class="img-category mb-4">
-              <img src="https://image.flaticon.com/icons/svg/2063/2063350.svg" alt="Shield">
-            </div>
-            <span class="mt-5 title">Patenteamento de software</span>
-            <p class="subtitle pt-2">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
-            <div class="container-button">
-              <button class="btn-sm btn-success">Iniciar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
-        <div class="card card-shadow mb-4">
-          <div class="card-body">
-            <div class="img-category mb-4">
-              <img src="https://image.flaticon.com/icons/svg/273/273517.svg" alt="Shield">
-            </div>
-            <span class="mt-5 title">Transferencia de Software</span>
-            <p class="subtitle pt-2">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
-            <div class="container-button">
-              <button class="btn-sm btn-success"><a href="/contratos">Iniciar</a></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
-        <div class="card card-shadow mb-4">
-          <div class="card-body">
-            <div class="img-category mb-4">
-              <img src="https://image.flaticon.com/icons/svg/1967/1967174.svg" alt="Shield">
-            </div>
-            <span class="mt-5 title">Acordo de Tordesilhas</span>
-            <p class="subtitle pt-2">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
-            <div class="container-button">
-              <button class="btn-sm btn-success">Iniciar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
+
+<div class="container-fluid mt-4">
+    <span class="h3 font-weight-bold">Meus Contratos</span>
+    <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
 </div>
 
-
-  <!-- Page Heading -->
-  <div class="title-container mb-4">
-    <h3 class="ml-4">Meus Contratos</h3>  
-  </div>
-  <div class="container">
-    <div class="row">
-  
-      <!-- Area Chart -->
-      <div class="col-xl-12 col-lg-12">
-  
-        <div class="card p-0 mb-3">
-          <!-- Card Body -->
-          <div class="card-body p-0 m-0 shadow">
-            <div class="table-responsive rounded-0">
+<div class="col-12 mt-5">
+  <div class="card card-shadow mb-4">
+    <div class="card-body">
+      
+      <div class="table-responsive rounded-0">
               <table class="table table-hover mb-0 rounded-0">
                 <thead class="roboto-font font-weight-bold text-dark border-left-success  bg-light" style="font-size: 1.25rem">
                   <tr>
@@ -250,11 +200,11 @@
                 </tbody>
               </table>
             </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- /.row -->
+    </div>
   </div>
 </div>
 
+</div>
+</div>
+</div>
 @endsection
