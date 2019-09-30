@@ -149,11 +149,11 @@
 
 <div class="col-12 mt-5">
   <div class="card card-shadow mb-4">
-    <div class="card-body">
+    <div class="card-body p-3 mb-5">
       
-      <div class="table-responsive rounded-0">
-              <table class="table table-hover mb-0 rounded-0">
-                <thead class="roboto-font font-weight-bold text-dark border-left-success  bg-light" style="font-size: 1.25rem">
+      <div class="table-responsive">
+          <table class="table table-hover mb-0">
+                <thead class="roboto-font font-weight-bold text-dark border-left-success bg-light" style="font-size: 1.25rem">
                   <tr>
                     <th scope="col">#</th>
                     <th scope="col">Nome</th>
@@ -162,21 +162,21 @@
                     <th scope="col">Ações</th>
                   </tr>
                 </thead>
-                <tbody class="mb-0 font-weight-bold text-dark rounded-0">
+                <tbody class="mb-0 font-weight-bold text-dark">
                   <tr class="">
                     <th scope="row">1</th>
                     <td>Contrato Sindical</td>
                     <td>Transferencia de Tecnologia</td>
                     <td>
-                      <div class="progress rounded-0">
+                      <div class="progress">
                         <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Apreciação</div>
                       </div>
                     </td>
                     <td>
                       <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold rounded-0">Ver</button>
-                        <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold rounded-0">Editar</button>
-                        <button type="button" class="btn btn-sm btn-danger font-weight-bold rounded-0">Deletar</button>
+                        <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold">Ver</button>
+                        <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold">Editar</button>
+                        <button type="button" class="btn btn-sm btn-danger font-weight-bold">Deletar</button>
                       </div>
                     </td>
                   </tr>
@@ -185,15 +185,15 @@
                     <td>Jacob</td>
                     <td>Otto</td>
                     <td>
-                      <div class="progress rounded-0">
+                      <div class="progress">
                         <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Recepção</div>
                       </div>
                     </td>
                     <td>
                       <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold rounded-0">Ver</button>
-                        <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold rounded-0">Editar</button>
-                        <button type="button" class="btn btn-sm btn-danger font-weight-bold rounded-0">Deletar</button>
+                        <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold">Ver</button>
+                        <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold">Editar</button>
+                        <button type="button" class="btn btn-sm btn-danger font-weight-bold">Deletar</button>
                       </div>
                     </td>
                   </tr>

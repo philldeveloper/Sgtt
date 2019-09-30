@@ -2,6 +2,22 @@
 
 @section('content')
 
+@include('researcher.modals.modal_1')
+@include('researcher.modals.modal_2')
+@include('researcher.modals.modal_3')
+@include('researcher.modals.modal_4')
+@include('researcher.modals.modal_5')
+@include('researcher.modals.modal_6')
+@include('researcher.modals.modal_7')
+@include('researcher.modals.modal_8')
+@include('researcher.modals.modal_9')
+{{--@include('researcher.modals.modal_10')
+@include('researcher.modals.modal_11')
+@include('researcher.modals.modal_12')
+@include('researcher.modals.modal_13')
+@include('researcher.modals.modal_14')--}}
+
+
 <div class="title-header">
     <span class="h3 ml-3">Novo Contrato</span>
     <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
@@ -10,54 +26,54 @@
 
 <div class="card mt-5 color-card">
   <div class="card-body p-3">
-  <div class="tab-pane  show active" id="start" role="tabpanel" aria-labelledby="start-tab">
-    <div class="alert alert-warning" role="alert">      
-      <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
-      NOTAS EXPLICATIVAS!
-      <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal">Saiba mais</button>
-  </div>
-  <!-- Modal -->
-        <div class="modal-alert modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">NOTAS EXPLICATIVAS!</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+        <div class="tab-pane show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+            <div class="modal-alert modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">NOTAS EXPLICATIVAS!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                    <div class="modal-body">
+                    ESTA MINUTA DEVE SER UTILIZADA PARA ACORDOS DE PARCERIA PARA
+                    PD&I QUANDO NÃO HOUVER REPASSE DE RECURSOS ENTRE OS PARCEIROS.<br/>
+                    Este tipo de Acordo é apropriado para ser utilizado na construção de ambientes inovadores
+                    (como parques tecnológico, co-working, entre outras possibilidades), servindo como
+                    instrumento que estabelece as regras de interação entre os parceiros. Pode tanto ser usado em
+                    relações bilaterais como multilaterais.
+                    BASE LEGAL: ARTIGO 9º DA LEI Nº 10.973/04.
+                    Caso se trate da hipótese de Acordo com transferência de recursos do parceiro privado para o
+                    projeto (§§ 6º e 7º do Artigo 35 do Decreto nº 9.283/18.), deverá ser utilizada a outra minuta
+                    apropriada para esta situação.
+                    Alguns itens receberão notas explicativas destacadas para compreensão do agente ou setor
+                    responsável pela elaboração das minutas, que deverão ser devidamente suprimidas quando da
+                    finalização do documento. 
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn-sm btn-light bg-light" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
               </div>
-                <div class="modal-body">
-                ESTA MINUTA DEVE SER UTILIZADA PARA ACORDOS DE PARCERIA PARA
-                PD&I QUANDO NÃO HOUVER REPASSE DE RECURSOS ENTRE OS PARCEIROS.<br/>
-                Este tipo de Acordo é apropriado para ser utilizado na construção de ambientes inovadores
-                (como parques tecnológico, co-working, entre outras possibilidades), servindo como
-                instrumento que estabelece as regras de interação entre os parceiros. Pode tanto ser usado em
-                relações bilaterais como multilaterais.
-                BASE LEGAL: ARTIGO 9º DA LEI Nº 10.973/04.
-                Caso se trate da hipótese de Acordo com transferência de recursos do parceiro privado para o
-                projeto (§§ 6º e 7º do Artigo 35 do Decreto nº 9.283/18.), deverá ser utilizada a outra minuta
-                apropriada para esta situação.
-                Alguns itens receberão notas explicativas destacadas para compreensão do agente ou setor
-                responsável pela elaboração das minutas, que deverão ser devidamente suprimidas quando da
-                finalização do documento. 
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn-sm btn-light bg-light" data-dismiss="modal">Fechar</button>
-                </div>
             </div>
-          </div>
-        </div>
-            <div class="container-fluid pb-5 pt-5 mt-0 m-0">
+
+            <div class="container-fluid p-0 mt-0 m-0">
+              <div class="container-fluid pb-5 pt-5 mt-0 m-0">
                 <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">
                   ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI
                   CELEBRAM <input type="text" class="myform-control m-2 p-0"> E 
                   <input type="text" class="myform-control m-0 p-0"> 
                   NA FORMA A SEGUIR.</h5><br>
-            </div>
-          </div>
-  
-          <div class="tab-pane " id="home" role="tabpanel" aria-labelledby="home-tab">
-            <div class="container-fluid p-0 mt-0 m-0">
+              </div>
+
+              <div class="alert alert-warning" role="alert">      
+                <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+                NOTAS EXPLICATIVAS!
+                <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal">Saiba mais</button>
+              </div>
+
               <form class="p-0 m-0">
               <h5 
               class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">
@@ -66,87 +82,78 @@
               <div class="form-row">
                 <div class="form-group col-md-4">
                   <label for="inputEmail4" class="font-weight-bold text-black">Nome</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputEmail4" placeholder="Nome">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">               
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="Natureza Jurídica">
+                  <!-- Botão para acionar modal -->
+                  <a href="#" data-toggle="modal" data-target="#modalExemplo1"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+                  <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="CNPJ">
+                  <!-- Botão para acionar modal -->
+                  <a href="#" data-toggle="modal" data-target="#modalExemplo2"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+                  <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">
                 </div>
               </div>
   
               <div class="form-row">
                 <div class="form-group col-md-5">
                   <label for="inputCity" class="font-weight-bold text-black">Endereço</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputCity">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">
                 </div>
                 <div class="form-group col-md-3">
                   <label for="inputCity" class="font-weight-bold text-black">Cidade</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputCity">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">
                 </div>
                 <div class="form-group col-md-2">
                   <label for="inputState" class="font-weight-bold text-black">UF</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputCity">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">
                 </div>
                 <div class="form-group col-md-2">
                   <label for="inputZip" class="font-weight-bold text-black">CEP</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputZip">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="inputZip">
                 </div>
               </div>
   
              <div class="form-row">
               <div class="form-group col-md-4">
                 <label for="inputEmail4" class="font-weight-bold text-black">Representante Legal</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputEmail4" placeholder="Nome">
+                <!-- Botão para acionar modal -->
+                  <a href="#" data-toggle="modal" data-target="#modalExemplo3"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputEmail4" placeholder="Nome">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
               </div>
               <div class="form-group col-md-2">
                 <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
               </div>
              </div>
   
              <div class="form-row">
               <div class="form-group col-md-3">
                 <label for="inputEmail4" class="font-weight-bold text-black">Nacionalidade</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputEmail4" placeholder="Nacionalidade">
+                 <input type="text" class="form-control text-black font-weight-bold"  id="inputEmail4" placeholder="Nacionalidade">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">Estado Civil</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="Estado Civil">
+                 <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="Estado Civil">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">Ato de Nomeação</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="Ato de Nomeação">
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="Ato de Nomeação">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">Doravante Denominado</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="ICT/Agência de Fomento">
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="ICT/Agência de Fomento">
               </div>
              </div><!-- /.row-->
              <br>
@@ -161,76 +168,75 @@
   
               <div class="form-row">
                 <div class="form-group col-md-4">
-                  <label for="inputEmail4" class="font-weight-bold text-black">Instituição</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputEmail4" placeholder="Nome">
+                  <label for="inputEmail4" class="font-weight-bold text-black">Instituição</label>                  
+                  <input type="text" class="form-control text-black font-weight-bold"  id="inputEmail4" placeholder="Nome">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="Natureza Jurídica">
+                  <!-- Botão para acionar modal -->
+                  <a href="#" data-toggle="modal" data-target="#modalExemplo4"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+                  <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="Natureza Jurídica">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="CNPJ">
+                  <!-- Botão para acionar modal -->
+                  <a href="#" data-toggle="modal" data-target="#modalExemplo5"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+                  <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="CNPJ">
                 </div>
               </div>
   
               <div class="form-row">
                 <div class="form-group col-md-5">
                   <label for="inputCity" class="font-weight-bold text-black">Endereço</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputCity">
+                    <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">
                 </div>
                 <div class="form-group col-md-3">
                   <label for="inputCity" class="font-weight-bold text-black">Cidade</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputCity">
+                    <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">
                 </div>
                 <div class="form-group col-md-2">
                   <label for="inputState" class="font-weight-bold text-black">UF</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputCity">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">
                 </div>
                 <div class="form-group col-md-2">
                   <label for="inputZip" class="font-weight-bold text-black">CEP</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputZip">
+                    <input type="text" class="form-control text-black font-weight-bold"  id="inputZip">
                 </div>
               </div>
   
              <div class="form-row">
               <div class="form-group col-md-4">
                 <label for="inputEmail4" class="font-weight-bold text-black">Representante Legal</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputEmail4" placeholder="Nome">
+                <!-- Botão para acionar modal -->
+                  <a href="#" data-toggle="modal" data-target="#modalExemplo6"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputEmail4" placeholder="Nome">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
               </div>
               <div class="form-group col-md-2">
                 <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
               </div>
               <div class="form-group col-md-2">
                 <label for="inputPassword4" class="font-weight-bold text-black">Cargo</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
               </div>
              </div>
+             <hr>
+             <div class="form-group col-md-4 mt-3" style="margin-left: -15px">
+                <a class="btn btn-lg btn-primary font-weight-bold btn-block" href="#"> <i class="fa fa-plus text-right mr-auto"></i>  Adicionar parceiro</a>
+              </div>
+
             </form>
             </div><!--end of content-->
           </div><!--end pane-->
-          <div class="tab-pane " id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          {{--<div class="tab-pane " id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <div class="container-fluid p-0 mt-0 m-0">
               <form class="p-0 m-0">
               <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">3º PARCEIRO (Fundação de Apoio)</h5>
@@ -238,17 +244,17 @@
                 <div class="form-group col-md-4">
                   <label for="inputEmail4" class="font-weight-bold text-black">Instituição</label>
                   <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputEmail4" placeholder="Nome">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="inputEmail4" placeholder="Nome">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
                   <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="Natureza Jurídica">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="Natureza Jurídica">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
                   <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="CNPJ">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="CNPJ">
                 </div>
               </div>
   
@@ -256,22 +262,22 @@
                 <div class="form-group col-md-5">
                   <label for="inputCity" class="font-weight-bold text-black">Endereço</label>
                   <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputCity">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">
                 </div>
                 <div class="form-group col-md-3">
                   <label for="inputCity" class="font-weight-bold text-black">Cidade</label>
                   <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputCity">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">
                 </div>
                 <div class="form-group col-md-2">
                   <label for="inputState" class="font-weight-bold text-black">UF</label>
                   <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputCity">
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">
                 </div>
                 <div class="form-group col-md-2">
                   <label for="inputZip" class="font-weight-bold text-black">CEP</label>
                   <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputZip">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="inputZip">
                 </div>
               </div>
   
@@ -279,32 +285,32 @@
               <div class="form-group col-md-4">
                 <label for="inputEmail4" class="font-weight-bold text-black">Representante Legal</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputEmail4" placeholder="Nome">
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputEmail4" placeholder="Nome">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
               </div>
               <div class="form-group col-md-2">
                 <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
               </div>
               <div class="form-group col-md-2">
                 <label for="inputPassword4" class="font-weight-bold text-black">Cargo</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control border-left-primary text-black font-weight-bold rounded-0" id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
               </div>
              </div>
             </form>
             </div><!--end of content-->
-          </div><!--end pane-->
+          </div><!--end pane-->--}}
           
           <!------------------------------------------------------------------------->
   
@@ -593,17 +599,17 @@
                 
                 <div class="row justify-content-right">
                   <div class="col-lg-3 col-md-4 col-sm-6">
-                    <a href="#" class="btn btn-block d-fluid p-2 rounded-0 bg-white border-dark font-weight-bold text-uppercase text-black text-center"><i class="fas fa-2x fa-envelope-open-text p-2"></i><br>
+                    <a href="#" class="btn btn-block d-fluid p-2 bg-white border-dark font-weight-bold text-uppercase text-black text-center"><i class="fas fa-2x fa-envelope-open-text p-2"></i><br>
                       SALVAR NO EMAIL
                     </a>
                   </div>
                   <div class="col-lg-2 col-md-4 col-sm-6">
-                    <a href="#" class="btn btn-block d-fluid p-2 rounded-0 bg-white border-dark font-weight-bold text-uppercase text-black text-center"><i class="fas fa-2x fa-file-pdf p-2"></i><br>
+                    <a href="#" class="btn btn-block d-fluid p-2 bg-white border-dark font-weight-bold text-uppercase text-black text-center"><i class="fas fa-2x fa-file-pdf p-2"></i><br>
                       BAIXAR PDF
                     </a>
                   </div>
                   <div class="col-lg-2 col-md-4 col-sm-6">
-                    <a href="#" class="btn btn-block d-fluid p-2 rounded-0 bg-primary text-light font-weight-bold text-uppercase text-black text-center"><i class="fas fa-2x fa-print p-2"></i><br>
+                    <a href="#" class="btn btn-block d-fluid p-2 bg-primary text-light font-weight-bold text-uppercase text-black text-center"><i class="fas fa-2x fa-print p-2"></i><br>
                       IMPRIMIR
                     </a>
                   </div>
@@ -624,8 +630,8 @@
           <!-- Circles which indicates the steps of the form: -->
           <div class="buttonsControl pb-5" style="overflow:auto;">
             <div>
-              <button type="button" class="btn-sm btn-success" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
-              <button type="button" class="btn-sm btn-success" id="nextBtn" onclick="nextPrev(1)">Proximo</button>
+              <button type="button" class="btn btn-lg bg-secondary text-light" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
+              <button type="button" class="btn bg-success text-light btn-lg" id="nextBtn" onclick="nextPrev(1)">Proximo</button>
             </div>
           </div>
         </form>
