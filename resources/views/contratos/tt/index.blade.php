@@ -367,19 +367,19 @@
     
                 <p><b>3.1 </b>São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I:</p>
                  
-                <p class="ml-2 bg-light roboto-font"><b>3.1.1. Do(a) ICT:</b><input type="text" name="ICT" placeholder="Instituição"></p>
+                <p class="ml-2 bg-light roboto-font"><b>3.1.1. Do(a) ICT:</b><input type="text" class="myform-control" name="ICT" placeholder="Instituição"></p>
            
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div> Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD&I ;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div> Manter rigoroso controle das despesas efetuadas e dos respectivos comprovantes com vistas à prestação de contas da execução do objeto deste Acordo;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">D)</div> Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">E)</div> Monitorar, avaliar e prestar contas nos termos deste Acordo; </p>
-                  <p class="ml-2 bg-light roboto-font"><b>3.1.2.  Do(a) <input type="text" name="ICT" placeholder="Instituição">:(PARCEIRO PRIVADO)</b></p>
+                  <p class="ml-2 bg-light roboto-font"><b>3.1.2.  Do(a) <input  class="myform-control" type="text" name="ICT" placeholder="Instituição">:(PARCEIRO PRIVADO)</b></p>
                
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div>Transferir os recursos financeiros acordados, segundo o Cronograma de Desembolso constante no Plano de Trabalho, por meio do aporte de recursos financeiros de sua responsabilidade; <br><div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div> Indicar coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução; <br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div> Colaborar, nos termos do plano de trabalho, para que o Acordo alcance os objetivos nele descritos;
                   <br><br>
-                  <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a) <input type="text" name="ICT" placeholder="Instituição">:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p>
+                  <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a) <input type="text" class="myform-control" name="ICT" placeholder="Instituição">:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p>
                  
                     <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div>  Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD& I; <br>
                     <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div>  Prestar à ICT informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;<br>
@@ -568,8 +568,8 @@
                 
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">10. CLÁUSULA DÉCIMA - DA VIGÊNCIA E DA PRORROGAÇÃO<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
     
-                <p><b>10.1</b>O presente Acordo de Parceria para PD&I vigerá pelo prazo de <input type="text" name="date" placeholder="De (XXXX) anos" id=""> anos, a partir da data de sua assinatura, prorrogáveis.</p>
-                <p><b>10.2</b>10.2. Este Acordo de Parceria poderá ser prorrogado por meio de termo aditivo, com as respectivas alterações no Plano de Trabalho, mediante a apresentação de justifica técnica.</p>
+                <p><b>10.1</b> O presente Acordo de Parceria para PD&I vigerá pelo prazo de <input type="text" name="date" placeholder="De (XXXX) anos" id=""> anos, a partir da data de sua assinatura, prorrogáveis.</p>
+                <p><b>10.2</b> Este Acordo de Parceria poderá ser prorrogado por meio de termo aditivo, com as respectivas alterações no Plano de Trabalho, mediante a apresentação de justifica técnica.</p>
             
               </div>
             </div>
@@ -581,14 +581,163 @@
                 
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">11. CLÁUSULA DÉCIMA PRIMEIRA- DAS ALTERAÇÕES<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
     
-                <p><b>11.1</b>As cláusulas e condições estabelecidas no presente instrumento poderão ser alteradas mediante celebração de termo aditivo.</p>
-                <p><b>11.2</b>A proposta de alteração, devidamente justificada, deverá ser apresentada por escrito, dentro da vigência do instrumento.</p>
+                <p><b>11.1</b> As cláusulas e condições estabelecidas no presente instrumento poderão ser alteradas mediante celebração de termo aditivo.</p>
+                <p><b>11.2</b> A proposta de alteração, devidamente justificada, deverá ser apresentada por escrito, dentro da vigência do instrumento.</p>
                 <p><b>11.3</b> É vedado o aditamento do presente Acordo com o intuito de alterar o seu objeto, sob pena de nulidade do ato e responsabilidade do agente que o praticou.</p>
             
               </div>
             </div>
             </div>
             <!------------------------------------------------------------------------->
+            <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
+            <div class="container-fluid p-0 mt-0 m-0">
+              <div class="text-justify text-black">
+                
+                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">12. CLÁUSULA DÉCIMA SEGUNDA – DO MONITORAMENTO, DA
+                    AVALIAÇÃO E DA PRESTAÇÃO DE CONTAS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+    
+                <p><b>12.1</b> Os <b>PARCEIROS</b> exercerão a fiscalização técnico-financeira das atividades do presente Acordo. </p>
+                <p><b>12.2</b>  O pesquisador deverá encaminhar ao <span class="text-blue">Setor responsável ou COMISSÃO DA ICT:</span>  </p>
+                <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div> Formulário de Resultado Parcial:  <span class="text-blue">anualmente, até o último dia útil do mês de
+                                                                                    dezembro de cada ano de vigência deste Acordo</span>, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho; e <br><br>
+                <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div> Formulário de Resultado Final: no prazo de até 120 (cento e vinte) dias contados
+                                                                                    da conclusão do objeto deste Acordo, em conformidade com os indicadores
+                                                                                    estabelecidos no respectivo Plano de Trabalho.<br><br>
+                <p><b>12.3</b> No Formulário de Resultado de que trata a subcláusula 12.2, deverá ser demonstrada a
+                                compatibilidade entre as metas previstas e as alcançadas no período, bem como apontadas as
+                                justificativas em caso de discrepância, consolidando dados e valores das ações desenvolvidas.</p>
+                <p><b>12.4</b> Caberá a cada <b>PARCEIRO</b> adotar as providências necessárias julgadas cabíveis, caso os
+                <p><b>12.5</b> A prestação de contas será simplificada, privilegiando os resultados da pesquisa, e seguirá
+                                as regras previstas no <span class="text-blue">artigo 58 do Decreto nº 9.283/18 e/ou na Política de Inovação da entidade
+                                pública. </span> 
+                                </p>
+            
+              </div>
+            </div>
+            </div>
+            <!------------------------------------------------------------------------->
+           
+            <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
+              <div class="container-fluid p-0 mt-0 m-0">
+                <div class="text-justify text-black">
+                  <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">13. CLÁUSULA DÉCIMA TERCEIRA – DA EXTINÇÃO DO ACORDO <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+      
+                  <p><b>13.1</b> Este Acordo poderá, a qualquer tempo, ser denunciado pelos <b>PARCEIROS</b>, devendo o
+                                interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de
+                               <span>60 (sessenta)</span> dias da data em que se pretenda que sejam encerradas as atividades, respeitadas
+                                as obrigações assumidas com terceiros entre os <b>PARCEIROS</b>, creditando eventuais benefícios
+                                adquiridos no período..</p>
+                  <p class="text-blue"><b>13.2</b> Constituem motivos para rescisão de pleno direito o inadimplemento de quaisquer das
+                                cláusulas pactuadas neste Acordo, o descumprimento das normas estabelecidas na legislação
+                                vigente ou a superveniência de norma legal ou fato que tome material ou formalmente
+                                inexequível o Acordo de Parceria para PD&I, imputando-se aos PARCEIROS as
+                                responsabilidades pelas obrigações até então assumidas, devendo o PARCEIRO que se julgar
+                                prejudicado notificar o parceiro para que apresente esclarecimentos no prazo de 15 (quinze)
+                                dias corridos.</p>
+                                <p class="text-blue"><b>13.2.1</b>  Prestados os esclarecimentos, os PARCEIROS deverão, por mútuo consenso, decidir pela rescisão ou manutenção do Acordo. </p>
+                                <p class="text-blue"><b>13.2.2</b>  Decorrido o prazo para esclarecimentos, caso não haja resposta, o Acordo será rescindido de pleno direito, independentemente de notificações ou interpelações, judiciais ou extrajudiciais.</p>
+                                
+                  <p class="text-blue"><b>13.3</b> O Acordo de Parceria será rescindido em caso de decretação de falência, liquidação extrajudicial ou judicial, ou insolvência de qualquer dos PARCEIROS, ou, ainda, no caso de  10/11 propositura de quaisquer medidas ou procedimentos contra qualquer dos PARCEIROS para sua liquidação e/ou dissolução; </p>
+                  <p><b>13.4</b> O presente Acordo será extinto com o cumprimento do objeto ou com o decurso de prazo de vigência.  </p>
+              
+                </div>
+              </div>
+            </div>
+              <!------------------------------------------------------------------------->
+              <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
+              <div class="container-fluid p-0 mt-0 m-0">
+                <div class="text-justify text-black">
+                  <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">14. CLÁUSULA DÉCIMA QUARTA - DA PUBLICIDADE  <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+      
+                  <p><b>14.1</b> A publicação do extrato do presente Acordo de Parceria para PD&I no Diário Oficial da
+                                  União (DOU) é condição indispensável para sua eficácia e será providenciada pela ICT no
+                                  prazo de até 20 (vinte) dias da sua assinatura. </p>
+            
+              
+                </div>
+              </div>
+            </div>
+              <!------------------------------------------------------------------------->
+            <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
+              <div class="container-fluid p-0 mt-0 m-0">
+                <div class="text-justify text-black">
+                  <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">15. CLÁUSULA DÉCIMA QUINTA – DAS NOTIFICAÇÕES  <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+      
+                  <p><b>15.1</b> Qualquer comunicação ou notificação relacionada ao Acordo de Parceria poderá ser feita
+                                pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no
+                                respectivo endereço do PARCEIRO notificado, conforme as seguintes informações:
+                                <span>PARCEIRO(S) PÚBLICO(S):</span> (endereço completo, telefone, celular e e-mail)
+                                <span>PARCEIRO(S) PÚBLICO(S):</span> (endereço completo, telefone, celular e e-mail) </p>
+                  <p><b>15.2</b> Qualquer comunicação ou solicitação prevista neste Acordo de Parceria será considerada
+                                como tendo sido legalmente entregue: </p>
+                                <p><b>15.2.1</b> Quando entregue em mão a quem destinada, com o comprovante de recebimento;  </p>
+                                <p><b>15.2.2</b> Se enviada por correio, registrada ou certificada, porte pago e devidamente
+                                                  endereçada, quando recebida pelo destinatário ou no 5° (quinto) dia seguinte à data do
+                                                  despacho, o que ocorrer primeiro; </p>
+                                <p><b>15.2.3</b>  Se enviada por fax, quando recebida pelo destinatário; </p>
+                                <p><b>15.2.4</b>  Se enviada por e-mail, desde que confirmado o recebimento pelo destinatário, ou,
+                                                  após transcorridos 5 (cinco) dias úteis, o que ocorrer primeiro. Na hipótese de transcurso do
+                                                  prazo sem confirmação, será enviada cópia por correio, considerando-se, todavia, a
+                                                  notificação devidamente realizada.  </p>
+                                <p><b>15.3</b>  Qualquer dos PARCEIROS poderá, mediante comunicação por escrito, alterar o endereço
+                                                para o qual as comunicações ou solicitações deverão ser enviadas. </p>
+
+              
+                </div>
+              </div>
+            </div>
+             <!------------------------------------------------------------------------->
+             <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
+              <div class="container-fluid p-0 mt-0 m-0">
+                <div class="text-justify text-black">
+                  <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">16. CLÁUSULA DÉCIMA SEXTA – DISPOSIÇÕES GERAIS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+      
+                  <p><b>16.1.</b> É livre o acesso dos agentes da administração pública, do controle interno e do Tribunal
+                            de Contas aos documentos e às informações relacionados a esse Acordo, bem como aos locais
+                            de execução do respectivo objeto, ressalvadas as informações tecnológicas e dados das
+                            pesquisas que possam culminar em alguma inovação. </p>
+            
+              
+                </div>
+              </div>
+            </div>
+
+            <!------------------------------------------------------------------------->
+            <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
+              <div class="container-fluid p-0 mt-0 m-0">
+                <div class="text-justify text-black">
+                  <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">17. CLÁUSULA DÉCIMA SÉTIMA - DO FORO <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+      
+                  <p><b>17.1.</b>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de <input class="myform-control text-black"  type="text" name="estado" placeholder="Estado">, cidade de <input  class="myform-control" type="text" name="estado" placeholder="Cidade">,
+                                para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109
+                                da Constituição Federal.
+                                E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente
+                                instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.
+                                </p>
+                      <input type="text" class="myform-control text-black"  name="" id="" placeholder="Cidade/UF, dia de mês de ano. ">   <br>   
+                    <div class="mb-4 row justify-content-center">
+                      <div class="col-6 align-self-center">
+                        <div class="input-control-center">
+                          <p class="mt-4">Pelo(a)  <span class="text-blue">ICT:</span> <input class="myform-control text-black" type="text" name="" id="" placeholder="Instituição"> </p>   
+                            <input class="mb-2 myform-control text-black" type="text" name="" id="" placeholder="Nome do representante legal"> 
+                            <br><input class="mb-2  myform-control text-black" type="text" name="" id="" placeholder="Cargo"> 
+                          </div>
+                      </div>
+                    </div>
+                       <div class="mt-4 row justify-content-center">
+                         <div class="col-6 align-self-center">
+                           <div class="input-control-center">
+                             <p>Pelo(a) <span class="text-blue">PARCEIRO PRIVADO:</span> <input class="myform-control text-black" type="text" name="" id="" placeholder="Instituição"> </p>      
+                             <input class="mb-2 myform-control text-black" type="text" name="" id="" placeholder="Nome do representante legal"> 
+                             <br><input class="mb-2  myform-control text-black" type="text" name="" id="" placeholder="Cargo"> 
+                           </div>
+                         </div>
+                       </div>
+        
+                </div>
+              </div>
+            </div>
+
         <div class="tab-pane " id="clausulaF" role="tabpanel" aria-labelledby="clausulaF-tab">
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-black">
