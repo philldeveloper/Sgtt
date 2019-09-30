@@ -808,6 +808,8 @@
         tab[i].classList.add('tab');   
         stepContainer[i] = document.createElement("span");
         stepContainer[i].classList.add('step');  
+        stepContainer[i].setAttribute("id", `${i}`)
+        stepContainer[i].setAttribute("onclick", `stepButton(${i})`)
         wrapper.appendChild(tab[i])
         step.appendChild(stepContainer[i])
     }
@@ -821,7 +823,23 @@
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
+function stepButton(n) {
+  let x = document.getElementsByClassName("tab");
+
+  for (let i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+
+  x[n].style.display = "block";
+ 
+ 
+  //... and fix the Previous/Next buttons:
+  
+  showTab(n)
+}
+
 function showTab(n) {
+  
   // This function will display the specified tab of the form...
   var x = document.getElementsByClassName("tab");
   x[n].style.display = "block";

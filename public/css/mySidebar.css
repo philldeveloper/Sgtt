@@ -116,6 +116,13 @@
     font-weight: bold;
 }
 
+.input-control-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
 
 /* Cor dos icones*/
 

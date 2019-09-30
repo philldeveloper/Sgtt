@@ -72,8 +72,12 @@
     border-radius: 50%;
     display: inline-block;
     opacity: 0.5;
+    cursor: pointer;
   }
-  
+
+  .step:hover{
+    cursor: pointer;
+  }
   .step.active {
     opacity: 1;
   }
