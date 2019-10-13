@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center content-size">
         <div class="card-container">
-            <div class="card card-size">
+            <div class="card card-size shadow-sm">
                 <div class="card-header">{{ __('Login') }}</div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">

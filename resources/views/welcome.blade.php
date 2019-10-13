@@ -34,14 +34,15 @@
             @endif
 
             <div class="content">
-                <div class="title"><img src="{{ asset('assets/Groupsgtt.svg') }}" alt="sgtt" ></div>
-                <span class="subtitle black-text">Bem vindo ao sistema de gerenciamento e 
+                <div class="title">
+                    <img src="{{ asset('assets/Groupsgtt.svg') }}" alt="sgtt" width="70%">
+                </div>
+
+                <span class="subtitle black-text h2">Bem vindo ao sistema de gerenciamento e 
                     transferência de tecnologia, densenvolvido para facilitar sua vida.
-                    <br/>
-                    Faça login ou cadastra-se.
+                    <br><br>
+                    <a href="{{asset('login')}}" class="btn btn-link">Faça login</a> ou  <a href="{{asset('register')}}" class="btn btn-link">cadastre-se</a>.
                 </span>
-               
-            
             </div>
         </div>
     </body>

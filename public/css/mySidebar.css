@@ -50,7 +50,7 @@
 }
 
 .color-card{
-    background-color: #fefefe;
+    
     width: 95%;
     margin: 0 auto;
     padding: 15px;
@@ -61,7 +61,6 @@
 
 .my-sidebar{
     width: 20%;
-
     height: auto;
     display: flex;
     flex-direction: column;
@@ -131,8 +130,8 @@
 }
 
 .modal-alert .modal-content{
-    background-color: darkorange;
-    color: white;
+    background-color: #fafafa;
+    color: black;
     border: 2px solid #fafafa;
     width: 150%;
   }

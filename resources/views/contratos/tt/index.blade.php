@@ -11,11 +11,12 @@
 @include('researcher.modals.modal_7')
 @include('researcher.modals.modal_8')
 @include('researcher.modals.modal_9')
-{{--@include('researcher.modals.modal_10')
+
+@include('researcher.modals.modal_10')
 @include('researcher.modals.modal_11')
 @include('researcher.modals.modal_12')
 @include('researcher.modals.modal_13')
-@include('researcher.modals.modal_14')--}}
+@include('researcher.modals.modal_14')
 
 
 <div class="title-header">
@@ -32,28 +33,30 @@
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">NOTAS EXPLICATIVAS!</h5>
+                    <h4 class="modal-title font-weight-bold" id="exampleModalLabel">NOTAS EXPLICATIVAS</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
-                    <div class="modal-body">
-                    ESTA MINUTA DEVE SER UTILIZADA PARA ACORDOS DE PARCERIA PARA
-                    PD&I QUANDO NÃO HOUVER REPASSE DE RECURSOS ENTRE OS PARCEIROS.<br/>
+                    <div class="modal-body font-weight-bold"><p class="lead">
+
+                    <span class="font-weight-bold text-dark">ESTA MINUTA DEVE SER UTILIZADA PARA ACORDOS DE PARCERIA PARA
+                    PD&I QUANDO NÃO HOUVER REPASSE DE RECURSOS ENTRE OS PARCEIROS.</span><br>
+
                     Este tipo de Acordo é apropriado para ser utilizado na construção de ambientes inovadores
                     (como parques tecnológico, co-working, entre outras possibilidades), servindo como
                     instrumento que estabelece as regras de interação entre os parceiros. Pode tanto ser usado em
                     relações bilaterais como multilaterais.
-                    BASE LEGAL: ARTIGO 9º DA LEI Nº 10.973/04.
+                    <b>BASE LEGAL: ARTIGO 9º DA LEI Nº 10.973/04.</b> <br>
                     Caso se trate da hipótese de Acordo com transferência de recursos do parceiro privado para o
                     projeto (§§ 6º e 7º do Artigo 35 do Decreto nº 9.283/18.), deverá ser utilizada a outra minuta
-                    apropriada para esta situação.
+                    apropriada para esta situação. <br>
                     Alguns itens receberão notas explicativas destacadas para compreensão do agente ou setor
                     responsável pela elaboração das minutas, que deverão ser devidamente suprimidas quando da
-                    finalização do documento. 
+                    finalização do documento. </p>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn-sm btn-light bg-light" data-dismiss="modal">Fechar</button>
+                      <button type="button" class="btn-lg btn-primary" data-dismiss="modal">Fechar</button>
                     </div>
                 </div>
               </div>
@@ -323,12 +326,20 @@
                 Ciência, Tecnologia e Inovação (Emenda Constitucional nº85/15, Lei nº
                 10.973/2004, Lei nº 13.243/2016, Decreto nº 9.283/2018 e Lei nº 8.958/1994), que deverá ser executado com estrita observância das seguintes cláusulas e condições:</p><br>
                 
-                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">1. Cláusula Primeira - do Objeto <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">1. Cláusula Primeira - do Objeto</h5>
     
-                <p><b>1.1</b> O presente Acordo de Parceria para PD&I tem por objeto
-                a cooperação técnica e científica entre os PARTÍCIPES para desenvolver
-                o XXXXX, a ser executado nos termos do Plano de Trabalho, anexo, visando
-                à transferência de recursos financeiros, à gestão administrativa e financeira e à execução técnia de projeto de pesquisa, desenvolvimento e inovação - PD&I.</p>
+                <p><b>1.1</b> O presente Acordo de Parceria para PD&I tem por objeto a cooperação técnica e científica entre os PARTÍCIPES para desenvolver
+                o <br><div class="form-group col-md-12"><textarea class="form-control"></textarea></div>
+
+                <a href="#" data-toggle="modal" data-target="#modalExemplo10"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+
+                <br>a ser executado nos termos do Plano de Trabalho, anexo, visando 
+
+                <br><div class="form-group col-md-12"><textarea class="form-control"></textarea></div>
+
+                <a href="#" data-toggle="modal" data-target="#modalExemplo11"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+
+                e à execução técnica de projeto de pesquisa, desenvolvimento e inovação - PD&I.</p>
               </div>
             </div>
   
@@ -340,11 +351,11 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">2. CLÁUSULA SEGUNDA – DO PLANO DE TRABALHO <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">2. CLÁUSULA SEGUNDA – DO PLANO DE TRABALHO <a href="#" data-toggle="modal" data-target="#modalExemplo12"><i class="fas fa-fw fa-question-circle float-right"></i></a></h5>
     
                 <p><b>2.1 </b>O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
   
-                <p class="text-blue"><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a ICT/Agência de Fomento, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
+                <p class="text-blue"><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a ICT<a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
                 <p class="text-blue"><b>2.3 </b>Na execução do Plano de Trabalho, a atuação dos PARTÍCIPES dar-se-á sempre de forma associada. Para tanto, os PARTÍCIPES indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.</p>
   
                 <p class="text-blue"><b>2.4 </b>Recaem sobre o Coordenador do Projeto, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.</p>
