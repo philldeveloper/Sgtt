@@ -14,7 +14,11 @@ class ResearcherController extends Controller
     	return view('researcher.faq.index');
     }
 
-    public function cttindex(){
-    	return view('contratos.tt.index');
+    public function semrepasseindex(){
+    	return view('contratos.tt.semrepasse.index');
+    }
+
+    public function repasseindex(){
+    	return view('contratos.tt.repasse.index');
     }
 }

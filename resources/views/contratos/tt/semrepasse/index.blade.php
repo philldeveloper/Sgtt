@@ -11,7 +11,6 @@
 @include('researcher.modals.modal_7')
 @include('researcher.modals.modal_8')
 @include('researcher.modals.modal_9')
-
 @include('researcher.modals.modal_10')
 @include('researcher.modals.modal_11')
 @include('researcher.modals.modal_12')

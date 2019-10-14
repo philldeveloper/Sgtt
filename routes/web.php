@@ -15,8 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/contratos', function () {
-    return view('contratos.tt.index');
+Route::get('/contratos/semrepasse', function () {
+    return view('contratos.tt.semrepasse.index');
+});
+
+Route::get('/contratos/repasse', function () {
+    return view('contratos.tt.repasse.index');
 });
 
 Auth::routes();
@@ -29,4 +33,6 @@ Route::get('/pesquisador', 'ResearcherController@index')->name('pesquisador');
 
 Route::get('/faq', 'ResearcherController@faqindex')->name('faq');
 
-Route::get('/contratos/tt/new', 'ResearcherController@cttindex')->name('ctt');
+Route::get('/contratos/tt/semrepasse/new', 'ResearcherController@semrepasseindex')->name('semrepasse');
+
+Route::get('/contratos/tt/comrepasse/new', 'ResearcherController@repasseindex')->name('repasse');
