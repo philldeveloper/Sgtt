@@ -9,6 +9,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link href="{{ asset('css/myStyle.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <!-- Styles -->
         <style>
     
@@ -20,28 +21,22 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a class="black-text" href="{{ url('/home') }}">Home</a>
-                        <a class="black-text" href="{{ url('/pesquisador') }}">Pesquisador</a>
-                        <a class="black-text" href="{{ url('/admin') }}">Admin</a>
+                        <a class="text-dark" href="{{route('pesquisador')}}">Início</a>
                     @else
-                        <a class="black-text" href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a class="black-text" href="{{ route('register') }}">Register</a>
-                        @endif
                     @endauth
                 </div>
             @endif
 
             <div class="content">
-                <div class="title">
+                <div class="title mb-5">
                     <img src="{{ asset('assets/Groupsgtt.svg') }}" alt="sgtt" width="70%">
                 </div>
 
-                <span class="subtitle black-text h2">Bem vindo ao sistema de gerenciamento e 
+                <span class="subtitle text-dark mt-5 h1">Bem vindo ao sistema de gerenciamento e 
                     transferência de tecnologia, densenvolvido para facilitar sua vida.
-                    <br><br>
-                    <a href="{{asset('login')}}" class="btn btn-link">Faça login</a> ou  <a href="{{asset('register')}}" class="btn btn-link">cadastre-se</a>.
+                    <br><br><br>
+                    <a href="{{asset('login')}}" class="btn btn-light btn-lg p-3">Faça login</a> ou  
+                    <a href="{{asset('register')}}" class="btn btn-primary btn-lg p-3">cadastre-se</a>
                 </span>
             </div>
         </div>
