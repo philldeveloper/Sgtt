@@ -29,10 +29,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin', 'AdminController@index')->name('admin');
 
-Route::get('/pesquisador', 'ResearcherController@index')->name('pesquisador');
+Route::get('/pesquisador', 'PesquisadorController@index')->name('pesquisador');
 
-Route::get('/faq', 'ResearcherController@faqindex')->name('faq');
+Route::get('/faq', 'PesquisadorController@faqindex')->name('faq');
 
-Route::get('/contratos/tt/semrepasse/new', 'ResearcherController@semrepasseindex')->name('semrepasse');
+Route::get('/contratos/tt/semrepasse/new', 'PesquisadorController@semrepasseindex')->name('semrepasse');
 
-Route::get('/contratos/tt/comrepasse/new', 'ResearcherController@repasseindex')->name('repasse');
+Route::get('/contratos/tt/comrepasse/new', 'PesquisadorController@repasseindex')->name('repasse');

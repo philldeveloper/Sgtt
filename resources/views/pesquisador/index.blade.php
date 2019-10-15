@@ -112,7 +112,7 @@
       <div class="col-6">
         <div class="card card-shadow mb-4">
           <div class="card-body">
-            <h3 class="mt-2 font-weight-bold ml-auto">Acordo de Cooperação <span class="badge badge-primary p-2 ml-2"><b>SEM REPASSE</b></span></h3>
+            <h3 class="mt-2 font-weight-bold ml-auto">Acordo de Cooperação <span class="text-dark">sem repasse</span></h3>
             <hr>
             <div class="img-category mb-4 float-left mr-3">
               <img src="https://www.flaticon.com/premium-icon/icons/svg/2081/2081811.svg" alt="Shield">
@@ -128,7 +128,7 @@
       <div class="col-6">
         <div class="card card-shadow mb-4">
           <div class="card-body">
-            <h3 class="mt-2 font-weight-bold ml-auto">Acordo de Cooperação <span class="badge badge-dark p-2 ml-2"><b>COM REPASSE</b></span></h3>
+            <h3 class="mt-2 font-weight-bold ml-auto">Acordo de Cooperação <span class="text-dark">com repasse</span></h3>
             <hr>
             <div class="img-category mb-4 float-left mr-3">
               <img src="https://image.flaticon.com/icons/svg/747/747001.svg" alt="Shield">

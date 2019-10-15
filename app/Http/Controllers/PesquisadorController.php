@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ResearcherController extends Controller
+class PesquisadorController extends Controller
 {
     public function index(){
-    	return view('researcher.index');
+    	return view('pesquisador.index');
     }
 
     public function faqindex(){
-    	return view('researcher.faq.index');
+    	return view('pesquisador.faq.index');
     }
 
     public function semrepasseindex(){
