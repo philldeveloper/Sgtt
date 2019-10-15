@@ -1,0 +1,96 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400 !important;
+  }
+  .nav-tabs .nav-link:hover{
+    background-color: white !important;
+    box-shadow: 0 .125rem .25rem 0 rgba(58,59,69,.2)!important;
+    border: 1px solid #224abe !important;
+    color: black !important;    
+  }
+  .nav-tabs .nav-link{
+    border: 1px solid transparent !important;
+    color: black !important;   
+    background-color: #fefefe !important; 
+    border-top-right-radius: 8px !important;
+    border-top-left-radius: 8px !important;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
+    -moz-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
+  }
+
+  .card-shadow {
+    -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
+    -moz-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
+  }
+  
+
+  .card-shadow:hover{
+    border: 1px solid #fafafa;
+    cursor: pointer;
+  }
+
+  .img-category{
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .img-category img {
+    width: 64px;
+    height: auto;
+  }
+
+  .card-body > .title{
+    font-weight: bold;
+    font-size: 18px;
+    color: #212529 !important;
+    height: 48px;
+  }
+
+  .card-body .subtitle{
+    font-size: 15px;
+  }
+
+  .card-body .container-button{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .card-body button {
+    border-radius: 1;
+    
+  }
+
+  .adjust-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carrousel-item .active{
+    margin: 0 auto !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .container-button button a{
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Section Documents */
+  
+  .title-container{
+    height: 73px;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px; 20px;
+    -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
+    -moz-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
+  }
