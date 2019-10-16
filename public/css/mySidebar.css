@@ -65,7 +65,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #3447B7;
+    background-color: #292727 !important;
+    color: white !important;
 }
 
 .my-sidebar .dropdown-divider{

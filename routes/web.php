@@ -29,7 +29,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/administrador', 'AdminController@index')->name('administrador');
 
-Route::get('/administrador/analytics', 'AdminController@analyticsindex');
+Route::get('/administrador/analytics', 'AdminController@analyticsindex')->name('analytics');
 
 Route::get('/pesquisador', 'PesquisadorController@index')->name('pesquisador');
 

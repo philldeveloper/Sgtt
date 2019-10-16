@@ -43,7 +43,7 @@
        </div> -->
        <div class="info-user">
          <span class="name-desc text-white">Tauan Almeida</span>
-         <span class="email-desc">tauan@hotmail.com</span>
+         <span class="email-desc">tauan@administrador.com</span>
        </div>
       </div>
       <div class="dropdown-divider"></div>
@@ -51,32 +51,27 @@
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
           <a class="nav-link" href="{{route('pesquisador')}}">
-            <i class="fas fa-fw fa-hands-helping"></i>
+            <i class="fas fa-fw fa-hands-helping" style="color: white !important"></i>
             <span>Contratos</span></a>
         </li>
         <!-- Nav Item - Charts -->
         <li class="nav-item">
-          <a class="nav-link" href="charts.html">
-            <i class="fas fa-fw fa-chart-area"></i>
+          <a class="nav-link" href="{{route('analytics')}}">
+            <i class="fas fa-fw fa-chart-area" style="color: white !important"></i>
             <span>Contábil</span></a>
         </li>
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-          <a class="nav-link" href="{{asset('faq')}}">
-            <i class="fas fa-fw fa-question-circle"></i>
+          <a class="nav-link" href="{{route('faq')}}">
+            <i class="fas fa-fw fa-question-circle" style="color: white !important"></i>
             <span>Faq</span>
           </a>
         </li>
         <div class="dropdown-divider" style="margin: 15px;"></div>
         <li class="nav-item">
             <a class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal">
-            <i class="fas fa-sign-out-alt"></i>
+            <i class="fas fa-sign-out-alt" style="color: white !important"></i>
               <span>Sair</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">
-            <i class="fas fa-tools"></i>
-              <span>Meu Perfil</span></a>  
           </li>
       </ul>
    </div>

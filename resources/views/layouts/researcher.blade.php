@@ -53,15 +53,17 @@
             <i class="fas fa-fw fa-hands-helping"></i>
             <span>Contratos</span></a>
         </li>
-        <!-- Nav Item - Charts -->
+        @if(Auth::user()->admin == 1)
         <li class="nav-item">
-          <a class="nav-link" href="charts.html">
+          <a class="nav-link" href="{{route('analytics')}}">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Contábil</span></a>
         </li>
+        @else
+        @endif
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-          <a class="nav-link" href="{{asset('faq')}}">
+          <a class="nav-link" href="{{route('faq')}}">
             <i class="fas fa-fw fa-question-circle"></i>
             <span>Faq</span>
           </a>
