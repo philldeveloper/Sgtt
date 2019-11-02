@@ -52,7 +52,11 @@
                     apropriada para esta situação. <br>
                     Alguns itens receberão notas explicativas destacadas para compreensão do agente ou setor
                     responsável pela elaboração das minutas, que deverão ser devidamente suprimidas quando da
-                    finalização do documento. </p>
+                    finalização do documento. 
+                    <br/>No modelo a seguir, deve-se observar que há duas cores:<br/>
+                    <br/>- os itens escritos na cor <b>PRETA</b> devem ser mantidos, podendo eventualmente serem alterados ou excluídos diante do caso concreto, e;
+                    <br/>-  aqueles redigidos na cor <span class="text-blue font-weight-bold">AZUL</span> são textos que dependem de situações específicas ou se trata de textos sugestivos. Cabe a cada entidade verificar o que deve ser escrito nestes itens e decidir se eles serão ou não mantidos na redação final do Acordo. 
+                    </p>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn-lg btn-primary" data-dismiss="modal">Fechar</button>
@@ -65,8 +69,8 @@
               <div class="container-fluid pb-5 pt-5 mt-0 m-0">
                 <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">
                   ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI
-                  CELEBRAM <input type="text" class="myform-control m-2 p-0"> E 
-                  <input type="text" class="myform-control m-0 p-0"> 
+                  CELEBRAM <input class="mb-2  myform-control text-black" type="text" name="" id="" placeholder="ICT ou ente público"> E 
+                  <input class="mb-2  myform-control text-black" type="text" name="" id="" placeholder="Nome do parceiro">  
                   NA FORMA A SEGUIR.</h5><br>
               </div>
 
