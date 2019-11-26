@@ -100,3 +100,8 @@ html, body {
     text-decoration: none;
     text-transform: uppercase;
 }
+
+.logo-desc{
+    font-size: 20px;
+   color: #5A5A5A;
+}

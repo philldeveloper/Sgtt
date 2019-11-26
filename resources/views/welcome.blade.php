@@ -25,7 +25,9 @@
 
             <div class="content">
                 <div class="title mb-5">
-                    <img src="{{ asset('assets/Groupsgtt.svg') }}" alt="sgtt" width="70%">
+                    <img src="{{ asset('assets/Grouplogo.svg') }}" alt="sgtt" width="70%">
+                    <p class="logo-desc">Sistema de gerenciamento e 
+                    transferência de tecnologia</p>
                 </div>
 
                 <span class="subtitle text-dark mt-5 h1">Bem vindo ao sistema de gerenciamento e 
