@@ -78,6 +78,7 @@
 .container-profile .name-desc{
    font-weight: bold;
    font-size: 16px;
+   letter-spacing: 0;
 }
 
 .container-profile .email-desc{
@@ -108,8 +109,10 @@
 }
 
 .container-profile img {
+    margin-top: 4px;
     width: 64px;
     margin-right: 12px;
+    height: 64px;
 }
 
 .bold{
