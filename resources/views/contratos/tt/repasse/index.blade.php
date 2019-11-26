@@ -80,7 +80,7 @@
               <form class="p-0 m-0">
               <h5 
               class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">
-              1º PARCEIRO</h5>
+              ICT/ente público</h5>
   
               <div class="form-row">
                 <div class="form-group col-md-4">
