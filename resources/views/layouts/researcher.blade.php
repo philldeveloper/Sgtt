@@ -35,14 +35,14 @@
   <div id="wrapper">
    <div class="my-sidebar">
      <div class="container-profile">
-       <img class="rounded-circle" src="https://image.flaticon.com/icons/svg/149/149071.svg">
+       <img class="rounded-circle" src="{{asset('assets/dialles.png')}}">
        <!-- <div class="logo">
          <img src="{{ asset('assets/logo-pibiti.svg') }}" alt="SGTT">
          <span class="title-logo text-white">SGTT</span>
        </div> -->
        <div class="info-user">
-         <span class="name-desc text-white">Tauan Almeida</span>
-         <span class="email-desc">tauan@hotmail.com</span>
+         <span class="name-desc text-white">Dialles Nogueira</span>
+         <span class="email-desc">dialles@hotmail.com</span>
        </div>
       </div>
       <div class="dropdown-divider"></div>
