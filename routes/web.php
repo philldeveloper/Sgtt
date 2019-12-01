@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('inicio');
 
 Route::get('/contratos/semrepasse', function () {
     return view('contratos.tt.semrepasse.index');

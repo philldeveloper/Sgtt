@@ -105,3 +105,29 @@ html, body {
     font-size: 20px;
    color: #5A5A5A;
 }
+
+.teste{
+    border: 0;
+    border-color: #1db954 !important;
+    border-radius: 500px !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    -webkit-letter-spacing: 2px;
+    -moz-letter-spacing: 2px;
+    -ms-letter-spacing: 2px;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition-duration: 33ms;
+    transition-duration: 33ms;
+    vertical-align: middle;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    padding: 17px 48px !important;
+    background-color: #1db954 !important;
+    color: white !important;
+}

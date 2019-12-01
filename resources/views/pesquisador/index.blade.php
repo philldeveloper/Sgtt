@@ -103,6 +103,10 @@
 <div class="container-fluid mt-5 mb-5">
     <span class="h3 font-weight-bold">Novo Contrato</span>
     <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
+    
+    <a href="{{route('inicio')}}">
+      <img src="{{ asset('assets/Grouplogo.svg') }}" alt="sgtt" width="8%" class="float-right" style="opacity: 70%">
+    </a>
 </div>
 
 
