@@ -50,13 +50,12 @@
 }
 
 .color-card{
-    
     width: 95%;
     margin: 0 auto;
     padding: 15px;
-    -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.03);
-    -moz-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.03);
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.03);
+    -webkit-box-shadow: 0 0 8px 7px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 0 8px 7px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 8px 7px rgba(0, 0, 0, 0.03);
 }
 
 .my-sidebar{

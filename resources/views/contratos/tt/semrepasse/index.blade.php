@@ -1,5 +1,13 @@
 @extends('layouts.researcher')
 
+
+<style type="text/css">
+
+  #wrapper #content-wrapper {
+    background-color: white !important;
+  }
+
+</style>
 @section('content')
 
 @include('pesquisador.modals.modal_1')
@@ -19,12 +27,13 @@
 
 
 <div class="title-header">
-    <span class="h3 ml-3">Novo Contrato</span>
+    <span class="h3 ml-3 font-weight-bold">Novo Contrato</span>
+    <div class="badge badge-dark lead  mr-auto float-right">sem repasse</div>
     <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
 </div>
 
 
-<div class="card mt-5 color-card">
+<div class="card mt-5 color-card border-secondary border">
   <div class="card-body p-3">
         <div class="tab-pane show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
@@ -782,7 +791,7 @@
         </div>
   
         <form id="regForm" action="/action_page.php">
-          <div id="step-container" class="step-container">
+          <div id="step-container" class="step-container m-4">
             
           </div>
           
@@ -793,8 +802,8 @@
           <!-- Circles which indicates the steps of the form: -->
           <div class="buttonsControl pb-5" style="overflow:auto;">
             <div>
-              <button type="button" class="btn btn-lg bg-secondary text-light" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
-              <button type="button" class="btn bg-success text-light btn-lg" id="nextBtn" onclick="nextPrev(1)">Proximo</button>
+              <button type="button" class="btn btn-lg bg-secondary text-light mt-3" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
+              <button type="button" class="btn bg-success text-light btn-lg mt-3" id="nextBtn" onclick="nextPrev(1)">Proximo</button>
             </div>
           </div>
         </form>

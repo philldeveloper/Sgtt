@@ -25,9 +25,9 @@
   }
 
   .card-shadow {
-    -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
-    -moz-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
+    -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.04);
+    -moz-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.04);
   }
   
 
@@ -168,15 +168,15 @@
                     <td>Contrato Sindical</td>
                     <td>Transferencia de Tecnologia</td>
                     <td>
-                      <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Apreciação</div>
+                      <div class="progress mt-2 mr-3">
+                        <div class="progress-bar bg-primary pr-3 pl-3" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Apreciação</div>
                       </div>
                     </td>
                     <td>
                       <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold">Ver</button>
-                        <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold">Editar</button>
-                        <button type="button" class="btn btn-sm btn-danger font-weight-bold">Deletar</button>
+                        <button type="button" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold">Ver</button>
+                        <button type="button" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold">Editar</button>
+                        <button type="button" class="btn btn-sm pl-4 pr-4 btn-danger font-weight-bold">Deletar</button>
                       </div>
                     </td>
                   </tr>
@@ -185,15 +185,15 @@
                     <td>Jacob</td>
                     <td>Otto</td>
                     <td>
-                      <div class="progress">
-                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Recepção</div>
+                      <div class="progress mt-2 mr-3">
+                        <div class="progress-bar bg-secondary pr-3 pl-3" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Recepção</div>
                       </div>
                     </td>
                     <td>
                       <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold">Ver</button>
-                        <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold">Editar</button>
-                        <button type="button" class="btn btn-sm btn-danger font-weight-bold">Deletar</button>
+                        <button type="button" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold">Ver</button>
+                        <button type="button" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold">Editar</button>
+                        <button type="button" class="btn btn-sm pl-4 pr-4 btn-danger font-weight-bold">Deletar</button>
                       </div>
                     </td>
                   </tr>
