@@ -25,7 +25,7 @@
 
             <div class="content">
                 <div class="title mb-5">
-                    <img src="{{ asset('assets/Grouplogo.svg') }}" alt="sgtt" width="70%">
+                    <img src="{{ asset('assets/Grouplogo.svg') }}" alt="sgtt" width="70%" style="opacity: 95%">
                     <!--p class="logo-desc">Sistema de gerenciamento e 
                     transferência de tecnologia</p-->
                 </div>
@@ -33,9 +33,12 @@
                 <span class="subtitle text-dark mt-5 h1">Bem vindo ao sistema de gerenciamento e 
                     transferência de tecnologia, densenvolvido para facilitar sua vida.
                     <br><br><br>
-                    <a href="{{asset('login')}}" class="btn teste btn-dark btn-lg font-weight-bold p-3" style="background-color: black !important; border-color: black !important;">Faça login</a> ou  
-                    <a href="{{asset('register')}}" class="btn teste btn-outline-primary btn-lg p-3" style="font-weight: bolder">cadastre-se</a>
+                    
                 </span>
+
+                <a href="{{asset('login')}}" class="btn teste btn-dark btn-lg font-weight-bold p-3 pl-5 pr-5 m-2" style="background-color: black !important; border-color: black !important;">Fazer login</a> 
+
+                <a href="{{asset('register')}}" class="btn teste btn-outline-primary btn-lg p-3 pl-5 pr-5 m-2" style="font-weight: bolder">Cadastre-se</a>
             </div>
         </div>
     </body>

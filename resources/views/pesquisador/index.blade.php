@@ -124,7 +124,9 @@
 
             <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
             <div class="container-button">
-              <button class="btn-lg btn-success"><a href="{{route('semrepasse')}}">Criar Contrato</a></button>
+              <button class="btn-lg btn-success">
+                <i class="fa fa-angle-right" style="padding-right: 70px !important"></i><a href="{{route('semrepasse')}}">Criar Contrato</a>
+              </button>
             </div>
           </div>
         </div>
@@ -140,7 +142,9 @@
 
             <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
             <div class="container-button">
-              <button class="btn-lg btn-success"><a href="{{route('repasse')}}">Criar Contrato</a></button>
+              <button class="btn-lg btn-success">
+                <i class="fa fa-angle-double-right" style="padding-right: 70px !important"></i><a href="{{route('repasse')}}">Criar Contrato</a>
+              </button>
             </div>
           </div>
         </div>
