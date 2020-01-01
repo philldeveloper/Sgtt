@@ -33,7 +33,7 @@
 </div>
 
 
-<div class="card mt-5 color-card border-secondary border">
+<div class="card mt-5 color-card">
   <div class="card-body p-3">
         <div class="tab-pane show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
