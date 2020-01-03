@@ -17,7 +17,7 @@ class CreateContratoSrsTable extends Migration
             $table->increments('id');
             $table->string('nome_ict');
             $table->string('nome_parceiro');
-            $table->string('nome');
+            $table->string('nome_teste');
             $table->string('nat_juridica');
             $table->integer('cnpj');
             $table->string('endereco');
@@ -38,13 +38,14 @@ class CreateContratoSrsTable extends Migration
             $table->string('parceiro_endereco');
             $table->string('parceiro_cidade');
             $table->string('parceiro_uf');
+            $table->string('parceiro_cep');
             $table->string('parceiro_rep_legal');
             $table->integer('parceiro_cpf');
             $table->integer('parceiro_rg');
             $table->string('parceiro_orgao_exp');
             $table->string('parceiro_cargo');
-            $table->string('descricao');
-            $table->string('objetivo');
+            $table->string('clausula_descricao')->nullable()->default(null);
+            $table->string('clausula_objetivo')->nullable()->default(null);;
             $table->string('nome_inst_ict');
             $table->string('nome_inst_privado');
             $table->string('nome_inst_fundacao');

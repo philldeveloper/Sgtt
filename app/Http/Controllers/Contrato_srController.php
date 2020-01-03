@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
+use App\Contrato_sr;
+
 
 class Contrato_srController extends Controller
 {
@@ -13,7 +17,9 @@ class Contrato_srController extends Controller
      */
     public function index()
     {
-        //
+        $contratos_sr = Contrato_sr::all();
+
+        return view('contratos.tt.semrepasse.index', compact ('contratos_sr'));
     }
 
     /**
@@ -23,7 +29,7 @@ class Contrato_srController extends Controller
      */
     public function create()
     {
-        //
+        return view ('contratos.tt.semrepasse.index');
     }
 
     /**
@@ -34,7 +40,9 @@ class Contrato_srController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Contrato_sr::create($request->all());
+
+        return redirect()->back();
     }
 
     /**
@@ -79,6 +87,7 @@ class Contrato_srController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $Contrato_sr->delete();
+        return redirect()->back();
     }
 }

@@ -89,15 +89,13 @@
                 <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal">Saiba mais</button>
               </div>
 
-              <form class="p-0 m-0">
-              <h5 
-              class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">
-              ICT/ente público</h5>
+              
+              <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">ICT/ente público</h5>
   
               <div class="form-row">
                 <div class="form-group col-md-4">
-                  <label for="inputEmail4" class="font-weight-bold text-black">Nome</label>
-                  <input type="text" name="nome" class="form-control text-black font-weight-bold"  id="inputCity">               
+                  <label for="inputEmail4" class="font-weight-bold text-black">Nomes</label>
+                  <input type="text" name="nome_teste" class="form-control text-black font-weight-bold" id="nome">               
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
@@ -172,12 +170,12 @@
               </div>
              </div><!-- /.row-->
              <br>
-            </form>
+            
             </div><!--end of content-->
           </div><!--end-pane-->
           <div class="tab-pane " id="profile" role="tabpanel" aria-labelledby="profile-tab">
             <div class="container-fluid p-0 mt-0 m-0">
-              <form class="p-0 m-0">
+              
               
               <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">2º PARCEIRO</h5>
   
@@ -248,12 +246,12 @@
                 <a class="btn btn-lg btn-primary font-weight-bold btn-block" href="#"> <i class="fa fa-plus text-right mr-auto"></i>  Adicionar parceiro</a>
               </div>
 
-            </form>
+            
             </div><!--end of content-->
           </div><!--end pane-->
           {{--<div class="tab-pane " id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <div class="container-fluid p-0 mt-0 m-0">
-              <form class="p-0 m-0">
+              
               <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">3º PARCEIRO (Fundação de Apoio)</h5>
               <div class="form-row">
                 <div class="form-group col-md-4">
@@ -323,7 +321,7 @@
                 <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
               </div>
              </div>
-            </form>
+            
             </div><!--end of content-->
           </div><!--end pane-->--}}
           
@@ -342,7 +340,7 @@
     
                 <p><b>1.1</b> O presente Acordo de Parceria para PD&I tem por objeto a cooperação técnica e científica entre os PARTÍCIPES para desenvolver
                 o <br><div class="form-group col-md-12">
-                  <textarea class="form-control" name="clausula_descricao"></textarea></div>
+                  <textarea class="form-control" name="descricao"></textarea></div>
 
                 <a href="#" data-toggle="modal" data-target="#modalExemplo10"><i class="fas fa-fw fa-question-circle float-right"></i></a>
 
@@ -789,11 +787,17 @@
                     </a>
                   </div>
                 </div>
+
+                <div class="text-center">
+                  <button class="btn btn-lg btn-primary" type="submit">ENVIAR PARA O BANCO</button>
+                </div>
               </div>
             </div>
         </div>
   
-        <form id="regForm" action="/action_page.php">
+        <!--form id="regForm" action="/action_page.php"-->
+        <form id="regForm" class="form-horizontal" method="POST" action="{{ route('contrato_sr.store') }}">
+          {{ csrf_field() }}
           <div id="step-container" class="step-container m-4">
             
           </div>
