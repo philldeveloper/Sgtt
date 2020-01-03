@@ -38,13 +38,14 @@ class CreateContratoSrsTable extends Migration
             $table->string('parceiro_endereco');
             $table->string('parceiro_cidade');
             $table->string('parceiro_uf');
+            $table->string('parceiro_cep');
             $table->string('parceiro_rep_legal');
             $table->integer('parceiro_cpf');
             $table->integer('parceiro_rg');
             $table->string('parceiro_orgao_exp');
             $table->string('parceiro_cargo');
-            $table->string('descricao');
-            $table->string('objetivo');
+            $table->string('clausula_descricao');
+            $table->string('clausula_objetivo');
             $table->string('nome_inst_ict');
             $table->string('nome_inst_privado');
             $table->string('nome_inst_fundacao');
