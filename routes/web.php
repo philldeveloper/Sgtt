@@ -38,3 +38,6 @@ Route::get('/faq', 'PesquisadorController@faqindex')->name('faq');
 Route::get('/contratos/tt/semrepasse/new', 'PesquisadorController@semrepasseindex')->name('semrepasse');
 
 Route::get('/contratos/tt/comrepasse/new', 'PesquisadorController@repasseindex')->name('repasse');
+
+
+Route::resource('contrato_sr', 'Contrato_srController');
