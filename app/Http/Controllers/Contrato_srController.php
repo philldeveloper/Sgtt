@@ -20,7 +20,7 @@ class Contrato_srController extends Controller
     {
         $contratos_sr = Contrato_sr::all();
 
-        return view('contratos.tt.semrepasse.index', compact ('contratos_sr'));
+        return view('contratos.tt.semrepasse.index', compact('contratos_sr'));
     }
 
     /**
