@@ -109,7 +109,9 @@ class Contrato_srController extends Controller
      */
     public function show($id)
     {
-        //
+        $contratos_sr = Contrato_sr::find($id);
+
+        return view('contratos.tt.semrepasse.show', compact('contratos_sr'));
     }
 
     /**

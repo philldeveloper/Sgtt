@@ -68,7 +68,7 @@
                 <tbody class="mb-0 font-weight-bold text-dark">
                   @forelse($contratos_sr as $contratos)
                   <tr class="">
-                    <th scope="row">{{$contratos->id}}</th>
+                    <td>{{$contratos->id}}</td>
                     <td>{{$contratos->user->nome}}</td>
                     <td>{{$contratos->nome_ict}} e {{$contratos->nome_parceiro}}</td>
                     <td>{{$contratos->created_at->format('d/m/Y H:i:s')}}</td>
@@ -80,7 +80,7 @@
                     </td>
                     <td>
                       <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold">Ver</button>
+                        <a href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold" target="blank">Ver</a>
                         <button type="button" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold">Editar</button>
                         <button type="button" class="btn btn-sm pl-4 pr-4 btn-danger font-weight-bold">Deletar</button>
                       </div>

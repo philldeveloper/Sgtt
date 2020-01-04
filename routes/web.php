@@ -16,6 +16,9 @@ Route::get('/', function () {
 })->name('inicio');
 
 
+Route::get('/contrato_sr/{id}', 'Contrato_srController@show')->name('contratosr_show');
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
