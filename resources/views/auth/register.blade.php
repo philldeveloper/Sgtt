@@ -11,19 +11,72 @@
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
+
+                        <!-----------nome------------------->
+
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nome') }}</label>
+                            <label for="nome" class="col-md-4 col-form-label text-md-right">{{ __('Nome') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+                                <input id="nome" type="text" class="form-control{{ $errors->has('nome') ? ' is-invalid' : '' }}" name="nome" value="{{ old('nome') }}" required autofocus>
 
-                                @if ($errors->has('name'))
+                                @if ($errors->has('nome'))
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('name') }}</strong>
+                                        <strong>{{ $errors->first('nome') }}</strong>
                                     </span>
                                 @endif
                             </div>
                         </div>
+
+                        <!-----------cpf------------------->
+
+                        <div class="form-group row">
+                            <label for="cpf" class="col-md-4 col-form-label text-md-right">{{ __('Cpf') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="cpf" type="text" class="form-control{{ $errors->has('cpf') ? ' is-invalid' : '' }}" name="cpf" value="{{ old('cpf') }}" required autofocus>
+
+                                @if ($errors->has('cpf'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('cpf') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <!-----------telefone------------------->
+
+                        <div class="form-group row">
+                            <label for="telefone" class="col-md-4 col-form-label text-md-right">{{ __('Telefone') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="telefone" type="integer" class="form-control{{ $errors->has('telefone') ? ' is-invalid' : '' }}" name="telefone" value="{{ old('telefone') }}" required autofocus>
+
+                                @if ($errors->has('telefone'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('telefone') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <!--------celular--------------->
+
+                        <div class="form-group row">
+                            <label for="celular" class="col-md-4 col-form-label text-md-right">{{ __('Celular') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="celular" type="integer" class="form-control{{ $errors->has('celular') ? ' is-invalid' : '' }}" name="celular" value="{{ old('celular') }}" required autofocus>
+
+                                @if ($errors->has('celular'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('celular') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <!--------email--------------->
 
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail ') }}</label>
@@ -38,7 +91,7 @@
                                 @endif
                             </div>
                         </div>
-
+                        <hr>
                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Senha') }}</label>
 

@@ -57,4 +57,8 @@ class Contrato_sr extends Model
         'nome_rep_privado_foro',
         'cargo_rep_privado_foro',
     ];
+
+    public function users () {
+        return $this->belongsTo('App\Contrato_sr', 'user_id');
+    }
 }
