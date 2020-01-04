@@ -16,7 +16,14 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password','ativo', 'admin',
+        'nome', 
+        'cpf', 
+        'email', 
+        'telefone', 
+        'celular', 
+        'password',
+        'ativo', 
+        'admin',
     ];
 
     /**
@@ -36,4 +43,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    
+    public function contratos_sr(){
+        return $this->hasMany('App\Contrato_sr')->withPivot('id');
+    }
+    
 }

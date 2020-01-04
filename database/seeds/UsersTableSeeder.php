@@ -14,19 +14,25 @@ class UsersTableSeeder extends Seeder
     {
 
     	User::create ([
-		  'name' => 'Administrador',
+		  'nome' => 'Administrador',
+		  'cpf' => 123465,
+		  'telefone' => 45789,
+		  'celular' => 45789,
 		  'ativo' => 1,
 		  'admin' => 1,
 		  'email' => 'admin@email.com',
-		  'password' => bcrypt('123'),
+		  'password' => bcrypt('kmzwa8awaa'),
 		]);
 
 		User::create ([
-		  'name' => 'Pesquisador',
+		  'nome' => 'Pesquisador',
+		  'cpf' => 1234765,
+		  'telefone' => 45789,
+		  'celular' => 45789,
 		  'ativo' => 1,
 		  'admin' => 0,
 		  'email' => 'pesquisador@email.com',
-		  'password' => bcrypt('123'),
+		  'password' => bcrypt('kmzwa8awaa'),
 		]);
     }
 }
