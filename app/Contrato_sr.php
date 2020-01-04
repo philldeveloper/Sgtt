@@ -56,9 +56,10 @@ class Contrato_sr extends Model
         'nome_inst_privado_foro',
         'nome_rep_privado_foro',
         'cargo_rep_privado_foro',
+        'user_id'
     ];
 
-    public function users () {
+    public function user () {
         return $this->belongsTo('App\Contrato_sr', 'user_id');
     }
 }
