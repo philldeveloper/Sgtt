@@ -9,7 +9,7 @@ use Auth;
 use App\Contrato_sr;
 
 
-class HomeController extends Controller
+class IndexController extends Controller
 {
     /**
      * Create a new controller instance.

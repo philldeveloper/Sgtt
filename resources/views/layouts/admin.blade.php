@@ -50,19 +50,19 @@
       <ul class="mt-5 navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-          <a class="nav-link" href="{{route('pesquisador')}}">
+          <a class="nav-link" href="">
             <i class="fas fa-fw fa-hands-helping" style="color: white !important"></i>
             <span>Contratos</span></a>
         </li>
         <!-- Nav Item - Charts -->
         <li class="nav-item">
-          <a class="nav-link" href="{{route('analytics')}}">
+          <a class="nav-link" href="">
             <i class="fas fa-fw fa-chart-area" style="color: white !important"></i>
             <span>Contábil</span></a>
         </li>
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-          <a class="nav-link" href="{{route('faq')}}">
+          <a class="nav-link" href="">
             <i class="fas fa-fw fa-question-circle" style="color: white !important"></i>
             <span>Faq</span>
           </a>

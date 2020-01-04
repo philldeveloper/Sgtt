@@ -13,7 +13,9 @@ class Contrato_crController extends Controller
      */
     public function index()
     {
-        //
+        $contratos_cr = Contrato_cr::all();
+
+        return view('contratos.tt.comrepasse.index', compact('contratos_cr'));
     }
 
     /**
