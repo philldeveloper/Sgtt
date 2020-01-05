@@ -16,10 +16,11 @@ Route::get('/', function () {
 })->name('inicio');
 
 
+Auth::routes();
+
 Route::get('/contrato_sr/{id}', 'Contrato_srController@show')->name('contratosr_show');
 
-
-Auth::routes();
+Route::get('/contrato_sr/edit/{id}', 'Contrato_srController@edit')->name('contratosr_edit');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -28,15 +29,4 @@ Route::resource('contrato_sr', 'Contrato_srController');
 Route::resource('contrato_cr', 'Contrato_crController');
 
 Route::resource('inicio', 'IndexController');
-
-
-
-/*
-
-
-Route::get('/faq', 'PesquisadorController@faqindex')->name('faq');
-
-*/
-
-
 

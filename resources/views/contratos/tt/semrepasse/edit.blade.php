@@ -27,7 +27,7 @@
 
 
 <div class="title-header">
-    <span class="h3 ml-3 font-weight-bold text-danger">Editar Contrato</span>
+    <span class="h3 ml-3 font-weight-bold text-danger">Editar Contrato <span class="badge badge-danger">{{$contratos_sr->id}}</span></span>
     <div class="badge badge-dark lead  mr-auto float-right">sem repasse</div>
     <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
 </div>
@@ -78,8 +78,8 @@
               <div class="container-fluid pb-5 pt-5 mt-0 m-0">
                 <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">
                   ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI
-                  CELEBRAM <input class="mb-2  myform-control text-black" type="text" name="nome_ict" id="" placeholder="ICT ou ente público"> E 
-                  <input class="mb-2  myform-control text-black" type="text" name="nome_parceiro" id="" placeholder="Nome do parceiro">  
+                  CELEBRAM <input class="mb-2 myform-control text-black" type="text" name="nome_ict" id="" value="{{$contratos_sr->nome_ict}}"> E 
+                  <input class="mb-2  myform-control text-black" type="text" name="nome_parceiro" id="" value="{{$contratos_sr->nome_parceiro}}">
                   NA FORMA A SEGUIR.</h5><br>
               </div>
 
@@ -94,39 +94,39 @@
   
               <div class="form-row">
                 <div class="form-group col-md-4">
-                  <label for="inputEmail4" class="font-weight-bold text-black">Nomes</label>
-                  <input type="text" name="nome_teste" class="form-control text-black font-weight-bold" id="nome">               
+                  <label for="inputEmail4" class="font-weight-bold text-black">Nome</label>
+                  <input type="text" name="nome_teste" class="form-control text-black font-weight-bold" id="nome" value="{{$contratos_sr->nome_teste}}">               
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
                   <!-- Botão para acionar modal -->
                   <a href="#" data-toggle="modal" data-target="#modalExemplo1"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold" name="nat_juridica" id="inputPassword4" placeholder="">
+                  <input type="text" class="form-control text-black font-weight-bold" name="nat_juridica" id="inputPassword4" value="{{$contratos_sr->nat_juridica}}">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
                   <!-- Botão para acionar modal -->
                   <a href="#" data-toggle="modal" data-target="#modalExemplo2"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold" name="cnpj" id="inputCity">
+                  <input type="text" class="form-control text-black font-weight-bold" name="cnpj" id="inputCity" value="{{$contratos_sr->cnpj}}">
                 </div>
               </div>
   
               <div class="form-row">
                 <div class="form-group col-md-5">
                   <label for="inputCity" class="font-weight-bold text-black">Endereço</label>
-                  <input type="text" class="form-control text-black font-weight-bold" name="endereco" id="inputCity">
+                  <input type="text" class="form-control text-black font-weight-bold" name="endereco" id="inputCity" value="{{$contratos_sr->endereco}}">
                 </div>
                 <div class="form-group col-md-3">
                   <label for="inputCity" class="font-weight-bold text-black">Cidade</label>
-                  <input type="text" class="form-control text-black font-weight-bold" name="cidade" id="inputCity">
+                  <input type="text" class="form-control text-black font-weight-bold" name="cidade" id="inputCity" value="{{$contratos_sr->cidade}}">
                 </div>
                 <div class="form-group col-md-2">
                   <label for="inputState" class="font-weight-bold text-black">UF</label>
-                  <input type="text" class="form-control text-black font-weight-bold" name="uf" id="inputCity">
+                  <input type="text" class="form-control text-black font-weight-bold" name="uf" id="inputCity" value="{{$contratos_sr->uf}}">
                 </div>
                 <div class="form-group col-md-2">
                   <label for="inputZip" class="font-weight-bold text-black">CEP</label>
-                  <input type="text" class="form-control text-black font-weight-bold" name="cep" id="inputZip">
+                  <input type="text" class="form-control text-black font-weight-bold" name="cep" id="inputZip" value="{{$contratos_sr->cep}}">
                 </div>
               </div>
   
@@ -135,38 +135,38 @@
                 <label for="inputEmail4" class="font-weight-bold text-black">Representante Legal</label>
                 <!-- Botão para acionar modal -->
                   <a href="#" data-toggle="modal" data-target="#modalExemplo3"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold" name="rep_legal" id="inputEmail4" placeholder="Nome">
+                <input type="text" class="form-control text-black font-weight-bold" name="rep_legal" id="inputEmail4" value="{{$contratos_sr->rep_legal}}">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
-                <input type="text" class="form-control text-black font-weight-bold" name="cpf" id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold" name="cpf" id="inputPassword4" value="{{$contratos_sr->cpf}}">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
-                <input type="text" class="form-control text-black font-weight-bold" name="rg" id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold" name="rg" id="inputPassword4" value="{{$contratos_sr->rg}}">
               </div>
               <div class="form-group col-md-2">
                 <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
-                <input type="text" class="form-control text-black font-weight-bold" name="orgao_exp" id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold" name="orgao_exp" id="inputPassword4" value="{{$contratos_sr->orgao_exp}}">
               </div>
              </div>
   
              <div class="form-row">
               <div class="form-group col-md-3">
                 <label for="inputEmail4" class="font-weight-bold text-black">Nacionalidade</label>
-                 <input type="text" class="form-control text-black font-weight-bold" name="nacionalidade" id="inputEmail4" placeholder="Nacionalidade">
+                 <input type="text" class="form-control text-black font-weight-bold" name="nacionalidade" id="inputEmail4" value="{{$contratos_sr->nacionalidade}}">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">Estado Civil</label>
-                 <input type="text" class="form-control text-black font-weight-bold" name="est_civil" id="inputPassword4" placeholder="Estado Civil">
+                 <input type="text" class="form-control text-black font-weight-bold" name="est_civil" id="inputPassword4" value="{{$contratos_sr->est_civil}}">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">Ato de Nomeação</label>
-                <input type="text" class="form-control text-black font-weight-bold" name="ato_nomeacao" id="inputPassword4" placeholder="Ato de Nomeação">
+                <input type="text" class="form-control text-black font-weight-bold" name="ato_nomeacao" id="inputPassword4" value="{{$contratos_sr->ato_nomeacao}}">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">Doravante Denominado</label>
-                <input type="text" class="form-control text-black font-weight-bold" name="doravante_denominado" id="inputPassword4" placeholder="ICT/Agência de Fomento">
+                <input type="text" class="form-control text-black font-weight-bold" name="doravante_denominado" id="inputPassword4" value="{{$contratos_sr->doravante_denominado}}">
               </div>
              </div><!-- /.row-->
              <br>
@@ -182,38 +182,38 @@
               <div class="form-row">
                 <div class="form-group col-md-4">
                   <label for="inputEmail4" class="font-weight-bold text-black">Instituição</label>                  
-                  <input type="text" class="form-control text-black font-weight-bold"  name="nome_parceiro_instituicao" id="inputEmail4" placeholder="Nome">
+                  <input type="text" class="form-control text-black font-weight-bold"  name="nome_parceiro_instituicao" id="inputEmail4" value="{{$contratos_sr->nome_parceiro_instituicao}}">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
                   <!-- Botão para acionar modal -->
                   <a href="#" data-toggle="modal" data-target="#modalExemplo4"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold" name="parceiro_nat_juridica" id="inputPassword4" placeholder="Natureza Jurídica">
+                  <input type="text" class="form-control text-black font-weight-bold" name="parceiro_nat_juridica" id="inputPassword4" value="{{$contratos_sr->parceiro_nat_juridica}}">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
                   <!-- Botão para acionar modal -->
                   <a href="#" data-toggle="modal" data-target="#modalExemplo5"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold" name="parceiro_cnpj" id="inputPassword4" placeholder="CNPJ">
+                  <input type="text" class="form-control text-black font-weight-bold" name="parceiro_cnpj" id="inputPassword4" value="{{$contratos_sr->parceiro_cnpj}}">
                 </div>
               </div>
   
               <div class="form-row">
                 <div class="form-group col-md-5">
                   <label for="inputCity" class="font-weight-bold text-black">Endereço</label>
-                    <input type="text" class="form-control text-black font-weight-bold" name="parceiro_endereco" id="inputCity">
+                    <input type="text" class="form-control text-black font-weight-bold" name="parceiro_endereco" id="inputCity" value="{{$contratos_sr->parceiro_endereco}}">
                 </div>
                 <div class="form-group col-md-3">
                   <label for="inputCity" class="font-weight-bold text-black">Cidade</label>
-                    <input type="text" class="form-control text-black font-weight-bold" name="parceiro_cidade" id="inputCity">
+                    <input type="text" class="form-control text-black font-weight-bold" name="parceiro_cidade" id="inputCity" value="{{$contratos_sr->parceiro_cidade}}">
                 </div>
                 <div class="form-group col-md-2">
                   <label for="inputState" class="font-weight-bold text-black">UF</label>
-                  <input type="text" class="form-control text-black font-weight-bold" name="parceiro_uf" id="inputCity">
+                  <input type="text" class="form-control text-black font-weight-bold" name="parceiro_uf" id="inputCity" value="{{$contratos_sr->parceiro_uf}}">
                 </div>
                 <div class="form-group col-md-2">
                   <label for="inputZip" class="font-weight-bold text-black">CEP</label>
-                    <input type="text" class="form-control text-black font-weight-bold" name="parceiro_cep" id="inputZip">
+                    <input type="text" class="form-control text-black font-weight-bold" name="parceiro_cep" id="inputZip" value="{{$contratos_sr->parceiro_cep}}">
                 </div>
               </div>
   
@@ -222,23 +222,23 @@
                 <label for="inputEmail4" class="font-weight-bold text-black">Representante Legal</label>
                 <!-- Botão para acionar modal -->
                   <a href="#" data-toggle="modal" data-target="#modalExemplo6"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold" name="parceiro_rep_legal" id="inputEmail4" placeholder="Nome">
+                <input type="text" class="form-control text-black font-weight-bold" name="parceiro_rep_legal" id="inputEmail4" value="{{$contratos_sr->parceiro_rep_legal}}">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
-                <input type="text" class="form-control text-black font-weight-bold" name="parceiro_cpf" id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold" name="parceiro_cpf" id="inputPassword4" value="{{$contratos_sr->parceiro_cpf}}">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
-                <input type="text" class="form-control text-black font-weight-bold" name="parceiro_rg" id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold" name="parceiro_rg" id="inputPassword4" value="{{$contratos_sr->parceiro_rg}}">
               </div>
               <div class="form-group col-md-2">
                 <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
-                <input type="text" class="form-control text-black font-weight-bold" name="parceiro_orgao_exp" id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold" name="parceiro_orgao_exp" id="inputPassword4" value="{{$contratos_sr->parceiro_orgao_exp}}">
               </div>
               <div class="form-group col-md-2">
                 <label for="inputPassword4" class="font-weight-bold text-black">Cargo</label>
-                <input type="text" class="form-control text-black font-weight-bold" name="parceiro_cargo" id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold" name="parceiro_cargo" id="inputPassword4" value="{{$contratos_sr->parceiro_cargo}}">
               </div>
              </div>
              <hr>
@@ -249,6 +249,8 @@
             
             </div><!--end of content-->
           </div><!--end pane-->
+
+          <!-----------------------no code usable------------------------------------->
           {{--<div class="tab-pane " id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <div class="container-fluid p-0 mt-0 m-0">
               
@@ -257,17 +259,17 @@
                 <div class="form-group col-md-4">
                   <label for="inputEmail4" class="font-weight-bold text-black">Instituição</label>
                   <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputEmail4" placeholder="Nome">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="inputEmail4" value="Nome">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
                   <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="Natureza Jurídica">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" value="Natureza Jurídica">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
                   <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="CNPJ">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" value="CNPJ">
                 </div>
               </div>
   
@@ -298,27 +300,27 @@
               <div class="form-group col-md-4">
                 <label for="inputEmail4" class="font-weight-bold text-black">Representante Legal</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputEmail4" placeholder="Nome">
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputEmail4" value="Nome">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" value="">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" value="">
               </div>
               <div class="form-group col-md-2">
                 <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" value="">
               </div>
               <div class="form-group col-md-2">
                 <label for="inputPassword4" class="font-weight-bold text-black">Cargo</label>
                 <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" value="">
               </div>
              </div>
             
@@ -327,7 +329,7 @@
           
           <!------------------------------------------------------------------------->
   
-          <div class="tab-pane " id="clausula1" role="tabpanel" aria-labelledby="clausula1-tab">
+          <div class="tab-pane" id="clausula1" role="tabpanel" aria-labelledby="clausula1-tab">
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 <p>Os <b>PARCEIROS</b>, anteriormente qualificados, resolvem celebrar
@@ -339,14 +341,16 @@
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">1. Cláusula Primeira - do Objeto</h5>
     
                 <p><b>1.1</b> O presente Acordo de Parceria para PD&I tem por objeto a cooperação técnica e científica entre os PARTÍCIPES para desenvolver
-                o <br><div class="form-group col-md-12">
-                  <textarea class="form-control" name="descricao"></textarea></div>
+                o <br>
+                <div class="form-group col-md-12">
+                  <textarea class="form-control" name="clausula_descricao" value="{{$contratos_sr->clausula_descricao}}"></textarea>
+                </div>
 
                 <a href="#" data-toggle="modal" data-target="#modalExemplo10"><i class="fas fa-fw fa-question-circle float-right"></i></a>
 
                 <br>a ser executado nos termos do Plano de Trabalho, anexo, visando 
 
-                <br><div class="form-group col-md-12"><textarea name="clausula_objetivo" class="form-control"></textarea></div>
+                <br><div class="form-group col-md-12"><textarea name="clausula_objetivo" class="form-control" value="{{$contratos_sr->clausula_objetivo}}"></textarea></div>
 
                 <a href="#" data-toggle="modal" data-target="#modalExemplo11"><i class="fas fa-fw fa-question-circle float-right"></i></a>
 
@@ -381,7 +385,7 @@
   
         <!------------------------------------------------------------------------->
   
-        <div class="tab-pane " id="clausula3" role="tabpanel" aria-labelledby="clausula3-tab">
+        <div class="tab-pane" id="clausula3" role="tabpanel" aria-labelledby="clausula3-tab">
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
@@ -389,19 +393,19 @@
     
                 <p><b>3.1 </b>São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I:</p>
                  
-                <p class="ml-2 bg-light roboto-font"><b>3.1.1. Do(a) ICT:</b><input type="text" class="myform-control" name="nome_inst_ict" placeholder="Instituição"></p>
+                <p class="ml-2 bg-light roboto-font"><b>3.1.1. Do(a) ICT:</b><input type="text" class="myform-control" name="nome_inst_ict" value="{{$contratos_sr->nome_inst_ict}}"></p>
            
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div> Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD&I ;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div> Manter rigoroso controle das despesas efetuadas e dos respectivos comprovantes com vistas à prestação de contas da execução do objeto deste Acordo;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">D)</div> Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">E)</div> Monitorar, avaliar e prestar contas nos termos deste Acordo; </p>
-                  <p class="ml-2 bg-light roboto-font"><b>3.1.2.  Do(a) <input  class="myform-control" type="text" name="nome_inst_privado" placeholder="Instituição">:(PARCEIRO PRIVADO)</b></p>
+                  <p class="ml-2 bg-light roboto-font"><b>3.1.2.  Do(a) <input  class="myform-control" type="text" name="nome_inst_privado" value="{{$contratos_sr->nome_inst_privado}}">:(PARCEIRO PRIVADO)</b></p>
                
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div>Transferir os recursos financeiros acordados, segundo o Cronograma de Desembolso constante no Plano de Trabalho, por meio do aporte de recursos financeiros de sua responsabilidade; <br><div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div> Indicar coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução; <br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div> Colaborar, nos termos do plano de trabalho, para que o Acordo alcance os objetivos nele descritos;
                   <br><br>
-                  <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a) <input type="text" class="myform-control" name="nome_inst_fundacao" placeholder="Instituição">:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p>
+                  <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a) <input type="text" class="myform-control" name="nome_inst_fundacao" value="{{$contratos_sr->nome_inst_fundacao}}">:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p>
                  
                     <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div>  Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD& I; <br>
                     <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div>  Prestar à ICT informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;<br>
@@ -442,8 +446,8 @@
                    trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si 
                    e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem 
                    na execução do objeto deste Acordo, de forma que não se estabelecerá, em hipótese alguma,
-                  vínculo empregatício ou de qualquer outra natureza com a <input type="text" name="nome_empresa_parceira" placeholder="Empresa parceira"> e
-                  o pessoal <input type="text" name="nome_ict_parceira" placeholder="ICT ou Agência de fomento"> vice-versa, cabendo a cada PARCEIRO a responsabilidade 
+                  vínculo empregatício ou de qualquer outra natureza com a <input type="text" name="nome_empresa_parceira" value="{{$contratos_sr->nome_empresa_parceira}}"> e
+                  o pessoal <input type="text" name="nome_ict_parceira" value="{{$contratos_sr->nome_ict_parceira}}"> vice-versa, cabendo a cada PARCEIRO a responsabilidade 
                   pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a
                   documentação comprobatória da regularidade na contratação.<br>
                 </p>
@@ -590,7 +594,7 @@
                 
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">10. CLÁUSULA DÉCIMA - DA VIGÊNCIA E DA PRORROGAÇÃO<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
     
-                <p><b>10.1</b> O presente Acordo de Parceria para PD&I vigerá pelo prazo de <input type="text" name="prazo_vigencia" placeholder="De (XXXX) anos" id=""> anos, a partir da data de sua assinatura, prorrogáveis.</p>
+                <p><b>10.1</b> O presente Acordo de Parceria para PD&I vigerá pelo prazo de <input type="text" name="prazo_vigencia" value="{{$contratos_sr->prazo_vigencia}}"> anos, a partir da data de sua assinatura, prorrogáveis.</p>
                 <p><b>10.2</b> Este Acordo de Parceria poderá ser prorrogado por meio de termo aditivo, com as respectivas alterações no Plano de Trabalho, mediante a apresentação de justifica técnica.</p>
             
               </div>
@@ -731,29 +735,29 @@
                   <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">17. CLÁUSULA DÉCIMA SÉTIMA - DO FORO <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
       
                   <p><b>17.1.</b>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de
-                   <input class="myform-control text-black"  type="text" name="estado_foro" placeholder="Estado">, cidade de <input  class="myform-control" type="text" name="cidade_foro" placeholder="Cidade">,
+                   <input class="myform-control text-black"  type="text" name="estado_foro" value="{{$contratos_sr->estado_foro}}">, cidade de <input  class="myform-control" type="text" name="cidade_foro" value="{{$contratos_sr->cidade_foro}}">,
                                 para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109
                                 da Constituição Federal.
                                 E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente
                                 instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.
                                 </p>
-                      <input type="text" class="myform-control text-black"  name="cidade_uf_dia_foro" id="" placeholder="Cidade/UF, dia de mês de ano. ">   <br>   
+                      <input type="text" class="myform-control text-black"  name="cidade_uf_dia_foro" id="" value="{{$contratos_sr->cidade_uf_dia_foro}}">   <br>   
                     <div class="mb-4 row justify-content-center">
                       <div class="col-6 align-self-center">
                         <div class="input-control-center">
                           <p class="mt-4">Pelo(a)  <span class="text-blue">ICT:</span> 
-                          <input class="myform-control text-black" type="text" name="ict_inst_foro" id="" placeholder="Instituição"> </p>   
-                            <input class="mb-2 myform-control text-black" type="text" name="nome_rep_foro" id="" placeholder="Nome do representante legal"> 
-                            <br><input class="mb-2  myform-control text-black" type="text" name="cargo_rep_foro" id="" placeholder="Cargo"> 
+                          <input class="myform-control text-black" type="text" name="ict_inst_foro" id="" value="{{$contratos_sr->ict_inst_foro}}"> </p>   
+                            <input class="mb-2 myform-control text-black" type="text" name="nome_rep_foro" id="" value="{{$contratos_sr->nome_rep_foro}}"> 
+                            <br><input class="mb-2  myform-control text-black" type="text" name="cargo_rep_foro" id="" value="{{$contratos_sr->cargo_rep_foro}}"> 
                           </div>
                       </div>
                     </div>
                        <div class="mt-4 row justify-content-center">
                          <div class="col-6 align-self-center">
                            <div class="input-control-center">
-                             <p>Pelo(a) <span class="text-blue">PARCEIRO PRIVADO:</span> <input class="myform-control text-black" type="text" name="nome_inst_privado_foro" id="" placeholder="Instituição"> </p>      
-                             <input class="mb-2 myform-control text-black" type="text" name="nome_rep_privado_foro" id="" placeholder="Nome do representante legal"> 
-                             <br><input class="mb-2  myform-control text-black" type="text" name="cargo_rep_privado_foro" id="" placeholder="Cargo"> 
+                             <p>Pelo(a) <span class="text-blue">PARCEIRO PRIVADO:</span> <input class="myform-control text-black" type="text" name="nome_inst_privado_foro" id="" value="{{$contratos_sr->nome_inst_privado_foro}}"> </p>      
+                             <input class="mb-2 myform-control text-black" type="text" name="nome_rep_privado_foro" id="" value="{{$contratos_sr->nome_rep_privado_foro}}"> 
+                             <br><input class="mb-2  myform-control text-black" type="text" name="cargo_rep_privado_foro" id="" value="{{$contratos_sr->cargo_rep_privado_foro}}"> 
                            </div>
                          </div>
                        </div>
@@ -791,13 +795,15 @@
                 <div class="text-center">
                   <button class="btn btn-lg btn-primary" type="submit">ENVIAR PARA O BANCO</button>
                 </div>
+                
               </div>
             </div>
         </div>
   
         <!--form id="regForm" action="/action_page.php"-->
-        <form id="regForm" class="form-horizontal" method="POST" action="{{ route('contrato_sr.store') }}">
+        <form id="regForm" class="form-horizontal" method="POST" action="{{ route('contrato_sr.update', $contratos_sr->id) }}">
           {{ csrf_field() }}
+          {{ method_field('PUT') }}
           <div id="step-container" class="step-container m-4">
             
           </div>

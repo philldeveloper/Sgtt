@@ -27,7 +27,7 @@
 
 
 <div class="title-header">
-    <span class="h3 ml-3 font-weight-bold text-primary">Exibir Contrato</span>
+    <span class="h3 ml-3 font-weight-bold text-primary">Exibir Contrato <span class="badge badge-primary">{{$contratos_sr->id}}</span></span>
     <div class="badge badge-dark lead  mr-auto float-right">sem repasse</div>
     <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
 </div>
@@ -241,12 +241,7 @@
                 <input type="text" class="form-control text-black font-weight-bold" name="parceiro_cargo" id="inputPassword4" placeholder="{{$contratos_sr->parceiro_cargo}}" disabled="">
               </div>
              </div>
-             <hr>
-             <div class="form-group col-md-4 mt-3" style="margin-left: -15px">
-                <a class="btn btn-lg btn-primary font-weight-bold btn-block" href="#"> <i class="fa fa-plus text-right mr-auto"></i>  Adicionar parceiro</a>
-              </div>
-
-            
+             <hr>           
             </div><!--end of content-->
           </div><!--end pane-->
 

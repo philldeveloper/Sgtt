@@ -32,6 +32,13 @@
     <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
 </div>
 
+@if (session('success'))
+     
+<div class="alert alert-success">
+    {{ session('success') }}
+</div>
+ 
+@endif
 
 <div class="card mt-5 color-card">
   <div class="card-body p-3">

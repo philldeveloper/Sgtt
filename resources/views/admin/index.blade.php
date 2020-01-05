@@ -48,6 +48,12 @@
     <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
 </div>
 
+@if ($message = Session::get('success'))
+    <div class="alert alert-success">
+        <p>{{ $message }}</p>
+    </div>
+@endif
+
 <div class="col-12 mt-5">
   <div class="card card-shadow mb-4">
     <div class="card-body p-3 mb-5">
@@ -79,11 +85,16 @@
                       </div>
                     </td>
                     <td>
-                      <div class="btn-group" role="group" aria-label="Basic example">
-                        <a href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold" target="blank">Ver</a>
-                        <button type="button" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold">Editar</button>
-                        <button type="button" class="btn btn-sm pl-4 pr-4 btn-danger font-weight-bold">Deletar</button>
-                      </div>
+                      <form action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <a href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold" target="blank">Ver</a>
+                          <a href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold" target="blank">Editar</a>
+
+                          @csrf
+                          @method('DELETE')
+                          <button class="btn btn-sm pl-4 pr-4 bg-danger text-light font-weight-bold" type="submit">Deletar</button>
+                        </div>
+                     </form>
                     </td>
                   </tr>
                   @empty
