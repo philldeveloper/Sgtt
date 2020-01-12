@@ -27,6 +27,17 @@
 <style>
   a#teste:hover{color:white !important;}
   #wrapper #content-wrapper {background-color: #f5f5f5}
+
+  .my-sidebar {
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #334D52 !important;
+    color: white !important;
+}
+
 </style>
 
 <body id="page-top">
@@ -35,14 +46,14 @@
   <div id="wrapper">
    <div class="my-sidebar">
      <div class="container-profile">
-       <img class="rounded-circle" src="{{asset('assets/dialles.png')}}">
+       <img class="rounded-circle" src="https://image.flaticon.com/icons/svg/149/149071.svg">
        <!-- <div class="logo">
          <img src="{{ asset('assets/logo-pibiti.svg') }}" alt="SGTT">
          <span class="title-logo text-white">SGTT</span>
        </div> -->
        <div class="info-user">
-         <span class="name-desc text-white">Dialles Nogueira</span>
-         <span class="email-desc">dialles@hotmail.com</span>
+         <span class="name-desc text-white">{{Auth::user()->nome}}</span>
+         <span class="email-desc">{{Auth::user()->email}}</span>
        </div>
       </div>
       <div class="dropdown-divider"></div>

@@ -42,8 +42,8 @@
          <span class="title-logo text-white">SGTT</span>
        </div> -->
        <div class="info-user">
-         <span class="name-desc text-white">Tauan Almeida</span>
-         <span class="email-desc">tauan@administrador.com</span>
+         <span class="name-desc text-white">{{Auth::user()->nome}}</span>
+         <span class="email-desc">{{Auth::user()->email}}</span>
        </div>
       </div>
       <div class="dropdown-divider"></div>

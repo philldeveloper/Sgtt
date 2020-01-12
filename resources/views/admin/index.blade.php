@@ -77,8 +77,8 @@
                     <td>{{$contratos->id}}</td>
                     <td>{{$contratos->user->nome}}</td>
                     <td>{{$contratos->nome_ict}} e {{$contratos->nome_parceiro}}</td>
-                    <td>{{$contratos->created_at->format('d/m/Y H:i:s')}}</td>
-                    <td>{{$contratos->updated_at->format('d/m/Y H:i:s')}}</td>
+                    <td></td>
+                    <td></td>
                     <td>
                       <div class="progress mt-2 mr-3">
                         <div class="progress-bar bg-primary pr-3 pl-3" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Apreciação</div>
