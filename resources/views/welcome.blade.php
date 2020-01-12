@@ -14,14 +14,6 @@
     <body>
         
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                    <a class="text-dark" href="{{asset('inicio')}}">Início</a>
-                    @else
-                    @endauth
-                </div>
-            @endif
 
             <div class="content">
                 <div class="title mb-5">
@@ -35,10 +27,13 @@
                     <br><br><br>
                     
                 </span>
-
+                @if (Route::has('login'))
+                <a href="{{asset('inicio')}}" class="btn teste btn-dark btn-lg font-weight-bold p-3 pl-5 pr-5 m-2" style="background-color: black !important; border-color: black !important;">Ir para Início</a>
+                @else
                 <a href="{{asset('login')}}" class="btn teste btn-dark btn-lg font-weight-bold p-3 pl-5 pr-5 m-2" style="background-color: black !important; border-color: black !important;">Fazer login</a> 
 
                 <a href="{{asset('register')}}" class="btn teste btn-outline-primary btn-lg p-3 pl-5 pr-5 m-2" style="font-weight: bolder">Cadastre-se</a>
+                @endif
             </div>
         </div>
     </body>
