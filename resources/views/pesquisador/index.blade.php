@@ -116,7 +116,7 @@
       <div class="col-6">
         <div class="card card-shadow mb-4">
           <div class="card-body">
-            <h3 class="mt-2 font-weight-bold ml-auto">Acordo de Cooperação <span class="text-dark">sem repasse de recursos</span></h3>
+            <h3 class="mt-2 font-weight-bold ml-auto">Acordo de Cooperação <span class="text-dark">sem repasse</span></h3>
             <hr>
             <div class="img-category mb-4 float-left mr-3">
               <img src="https://www.flaticon.com/premium-icon/icons/svg/2081/2081811.svg" alt="Shield">
@@ -124,9 +124,7 @@
 
             <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
             <div class="container-button">
-              <button class="btn-lg btn-success">
-                <i class="fa fa-angle-right" style="padding-right: 70px !important"></i><a href="{{route('semrepasse')}}">Criar Contrato</a>
-              </button>
+              <a href="{{route('contrato_sr.index')}}" class="btn-lg btn btn-success">Criar Contrato</a>
             </div>
           </div>
         </div>
@@ -134,7 +132,7 @@
       <div class="col-6">
         <div class="card card-shadow mb-4">
           <div class="card-body">
-            <h3 class="mt-2 font-weight-bold ml-auto">Acordo de Cooperação <span class="text-dark">com repasse de recursos</span></h3>
+            <h3 class="mt-2 font-weight-bold ml-auto">Acordo de Cooperação <span class="text-dark">com repasse</span></h3>
             <hr>
             <div class="img-category mb-4 float-left mr-3">
               <img src="https://image.flaticon.com/icons/svg/747/747001.svg" alt="Shield">
@@ -142,9 +140,7 @@
 
             <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
             <div class="container-button">
-              <button class="btn-lg btn-success">
-                <i class="fa fa-angle-double-right" style="padding-right: 70px !important"></i><a href="{{route('repasse')}}">Criar Contrato</a>
-              </button>
+              <a href="#" class="btn-lg btn btn-success">Criar Contrato</a>
             </div>
           </div>
         </div>
@@ -164,7 +160,6 @@
                 <thead class="roboto-font font-weight-bold text-dark border-left-success bg-light" style="font-size: 1.25rem">
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Desenvolvido por</th>
                     <th scope="col">ICT | Parceiro</th>
                     <th scope="col">Criado em</th>
                     <th scope="col">Modificado em</th>
@@ -176,7 +171,6 @@
                   @forelse($contratos_sr as $contratos)
                   <tr class="">
                     <th scope="row">{{$contratos->id}}</th>
-                    <td>{{$contratos->user->nome}}</td>
                     <td>{{$contratos->nome_ict}} e {{$contratos->nome_parceiro}}</td>
                     <td>{{$contratos->created_at->format('d/m/Y H:i:s')}}</td>
                     <td>{{$contratos->updated_at->format('d/m/Y H:i:s')}}</td>
@@ -186,14 +180,22 @@
                       </div>
                     </td>
                     <td>
-                      <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold">Ver</button>
-                        <button type="button" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold">Editar</button>
-                        <button type="button" class="btn btn-sm pl-4 pr-4 btn-danger font-weight-bold">Deletar</button>
-                      </div>
+                      <form action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <a href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold" target="blank">Ver</a>
+                          <a href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold" target="blank">Editar</a>
+
+                          @csrf
+                          @method('DELETE')
+                          <button class="btn btn-sm pl-4 pr-4 bg-danger text-light font-weight-bold" type="submit">Deletar</button>
+                        </div>
+                     </form>
                     </td>
                   </tr>
                   @empty
+                  <tr>
+                    <td><p>Não há cadastros criados.</p></td>
+                  </tr>
                   @endforelse
                 </tbody>
               </table>

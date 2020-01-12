@@ -60,7 +60,7 @@
           <h2 class="font-weight-bold text-dark bg-light mb-5">Tutoriais</h2>
           <p>Culpa dolor voluptate do laboris laboris irure reprehenderit id incididunt duis pariatur mollit aute magna pariatur consectetur. Eu veniam duis non ut dolor deserunt commodo et minim in quis laboris ipsum velit id veniam. Quis ut consectetur adipisicing officia excepteur non sit. Ut et elit aliquip labore Lorem enim eu. Ullamco mollit occaecat dolore ipsum id officia mollit qui esse anim eiusmod do sint minim consectetur qui.</p>
           <br>
-          <iframe width="100%" height="500px"src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+          <iframe width="100%" height="500px" src="" class="bg-light"></iframe>
         </div>
         <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
           <h2 class="font-weight-bold text-dark bg-light mb-5">Documentação</h2>

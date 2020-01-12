@@ -15,6 +15,14 @@ Route::get('/', function () {
     return view('welcome');
 })->name('inicio');
 
+Route::get('/meuperfil', function () {
+    return view('pesquisador.perfil');
+})->name('perfil');
+
+Route::get('/faq', function () {
+    return view('pesquisador.faq.index');
+})->name('faq');
+
 
 Auth::routes();
 

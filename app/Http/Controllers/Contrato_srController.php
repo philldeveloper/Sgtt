@@ -123,8 +123,8 @@ class Contrato_srController extends Controller
      */
     public function edit($id)
     {
-        if (Auth::user()-> admin == 0)
-            return abort (403);
+        /*if (Auth::user()-> admin == 0)
+            return abort (403);*/
 
         $contratos_sr = Contrato_sr::find($id);
 
@@ -167,6 +167,9 @@ class Contrato_srController extends Controller
      */
     public function destroy($id)
     {
+        if (Auth::user()-> admin == 0)
+            return abort (403);
+
         $contratos_sr = Contrato_sr::find ($id);
         
         $contratos_sr->delete();
