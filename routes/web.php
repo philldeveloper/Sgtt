@@ -15,29 +15,18 @@ Route::get('/', function () {
     return view('welcome');
 })->name('inicio');
 
-Route::get('/contratos/semrepasse', function () {
-    return view('contratos.tt.semrepasse.index');
-});
-
-Route::get('/contratos/repasse', function () {
-    return view('contratos.tt.repasse.index');
-});
 
 Auth::routes();
 
+Route::get('/contrato_sr/{id}', 'Contrato_srController@show')->name('contratosr_show');
+
+Route::get('/contrato_sr/edit/{id}', 'Contrato_srController@edit')->name('contratosr_edit');
+
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/administrador', 'AdminController@index')->name('administrador');
-
-Route::get('/administrador/analytics', 'AdminController@analyticsindex')->name('analytics');
-
-Route::get('/pesquisador', 'PesquisadorController@index')->name('pesquisador');
-
-Route::get('/faq', 'PesquisadorController@faqindex')->name('faq');
-
-Route::get('/contratos/tt/semrepasse/new', 'PesquisadorController@semrepasseindex')->name('semrepasse');
-
-Route::get('/contratos/tt/comrepasse/new', 'PesquisadorController@repasseindex')->name('repasse');
-
-
 Route::resource('contrato_sr', 'Contrato_srController');
+
+Route::resource('contrato_cr', 'Contrato_crController');
+
+Route::resource('inicio', 'IndexController');
+

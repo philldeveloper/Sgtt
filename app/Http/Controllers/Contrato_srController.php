@@ -16,11 +16,12 @@ class Contrato_srController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
         $contratos_sr = Contrato_sr::all();
 
-        return view('contratos.tt.semrepasse.index', compact ('contratos_sr'));
+        return view('contratos.tt.semrepasse.index', compact('contratos_sr'));
     }
 
     /**
@@ -109,7 +110,9 @@ class Contrato_srController extends Controller
      */
     public function show($id)
     {
-        //
+        $contratos_sr = Contrato_sr::find($id);
+
+        return view('contratos.tt.semrepasse.show', compact('contratos_sr'));
     }
 
     /**
@@ -120,7 +123,12 @@ class Contrato_srController extends Controller
      */
     public function edit($id)
     {
-        //
+        if (Auth::user()-> admin == 0)
+            return abort (403);
+
+        $contratos_sr = Contrato_sr::find($id);
+
+        return view('contratos.tt.semrepasse.edit', compact('contratos_sr'));
     }
 
     /**
@@ -132,7 +140,23 @@ class Contrato_srController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $contratos_sr = Contrato_sr::find($id); //localizar contrato find (encontrar)
+        $contratos_sr->fill ($request->all()); //fill (preencher)
+        $contratos_sr->save();
+
+        if(Auth::user()->admin == 1){
+
+            $contratos_sr = Contrato_sr::all();
+
+            return view('admin.index', compact('contratos_sr'))
+            ->with('success','Product updated successfully');;
+        }else{
+            
+            $contratos_sr = Contrato_sr::all();
+
+            return view('pesquisador.index', compact('contratos_sr'))
+            ->with('success','Product updated successfully');
+        }
     }
 
     /**
@@ -143,7 +167,11 @@ class Contrato_srController extends Controller
      */
     public function destroy($id)
     {
-        $Contrato_sr->delete();
-        return redirect()->back();
+        $contratos_sr = Contrato_sr::find ($id);
+        
+        $contratos_sr->delete();
+
+        return redirect()->back()
+                        ->with('success','Product deleted successfully');
     }
 }

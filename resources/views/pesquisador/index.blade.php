@@ -164,17 +164,22 @@
                 <thead class="roboto-font font-weight-bold text-dark border-left-success bg-light" style="font-size: 1.25rem">
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Nome</th>
-                    <th scope="col">Tipo</th>
-                    <th scope="col">Andamento</th>
+                    <th scope="col">Desenvolvido por</th>
+                    <th scope="col">ICT | Parceiro</th>
+                    <th scope="col">Criado em</th>
+                    <th scope="col">Modificado em</th>
+                    <th scope="col">Status</th>
                     <th scope="col">Ações</th>
                   </tr>
                 </thead>
                 <tbody class="mb-0 font-weight-bold text-dark">
+                  @forelse($contratos_sr as $contratos)
                   <tr class="">
-                    <th scope="row">1</th>
-                    <td>Contrato Sindical</td>
-                    <td>Transferencia de Tecnologia</td>
+                    <th scope="row">{{$contratos->id}}</th>
+                    <td>{{$contratos->user->nome}}</td>
+                    <td>{{$contratos->nome_ict}} e {{$contratos->nome_parceiro}}</td>
+                    <td>{{$contratos->created_at->format('d/m/Y H:i:s')}}</td>
+                    <td>{{$contratos->updated_at->format('d/m/Y H:i:s')}}</td>
                     <td>
                       <div class="progress mt-2 mr-3">
                         <div class="progress-bar bg-primary pr-3 pl-3" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Apreciação</div>
@@ -188,23 +193,8 @@
                       </div>
                     </td>
                   </tr>
-                  <tr class="">
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Otto</td>
-                    <td>
-                      <div class="progress mt-2 mr-3">
-                        <div class="progress-bar bg-secondary pr-3 pl-3" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Recepção</div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold">Ver</button>
-                        <button type="button" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold">Editar</button>
-                        <button type="button" class="btn btn-sm pl-4 pr-4 btn-danger font-weight-bold">Deletar</button>
-                      </div>
-                    </td>
-                  </tr>
+                  @empty
+                  @endforelse
                 </tbody>
               </table>
             </div>

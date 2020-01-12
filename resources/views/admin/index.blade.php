@@ -21,7 +21,7 @@
 
             <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
             <div class="container-button">
-              <button class="btn-lg btn-success"><a href="{{route('semrepasse')}}">Criar Contrato</a></button>
+              <button class="btn-lg btn-success"><a href="{{route('contrato_sr.index')}}">Criar Contrato</a></button>
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@
 
             <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
             <div class="container-button">
-              <button class="btn-lg btn-success"><a href="{{route('repasse')}}">Criar Contrato</a></button>
+              <button class="btn-lg btn-success"><a href="#">Criar Contrato</a></button>
             </div>
           </div>
         </div>
@@ -48,6 +48,12 @@
     <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
 </div>
 
+@if ($message = Session::get('success'))
+    <div class="alert alert-success">
+        <p>{{ $message }}</p>
+    </div>
+@endif
+
 <div class="col-12 mt-5">
   <div class="card card-shadow mb-4">
     <div class="card-body p-3 mb-5">
@@ -57,47 +63,42 @@
                 <thead class="roboto-font font-weight-bold text-dark border-left-success bg-light" style="font-size: 1.25rem">
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Nome</th>
-                    <th scope="col">Tipo</th>
-                    <th scope="col">Andamento</th>
+                    <th scope="col">Desenv. por</th>
+                    <th scope="col">ICT | Parceiro</th>
+                    <th scope="col">Criado em</th>
+                    <th scope="col">Modificado em</th>
+                    <th scope="col">Status</th>
                     <th scope="col">Ações</th>
                   </tr>
                 </thead>
                 <tbody class="mb-0 font-weight-bold text-dark">
+                  @forelse($contratos_sr as $contratos)
                   <tr class="">
-                    <th scope="row">1</th>
-                    <td>Contrato Sindical</td>
-                    <td>Transferencia de Tecnologia</td>
+                    <td>{{$contratos->id}}</td>
+                    <td>{{$contratos->user->nome}}</td>
+                    <td>{{$contratos->nome_ict}} e {{$contratos->nome_parceiro}}</td>
+                    <td>{{$contratos->created_at->format('d/m/Y H:i:s')}}</td>
+                    <td>{{$contratos->updated_at->format('d/m/Y H:i:s')}}</td>
                     <td>
-                      <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Apreciação</div>
+                      <div class="progress mt-2 mr-3">
+                        <div class="progress-bar bg-primary pr-3 pl-3" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Apreciação</div>
                       </div>
                     </td>
                     <td>
-                      <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold">Ver</button>
-                        <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold">Editar</button>
-                        <button type="button" class="btn btn-sm btn-danger font-weight-bold">Deletar</button>
-                      </div>
+                      <form action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <a href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold" target="blank">Ver</a>
+                          <a href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold" target="blank">Editar</a>
+
+                          @csrf
+                          @method('DELETE')
+                          <button class="btn btn-sm pl-4 pr-4 bg-danger text-light font-weight-bold" type="submit">Deletar</button>
+                        </div>
+                     </form>
                     </td>
                   </tr>
-                  <tr class="">
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Otto</td>
-                    <td>
-                      <div class="progress">
-                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Recepção</div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold">Ver</button>
-                        <button type="button" class="btn btn-sm btn-outline-primary font-weight-bold">Editar</button>
-                        <button type="button" class="btn btn-sm btn-danger font-weight-bold">Deletar</button>
-                      </div>
-                    </td>
-                  </tr>
+                  @empty
+                  @endforelse
                 </tbody>
               </table>
             </div>

@@ -17,7 +17,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a class="text-dark" href="{{route('pesquisador')}}">Início</a>
+                    <a class="text-dark" href="{{asset('inicio')}}">Início</a>
                     @else
                     @endauth
                 </div>
