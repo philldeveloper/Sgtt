@@ -65,8 +65,8 @@
               <div class="container-fluid pb-5 pt-5 mt-0 m-0">
                 <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">
                   ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI
-                  CELEBRAM <input class="mb-2  myform-control text-black" type="text" name="" id="" placeholder="ICT ou ente público">  E 
-                  <input class="mb-2  myform-control text-black" type="text" name="" id="" placeholder="Nome do parceiro">  
+                  CELEBRAM <input class="mb-2  myform-control text-black" type="text" name="nome_ict" id="nome_ict" placeholder="ICT ou ente público">  E 
+                  <input class="mb-2  myform-control text-black" type="text" name="nome_parceiro" id="nome_parceiro" placeholder="Nome do parceiro">  
                   <a href="#" data-toggle="modal" data-target="#modalExemplo1"><i class="fas fa-fw fa-question-circle position-absolute"></i></a>
                  <br/> NA FORMA A ABAIXO.</h5><br>
               </div>
@@ -84,39 +84,39 @@
   
               <div class="form-row">
                 <div class="form-group col-md-4">
-                  <label for="inputEmail4" class="font-weight-bold text-black">Nome</label>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">               
+                  <label for="inputEmail4" class="font-weight-bold text-black">Nomes</label>
+                  <input type="text" name="nome_teste" class="form-control text-black font-weight-bold" id="nome">               
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
                   <!-- Botão para acionar modal -->
                   <a href="#" data-toggle="modal" data-target="#modalExemplo1"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="nat_juridica" name="nat_juridica" placeholder="">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
                   <!-- Botão para acionar modal -->
                   <a href="#" data-toggle="modal" data-target="#modalExemplo2"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="cnpj" name="cnpj">
                 </div>
               </div>
   
               <div class="form-row">
                 <div class="form-group col-md-5">
-                  <label for="inputCity" class="font-weight-bold text-black">Endereço</label>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">
+                  <label for="inputAdress" class="font-weight-bold text-black">Endereço</label>
+                  <input type="text" class="form-control text-black font-weight-bold"  id="endereco" name="endereco">
                 </div>
                 <div class="form-group col-md-3">
                   <label for="inputCity" class="font-weight-bold text-black">Cidade</label>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="cidade" name="cidade">
                 </div>
                 <div class="form-group col-md-2">
                   <label for="inputState" class="font-weight-bold text-black">UF</label>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="uf" name="uf">
                 </div>
                 <div class="form-group col-md-2">
                   <label for="inputZip" class="font-weight-bold text-black">CEP</label>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputZip">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="cep" name="cep">
                 </div>
               </div>
   
@@ -125,38 +125,38 @@
                 <label for="inputEmail4" class="font-weight-bold text-black">Representante Legal</label>
                 <!-- Botão para acionar modal -->
                   <a href="#" data-toggle="modal" data-target="#modalExemplo3"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputEmail4" placeholder="Nome">
+                <input type="text" class="form-control text-black font-weight-bold"  id="rep_legal" name="rep_legal" placeholder="Nome">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="cpf" name="cpf" placeholder="">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="rg" name="rg" placeholder="">
               </div>
               <div class="form-group col-md-2">
                 <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="orgao_exp" name="orgao_exp" placeholder="">
               </div>
              </div>
   
              <div class="form-row">
               <div class="form-group col-md-3">
                 <label for="inputEmail4" class="font-weight-bold text-black">Nacionalidade</label>
-                 <input type="text" class="form-control text-black font-weight-bold"  id="inputEmail4" placeholder="Nacionalidade">
+                 <input type="text" class="form-control text-black font-weight-bold"  id="nacionalidade" name="nacionalidade" placeholder="Nacionalidade">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">Estado Civil</label>
-                 <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="Estado Civil">
+                 <input type="text" class="form-control text-black font-weight-bold"  id="est_civil" name="est_civil" placeholder="Estado Civil">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">Ato de Nomeação</label>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="Ato de Nomeação">
+                <input type="text" class="form-control text-black font-weight-bold"  id="ato_nomeacao" name="ato_nomeacao" placeholder="Ato de Nomeação">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">Doravante Denominado</label>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="ICT/Agência de Fomento">
+                <input type="text" class="form-control text-black font-weight-bold"  id="doravante_denominado" name="doravante_denominado" placeholder="ICT/Agência de Fomento">
               </div>
              </div><!-- /.row-->
              <br>
@@ -172,38 +172,38 @@
               <div class="form-row">
                 <div class="form-group col-md-4">
                   <label for="inputEmail4" class="font-weight-bold text-black">Instituição</label>                  
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputEmail4" placeholder="Nome">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="nome_parceiro_instituicao" name="nome_parceiro_instituicao" placeholder="Nome">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
                   <!-- Botão para acionar modal -->
                   <a href="#" data-toggle="modal" data-target="#modalExemplo4"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="Natureza Jurídica">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_nat_juridica" name="parceiro_nat_juridica" placeholder="Natureza Jurídica">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
                   <!-- Botão para acionar modal -->
                   <a href="#" data-toggle="modal" data-target="#modalExemplo5"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="CNPJ">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_cnpj" name="parceiro_cnpj" placeholder="CNPJ">
                 </div>
               </div>
   
               <div class="form-row">
                 <div class="form-group col-md-5">
-                  <label for="inputCity" class="font-weight-bold text-black">Endereço</label>
-                    <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">
+                  <label for="" class="font-weight-bold text-black">Endereço</label>
+                    <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_endereco" name="parceiro_endereco">
                 </div>
                 <div class="form-group col-md-3">
-                  <label for="inputCity" class="font-weight-bold text-black">Cidade</label>
-                    <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">
+                  <label for="" class="font-weight-bold text-black">Cidade</label>
+                    <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_cidade" name="parceiro_cidade">
                 </div>
                 <div class="form-group col-md-2">
                   <label for="inputState" class="font-weight-bold text-black">UF</label>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_uf" name="parceiro_uf">
                 </div>
                 <div class="form-group col-md-2">
                   <label for="inputZip" class="font-weight-bold text-black">CEP</label>
-                    <input type="text" class="form-control text-black font-weight-bold"  id="inputZip">
+                    <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_cep" name="parceiro_cep">
                 </div>
               </div>
   
@@ -212,27 +212,27 @@
                 <label for="inputEmail4" class="font-weight-bold text-black">Representante Legal</label>
                 <!-- Botão para acionar modal -->
                   <a href="#" data-toggle="modal" data-target="#modalExemplo6"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputEmail4" placeholder="Nome">
+                <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_rep_legal" name="parceiro_rep_legal" placeholder="Nome">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_cpf" name="parceiro_cpf" placeholder="">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_rg" name="parceiro_rg" placeholder="">
               </div>
               <div class="form-group col-md-2">
                 <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_orgao_exp" name="parceiro_orgao_exp" placeholder="">
               </div>
               <div class="form-group col-md-2">
                 <label for="inputPassword4" class="font-weight-bold text-black">Cargo</label>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
+                <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_cargo" name="parceiro_cargo" placeholder="">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">Doravante Denominado</label>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="ICT/Agência de Fomento">
+                <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_doravante_denominado" name="parceiro_doravante_denominado" placeholder="ICT/Agência de Fomento">
               </div>
              </div>
              <hr>
@@ -267,19 +267,19 @@
   
               <div class="form-row">
                 <div class="form-group col-md-5">
-                  <label for="inputCity" class="font-weight-bold text-black">Endereço</label>
+                  <label for="" class="font-weight-bold text-black">Endereço</label>
                   <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="">
                 </div>
                 <div class="form-group col-md-3">
-                  <label for="inputCity" class="font-weight-bold text-black">Cidade</label>
+                  <label for="" class="font-weight-bold text-black">Cidade</label>
                   <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">
+                  <input type="text" class="form-control text-black font-weight-bold"  id="">
                 </div>
                 <div class="form-group col-md-2">
                   <label for="inputState" class="font-weight-bold text-black">UF</label>
                   <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputCity">
+                <input type="text" class="form-control text-black font-weight-bold"  id="">
                 </div>
                 <div class="form-group col-md-2">
                   <label for="inputZip" class="font-weight-bold text-black">CEP</label>
@@ -333,7 +333,7 @@
                 o <br>
                 
                 <a href="#" data-toggle="modal" data-target="#modalExemplo10"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <div class="form-group col-md-12"><textarea class="form-control"></textarea></div>
+                <div class="form-group col-md-12"><textarea class="form-control" name="clausula_descricao"></textarea></div>
 
 
                 <br>a ser executado nos termos do Plano de Trabalho, anexo, visando à transferência de recursos financeiros, à
@@ -354,7 +354,7 @@
     
                 <p><b>2.1 </b>O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
   
-                <p class=""><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a <input class="mb-2 myform-control text-black" type="text" name="" id="" placeholder="ICT/Agência de Fomento"> <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
+                <p class=""><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a ICT <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
                 <p contenteditable="true" class="text-blue"><b>2.3 </b>Na execução do Plano de Trabalho, a atuação dos PARCEIROS dar-se-á sempre de forma associada. Para tanto, os PARCEIROS indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.</p>
   
                 <p contenteditable="true" class="text-blue"><b>2.4 </b>Recaem sobre o Coordenador do Projeto<a href="#" data-toggle="modal" data-target="#modalExemplo14"><i class="fas fa-fw fa-question-circle"></i></a>, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.</p>
@@ -377,19 +377,19 @@
     
                 <p><b>3.1 </b>São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I:</p>
                  
-                <p class="ml-2 bg-light roboto-font"><b>3.1.1. Do(a):</b><input type="text" class="myform-control" name="ICT" placeholder="Instituição"><a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a></p>
+                <p class="ml-2 bg-light roboto-font"><b>3.1.1. Do(a):</b><input type="text" class="myform-control" name="nome_inst_ict" id="nome_inst_ict" placeholder="Instituição"><a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a></p>
            
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div> Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD&I ;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div> Manter rigoroso controle das despesas efetuadas e dos respectivos comprovantes com vistas à prestação de contas da execução do objeto deste Acordo;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">D)</div> Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">E)</div> Monitorar, avaliar e prestar contas nos termos deste Acordo; </p>
-                  <p class="ml-2 bg-light roboto-font"><b>3.1.2. Do(a):</b><input  class="myform-control" type="text" name="ICT" placeholder="Instituição"><a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a> (PARCEIRO PRIVADO)</p>
+                  <p class="ml-2 bg-light roboto-font"><b>3.1.2. Do(a):</b><input class="myform-control" type="text" name="nome_inst_privado" id="nome_inst_privado" placeholder="Instituição"><a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a> (PARCEIRO PRIVADO)</p>
                
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div>Transferir os recursos financeiros acordados, segundo o Cronograma de Desembolso constante no Plano de Trabalho, por meio do aporte de recursos financeiros de sua responsabilidade; <br><div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div> Indicar coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução; <br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div> Colaborar, nos termos do plano de trabalho, para que o Acordo alcance os objetivos nele descritos;
                   <br><br>
-                  <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a): <input type="text" class="myform-control" name="ICT" placeholder="Instituição"> <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p>
+                  <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a): <input type="text" class="myform-control" name="nome_inst_fundacao" id="nome_inst_fundacao" placeholder="Instituição"> <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p>
                  
                     <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div>  Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD& I; <br>
                     <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div>  Prestar à ICT informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;<br>
@@ -426,15 +426,15 @@
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">4. CLÁUSULA QUARTA - DOS RECURSOS FINANCEIROS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
                 
                 <p>
-                  <b>4.1.</b> O (A) <input class="myform-control text-black"type="text" name="empresa" placeholder="Parceiro privado">
-                   transferirá recursos financeiros no valor total de R$ <input class="myform-control text-black" type="text" name="empresa" placeholder="Valor por Extenso">
+                  <b>4.1.</b> O (A) <input class="myform-control text-black"type="text" name="nome_parceiro_privado" id="nome_parceiro_privado" placeholder="Parceiro privado">
+                   transferirá recursos financeiros no valor total de R$ <input class="myform-control text-black" type="text" name="valor_financeiro" id="valor_financeiro" placeholder="Valor por Extenso">
                    , conforme cronograma de desembolso constante no Plano de Trabalho, anexo a este Acordo. 
                 </p>
                 <p>
-                  <b>4.2.</b> Os valores especificados no item acima serão recebidos pela <input class="myform-control text-black"type="text" name="empresa" placeholder="Fundação de apoio"><a href="#"><i class="fas fa-fw fa-question-circle pos"></i></a> em conta específica. 
+                  <b>4.2.</b> Os valores especificados no item acima serão recebidos pela <input class="myform-control text-black" type="text" name="nome_fund_apoio" id="nome_fund_apoio" placeholder="Fundação de apoio"><a href="#"><i class="fas fa-fw fa-question-circle pos"></i></a> em conta específica. 
                 </p>
                 <p>
-                  <b>4.3.</b> O <input class="myform-control text-black"type="text" name="empresa" placeholder="Parceiro privado"> efetuará os aportes financeiros previstos no Plano de Trabalho através de depósitos em conta- corrente específica, servindo o 
+                  <b>4.3.</b> O Parceiro Privado efetuará os aportes financeiros previstos no Plano de Trabalho através de depósitos em conta- corrente específica, servindo o 
                   comprovante da operação bancária como recibo, para fins de direito, do repasse dos recursos financeiros previstos por este Acordo de Parceira.
                 </p>
                 <p>
@@ -446,17 +446,15 @@
                   Plano de Trabalho são estimados com base nas premissas e termos especificados no mencionado Anexo.
                 </p>
                 <p>
-                  <b>4.6.</b>Qualquer aumento ao orçamento do Plano de Trabalho executado por este Acordo de Parceria, que torne necessário o aporte de recursos adicionais 
-                  pelo  <input class="myform-control text-black"type="text" name="empresa" placeholder="Parceiro privado"> deverá ser prévia e formalmente analisado
-                   e aprovado pelas Parceiros,<select class="myform-control">
-                                                <option value="devendo">devendo</option>
-                                                <option value="podendo">podendo</option>
-                                              </select> 
-                   ser implementado tão somente após celebração de termo 
-                  aditivo a este Acordo de Parceria.
+                  <b>4.6.</b>Qualquer aumento ao orçamento do Plano de Trabalho executado por este Acordo de Parceria, que torne necessário o aporte de recursos adicionais pelo parceiro privado deverá ser prévia e formalmente analisado e aprovado pelas Parceiros,
+                  <select class="myform-control">
+                     <option value="devendo">devendo</option>
+                     <option value="podendo">podendo</option>
+                  </select> 
+                  ser implementado tão somente após celebração de termo aditivo a este Acordo de Parceria.
                 </p>
                 <p>
-                  <b>4.7.</b>Do valor total repassado, (a) <input class="myform-control text-black"type="text" name="empresa" placeholder="Fundação de apoio"><a href="#"><i class="fas fa-fw fa-question-circle pos"></i></a> poderá utilizar até 15% (quinze por cento) para custear despesas operacionais, definidas e justificadas no Plano de Trabalho.
+                  <b>4.7.</b>Do valor total repassado, (a) fundação de apoio poderá utilizar até 15% (quinze por cento) para custear despesas operacionais, definidas e justificadas no Plano de Trabalho.
                 </p>
                 <p>
                   <b>4.7.1.</b>Os valores dos recursos financeiros previstos nesta cláusula poderão ser alterados por meio de termo aditivo, com as necessárias justificativas e de comum acordo entre os PARCEIROS, o que implicará   a revisão das metas pactuadas e a alteração do Plano de Trabalho. 
@@ -698,7 +696,7 @@
                 
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">11. CLÁUSULA DÉCIMA PRIMEIRA - DA VIGÊNCIA E DA PRORROGAÇÃO<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
     
-                <p><b>11.1.</b> O presente Acordo de Parceria para PD&I vigerá pelo prazo de <input class="myform-control text-black" type="text" name="date" placeholder="De (XXXX) anos" id=""> anos, a partir da data de sua assinatura, prorrogáveis.</p>
+                <p><b>11.1.</b> O presente Acordo de Parceria para PD&I vigerá pelo prazo de <input class="myform-control text-black" type="text" name="prazo_vigencia" id="prazo_vigencia" placeholder="De (XXXX) anos" id=""> anos, a partir da data de sua assinatura, prorrogáveis.</p>
                 <p><b>11.2.</b> Este Acordo de Parceria poderá ser prorrogado por meio de termo aditivo, com as respectivas alterações no Plano de Trabalho, mediante a apresentação de justifica técnica.</p>
             
               </div>
@@ -861,28 +859,28 @@
                 <div class="text-justify text-black">
                   <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">19. CLÁUSULA DÉCIMA NONA - DO FORO <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
       
-                  <p><b>19.1.</b>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de <input class="myform-control text-black"  type="text" name="estado" placeholder="Estado">, cidade de <input  class="myform-control" type="text" name="estado" placeholder="Cidade">,
+                  <p><b>19.1.</b>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de <input class="myform-control text-black"  type="text" name="estado_foro" id="estado_foro" placeholder="Estado">, cidade de <input  class="myform-control" type="text" name="cidade_foro" id="cidade_foro" placeholder="Cidade">,
                                 para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109
                                 da Constituição Federal.
                                 E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente
                                 instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.
                                 </p>
-                      <input type="text" class="myform-control text-black"  name="" id="" placeholder="Cidade/UF, dia de mês de ano. ">   <br>   
+                      <input type="text" class="myform-control text-black"  name="cidade_uf_dia_foro" id="cidade_uf_dia_foro" placeholder="Cidade/UF, dia de mês de ano. ">   <br>   
                     <div class="mb-4 row justify-content-center">
                       <div class="col-6 align-self-center">
                         <div class="input-control-center">
-                          <p class="mt-4">Pelo(a)  <span class="text-blue">ICT:</span> <input class="myform-control text-black" type="text" name="" id="" placeholder="Instituição"> </p>   
-                            <input class="mb-2 myform-control text-black" type="text" name="" id="" placeholder="Nome do representante legal"> 
-                            <br><input class="mb-2  myform-control text-black" type="text" name="" id="" placeholder="Cargo"> 
+                          <p class="mt-4">Pelo(a)  <span class="text-blue">ICT:</span> <input class="myform-control text-black" type="text" name="ict_inst_foro" id="ict_inst_foro" placeholder="Instituição"> </p>   
+                            <input class="mb-2 myform-control text-black" type="text" name="nome_rep_foro" id="nome_rep_foro" placeholder="Nome do representante legal"> 
+                            <br><input class="mb-2  myform-control text-black" type="text" name="cargo_rep_foro" id="cargo_rep_foro" placeholder="Cargo"> 
                           </div>
                       </div>
                     </div>
                        <div class="mt-4 row justify-content-center">
                          <div class="col-6 align-self-center">
                            <div class="input-control-center">
-                             <p>Pelo(a) <span class="text-blue">PARCEIRO PRIVADO:</span> <input class="myform-control text-black" type="text" name="" id="" placeholder="Instituição"> </p>      
-                             <input class="mb-2 myform-control text-black" type="text" name="" id="" placeholder="Nome do representante legal"> 
-                             <br><input class="mb-2  myform-control text-black" type="text" name="" id="" placeholder="Cargo"> 
+                             <p>Pelo(a) <span class="text-blue">PARCEIRO PRIVADO:</span> <input class="myform-control text-black" type="text" name="nome_inst_privado_foro" id="nome_inst_privado_foro" placeholder="Instituição"> </p>      
+                             <input class="mb-2 myform-control text-black" type="text" name="nome_rep_privado_foro" id="nome_rep_privado_foro" placeholder="Nome do representante legal"> 
+                             <br><input class="mb-2  myform-control text-black" type="text" name="cargo_rep_privado_foro" id="cargo_rep_privado_foro" placeholder="Cargo"> 
                            </div>
                          </div>
                        </div>
@@ -918,7 +916,8 @@
             </div>
         </div>
   
-        <form id="regForm" action="/action_page.php">
+        <form id="regForm" class="form-horizontal" method="POST" action="{{ route('contrato_cr.store') }}">
+          {{ csrf_field() }}
           <div id="step-container" class="step-container">
             
           </div>

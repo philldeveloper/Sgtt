@@ -48,7 +48,6 @@ class Contrato_srController extends Controller
         $contrato_sr = new Contrato_sr;
 
         $contrato_sr->nome_ict = $request->nome_ict;
-
         $contrato_sr->nome_parceiro = $request->nome_parceiro;
         $contrato_sr->nome_teste = $request->nome_teste; 
         $contrato_sr->nat_juridica = $request->nat_juridica;

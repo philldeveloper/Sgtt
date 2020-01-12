@@ -37,7 +37,7 @@
 
             <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
             <div class="container-button">
-              <button class="btn-lg btn-success"><a href="#">Criar Contrato</a></button>
+              <a href="{{route('contrato_cr.index')}}" class="btn-lg btn btn-success">Criar Contrato</a>
             </div>
           </div>
         </div>
