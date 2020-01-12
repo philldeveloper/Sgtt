@@ -27,7 +27,7 @@
                     <br><br><br>
                     
                 </span>
-                @if (Route::has('login'))
+                @if (Auth::check())
                 <a href="{{asset('inicio')}}" class="btn teste btn-dark btn-lg font-weight-bold p-3 pl-5 pr-5 m-2" style="background-color: black !important; border-color: black !important;">Ir para Início</a>
                 @else
                 <a href="{{asset('login')}}" class="btn teste btn-dark btn-lg font-weight-bold p-3 pl-5 pr-5 m-2" style="background-color: black !important; border-color: black !important;">Fazer login</a> 
