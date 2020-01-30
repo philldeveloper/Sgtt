@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 use App\Contrato_cr;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 
 class Contrato_crController extends Controller
 {
@@ -43,7 +44,7 @@ class Contrato_crController extends Controller
 
         $contrato_cr->nome_ict = $request->nome_ict;
         $contrato_cr->nome_parceiro = $request->nome_parceiro;
-        $contrato_sr->nome_teste = $request->nome_teste;
+        $contrato_cr->nome_teste = $request->nome_teste;
         $contrato_cr->nat_juridica = $request->nat_juridica;
         $contrato_cr->cnpj = $request->cnpj;
         $contrato_cr->endereco = $request->endereco;
@@ -139,7 +140,7 @@ class Contrato_crController extends Controller
     public function destroy($id)
     {
 
-        $contrato_cr = Contrato_cr::find ($id);
+        $contrato_cr = Contrato_cr::find($id);
         
         $contrato_cr->delete();
 
