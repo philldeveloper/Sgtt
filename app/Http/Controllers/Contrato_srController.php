@@ -43,8 +43,6 @@ class Contrato_srController extends Controller
     public function store(Request $request)
     {
         
-        //Contrato_sr::create($request->all());
-
         $contrato_sr = new Contrato_sr;
 
         $contrato_sr->nome_ict = $request->nome_ict;
@@ -166,7 +164,7 @@ class Contrato_srController extends Controller
      */
     public function destroy($id)
     {
-        if (Auth::user()-> admin == 0)
+        if (Auth::user()->admin == 0)
             return abort (403);
 
         $contratos_sr = Contrato_sr::find ($id);
