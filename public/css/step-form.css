@@ -101,7 +101,8 @@ label.error{
   padding-top: 3px;
   font-size: 0.9rem;
   color: #E50000;
-  width: 100%;
+  width: auto;
+  max-width: 100%;
 }
 
 .invalid{
