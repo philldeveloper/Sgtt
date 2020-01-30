@@ -17,6 +17,15 @@
 @include('pesquisador.modals.modal_13')
 @include('pesquisador.modals.modal_14')
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="{{ asset('js/jquery.validate.min.js') }}"></script>
+<script src="{{ asset('js/jquery.mask.min.js') }}"></script>
+<script src="{{ asset('js/additional-methods.min.js') }}"></script>
+<script src="{{ asset('js/localization/messages_pt_BR.js') }}"></script>
+<script src="{{ asset('js/default-mask.js') }}"></script>
+<script src="{{ asset('js/validation-form-cr.js') }}"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
 <div class="title-header">
     <span class="h3 ml-3">Novo Contrato</span>
@@ -78,14 +87,12 @@
               </div>
 
               <form class="p-0 m-0">
-              <h5 
-              class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">
-              ICT/ente público</h5>
+              <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">ICT/ente público</h5>
   
               <div class="form-row">
                 <div class="form-group col-md-4">
-                  <label for="inputEmail4" class="font-weight-bold text-black">Nomes</label>
-                  <input type="text" name="nome_teste" class="form-control text-black font-weight-bold" id="nome">               
+                  <label for="nome_teste" class="font-weight-bold text-black">NomeTTTs</label>
+                  <input type="text" name="nome_teste" class="form-control text-black font-weight-bold" id="nome_teste">               
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
@@ -938,7 +945,6 @@
 
 </div>
 <script>
-
     //container do conteúdo necessário para os buttons ficar em baixo
     const wrapper = document.getElementById("tab-here")
     //classe do conteúdo do carrousel
@@ -970,24 +976,44 @@
   
   </script>
 <script>
-var currentTab = 0; // Current tab is set to be the first tab (0)
-showTab(currentTab); // Display the current tab
+var currentTab = 0;
+var lastTab = 0
 
+ // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the current tab
 function stepButton(n) {
   let x = document.getElementsByClassName("tab");
-
-  for (let i = 0; i < x.length; i++) {
-    x[i].style.display = "none"; 
+  console.log(window.firstStep)
+  //Verificando se o array contém o numeros de campos validos = 17, firstStep
+  if (window.firstStep !== undefined || n <= lastTab){
+      console.log( lastTab)
+      console.log( n)
+      if(n <= lastTab){
+        for (let i = 0; i < x.length; i++) {
+          x[i].style.display = "none"; 
+        }
+        x[n].style.display = "block";
+        //... and fix the Previous/Next buttons:
+        currentTab = n
+        showTab(n)
+        return true
+    }else{
+        Toastify({
+          text: "Você precisa preencher todos campos.",
+              backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
+              duration: 3000
+        }).showToast(); 
+        return false
+    }
+  }else{
+      Toastify({
+        text: "Você precisa preencher todos campos.",
+            backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
+            duration: 3000
+      }).showToast(); 
+    return
   }
-
-  x[n].style.display = "block";
- 
- 
-  //... and fix the Previous/Next buttons:
-  
-  showTab(n)
 }
-
 function showTab(n) {
   
   // This function will display the specified tab of the form...
@@ -1008,12 +1034,7 @@ function showTab(n) {
   fixStepIndicator(n)
 }
 
-function nextPrev(n) {
-  // This function will figure out which tab to display
-  var x = document.getElementsByClassName("tab");
-  // Exit the function if any field in the current tab is invalid:
-  if (n == 1 && !validateStep()) return false;
-  
+function handleDisplay(x, currentTab, lastTab){
   for (let i = 0; i < x.length; i++) {
     x[i].style.display = "none"; 
   }
@@ -1021,38 +1042,175 @@ function nextPrev(n) {
   x[currentTab].style.display = "none";
   // Increase or decrease the current tab by 1:
   currentTab = currentTab + n;
-  // if you have reached the end of the form...
-  if (currentTab >= x.length) {
-    // ... the form gets submitted:
-    document.getElementById("regForm").submit();
-    return false;
+        
+  if (lastTab <= currentTab){
+      lastTab = currentTab
   }
   // Otherwise, display the correct tab:
   showTab(currentTab);
 }
 
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  if (n == 1 && !validateStep()) return false;
+ //Regra para o botão anterior
+  if (n === -1){
+    for (let i = 0; i < x.length; i++) {
+          x[i].style.display = "none"; 
+        }
+        // Hide the current tab:
+      //  x[currentTab].style.display = "none";
+        // Increase or decrease the current tab by 1:
+        currentTab = currentTab + n;
+        
+        // Otherwise, display the correct tab:
+        showTab(currentTab);
+        return true
+  }
+    //Verificando se o array contém o numeros de campos validos = 17, firstStep
+    if (window.firstStep !== undefined){
+      console.log(window.firstStep)
+      console.log(lastTab)
+      if(window.firstStep.length === 17 && currentTab == 0){
+        for (let i = 0; i < x.length; i++) {
+          x[i].style.display = "none"; 
+        }
+        // Hide the current tab:
+        x[currentTab].style.display = "none";
+        // Increase or decrease the current tab by 1:
+        currentTab = currentTab + n;
+        
+        if (lastTab <= currentTab){
+          lastTab = currentTab
+        }
+        // Otherwise, display the correct tab:
+        showTab(currentTab);
+        return true
+      }else if(window.firstStep.length === 29 && currentTab == 1 ){
+        
+        for (let i = 0; i < x.length; i++) {
+          x[i].style.display = "none"; 
+        }
+        // Hide the current tab:
+        x[currentTab].style.display = "none";
+        // Increase or decrease the current tab by 1:
+        currentTab = currentTab + n;
+        if (lastTab <= currentTab){
+          lastTab = currentTab
+        }
+        // Otherwise, display the correct tab:
+        showTab(currentTab);
+        return true
+      }else if(window.firstStep.length === 31 && currentTab == 2 ){
+          for (let i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+          }
+          // Hide the current tab:
+          x[currentTab].style.display = "none";
+          // Increase or decrease the current tab by 1:
+          currentTab = currentTab + n;
+          if (lastTab <= currentTab){
+            lastTab = currentTab
+          }
+          // Otherwise, display the correct tab:
+          showTab(currentTab);
+          return true
+      }else if(window.firstStep.length === 34 && currentTab == 4 ){
+        for (let i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+          }
+          // Hide the current tab:
+          x[currentTab].style.display = "none";
+          // Increase or decrease the current tab by 1:
+          currentTab = currentTab + n;
+          if (lastTab <= currentTab){
+            lastTab = currentTab
+          }
+          // Otherwise, display the correct tab:
+          showTab(currentTab);
+          return true
+      }else if(window.firstStep.length === 37 && currentTab === 11 ){
+        for (let i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+          }
+          // Hide the current tab:
+          x[currentTab].style.display = "none";
+          // Increase or decrease the current tab by 1:
+          currentTab = currentTab + n;
+          if (lastTab <= currentTab){
+            lastTab = currentTab
+          }
+          // Otherwise, display the correct tab:
+          showTab(currentTab);
+          return true
+      }else if(window.firstStep.length === 46 && currentTab === 18 ){
+        for (let i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+          }
+          // Hide the current tab:
+          x[currentTab].style.display = "none";
+          // Increase or decrease the current tab by 1:
+          currentTab = currentTab + n;
+          if (lastTab <= currentTab){
+            lastTab = currentTab
+          }
+          // Otherwise, display the correct tab:
+          showTab(currentTab);
+          return true
+      }else if( currentTab === 3 || (currentTab >= 3 && currentTab <= 10) || (currentTab >= 12 && currentTab <= 17)){
+        for (let i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+          }
+          // Hide the current tab:
+          x[currentTab].style.display = "none";
+          // Increase or decrease the current tab by 1:
+          currentTab = currentTab + n;
+          if (lastTab <= currentTab){
+            lastTab = currentTab
+          }
+          // Otherwise, display the correct tab:
+          showTab(currentTab);
+          return true
+           
+      }else if(currentTab < lastTab){ 
+        for (let i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+          }
+          // Hide the current tab:
+          x[currentTab].style.display = "none";
+          currentTab = currentTab + n;
+          if (lastTab <= currentTab){
+            lastTab = currentTab
+          }
+          showTab(currentTab)
+          return true
+      }else{
+        Toastify({
+          text: "Você precisa preencher todos campos.",
+              backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
+              duration: 3000
+        }).showToast(); 
+        return false
+    }
+  }else{
+      Toastify({
+        text: "Você precisa preencher todos campos.",
+            backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
+            duration: 3000
+      }).showToast(); 
+    return
+  }
+}
 function validateStep() {
   // This function deals with validation of the form fields
   var x, y, i, valid = true;
-  x = document.getElementsByClassName("tab");
-  y = x[currentTab].getElementsByTagName("input");
-  // A loop that checks every input field in the current tab:
-      /*  for (i = 0; i < y.length; i++) {
-          // If a field is empty...
-          if (y[i].value == "") {
-            // add an "invalid" class to the field:
-            y[i].className += " invalid";
-            // and set the current valid status to false
-            valid = false;
-          }
-        } */
   // If the valid status is true, mark the step as finished and valid:
   if (valid) {
     document.getElementsByClassName("step")[currentTab].className += " finish";
   }
   return valid; // return the valid status
 }
-
 function fixStepIndicator(n) {
   // This function removes the "active" class of all steps...
   var i, x = document.getElementsByClassName("step");
