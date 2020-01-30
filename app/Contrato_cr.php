@@ -12,7 +12,7 @@ class Contrato_cr extends Model
 	protected $fillable = [
     	'nome_ict', //ict-ente_pub
     	'nome_parceiro', //ict-ente_pub
-        'nome',  //ict-ente_pub
+        'nome_teste',  //ict-ente_pub
         'nat_juridica', //ict-ente_pub
         'cnpj', //ict-ente_pub
         'endereco', //ict-ente_pub
