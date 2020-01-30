@@ -17,7 +17,7 @@ function removeInput(vetor, t){
 let firstStep = []
 let error = 0
 $(document).ready(function($){
-    var inputs = $("#regForm").validate({
+    $("#regForm").validate({
     rules : {
             nome_ict: {
                 ...valid_simple_string,
@@ -79,7 +79,119 @@ $(document).ready(function($){
             doravante_denominado:{
                 required: true,
                 minlength: 3,
+            },
+            nome_parceiro_instituicao: {
+                ...valid_simple_string,
+            },
+            parceiro_nat_juridica:{
+                ...valid_simple_string
+            },
+            parceiro_cnpj:{
+                required: true,
+                maxlength: 18,
+                minlength: 18,
+            },
+            parceiro_endereco:{
+                ...valid_simple_string  
+            },
+            parceiro_cidade:{
+                ...valid_simple_string  
+            },
+            parceiro_uf:{
+                required: true  
+            },
+            parceiro_cep:{
+                required: true
             }, 
+            parceiro_rep_legal:{
+                ...valid_simple_string
+            }, 
+            parceiro_cpf:{
+                required: true,
+                maxlength: 14,
+                minlength: 14,
+            }, 
+            rep_legal:{
+                ...valid_simple_string 
+            }, 
+            parceiro_rg:{
+                required: true,
+            }, 
+            parceiro_orgao_exp:{
+                required: true,
+            }, 
+            parceiro_cargo:{
+                ...valid_simple_string
+            }, 
+            parceiro_doravante_denominado:{
+                ...valid_simple_string
+            }, 
+            est_civil:{
+                required: true,
+                minlength: 3,
+            }, 
+            ato_nomeacao:{
+                required: true,
+                minlength: 3,
+            }, 
+            doravante_denominado:{
+                required: true,
+                minlength: 3,
+            },
+            clausula_descricao: {
+                ...valid_simple_string
+            },
+            clausula_objetivo: {
+                ...valid_simple_string
+            },
+            nome_inst_ict: {
+                ...valid_simple_string
+            },
+            nome_inst_privado: {
+                ...valid_simple_string
+            },
+            nome_inst_fundacao: {
+                ...valid_simple_string
+            },
+            nome_empresa_parceira: {
+                ...valid_simple_string
+            },
+            nome_ict_parceira: {
+                ...valid_simple_string
+            },
+            prazo_vigencia:{
+                required: true,
+                minlength: 1,
+                maxlength: 10
+            },
+            estado_foro: {
+                ...valid_simple_string
+            },
+            cidade_foro: {
+                ...valid_simple_string
+            },
+            cidade_uf_dia_foro: {
+                ...valid_simple_string
+            },
+            ict_inst_foro: {
+                ...valid_simple_string
+            },
+            nome_rep_foro: {
+                ...valid_simple_string
+            },
+            cargo_rep_foro: {
+                ...valid_simple_string
+            },
+            nome_inst_privado_foro: {
+                ...valid_simple_string
+            },
+            nome_rep_privado_foro: {
+                ...valid_simple_string
+            },
+            cargo_rep_privado_foro: {
+                ...valid_simple_string
+            }
+
 
     },
     messages: {
@@ -131,9 +243,9 @@ $(document).ready(function($){
             }
 
             //Verificando se o array contém o numeros de campos validos =17
-            if (firstStep.length === 17){
-                window.firstStep = firstStep
-            }
+    
+            window.firstStep = firstStep
+    
     },
       // Chamado quando for invalido
 
@@ -160,4 +272,4 @@ $(document).ready(function($){
             }
     },
     })
-});
+})
