@@ -776,7 +776,7 @@
                     </a>
                   </div>
                   <div class="col-lg-2 col-md-4 col-sm-6">
-                    <a href="#" class="btn btn-block d-fluid p-2 bg-white border-dark font-weight-bold text-uppercase text-black text-center"><i class="fas fa-2x fa-file-pdf p-2"></i><br>
+                    <a href="{{route('printpdf', $contratos_sr->id)}}" class="btn btn-block d-fluid p-2 bg-white border-dark font-weight-bold text-uppercase text-black text-center"><i class="fas fa-2x fa-file-pdf p-2"></i><br>
                       BAIXAR PDF
                     </a>
                   </div>

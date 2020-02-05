@@ -8,6 +8,7 @@ use Auth;
 
 use App\Contrato_sr;
 
+use PDF;
 
 class HomeController extends Controller
 {
@@ -39,5 +40,16 @@ class HomeController extends Controller
 
             return view('pesquisador.index', compact('contratos_sr'));
         }
+    }
+
+    public function generatePDF($id)
+    {   
+        $contratos_sr = Contrato_sr::find($id);
+
+        $data = ['title' => 'Esse Contrato é show', 'contrato'=> $contratos_sr ];
+
+        $pdf = PDF::loadView('pdf.myPDF', $data);
+  
+        return $pdf->download('teste.pdf');
     }
 }
