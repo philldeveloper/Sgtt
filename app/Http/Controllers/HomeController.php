@@ -46,10 +46,10 @@ class HomeController extends Controller
     {   
         $contratos_sr = Contrato_sr::find($id);
 
-        $data = ['title' => 'Esse Contrato é show', 'contrato'=> $contratos_sr ];
+        $data = ['title' => '', 'contrato'=> $contratos_sr ];
 
         $pdf = PDF::loadView('pdf.myPDF', $data);
   
-        return $pdf->download('teste.pdf');
+        return $pdf->download('Contrato - Sem Repasse.pdf');
     }
 }

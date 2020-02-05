@@ -706,7 +706,8 @@
                                 da Constituição Federal.
                                 E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente
                                 instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.
-                                </p>
+                                </p><br>
+                                <p>Cidade, UF, Dia do Mês e ano:</p>
                       <input type="text" class="myform-control text-black"  name="cidade_uf_dia_foro"  placeholder="Cidade/UF, dia de mês de ano. ">   <br>   
                     <div class="mb-4 row justify-content-center">
                       <div class="col-6 align-self-center">
