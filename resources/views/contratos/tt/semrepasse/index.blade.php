@@ -741,26 +741,16 @@
   
                 <p>Seu contrato será revisado em até de 30 dias e uma resposta será gerada. Aguarde a confirmação do sistema. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolores excepturi ipsum rem, enim accusantium quam similique assumenda eum veniam saepe, quas earum nisi hic neque voluptate consectetur ex quo!</p><br>
                 
-                <div class="row justify-content-right">
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <a href="#" class="btn btn-block d-fluid p-2 bg-white border-dark font-weight-bold text-uppercase text-black text-center"><i class="fas fa-2x fa-envelope-open-text p-2"></i><br>
-                      SALVAR NO EMAIL
-                    </a>
-                  </div>
+                {{--<div class="row justify-content-right">
                   <div class="col-lg-2 col-md-4 col-sm-6">
-                    <a href="#" class="btn btn-block d-fluid p-2 bg-white border-dark font-weight-bold text-uppercase text-black text-center"><i class="fas fa-2x fa-file-pdf p-2"></i><br>
+                    <a href="{{route('printpdf', $contratos_sr->id)}}" class="btn btn-block d-fluid p-2 bg-white border-dark font-weight-bold text-uppercase text-black text-center"><i class="fas fa-2x fa-file-pdf p-2"></i><br>
                       BAIXAR PDF
                     </a>
                   </div>
-                  <div class="col-lg-2 col-md-4 col-sm-6">
-                    <a href="#" class="btn btn-block d-fluid p-2 bg-primary text-light font-weight-bold text-uppercase text-black text-center"><i class="fas fa-2x fa-print p-2"></i><br>
-                      IMPRIMIR
-                    </a>
-                  </div>
-                </div>
+                </div>--}}
 
                 <div class="text-center">
-                  <button class="btn btn-lg btn-primary" type="submit">ENVIAR PARA O BANCO</button>
+                  <button class="btn btn-lg btn-primary" type="submit">SALVAR CONTRATO</button>
                 </div>
               </div>
             </div>
