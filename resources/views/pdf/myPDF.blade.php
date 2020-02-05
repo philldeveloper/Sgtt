@@ -12,12 +12,16 @@
    		font-family: 'Times New Roman' !important;
    		text-align: justify;
    	}
+   	h5{
+   		background-color: #E8E8E8;
+   		padding: 6px;
+   	}
    </style>
 </head>
 <body>
 	<h1>{{$title}}</h1>
-	<h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2"> ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI CELEBRAM {{$contrato->nome_ict}}" E {{$contrato->nome_parceiro}}" NA FORMA A SEGUIR.</h5><br>
-	<h5 class="text-uppercase">1º PARCEIRO</h5><hr>
+	<h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2" style="text-decoration: none; background-color: none !important"> ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI CELEBRAM {{$contrato->nome_ict}}" E {{$contrato->nome_parceiro}}" NA FORMA A SEGUIR.</h5><br>
+	<h5 class="text-uppercase" style="text-decoration: none; background-color: none !important">1º PARCEIRO</h5><hr>
 	<p>
 	   <span class="font-weight-bold">Nome:</span> {{$contrato->nome_teste}}<br>
 	   <span class="font-weight-bold">Natureza Jurídica:</span> {{$contrato->nat_juridica}}<br>
@@ -35,7 +39,7 @@
 	   <span class="font-weight-bold">Cargo:</span> {{$contrato->ato_nomeacao}}<br>
 	   <span class="font-weight-bold">Doravante denominado:</span> {{$contrato->doravante_denominado}}<br>
 	</p>
-	<h5 class="text-uppercase">2º PARCEIRO</h5><hr>
+	<h5 class="text-uppercase" style="text-decoration: none; background-color: none !important">2º PARCEIRO</h5><hr>
 	<p>
 	   <span class="font-weight-bold">Nome:</span> {{$contrato->nome_parceiro_instituicao}}<br>
 	   <span class="font-weight-bold">Natureza Jurídica:</span> {{$contrato->parceiro_nat_juridica}}<br>
@@ -247,11 +251,13 @@
 			<span class="font-weight-bold">B)</span> Formulário de Resultado Final: no prazo de até 120 (cento e vinte) dias contados da conclusão do objeto deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho. <br>
 		</p>
 
-		<span class="font-weight-bold">12.3</span> No Formulário de Resultado de que trata a subcláusula 12.2, deverá ser demonstrada a compatibilidade entre as metas previstas e as alcançadas no período, bem como apontadas as justificativas em caso de discrepância, consolidando dados e valores das ações desenvolvidas. <br>
+		<p>
+			<span class="font-weight-bold">12.3</span> No Formulário de Resultado de que trata a subcláusula 12.2, deverá ser demonstrada a compatibilidade entre as metas previstas e as alcançadas no período, bem como apontadas as justificativas em caso de discrepância, consolidando dados e valores das ações desenvolvidas. <br>
 
-		<span class="font-weight-bold">12.4</span> Caberá a cada PARCEIRO adotar as providências necessárias julgadas cabíveis, caso os <br>
+			<span class="font-weight-bold">12.4</span> Caberá a cada PARCEIRO adotar as providências necessárias julgadas cabíveis, caso os <br>
 
-		<span class="font-weight-bold">12.5</span> A prestação de contas será simplificada, privilegiando os resultados da pesquisa, e seguirá as regras previstas no artigo 58 do Decreto nº 9.283/18 e/ou na Política de Inovação da entidade pública. <br>
+			<span class="font-weight-bold">12.5</span> A prestação de contas será simplificada, privilegiando os resultados da pesquisa, e seguirá as regras previstas no artigo 58 do Decreto nº 9.283/18 e/ou na Política de Inovação da entidade pública. 
+		</p>
 	</p><br>
 
 	<!------clausula---->
@@ -327,5 +333,8 @@
 		</p>
 	</p>
 	<br>
+	<footer class="footer" style="position: fixed; right:5px; bottom: 5px; opacity: 0.3; margin-top: 20px !important">
+		<img src="https://image.flaticon.com/icons/svg/2489/2489462.svg" alt="sgtt" width="30%">
+	</footer>
 </body>
 </html>

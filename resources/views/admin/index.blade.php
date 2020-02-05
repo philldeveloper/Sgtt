@@ -65,8 +65,8 @@
                     <th scope="col">#</th>
                     <th scope="col">Desenv. por</th>
                     <th scope="col">ICT | Parceiro</th>
-                    <th scope="col">Criado em</th>
-                    <th scope="col">Modificado em</th>
+                    <!--th scope="col">Criado em</th>
+                    <th scope="col">Modificado em</th-->
                     <th scope="col">Status</th>
                     <th scope="col">Ações</th>
                   </tr>
@@ -77,8 +77,6 @@
                     <td>{{$contratos->id}}</td>
                     <td>{{$contratos->user->nome}}</td>
                     <td>{{$contratos->nome_ict}} e {{$contratos->nome_parceiro}}</td>
-                    <td></td>
-                    <td></td>
                     <td>
                       <div class="progress mt-2 mr-3">
                         <div class="progress-bar bg-primary pr-3 pl-3" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Apreciação</div>
@@ -89,6 +87,7 @@
                         <div class="btn-group" role="group" aria-label="Basic example">
                           <a href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold" target="blank">Ver</a>
                           <a href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold" target="blank">Editar</a>
+                          <a href="{{route('printpdf', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold" target="blank">Baixar</a>
 
                           @csrf
                           @method('DELETE')
