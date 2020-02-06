@@ -164,6 +164,7 @@
                     <th scope="col">Criado em</th>
                     <th scope="col">Modificado em</th>
                     <th scope="col">Status</th>
+                    <th scope="col">Correções</th>
                     <th scope="col">Ações</th>
                   </tr>
                 </thead>
@@ -180,10 +181,14 @@
                       </div>
                     </td>
                     <td>
+                      <a href="" class="btn btn-sm pl-4 pr-4 mr-4 btn-outline-danger font-weight-bold" target="blank">Ver Correções</a>
+                    </td>
+                    <td>
                       <form action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
                         <div class="btn-group" role="group" aria-label="Basic example">
-                          <a href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold" target="blank">Ver</a>
-                          <a href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold" target="blank">Editar</a>
+                          <a href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold" target="blank"><i class="fa fa-eye"></i></a>
+                          <a href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold" target="blank"><i class="fa fa-edit"></i></a>
+                          <a href="{{route('printpdf', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold" target="blank"><i class="fa fa-download"></i></a>
 
                           @csrf
                           @method('DELETE')

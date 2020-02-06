@@ -60,13 +60,6 @@
             <i class="fas fa-fw fa-chart-area" style="color: white !important"></i>
             <span>Contábil</span></a>
         </li>
-        <!-- Nav Item - Pages Collapse Menu -->
-        <li class="nav-item">
-          <a class="nav-link" href="">
-            <i class="fas fa-fw fa-question-circle" style="color: white !important"></i>
-            <span>Faq</span>
-          </a>
-        </li>
         <div class="dropdown-divider" style="margin: 15px;"></div>
         <li class="nav-item">
             <a class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal">

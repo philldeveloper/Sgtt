@@ -146,7 +146,7 @@ class Contrato_srController extends Controller
             $contratos_sr = Contrato_sr::all();
 
             return view('admin.index', compact('contratos_sr'))
-            ->with('success','Product updated successfully');;
+            ->with('success','Product updated successfully');
         }else{
             
             $contratos_sr = Contrato_sr::all();
