@@ -161,10 +161,8 @@
                   <tr>
                     <th scope="col">#</th>
                     <th scope="col">ICT | Parceiro</th>
-                    <th scope="col">Criado em</th>
-                    <th scope="col">Modificado em</th>
                     <th scope="col">Status</th>
-                    <th scope="col">Correções</th>
+                    <th scope="col">Parecer</th>
                     <th scope="col">Ações</th>
                   </tr>
                 </thead>
@@ -173,16 +171,25 @@
                   <tr class="">
                     <th scope="row">{{$contratos->id}}</th>
                     <td>{{$contratos->nome_ict}} e {{$contratos->nome_parceiro}}</td>
-                    <td>{{$contratos->created_at->format('d/m/Y H:i:s')}}</td>
-                    <td>{{$contratos->updated_at->format('d/m/Y H:i:s')}}</td>
+                    <!--td>{{$contratos->created_at->format('d/m/Y H:i:s')}}</td>
+                    <td>{{$contratos->updated_at->format('d/m/Y H:i:s')}}</td-->
                     <td>
                       <div class="progress mt-2 mr-3">
                         <div class="progress-bar bg-primary pr-3 pl-3" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Apreciação</div>
                       </div>
                     </td>
+                    <!--se nao funfar, trocar por foreach, tirando o empty-->
+                    @forelse ($contratos->correcoes as $correcao)
                     <td>
-                      <a href="" class="btn btn-sm pl-4 pr-4 mr-4 btn-outline-danger font-weight-bold" target="blank">Ver Correções</a>
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                          <a href="{{route('correcoes.show', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-warning font-weight-bold" target="blank"><i class="fa fa-exclamation-circle text-dark"></i></a>
+                      </div>
                     </td>
+                    @empty
+                    <td>
+                      <p>Não há correções ainda.</p>
+                    </td>
+                    @endforelse
                     <td>
                       <form action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
                         <div class="btn-group" role="group" aria-label="Basic example">

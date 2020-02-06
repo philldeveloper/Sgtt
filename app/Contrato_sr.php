@@ -68,5 +68,4 @@ class Contrato_sr extends Model
         return $this->hasMany('App\ContratoCorrecao', 'contrato_sr_id');
     }
 
-
 }

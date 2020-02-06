@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\ContratoCorrecao;
+use App\Contrato_sr;
+
 class ContratoCorrecaoController extends Controller
 {
     /**
@@ -39,7 +42,7 @@ class ContratoCorrecaoController extends Controller
         $cc = new ContratoCorrecao;
 
         $cc->correcoes = $request->correcoes;
-        $cc->contrato_sr_id = Auth::id();      
+        $cc->contrato_sr_id = $request->contrato_sr_id;      
         $cc->save();
 
         return redirect()->back();
@@ -55,7 +58,9 @@ class ContratoCorrecaoController extends Controller
     {
         $cc = ContratoCorrecao::find($id);
 
-        return view('contratos.correcoes.show', compact('cc'));
+        $contratos_sr = Contrato_sr::find($id);
+
+        return view('contratos.correcoes.show', compact('cc', 'contratos_sr'));
     }
 
     /**

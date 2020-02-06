@@ -38,6 +38,8 @@ Route::resource('contrato_cr', 'Contrato_crController');
 
 Route::resource('inicio', 'IndexController');
 
+Route::resource('correcoes', 'ContratoCorrecaoController');
+
 Route::get('/customer/print-pdf/{id}', 'HomeController@generatePDF')->name('printpdf');
 // Route::get('/customer/print-pdf/{id}', [ 'as' => 'customer.printpdf', 'uses' => 'HomeController@generatePDF']);
 
