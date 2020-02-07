@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class ContratoCorrecao extends Model
 {
     protected $fillable = [
-    	'correcao',
+    	'descricao',
         'contrato_sr_id'
     ];
 

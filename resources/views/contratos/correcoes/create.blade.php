@@ -37,7 +37,7 @@
       </div>
       <div class="form-group">
         <div class="h3 ml-3 font-weight-bold text-dark mb-2 py-4">Escreva o Parecer:</div>
-        <textarea class="form-control" name="correcao" required=""></textarea>
+        <textarea class="form-control" name="descricao" required=""></textarea>
       </div>
       <button class="btn btn-primary btn-lg py-2 mt-5" type="submit">Registrar</button>
     </form>

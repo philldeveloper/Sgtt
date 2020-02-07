@@ -15,7 +15,7 @@ class CreateContratoCorrecaosTable extends Migration
     {
         Schema::create('contrato_correcaos', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('correcao');
+            $table->string('descricao');
 
             $table->integer('contrato_sr_id')->unsigned(); //referencia a tabela de users
             $table->foreign('contrato_sr_id')->references('id')->on('contrato_srs');

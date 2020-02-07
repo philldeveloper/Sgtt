@@ -115,12 +115,12 @@ class Contrato_srsTableSeeder extends Seeder
 		]);
 
 		ContratoCorrecao::create ([
-			'correcao' => 'This is a tinny test.',
+			'descricao' => 'This is a tinny test.',
 		    'contrato_sr_id' => '1'
 		]);
 
 		ContratoCorrecao::create ([
-			'correcao' => 'Ghost Love Score',
+			'descricao' => 'Ghost Love Score',
 		    'contrato_sr_id' => '2',
 		]);
     }

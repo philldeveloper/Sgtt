@@ -39,12 +39,7 @@ class ContratoCorrecaoController extends Controller
      */
     public function store(Request $request)
     {
-        // $cc = new ContratoCorrecao;
 
-        // $cc->correcao = $request->correcao;
-        // $cc->contrato_sr_id = $request->contrato_sr_id;      
-        
-        // $cc->save();
         $cc = ContratoCorrecao::create($request->all());
 
         return redirect()->back();
@@ -59,6 +54,8 @@ class ContratoCorrecaoController extends Controller
     public function show($id)
     {
         $cc = ContratoCorrecao::find($id);
+
+        return view('contratos.correcoes.show', compact('cc'));
        
     }
 

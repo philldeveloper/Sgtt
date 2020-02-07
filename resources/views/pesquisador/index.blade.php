@@ -162,6 +162,7 @@
                     <th scope="col">#</th>
                     <th scope="col">ICT | Parceiro</th>
                     <th scope="col">Status</th>
+                    <th scope="col">Correções</th>
                     <th scope="col">Parecer</th>
                     <th scope="col">Ações</th>
                   </tr>
@@ -179,17 +180,18 @@
                       </div>
                     </td>
                     <!--se nao funfar, trocar por foreach, tirando o empty-->
-                    @forelse ($contratos->correcoes as $correcao)
+                    @if (count($contratos->correcoes) >=1)
                     <td>
                       <div class="btn-group" role="group" aria-label="Basic example">
-                          <a href="{{route('correcoes.show', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-warning font-weight-bold" target="blank"><i class="fa fa-exclamation-circle text-dark"></i></a>
+                          <a href="{{route('contrato_correcoes', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-warning font-weight-bold" target="blank"><i class="fa fa-exclamation-circle text-dark"></i></a>
                       </div>
                     </td>
-                    @empty
+                    @else
                     <td>
-                      <p>Não há correções ainda.</p>
+                      <p>0</p>
                     </td>
-                    @endforelse
+                    @endif
+                    <td>Ok</td>
                     <td>
                       <form action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
                         <div class="btn-group" role="group" aria-label="Basic example">

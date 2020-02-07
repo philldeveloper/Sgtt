@@ -79,13 +79,13 @@
             <span>Faq</span>
           </a>
         </li>
-        <div class="dropdown-divider" style="margin: 15px;"></div>
+        <!--sdiv class="dropdown-divider" style="margin: 15px;"></div-->
           <li class="nav-item">
             <a class="nav-link" href="{{asset('meuperfil')}}">
             <i class="fas fa-tools"></i>
               <span>Meu Perfil</span></a>  
           </li>
-          <li class="nav-item">
+          <li class="nav-item mt-5 py-4">
             <a class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal">
             <i class="fas fa-sign-out-alt"></i>
               <span>Sair</span></a>
