@@ -174,4 +174,13 @@ class Contrato_srController extends Controller
         return redirect()->back()
                         ->with('success','Product deleted successfully');
     }
+
+
+     public function contrato_correcoes($id){
+
+          $contratos_sr = Contrato_sr::find($id);
+
+       return view('contratos.tt.semrepasse.mostracorrecoes', compact('contratos_sr'));
+
+    }
 }

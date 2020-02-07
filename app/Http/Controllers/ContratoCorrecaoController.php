@@ -16,9 +16,7 @@ class ContratoCorrecaoController extends Controller
      */
     public function index()
     {
-        $cc = ContratoCorrecao::all();
-
-        return view('contratos.correcoes.index', compact('cc'));
+      
     }
 
     /**
@@ -28,7 +26,9 @@ class ContratoCorrecaoController extends Controller
      */
     public function create()
     {
-        return view ('contratos.correcoes.create');
+        $contratos_sr = Contrato_sr::all();
+
+        return view ('contratos.correcoes.create', compact('contratos_sr'));
     }
 
     /**
@@ -39,11 +39,13 @@ class ContratoCorrecaoController extends Controller
      */
     public function store(Request $request)
     {
-        $cc = new ContratoCorrecao;
+        // $cc = new ContratoCorrecao;
 
-        $cc->correcoes = $request->correcoes;
-        $cc->contrato_sr_id = $request->contrato_sr_id;      
-        $cc->save();
+        // $cc->correcao = $request->correcao;
+        // $cc->contrato_sr_id = $request->contrato_sr_id;      
+        
+        // $cc->save();
+        $cc = ContratoCorrecao::create($request->all());
 
         return redirect()->back();
     }
@@ -57,10 +59,7 @@ class ContratoCorrecaoController extends Controller
     public function show($id)
     {
         $cc = ContratoCorrecao::find($id);
-
-        $contratos_sr = Contrato_sr::find($id);
-
-        return view('contratos.correcoes.show', compact('cc', 'contratos_sr'));
+       
     }
 
     /**

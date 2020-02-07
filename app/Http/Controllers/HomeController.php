@@ -8,6 +8,8 @@ use Auth;
 
 use App\Contrato_sr;
 
+use App\Contrato_cr;
+
 use PDF;
 
 class HomeController extends Controller
@@ -33,12 +35,16 @@ class HomeController extends Controller
 
             $contratos_sr = Contrato_sr::all();
 
-            return view('admin.index', compact('contratos_sr'));
+            $contratos_cr = Contrato_cr::all();
+
+            return view('admin.index', compact('contratos_sr', 'contratos_cr'));
         }else{
             
             $contratos_sr = Contrato_sr::all();
 
-            return view('pesquisador.index', compact('contratos_sr'));
+            $contratos_cr = Contrato_cr::all();
+
+            return view('pesquisador.index', compact('contratos_sr', 'contratos_cr'));
         }
     }
 
@@ -51,5 +57,15 @@ class HomeController extends Controller
         $pdf = PDF::loadView('pdf.myPDF', $data);
   
         return $pdf->download('Contrato - Sem Repasse.pdf');
+    }
+
+
+    public function contratosindex(){
+
+        $contratos_sr = Contrato_sr::all();
+        
+        $contratos_cr = Contrato_cr::all();
+
+        return view('admin.contratos', compact('contratos_sr', 'contratos_cr'));
     }
 }

@@ -50,15 +50,28 @@
       <ul class="mt-5 navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-          <a class="nav-link" href="">
+          <a class="nav-link" href="{{route('home')}}">
+            <i class="fas fa-fw fa-home" style="color: white !important"></i>
+            <span>Inicio</span></a>
+        </li>
+
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('contratos-index')}}">
             <i class="fas fa-fw fa-hands-helping" style="color: white !important"></i>
             <span>Contratos</span></a>
         </li>
-        <!-- Nav Item - Charts -->
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('correcoes.create')}}">
+            <i class="fas fa-fw fa-edit" style="color: white !important"></i>
+            <span>Correções</span></a>
+        </li>
+        <!-- Nav Item - Dashboard -->
         <li class="nav-item">
           <a class="nav-link" href="">
-            <i class="fas fa-fw fa-chart-area" style="color: white !important"></i>
-            <span>Contábil</span></a>
+            <i class="fas fa-fw fa-check" style="color: white !important"></i>
+            <span>Pareceres</span></a>
         </li>
         <div class="dropdown-divider" style="margin: 15px;"></div>
         <li class="nav-item">

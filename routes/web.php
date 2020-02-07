@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-})->name('inicio');
+});
 
 Route::get('/meuperfil', function () {
     return view('pesquisador.perfil');
@@ -26,17 +26,19 @@ Route::get('/faq', function () {
 
 Auth::routes();
 
+Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/contrato_sr/{id}', 'Contrato_srController@show')->name('contratosr_show');
 
 Route::get('/contrato_sr/edit/{id}', 'Contrato_srController@edit')->name('contratosr_edit');
 
-Route::get('/home', 'HomeController@index')->name('home');
-
 Route::resource('contrato_sr', 'Contrato_srController');
 
-Route::resource('contrato_cr', 'Contrato_crController');
+Route::get('contrato_sr/{id}/correcoes', 'Contrato_srController@contrato_correcoes')->name('contrato_correcoes');
 
-Route::resource('inicio', 'IndexController');
+Route::get('contratos', 'HomeController@contratosindex')->name('contratos-index');
+
+Route::resource('contrato_cr', 'Contrato_crController');
 
 Route::resource('correcoes', 'ContratoCorrecaoController');
 
