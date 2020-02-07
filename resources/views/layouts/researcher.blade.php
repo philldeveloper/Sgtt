@@ -28,14 +28,14 @@
   a#teste:hover{color:white !important;}
   #wrapper #content-wrapper {background-color: #f5f5f5}
 
-  .my-sidebar {
+  /*.my-sidebar {
     width: 20%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #334D52 !important;
-    color: white !important;
+    color: white !important;*/
 }
 
 </style>
@@ -60,9 +60,9 @@
       <ul class="mt-5 navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-          <a class="nav-link" href="{{asset('inicio')}}">
-            <i class="fas fa-fw fa-hands-helping"></i>
-            <span>Contratos</span></a>
+          <a class="nav-link" href="{{route('home')}}">
+            <i class="fas fa-fw fa-home" style="color: white !important"></i>
+            <span>Inicio</span></a>
         </li>
         @if(Auth::user()->admin == 1)
         <li class="nav-item">
@@ -80,7 +80,6 @@
           </a>
         </li>
         <div class="dropdown-divider" style="margin: 15px;"></div>
-        
           <li class="nav-item">
             <a class="nav-link" href="{{asset('meuperfil')}}">
             <i class="fas fa-tools"></i>
