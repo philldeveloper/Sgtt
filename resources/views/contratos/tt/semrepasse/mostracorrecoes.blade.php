@@ -1,4 +1,4 @@
-@extends('layouts.researcher')
+@extends('layouts.admin')
 
 <style type="text/css">
 
@@ -21,28 +21,38 @@
   </div>
   <hr>
   <div class="card-body p-3 pt-5">
-  <table class="table table-hover">
-      <tr>
+    <div class="table-responsive">
+  <table class="table border table-hover shadow-sm">
+      <tr class="bg-light">
         <th>#</th>
         <th> Descrição</th>
         <th> Data de Modificação</th>
         <th> Data de Solicitação</th>
-        <th> Lorem</th>
+        <th> Status</th>
+        <th> Ações</th>
       </tr>
     @foreach($contratos_sr->correcoes as $correcao)
     <tr>
-      <td>{{$correcao->id}}</td>
-      <td>{{$correcao->descricao}}</td>
+      <td class="font-weight-bold">{{$correcao->id}}</td>
+      <td class="font-weight-bold">{{$correcao->descricao}}</td>
       <td>{{$correcao->created_at->format('d/m/Y')}}</td>
       <td>{{$correcao->updated_at}}</td>
+      <td>Resolvida</td>
       <td>
+        <form action="{{route('correcoes.destroy',$correcao->id) }}" method="POST">
           <div class="btn-group" role="group" aria-label="Basic example">
-              <a href="{{route('correcoes.show', $correcao->id)}}" class="btn btn-sm pl-4 pr-4 btn-primary font-weight-bold" target="blank"><i class="fa fa-arrow-right"></i></a>
+              <a href="{{route('correcoes.show', $correcao->id)}}" class="btn btn-sm pl-4 pr-4 btn-light font-weight-bold" target="blank"><i class="fa fa-eye"></i></a>
+              <a href="{{route('correcoes.edit', $correcao->id)}}" class="btn btn-sm pl-4 pr-4 btn-light font-weight-bold" target="blank"><i class="fa fa-edit"></i></a>
+            @csrf
+            @method('DELETE')
+            <button class="btn btn-sm pl-4 pr-4 btn-danger font-weight-bold" type="submit">Deletar</button>
           </div>
+          </form>
       </td>
     </tr>
     @endforeach
       </table>
+    </div><!--table-responsive-->
   </div>
 </div>
 @endsection

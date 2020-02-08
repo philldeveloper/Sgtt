@@ -13,13 +13,13 @@
 <!-- Begin Page Content -->
 <div class="container-fluid">
     <div class="row">
-      <div class="col-6">
-        <div class="card mb-4">
-          <div class="card-body">
+      <div class="col-lg-6">
+        <div class="card mb-4 rounded-0">
+          <div class="card-body rounded-0">
             <h3 class="mt-2 font-weight-bold ml-auto">Acordo de Cooperação <span class="text-dark">sem repasse</span></h3>
             <hr>
-            <div class="img-category mb-4 float-left mr-3">
-              <img src="https://www.flaticon.com/premium-icon/icons/svg/2081/2081811.svg" alt="Shield">
+            <div class="img-category mb-4 float-left mr-3 d-none d-lg-block d-xl-none">
+              <img src="https://www.flaticon.com/premium-icon/icons/svg/2081/2081811.svg" class="d-none d-lg-block d-xl-none" alt="Shield">
             </div>
 
             <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
@@ -29,9 +29,9 @@
           </div>
         </div>
       </div>
-      <div class="col-6">
-        <div class="card mb-4">
-          <div class="card-body">
+      <div class="col-lg-6">
+        <div class="card mb-4 rounded-0">
+          <div class="card-body rounded-0">
             <h3 class="mt-2 font-weight-bold ml-auto">Acordo de Cooperação <span class="text-dark">com repasse</span></h3>
             <hr>
             <div class="img-category mb-4 float-left mr-3">
@@ -56,13 +56,13 @@
 <div class="container-fluid">
 <div class="row">
 
-<div class="col-12 mt-5">
-  <div class="card mb-4">
-    <div class="card-body p-3 mb-5">
+<div class="col-12 mt-5 rounded-0">
+  <div class="card mb-4 rounded-0">
+    <div class="card-body p-0 pb-5 rounded-0">
       
       <div class="table-responsive">
-          <table class="table table-hover mb-0">
-            <thead class="roboto-font font-weight-bold text-dark border-left-success bg-light" style="font-size: 1.25rem">
+          <table class="table table-hover mb-0" id="example">
+            <thead class="roboto-font font-weight-bold text-dark border-left-success bg-light shadow-sm" style="font-size: 1.25rem">
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Tipo</th>
@@ -93,25 +93,25 @@
                 @if (count($contratos->correcoes) >=1)
                 <td>
                   <div class="btn-group" role="group" aria-label="Basic example">
-                      <a href="{{route('contrato_correcoes', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-warning font-weight-bold" target="blank"><i class="fa fa-exclamation-circle text-dark"></i></a>
+                      <a href="{{route('contrato_correcoes', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-warning  text-dark font-weight-bold" target="blank">{{$contratos->correcoes->count()}}</a>
                   </div>
                 </td>
                 @else
                 <td>
-                  <p>0</p>
+                  <p class="text-center font-weight-bold text-danger">0</p>
                 </td>
                 @endif
                 <td>OK</td>
                 <td>
                   <form action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
                     <div class="btn-group" role="group" aria-label="Basic example">
-                      <a href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold" target="blank">Ver</a>
-                      <a href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold" target="blank">Editar</a>
-                      <a href="{{route('printpdf', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-secondary font-weight-bold" target="blank">Baixar</a>
+                      <a href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-light font-weight-bold" target="blank">Ver</a>
+                      <a href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-light font-weight-bold" target="blank">Editar</a>
+                      <a href="{{route('printpdf', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-light font-weight-bold" target="blank">Baixar</a>
 
                       @csrf
                       @method('DELETE')
-                      <button class="btn btn-sm pl-4 pr-4 bg-danger text-light font-weight-bold" type="submit">Deletar</button>
+                      <button class="btn btn-sm pl-4 pr-4 bg-danger text-light font-weight-bold" type="submit"><i class="fa fa-trash text-light"></i></button>
                     </div>
                  </form>
                 </td>

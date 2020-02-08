@@ -14,7 +14,7 @@
 
 <div class="container">
     <div class="row py-5">
-        <div class="col-md-4 py-1">
+        <div class="col-md-4 py-1 rounded-0">
             <span class="h3 font-weight-bold">Contratos Gerados</span>
             <div class="card mt-3">
                 <div class="card-body">
@@ -23,7 +23,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 py-1">
+        <div class="col-md-4 py-1 rounded-0">
             <span class="h3 font-weight-bold">Pareceres Emitidos</span>
             <div class="card mt-3">
                 <div class="card-body">
@@ -36,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 py-1">
+        <div class="col-md-4 py-1 rounded-0">
             <span class="h3 font-weight-bold">Usuários cadastrados</span>
             <div class="card mt-3">
                 <div class="card-body">
