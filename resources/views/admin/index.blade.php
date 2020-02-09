@@ -18,8 +18,16 @@
             <span class="h3 font-weight-bold">Contratos Gerados</span>
             <div class="card mt-3">
                 <div class="card-body">
+                    @if (count($contratos_sr) >=1)
                     <h4 class="font-weight-bold">Sem Repasse: {{$contratos_sr->count()}}</h4>
+                    @else
+                    <h4 class="font-weight-bold">Sem Repasse: 0</h4>
+                    @endif
+                    @if (count($contratos_cr) >=1)
                     <h4 class="font-weight-bold">Com Repasse: {{$contratos_cr->count()}}</h4>
+                    @else
+                    <h4 class="font-weight-bold">Com Repasse: 0</h4>
+                    @endif
                 </div>
             </div>
         </div>
@@ -27,12 +35,21 @@
             <span class="h3 font-weight-bold">Pareceres Emitidos</span>
             <div class="card mt-3">
                 <div class="card-body">
-                    @foreach($contratos_sr as $csr) 
-                      <h4 class="font-weight-bold">Sem Repasse: {{$csr->correcoes->count()}}</h4>
-                    @endforeach
-                    @foreach($contratos_cr as $ccr) 
-                      <h4 class="font-weight-bold">Com Repasse: {{$ccr->correcoes->count()}}</h4>
-                    @endforeach
+                    @if (count($contratos_sr) >=1)
+                        @foreach($contratos_sr as $csr) 
+                          <h4 class="font-weight-bold">Sem Repasse: {{$csr->correcoes->count()}}</h4>
+                        @endforeach
+                        @else
+                            <h4 class="font-weight-bold">Sem Repasse: 0</h4>
+                    @endif
+
+                    @if (count($contratos_cr) >=1)
+                        @foreach($contratos_cr as $ccr) 
+                          <h4 class="font-weight-bold">Com Repasse: {{$ccr->correcoes->count()}}</h4>
+                        @endforeach
+                        @else
+                          <h4 class="font-weight-bold">Com Repasse: 0</h4>
+                    @endif
                 </div>
             </div>
         </div>
