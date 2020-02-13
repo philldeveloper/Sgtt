@@ -774,6 +774,13 @@
   
                 <p>Seu contrato será revisado em até de 30 dias e uma resposta será gerada. Aguarde a confirmação do sistema. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolores excepturi ipsum rem, enim accusantium quam similique assumenda eum veniam saepe, quas earum nisi hic neque voluptate consectetur ex quo!</p><br>
 
+                <div class="form-check float-left">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="{{$contratos_sr->check_clausula}}">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Default checkbox
+                  </label>
+                </div>
+
                 <div class="text-center">
                   <button class="btn btn-lg btn-primary" type="submit">ENVIAR PARA O BANCO (TESTE)</button>
                 </div>

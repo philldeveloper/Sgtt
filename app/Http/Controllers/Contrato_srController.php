@@ -76,6 +76,14 @@ class Contrato_srController extends Controller
         $contrato_sr->parceiro_cargo = $request->parceiro_cargo;
         $contrato_sr->clausula_descricao = $request->clausula_descricao;
         $contrato_sr->clausula_objetivo = $request->clausula_objetivo;
+        $contrato_sr->clausula_edit_2 = $request->clausula_edit_2;
+        $contrato_sr->clausula_edit_3 = $request->clausula_edit_3;
+        $contrato_sr->clausula_edit_5 = $request->clausula_edit_5;
+        $contrato_sr->clausula_edit_6 = $request->clausula_edit_6;
+        $contrato_sr->clausula_edit_7 = $request->clausula_edit_7;
+        $contrato_sr->clausula_edit_8 = $request->clausula_edit_8;
+        $contrato_sr->clausula_edit_12 = $request->clausula_edit_12;
+        $contrato_sr->clausula_edit_13 = $request->clausula_edit_13;
         $contrato_sr->nome_inst_ict = $request->nome_inst_ict;
         $contrato_sr->nome_inst_privado = $request->nome_inst_privado;
         $contrato_sr->nome_inst_fundacao = $request->nome_inst_fundacao;
@@ -91,6 +99,7 @@ class Contrato_srController extends Controller
         $contrato_sr->nome_inst_privado_foro = $request->nome_inst_privado_foro;
         $contrato_sr->nome_rep_privado_foro = $request->nome_rep_privado_foro;
         $contrato_sr->cargo_rep_privado_foro = $request->cargo_rep_privado_foro;
+        $contrato_sr->check_clausula = $request->check_clausula;
 
         $contrato_sr->user_id = Auth::id();      
         
@@ -144,14 +153,16 @@ class Contrato_srController extends Controller
         if(Auth::user()->admin == 1){
 
             $contratos_sr = Contrato_sr::all();
+            $contratos_cr = Contrato_sr::all();
 
-            return view('admin.index', compact('contratos_sr'))
+            return view('admin.index', compact('contratos_sr', 'contratos_cr'))
             ->with('success','Product updated successfully');
         }else{
             
             $contratos_sr = Contrato_sr::all();
+            $contratos_cr = Contrato_sr::all();
 
-            return view('pesquisador.index', compact('contratos_sr'))
+            return view('pesquisador.index', compact('contratos_sr', 'contratos_cr'))
             ->with('success','Product updated successfully');
         }
     }

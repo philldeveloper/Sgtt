@@ -46,6 +46,14 @@ class CreateContratoSrsTable extends Migration
             $table->string('parceiro_cargo');
             $table->string('clausula_descricao')->nullable()->default(null);
             $table->string('clausula_objetivo')->nullable()->default(null);
+            $table->longText('clausula_edit_2')->nullable()->default(null);
+            $table->longText('clausula_edit_3')->nullable()->default(null);
+            $table->longText('clausula_edit_5')->nullable()->default(null);
+            $table->longText('clausula_edit_6')->nullable()->default(null);
+            $table->longText('clausula_edit_7')->nullable()->default(null);
+            $table->longText('clausula_edit_8')->nullable()->default(null);
+            $table->longText('clausula_edit_12')->nullable()->default(null);
+            $table->longText('clausula_edit_13')->nullable()->default(null);
             $table->string('nome_inst_ict');
             $table->string('nome_inst_privado');
             $table->string('nome_inst_fundacao');
@@ -61,6 +69,7 @@ class CreateContratoSrsTable extends Migration
             $table->string('nome_inst_privado_foro');
             $table->string('nome_rep_privado_foro');
             $table->string('cargo_rep_privado_foro');
+            $table->boolean('check_clausula')->default(true);
 
             $table->integer('user_id')->unsigned(); //referencia a tabela de users
             $table->foreign('user_id')->references('id')->on('users');

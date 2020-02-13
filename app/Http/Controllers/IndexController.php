@@ -8,6 +8,7 @@ use Auth;
 
 use App\Contrato_sr;
 
+use App\Contrato_cr;
 
 class IndexController extends Controller
 {
@@ -30,14 +31,16 @@ class IndexController extends Controller
     {
         if(Auth::user()->admin == 1){
 
+            $contratos_cr = Contrato_sr::all();
             $contratos_sr = Contrato_sr::all();
 
-            return view('admin.index', compact('contratos_sr'));
+            return view('admin.index', compact('contratos_sr', 'contratos_cr'));
         }else{
             
+            $contratos_cr = Contrato_sr::all();
             $contratos_sr = Contrato_sr::all();
 
-            return view('pesquisador.index', compact('contratos_sr'));
+            return view('pesquisador.index', compact('contratos_sr', 'contratos_cr'));
         }
     }
 }

@@ -74,8 +74,6 @@
 		2.6. A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo. <br>
 	</p>
 
-	<!------clausula---->
-
 	<h5 class="font-weight-bold">3. CLÁUSULA TERCEIRA - DAS ATRIBUIÇÕES E RESPONSABILIDADES</h5><br>
 	<p>
 		3.1. São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I: <br>

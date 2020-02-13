@@ -41,6 +41,14 @@ class Contrato_sr extends Model
         'parceiro_cargo',
         'clausula_descricao',
         'clausula_objetivo',
+        'clausula_edit_2',//clausulas editaveis
+        'clausula_edit_3',
+        'clausula_edit_5',
+        'clausula_edit_6',
+        'clausula_edit_7',
+        'clausula_edit_8',
+        'clausula_edit_12',
+        'clausula_edit_13',
         'nome_inst_ict',
         'nome_inst_privado',
         'nome_inst_fundacao',
@@ -56,6 +64,7 @@ class Contrato_sr extends Model
         'nome_inst_privado_foro',
         'nome_rep_privado_foro',
         'cargo_rep_privado_foro',
+        'check_clausula', //recebe 1 por default
         'user_id'
     ];
 
