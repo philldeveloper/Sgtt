@@ -62,17 +62,11 @@
             <span>Contratos</span></a>
         </li>
         <!-- Nav Item - Dashboard -->
-        <li class="nav-item">
+        <!--li class="nav-item">
           <a class="nav-link" href="{{route('correcoes.create')}}">
             <i class="fas fa-fw fa-edit" style="color: white !important"></i>
             <span>Correções</span></a>
-        </li>
-        <!-- Nav Item - Dashboard -->
-        <li class="nav-item">
-          <a class="nav-link" href="">
-            <i class="fas fa-fw fa-check" style="color: white !important"></i>
-            <span>Pareceres</span></a>
-        </li>
+        </li-->
         <div class="dropdown-divider" style="margin: 15px;"></div>
         <li class="nav-item">
             <a class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal">

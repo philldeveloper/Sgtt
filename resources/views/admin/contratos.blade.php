@@ -4,7 +4,7 @@
 
 <div class="container-fluid mt-5 mb-5">
     <span class="h3 font-weight-bold">Novo Contrato</span>
-    <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
+    <span class="font-italic ml-3">Escolha um tipo de contrato antes de prosseguir:.</span>
     
     <img src="{{ asset('assets/Grouplogo.svg') }}" alt="sgtt" width="8%" class="float-right" style="opacity: 0.2">
 </div>
@@ -18,13 +18,13 @@
           <div class="card-body rounded-0">
             <h3 class="mt-2 font-weight-bold ml-auto">Acordo de Cooperação <span class="text-dark">sem repasse</span></h3>
             <hr>
-            <div class="img-category mb-4 float-left mr-3 d-none d-lg-block d-xl-none">
-              <img src="https://www.flaticon.com/premium-icon/icons/svg/2081/2081811.svg" class="d-none d-lg-block d-xl-none" alt="Shield">
+            <div class="img-category mb-4 float-left mr-3">
+              <img src="https://image.flaticon.com/icons/svg/747/747001.svg" alt="Shield">
             </div>
 
             <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
             <div class="container-button">
-              <a href="{{route('contrato_sr.index')}}" class="btn-lg btn btn-success">Criar Contrato</a>
+              <a href="{{route('contrato_sr.index')}}" class="btn btn-lg btn-outline-success py-3 font-weight-bold" target="blank">Criar Contrato</a>
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@
 
             <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
             <div class="container-button">
-              <a href="{{route('contrato_cr.index')}}" class="btn-lg btn btn-success">Criar Contrato</a>
+              <a href="{{route('contrato_cr.index')}}" class="btn btn-lg btn-outline-success py-3 font-weight-bold" target="blank">Criar Contrato</a>
             </div>
           </div>
         </div>
@@ -50,7 +50,7 @@
 
 <div class="container-fluid mt-5">
     <span class="h3 font-weight-bold">Todos os Contratos</span>
-    <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
+    <span class="font-italic ml-3">Visualizar todos os contratos cadastrados.</span>
 </div>
 
 <div class="container-fluid">
@@ -70,10 +70,9 @@
                 <th scope="col">ICT | Parceiro</th>
                 <th scope="col">E-mail</th>
                 <!--th scope="col">Criado em</th>
-                <th scope="col">Modificado em</th-->
+                <th scope="col">Modificado em</th>
                 <th scope="col">Status</th>
-                <th scope="col">Correções</th>
-                <th scope="col">Parecer</th>
+                <th scope="col">Correções</th-->
                 <th scope="col">Ações</th>
               </tr>
             </thead>
@@ -82,14 +81,17 @@
               <tr class="">
                 <td>{{$contratos->id}}</td>
                 <td>Sem Repasse</td>
-                <td>{{$contratos->user->nome}}</td>
+                <td><div class="badge badge-primary">{{$contratos->user->nome}}</div></td>
                 <td>{{$contratos->nome_ict}} e {{$contratos->nome_parceiro}}</td>
                 <td>{{$contratos->user->email}}</td>
-                <td>
+                <!--td>
                   <div class="progress mt-2 mr-3">
                     <div class="progress-bar bg-primary pr-3 pl-3" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Apreciação</div>
                   </div>
-                </td>
+                </td-->
+                
+                {{--
+
                 @if (count($contratos->correcoes) >=1)
                 <td>
                   <div class="btn-group" role="group" aria-label="Basic example">
@@ -101,7 +103,9 @@
                   <p class="text-center font-weight-bold text-danger">0</p>
                 </td>
                 @endif
-                <td>OK</td>
+                
+                --}}
+
                 <td>
                   <form action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
                     <div class="btn-group" role="group" aria-label="Basic example">
