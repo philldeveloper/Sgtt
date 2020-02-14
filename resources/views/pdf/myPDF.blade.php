@@ -69,7 +69,7 @@
 		2.1. O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores. <br>
 		2.2. Respeitadas as previsões contidas na legislação em vigor, a ICT fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo. <br>
 	</p>
-	<p class="text-blue font-weight-bold">{{$contrato->clausula_edit_2}}</p><br>
+	<p class="text-blue font-weight-bold">{!! $contrato->clausula_edit_2 !!}</p><br>
 
 	<h5 class="font-weight-bold">3. CLÁUSULA TERCEIRA - DAS ATRIBUIÇÕES E RESPONSABILIDADES</h5><br>
 	<p>
@@ -95,16 +95,16 @@
 	<p>
 		<span class="font-weight-bold">3.2.</span>  Os Coordenadores de projeto poderão ser substituídos a qualquer tempo, competindo a  cada PARCEIRO comunicar ao (s) outro (s) acerca desta alteração. <br> 
 	</p>
-	<p class="font-weight-bold">{{$contrato->clausula_edit_3}}</p><br>
+	<p class="font-weight-bold">{!! $contrato->clausula_edit_3 !!}</p><br>
 	<h5 class="font-weight-bold">4. CLÁUSULA QUARTA - DO PESSOAL</h5><br>
 	<p>
-		4.1. Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem na execução do objeto deste Acordo, de forma que não se estabelecerá, em hipótese alguma, vínculo empregatício ou de qualquer outra natureza com a {{$contrato->nome_empresa_parceira}} e o pessoal da {{$contrato->nome_ict_parceira}} e vice-versa, cabendo a cada PARCEIRO a responsabilidade pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a documentação comprobatória da regularidade na contratação.
+		4.1. Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem na execução do objeto deste Acordo, de forma que não se estabelecerá, em hipótese alguma, vínculo empregatício ou de qualquer outra natureza com a {{$contrato->nome_empresa_parceira}} e o pessoal da {!! $contrato->nome_ict_parceira !!} e vice-versa, cabendo a cada PARCEIRO a responsabilidade pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a documentação comprobatória da regularidade na contratação.
 	</p><br>
 
 	<!------clausula---->
 
 	<h5 class="font-weight-bold">5. CLÁUSULA QUINTA - DA PROPRIEDADE INTELECTUAL E DA CRIAÇÃO PROTEGIDA</h5><br>
-	<p class="font-weight-bold">{{$contrato->clausula_edit_5}}</p><br>
+	<p class="font-weight-bold">{!! $contrato->clausula_edit_5 !!}</p><br>
 
 	<!------clausula---->
 
@@ -112,7 +112,8 @@
 	<p>
 		<span class="font-weight-bold">6.1</span> Os PARCEIROS concordam em não utilizar o nome do outro PARCEIRO ou de seus empregados em qualquer propaganda, informação à imprensa ou publicidade relativa ao acordo ou a qualquer produto ou serviço decorrente deste, sem a prévia aprovação por escrito do PARCEIRO referido. <br>
 	</p>
-	<p class="font-weight-bold">{{$contrato->clausula_edit_6}}</p><br>
+
+	<p class="font-weight-bold">{{$contrato->clausula_edit_6}}</p>
 
 	<!------clausula---->
 
@@ -141,13 +142,13 @@
 		<span class="font-weight-bold">7.5. </span> A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada. A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada. <br>
 	</p>
 
-	<p class="font-weight-bold">{{$contrato->clausula_edit_7}}</p><br>
+	<p class="font-weight-bold">{!! $contrato->clausula_edit_7 !!}</p><br>
 
 	<!------clausula---->
 
 	<h5 class="font-weight-bold">8. CLÁUSULA OITAVA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h5><br>
 
-	<p class="font-weight-bold">{{$contrato->clausula_edit_8}}</p><br>
+	<p class="font-weight-bold">{!! $contrato->clausula_edit_8 !!}</p><br>
 	
 	<!------clausula---->
 
@@ -187,7 +188,7 @@
 
 		<span class="font-weight-bold">12.2</span> O pesquisador deverá encaminhar ao Setor responsável ou COMISSÃO DA ICT: <br>
 
-		<span class="font-weight-bold">{{$contrato->clausula_edit_12}}</span><br>
+		<span class="font-weight-bold">{!! $contrato->clausula_edit_12 !!}</span><br>
 
 		<p>
 			<span class="font-weight-bold">12.3</span> No Formulário de Resultado de que trata a subcláusula 12.2, deverá ser demonstrada a compatibilidade entre as metas previstas e as alcançadas no período, bem como apontadas as justificativas em caso de discrepância, consolidando dados e valores das ações desenvolvidas. <br>
@@ -204,8 +205,8 @@
 	<p>
 		<span class="font-weight-bold">13.1</span> Este Acordo poderá, a qualquer tempo, ser denunciado pelos PARCEIROS, devendo o interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de 60 (sessenta) dias da data em que se pretenda que sejam encerradas as atividades, respeitadas as obrigações assumidas com terceiros entre os PARCEIROS, creditando eventuais benefícios adquiridos no período.. <br>
 
-		<span class="font-weight-bold">{{$contrato->clausula_edit_13}}</span><br>
-
+		<span class="font-weight-bold">{!! $contrato->clausula_edit_13 !!}</span><br>
+ 
 		<span class="font-weight-bold">13.4 O</span> presente Acordo será extinto com o cumprimento do objeto ou com o decurso de prazo de vigência. <br>
 	</p><br>
 
