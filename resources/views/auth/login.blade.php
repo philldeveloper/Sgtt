@@ -1,12 +1,32 @@
 @extends('layouts.app')
 
+
+<style type="text/css">
+    .flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+</style>
 @section('content')
-<div class="container mx-auto pt-5">
+
+<div class="flex-center position-ref full-height">
+
+
+<div class="container mx-auto">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-                <div class="card-body pt-5 pb-5">
+            <div class="card shadow mx-auto">
+                <div class="card-body">
+
+                    <div class="title text-center mb-5">
+                        <img src="{{ asset('assets/Grouplogo.svg') }}" alt="sgtt" width="70%" style="opacity: 95%">
+                    </div>
+
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
                         <div class="form-group row">
@@ -32,31 +52,30 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <div class="col-md-8">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Lembre-se de mim') }}
-                                    </label>
-                                </div>
-                            </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn teste btn-block mt-3 btn-success btn-lg font-weight-bold p-3">{{ __('Login') }}</button>
                         </div>
-                            <div class="">
 
-                                <button type="submit" class="btn teste btn-block mt-3 btn-dark btn-lg font-weight-bold p-3" style="background-color: #3490dc !important; border-color: #3490dc !important;">{{ __('Login') }}</button>
-
+                        <div class="form-group row justify-content-center d-fluid mt-5">
+                            <div class="col-md-6">
                                 @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    <a class="btn btn-outline-danger font-weight-bold btn-block" href="{{ route('password.request') }}">
                                         {{ __('Esqueceu sua Senha?') }}
                                     </a>
                                 @endif
                             </div>
+                            <div class="col-md-6">
+                                 <a class="btn btn-outline-primary font-weight-bold btn-block" href="{{ route('register') }}">{{ __('Registre-se') }}-se</a>
+                            </div>
                         </div>
-                    </form>
+                        </form>
+                    </div>
             </div>
         </div>
     </div>
 </div>
+
+
+</div><!--full-height-->
 @endsection

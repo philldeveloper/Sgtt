@@ -22,7 +22,8 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+        {{--
+            <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="{{ asset('assets/Grouplogo.svg') }}" alt="sgtt" width="20%" class="ml-auto">
@@ -73,7 +74,9 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        --}}
+
+        <main class="">
             @yield('content')
         </main>
     </div>

@@ -55,12 +55,28 @@
             <span>Inicio</span></a>
         </li>
 
+        @if(Auth::user()->admin == 1)
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
           <a class="nav-link" href="{{route('contratos-index')}}">
             <i class="fas fa-fw fa-hands-helping" style="color: white !important"></i>
             <span>Contratos</span></a>
         </li>
+        @else
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{asset('faq')}}">
+            <i class="fas fa-fw fa-question-circle"></i>
+            <span>Faq</span>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{asset('meuperfil')}}">
+            <i class="fas fa-tools"></i>
+              <span>Meu Perfil</span></a>  
+        </li>
+        @endif
+
         <!-- Nav Item - Dashboard -->
         <!--li class="nav-item">
           <a class="nav-link" href="{{route('correcoes.create')}}">
