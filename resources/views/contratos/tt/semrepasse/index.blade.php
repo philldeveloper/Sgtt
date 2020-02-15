@@ -1,4 +1,4 @@
-@extends('layouts.researcher')
+@extends('layouts.admin')
 
 
 <style type="text/css">
@@ -739,16 +739,6 @@
                   </div>
                 </div>--}}
 
-                <div class="form-check float-left">
-                  <input class="form-check-input" type="checkbox" value="check_clausula" name="check_clausula" id="defaultCheck1">
-                  <label class="form-check-label" for="defaultCheck1">
-                    Default checkbox
-                  </label>
-                </div>
-
-                <div class="text-center">
-                  <button class="btn btn-lg btn-primary" type="submit">SALVAR CONTRATO</button>
-                </div>
               </div>
             </div>
         </div>
