@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&display=swap" rel="stylesheet">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/custom.css')}}">
     <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
     <link href="{{ asset('css/mySidebar.css') }}" rel="stylesheet">
     <link href="{{ asset('css/researcher.css') }}" rel="stylesheet">

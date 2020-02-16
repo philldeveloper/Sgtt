@@ -9,43 +9,38 @@
     <img src="{{ asset('assets/Grouplogo.svg') }}" alt="sgtt" width="8%" class="float-right" style="opacity: 0.2">
 </div>
 
-
-<!-- Begin Page Content -->
-<div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="card mb-4 rounded-0">
-          <div class="card-body rounded-0">
-            <h3 class="mt-2 font-weight-bold ml-auto">Acordo de Cooperação <span class="text-dark">sem repasse</span></h3>
-            <hr>
-            <div class="img-category mb-4 float-left mr-3">
-              <img src="https://image.flaticon.com/icons/svg/747/747001.svg" alt="Shield">
-            </div>
-
-            <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
-            <div class="container-button">
-              <a href="{{route('contrato_sr.index')}}" class="btn btn-lg btn-outline-success py-3 font-weight-bold" target="blank">Criar Contrato</a>
-            </div>
-          </div>
+<div class="container-fluid py-3">
+<div class="row">
+  <div class="col-lg-6">
+    <div class="notice notice-info notice-lg">
+        <span class="h4 font-weight-bold text-black">Acordo de Cooperação <span class="text-dark">sem repasse</span></span>
+        <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+        
+        <div class="container-button text-right">
+          <a href="{{route('contrato_sr.index')}}" class="btn btn-success btn-lg btn-icon-split">
+            <span class="icon text-white-50">
+              <i class="fas fa-arrow-right"></i>
+            </span>
+            <span class="text">Criar Contrato</span>
+          </a>
         </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="card mb-4 rounded-0">
-          <div class="card-body rounded-0">
-            <h3 class="mt-2 font-weight-bold ml-auto">Acordo de Cooperação <span class="text-dark">com repasse</span></h3>
-            <hr>
-            <div class="img-category mb-4 float-left mr-3">
-              <img src="https://image.flaticon.com/icons/svg/747/747001.svg" alt="Shield">
-            </div>
-
-            <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
-            <div class="container-button">
-              <a href="{{route('contrato_cr.index')}}" class="btn btn-lg btn-outline-success py-3 font-weight-bold" target="blank">Criar Contrato</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="notice notice-success notice-lg">
+        <span class="h4 font-weight-bold text-black">Acordo de Cooperação <span class="text-dark">com repasse</span></span>
+        <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+        <div class="container-button text-right">
+          <a href="{{route('contrato_cr.index')}}" class="btn btn-success btn-lg btn-icon-split">
+            <span class="icon text-white-50">
+              <i class="fas fa-arrow-right"></i>
+            </span>
+            <span class="text">Criar Contrato</span>
+          </a>
+        </div>
+    </div>
+  </div>
+</div>
 </div>
 
 <div class="container-fluid mt-5">
@@ -61,7 +56,7 @@
     <div class="card-body p-0 pb-5 rounded-0">
       
       <div class="table-responsive">
-          <table class="table table-hover mb-0" id="example">
+          <table class="table table-bordered mb-0" id="example">
             <thead class="roboto-font font-weight-bold text-dark border-left-success bg-light shadow-sm" style="font-size: 1.25rem">
               <tr>
                 <th scope="col">#</th>
@@ -77,6 +72,9 @@
               </tr>
             </thead>
             <tbody class="mb-0 font-weight-bold text-dark">
+              <tr>
+                <td></td>
+              </tr>
               @forelse($contratos_sr as $contratos) 
               <tr class="">
                 <td>{{$contratos->id}}</td>
