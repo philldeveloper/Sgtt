@@ -15,8 +15,8 @@
 <div class="container-fluid">
     <div class="row">
       <div class="col-lg-6">
-        <div class="card mb-4 rounded-0">
-          <div class="card-body rounded-0">
+        <div class="card mb-4 card-shadow">
+          <div class="card-body">
             <h3 class="mt-2 font-weight-bold ml-auto">Acordo de Cooperação <span class="text-dark">sem repasse</span></h3>
             <hr>
             <div class="img-category mb-4 float-left mr-3">
@@ -25,14 +25,14 @@
 
             <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
             <div class="container-button">
-              <a href="{{route('contrato_sr.index')}}" class="btn btn-lg btn-outline-success py-3 font-weight-bold" target="blank">Criar Contrato</a>
+              <a href="{{route('contrato_sr.index')}}" class="btn btn-lg btn-success font-weight-bold" target="blank">Criar Contrato</a>
             </div>
           </div>
         </div>
       </div>
       <div class="col-lg-6">
-        <div class="card mb-4 rounded-0">
-          <div class="card-body rounded-0">
+        <div class="card mb-4 card-shadow">
+          <div class="card-body">
             <h3 class="mt-2 font-weight-bold ml-auto">Acordo de Cooperação <span class="text-dark">com repasse</span></h3>
             <hr>
             <div class="img-category mb-4 float-left mr-3">
@@ -41,7 +41,7 @@
 
             <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
             <div class="container-button">
-              <a href="{{route('contrato_cr.index')}}" class="btn btn-lg btn-outline-success py-3 font-weight-bold" target="blank">Criar Contrato</a>
+              <a href="{{route('contrato_cr.index')}}" class="btn btn-lg btn-success font-weight-bold" target="blank">Criar Contrato</a>
             </div>
           </div>
         </div>
@@ -57,9 +57,9 @@
 <div class="container-fluid">
 <div class="row">
 
-<div class="col-12 mt-5 rounded-0">
-  <div class="card mb-4 rounded-0">
-    <div class="card-body p-0 pb-5 rounded-0">
+<div class="col-12 mt-5">
+  <div class="card mb-4 card-shadow">
+    <div class="card-body p-0 pb-5">
       
       <div class="table-responsive">
           <table class="table table-hover mb-0" id="example">

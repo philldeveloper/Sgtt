@@ -154,9 +154,9 @@
 <div class="container-fluid">
 <div class="row">
 
-<div class="col-12 mt-5 rounded-0">
-  <div class="card mb-4 rounded-0">
-    <div class="card-body p-0 pb-5 rounded-0">
+<div class="col-12 mt-5 ">
+  <div class="card mb-4 card-shadow">
+    <div class="card-body p-0 pb-5 ">
       
       <div class="table-responsive">
           <table class="table table-hover mb-0" id="example">
