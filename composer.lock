@@ -4,8 +4,60 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d327e45d10738b41db3aa98d5891621",
+    "content-hash": "c2395fca4a3c93d162ff51d53c211075",
     "packages": [
+        {
+            "name": "andcarpi/laravel-popper",
+            "version": "0.9.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andcarpi/laravel-popper.git",
+                "reference": "fd01cbc60a62acd71ff4205ae7a03820b1a9951c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andcarpi/laravel-popper/zipball/fd01cbc60a62acd71ff4205ae7a03820b1a9951c",
+                "reference": "fd01cbc60a62acd71ff4205ae7a03820b1a9951c",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "andcarpi\\Popper\\PopperServiceProvider"
+                    ],
+                    "aliases": {
+                        "Popper": "andcarpi\\Popper\\Facades\\Popper"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "andcarpi\\Popper\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anderson Carpi",
+                    "email": "kustelac@yahoo.com.br"
+                }
+            ],
+            "description": "A Easy to use Laravel Package, that allows you to generate tooltips in your blade views.",
+            "keywords": [
+                "blade",
+                "laravel",
+                "laravel-package",
+                "popper",
+                "tippy",
+                "tooltip",
+                "view"
+            ],
+            "time": "2019-09-26T02:06:56+00:00"
+        },
         {
             "name": "barryvdh/laravel-dompdf",
             "version": "v0.8.5",

@@ -99,7 +99,7 @@
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
   }
 </style>
-
+@include('popper::assets')
 <div class="container-fluid mt-5 mb-5">
     <span class="h3 font-weight-bold">Novo Contrato</span>
     <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
@@ -204,14 +204,16 @@
 
                 <td>
                   <form action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                      <a href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-dark font-weight-bold" target="blank">Ver</a>
-                      <a href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-dark font-weight-bold" target="blank">Editar</a>
-                      <a href="{{route('printpdf', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-success font-weight-bold" target="blank">Baixar</a>
+                    <div class="btn-group actions-container" role="group" aria-label="Basic example">
+                 
+                    
+                      <a @popper(Ver) href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
+                      <a @popper(Editar) href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
+                      <a @popper(Baixar) href="{{route('printpdf', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-success font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
 
                       @csrf
                       @method('DELETE')
-                      <button class="btn btn-sm pl-4 pr-4 bg-danger text-light font-weight-bold" type="submit"><i class="fa fa-trash text-light"></i></button>
+                      <button @popper(Excluir) class="btn btn-sm pl-3 pr-3 bg-danger text-light font-weight-bold" type="submit"><i class="fa fa-trash text-light"></i></button>
                     </div>
                  </form>
                 </td>

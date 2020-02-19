@@ -31,7 +31,7 @@
                         <!-----------cpf------------------->
 
                         <div class="form-group row">
-                            <label for="cpf" class="col-md-4 col-form-label text-md-right">{{ __('Cpf') }}</label>
+                            <label for="cpf" class="col-md-4 col-form-label text-md-right">{{ __('CPF') }}</label>
 
                             <div class="col-md-6">
                                 <input id="cpf" type="text" class="form-control{{ $errors->has('cpf') ? ' is-invalid' : '' }}" name="cpf" value="{{ old('cpf') }}" required autofocus>
@@ -79,7 +79,7 @@
                         <!--------email--------------->
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail ') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-mail ') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
@@ -117,6 +117,12 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn teste btn-block mt-3 btn-dark btn-lg font-weight-bold p-3" style="background-color: #3490dc !important; border-color: #3490dc !important;">{{ __('Registrar') }}</button>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="form-group row mb-0">
+                            <div class="mt-2 col-md-6 offset-md-4">
+                             <a class="btn btn-outline-dark text-center" href="/login" style="border-radius: 300px !important">Voltar</a>
                             </div>
                         </div>
                     </form>

@@ -131,3 +131,7 @@ html, body {
     background-color: #1db954 !important;
     color: white !important;
 }
+
+.lost_password:hover{
+    text-decoration: none;
+}
