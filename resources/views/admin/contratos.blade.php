@@ -44,14 +44,14 @@
 </div>
 
 <div class="container-fluid mt-5">
-    <span class="h3 font-weight-bold">Todos os Contratos</span>
-    <span class="font-italic ml-3">Visualizar todos os contratos cadastrados.</span>
+    <span class="h3 font-weight-bold">Todos os Contratos <div class="badge badge-dark">{{$contratos_sr->count() + $contratos_cr->count()}}</div></span>
+    <div class="bg-secondary text-light p-3 mt-4 mb-0 pb-0 h5 font-weight-bold">Contratos sem repasse: {{ $contratos_sr->count() }} | Contratos com repasse: {{ $contratos_cr->count() }}</div>
 </div>
 
 <div class="container-fluid">
 <div class="row">
 
-<div class="col-12 mt-5 rounded-0">
+<div class="col-12 mt-4 rounded-0">
   <div class="card mb-4 rounded-0">
     <div class="card-body p-0 pb-5 rounded-0">
       
