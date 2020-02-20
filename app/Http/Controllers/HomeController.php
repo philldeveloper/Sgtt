@@ -59,6 +59,17 @@ class HomeController extends Controller
         return $pdf->download('Contrato - Sem Repasse.pdf');
     }
 
+    public function generateRepassePDF($id)
+    {   
+        $contratos_cr = Contrato_cr::find($id);
+
+        $data = ['title' => '', 'contrato'=> $contratos_cr ];
+
+        $pdf = PDF::loadView('pdf.myRepassePDF', $data);
+  
+        return $pdf->download('Contrato - Com Repasse.pdf');
+    }
+
 
     public function contratosindex(){
 

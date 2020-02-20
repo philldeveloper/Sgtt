@@ -13,5 +13,6 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(UsersTableSeeder::class);
         $this->call(Contrato_srsTableSeeder::class);
+        $this->call(Contrato_crsTableSeeder::class);
     }
 }

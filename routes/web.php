@@ -42,6 +42,8 @@ Route::resource('contrato_cr', 'Contrato_crController');
 
 Route::resource('correcoes', 'ContratoCorrecaoController');
 
-Route::get('/customer/print-pdf/{id}', 'HomeController@generatePDF')->name('printpdf');
-// Route::get('/customer/print-pdf/{id}', [ 'as' => 'customer.printpdf', 'uses' => 'HomeController@generatePDF']);
+Route::get('/download/semrepasse/pdf/{id}', 'HomeController@generatePDF')->name('printpdf');
+
+Route::get('/download/repasse/pdf/{id}', 'HomeController@generateRepassePDF')->name('repassepdf');
+
 

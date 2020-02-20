@@ -65,6 +65,8 @@ class Contrato_sr extends Model
         'nome_rep_privado_foro',
         'cargo_rep_privado_foro',
         'check_clausula', //recebe 1 por default
+
+        'tipo',
         'user_id'
     ];
 

@@ -70,6 +70,7 @@ class CreateContratoSrsTable extends Migration
             $table->string('nome_rep_privado_foro');
             $table->string('cargo_rep_privado_foro');
             $table->boolean('check_clausula')->default(true);
+            $table->string('tipo')->nullable()->default(null);
 
             $table->integer('user_id')->unsigned(); //referencia a tabela de users
             $table->foreign('user_id')->references('id')->on('users');

@@ -101,6 +101,8 @@ class Contrato_srController extends Controller
         $contrato_sr->cargo_rep_privado_foro = $request->cargo_rep_privado_foro;
         $contrato_sr->check_clausula = $request->check_clausula;
 
+        $contrato_sr->tipo = $request->tipo;
+
         $contrato_sr->user_id = Auth::id();      
         
         $contrato_sr->save();

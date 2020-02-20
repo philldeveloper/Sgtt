@@ -80,6 +80,7 @@ class Contrato_srsTableSeeder extends Seeder
 		    'cargo_rep_privado_foro' => 'Lorem Ipsum',
 		    'check_clausula' => '0',
 		    'user_id' => '1',
+		    'tipo' => 'Sem Repasse',
 		]);
 
 		Contrato_sr::create ([
@@ -131,6 +132,7 @@ class Contrato_srsTableSeeder extends Seeder
 		    'cargo_rep_privado_foro' => 'Lorem Ipsum',
 		    'check_clausula' => '1',
 		    'user_id' => '2',
+		    'tipo' => 'Sem Repasse',
 		]);
 
 		ContratoCorrecao::create ([

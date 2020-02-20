@@ -78,8 +78,8 @@
               @forelse($contratos_sr as $contratos) 
               <tr class="">
                 <td>{{$contratos->id}}</td>
-                <td>Sem Repasse</td>
-                <td><div class="badge badge-primary">{{$contratos->user->nome}}</div></td>
+                <td><div class="badge badge-info">{{$contratos->tipo}}</div></td>
+                <td><div class="badge badge-dark">{{$contratos->user->nome}}</div></td>
                 <td>{{$contratos->nome_ict}} e {{$contratos->nome_parceiro}}</td>
                 <td>{{$contratos->user->email}}</td>
                 <!--td>
@@ -109,6 +109,7 @@
                     <div class="btn-group" role="group" aria-label="Basic example">
                       <a href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-dark font-weight-bold" target="blank">Ver</a>
                       <a href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-dark font-weight-bold" target="blank">Editar</a>
+
                       <a href="{{route('printpdf', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-success font-weight-bold" target="blank">Baixar</a>
 
                       @csrf
@@ -120,6 +121,34 @@
               </tr>
               @empty
               @endforelse
+              <!--- end of contrato sr-->
+
+              @forelse($contratos_cr as $cr) 
+              <tr class="">
+                <td>{{$cr->id}}</td>
+                <td><div class="badge badge-success">{{$cr->tipo}}</div></td>
+                <td><div class="badge badge-dark">{{$cr->user->nome}}</div></td>
+                <td>{{$cr->nome_ict}} e {{$cr->nome_parceiro}}</td>
+                <td>{{$cr->user->email}}</td>
+                <td>
+                  <form action="{{route('contrato_sr.destroy',$cr->id) }}" method="POST">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <a href="" class="btn btn-sm pl-4 pr-4 btn-outline-dark font-weight-bold" target="blank">Ver</a>
+                      <a href="" class="btn btn-sm pl-4 pr-4 btn-dark font-weight-bold" target="blank">Editar</a>
+                      <a href="{{route('repassepdf', $cr->id)}}" class="btn btn-sm pl-4 pr-4 btn-success font-weight-bold" target="blank">Baixar</a>
+
+                      @csrf
+                      @method('DELETE')
+                      <button class="btn btn-sm pl-4 pr-4 bg-danger text-light font-weight-bold" type="submit"><i class="fa fa-trash text-light"></i></button>
+                    </div>
+                 </form>
+                </td>
+              </tr>
+              @empty
+              @endforelse
+
+              <!--- end of contrato cr-->
+
             </tbody>
           </table>
         </div>

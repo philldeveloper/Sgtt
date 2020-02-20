@@ -89,6 +89,8 @@ class Contrato_crController extends Controller
         $contrato_cr->nome_inst_privado_foro = $request->nome_inst_privado_foro;
         $contrato_cr->nome_rep_privado_foro = $request->nome_rep_privado_foro;
         $contrato_cr->cargo_rep_privado_foro = $request->cargo_rep_foro;
+
+        $contrato_cr->tipo = $request->tipo;
         
         $contrato_cr->user_id = Auth::id();
 

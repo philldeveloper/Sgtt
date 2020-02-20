@@ -62,6 +62,7 @@ class CreateContratoCrsTable extends Migration
             $table->string('nome_inst_privado_foro');
             $table->string('nome_rep_privado_foro');
             $table->string('cargo_rep_privado_foro');
+            $table->string('tipo')->nullable()->default(null);
 
             $table->integer('user_id')->unsigned(); //referencia a tabela de users
             $table->foreign('user_id')->references('id')->on('users');

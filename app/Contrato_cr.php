@@ -64,6 +64,8 @@ class Contrato_cr extends Model
         'nome_inst_privado_foro', //clausula_19
         'nome_rep_privado_foro', //clausula_19
         'cargo_rep_privado_foro', //clausula_19
+        
+        'tipo',
         'user_id'
     ];
 
