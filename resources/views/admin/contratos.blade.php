@@ -136,9 +136,9 @@
                 <td>{{$cr->nome_ict}} e {{$cr->nome_parceiro}}</td>
                 <td>{{$cr->user->email}}</td>
                 <td>
-                  <form action="{{route('contrato_sr.destroy',$cr->id) }}" method="POST">
+                  <form action="{{route('contrato_cr.destroy',$cr->id) }}" method="POST">
                     <div class="btn-group" role="group" aria-label="Basic example">
-                      <a href="" class="btn btn-sm pl-4 pr-4 btn-outline-dark font-weight-bold" target="blank">Ver</a>
+                      <a href="{{route('contratocr_show', $cr->id)}}" class="btn btn-sm pl-4 pr-4 btn-outline-dark font-weight-bold" target="blank">Ver</a>
                       <a href="" class="btn btn-sm pl-4 pr-4 btn-dark font-weight-bold" target="blank">Editar</a>
                       <a href="{{route('repassepdf', $cr->id)}}" class="btn btn-sm pl-4 pr-4 btn-success font-weight-bold" target="blank">Baixar</a>
 

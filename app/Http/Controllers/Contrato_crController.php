@@ -116,7 +116,9 @@ class Contrato_crController extends Controller
      */
     public function show($id)
     {
-        //
+        $contratos_cr = Contrato_cr::find($id);
+
+        return view('contratos.tt.repasse.show', compact('contratos_cr'));
     }
 
     /**
