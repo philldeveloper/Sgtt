@@ -47,7 +47,9 @@ class CreateContratoCrsTable extends Migration
             $table->string('parceiro_doravante_denominado');
             $table->string('clausula_descricao')->nullable()->default(null);
             $table->longText('clausula_edit_2')->nullable()->default(null);
-            $table->longText('clausula_edit_3')->nullable()->default(null);
+            $table->longText('clausula_edit_3a')->nullable()->default(null);
+            $table->longText('clausula_edit_3b')->nullable()->default(null);
+            $table->longText('clausula_edit_3c')->nullable()->default(null);
             $table->longText('clausula_edit_4')->nullable()->default(null);
             $table->longText('clausula_edit_6')->nullable()->default(null);
             $table->longText('clausula_edit_8')->nullable()->default(null);

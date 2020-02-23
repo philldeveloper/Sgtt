@@ -45,7 +45,9 @@ class Contrato_cr extends Model
         'clausula_descricao', //clausula_1
         
         'clausula_edit_2',//clausulas editaveis
-        'clausula_edit_3',
+        'clausula_edit_3a',
+        'clausula_edit_3b',
+        'clausula_edit_3c',
         'clausula_edit_4',
         'clausula_edit_6',
         'clausula_edit_8',
