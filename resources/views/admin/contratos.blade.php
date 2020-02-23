@@ -44,8 +44,13 @@
 </div>
 
 <div class="container-fluid mt-5">
+  @empty($contratos_sr && $contratos_cr)
+  <span class="h3 font-weight-bold">Todos os Contratos <div class="badge badge-dark">0</div></span>
+    <div class="bg-secondary text-light p-3 mt-4 mb-0 pb-0 h5 font-weight-bold">Contratos sem repasse: 0 | Contratos com repasse: 0</div>
+  @else
     <span class="h3 font-weight-bold">Todos os Contratos <div class="badge badge-dark">{{$contratos_sr->count() + $contratos_cr->count()}}</div></span>
     <div class="bg-secondary text-light p-3 mt-4 mb-0 pb-0 h5 font-weight-bold">Contratos sem repasse: {{ $contratos_sr->count() }} | Contratos com repasse: {{ $contratos_cr->count() }}</div>
+  @endempty
 </div>
 
 <div class="container-fluid">
