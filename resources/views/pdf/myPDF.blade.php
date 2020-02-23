@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contrato</title>
+	<title>Contrato - Sem Repasse</title>
     <!-- Styles -->
     <link href="../public/css/pdf.css" rel="stylesheet">
 

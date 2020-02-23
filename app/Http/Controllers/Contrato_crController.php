@@ -73,6 +73,15 @@ class Contrato_crController extends Controller
         $contrato_cr->parceiro_cargo = $request->parceiro_cargo;
         $contrato_cr->parceiro_doravante_denominado = $request->parceiro_doravante_denominado;
         $contrato_cr->clausula_descricao = $request->clausula_descricao;
+        $contrato_sr->clausula_edit_2 = $request->clausula_edit_2;
+        $contrato_sr->clausula_edit_3 = $request->clausula_edit_3;
+        $contrato_sr->clausula_edit_4 = $request->clausula_edit_4;
+        $contrato_sr->clausula_edit_6 = $request->clausula_edit_6;
+        $contrato_sr->clausula_edit_8 = $request->clausula_edit_8;
+        $contrato_sr->clausula_edit_9 = $request->clausula_edit_9;
+        $contrato_sr->clausula_edit_12 = $request->clausula_edit_12;
+        $contrato_sr->clausula_edit_13 = $request->clausula_edit_13;
+        $contrato_sr->clausula_edit_14 = $request->clausula_edit_14;
         $contrato_cr->nome_inst_ict = $request->nome_inst_ict;
         $contrato_cr->nome_inst_privado = $request->nome_inst_privado;
         $contrato_cr->nome_inst_fundacao = $request->nome_inst_fundacao;
