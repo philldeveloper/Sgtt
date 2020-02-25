@@ -86,13 +86,12 @@
                 <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal">Saiba mais</button>
               </div>
 
-              <form class="p-0 m-0">
               <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">ICT/ente público</h5>
   
               <div class="form-row">
                 <div class="form-group col-md-4">
-                  <label for="nome_teste" class="font-weight-bold text-black">NomeTTTs</label>
-                  <input type="text" name="nome_teste" class="form-control text-black font-weight-bold" id="nome_teste">               
+                  <label for="inputPassword4" class="font-weight-bold text-black">Nome do Solicitante</label>
+                  <input type="text" name="nome_teste" class="form-control text-black font-weight-bold" id="nome_teste" placeholder="empresa solicitante">               
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
@@ -167,12 +166,10 @@
               </div>
              </div><!-- /.row-->
              <br>
-            </form>
             </div><!--end of content-->
           </div><!--end-pane-->
           <div class="tab-pane " id="profile" role="tabpanel" aria-labelledby="profile-tab">
             <div class="container-fluid p-0 mt-0 m-0">
-              <form class="p-0 m-0">
               
               <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">2º PARCEIRO</h5>
   
@@ -247,12 +244,10 @@
                 <a class="btn btn-lg btn-primary font-weight-bold btn-block" href="#"> <i class="fa fa-plus text-right mr-auto"></i>  Adicionar parceiro</a>
               </div>
 
-            </form>
             </div><!--end of content-->
           </div><!--end pane-->
           {{--<div class="tab-pane " id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <div class="container-fluid p-0 mt-0 m-0">
-              <form class="p-0 m-0">
               <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">3º PARCEIRO (Fundação de Apoio)</h5>
               <div class="form-row">
                 <div class="form-group col-md-4">
@@ -322,7 +317,6 @@
                 <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
               </div>
              </div>
-            </form>
             </div><!--end of content-->
           </div><!--end pane-->--}}
           
@@ -423,7 +417,7 @@
                   <!--clausula editavel 3_2-->
 
                   <div class="col-md-12 mb-3">
-                    <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3b" rows="20" style="background-color: #F6FAFA; resize: none !important;">G)  Responsabilizar-se pelo recolhimento de impostos, taxas, contribuições e outros encargos porventura devidos em decorrência das atividades vinculadas a este Acordo de Parceria;&#13;&#13;H)  Manter, durante toda a execução do Acordo de Parceria, todas as condições de habilitação e de qualificação exigidas para a sua celebração, responsabilizando-se pela boa e integral execução das atividades ora descritas;&#13;&#13;I)  Nas compras de bens e nas contratações de serviços, observar as regras do Decreto nº 8.241/2014;&#13;&#13;H)  Observar os princípios da legalidade, eficiência, moralidade, publicidade, economicidade, legalidade e impessoalidade, nas aquisições e contratações realizadas, bem como no desenvolvimento de todas as suas ações no âmbito deste Acordo de Parceria;&#13;&#13;K)  Manter registros contábeis, fiscais e financeiros completos e fidedignos relativamente à aplicação dos aportes recebidos do PARCEIRO PRIVADO por este Acordo de Parceria, fazendo-o em estrita observância às normas tributário-fiscais em vigor e, especialmente, à legislação que instituiu contrapartidas em atividades de PD&I para a concessão de incentivos ou de benefícios dos quais o PARCEIRO PRIVADO seja ou se torne beneficiária;&#13;&#13;
+                    <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3b" rows="20" style="background-color: #F6FAFA; resize: none !important;">G)  Responsabilizar-se pelo recolhimento de impostos, taxas, contribuições e outros encargos porventura devidos em decorrência das atividades vinculadas a este Acordo de Parceria;&#13;&#13;&#13;H)  Manter, durante toda a execução do Acordo de Parceria, todas as condições de habilitação e de qualificação exigidas para a sua celebração, responsabilizando-se pela boa e integral execução das atividades ora descritas;&#13;&#13;&#13;I)  Nas compras de bens e nas contratações de serviços, observar as regras do Decreto nº 8.241/2014;&#13;&#13;&#13;H)  Observar os princípios da legalidade, eficiência, moralidade, publicidade, economicidade, legalidade e impessoalidade, nas aquisições e contratações realizadas, bem como no desenvolvimento de todas as suas ações no âmbito deste Acordo de Parceria;&#13;&#13;&#13;K)  Manter registros contábeis, fiscais e financeiros completos e fidedignos relativamente à aplicação dos aportes recebidos do PARCEIRO PRIVADO por este Acordo de Parceria, fazendo-o em estrita observância às normas tributário-fiscais em vigor e, especialmente, à legislação que instituiu contrapartidas em atividades de PD&I para a concessão de incentivos ou de benefícios dos quais o PARCEIRO PRIVADO seja ou se torne beneficiária;&#13;&#13;&#13;
                   </textarea>
                   </div>
 
@@ -851,6 +845,8 @@
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black bg-light p-2 mb-3">SEU CONTRATO ESTÁ PRONTO PARA ANÁLISE. <a href="#"><i class="fas fa-fw fa-check ml-2"></i></a></h5>
   
                 <p>Seu contrato será revisado em até de 30 dias e uma resposta será gerada. Aguarde a confirmação do sistema. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolores excepturi ipsum rem, enim accusantium quam similique assumenda eum veniam saepe, quas earum nisi hic neque voluptate consectetur ex quo!</p><br>
+
+                <button type="submit" class="btn btn-success btn-lg">ENVIAR</button>
                 
               </div>
             </div>

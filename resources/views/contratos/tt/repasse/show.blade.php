@@ -1,7 +1,14 @@
 @extends('layouts.admin')
 
-@section('content')
+<style type="text/css">
 
+  #wrapper #content-wrapper {
+    background-color: white !important;
+  }
+
+</style>
+
+@section('content')
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
@@ -351,13 +358,7 @@
   
                 <p class=""><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a ICT <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
 
-
-                <!--clausula editavel 2-->
-
-                <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_2" rows="10" style="background-color: #F6FAFA; resize: none !important;" readonly="" disabled="">{{$contratos_cr->clausula_edit_2}}
-                </textarea>
-               </div>
+                <p class="text-blue font-weight-bold">{!! $contratos_cr->clausula_edit_2 !!}</p>
                 
               </div>
             </div>
@@ -392,33 +393,21 @@
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div>  Prestar à ICT informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div>  Indicar coordenador, no prazo de 15 (quinze) dias úteis, contados da assinatura deste Acordo, para acompanhar a sua execução;<br>
 
-                  <!--clausula editavel 3_1-->
+                  <!--clausula editavel 3_a-->
 
-                  <div class="col-md-12 mb-3">
-                    <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3a" disabled="" rows="10" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3a}}
-                    </textarea>
-                  </div>
+                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">D)</div><span class="text-blue ml-2">{!! $contratos_cr->clausula_edit_3a !!}</span><br>
 
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">E)</div>  Informar previamente ao PARCEIRO PRIVADO os dados bancários e cadastrais necessários à realização dos aportes financeiros, cuidando para que a conta corrente a qual serão destinados os recursos seja específica para o projeto executado em conformidade com este Acordo de Parceria.<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">F)</div>  Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, inclusive os provenientes das receitas obtidas nas aplicações financeiras realizadas, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação;
                   
-                  <div class="col-md-12 mb-3">
-                    <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3b" disabled="" rows="10" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3b}}
-                    </textarea>
-                  </div>
+                  <!--clausula editavel 3_b-->
 
-                  <br>
-
+                  <p class="text-blue text-justify">{!! $contratos_cr->clausula_edit_3b !!}</p><br>
                   <p><b>3.2.</b> Os Coordenadores de projeto poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.<br>
                   
+                  <!--clausula editavel 3_c-->
+                  <p class="text-blue text-justify">{!! $contratos_cr->clausula_edit_3c !!}</p><br>
 
-                <!--clausula editavel 3_3-->
-
-                <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3c" disabled="" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3c}}
-                </textarea>
-               </div>
-                  
                 </p>
                 </div>
             </div>
@@ -468,11 +457,7 @@
                 </p>
 
                 <!--clausula editavel 4-->
-
-                <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_4" rows="20" disabled="" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_4}}
-                </textarea>
-               </div>
+                <p class="text-blue text-justify">{!! $contratos_cr->clausula_edit_4 !!}</p><br>
                 
               </div>
             </div>
@@ -506,10 +491,8 @@
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">6. CLÁUSULA SEXTA - DA PROPRIEDADE INTELECTUAL E DA CRIAÇÃO PROTEGIDA</h5>
 
                 <!--clausula editavel 6-->
+                <p class="text-blue text-justify">{!! $contratos_cr->clausula_edit_6 !!}</p><br>
 
-                <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_6" rows="20" style="background-color: #F6FAFA; resize: none !important;" disabled="">{!! $contratos_cr->clausula_edit_6 !!}
-                </textarea>
                </div>
                 
               </div>
@@ -585,11 +568,7 @@
                 </p>
 
                 <!--clausula editavel 8-->
-
-                <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_8" rows="8" style="background-color: #F6FAFA; resize: none !important;" disabled="">{!! $contratos_cr->clausula_edit_8 !!}
-                </textarea>
-               </div>
+                <p class="text-blue text-justify">{!! $contratos_cr->clausula_edit_8 !!}</p><br>
                   
               </div>
           </div>
@@ -603,11 +582,7 @@
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">9 CLÁUSULA OITAVA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
 
                 <!--clausula editavel 9-->
-
-                <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_9" rows="20" style="background-color: #F6FAFA; resize: none !important;" disabled="">{!! $contratos_cr->clausula_edit_9 !!}
-                </textarea>
-               </div>
+                <p class="text-blue text-justify">{!! $contratos_cr->clausula_edit_9 !!}</p><br>
     
               </div>
             </div>
@@ -657,11 +632,7 @@
                 <p><b>12.4.</b> São dispensáveis de formalização por meio de Termo Aditivo as alterações que importem em transposição, remanejamento ou transferência de recursos de categoria de programação para outra, com o objetivo de conferir eficácia e eficiência às atividades previstas no Plano de Trabalho, desde que não haja alteração do valor total do projeto.</p>
                 
                 <!--clausula editavel 12-->
-
-                <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_12" rows="10" style="background-color: #F6FAFA; resize: none !important;" disabled="">{!! $contratos_cr->clausula_edit_12 !!}
-                  </textarea>
-                </div>
+                <p class="text-blue text-justify">{!! $contratos_cr->clausula_edit_12 !!}</p><br>
 
               </div>
             </div>
@@ -677,11 +648,7 @@
                 
 
                 <!--clausula editavel 13 -->
-
-                <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13" rows="7" style="background-color: #F6FAFA; resize: none !important;" disabled="">{!! $contratos_cr->clausula_edit_13 !!}
-                </textarea>
-               </div>
+                <p class="text-blue text-justify">{!! $contratos_cr->clausula_edit_13 !!}</p><br>
 
 
                 <p><b>13.3.</b> No Formulário de Resultado de que trata a subcláusula 13.2, deverá ser demonstrada a compatibilidade entre as metas previstas e as alcançadas no período, bem como apontadas as justificativas em caso de discrepância, consolidando dados e valores das ações desenvolvidas.</p>
@@ -710,11 +677,7 @@
 
 
                   <!--clausula editavel 14-->
-
-                <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_14" rows="20" style="background-color: #F6FAFA; resize: none !important;" disabled="">{!! $contratos_cr->clausula_edit_14 !!}
-                </textarea>
-               </div>
+                  <p class="text-blue text-justify">{!! $contratos_cr->clausula_edit_14 !!}</p><br>
 
                 </div>
               </div>
@@ -841,7 +804,7 @@
   
         <form id="regForm" class="form-horizontal" method="POST" action="{{ route('contrato_cr.store') }}">
           {{ csrf_field() }}
-          <div id="step-container" class="step-container">
+          <div id="step-container" class="step-container m-4">
             
           </div>
           
