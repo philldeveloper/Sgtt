@@ -74,8 +74,8 @@
               <div class="container-fluid pb-5 pt-5 mt-0 m-0">
                 <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">
                   ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI
-                  CELEBRAM <input class="mb-2  myform-control text-black" type="text" name="nome_ict" id="nome_ict" value="{{$contratos_cr->nome_ict}}">  E 
-                  <input class="mb-2  myform-control text-black" type="text" name="nome_parceiro" id="nome_parceiro" value="{{$contratos_cr->nome_parceiro}}">  
+                  CELEBRAM <input class="mb-2  myform-control text-black text-uppercase font-weight-bold" type="text" name="nome_ict" id="nome_ict" value="{{$contratos_cr->nome_ict}}">  E 
+                  <input class="mb-2  myform-control text-black text-uppercase font-weight-bold" type="text" name="nome_parceiro" id="nome_parceiro" value="{{$contratos_cr->nome_parceiro}}">  
                   <a href="#" data-toggle="modal" data-target="#modalExemplo1"><i class="fas fa-fw fa-question-circle position-absolute"></i></a>
                  <br/> NA FORMA A ABAIXO.</h5><br>
               </div>

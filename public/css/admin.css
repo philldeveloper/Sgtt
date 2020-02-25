@@ -1,3 +1,19 @@
+.btn-person{
+  text-transform: uppercase;
+  line-height: 1.5;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  cursor: pointer;
+  font-weight: 700;
+  padding-left: 25px;
+  padding-right: 25px;
+  transition: background-color .3s ease-in-out,color .3s ease-in-out;
+
+  background-color: #ba277d!important;
+  border-color: #ba277d!important;
+  color: #fff;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     font-weight: 400 !important;

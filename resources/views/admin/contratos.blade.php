@@ -61,7 +61,7 @@
     <div class="card-body p-0 pb-5 rounded-0">
       
       <div class="table-responsive">
-          <table class="table table-bordered mb-0" id="example">
+          <table class="table table-hover mb-0" id="example">
             <thead class="roboto-font font-weight-bold text-dark border-left-success bg-light shadow-sm" style="font-size: 1.25rem">
               <tr>
                 <th scope="col">#</th>
