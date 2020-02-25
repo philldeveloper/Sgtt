@@ -1,5 +1,10 @@
 @extends('layouts.admin')
 
+<style type="text/css">
+  #wrapper #content-wrapper {
+    background-color: white !important;
+  }
+</style>
 @section('content')
 
 @include('pesquisador.modals.modal_1')
@@ -28,7 +33,8 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
 <div class="title-header">
-    <span class="h3 ml-3">Novo Contrato</span>
+    <span class="h3 ml-3 font-weight-bold">Novo Contrato</span>
+    <div class="badge badge-dark lead  mr-auto float-right">Com repasse</div>
     <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
 </div>
 
@@ -73,11 +79,18 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="container-fluid pb-5 pt-5 mt-0 m-0">
                 <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">
-                  ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI
-                  CELEBRAM <input class="mb-2  myform-control text-black text-uppercase font-weight-bold" type="text" name="nome_ict" id="nome_ict" placeholder="ICT ou ente público">  E 
-                  <input class="mb-2  myform-control text-black text-uppercase font-weight-bold" type="text" name="nome_parceiro" id="nome_parceiro" placeholder="Nome do parceiro">  
-                  <a href="#" data-toggle="modal" data-target="#modalExemplo1"><i class="fas fa-fw fa-question-circle position-absolute"></i></a>
-                 <br/> NA FORMA A ABAIXO.</h5><br>
+                ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI
+                  CELEBRAM</h5> 
+                  <div class="form-row" style="justify-content: center;">
+                    <div class="form-group col-md-4">
+                      <input class="mb-2 text-black form-control" type="text" name="nome_ict"  placeholder="ICT ou ente público"> 
+                    </div>
+                    <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">E</h5>
+                    <div class="form-group col-md-4">
+                      <input class="mb-2 text-black form-control" type="text" name="nome_parceiro"  placeholder="Nome do parceiro">  
+                    </div>
+                  </div>
+                 <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center">NA FORMA A SEGUIR.</h5><br>
               </div>
 
               <div class="alert alert-warning" role="alert">      
@@ -854,7 +867,7 @@
   
         <form id="regForm" class="form-horizontal" method="POST" action="{{ route('contrato_cr.store') }}">
           {{ csrf_field() }}
-          <div id="step-container" class="step-container">
+          <div id="step-container" class="step-container m-4">
             
           </div>
           

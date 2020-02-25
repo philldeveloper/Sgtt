@@ -151,9 +151,9 @@
 <div class="container-fluid">
 <div class="row">
 
-<div class="col-12 mt-5 ">
-  <div class="card mb-4 card-shadow">
-    <div class="card-body p-0 pb-5 ">
+<div class="col-12 mt-4 rounded-0">
+  <div class="card mb-4 rounded-0 shadow-sm">
+    <div class="card-body p-0 pb-5 rounded-0">
       
       <div class="table-responsive">
           <table class="table table-hover mb-0" id="example">
@@ -161,6 +161,7 @@
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Tipo</th>
+                <th scope="col">Desenv. por</th>
                 <th scope="col">ICT | Parceiro</th>
                 <th scope="col">E-mail</th>
                 <!--th scope="col">Criado em</th>
@@ -177,7 +178,8 @@
               @forelse($contratos_sr as $contratos) 
               <tr class="">
                 <td>{{$contratos->id}}</td>
-                <td>Sem Repasse</td>
+                <td><div class="badge badge-info">{{$contratos->tipo}}</div></td>
+                <td><div class="badge badge-dark">{{$contratos->user->nome}}</div></td>
                 <td>{{$contratos->nome_ict}} e {{$contratos->nome_parceiro}}</td>
                 <td>{{$contratos->user->email}}</td>
                 <!--td>
@@ -187,7 +189,6 @@
                 </td-->
                 
                 {{--
-
                 @if (count($contratos->correcoes) >=1)
                 <td>
                   <div class="btn-group" role="group" aria-label="Basic example">
@@ -204,12 +205,10 @@
 
                 <td>
                   <form action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
-                    <div class="btn-group actions-container" role="group" aria-label="Basic example">
-                 
-                    
+                    <div class="btn-group" role="group" aria-label="Basic example">
                       <a @popper(Ver) href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
-                      <a @popper(Editar) href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
-                      <a @popper(Baixar) href="{{route('printpdf', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-success font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
+                      <a @popper(Editar) href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
+                      <a @popper(Baixar) href="{{route('printpdf', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
 
                       @csrf
                       @method('DELETE')
@@ -220,6 +219,34 @@
               </tr>
               @empty
               @endforelse
+              <!--- end of contrato sr-->
+
+              @forelse($contratos_cr as $cr) 
+              <tr class="">
+                <td>{{$cr->id}}</td>
+                <td><div class="badge badge-success">{{$cr->tipo}}</div></td>
+                <td><div class="badge badge-dark">{{$cr->user->nome}}</div></td>
+                <td>{{$cr->nome_ict}} e {{$cr->nome_parceiro}}</td>
+                <td>{{$cr->user->email}}</td>
+                <td>
+                  <form action="{{route('contrato_cr.destroy',$cr->id) }}" method="POST">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <a @popper(Ver) href="{{route('contratocr_show', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
+                      <a @popper(Editar) href="{{route('contratocr_edit', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
+                      <a @popper(Baixar) href="{{route('repassepdf', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
+
+                      @csrf
+                      @method('DELETE')
+                      <button @popper(Excluir) class="btn btn-sm pl-3 pr-3 bg-danger text-light font-weight-bold" type="submit"><i class="fa fa-trash text-light"></i></button>
+                    </div>
+                 </form>
+                </td>
+              </tr>
+              @empty
+              @endforelse
+
+              <!--- end of contrato cr-->
+
             </tbody>
           </table>
         </div>
@@ -228,7 +255,7 @@
 </div>
 
 </div>
-</div>
+</div><!--container-fluid-->
 
 </div>
 </div>
