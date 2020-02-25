@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 use App\Contrato_cr;
+use App\Contrato_sr;
 use Illuminate\Support\Facades\Auth;
 
 class Contrato_crController extends Controller
@@ -15,6 +16,7 @@ class Contrato_crController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
         $contrato_cr = Contrato_cr::all();
@@ -145,7 +147,11 @@ class Contrato_crController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $contratos_cr = Contrato_cr::find($id); //localizar contrato find (encontrar)
+        $contratos_cr->fill ($request->all()); //fill (preencher)
+        $contratos_cr->save();
+
+        return redirect()->back();
     }
 
     /**
