@@ -40,15 +40,17 @@
             <canvas id="myPieChart" width="451" height="245" class="chartjs-render-monitor" style="display: block; width: 451px; height: 245px;"></canvas>
           </div>
           <div class="mt-4 text-center small">
-            <span class="mr-2">
-              <i class="fas fa-circle text-primary"></i> Direct
-            </span>
-            <span class="mr-2">
-              <i class="fas fa-circle text-success"></i> Social
-            </span>
-            <span class="mr-2">
-              <i class="fas fa-circle text-info"></i> Referral
-            </span>
+            <div class="row justify-content-center">
+              <span class="mr-2">
+                <i class="fas fa-circle text-primary"></i> Direct
+              </span>
+              <span class="mr-2">
+                <i class="fas fa-circle text-success"></i> Social
+              </span>
+              <span class="mr-2">
+                <i class="fas fa-circle text-info"></i> Referral
+              </span>
+            </div>
           </div>
         </div>
       </div>

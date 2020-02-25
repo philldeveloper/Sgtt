@@ -59,7 +59,7 @@
 <div class="row">
 
 <div class="col-12 mt-4 rounded-0">
-  <div class="card mb-4 rounded-0">
+  <div class="card mb-4 rounded-0 shadow-sm">
     <div class="card-body p-0 pb-5 rounded-0">
       
       <div class="table-responsive">
@@ -114,8 +114,8 @@
                   <form action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
                     <div class="btn-group" role="group" aria-label="Basic example">
                       <a @popper(Ver) href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
-                      <a @popper(Editar) href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
-                      <a @popper(Baixar) href="{{route('printpdf', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-success font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
+                      <a @popper(Editar) href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
+                      <a @popper(Baixar) href="{{route('printpdf', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
 
                       @csrf
                       @method('DELETE')
@@ -139,8 +139,8 @@
                   <form action="{{route('contrato_cr.destroy',$cr->id) }}" method="POST">
                     <div class="btn-group" role="group" aria-label="Basic example">
                       <a @popper(Ver) href="{{route('contratocr_show', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
-                      <a @popper(Editar) href="{{route('contratocr_edit', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
-                      <a @popper(Baixar) href="{{route('repassepdf', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-success font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
+                      <a @popper(Editar) href="{{route('contratocr_edit', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
+                      <a @popper(Baixar) href="{{route('repassepdf', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
 
                       @csrf
                       @method('DELETE')
