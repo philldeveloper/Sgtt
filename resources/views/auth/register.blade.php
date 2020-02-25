@@ -122,7 +122,7 @@
                         <div class="dropdown-divider"></div>
                         <div class="form-group row mb-0">
                             <div class="mt-2 col-md-6 offset-md-4">
-                             <a class="btn btn-outline-dark text-center" href="/login" style="border-radius: 300px !important">Voltar</a>
+                             <a class="btn btn-outline-dark btn-block text-center" href="/login" style="border-radius: 300px !important">Voltar</a>
                             </div>
                         </div>
                     </form>

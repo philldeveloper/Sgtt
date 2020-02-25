@@ -7,7 +7,6 @@
     display: flex;
     justify-content: center;
 }
-
 .position-ref {
     position: relative;
 }
@@ -39,7 +38,6 @@
     margin: 0 auto;
     display: block;
 }
-
 .no-account{
     border-radius: 500px !important; 
 }

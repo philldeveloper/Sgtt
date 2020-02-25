@@ -1,6 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
+
 @include('popper::assets')
 
 <div class="container-fluid mt-5 mb-5">
@@ -10,56 +11,56 @@
     <img src="{{ asset('assets/Grouplogo.svg') }}" alt="sgtt" width="8%" class="float-right" style="opacity: 0.2">
 </div>
 
-
-<!-- Begin Page Content -->
-<div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="card mb-4 card-shadow">
-          <div class="card-body">
-            <h3 class="mt-2 font-weight-bold ml-auto">Acordo de Cooperação <span class="text-dark">sem repasse</span></h3>
-            <hr>
-            <div class="img-category mb-4 float-left mr-3">
-              <img src="https://image.flaticon.com/icons/svg/747/747001.svg" alt="Shield">
-            </div>
-
-            <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
-            <div class="container-button">
-              <a href="{{route('contrato_sr.index')}}" class="btn btn-lg btn-success font-weight-bold" target="blank">Criar Contrato</a>
-            </div>
-          </div>
+<div class="container-fluid py-3">
+<div class="row">
+  <div class="col-lg-6">
+    <div class="notice notice-info notice-lg">
+        <span class="h4 font-weight-bold text-black">Acordo de Cooperação <span class="text-dark">sem repasse</span></span>
+        <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+        
+        <div class="container-button text-right">
+          <a href="{{route('contrato_sr.index')}}" class="btn btn-success btn-lg btn-icon-split">
+            <span class="icon text-white-50">
+              <i class="fas fa-arrow-right"></i>
+            </span>
+            <span class="text">Criar Contrato</span>
+          </a>
         </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="card mb-4 card-shadow">
-          <div class="card-body">
-            <h3 class="mt-2 font-weight-bold ml-auto">Acordo de Cooperação <span class="text-dark">com repasse</span></h3>
-            <hr>
-            <div class="img-category mb-4 float-left mr-3">
-              <img src="https://image.flaticon.com/icons/svg/747/747001.svg" alt="Shield">
-            </div>
-
-            <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
-            <div class="container-button">
-              <a href="{{route('contrato_cr.index')}}" class="btn btn-lg btn-success font-weight-bold" target="blank">Criar Contrato</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="notice notice-success notice-lg">
+        <span class="h4 font-weight-bold text-black">Acordo de Cooperação <span class="text-dark">com repasse</span></span>
+        <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+        <div class="container-button text-right">
+          <a href="{{route('contrato_cr.index')}}" class="btn btn-success btn-lg btn-icon-split">
+            <span class="icon text-white-50">
+              <i class="fas fa-arrow-right"></i>
+            </span>
+            <span class="text">Criar Contrato</span>
+          </a>
+        </div>
+    </div>
+  </div>
+</div>
 </div>
 
 <div class="container-fluid mt-5">
-    <span class="h3 font-weight-bold">Todos os Contratos</span>
-    <span class="font-italic ml-3">Visualizar todos os contratos cadastrados.</span>
+  @empty($contratos_sr && $contratos_cr)
+  <span class="h3 font-weight-bold">Todos os Contratos <div class="badge badge-dark">0</div></span>
+    <div class="bg-secondary text-light p-3 mt-4 mb-0 pb-0 h5 font-weight-bold">Contratos sem repasse: 0 | Contratos com repasse: 0</div>
+  @else
+    <span class="h3 font-weight-bold">Todos os Contratos <div class="badge badge-dark">{{$contratos_sr->count() + $contratos_cr->count()}}</div></span>
+    <div class="bg-secondary text-light p-3 mt-4 mb-0 pb-0 h5 font-weight-bold">Contratos sem repasse: {{ $contratos_sr->count() }} | Contratos com repasse: {{ $contratos_cr->count() }}</div>
+  @endempty
 </div>
 
 <div class="container-fluid">
 <div class="row">
 
-<div class="col-12 mt-5">
-  <div class="card mb-4 card-shadow">
-    <div class="card-body p-0 pb-5">
+<div class="col-12 mt-4 rounded-0">
+  <div class="card mb-4 rounded-0">
+    <div class="card-body p-0 pb-5 rounded-0">
       
       <div class="table-responsive">
           <table class="table table-hover mb-0" id="example">
@@ -78,11 +79,14 @@
               </tr>
             </thead>
             <tbody class="mb-0 font-weight-bold text-dark">
+              <tr>
+                <td></td>
+              </tr>
               @forelse($contratos_sr as $contratos) 
               <tr class="">
                 <td>{{$contratos->id}}</td>
-                <td>Sem Repasse</td>
-                <td><div class="badge badge-primary">{{$contratos->user->nome}}</div></td>
+                <td><div class="badge badge-info">{{$contratos->tipo}}</div></td>
+                <td><div class="badge badge-dark">{{$contratos->user->nome}}</div></td>
                 <td>{{$contratos->nome_ict}} e {{$contratos->nome_parceiro}}</td>
                 <td>{{$contratos->user->email}}</td>
                 <!--td>
@@ -122,6 +126,34 @@
               </tr>
               @empty
               @endforelse
+              <!--- end of contrato sr-->
+
+              @forelse($contratos_cr as $cr) 
+              <tr class="">
+                <td>{{$cr->id}}</td>
+                <td><div class="badge badge-success">{{$cr->tipo}}</div></td>
+                <td><div class="badge badge-dark">{{$cr->user->nome}}</div></td>
+                <td>{{$cr->nome_ict}} e {{$cr->nome_parceiro}}</td>
+                <td>{{$cr->user->email}}</td>
+                <td>
+                  <form action="{{route('contrato_cr.destroy',$cr->id) }}" method="POST">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <a @popper(Ver) href="{{route('contratocr_show', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
+                      <a @popper(Editar) href="{{route('contratocr_edit', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
+                      <a @popper(Baixar) href="{{route('repassepdf', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-success font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
+
+                      @csrf
+                      @method('DELETE')
+                      <button @popper(Excluir) class="btn btn-sm pl-3 pr-3 bg-danger text-light font-weight-bold" type="submit"><i class="fa fa-trash text-light"></i></button>
+                    </div>
+                 </form>
+                </td>
+              </tr>
+              @empty
+              @endforelse
+
+              <!--- end of contrato cr-->
+
             </tbody>
           </table>
         </div>
