@@ -92,7 +92,6 @@
                 </td-->
                 
                 {{--
-
                 @if (count($contratos->correcoes) >=1)
                 <td>
                   <div class="btn-group" role="group" aria-label="Basic example">

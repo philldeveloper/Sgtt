@@ -112,39 +112,36 @@
 
 <!-- Begin Page Content -->
 <div class="container-fluid">
-    <div class="row">
-      <div class="col-6">
-        <div class="card card-shadow mb-4">
-          <div class="card-body">
-            <h3 class="mt-2 font-weight-bold ml-auto">Acordo de Cooperação <span class="text-dark">sem repasse</span></h3>
-            <hr>
-            <div class="img-category mb-4 float-left mr-3">
-              <img src="https://www.flaticon.com/premium-icon/icons/svg/2081/2081811.svg" alt="Shield">
-            </div>
-
-            <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
-            <div class="container-button">
-              <a href="{{route('contrato_sr.index')}}" class="btn-lg btn btn-success">Criar Contrato</a>
-            </div>
-          </div>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="notice notice-info notice-lg">
+        <span class="h4 font-weight-bold text-black">Acordo de Cooperação <span class="text-dark">sem repasse</span></span>
+        <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+        
+        <div class="container-button text-right">
+          <a href="{{route('contrato_sr.index')}}" class="btn btn-success btn-lg btn-icon-split">
+            <span class="icon text-white-50">
+              <i class="fas fa-arrow-right"></i>
+            </span>
+            <span class="text">Criar Contrato</span>
+          </a>
         </div>
-      </div>
-      <div class="col-6">
-        <div class="card card-shadow mb-4">
-          <div class="card-body">
-            <h3 class="mt-2 font-weight-bold ml-auto">Acordo de Cooperação <span class="text-dark">com repasse</span></h3>
-            <hr>
-            <div class="img-category mb-4 float-left mr-3">
-              <img src="https://image.flaticon.com/icons/svg/747/747001.svg" alt="Shield">
-            </div>
-
-            <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
-            <div class="container-button">
-              <a href="{{route('contrato_cr.index')}}" class="btn-lg btn btn-success">Criar Contrato</a>
-            </div>
-          </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="notice notice-success notice-lg">
+        <span class="h4 font-weight-bold text-black">Acordo de Cooperação <span class="text-dark">com repasse</span></span>
+        <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+        <div class="container-button text-right">
+          <a href="{{route('contrato_cr.index')}}" class="btn btn-success btn-lg btn-icon-split">
+            <span class="icon text-white-50">
+              <i class="fas fa-arrow-right"></i>
+            </span>
+            <span class="text">Criar Contrato</span>
+          </a>
         </div>
-      </div>
+    </div>
+  </div>
 
 <div class="container-fluid mt-5">
     <span class="h3 font-weight-bold">Meus Contratos</span>
@@ -174,6 +171,9 @@
               </tr>
             </thead>
             <tbody class="mb-0 font-weight-bold text-dark">
+              <tr>
+                <td></td>
+              </tr>
               @forelse($contratos_sr as $contratos) 
               <tr class="">
                 <td>{{$contratos->id}}</td>

@@ -40,8 +40,14 @@ Route::get('contratos', 'HomeController@contratosindex')->name('contratos-index'
 
 Route::resource('contrato_cr', 'Contrato_crController');
 
+Route::get('/contrato_cr/{id}', 'Contrato_crController@show')->name('contratocr_show');
+
+Route::get('/contrato_cr/edit/{id}', 'Contrato_crController@edit')->name('contratocr_edit');
+
 Route::resource('correcoes', 'ContratoCorrecaoController');
 
-Route::get('/customer/print-pdf/{id}', 'HomeController@generatePDF')->name('printpdf');
-// Route::get('/customer/print-pdf/{id}', [ 'as' => 'customer.printpdf', 'uses' => 'HomeController@generatePDF']);
+Route::get('/download/semrepasse/pdf/{id}', 'HomeController@generatePDF')->name('printpdf');
+
+Route::get('/download/repasse/pdf/{id}', 'HomeController@generateRepassePDF')->name('repassepdf');
+
 

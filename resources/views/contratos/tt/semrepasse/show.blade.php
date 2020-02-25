@@ -366,7 +366,7 @@
                 <p><b>2.1 </b>O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
   
                 <p class=""><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a ICT<a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p><br>
-                <p class="text-blue font-weight-bold">{{$contratos_sr->clausula_edit_2}}</p>
+                <p class="text-blue font-weight-bold">{!! $contratos_sr->clausula_edit_2 !!}</p>
               
               </div>
             </div>
@@ -453,7 +453,7 @@
                 
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">5. CLÁUSULA QUINTA - DA PROPRIEDADE INTELECTUAL E DA CRIAÇÃO PROTEGIDA <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
                 
-                <p class="text-blue font-weight-bold">{{$contratos_sr->clausula_edit_5}}</p>
+                <p class="text-blue font-weight-bold">{!! $contratos_sr->clausula_edit_5 !!}&#13;&#13;</p>
              
               </div>
             </div>

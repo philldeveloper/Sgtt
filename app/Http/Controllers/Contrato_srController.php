@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 use App\Contrato_sr;
+use App\Contrato_cr;
 use Auth;
 
 
@@ -101,6 +102,8 @@ class Contrato_srController extends Controller
         $contrato_sr->cargo_rep_privado_foro = $request->cargo_rep_privado_foro;
         $contrato_sr->check_clausula = $request->check_clausula;
 
+        $contrato_sr->tipo = $request->tipo;
+
         $contrato_sr->user_id = Auth::id();      
         
         $contrato_sr->save();
@@ -153,9 +156,9 @@ class Contrato_srController extends Controller
         if(Auth::user()->admin == 1){
 
             $contratos_sr = Contrato_sr::all();
-            $contratos_cr = Contrato_sr::all();
+            $contratos_cr = Contrato_cr::all();
 
-            return view('admin.index', compact('contratos_sr', 'contratos_cr'))
+            return view('admin.contratos', compact('contratos_sr', 'contratos_cr'))
             ->with('success','Product updated successfully');
         }else{
             

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 use App\Contrato_cr;
+use App\Contrato_sr;
 use Illuminate\Support\Facades\Auth;
 
 class Contrato_crController extends Controller
@@ -15,6 +16,7 @@ class Contrato_crController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
         $contrato_cr = Contrato_cr::all();
@@ -73,6 +75,17 @@ class Contrato_crController extends Controller
         $contrato_cr->parceiro_cargo = $request->parceiro_cargo;
         $contrato_cr->parceiro_doravante_denominado = $request->parceiro_doravante_denominado;
         $contrato_cr->clausula_descricao = $request->clausula_descricao;
+        $contrato_cr->clausula_edit_2 = $request->clausula_edit_2;
+        $contrato_cr->clausula_edit_3a = $request->clausula_edit_3a;
+        $contrato_cr->clausula_edit_3b = $request->clausula_edit_3b;
+        $contrato_cr->clausula_edit_3c = $request->clausula_edit_3c;
+        $contrato_cr->clausula_edit_4 = $request->clausula_edit_4;
+        $contrato_cr->clausula_edit_6 = $request->clausula_edit_6;
+        $contrato_cr->clausula_edit_8 = $request->clausula_edit_8;
+        $contrato_cr->clausula_edit_9 = $request->clausula_edit_9;
+        $contrato_cr->clausula_edit_12 = $request->clausula_edit_12;
+        $contrato_cr->clausula_edit_13 = $request->clausula_edit_13;
+        $contrato_cr->clausula_edit_14 = $request->clausula_edit_14;
         $contrato_cr->nome_inst_ict = $request->nome_inst_ict;
         $contrato_cr->nome_inst_privado = $request->nome_inst_privado;
         $contrato_cr->nome_inst_fundacao = $request->nome_inst_fundacao;
@@ -89,6 +102,8 @@ class Contrato_crController extends Controller
         $contrato_cr->nome_inst_privado_foro = $request->nome_inst_privado_foro;
         $contrato_cr->nome_rep_privado_foro = $request->nome_rep_privado_foro;
         $contrato_cr->cargo_rep_privado_foro = $request->cargo_rep_foro;
+
+        $contrato_cr->tipo = 'Com Repasse';
         
         $contrato_cr->user_id = Auth::id();
 
@@ -105,7 +120,9 @@ class Contrato_crController extends Controller
      */
     public function show($id)
     {
-        //
+        $contratos_cr = Contrato_cr::find($id);
+
+        return view('contratos.tt.repasse.show', compact('contratos_cr'));
     }
 
     /**
@@ -116,7 +133,9 @@ class Contrato_crController extends Controller
      */
     public function edit($id)
     {
-        //
+        $contratos_cr = Contrato_cr::find($id);
+
+        return view('contratos.tt.repasse.edit', compact('contratos_cr'));
     }
 
     /**
@@ -128,7 +147,11 @@ class Contrato_crController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $contratos_cr = Contrato_cr::find($id); //localizar contrato find (encontrar)
+        $contratos_cr->fill ($request->all()); //fill (preencher)
+        $contratos_cr->save();
+
+        return redirect()->back();
     }
 
     /**

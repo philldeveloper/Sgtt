@@ -23,7 +23,7 @@ class Contrato_cr extends Model
         'cpf', //ict-ente_pub
         'rg', //ict-ente_pub
         'orgao_exp', //ict-ente_pub
-        'nacionalidade', //ict-ente_pub
+        'nacionalidade', //ic-tente_pub
         'est_civil', //ict-ente_pub
         'ato_nomeacao', //ict-ente_pub
         'doravante_denominado', //ict-ente_pub
@@ -42,8 +42,19 @@ class Contrato_cr extends Model
         'parceiro_cargo', //2_parceiro
         'parceiro_doravante_denominado', //2_parceiro
 
-
         'clausula_descricao', //clausula_1
+        
+        'clausula_edit_2',//clausulas editaveis
+        'clausula_edit_3a',
+        'clausula_edit_3b',
+        'clausula_edit_3c',
+        'clausula_edit_4',
+        'clausula_edit_6',
+        'clausula_edit_8',
+        'clausula_edit_9',
+        'clausula_edit_12',
+        'clausula_edit_13',
+        'clausula_edit_14',
 
         'nome_inst_ict', //clausula_3
         'nome_inst_privado', //clausula_3
@@ -64,6 +75,8 @@ class Contrato_cr extends Model
         'nome_inst_privado_foro', //clausula_19
         'nome_rep_privado_foro', //clausula_19
         'cargo_rep_privado_foro', //clausula_19
+        
+        'tipo',
         'user_id'
     ];
 
