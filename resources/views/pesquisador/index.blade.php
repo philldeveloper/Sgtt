@@ -98,8 +98,13 @@
     -moz-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
   }
+
+  .disabled{
+    cursor: not-allowed;
+  }
 </style>
 @include('popper::assets')
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <div class="container-fluid mt-5 mb-5">
     <span class="h3 font-weight-bold">Novo Contrato</span>
     <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
@@ -204,11 +209,11 @@
                 --}}
 
                 <td>
-                  <form action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
+                  <form id="endpoint" action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
                     <div class="btn-group" role="group" aria-label="Basic example">
                       <a @popper(Ver) href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
                       <a @popper(Editar) href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
-                      <a @popper(Baixar) href="{{route('printpdf', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
+                      <a @popper(Baixar) id="download" onclick="loadingDownload(event)" href="{{route('printpdf', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold"><i class="fas fa-download"></i></a>
 
                       @csrf
                       @method('DELETE')
@@ -233,7 +238,7 @@
                     <div class="btn-group" role="group" aria-label="Basic example">
                       <a @popper(Ver) href="{{route('contratocr_show', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
                       <a @popper(Editar) href="{{route('contratocr_edit', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
-                      <a @popper(Baixar) href="{{route('repassepdf', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
+                      <a @popper(Baixar) id="download" href="{{route('repassepdf', $cr->id)}}" onclick="loadingDownload(event)" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold"><i class="fas fa-download"></i></a>
 
                       @csrf
                       @method('DELETE')
@@ -260,4 +265,49 @@
 </div>
 </div>
 </div>
+<script>
+function loadingDownload(event){
+  event.preventDefault();
+  const requestUrl = document.getElementById("download")
+  const icon = requestUrl.querySelector(".fas")
+  
+  $.ajax({
+    url: requestUrl,
+    type: 'GET',
+    xhrFields : {
+			responseType : 'arraybuffer'
+		},
+    dataType : 'binary',
+    success: function(data,textStatus, request) {
+      var MyBlob = new Blob([data], {type: "application/pdf"});
+      var title = request.getResponseHeader('Content-Disposition').match(/filename="(.+)"/)[1]; 
+      title = parseFileName(title);
+      var link = document.createElement('a');
+         link.href= window.URL.createObjectURL(MyBlob);
+         link.download= title;
+         link.click();
+    },
+    beforeSend: function (){
+      icon.classList.remove("fa-download")
+      icon.classList.add("fa-spinner", "fa-spin", "disabled")
+      requestUrl.setAttribute("disabled", true)
+    },
+    complete: function(){
+      icon.classList.remove("fa-spinner", "fa-spin", "disabled")
+      icon.classList.add("fa-download")
+      requestUrl.setAttribute("disabled", false)
+    }
+  })
+  .catch((err) => console.log(err))
+  
+}
+
+function parseFileName(name){
+  var title = name
+  while(title.includes('_')){
+    title = title.replace('_', '')
+  }
+  return title
+}
+</script>
 @endsection
