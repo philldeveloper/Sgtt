@@ -67,7 +67,7 @@ body{
 
   .card-body .subtitle{
     font-size: 15px;
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
     /* position: static; */
     /* float: right; */
     width: 400px;

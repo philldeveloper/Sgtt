@@ -36,7 +36,7 @@
     align-items: center;
     background-color: #334D52 !important;
     color: white !important;*/
-}
+
 
 </style>
 

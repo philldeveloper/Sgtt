@@ -55,6 +55,7 @@
 
   .card-body .subtitle{
     font-size: 15px;
+    width: auto !important;
   }
 
   .card-body .container-button{
@@ -118,33 +119,38 @@
 <!-- Begin Page Content -->
 <div class="container-fluid">
 <div class="row">
-  <div class="col-lg-6">
-    <div class="notice notice-info notice-lg">
-        <span class="h4 font-weight-bold text-black">Acordo de Cooperação <span class="text-dark">sem repasse</span></span>
-        <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
-        
-        <div class="container-button text-right">
-          <a href="{{route('contrato_sr.index')}}" class="btn btn-success btn-lg btn-icon-split">
-            <span class="icon text-white-50">
-              <i class="fas fa-arrow-right"></i>
-            </span>
-            <span class="text">Criar Contrato</span>
-          </a>
-        </div>
+<div class="col-lg-6">
+    <div class="card card-shadow mb-4">
+    <div class="card-body">
+      <span class="h4 font-weight-bold text-black">Acordo de Cooperação <span class="text-dark">sem repasse</span></span>
+    <hr>
+      <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+            <div class="container-button text-right">
+        <a href="{{route('contrato_sr.index')}}" class="btn btn-success btn-lg btn-icon-split">
+          <span class="icon text-white-50">
+            <i class="fas fa-arrow-right"></i>
+          </span>
+          <span class="text">Criar Contrato</span>
+        </a>
+      </div>
+    </div>
     </div>
   </div>
   <div class="col-lg-6">
-    <div class="notice notice-success notice-lg">
-        <span class="h4 font-weight-bold text-black">Acordo de Cooperação <span class="text-dark">com repasse</span></span>
-        <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
-        <div class="container-button text-right">
-          <a href="{{route('contrato_cr.index')}}" class="btn btn-success btn-lg btn-icon-split">
-            <span class="icon text-white-50">
-              <i class="fas fa-arrow-right"></i>
-            </span>
-            <span class="text">Criar Contrato</span>
-          </a>
-        </div>
+    <div class="card card-shadow mb-4">
+    <div class="card-body">
+      <span class="h4 font-weight-bold text-black">Acordo de Cooperação <span class="text-dark">com repasse</span></span>
+      <hr>
+      <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+      <div class="container-button text-right">
+        <a href="{{route('contrato_cr.index')}}" class="btn btn-success btn-lg btn-icon-split">
+          <span class="icon text-white-50">
+            <i class="fas fa-arrow-right"></i>
+          </span>
+          <span class="text">Criar Contrato</span>
+        </a>
+      </div>
+    </div>
     </div>
   </div>
 
