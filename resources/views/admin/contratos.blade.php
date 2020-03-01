@@ -4,55 +4,192 @@
 
 @include('popper::assets')
 
+<style>
+  .icon-main{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-maker{
+    border-radius: 3px;
+    position: absolute;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 60px;
+    background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
+    margin-top: -5px;
+  }
+
+  .cr-card-size{
+    min-width: 200px;
+    width: 100%;
+  }
+  .icon-maker i {
+    color: white;
+    font-size: 30px;
+  }
+
+  .justify-col-center{
+    display: flex;
+    justify-content: center;
+  }
+
+ .bg-cr-sem{
+   padding: 0;
+   margin: 0;
+  background-color: #28c76f;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%2381fbb8' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%239efbcb'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+ }
+
+</style>
 <div class="container-fluid mt-5 mb-5">
     <span class="h3 font-weight-bold">Novo Contrato</span>
     <span class="font-italic ml-3">Escolha um tipo de contrato antes de prosseguir:.</span>
     
     <img src="{{ asset('assets/Grouplogo.svg') }}" alt="sgtt" width="8%" class="float-right" style="opacity: 0.2">
 </div>
-
-<div class="container-fluid py-3">
-<div class="row">
-  <div class="col-lg-6">
-    <div class="notice notice-info notice-lg">
+    
+  <div class="container-fluid py-3">
+    <div class="row ">
+    <div class="col-lg-6">
+    <div class="card card-shadow mb-4">
+    <div class="card-body">
+     
         <span class="h4 font-weight-bold text-black">Acordo de Cooperação <span class="text-dark">sem repasse</span></span>
-        <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
-        
-        <div class="container-button text-right">
-          <a href="{{route('contrato_sr.index')}}" class="btn btn-success btn-lg btn-icon-split">
-            <span class="icon text-white-50">
-              <i class="fas fa-arrow-right"></i>
-            </span>
-            <span class="text">Criar Contrato</span>
-          </a>
-        </div>
+     
+    <hr>
+      <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+      
+      <div class="container-button text-right">
+        <a href="{{route('contrato_sr.index')}}" class="btn btn-success btn-lg btn-icon-split">
+          <span class="icon text-white-50">
+            <i class="fas fa-arrow-right"></i>
+          </span>
+          <span class="text">Criar Contrato</span>
+        </a>
+      </div>
+    </div>
     </div>
   </div>
   <div class="col-lg-6">
-    <div class="notice notice-success notice-lg">
-        <span class="h4 font-weight-bold text-black">Acordo de Cooperação <span class="text-dark">com repasse</span></span>
-        <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
-        <div class="container-button text-right">
-          <a href="{{route('contrato_cr.index')}}" class="btn btn-success btn-lg btn-icon-split">
-            <span class="icon text-white-50">
-              <i class="fas fa-arrow-right"></i>
-            </span>
-            <span class="text">Criar Contrato</span>
-          </a>
-        </div>
+    <div class="card card-shadow mb-4">
+    <div class="card-body">
+      <span class="h4 font-weight-bold text-black">Acordo de Cooperação <span class="text-dark">com repasse</span></span>
+      <hr>
+      <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+      <div class="container-button text-right">
+        <a href="{{route('contrato_cr.index')}}" class="btn btn-success btn-lg btn-icon-split">
+          <span class="icon text-white-50">
+            <i class="fas fa-arrow-right"></i>
+          </span>
+          <span class="text">Criar Contrato</span>
+        </a>
+      </div>
+    </div>
     </div>
   </div>
 </div>
+  </div>
 </div>
-
-<div class="container-fluid mt-5">
+<div class="container mt-5">
+<span class="h3 font-weight-bold" wfd-id="41">Contratos</span>
+  <div class="row justify-content-center">
   @empty($contratos_sr && $contratos_cr)
+    <div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-4 justify-col-center">
+      <div class="card card-shadow cr-card-size notice notice-info notice-lg">
+        <div class="icon-main">
+          <div class="icon-maker">
+            <i class="fas fa-hand-holding-usd"></i></i>
+          </div>
+        </div>
+        <div class="card-body">
+          <h1 class="text-dark">00</h1>
+          <p class="text-center">Contratos com repasse</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-4 justify-col-center">
+      <div class="card card-shadow cr-card-size">
+        <div class="icon-main">
+          <div class="icon-maker" style="background-image: linear-gradient( 135deg, #97ABFF 10%, #123597 100%);">
+          <i class="fas fa-handshake"></i>
+          </div>
+        </div>
+        <div class="card-body">
+          <h1 class="text-dark">00</h1>
+          <p class="text-center">Contratos sem repasse</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-4 justify-col-center">
+      <div class="card card-shadow cr-card-size">
+        <div class="icon-main">
+          <div class="icon-maker" style="background-image: linear-gradient( 135deg, #97ABFF 10%, #123597 100%);">
+            <i class="fas fa-file-medical-alt"></i>
+          </div>
+        </div>
+        <div class="card-body">
+          <h1 class="text-dark">00</h1>
+          <p class="text-center">Total</p>
+        </div>
+      </div>
+    </div>
+    @else
+    <div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-4 justify-col-center">
+      <div class="card card-shadow cr-card-size">
+        <div class="icon-main">
+          <div class="icon-maker">
+            <i class="fas fa-hand-holding-usd"></i></i>
+          </div>
+        </div>
+        <div class="card-body">
+          <h1 class="text-dark">{{$contratos_cr->count()}}</h1>
+          <p class="text-center">Contratos com repasse</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-4 justify-col-center">
+      <div class="card card-shadow cr-card-size">
+        <div class="icon-main">
+          <div class="icon-maker" style="background-image: linear-gradient( 135deg, #97ABFF 10%, #123597 100%);">
+          <i class="fas fa-handshake"></i>
+          </div>
+        </div>
+        <div class="card-body">
+          <h1 class="text-dark">{{$contratos_sr->count()}}</h1>
+          <p class="text-center">Contratos sem repasse</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-4 justify-col-center">
+      <div class="card card-shadow cr-card-size">
+        <div class="icon-main">
+          <div class="icon-maker" style="background-image: linear-gradient( 135deg, #FEC163 10%, #DE4313 100%)">
+            <i class="fas fa-file-medical-alt"></i>
+          </div>
+        </div>
+        <div class="card-body">
+          <h1 class="text-dark">{{$contratos_sr->count() + $contratos_cr->count()}}</h1>
+          <p class="text-center">Total</p>
+        </div>
+      </div>
+    </div>
+    @endempty 
+  </div>
+{{--   @empty($contratos_sr && $contratos_cr)
   <span class="h3 font-weight-bold">Todos os Contratos <div class="badge badge-dark">0</div></span>
     <div class="bg-secondary text-light p-3 mt-4 mb-0 pb-0 h5 font-weight-bold">Contratos sem repasse: 0 | Contratos com repasse: 0</div>
   @else
-    <span class="h3 font-weight-bold">Todos os Contratos <div class="badge badge-dark">{{$contratos_sr->count() + $contratos_cr->count()}}</div></span>
-    <div class="bg-secondary text-light p-3 mt-4 mb-0 pb-0 h5 font-weight-bold">Contratos sem repasse: {{ $contratos_sr->count() }} | Contratos com repasse: {{ $contratos_cr->count() }}</div>
-  @endempty
+    <span class="h3 font-weight-bold">Todos os Contratos 
+      <div class="badge badge-dark">{{$contratos_sr->count() + $contratos_cr->count()}}</div></span>
+    <div class="bg-secondary text-light p-3 mt-4 mb-0 pb-0 h5 font-weight-bold">
+      Contratos sem repasse: {{ $contratos_sr->count() }} | Contratos com repasse: {{ $contratos_cr->count() }}</div>
+  @endempty --}}
 </div>
 
 <div class="container-fluid">

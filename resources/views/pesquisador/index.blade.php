@@ -93,7 +93,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 10px; 20px;
+    padding: 10px 20px;
     -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
     -moz-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.04);
@@ -169,10 +169,6 @@
                 <th scope="col">Desenv. por</th>
                 <th scope="col">ICT | Parceiro</th>
                 <th scope="col">E-mail</th>
-                <!--th scope="col">Criado em</th>
-                <th scope="col">Modificado em</th>
-                <th scope="col">Status</th>
-                <th scope="col">Correções</th-->
                 <th scope="col">Ações</th>
               </tr>
             </thead>
@@ -187,42 +183,22 @@
                 <td><div class="badge badge-dark">{{$contratos->user->nome}}</div></td>
                 <td>{{$contratos->nome_ict}} e {{$contratos->nome_parceiro}}</td>
                 <td>{{$contratos->user->email}}</td>
-                <!--td>
-                  <div class="progress mt-2 mr-3">
-                    <div class="progress-bar bg-primary pr-3 pl-3" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Apreciação</div>
-                  </div>
-                </td-->
-                
-                {{--
-                @if (count($contratos->correcoes) >=1)
-                <td>
-                  <div class="btn-group" role="group" aria-label="Basic example">
-                      <a href="{{route('contrato_correcoes', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-warning  text-dark font-weight-bold" target="blank">{{$contratos->correcoes->count()}}</a>
-                  </div>
-                </td>
-                @else
-                <td>
-                  <p class="text-center font-weight-bold text-danger">0</p>
-                </td>
-                @endif
-                
-                --}}
-
                 <td>
                   <form id="endpoint" action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
                     <div class="btn-group" role="group" aria-label="Basic example">
                       <a @popper(Ver) href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
                       <a @popper(Editar) href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
                       <a @popper(Baixar) id="download" onclick="loadingDownload(event)" href="{{route('printpdf', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold"><i class="fas fa-download"></i></a>
-
+                      
                       @csrf
                       @method('DELETE')
                       <button @popper(Excluir) class="btn btn-sm pl-3 pr-3 bg-danger text-light font-weight-bold" type="submit"><i class="fa fa-trash text-light"></i></button>
                     </div>
-                 </form>
+                  </form>
                 </td>
               </tr>
               @empty
+             
               @endforelse
               <!--- end of contrato sr-->
 
