@@ -39,12 +39,12 @@ class HomeController extends Controller
 
             return view('admin.index', compact('contratos_sr', 'contratos_cr'));
         }else{
-            
-            $contratos_sr = Contrato_sr::all();
+            $id = Auth::user()->id;
+          
+            $contratos_sr = Contrato_sr::where('user_id', $id);
+            $contratos_cr = Contrato_cr::where('user_id', $id);
 
-            $contratos_cr = Contrato_cr::all();
-
-            return view('pesquisador.index', compact('contratos_sr', 'contratos_cr'));
+            return view('pesquisador.index', compact('id', 'contratos_sr', 'contratos_cr'));
         }
     }
 
