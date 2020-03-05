@@ -45,7 +45,6 @@ body{
 
   .card-shadow:hover{
     border: 1px solid #fafafa;
-    cursor: pointer;
   }
 
   .img-category{
