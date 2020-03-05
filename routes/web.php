@@ -50,4 +50,6 @@ Route::get('/download/semrepasse/pdf/{id}', 'HomeController@generatePDF')->name(
 
 Route::get('/download/repasse/pdf/{id}', 'HomeController@generateRepassePDF')->name('repassepdf');
 
+Route::resource('userUpdate', 'UserController');
+
 
