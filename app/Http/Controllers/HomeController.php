@@ -9,8 +9,9 @@ use Auth;
 use App\Contrato_sr;
 
 use App\Contrato_cr;
-
 use PDF;
+
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -41,10 +42,19 @@ class HomeController extends Controller
         }else{
             $id = Auth::user()->id;
           
-            $contratos_sr = Contrato_sr::where('user_id', $id);
-            $contratos_cr = Contrato_cr::where('user_id', $id);
+            $contratos_sr = DB::select("SELECT c.`*`, u.nome, u.email
+            FROM
+                contrato_srs c
+            INNER JOIN users u ON u.id = c.user_id
+            WHERE c.user_id = ? AND u.id = ?", [$id, $id]);
 
-            return view('pesquisador.index', compact('id', 'contratos_sr', 'contratos_cr'));
+            $contratos_cr = DB::select("SELECT c.`*`, u.nome, u.email
+            FROM
+                contrato_crs c
+            INNER JOIN users u ON u.id = c.user_id
+            WHERE c.user_id = ? AND u.id = ?", [$id, $id]);
+
+            return view('pesquisador.index', compact('contratos_sr', 'contratos_cr'));
         }
     }
 

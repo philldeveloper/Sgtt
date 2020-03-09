@@ -182,13 +182,14 @@
               <tr>
                 <td></td>
               </tr>
+           
               @forelse($contratos_sr as $contratos) 
               <tr class="">
                 <td>{{$contratos->id}}</td>
                 <td><div class="badge badge-info">{{$contratos->tipo}}</div></td>
-                <td><div class="badge badge-dark">{{$contratos->user->nome}}</div></td>
+                <td><div class="badge badge-dark">{{$contratos->nome}}</div></td>
                 <td>{{$contratos->nome_ict}} e {{$contratos->nome_parceiro}}</td>
-                <td>{{$contratos->user->email}}</td>
+                <td>{{$contratos->email}}</td>
                 <td>
                   <form id="endpoint" action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
                     <div class="btn-group" role="group" aria-label="Basic example">
@@ -204,7 +205,6 @@
                 </td>
               </tr>
               @empty
-             
               @endforelse
               <!--- end of contrato sr-->
 
@@ -212,9 +212,9 @@
               <tr class="">
                 <td>{{$cr->id}}</td>
                 <td><div class="badge badge-success">{{$cr->tipo}}</div></td>
-                <td><div class="badge badge-dark">{{$cr->user->nome}}</div></td>
+                <td><div class="badge badge-dark">{{$cr->nome}}</div></td>
                 <td>{{$cr->nome_ict}} e {{$cr->nome_parceiro}}</td>
-                <td>{{$cr->user->email}}</td>
+                <td>{{$cr->email}}</td>
                 <td>
                   <form action="{{route('contrato_cr.destroy',$cr->id) }}" method="POST">
                     <div class="btn-group" role="group" aria-label="Basic example">
