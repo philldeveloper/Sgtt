@@ -56,7 +56,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     <span class="font-italic ml-3">Escolha um tipo de contrato antes de prosseguir:.</span>
     <!--img src="{{ asset('assets/Grouplogo.svg') }}" alt="sgtt" width="8%" class="float-right" style="opacity: 0.2"-->
 </div>
-    
+<hr>    
 <div class="container-fluid py-3">
 <div class="row">
   <div class="col-lg-6">
@@ -94,9 +94,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 </div>
 
 <div class="container-fluid mt-5 mb-5">
-<span class="h3 font-weight-bold text-dark" wfd-id="41">Estatísticas sobre Contratos</span>
-<span class="font-italic ml-3 mb-3">Visualize informações relacionadas aos contratos gerados.</span>
-  <div class="row justify-content-center mt-3">
+  <span class="h3 font-weight-bold text-dark" wfd-id="41">Estatísticas sobre Contratos</span>
+  <span class="font-italic ml-3 mb-3">Visualize informações relacionadas aos contratos gerados.</span>
+</div><hr>
+
+<div class="container-fluid mt-5 mb-5">
+  <div class="row justify-content-center mt-3 mb-5">
   @empty($contratos_sr && $contratos_cr)
     <div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-4 justify-col-center">
       <div class="card card-shadow cr-card-size notice notice-info notice-lg">
@@ -191,12 +194,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 </div>
 
 
+<div class="container-fluid mt-5 mb-5">
+  <span class="h3 font-weight-bold text-dark" wfd-id="41">Todos os Contratos</span>
+  <span class="font-italic ml-3 mb-3">Edite informações relacionadas aos contratos gerados.</span>
+</div><hr>
+
 
 <div class="container-fluid">
-
-<span class="h3 font-weight-bold text-dark" wfd-id="41">Todos os Contratos</span>
-<span class="font-italic ml-3 mb-3">Edite informações relacionadas aos contratos gerados.</span>
-
 <div class="row">
 <div class="col-12 mt-4 rounded-0">
   <div class="card mb-4 rounded-0 shadow-sm">
