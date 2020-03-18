@@ -52,54 +52,51 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 </style>
 <div class="container-fluid mt-5 mb-5">
-    <span class="h3 font-weight-bold">Novo Contrato</span>
+    <span class="h3 font-weight-bold text-dark">Novo Contrato</span>
     <span class="font-italic ml-3">Escolha um tipo de contrato antes de prosseguir:.</span>
-    
-    <img src="{{ asset('assets/Grouplogo.svg') }}" alt="sgtt" width="8%" class="float-right" style="opacity: 0.2">
+    <!--img src="{{ asset('assets/Grouplogo.svg') }}" alt="sgtt" width="8%" class="float-right" style="opacity: 0.2"-->
 </div>
     
-  <div class="container-fluid py-3">
-    <div class="row ">
-    <div class="col-lg-6">
-    <div class="card card-shadow mb-4">
-    <div class="card-body">
-      <span class="h4 font-weight-bold text-black">Acordo de Cooperação <span class="text-dark">sem repasse</span></span>
-    <hr>
-      <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
-            <div class="container-button text-right">
-        <a href="{{route('contrato_sr.index')}}" class="btn btn-success btn-lg btn-icon-split">
-          <span class="icon text-white-50">
-            <i class="fas fa-arrow-right"></i>
-          </span>
-          <span class="text">Criar Contrato</span>
-        </a>
-      </div>
-    </div>
+<div class="container-fluid py-3">
+<div class="row">
+  <div class="col-lg-6">
+    <div class="notice notice-info notice-lg">
+        <span class="h4 font-weight-bold text-dark text-uppercase">Acordo de Cooperação <span class="text-dark">sem repasse</span></span>
+        <hr>
+        <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+        
+        <div class="container-button text-right">
+          <a href="{{route('contrato_sr.index')}}" class="btn btn-success btn-lg btn-icon-split">
+            <span class="icon text-white-50">
+              <i class="fas fa-arrow-right"></i>
+            </span>
+            <span class="text">Criar Contrato</span>
+          </a>
+        </div>
     </div>
   </div>
   <div class="col-lg-6">
-    <div class="card card-shadow mb-4">
-    <div class="card-body">
-      <span class="h4 font-weight-bold text-black">Acordo de Cooperação <span class="text-dark">com repasse</span></span>
-      <hr>
-      <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
-      <div class="container-button text-right">
-        <a href="{{route('contrato_cr.index')}}" class="btn btn-success btn-lg btn-icon-split">
-          <span class="icon text-white-50">
-            <i class="fas fa-arrow-right"></i>
-          </span>
-          <span class="text">Criar Contrato</span>
-        </a>
-      </div>
-    </div>
+    <div class="notice notice-success notice-lg">
+        <span class="h4 font-weight-bold text-dark text-uppercase">Acordo de Cooperação <span class="text-dark">com repasse</span></span>
+        <hr>
+        <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+        <div class="container-button text-right">
+          <a href="{{route('contrato_cr.index')}}" class="btn btn-success btn-lg btn-icon-split">
+            <span class="icon text-white-50">
+              <i class="fas fa-arrow-right"></i>
+            </span>
+            <span class="text">Criar Contrato</span>
+          </a>
+        </div>
     </div>
   </div>
 </div>
-  </div>
 </div>
-<div class="container mt-5">
-<span class="h3 font-weight-bold" wfd-id="41">Contratos</span>
-  <div class="row justify-content-center">
+
+<div class="container-fluid mt-5 mb-5">
+<span class="h3 font-weight-bold text-dark" wfd-id="41">Estatísticas sobre Contratos</span>
+<span class="font-italic ml-3 mb-3">Visualize informações relacionadas aos contratos gerados.</span>
+  <div class="row justify-content-center mt-3">
   @empty($contratos_sr && $contratos_cr)
     <div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-4 justify-col-center">
       <div class="card card-shadow cr-card-size notice notice-info notice-lg">
@@ -193,9 +190,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   @endempty --}}
 </div>
 
-<div class="container-fluid">
-<div class="row">
 
+
+<div class="container-fluid">
+
+<span class="h3 font-weight-bold text-dark" wfd-id="41">Todos os Contratos</span>
+<span class="font-italic ml-3 mb-3">Edite informações relacionadas aos contratos gerados.</span>
+
+<div class="row">
 <div class="col-12 mt-4 rounded-0">
   <div class="card mb-4 rounded-0 shadow-sm">
     <div class="card-body p-0 pb-5 rounded-0">
@@ -224,7 +226,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
               <tr class="">
                 <td>{{$contratos->id}}</td>
                 <td><div class="badge badge-info">{{$contratos->tipo}}</div></td>
-                <td><div class="badge badge-dark">{{$contratos->user->nome}}</div></td>
+                <td><div class="">{{$contratos->user->nome}}</div></td>
                 <td>{{$contratos->nome_ict}} e {{$contratos->nome_parceiro}}</td>
                 <td>{{$contratos->user->email}}</td>
                 <!--td>
@@ -270,7 +272,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
               <tr class="">
                 <td>{{$cr->id}}</td>
                 <td><div class="badge badge-success">{{$cr->tipo}}</div></td>
-                <td><div class="badge badge-dark">{{$cr->user->nome}}</div></td>
+                <td><div class="">{{$cr->user->nome}}</div></td>
                 <td>{{$cr->nome_ict}} e {{$cr->nome_parceiro}}</td>
                 <td>{{$cr->user->email}}</td>
                 <td>
