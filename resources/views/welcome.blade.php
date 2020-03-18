@@ -16,15 +16,14 @@
         <div class="flex-center position-ref full-height">
 
             <div class="content">
-                <div class="title mb-5">
-                    <img src="{{ asset('assets/Grouplogo.svg') }}" alt="sgtt" width="70%" style="opacity: 95%">
+                <div class="title mb-3">
+                    <img src="{{ asset('assets/new_sgtt.svg') }}" alt="sgtt" width="80%" style="opacity: 95%">
                 </div>
 
-                <span class="subtitle text-dark mt-5 h1">Bem vindo ao sistema de gerenciamento e 
-                    transferência de tecnologia, densenvolvido para facilitar sua vida.
-                    <br><br><br>
-                    
-                </span>
+                <div class="subtitle mb-5 py-4 h1">
+                    <p class="text-secondary">Sistema de Gerenciamento e Transferência de Tecnologia</p>
+                </div>
+
                 @if (Auth::check())
                 <a href="{{asset('home')}}" class="btn teste btn-dark btn-lg font-weight-bold p-3 pl-5 pr-5 m-2" style="background-color: black !important; border-color: black !important;">Ir para Início</a>
                 @else

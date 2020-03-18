@@ -36,12 +36,8 @@
   <!-- Page Wrapper -->
   <div id="wrapper">
    <div class="my-sidebar">
+   <img class="py-4" src="{{asset('assets/new_sgtt.svg')}}" width="50%">
      <div class="container-profile">
-       <img class="rounded-circle" src="https://image.flaticon.com/icons/svg/149/149071.svg">
-       <!-- <div class="logo">
-         <img src="{{ asset('assets/logo-pibiti.svg') }}" alt="SGTT">
-         <span class="title-logo text-white">SGTT</span>
-       </div> -->
        <div class="info-user">
          <span class="name-desc text-white">{{Auth::user()->nome}}</span>
          <span class="email-desc">{{Auth::user()->email}}</span>
