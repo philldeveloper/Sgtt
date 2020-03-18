@@ -77,14 +77,52 @@ class Contrato_srController extends Controller
         $contrato_sr->parceiro_cargo = $request->parceiro_cargo;
         $contrato_sr->clausula_descricao = $request->clausula_descricao;
         $contrato_sr->clausula_objetivo = $request->clausula_objetivo;
-        $contrato_sr->clausula_edit_2 = $request->clausula_edit_2;
+
+        $contrato_sr->clausula_edit_2_3 = $request->clausula_edit_2_3;
+        $contrato_sr->clausula_edit_2_4 = $request->clausula_edit_2_4;
+        $contrato_sr->clausula_edit_2_5 = $request->clausula_edit_2_5;
+        $contrato_sr->clausula_edit_2_6 = $request->clausula_edit_2_6;
+
         $contrato_sr->clausula_edit_3 = $request->clausula_edit_3;
-        $contrato_sr->clausula_edit_5 = $request->clausula_edit_5;
-        $contrato_sr->clausula_edit_6 = $request->clausula_edit_6;
-        $contrato_sr->clausula_edit_7 = $request->clausula_edit_7;
-        $contrato_sr->clausula_edit_8 = $request->clausula_edit_8;
-        $contrato_sr->clausula_edit_12 = $request->clausula_edit_12;
-        $contrato_sr->clausula_edit_13 = $request->clausula_edit_13;
+
+        $contrato_sr->clausula_edit_5_1 = $request->clausula_edit_5_1;
+        $contrato_sr->clausula_edit_5_2 = $request->clausula_edit_5_2;
+        $contrato_sr->clausula_edit_5_3 = $request->clausula_edit_5_3;
+        $contrato_sr->clausula_edit_5_4 = $request->clausula_edit_5_4;
+        $contrato_sr->clausula_edit_5_5 = $request->clausula_edit_5_5;
+        $contrato_sr->clausula_edit_5_6 = $request->clausula_edit_5_6;
+        $contrato_sr->clausula_edit_5_7 = $request->clausula_edit_5_7;
+        $contrato_sr->clausula_edit_5_8 = $request->clausula_edit_5_8;
+        $contrato_sr->clausula_edit_5_9 = $request->clausula_edit_5_9;
+        $contrato_sr->clausula_edit_5_10 = $request->clausula_edit_5_10;
+        $contrato_sr->clausula_edit_5_11 = $request->clausula_edit_5_11;
+        $contrato_sr->clausula_edit_5_12 = $request->clausula_edit_5_12;
+        $contrato_sr->clausula_edit_5_13 = $request->clausula_edit_5_13;
+
+        $contrato_sr->clausula_edit_6_2 = $request->clausula_edit_6_2;
+        $contrato_sr->clausula_edit_6_3 = $request->clausula_edit_6_3;
+        $contrato_sr->clausula_edit_6_4 = $request->clausula_edit_6_4;
+
+        $contrato_sr->clausula_edit_7_6 = $request->clausula_edit_7_6;
+        $contrato_sr->clausula_edit_7_7 = $request->clausula_edit_7_7;
+        $contrato_sr->clausula_edit_7_8 = $request->clausula_edit_7_8;
+
+        $contrato_sr->clausula_edit_8_1 = $request->clausula_edit_8_1;
+        $contrato_sr->clausula_edit_8_2 = $request->clausula_edit_8_2;
+        $contrato_sr->clausula_edit_8_2_a = $request->clausula_edit_8_2_a;
+        $contrato_sr->clausula_edit_8_2_b = $request->clausula_edit_8_2_b;
+        $contrato_sr->clausula_edit_8_2_c = $request->clausula_edit_8_2_c;
+        $contrato_sr->clausula_edit_8_2_d = $request->clausula_edit_8_2_d;
+        $contrato_sr->clausula_edit_8_2_e = $request->clausula_edit_8_2_e;
+
+        $contrato_sr->clausula_edit_12_a = $request->clausula_edit_12_a;
+        $contrato_sr->clausula_edit_12_b = $request->clausula_edit_12_b;
+
+        $contrato_sr->clausula_edit_13_2 = $request->clausula_edit_13_2;
+        $contrato_sr->clausula_edit_13_2_1 = $request->clausula_edit_13_2_1;
+        $contrato_sr->clausula_edit_13_2_2 = $request->clausula_edit_13_2_2;
+        $contrato_sr->clausula_edit_13_3 = $request->clausula_edit_13_3;
+        
         $contrato_sr->nome_inst_ict = $request->nome_inst_ict;
         $contrato_sr->nome_inst_privado = $request->nome_inst_privado;
         $contrato_sr->nome_inst_fundacao = $request->nome_inst_fundacao;
@@ -100,7 +138,7 @@ class Contrato_srController extends Controller
         $contrato_sr->nome_inst_privado_foro = $request->nome_inst_privado_foro;
         $contrato_sr->nome_rep_privado_foro = $request->nome_rep_privado_foro;
         $contrato_sr->cargo_rep_privado_foro = $request->cargo_rep_privado_foro;
-        $contrato_sr->check_clausula = $request->check_clausula;
+        //$contrato_sr->check_clausula = $request->check_clausula;
 
         $contrato_sr->tipo = $request->tipo;
 

@@ -41,14 +41,53 @@ class Contrato_sr extends Model
         'parceiro_cargo',
         'clausula_descricao',
         'clausula_objetivo',
-        'clausula_edit_2',//clausulas editaveis
+        //clausulas editaveis
+        'clausula_edit_2_3',
+        'clausula_edit_2_4',
+        'clausula_edit_2_5',
+        'clausula_edit_2_6',
+
         'clausula_edit_3',
-        'clausula_edit_5',
-        'clausula_edit_6',
-        'clausula_edit_7',
-        'clausula_edit_8',
-        'clausula_edit_12',
-        'clausula_edit_13',
+
+        'clausula_edit_5_1',
+        'clausula_edit_5_2',
+        'clausula_edit_5_3',
+        'clausula_edit_5_4',
+        'clausula_edit_5_5',
+        'clausula_edit_5_6',
+        'clausula_edit_5_7',
+        'clausula_edit_5_8',
+        'clausula_edit_5_9',
+        'clausula_edit_5_10',
+        'clausula_edit_5_11',
+        'clausula_edit_5_12',
+        'clausula_edit_5_13',
+
+        'clausula_edit_6_2',
+        'clausula_edit_6_3',
+        'clausula_edit_6_4',
+
+        'clausula_edit_7_6',
+        'clausula_edit_7_7',
+        'clausula_edit_7_8',
+
+        'clausula_edit_8_1',
+        'clausula_edit_8_2',
+        'clausula_edit_8_2_a',
+        'clausula_edit_8_2_b',
+        'clausula_edit_8_2_c',
+        'clausula_edit_8_2_d',
+        'clausula_edit_8_2_e',
+
+        'clausula_edit_12_a',
+        'clausula_edit_12_b',
+
+        'clausula_edit_13_2',
+        'clausula_edit_13_2_1',
+        'clausula_edit_13_2_2',
+        'clausula_edit_13_3',
+        //fim das clausulas editaveis
+
         'nome_inst_ict',
         'nome_inst_privado',
         'nome_inst_fundacao',
@@ -64,7 +103,7 @@ class Contrato_sr extends Model
         'nome_inst_privado_foro',
         'nome_rep_privado_foro',
         'cargo_rep_privado_foro',
-        'check_clausula', //recebe 1 por default
+        //'check_clausula', //recebe 1 por default
 
         'tipo',
         'user_id'
