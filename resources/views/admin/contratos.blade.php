@@ -215,10 +215,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
                 <th scope="col">Desenv. por</th>
                 <th scope="col">ICT | Parceiro</th>
                 <th scope="col">E-mail</th>
-                <!--th scope="col">Criado em</th>
-                <th scope="col">Modificado em</th>
-                <th scope="col">Status</th>
-                <th scope="col">Correções</th-->
+                <th scope="col">Criado em</th>
+                <!--th scope="col">Modificado em</th-->
+                <!--th scope="col">Status</th-->
+                <!--th scope="col">Correções</th-->
                 <th scope="col">Ações</th>
               </tr>
             </thead>
@@ -231,8 +231,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
                 <td>{{$contratos->id}}</td>
                 <td><div class="badge badge-info">{{$contratos->tipo}}</div></td>
                 <td><div class="">{{$contratos->user->nome}}</div></td>
-                <td>{{$contratos->nome_ict}} e {{$contratos->nome_parceiro}}</td>
+                <td>{{$contratos->nome_ict}} | {{$contratos->nome_parceiro}}</td>
                 <td>{{$contratos->user->email}}</td>
+                <td>{{$contratos->created_at}}</td>
                 <!--td>
                   <div class="progress mt-2 mr-3">
                     <div class="progress-bar bg-primary pr-3 pl-3" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Apreciação</div>
@@ -240,7 +241,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
                 </td-->
                 
                 {{--
-                @if (count($contratos->correcoes) >=1)
+                <!--@if (count($contratos->correcoes) >=1)
                 <td>
                   <div class="btn-group" role="group" aria-label="Basic example">
                       <a href="{{route('contrato_correcoes', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-warning  text-dark font-weight-bold" target="blank">{{$contratos->correcoes->count()}}</a>
@@ -250,7 +251,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
                 <td>
                   <p class="text-center font-weight-bold text-danger">0</p>
                 </td>
-                @endif
+                @endif-->
                 
                 --}}
 
@@ -260,7 +261,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
                       <a @popper(Ver) href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
                       <a @popper(Editar) href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
                       <a @popper(Baixar) href="{{route('printpdf', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
-
+                      <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$contratos->user->email}}" target="blank"><i class="fas fa-paper-plane"></i></a>
                       @csrf
                       @method('DELETE')
                       <button @popper(Excluir) class="btn btn-sm pl-3 pr-3 bg-danger text-light font-weight-bold" type="submit"><i class="fa fa-trash text-light"></i></button>
@@ -277,15 +278,16 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
                 <td>{{$cr->id}}</td>
                 <td><div class="badge badge-success">{{$cr->tipo}}</div></td>
                 <td><div class="">{{$cr->user->nome}}</div></td>
-                <td>{{$cr->nome_ict}} e {{$cr->nome_parceiro}}</td>
+                <td>{{$cr->nome_ict}} | {{$cr->nome_parceiro}}</td>
                 <td>{{$cr->user->email}}</td>
+                <td>{{$cr->created_at}}</td>
                 <td>
                   <form action="{{route('contrato_cr.destroy',$cr->id) }}" method="POST">
                     <div class="btn-group" role="group" aria-label="Basic example">
                       <a @popper(Ver) href="{{route('contratocr_show', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
                       <a @popper(Editar) href="{{route('contratocr_edit', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
                       <a @popper(Baixar) href="{{route('repassepdf', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
-
+                      <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$cr->user->email}}" target="blank"><i class="fas fa-paper-plane"></i></a>
                       @csrf
                       @method('DELETE')
                       <button @popper(Excluir) class="btn btn-sm pl-3 pr-3 bg-danger text-light font-weight-bold" type="submit"><i class="fa fa-trash text-light"></i></button>
