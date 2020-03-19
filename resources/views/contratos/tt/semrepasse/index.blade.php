@@ -5,6 +5,12 @@
   #wrapper #content-wrapper {
     background-color: white !important;
   }
+
+  textarea{
+    background-color: #DCF8FC !important;
+    color: #343434 !important;
+    border-color: #8DB7BD !important;
+  }
 </style>
 @section('content')
 
