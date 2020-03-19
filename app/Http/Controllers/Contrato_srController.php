@@ -44,6 +44,10 @@ class Contrato_srController extends Controller
     public function store(Request $request)
     {
         
+        //$contrato_sr = Contrato_sr::create($request->all());
+
+        //$contrato_sr->fill(['user_id' => '10']);
+        
         $contrato_sr = new Contrato_sr;
 
         $contrato_sr->nome_ict = $request->nome_ict;
