@@ -21,6 +21,18 @@
 @include('pesquisador.modals.modal_12')
 @include('pesquisador.modals.modal_13')
 @include('pesquisador.modals.modal_14')
+@include('pesquisador.modals.modal_15')
+@include('pesquisador.modals.modalCoordenador')
+@include('pesquisador.modals.modalCoordenadorPrivado')
+@include('pesquisador.modals.modalFundApoio')
+@include('pesquisador.modals.modal_clausula_4')
+@include('pesquisador.modals.modalRecursoPrivado')
+@include('pesquisador.modals.modalVerificarMeta')
+@include('pesquisador.modals.modalPropriedadeIntelectual')
+@include('pesquisador.modals.modalConfidencial')
+@include('pesquisador.modals.modalVigencia')
+@include('pesquisador.modals.modalPDI')
+@include('pesquisador.modals.modalPublicidade')
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
@@ -42,8 +54,9 @@
 <div class="card mt-5 color-card">
   <div class="card-body p-3">
         <div class="tab-pane show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-
-            <div class="modal-alert modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          
+  
+            <div class="modal-alert modal fade" id="minuta-inicial" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -53,7 +66,6 @@
                     </button>
                   </div>
                     <div class="modal-body"><p class="lead">
-
                     <span class="font-weight-bold text-dark">ESTA MINUTA DEVE SER UTILIZADA PARA ACORDOS DE PARCERIA PARA PD&I QUANDO HOUVER REPASSE DE RECURSOS PRIVADOS PARA O PROJETO DE PESQUISA.</span><br>
                     <hr>
                     Este repasse tanto pode ser feito diretamente à ICT ou Agência de Fomento, com ou sem intermédio de Fundação de Apoio 
@@ -66,39 +78,38 @@
                     <br/>No modelo a seguir, deve-se observar que há duas cores:<br/>
                     <br/>- os itens escritos na cor <b>PRETA</b> devem ser mantidos, podendo eventualmente serem alterados ou excluídos diante do caso concreto, e;
                     <br/>-  aqueles redigidos na cor <span class="text-blue font-weight-bold">AZUL</span> são textos que dependem de situações específicas ou se trata de textos sugestivos. Cabe a cada entidade verificar o que deve ser escrito nestes itens e decidir se eles serão ou não mantidos na redação final do Acordo. 
+                    <div class="dropdown-diviver"></div>
+                    <div class="text-center font-weight-bold">ATENÇÃO</div> 
+                    Os pesquisadores do IF-Sertão-PE devem preencher o Acordo com os dados do IF-Sertão-PE e os pesquisadores da UNIVASF devem preencher o Acordo com os dados da UNIVASF.
 
                     </div>
-                    
                     <div class="modal-footer">
                       <button type="button" class="btn-lg btn-primary" data-dismiss="modal">Fechar</button>
                     </div>
                 </div>
               </div>
             </div>
-
             <div class="container-fluid p-0 mt-0 m-0">
-              <div class="container-fluid pb-5 pt-5 mt-0 m-0">
+              <div class="container-fluid pt-5 mt-0 m-0">
                 <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">
                 ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI
                   CELEBRAM</h5> 
                   <div class="form-row" style="justify-content: center;">
                     <div class="form-group col-md-4">
-                      <input class="mb-2 text-black form-control" type="text" name="nome_ict"  placeholder="ICT ou ente público"> 
+                      <input class="mb-2 text-black form-control" type="text" name="nome_ict"  placeholder="Nome da ICT (IFSertão-PE ou UNIVASF)"> 
                     </div>
                     <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">E</h5>
                     <div class="form-group col-md-4">
-                      <input class="mb-2 text-black form-control" type="text" name="nome_parceiro"  placeholder="Nome do parceiro">  
+                      <input class="mb-2 text-black form-control" type="text" name="nome_parceiro"  placeholder="Nome do Parceiro (Empresa ou ICT)">  
                     </div>
                   </div>
                  <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center">NA FORMA A SEGUIR.</h5><br>
               </div>
-
               <div class="alert alert-warning" role="alert">      
                 <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                 NOTAS EXPLICATIVAS!
-                <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal">Saiba mais</button>
+                <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#minuta-inicial">Saiba mais</button>
               </div>
-
               <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">ICT/ente público</h5>
   
               <div class="form-row">
@@ -130,8 +141,37 @@
                   <input type="text" class="form-control text-black font-weight-bold"  id="cidade" name="cidade">
                 </div>
                 <div class="form-group col-md-2">
-                  <label for="inputState" class="font-weight-bold text-black">UF</label>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="uf" name="uf">
+                  <label for="UF" class="font-weight-bold text-black">UF</label>
+                  <select class="custom-select" id="UF" name="uf">
+                    <option value="">Selecione</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
                 </div>
                 <div class="form-group col-md-2">
                   <label for="inputZip" class="font-weight-bold text-black">CEP</label>
@@ -215,8 +255,37 @@
                     <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_cidade" name="parceiro_cidade">
                 </div>
                 <div class="form-group col-md-2">
-                  <label for="inputState" class="font-weight-bold text-black">UF</label>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_uf" name="parceiro_uf">
+                  <label for="parceiro_uf" class="font-weight-bold text-black">UF</label>
+                  <select class="custom-select" id="parceiro_uf" name="parceiro_uf">
+                    <option value="">Selecione</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
                 </div>
                 <div class="form-group col-md-2">
                   <label for="inputZip" class="font-weight-bold text-black">CEP</label>
@@ -259,80 +328,6 @@
 
             </div><!--end of content-->
           </div><!--end pane-->
-          {{--<div class="tab-pane " id="contact" role="tabpanel" aria-labelledby="contact-tab">
-            <div class="container-fluid p-0 mt-0 m-0">
-              <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">3º PARCEIRO (Fundação de Apoio)</h5>
-              <div class="form-row">
-                <div class="form-group col-md-4">
-                  <label for="inputEmail4" class="font-weight-bold text-black">Instituição</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputEmail4" placeholder="Nome">
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="Natureza Jurídica">
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="CNPJ">
-                </div>
-              </div>
-  
-              <div class="form-row">
-                <div class="form-group col-md-5">
-                  <label for="" class="font-weight-bold text-black">Endereço</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="">
-                </div>
-                <div class="form-group col-md-3">
-                  <label for="" class="font-weight-bold text-black">Cidade</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="">
-                </div>
-                <div class="form-group col-md-2">
-                  <label for="inputState" class="font-weight-bold text-black">UF</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold"  id="">
-                </div>
-                <div class="form-group col-md-2">
-                  <label for="inputZip" class="font-weight-bold text-black">CEP</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputZip">
-                </div>
-              </div>
-  
-             <div class="form-row">
-              <div class="form-group col-md-4">
-                <label for="inputEmail4" class="font-weight-bold text-black">Representante Legal</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputEmail4" placeholder="Nome">
-              </div>
-              <div class="form-group col-md-3">
-                <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
-              </div>
-              <div class="form-group col-md-3">
-                <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
-              </div>
-              <div class="form-group col-md-2">
-                <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
-              </div>
-              <div class="form-group col-md-2">
-                <label for="inputPassword4" class="font-weight-bold text-black">Cargo</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" placeholder="">
-              </div>
-             </div>
-            </div><!--end of content-->
-          </div><!--end pane-->--}}
-          
           <!------------------------------------------------------------------------->
   
           <div class="tab-pane " id="clausula1" role="tabpanel" aria-labelledby="clausula1-tab">
@@ -357,22 +352,69 @@
             </div>
   
         </div><!--end of tab-content: insert all these here!-->
-  
+        <div class="modal-alert modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title font-weight-bold" id="exampleModalLabel">NOTAS EXPLICATIVAS</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                    <div class="modal-body"><p class="lead">
+                    Para cada parceria deverá haver um único plano de trabalho. 
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn-lg btn-primary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+              </div>
+            </div>
         <!------------------------------------------------------------------------->
   
         <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">2. CLÁUSULA SEGUNDA – DO PLANO DE TRABALHO <a href="#" data-toggle="modal" data-target="#modalExemplo12"><i class="fas fa-fw fa-question-circle float-right"></i></a></h5>
-    
+                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">2. CLÁUSULA SEGUNDA – DO PLANO DE TRABALHO</h5>
+                <div class="alert alert-warning" role="alert">      
+                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+                    NOTAS EXPLICATIVAS!
+                  <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal">Saiba mais</button>
+                </div>   
                 <p><b>2.1 </b>O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
   
-                <p class=""><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a ICT <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
+                <p><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a(o) ICT 
+                <input type="text" class="myform-control text-black" name="ict_plano_trabalho" id="ict_plano_trabalho" placeholder="Nome da ICT/Agência de Fomento">
+                <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>,
+                 com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, 
+                sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
 
 
                 <!--clausula editavel 2-->
-
+                <div class="alert alert-warning" role="alert">      
+                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+                    NOTAS EXPLICATIVAS!
+                  <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal2">Saiba mais</button>
+                </div>  
+                <div class="modal-alert modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title font-weight-bold" id="exampleModalLabel">NOTAS EXPLICATIVAS</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                      <div class="modal-body"><p class="lead">
+                      Cláusula abaixo são obrigatórias para ICTs, cabendo as Agências de Fomento verificar se há interesse na sua inclusão no Acordo.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn-lg btn-primary" data-dismiss="modal">Fechar</button>
+                      </div>
+                  </div>
+                </div>
+              </div> 
                 <div class="col-md-12 mb-3">
                   <textarea class="form-control font-weight-bold" name="clausula_edit_2" rows="10" style="background-color: #F6FAFA; resize: none !important;">2.3 Na execução do Plano de Trabalho, a atuação dos PARCEIROS dar-se-á sempre de forma associada. Para tanto, os PARCEIROS indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.&#13;&#13;2.4 Recaem sobre o Coordenador do Projeto, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.&#13;&#13;2.5 Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.&#13;&#13;2.6 A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo.&#13;&#13;
                 </textarea>
@@ -380,71 +422,144 @@
                 
               </div>
             </div>
-  
+                  
         </div><!--end of tab-content: insert all these here!-->
   
         <!------------------------------------------------------------------------->
-  
+                  
         <div class="tab-pane " id="clausula3" role="tabpanel" aria-labelledby="clausula3-tab">
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">3 CLÁUSULA TERCEIRA – DAS ATRIBUIÇÕES E RESPONSABILIDADES <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
-    
+                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">3 CLÁUSULA TERCEIRA – DAS ATRIBUIÇÕES E RESPONSABILIDADES</h5>
+               <!--  Nota explicativa 3 -->
+                <div class="alert alert-warning" role="alert">      
+                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+                    NOTAS EXPLICATIVAS!
+                  <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal3">Saiba mais</button>
+                </div>  
+                <div class="modal-alert modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title font-weight-bold" id="exampleModalLabel">NOTAS EXPLICATIVAS</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                          <div class="modal-body"><p class="lead">
+                          Cabe a cada Parceiro especificar as atribuições de cada parte no Acordo, conforme a parceria que irá ser firmada e as obrigações que cada partícipe terá. 
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn-lg btn-primary" data-dismiss="modal">Fechar</button>
+                          </div>
+                      </div>
+                    </div>
+                </div> 
+                <!-- FIM Nota explicativa 3 -->
                 <p><b>3.1 </b>São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I:</p>
                  
                 <p class="ml-2 bg-light roboto-font"><b>3.1.1. Do(a):</b><input type="text" class="myform-control" name="nome_inst_ict" id="nome_inst_ict" placeholder="Instituição"><a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a></p>
            
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div> Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD&I ;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div> Manter rigoroso controle das despesas efetuadas e dos respectivos comprovantes com vistas à prestação de contas da execução do objeto deste Acordo;<br>
-                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;<br>
+                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução<a href="#" data-toggle="modal" data-target="#modalCoordenador"><i class="fas fa-fw fa-question-circle"></i></a>
+                  <div class="form-group col-md-6">
+                    <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" placeholder="Nome coordenador ICT/Publico"><br>
+                  </div>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">D)</div> Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;<br>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">E)</div> Monitorar, avaliar e prestar contas nos termos deste Acordo; </p>
-                  <p class="ml-2 bg-light roboto-font"><b>3.1.2. Do(a):</b><input class="myform-control" type="text" name="nome_inst_privado" id="nome_inst_privado" placeholder="Instituição"><a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a> (PARCEIRO PRIVADO)</p>
+                  <p class="ml-2 bg-light roboto-font"><b>3.1.2. Do(a):
+
+                  </b><input class="myform-control" type="text" name="nome_inst_privado" id="nome_inst_privado" placeholder="Instituição"><a href="#" data-toggle="modal" data-target="#modalExemplo15"><i class="fas fa-fw fa-question-circle"></i></a> (PARCEIRO PRIVADO)</p>
                
-                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div>Transferir os recursos financeiros acordados, segundo o Cronograma de Desembolso constante no Plano de Trabalho, por meio do aporte de recursos financeiros de sua responsabilidade; <br><div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div> Indicar coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução; <br>
-                  
+                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div>Transferir os recursos financeiros acordados, segundo o Cronograma de Desembolso constante no Plano de Trabalho, por meio do aporte de recursos financeiros de sua responsabilidade; <br>
+                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução<a href="#" data-toggle="modal" data-target="#modalCoordenadorPrivado"><i class="fas fa-fw fa-question-circle"></i></a>
+                  <div class="form-group col-md-6">
+                    <input type="text" name="nome_coordenador_privado" onchange="handleCoordenadorPrivado()" class="form-control" id="nome_coordenador_privado" placeholder="Nome Coordenador privado"> <br>
+                  </div>
                   <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div> Colaborar, nos termos do plano de trabalho, para que o Acordo alcance os objetivos nele descritos;
                   
                   <br><br>
-                  
-                  <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a): <input type="text" class="myform-control" name="nome_inst_fundacao" id="nome_inst_fundacao" placeholder="Instituição"> <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p>
-                 
-                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div>  Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD& I; <br>
-                  
-                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div>  Prestar à ICT informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;<br>
-                  
-                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div>  Indicar coordenador, no prazo de 15 (quinze) dias úteis, contados da assinatura deste Acordo, para acompanhar a sua execução;<br>
-
-                  <!--clausula editavel 3_1-->
-
-                  <div class="col-md-12 mb-3">
-                    <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3a" rows="10" style="background-color: #F6FAFA; resize: none !important;">D) Executar a gestão administrativa e financeira dos recursos transferidos para a execução do objeto deste Acordo, em conta específica.;&#13;&#13;Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação;&#13;&#13;
-                  </textarea>
+                  <!--    Checkbox clausula condicional fundo de apoio  -->
+                  <div class="dropdown-divider"></div>
+                  <div class="form-check form-check-inline py-4">
+                    <input class="form-check-input" onclick="handleCheckbox()" type="checkbox" id="possui_apoio" value="opcao1">
+                    <label class="form-check-label" for="possui_apoio">Possui Fundação de apio?</label>
                   </div>
+                  <div id="clausula_apoio_wrapper" style="display: none;">
+                    <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a): 
+                      <input type="text" class="myform-control" name="nome_inst_fundacao" id="nome_inst_fundacao" placeholder="Instituição"> <a href="#" data-toggle="modal" data-target="#modalFundApoio"><i class="fas fa-fw fa-question-circle"></i></a>:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p>
+                      <div class="col-md-12 mb-3">
+                        <textarea  name="clausula_apoio_a" class="form-control font-weight-bold text-justify" style="background-color: #F6FAFA; resize: none !important;"  id="" cols="30" rows="3">A) Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD& I;
+                        </textarea>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <textarea  name="clausula_apoio_b" class="form-control font-weight-bold text-justify" style="background-color: #F6FAFA; resize: none !important;" id="" cols="30" rows="3">B) Prestar à ICT informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;
+                        </textarea>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <textarea  name="clausula_apoio_c" class="form-control font-weight-bold text-justify" style="background-color: #F6FAFA; resize: none !important;" id="" cols="30" rows="3">C) Indicar coordenador, no prazo de 15 (quinze) dias úteis, contados da assinatura deste Acordo, para acompanhar a sua execução;
+                        </textarea>
+                      </div>
+                    <div class="col-md-12 mb-3">
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_d" rows="5" style="background-color: #F6FAFA; resize: none !important;">D) Executar a gestão administrativa e financeira dos recursos transferidos para a execução do objeto deste Acordo, em conta específica.;&#13;&#13;Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação;&#13;&#13;
+                      </textarea>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_e" rows="5" style="background-color: #F6FAFA; resize: none !important;">E) Informar previamente ao PARCEIRO PRIVADO os dados bancários e cadastrais necessários à realização dos aportes financeiros, cuidando para que a conta corrente a qual serão destinados os recursos seja específica para o projeto executado em conformidade com este Acordo de Parceria;
+                      </textarea>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_f" rows="5" style="background-color: #F6FAFA; resize: none !important;">F) Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, inclusive os provenientes das receitas obtidas nas aplicações financeiras realizadas, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação; ou d)Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação; 
+OU 
+F) Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação;
+                      </textarea>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_g" rows="5" style="background-color: #F6FAFA; resize: none !important;">G) Responsabilizar-se pelo recolhimento de impostos, taxas, contribuições e outros encargos porventura devidos em decorrência das atividades vinculadas a este Acordo de Parceria;
+                      </textarea>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_h" rows="5" style="background-color: #F6FAFA; resize: none !important;">H) Manter, durante toda a execução do Acordo de Parceria, todas as condições de habilitação e de qualificação exigidas para a sua celebração, responsabilizando-se pela boa e integral execução das atividades ora descritas;
+                      </textarea>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_i" rows="5" style="background-color: #F6FAFA; resize: none !important;">I)  Nas compras de bens e nas contratações de serviços, observar as regras do Decreto nº 8.241/2014;
+                      </textarea>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_j" rows="5" style="background-color: #F6FAFA; resize: none !important;">J) Observar os princípios da legalidade, eficiência, moralidade, publicidade, economicidade, legalidade e impessoalidade, nas aquisições e contratações realizadas, bem como no desenvolvimento de todas as suas ações no âmbito deste Acordo de Parceria;
+                      </textarea>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_k" rows="5" style="background-color: #F6FAFA; resize: none !important;">K) Manter registros contábeis, fiscais e financeiros completos e fidedignos relativamente à aplicação dos aportes recebidos do PARCEIRO PRIVADO por este Acordo de Parceria, fazendo-o em estrita observância às normas tributário-fiscais em vigor e, especialmente, à legislação que instituiu contrapartidas em atividades de PD&I para a concessão de incentivos ou de benefícios dos quais o PARCEIRO PRIVADO seja ou se torne beneficiária;
+                      </textarea>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_l" rows="5" style="background-color: #F6FAFA; resize: none !important;">L) Manter, com os recursos do projeto e sob sua coordenação direta, pessoal de pesquisa e desenvolvimento, através de contratação pela CLT, bolsa ou estágio de pesquisa e desenvolvimento, disponível para a execução das atividades relativas a este Acordo de Parceria e ao Plano de Trabalho, em número e com conhecimento técnico-acadêmico suficientes;
+                      </textarea>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_m" rows="5" style="background-color: #F6FAFA; resize: none !important;">M) Providenciar a remuneração dos colaboradores, conforme previsto em orçamento específico aprovado, em conformidade, ainda, com o art. 4º da Lei nº 8.958/1994;
+                      </textarea>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_n" rows="5" style="background-color: #F6FAFA; resize: none !important;">N) Cumprir todas as normas pertencentes ao ordenamento jurídico brasileiro, em especial as trabalhistas, previdenciárias e tributárias derivadas da relação existente entre si e seus empregados e/ou contratados, durante a execução do Projeto objeto do Plano de Trabalho, de forma que não se estabelecerá, em hipótese alguma, vínculo empregatício entre esses empregados, funcionários, servidores ou contratados da FUNDAÇÃO e PARCEIRO PRIVADO ou as demais convenentes, cabendo a FUNDAÇÃO responsabilidade exclusiva pelos salários e todos os ônus trabalhistas e previdenciários, bem como pelas reclamações trabalhistas ajuizadas, e por quaisquer autos de infração, e ainda, fiscalização do Ministério do Trabalho e da Previdência Social a que a FUNDAÇÃO der causa, com relação a toda a mão de obra por ela contratada em decorrência do presente Acordo de Parceria.
+                      </textarea>
+                    </div>
 
-                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">E)</div>  Informar previamente ao PARCEIRO PRIVADO os dados bancários e cadastrais necessários à realização dos aportes financeiros, cuidando para que a conta corrente a qual serão destinados os recursos seja específica para o projeto executado em conformidade com este Acordo de Parceria.<br>
-                  
-                  <div class="badge badge-primary p-2 mb-1 font-weight-bold">F)</div>  Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, inclusive os provenientes das receitas obtidas nas aplicações financeiras realizadas, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação;
-                  
-                  <!--clausula editavel 3_2-->
 
-                  <div class="col-md-12 mb-3">
-                    <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3b" rows="20" style="background-color: #F6FAFA; resize: none !important;">G)  Responsabilizar-se pelo recolhimento de impostos, taxas, contribuições e outros encargos porventura devidos em decorrência das atividades vinculadas a este Acordo de Parceria;&#13;&#13;&#13;H)  Manter, durante toda a execução do Acordo de Parceria, todas as condições de habilitação e de qualificação exigidas para a sua celebração, responsabilizando-se pela boa e integral execução das atividades ora descritas;&#13;&#13;&#13;I)  Nas compras de bens e nas contratações de serviços, observar as regras do Decreto nº 8.241/2014;&#13;&#13;&#13;H)  Observar os princípios da legalidade, eficiência, moralidade, publicidade, economicidade, legalidade e impessoalidade, nas aquisições e contratações realizadas, bem como no desenvolvimento de todas as suas ações no âmbito deste Acordo de Parceria;&#13;&#13;&#13;K)  Manter registros contábeis, fiscais e financeiros completos e fidedignos relativamente à aplicação dos aportes recebidos do PARCEIRO PRIVADO por este Acordo de Parceria, fazendo-o em estrita observância às normas tributário-fiscais em vigor e, especialmente, à legislação que instituiu contrapartidas em atividades de PD&I para a concessão de incentivos ou de benefícios dos quais o PARCEIRO PRIVADO seja ou se torne beneficiária;&#13;&#13;&#13;
-                  </textarea>
                   </div>
-
-                  <p><b>3.2.</b> Os Coordenadores de projeto poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.<br>
-                  
-
-                <!--clausula editavel 3_3-->
-
-                <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_3c" rows="5" style="background-color: #F6FAFA; resize: none !important;">3.3. Os PARCEIROS são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente Acordo de Parceria para PD&I ou de publicações a ele referentes.&#13;&#13;
-                </textarea>
-               </div>
-                  
-                </p>
+                   <!--  Fim Clausula Opcional -->
+                  <p><b>3.2.</b> <span id="coord_ict"></span><span id="coord_privado"></span> poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.<br>
+                    <!--clausula editavel 3_3-->
+                    <div class="col-md-12 mb-3">
+                      <textarea class="form-control font-weight-bold" name="clausula_edit_3c" rows="5" style="background-color: #F6FAFA; resize: none !important;">3.3. Os PARCEIROS são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente Acordo de Parceria para PD&I ou de publicações a ele referentes.&#13;&#13;
+                    </textarea>
+                   </div>
+                      
+                  </p>
                 </div>
             </div>
   
@@ -456,7 +571,11 @@
               <div class="text-justify text-black">
                 
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">4. CLÁUSULA QUARTA - DOS RECURSOS FINANCEIROS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
-                
+                <div class="alert alert-warning" role="alert">      
+                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+                    NOTAS EXPLICATIVAS!
+                  <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_clausula_4">Saiba mais</button>
+                </div>  
                 <p>
                   <b>4.1.</b> O (A) <input class="myform-control text-black"type="text" name="nome_parceiro_privado" id="nome_parceiro_privado" placeholder="Parceiro privado">
                    transferirá recursos financeiros no valor total de R$ <input class="myform-control text-black" type="text" name="valor_financeiro" id="valor_financeiro" placeholder="Valor por Extenso">
@@ -498,7 +617,89 @@
                   <textarea class="form-control font-weight-bold" name="clausula_edit_4" rows="20" style="background-color: #F6FAFA; resize: none !important;">4.8. A transposição, o remanejamento ou a transferência de recursos de categoria de programação para outra poderão ocorrer com o objetivo de conferir eficácia e eficiência às atividades de ciência, tecnologia e inovação.&#13;&#13; 4.8.1 No âmbito deste projeto de pesquisa, desenvolvimento e inovação, o coordenador geral indicará a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.&#13;&#13;4.8.2 Por ocasião da ocorrência de quaisquer das ações previstas no item anterior, a ICT poderá alterar a distribuição inicialmente acordada, promover modificações internas ao seu orçamento, alterar rubricas ou itens de despesas, desde que não modifique o valor total do projeto.&#13;&#13; 4.9. São dispensáveis de formalização por meio de Termo Aditivo as alterações previstas no item 4.8 que importem em transposição, remanejamento ou transferência de recursos de categoria de programação para outra, com o objetivo de conferir eficácia e eficiência às atividades previstas no Plano de Trabalho, desde que não haja alteração do valor total do projeto.&#13;&#13;4.9.1. Alterações na distribuição entre grupos de natureza de despesa e alterações de rubricas ou itens de despesas, necessárias para efetiva execução do, ficarão dispensadas de prévia anuência d PARCEIRO PRIVADO, hipótese em que o coordenador do projeto solicitará a alteração à ICT, devendo constar as razões que ensejaram as alterações, indicando a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.&#13;&#13;4.10. A ICT/AGÊNCIA DE FOMENTO não responderá pela suplementação de recursos para fazer frente a despesas decorrentes de quaisquer fatores externos ao seu controle, como flutuação cambial e alterações nos valores de taxas escolares.&#13;&#13;  
                 </textarea>
                </div>
-                
+               <div class="alert alert-warning" role="alert">      
+                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+                    NOTAS EXPLICATIVAS!
+                  <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#recurso_privado">Saiba mais</button>
+                </div>  
+                <p>
+                  <b>4.1.</b> O (A) <input class="myform-control text-black"type="text" name="nome_parceiro_privado" id="nome_parceiro_privado" placeholder="Parceiro privado">
+                   transferirá recursos financeiros no valor total de R$ <input class="myform-control text-black" type="text" name="valor_financeiro" id="valor_financeiro" placeholder="Valor por Extenso">
+                   , conforme cronograma de desembolso constante no Plano de Trabalho, anexo a este Acordo. 
+                </p>
+                <p>
+                  <b>4.2.</b> Os recursos financeiros serão transferidos à ICT/AGÊNCIA DE FOMENTO mediante depósito(s) no Banco do Brasil, por meio de Guia de 
+                  Recolhimento da União-GRU, na qual deverá constar o código da UG, gestão e código do recolhimento indicados pela ICT/AGÊNCIA DE FOMENTO.
+                </p>
+                <p>
+                  <b>4.3.</b> O PARCEIRO PRIVADO deverá comunicar a ICT/AGÊNCIA DE FOMENTO as transferências financeiras até o primeiro dia útil 
+                  seguinte à(s) data(s) do (s) depósito(s) bancário(s). (SE HOUVER NECESSIDADE, ESPECIFICAR A FORMA DE COMUNICAÇÃO: por meio de ...).
+                </p>
+                <p>
+                  <b>4.4.</b> A ICT/AGÊNCIA DE FOMENTO solicitará autorização orçamentária para incorporação dos valores transferidos.
+                </p>
+                <p>
+                  <b>4.5.</b >Caso não seja possível a incorporação dos valores transferidos dentro do tempo hábil para a execução das ações previstas no Plano de Trabalho, o presente instrumento será rescindido de comum acordo e a ICT/AGÊNCIA DE FOMENTO devolverá os recursos repassados.
+                </p>
+                <p>
+                  <b>4.6.</b> Os recursos transferidos à ICT/AGÊNCIA DE FOMENTO, enquanto não utilizados, seguirão as normas da Secretaria do Tesouro Nacional – STN, no que tange à aplicação, rendimentos e outras formas de correção.
+                </p>
+                <p>
+                  <b>4.7.</b> Eventual saldo de recurso transferido pelo parceiro ao ICT/AGÊNCIA DE FOMENTO, não utilizado no objeto deste Acordo, 
+                  após a sua conclusão, será restituído ao parceiro, corrigidos nos termos da Secretaria do Tesouro Nacional - STN.
+                </p>
+                <p>
+                  <b>4.8.</b> A ICT/AGÊNCIA DE FOMENTO não disponibilizará recursos orçamentários e financeiros próprios na execução deste Acordo de Parceria, 
+                  suspendendo sua execução, caso o repasse não seja efetivado conforme previsto no Plano de Trabalho.
+                </p>
+                <p>
+                  <b>4.9.</b> A ICT/AGÊNCIA DE FOMENTO não disponibilizará recursos orçamentários e financeiros próprios na execução deste Acordo de Parceria, 
+                  suspendendo sua execução, caso o repasse não seja efetivado conforme previsto no Plano de Trabalho.
+                </p>
+                <p>
+                  <b>4.10.</b> Qualquer aumento ao orçamento do Plano de Trabalho executado por este Acordo de Parceria, que torne necessário o
+                   aporte de recursos adicionais pelo  PARCEIRO PRIVADO deverá ser prévia e formalmente analisado e aprovado pelas Parceiros, 
+                   devendo ser implementado tão somente após celebração de termo aditivo a este Acordo de Parceria.
+                </p>
+                <p>
+                  <b>4.11.</b> A transposição, o remanejamento ou a transferência de recursos de categoria de programação para outra poderão ocorrer 
+                  com o objetivo de conferir eficácia e eficiência às atividades de ciência, tecnologia e inovação. 
+                </p>
+                <p>
+                  <b>4.11.1</b> No âmbito deste projeto de pesquisa, desenvolvimento e inovação, o coordenador indicará a necessidade de alteração das
+                   categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em
+                    referência ao projeto de pesquisa aprovado originalmente. 
+                </p>
+                <p>
+                  <b>4.11.2</b> Por ocasião da ocorrência de quaisquer das ações previstas no item anterior, a ICT/AGÊNCIA DE FOMENTO poderá alterar a distribuição 
+                  inicialmente acordada, promover modificações internas ao seu orçamento, alterar rubricas ou itens de despesas, desde
+                   que não modifique o valor total do projeto.
+                </p>
+                <div class="alert alert-warning" role="alert">      
+                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+                    NOTAS EXPLICATIVAS!
+                  <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#verificar_meta">Saiba mais</button>
+                </div>  
+                <p>
+                  <b>4.12</b> São dispensáveis de formalização por meio de Termo Aditivo as alterações previstas no item 4.9 que importem em transposição,
+                   remanejamento ou transferência de recursos de categoria de programação para outra, com o objetivo de conferir eficácia e eficiência às
+                    atividades previstas no Plano de Trabalho, desde que não haja alteração do valor total do projeto. 
+                </p>
+                <p>
+                  <b>4.12.1</b> Alterações na distribuição entre grupos de natureza de despesa e alterações de rubricas ou itens de despesas, 
+                  necessárias para efetiva execução do projeto, ficarão dispensadas de prévia anuência do PARCEIRO PRIVADO, 
+                  hipótese em que o coordenador do projeto solicitará a alteração à ICT, devendo constar as razões que ensejaram as alterações, 
+                  indicando a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de 
+                  natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.
+                </p>
+                <p>
+                  <b>4.13</b> A  ICT/AGÊNCIA DE FOMENTO não responderá pela suplementação de recursos para fazer frente a despesas decorrentes de
+                   quaisquer fatores externos ao seu controle, como flutuação cambial e alterações nos valores de taxas escolares.
+                </p>
+                <p>
+                  <b>4.14</b> Do valor total repassado, à ICT/AGÊNCIA DE FOMENTO poderá utilizar até 15% (quinze por cento) para custear despesas 
+                  operacionais, definidas e justificadas no Plano de Trabalho.
+                </p>
               </div>
             </div>
   
@@ -529,11 +730,32 @@
               <div class="text-justify text-black">
                 
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">6. CLÁUSULA SEXTA - DA PROPRIEDADE INTELECTUAL E DA CRIAÇÃO PROTEGIDA</h5>
-
+                <div class="alert alert-warning" role="alert">      
+                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+                    NOTAS EXPLICATIVAS!
+                  <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#propriedade_intelectual">Saiba mais</button>
+                </div>  
                 <!--clausula editavel 6-->
 
                 <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_6" rows="35" style="background-color: #F6FAFA; resize: none !important;">6.1. Todos os dados, técnicas, tecnologia, know-how, marcas, patentes e quaisquer outros bens ou direitos de propriedade intelectual/industrial de um parceiro que este venha a utilizar para execução do Projeto continuarão a ser de sua propriedade exclusiva, não podendo o outro parceiro cedê-los, transferi-los, aliená-los, divulgá-los ou empregá-los em quaisquer outros projetos ou sob qualquer outra forma sem o prévio consentimento escrito do seu proprietário.&#13;&#13;6.2. Todo desenvolvimento tecnológico passível de proteção intelectual, em qualquer modalidade, proveniente da execução do presente Acordo de Parceria, deverá ter a sua propriedade compartilhada entre as duas convenentes, na mesma proporção em que cada instituição contribuiu com recursos humanos, além do conhecimento pré-existente aplicado, conforme previsto no art. 9º, § 3°, da lei nº 10.973/2004.&#13;&#13;6.3. divisão da titularidade sobre a propriedade intelectual prevista na cláusula anterior será definida por meio de instrumento próprio, respeitando-se o percentual de x% (x por cento) para o ICT/AGÊNCIA DE FOMENTO.&#13;&#13;6.4. O instrumento previsto na subcláusula 6.3 deverá observar os requisitos legais e formais necessários para sua celebração e averbação junto aos órgãos competentes.&#13;&#13; 6.5. Eventuais impedimentos de um dos parceiros não prejudicará a titularidade e/ou a exploração dos direitos da Propriedade Intelectual pelos demais.&#13;&#13;6.6. As Partes devem assegurar, na medida de suas respectivas responsabilidades, que os projetos propostos e que a alocação dos recursos tecnológicos correspondentes não infrinjam direitos autorais, patentes ou outros direitos intelectuais, assim como direitos de terceiros.&#13;&#13; 6.7. Na hipótese de eventual infração de qualquer direito de propriedade intelectual relacionada às tecnologias resultantes, os parceiros concordam que as medidas judiciais cabíveis visando coibir a infração do respectivo direito podem ser adotadas em conjunto ou separadamente.&#13;&#13;6.8. Os depósitos de pedidos de proteção de propriedade intelectual devem ser iniciados necessariamente junto ao Instituto Nacional de Propriedade Industrial - INPI e registrados no sistema de acompanhamento d o  ICT/AGÊNCIA DE FOMENTO. &#13;&#13; 6.9. Caberá ao PARCEIRO PRIVADO, com exclusividade, a responsabilidade de preparar, arquivar, processar e manter pedidos de patente no Brasil e em ouros países.&#13;&#13;6.10. As decisões relacionadas à preparação, processamento e manutenção de pedido de patente das tecnologias resultantes deste instrumento, no Brasil e em outros países, devem ser tomadas em conjunto pelos partícipes ora acordantes.&#13;&#13;6.11. Na hipótese de eventual infração de qualquer patente relacionada às tecnologias resultantes, os partícipes concordam que as medidas judiciais cabíveis visando a coibir a infração da respectiva patente podem ser adotadas pelos partícipes, em conjunto ou separadamente.&#13;&#13;6.11. Tanto no que se refere à proteção da propriedade intelectual quanto às medidas judiciais, os partícipes concordam que as despesas deverão ser suportadas de acordo com os percentuais definidos na exploração comercial das tecnologias.&#13;&#13;6.12. A FUNDAÇÃO DE APOIO não terá direitos sobre os resultados obtidos, passíveis ou não de proteção legal.&#13;&#13;6.13. O ICT/AGÊNCIA DE FOMENTO poderá outorgar poderes ao PARCEIRO PRIVADO para praticar todo e qualquer ato necessário para o depósito, acompanhamento e manutenção de pedido de patente das tecnologias resultantes do presente instrumento, no Brasil e em outros países.&#13;&#13; 
+                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_6" rows="35" style="background-color: #F6FAFA; resize: none !important;">
+                  6.1. Todos os dados, técnicas, tecnologia, know-how, marcas, patentes e quaisquer outros bens ou direitos de propriedade intelectual/industrial de um parceiro que este venha a utilizar para execução do Projeto continuarão a ser de sua propriedade exclusiva, não podendo o outro parceiro cedê-los, transferi-los, aliená-los, divulgá-los ou empregá-los em quaisquer outros projetos ou sob qualquer outra forma sem o prévio consentimento escrito do seu proprietário.
+                  6.2. Todo desenvolvimento tecnológico passível de proteção intelectual, em qualquer modalidade, proveniente da execução do presente Acordo de Parceria, deverá ter a sua propriedade compartilhada entre as duas convenentes, na mesma proporção em que cada instituição contribuiu com recursos humanos, além do conhecimento pré-existente aplicado, conforme previsto no art. 9º, § 3°, da lei nº 10.973/2004.
+                  6.3. divisão da titularidade sobre a propriedade intelectual prevista na cláusula anterior será definida por meio de instrumento próprio, respeitando-se o percentual de x% (x por cento) para o ICT/AGÊNCIA DE FOMENTO.
+ ou 
+ 6.3 Todo desenvolvimento tecnológico passível de proteção intelectual, em qualquer modalidade, proveniente da execução do presente Acordo de Parceria, deverá ter a sua propriedade compartilhada entre as parceiras, por meio de instrumento próprio, respeitando-se o percentual de x% (x por cento) para o ICT/AGÊNCIA DE FOMENTO.
+                
+                  6.4. O instrumento previsto na subcláusula 6.3 deverá observar os requisitos legais e formais necessários para sua celebração e averbação junto aos órgãos competentes.
+                  6.5. Eventuais impedimentos de um dos parceiros não prejudicará a titularidade e/ou a exploração dos direitos da Propriedade Intelectual pelos demais.
+                  6.6. As Partes devem assegurar, na medida de suas respectivas responsabilidades, que os projetos propostos e que a alocação dos recursos tecnológicos correspondentes não infrinjam direitos autorais, patentes ou outros direitos intelectuais, assim como direitos de terceiros.
+                  6.7. Na hipótese de eventual infração de qualquer direito de propriedade intelectual relacionada às tecnologias resultantes, os parceiros concordam que as medidas judiciais cabíveis visando coibir a infração do respectivo direito podem ser adotadas em conjunto ou separadamente.
+                  6.8. Os depósitos de pedidos de proteção de propriedade intelectual devem ser iniciados necessariamente junto ao Instituto Nacional de Propriedade Industrial - INPI e registrados no sistema de acompanhamento d o  ICT/AGÊNCIA DE FOMENTO.
+                  6.9. Caberá ao PARCEIRO PRIVADO, com exclusividade, a responsabilidade de preparar, arquivar, processar e manter pedidos de patente no Brasil e em ouros países.
+                  6.10. As decisões relacionadas à preparação, processamento e manutenção de pedido de patente das tecnologias resultantes deste instrumento, no Brasil e em outros países, devem ser tomadas em conjunto pelos partícipes ora acordantes.
+                  6.11. Na hipótese de eventual infração de qualquer patente relacionada às tecnologias resultantes, os partícipes concordam que as medidas judiciais cabíveis visando a coibir a infração da respectiva patente podem ser adotadas pelos partícipes, em conjunto ou separadamente.
+                  6.11. Tanto no que se refere à proteção da propriedade intelectual quanto às medidas judiciais, os partícipes concordam que as despesas deverão ser suportadas de acordo com os percentuais definidos na exploração comercial das tecnologias.
+                  6.12. A FUNDAÇÃO DE APOIO não terá direitos sobre os resultados obtidos, passíveis ou não de proteção legal.
+                  6.13. O ICT/AGÊNCIA DE FOMENTO poderá outorgar poderes ao PARCEIRO PRIVADO para praticar todo e qualquer ato necessário para o depósito, acompanhamento e manutenção de pedido de patente das tecnologias resultantes do presente instrumento, no Brasil e em outros países. 
                 </textarea>
                </div>
                 
@@ -610,7 +832,11 @@
                 </p>
 
                 <!--clausula editavel 8-->
-
+                <div class="alert alert-warning" role="alert">      
+                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+                    NOTAS EXPLICATIVAS!
+                  <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#confidencial">Saiba mais</button>
+                </div> 
                 <div class="col-md-12 mb-3">
                   <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_8" rows="10" style="background-color: #F6FAFA; resize: none !important;">8.6. As obrigações de sigilo em relação às INFORMAÇÕES CONFIDENCIAIS serão mantidas durante o período de vigência deste Acordo e pelo prazo de 5 (cinco) anos após sua extinção.&#13;&#13; 8.7. Para efeito dessa cláusula, todas as informações referentes ao “processo/serviço/projeto........” serão consideradas como INFORMAÇÃO CONFIDENCIAL, retroagindo às informações obtidas antes da assinatura do acordo.&#13;&#13; 8.8. Para efeito dessa cláusula, a classificação das informações como confidenciais será de responsabilidade de seu titular, devendo indicar os conhecimentos ou informações classificáveis como CONFIDENCIAIS por qualquer meio.&#13;&#13;  
                 </textarea>
@@ -647,10 +873,10 @@
                 
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">10 CLÁUSULA DÉCIMA - DO ACOMPANHAMENTO<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
     
-                <p><b>10.1.</b>Aos coordenadores indicados pelos <b>PARCEIROS</b> competirá dirimir as dúvidas que surgirem na sua execução e de tudo dará ciência às respectivas autoridades.</p>
-                <p><b>10.2.</b>O coordenador do projeto indicado pela <b>ICT/AGÊNCIA DE FOMENTO</b> anotará, em registro próprio, as ocorrências relacionadas com a execução do objeto, recomendando as medidas necessárias à autoridade competente para regularização das inconsistências observadas. </p>
-                <p><b>10.3.</b>O acompanhamento do projeto pelos coordenadores não exclui nem reduz a responsabilidade dos <b>PARCEIROS</b> perante terceiros. </p>
-                <p><b>10.4.</b>A impossibilidade técnica ou científica quanto ao cumprimento de qualquer fase do Plano de Trabalho, que seja devidamente comprovada e justificada, acarretará a suspensão de suas respectivas atividades até que haja acordo entre os <b>PARCEIROS</b> quanto à alteração, à adequação ou término do Plano de Trabalho e consequente extinção deste Acordo. </p>
+                <p><b>10.1.</b> Aos coordenadores indicados pelos <b>PARCEIROS</b> competirá dirimir as dúvidas que surgirem na sua execução e de tudo dará ciência às respectivas autoridades.</p>
+                <p><b>10.2.</b> O coordenador do projeto indicado pela <b>ICT/AGÊNCIA DE FOMENTO</b> anotará, em registro próprio, as ocorrências relacionadas com a execução do objeto, recomendando as medidas necessárias à autoridade competente para regularização das inconsistências observadas. </p>
+                <p><b>10.3.</b> O acompanhamento do projeto pelos coordenadores não exclui nem reduz a responsabilidade dos <b>PARCEIROS</b> perante terceiros. </p>
+                <p><b>10.4.</b> A impossibilidade técnica ou científica quanto ao cumprimento de qualquer fase do Plano de Trabalho, que seja devidamente comprovada e justificada, acarretará a suspensão de suas respectivas atividades até que haja acordo entre os <b>PARCEIROS</b> quanto à alteração, à adequação ou término do Plano de Trabalho e consequente extinção deste Acordo. </p>
               </div>
             </div>
             <!------------------------------------------------------------------------->
@@ -662,8 +888,13 @@
               <div class="text-justify text-black">
                 
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">11. CLÁUSULA DÉCIMA PRIMEIRA - DA VIGÊNCIA E DA PRORROGAÇÃO<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
-    
-                <p><b>11.1.</b> O presente Acordo de Parceria para PD&I vigerá pelo prazo de <input class="myform-control text-black" type="text" name="prazo_vigencia" id="prazo_vigencia" placeholder="De (XXXX) anos" id=""> anos, a partir da data de sua assinatura, prorrogáveis.</p>
+                <div class="alert alert-warning" role="alert">     
+                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+                    NOTAS EXPLICATIVAS!
+                  <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_vigencia">Saiba mais</button>
+                </div> 
+                <p><b>11.1.</b> O presente Acordo de Parceria para PD&I vigerá pelo prazo de 
+                <input class="myform-control text-black" type="text" name="prazo_vigencia" id="prazo_vigencia" placeholder="Quantidade de anos" id=""> anos, a partir da data de sua assinatura, prorrogáveis.</p>
                 <p><b>11.2.</b> Este Acordo de Parceria poderá ser prorrogado por meio de termo aditivo, com as respectivas alterações no Plano de Trabalho, mediante a apresentação de justifica técnica.</p>
             
               </div>
@@ -674,7 +905,7 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">12. CLÁUSULA DÉCIMA SEGUNDA - DAS ALTERAÇÕES<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">12. CLÁUSULA DÉCIMA SEGUNDA - DAS ALTERAÇÕES</h5>
     
                 <p><b>12.1.</b> As cláusulas e condições estabelecidas no presente instrumento poderão ser alteradas mediante celebração de termo aditivo.</p>
                 <p><b>12.2.</b> A proposta de alteração, devidamente justificada, deverá ser apresentada por escrito, dentro da vigência do instrumento.</p>
@@ -682,7 +913,11 @@
                 <p><b>12.4.</b> São dispensáveis de formalização por meio de Termo Aditivo as alterações que importem em transposição, remanejamento ou transferência de recursos de categoria de programação para outra, com o objetivo de conferir eficácia e eficiência às atividades previstas no Plano de Trabalho, desde que não haja alteração do valor total do projeto.</p>
                 
                 <!--clausula editavel 12-->
-
+                <div class="alert alert-warning" role="alert">     
+                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+                    NOTAS EXPLICATIVAS!
+                  <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_pdi">Saiba mais</button>
+                </div> 
                 <div class="col-md-12 mb-3">
                   <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_12" rows="10" style="background-color: #F6FAFA; resize: none !important;">12.4.1. Alterações na distribuição entre grupos de natureza de despesa e alterações de rubricas ou itens de despesas, que não ultrapassarem 20% (vinte por cento) do valor total do projeto, ficarão dispensadas de prévia anuência da concedente, hipótese em o interessado comunicará aos PARCEIROS, devendo constar as razões que ensejaram as alterações, indicando a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.&#13;&#13;12.4.2. Alterações que superarem o percentual acima indicado dependerão de anuência prévia e expressa da concedente, que será formalizado por meio de ofício, nos termos da Cláusula 4.8.&#13;&#13; 
                 </textarea>
@@ -748,7 +983,11 @@
               <div class="container-fluid p-0 mt-0 m-0">
                 <div class="text-justify text-black">
                   <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">15. CLÁUSULA DÉCIMA QUINTA - DA PUBLICIDADE <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
-      
+                  <div class="alert alert-warning" role="alert">     
+                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+                    NOTAS EXPLICATIVAS!
+                  <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_publicidade">Saiba mais</button>
+                </div>
                   <p><b>15.1.</b> A publicação do extrato do presente Acordo de Parceria para PD&I no Diário Oficial da União (DOU) é condição indispensável para sua eficácia e será providenciada pela ICT no prazo de até 20 (vinte) dias da sua assinatura. </p>
                 </div>
               </div>
@@ -759,13 +998,11 @@
               <div class="container-fluid p-0 mt-0 m-0">
                 <div class="text-justify text-black">
                   <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">16. CLAUSULA DÉCIMA SEXTA – DOS BENS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
-      
+                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_14" rows="20" style="background-color: #F6FAFA; resize: none !important;"> 16.1.Após execução integral do objeto desse acordo, os bens patrimoniais, materiais permanentes ou equipamentos adquiridos serão revertidos à ICT, diretamente ao campus envolvido, por meio de Termo de Doação.(CLAÚSULA PARA AS ICTs)
+
+16.1. Os bens gerados ou adquiridos no âmbito dos projetos de estímulo à ciência, à tecnologia e à inovação deste Acordo de Parceria serão incorporados, desde sua aquisição, ao patrimônio da ICT a que o pesquisador for vinculado. (CLÁUSULA PARA AS AGÊNCIAS DE FOMENTO)
+                  </textarea>
                   <p>
-                    <b>16.1.</b>Após execução integral do objeto desse acordo, os bens patrimoniais, materiais permanentes ou equipamentos adquiridos serão revertidos à ICT, 
-                  diretamente ao campus envolvido, por meio de Termo de Doação. <b> (CLAÚSULA PARA AS ICTs)</b>
-                </p>
-                  <p>
-                    <b>16.1.</b> Os bens gerados ou adquiridos no âmbito dos projetos de estímulo à ciência, à tecnologia e à inovação deste Acordo de Parceria serão incorporados, desde sua aquisição, ao patrimônio da ICT a que o pesquisador for vinculado. (CLÁUSULA PARA AS AGÊNCIAS DE FOMENTO)
                 </p>
                 </div>
               </div>
@@ -886,6 +1123,31 @@
   </div>
 
 </div>
+
+<script>
+  function handleCheckbox(){
+    const checkBox = document.getElementById("possui_apoio")
+    const clausula = document.getElementById("clausula_apoio_wrapper")
+    if (checkBox.checked == true){
+      clausula.style.display = "block"
+    } else {
+      clausula.style.display = "none"
+    }
+    
+  }
+
+  function handleCoordenadorICT(){
+    const elem = document.getElementById('nome_coordenador_ict').value;
+    const coord_ict = document.getElementById('coord_ict')
+    coord_ict.innerText = `${elem};`
+  }
+
+  function handleCoordenadorPrivado(){
+    const elem = document.getElementById('nome_coordenador_privado').value;
+    const coord_privado = document.getElementById('coord_privado')
+    coord_privado.innerText = ` ${elem}`
+  }
+</script>
 <script>
     //container do conteúdo necessário para os buttons ficar em baixo
     const wrapper = document.getElementById("tab-here")
