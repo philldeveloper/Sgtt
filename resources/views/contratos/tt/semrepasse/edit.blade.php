@@ -7,6 +7,14 @@
     background-color: white !important;
   }
 
+  textarea{
+    background-color: #DCF8FC !important;
+    color: #343434 !important;
+    border-color: #8DB7BD !important;
+    box-shadow: 3px 5px 5px #cdcdcd;
+    padding: 10px;
+  }
+
 </style>
 @section('content')
 
@@ -365,25 +373,31 @@
         <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
-                
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">2. CLÁUSULA SEGUNDA – DO PLANO DE TRABALHO <a href="#" data-toggle="modal" data-target="#modalExemplo12"><i class="fas fa-fw fa-question-circle float-right"></i></a></h5>
     
                 <p><b>2.1 </b>O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
   
                 <p class=""><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a ICT<a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
-                
-
+  
                 <!--clausula editavel 2-->
-
-                <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-dark" name="clausula_edit_2" value="{{$contratos_sr->clausula_edit_2}}" rows="10" style="background-color: #F6FAFA; resize: none !important;">{!! $contratos_sr->clausula_edit_2 !!}
-                </textarea>
+               <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_2_3" value="{{$contratos_sr->clausula_edit_2_3}}" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_3}}</textarea>
                </div>
 
+               <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_2_4" value="{{$contratos_sr->clausula_edit_2_4}}" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_4}}</textarea>
+               </div>
+
+               <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_2_5" value="{{$contratos_sr->clausula_edit_2_5}}" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_5}}</textarea>
+               </div>
+
+               <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_2_6" value="{{$contratos_sr->clausula_edit_2_6}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_6}}</textarea>
+               </div>
 
               </div>
             </div>
-  
         </div><!--end of tab-content: insert all these here!-->
   
         <!------------------------------------------------------------------------->
@@ -431,11 +445,9 @@
                   <p><b>3.2.</b> Os Coordenadores de projeto poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.<br>
   
                   <!--clausula editavel 3-->
-
-                <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_3" value="{{$contratos_sr->clausula_edit_3}}" rows="10" style="background-color: #F6FAFA; resize: none !important;">{!! $contratos_sr->clausula_edit_3 !!}
-                </textarea>
-               </div>
+                  <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_3" value="{{$contratos_sr->clausula_edit_3}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{!! $contratos_sr->clausula_edit_3 !!}</textarea>
+                  </div>
 
                 </p>
                 </div>
@@ -474,9 +486,56 @@
                 <!--clausula editavel 5-->
 
                 <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_5" value="{{$contratos_sr->clausula_edit_5}}" rows="25" style="background-color: #F6FAFA; resize: none !important;">{!! $contratos_sr->clausula_edit_5 !!}
-                </textarea>
-               </div>
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_5_1" value="{{$contratos_sr->clausula_edit_5_1}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_1}}</textarea>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_5_2" value="{{$contratos_sr->clausula_edit_5_2}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_2}}</textarea>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_5_3" value="{{$contratos_sr->clausula_edit_5_3}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_3}}</textarea>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_5_4" value="{{$contratos_sr->clausula_edit_5_4}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_4}}</textarea>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_5_5" value="{{$contratos_sr->clausula_edit_5_5}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_5}}</textarea>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_5_6" value="{{$contratos_sr->clausula_edit_5_6}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_6}}</textarea>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_5_7" value="{{$contratos_sr->clausula_edit_5_7}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_7}}</textarea>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_5_8" value="{{$contratos_sr->clausula_edit_5_8}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_8}}</textarea>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_5_9" value="{{$contratos_sr->clausula_edit_5_9}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_9}}</textarea>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_5_10" value="{{$contratos_sr->clausula_edit_5_10}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_10}}</textarea>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_5_11" value="{{$contratos_sr->clausula_edit_5_11}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_11}}</textarea>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_5_12" value="{{$contratos_sr->clausula_edit_5_12}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_12}}</textarea>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_5_13" value="{{$contratos_sr->clausula_edit_5_13}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_13}}</textarea>
+                </div>
              
               </div>
             </div>
@@ -496,9 +555,16 @@
                 <!--clausula editavel 6-->
 
                 <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_6" value="{{$contratos_sr->clausula_edit_6}}"  rows="10" style="background-color: #F6FAFA; resize: none !important;">{!! $contratos_sr->clausula_edit_6 !!}
-                </textarea>
-               </div>
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_6_2" value="{{$contratos_sr->clausula_edit_6_2}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_6_2}}</textarea>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_6_3" value="{{$contratos_sr->clausula_edit_6_3}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_6_3}}</textarea>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_6_4" value="{{$contratos_sr->clausula_edit_6_4}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_6_4}}</textarea>
+                </div>
 
               </div>
             </div>
@@ -539,9 +605,16 @@
                 <!--clausula editavel 7-->
 
                 <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_7" value="{{$contratos_sr->clausula_edit_7}}" rows="15" style="background-color: #F6FAFA; resize: none !important;">{!! $contratos_sr->clausula_edit_7 !!}
-                </textarea>
-               </div>
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_7_6" value="{{$contratos_sr->clausula_edit_7_6}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_7_6}}</textarea>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_7_7" value="{{$contratos_sr->clausula_edit_7_7}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_7_7}}</textarea>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold" name="clausula_edit_7_8" value="{{$contratos_sr->clausula_edit_7_8}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_7_8}}</textarea>
+                </div>
       
               </div>
             </div>
@@ -554,11 +627,29 @@
                 
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">8 CLÁUSULA OITAVA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
     
-                <!--clausula editavel 8-->
-
+               <!--clausula editavel 8-->
+               <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_8_1}}" name="clausula_edit_8_1" rows="7" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_1}}</textarea>
+                </div>
                 <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_8" value="{{$contratos_sr->clausula_edit_8}}" rows="30" style="background-color: #F6FAFA; resize: none !important;">{!! $contratos_sr->clausula_edit_8 !!}
-                </textarea>
+                    <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_8_2}}" name="clausula_edit_8_2" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_2}}</textarea>
+                </div>
+               <div class="">
+                  <div class="col-md-12 mb-3">
+                      <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_8_2_a}}" name="clausula_edit_8_2_a" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_2_a}}</textarea>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                      <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_8_2_b}}" name="clausula_edit_8_2_b" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_2_b}}</textarea>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                      <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_8_2_c}}" name="clausula_edit_8_2_c" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_2_c}}</textarea>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                      <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_8_2_d}}" name="clausula_edit_8_2_d" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_2_d}}</textarea>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                      <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_8_2_e}}" name="clausula_edit_8_2_e" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_2_e}}</textarea>
+                  </div>
                </div>
 
               </div>
@@ -624,9 +715,12 @@
                 <!--clausula editavel 12-->
 
                 <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_12" value="{{$contratos_sr->clausula_edit_12}}" rows="8" style="background-color: #F6FAFA; resize: none !important;">{!! $contratos_sr->clausula_edit_12 !!}
-                </textarea>
-               </div>
+                  <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_12_a}}" name="clausula_edit_12_a" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_12_a}}</textarea>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_12_b}}" name="clausula_edit_12_b" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_12_b}}</textarea>
+                </div>
 
 
                 <p><b>12.3</b> No Formulário de Resultado de que trata a subcláusula 12.2, deverá ser demonstrada a compatibilidade entre as metas previstas e as alcançadas no período, bem como apontadas as justificativas em caso de discrepância, consolidando dados e valores das ações desenvolvidas.</p>
@@ -649,11 +743,20 @@
                                 as obrigações assumidas com terceiros entre os <b>PARCEIROS</b>, creditando eventuais benefícios
                                 adquiridos no período..</p>
 
-                  <!--clausula editavel 13-->
+                <!--clausula editavel 13-->
 
                 <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13" value="{{$contratos_sr->clausula_edit_13}}" rows="18" style="background-color: #F6FAFA; resize: none !important;">{!! $contratos_sr->clausula_edit_13 !!} </textarea>
-               </div>
+                  <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_13_2}}" name="clausula_edit_13_2" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_13_2}}</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_13_2_1}}" name="clausula_edit_13_2_1" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_13_2_1}}</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_13_2_2}}" name="clausula_edit_13_2_2" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_13_2_2}}</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                  <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_13_3}}" name="clausula_edit_13_3" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_13_3}}</textarea>
+                </div>
                   
 
                   <p><b>13.4</b> O presente Acordo será extinto com o cumprimento do objeto ou com o decurso de prazo de vigência.  </p>
