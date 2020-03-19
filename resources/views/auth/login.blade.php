@@ -54,8 +54,9 @@
                 <div class="card-body">
 
                     <div class="title text-center mb-5">
-                        <img class="logo" src="{{ asset('assets/Grouplogo.svg') }}" alt="sgtt" width="70%" style="opacity: 95%">
+                    <img class="logo" src="{{ asset('assets/new_sgtt.svg') }}" alt="sgtt" width="80%" style="opacity: 95%">
                     </div>
+                    
 
                     <form method="POST" action="{{ route('login') }}">
                         @csrf

@@ -10,6 +10,8 @@
     background-color: #DCF8FC !important;
     color: #343434 !important;
     border-color: #8DB7BD !important;
+    box-shadow: 3px 5px 5px #cdcdcd;
+    padding: 10px;
   }
 </style>
 @section('content')
