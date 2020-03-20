@@ -107,7 +107,7 @@ class Contrato_srsTableSeeder extends Seeder
 		    'nome_inst_privado_foro' => 'Lorem Ipsum',
 		    'nome_rep_privado_foro' => 'Lorem Ipsum',
 		    'cargo_rep_privado_foro' => 'Lorem Ipsum',
-		    'check_clausula' => '0',
+		    //'check_clausula' => '0',
 		    'user_id' => '1',
 		    'tipo' => 'Sem Repasse',
 		]);
