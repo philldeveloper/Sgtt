@@ -9,13 +9,17 @@
         </button>
       </div>
       <div class="modal-body text-center">
-        <div class="row justify-content-center p-3">
-        <i class="far fa-5x fa-file-pdf py-3 mb-3 text-danger"></i>
-          <h5 class="font-weight-bold text-dark py-3">Clique em Baixar e aguarde enquanto seu contrato está sendo gerado.</h5>
-          <!--img src="{{asset('assets/preloader.gif')}}" alt="" width="50px" class="mt-3 mb-4"-->
-          <a href="{{route('repassepdf', $cr->id)}}" class="btn btn-danger btn-block py-3 mb-4">Baixar PDF</a>
-        </div>
+      <div class="row justify-content-center p-3">
+        <i class="far fa-5x fa-file-pdf py-3 mb-1 text-success"></i>    
+      </div>
+      <div class="row justify-content-center">
+        <img src="{{asset('assets/preloader.gif')}}" alt="" width="40px" height="40px" class="text-center">
+      </div>
+      <h5 class="font-weight-bold text-dark py-3">Clique em Baixar e aguarde enquanto seu contrato está sendo gerado.</h5>
+      <a href="{{route('repassepdf', $cr->id)}}" class="btn btn-success font-weight-bold btn-block py-3 mb-4">Baixar PDF</a>
       </div>
     </div>
   </div>
 </div>
+
+

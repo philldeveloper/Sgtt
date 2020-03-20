@@ -149,8 +149,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
           </div>
         </div>
         <div class="card-body">
-          <h1 class="text-dark">{{$contratos_cr->count()}}</h1>
-          <p class="text-center">Contratos com repasse</p>
+          <h1 class="text-dark font-weight-bold display-4">{{$contratos_cr->count()}}</h1>
+          <p class="text-center h4 text-dark font-weight-bold">Contratos com repasse</p>
         </div>
       </div>
     </div>
@@ -162,8 +162,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
           </div>
         </div>
         <div class="card-body">
-          <h1 class="text-dark">{{$contratos_sr->count()}}</h1>
-          <p class="text-center">Contratos sem repasse</p>
+          <h1 class="text-dark font-weight-bold display-4">{{$contratos_sr->count()}}</h1>
+          <p class="text-center h4 text-dark font-weight-bold">Contratos sem repasse</p>
         </div>
       </div>
     </div>
@@ -175,8 +175,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
           </div>
         </div>
         <div class="card-body">
-          <h1 class="text-dark">{{$contratos_sr->count() + $contratos_cr->count()}}</h1>
-          <p class="text-center">Total</p>
+          <h1 class="text-dark font-weight-bold display-4">{{$contratos_sr->count() + $contratos_cr->count()}}</h1>
+          <p class="text-center h4 text-dark font-weight-bold">Total</p>
         </div>
       </div>
     </div>
