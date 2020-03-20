@@ -43,7 +43,7 @@ class Contrato_cr extends Model
         'parceiro_doravante_denominado', //2_parceiro
 
         'clausula_descricao', //clausula_1
-        
+        'ict_plano_trabalho', //clausula 2 *Novo*
         'clausula_edit_2',//clausulas editaveis
         'clausula_edit_3a',
         'clausula_edit_3b',
@@ -57,6 +57,8 @@ class Contrato_cr extends Model
         'clausula_edit_14',
 
         'nome_inst_ict', //clausula_3
+        'nome_coordenador_ict', //clausula_3 *Novo
+        'nome_coordenador_privado',//clausula_3 *Novo
         'nome_inst_privado', //clausula_3
         'nome_inst_fundacao', //clausula_3
 
