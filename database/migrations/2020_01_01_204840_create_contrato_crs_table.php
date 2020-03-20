@@ -122,7 +122,7 @@ class CreateContratoCrsTable extends Migration
 
             $table->string('nome_inst_ict');
             $table->string('nome_coordenador_ict');
-            $table->string('nome_coordernador_privado');
+            $table->string('nome_coordenador_privado');
             $table->string('nome_inst_privado');
             $table->string('nome_inst_fundacao');
             $table->string('nome_parceiro_privado');
