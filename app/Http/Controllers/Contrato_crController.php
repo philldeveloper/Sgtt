@@ -75,18 +75,82 @@ class Contrato_crController extends Controller
         $contrato_cr->parceiro_cargo = $request->parceiro_cargo;
         $contrato_cr->parceiro_doravante_denominado = $request->parceiro_doravante_denominado;
         $contrato_cr->clausula_descricao = $request->clausula_descricao;
-        $contrato_cr->clausula_edit_2 = $request->clausula_edit_2;
+        $contrato_cr->ict_plano_trabalho = $request->ict_plano_trabalho;
+
+        $contrato_cr->clausula_edit_2_3 = $request->clausula_edit_2_3;
+        $contrato_cr->clausula_edit_2_4 = $request->clausula_edit_2_4;
+        $contrato_cr->clausula_edit_2_5 = $request->clausula_edit_2_5;
+        $contrato_cr->clausula_edit_2_6 = $request->clausula_edit_2_6;
+
         $contrato_cr->clausula_edit_3a = $request->clausula_edit_3a;
         $contrato_cr->clausula_edit_3b = $request->clausula_edit_3b;
         $contrato_cr->clausula_edit_3c = $request->clausula_edit_3c;
-        $contrato_cr->clausula_edit_4 = $request->clausula_edit_4;
-        $contrato_cr->clausula_edit_6 = $request->clausula_edit_6;
-        $contrato_cr->clausula_edit_8 = $request->clausula_edit_8;
-        $contrato_cr->clausula_edit_9 = $request->clausula_edit_9;
-        $contrato_cr->clausula_edit_12 = $request->clausula_edit_12;
-        $contrato_cr->clausula_edit_13 = $request->clausula_edit_13;
-        $contrato_cr->clausula_edit_14 = $request->clausula_edit_14;
+        $contrato_cr->clausula_edit_3d = $request->clausula_edit_3d;
+        $contrato_cr->clausula_edit_3e = $request->clausula_edit_3e;
+        $contrato_cr->clausula_edit_3f = $request->clausula_edit_3f;
+        $contrato_cr->clausula_edit_3g = $request->clausula_edit_3g;
+        $contrato_cr->clausula_edit_3h = $request->clausula_edit_3h;
+        $contrato_cr->clausula_edit_3i = $request->clausula_edit_3i;
+        $contrato_cr->clausula_edit_3j = $request->clausula_edit_3j;
+        $contrato_cr->clausula_edit_3l = $request->clausula_edit_3l;
+        $contrato_cr->clausula_edit_3m = $request->clausula_edit_3c;
+        $contrato_cr->clausula_edit_3n = $request->clausula_edit_3n;
+        $contrato_cr->clausula_edit_3_3 = $request->clausula_edit_3_3;
+
+        $contrato_cr->clausula_edit_4_8 = $request->clausula_edit_4_8;
+        $contrato_cr->clausula_edit_4_8_1 = $request->clausula_edit_4_8_1;
+        $contrato_cr->clausula_edit_4_8_2 = $request->clausula_edit_4_8_2;
+        $contrato_cr->clausula_edit_4_9 = $request->clausula_edit_4_9;
+        $contrato_cr->clausula_edit_4_9_1 = $request->clausula_edit_4_9_1;
+        $contrato_cr->clausula_edit_4_10 = $request->clausula_edit_4_10;
+
+        $contrato_cr->clausula_edit_6_1 = $request->clausula_edit_6_1;
+        $contrato_cr->clausula_edit_6_2 = $request->clausula_edit_6_2;
+        $contrato_cr->clausula_edit_6_3 = $request->clausula_edit_6_3;
+        $contrato_cr->clausula_edit_6_4 = $request->clausula_edit_6_4;
+        $contrato_cr->clausula_edit_6_5 = $request->clausula_edit_6_5;
+        $contrato_cr->clausula_edit_6_6 = $request->clausula_edit_6_6;
+        $contrato_cr->clausula_edit_6_7 = $request->clausula_edit_6_7;
+        $contrato_cr->clausula_edit_6_8 = $request->clausula_edit_6_8;
+        $contrato_cr->clausula_edit_6_9 = $request->clausula_edit_6_9;
+        $contrato_cr->clausula_edit_6_10 = $request->clausula_edit_6_10;
+        $contrato_cr->clausula_edit_6_11 = $request->clausula_edit_6_11;
+        $contrato_cr->clausula_edit_6_12 = $request->clausula_edit_6_12;
+        $contrato_cr->clausula_edit_6_13 = $request->clausula_edit_6_13;
+        
+        $contrato_cr->clausula_edit_8_6 = $request->clausula_edit_8_6;
+        $contrato_cr->clausula_edit_8_7 = $request->clausula_edit_8_7;
+        $contrato_cr->clausula_edit_8_8 = $request->clausula_edit_8_8;
+
+        $contrato_cr->clausula_edit_9_1 = $request->clausula_edit_9_1;
+        $contrato_cr->clausula_edit_9_2 = $request->clausula_edit_9_2;
+        $contrato_cr->clausula_edit_9_3 = $request->clausula_edit_9_3;
+        $contrato_cr->clausula_edit_9_4 = $request->clausula_edit_9_4;
+        $contrato_cr->clausula_edit_9_a = $request->clausula_edit_9_a;
+        $contrato_cr->clausula_edit_9_b = $request->clausula_edit_9_b;
+        $contrato_cr->clausula_edit_9_c = $request->clausula_edit_9_c;
+        $contrato_cr->clausula_edit_9_d = $request->clausula_edit_9_d;
+        $contrato_cr->clausula_edit_9_e = $request->clausula_edit_9_e;
+
+        $contrato_cr->clausula_edit_12_4_1 = $request->clausula_edit_12_4_1;
+        $contrato_cr->clausula_edit_12_4_2 = $request->clausula_edit_12_4_2;
+
+        $contrato_cr->clausula_edit_13_2 = $request->clausula_edit_13_2;
+        $contrato_cr->clausula_edit_13_a = $request->clausula_edit_13_a;
+        $contrato_cr->clausula_edit_13_b = $request->clausula_edit_13_b;
+
+        $contrato_cr->clausula_edit_14_2 = $request->clausula_edit_14_2;
+        $contrato_cr->clausula_edit_14_2_1 = $request->clausula_edit_14_2_1;
+        $contrato_cr->clausula_edit_14_2_2 = $request->clausula_edit_14_2_2;
+        $contrato_cr->clausula_edit_14_3 = $request->clausula_edit_14_3;
+        $contrato_cr->clausula_edit_14_4 = $request->clausula_edit_14_4;
+
+        $contrato_cr->clausula_edit_16_1 = $request->clausula_edit_16_1;
+        $contrato_cr->clausula_edit_16_2 = $request->clausula_edit_16_2;
+
         $contrato_cr->nome_inst_ict = $request->nome_inst_ict;
+        $contrato_cr->nome_coordenador_ict = $request->nome_coordenador_ict;
+        $contrato_cr->nome_coordenador_privado = $request->nome_coordenador_privado;
         $contrato_cr->nome_inst_privado = $request->nome_inst_privado;
         $contrato_cr->nome_inst_fundacao = $request->nome_inst_fundacao;
         $contrato_cr->nome_parceiro_privado = $request->nome_parceiro_privado;

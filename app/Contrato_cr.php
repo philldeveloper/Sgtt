@@ -44,17 +44,77 @@ class Contrato_cr extends Model
 
         'clausula_descricao', //clausula_1
         'ict_plano_trabalho', //clausula 2 *Novo*
-        'clausula_edit_2',//clausulas editaveis
+
+        'clausula_edit_2_3',
+        'clausula_edit_2_4',
+        'clausula_edit_2_5',
+        'clausula_edit_2_6',
+
         'clausula_edit_3a',
         'clausula_edit_3b',
         'clausula_edit_3c',
-        'clausula_edit_4',
-        'clausula_edit_6',
-        'clausula_edit_8',
-        'clausula_edit_9',
-        'clausula_edit_12',
-        'clausula_edit_13',
-        'clausula_edit_14',
+        'clausula_edit_3d',
+        'clausula_edit_3e',
+        'clausula_edit_3f',
+        'clausula_edit_3g',
+        'clausula_edit_3h',
+        'clausula_edit_3i',
+        'clausula_edit_3j',
+        'clausula_edit_3l',
+        'clausula_edit_3m',
+        'clausula_edit_3n',
+        'clausula_edit_3_3',
+
+        'clausula_edit_4_8',
+        'clausula_edit_4_8_1',
+        'clausula_edit_4_8_2',
+        'clausula_edit_4_9',
+        'clausula_edit_4_9_1',
+        'clausula_edit_4_10',
+
+        'clausula_edit_6_1',
+        'clausula_edit_6_2',
+        'clausula_edit_6_3',
+        'clausula_edit_6_4',
+        'clausula_edit_6_5',
+        'clausula_edit_6_6',
+        'clausula_edit_6_7',
+        'clausula_edit_6_8',
+        'clausula_edit_6_9',
+        'clausula_edit_6_10',
+        'clausula_edit_6_11',
+        'clausula_edit_6_12',
+        'clausula_edit_6_13',
+
+        'clausula_edit_8_6',
+        'clausula_edit_8_7',
+        'clausula_edit_8_8',
+
+        'clausula_edit_9_1',
+        'clausula_edit_9_2',
+        'clausula_edit_9_3',
+        'clausula_edit_9_4',
+        'clausula_edit_9_a',
+        'clausula_edit_9_b',
+        'clausula_edit_9_c',
+        'clausula_edit_9_d',
+        'clausula_edit_9_e',
+
+        'clausula_edit_12_4_1',
+        'clausula_edit_12_4_2',
+
+        'clausula_edit_13_2',
+        'clausula_edit_13_a',
+        'clausula_edit_13_b',
+
+        'clausula_edit_14_2',
+        'clausula_edit_14_2_1',
+        'clausula_edit_14_2_2',
+        'clausula_edit_14_3',
+        'clausula_edit_14_4',
+
+        'clausula_edit_16_1',
+        'clausula_edit_16_2',
 
         'nome_inst_ict', //clausula_3
         'nome_coordenador_ict', //clausula_3 *Novo
