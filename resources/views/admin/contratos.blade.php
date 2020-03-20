@@ -194,13 +194,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 </div>
 
 
-<div class="container-fluid mt-5 mb-5">
+<div class="container-fluid mt-5 mb-2">
   <span class="h3 font-weight-bold text-dark" wfd-id="41">Todos os Contratos</span>
   <span class="font-italic ml-3 mb-3">Edite informações relacionadas aos contratos gerados.</span>
-</div><hr>
+</div>
 
 
-<div class="container-fluid">
+<div class="container-fluid mb-5">
 <div class="row">
 <div class="col-12 mt-4 rounded-0">
   <div class="card mb-4 rounded-0 shadow-sm">
