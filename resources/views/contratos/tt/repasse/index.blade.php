@@ -4,6 +4,13 @@
   #wrapper #content-wrapper {
     background-color: white !important;
   }
+  textarea{
+    background-color: #EFFCFC !important;
+    color: #343434 !important;
+    border-color: #4e73df !important;
+    box-shadow: 3px 5px 5px #cdcdcd;
+    padding: 10px;
+  }
 </style>
 @section('content')
 
@@ -338,14 +345,16 @@
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">1. Cláusula Primeira - do Objeto</h5>
     
                 <p><b>1.1</b> O presente Acordo de Parceria para PD&I tem por objeto a cooperação técnica e científica entre os PARTÍCIPES 
-                para desenvolver
-                o <br>
-                
-                <a href="#" data-toggle="modal" data-target="#modalExemplo10"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <div class="form-group col-md-12"><textarea class="form-control" name="clausula_descricao"></textarea></div>
-
-
-                <br>a ser executado nos termos do Plano de Trabalho, anexo, visando à transferência de recursos financeiros, à
+                para desenvolver o</p>
+                <br>
+                <div class="text-center d-flex">
+                  <p class="h4 p-3 font-italic text-primary font-weight-bold">Insira o Objetivo abaixo:</p>
+                </div>
+                <div class="col-md-12 mb-3 bg-light border border-primary shadow mb-4 mt-4 p-1">
+                  <textarea class="form-control" name="clausula_descricao" id="editor"></textarea>
+                </div>
+                <br>
+                <p>a ser executado nos termos do Plano de Trabalho, anexo, visando à transferência de recursos financeiros, à
                  gestão administrativa e financeira e à execução técnica de projeto de pesquisa, desenvolvimento e inovação – PD&I.
                 </p>
               </div>
@@ -414,14 +423,25 @@
                       </div>
                   </div>
                 </div>
-              </div> 
-                <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_2" rows="10" style="background-color: #F6FAFA; resize: none !important;">2.3 Na execução do Plano de Trabalho, a atuação dos PARCEIROS dar-se-á sempre de forma associada. Para tanto, os PARCEIROS indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.&#13;&#13;2.4 Recaem sobre o Coordenador do Projeto, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.&#13;&#13;2.5 Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.&#13;&#13;2.6 A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo.&#13;&#13;
-                </textarea>
-               </div>
-                
               </div>
+              <div class="text-center d-flex">
+                  <p class="h4 p-3 font-italic text-primary font-weight-bold">Edite a(s) cláusula(s) abaixo (se julgar necessário):</p>
+              </div>
+              <div class="col-md-12 mb-3">
+                <textarea class="form-control font-weight-bold" name="clausula_edit_2_3" rows="3">2.3 Na execução do Plano de Trabalho, a atuação dos PARCEIROS dar-se-á sempre de forma associada. Para tanto, os PARCEIROS indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.</textarea>
+              </div>
+              <div class="col-md-12 mb-3">
+                <textarea class="form-control font-weight-bold" name="clausula_edit_2_4" rows="3">2.4 Recaem sobre o Coordenador do Projeto, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.</textarea>
+              </div>
+              <div class="col-md-12 mb-3">
+                <textarea class="form-control font-weight-bold" name="clausula_edit_2_5" rows="3">2.5 Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.</textarea>
+              </div>
+              <div class="col-md-12 mb-3">
+                <textarea class="form-control font-weight-bold" name="clausula_edit_2_6" rows="3">2.6 A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo.</textarea>
+              </div>
+
             </div>
+          </div>
                   
         </div><!--end of tab-content: insert all these here!-->
   
@@ -491,61 +511,61 @@
                     <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a): 
                       <input type="text" class="myform-control" name="nome_inst_fundacao" id="nome_inst_fundacao" placeholder="Instituição"> <a href="#" data-toggle="modal" data-target="#modalFundApoio"><i class="fas fa-fw fa-question-circle"></i></a>:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p>
                       <div class="col-md-12 mb-3">
-                        <textarea  name="clausula_apoio_a" class="form-control font-weight-bold text-justify" style="background-color: #F6FAFA; resize: none !important;"  id="" cols="30" rows="3">A) Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD& I;
+                        <textarea  name="clausula_edit_3a" class="form-control font-weight-bold text-justify" style="background-color: #F6FAFA; resize: none !important;"  id="" cols="30" rows="3">A) Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD& I;
                         </textarea>
                       </div>
                       <div class="col-md-12 mb-3">
-                        <textarea  name="clausula_apoio_b" class="form-control font-weight-bold text-justify" style="background-color: #F6FAFA; resize: none !important;" id="" cols="30" rows="3">B) Prestar à ICT informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;
+                        <textarea  name="clausula_edit_3b" class="form-control font-weight-bold text-justify" style="background-color: #F6FAFA; resize: none !important;" id="" cols="30" rows="3">B) Prestar à ICT informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;
                         </textarea>
                       </div>
                       <div class="col-md-12 mb-3">
-                        <textarea  name="clausula_apoio_c" class="form-control font-weight-bold text-justify" style="background-color: #F6FAFA; resize: none !important;" id="" cols="30" rows="3">C) Indicar coordenador, no prazo de 15 (quinze) dias úteis, contados da assinatura deste Acordo, para acompanhar a sua execução;
+                        <textarea  name="clausula_edit_3c" class="form-control font-weight-bold text-justify" style="background-color: #F6FAFA; resize: none !important;" id="" cols="30" rows="3">C) Indicar coordenador, no prazo de 15 (quinze) dias úteis, contados da assinatura deste Acordo, para acompanhar a sua execução;
                         </textarea>
                       </div>
                     <div class="col-md-12 mb-3">
-                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_d" rows="5" style="background-color: #F6FAFA; resize: none !important;">D) Executar a gestão administrativa e financeira dos recursos transferidos para a execução do objeto deste Acordo, em conta específica.;&#13;&#13;Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação;&#13;&#13;
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3d" rows="5" style="background-color: #F6FAFA; resize: none !important;">D) Executar a gestão administrativa e financeira dos recursos transferidos para a execução do objeto deste Acordo, em conta específica.;&#13;&#13;Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação;&#13;&#13;
                       </textarea>
                     </div>
                     <div class="col-md-12 mb-3">
-                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_e" rows="5" style="background-color: #F6FAFA; resize: none !important;">E) Informar previamente ao PARCEIRO PRIVADO os dados bancários e cadastrais necessários à realização dos aportes financeiros, cuidando para que a conta corrente a qual serão destinados os recursos seja específica para o projeto executado em conformidade com este Acordo de Parceria;
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3e" rows="5" style="background-color: #F6FAFA; resize: none !important;">E) Informar previamente ao PARCEIRO PRIVADO os dados bancários e cadastrais necessários à realização dos aportes financeiros, cuidando para que a conta corrente a qual serão destinados os recursos seja específica para o projeto executado em conformidade com este Acordo de Parceria;
                       </textarea>
                     </div>
                     <div class="col-md-12 mb-3">
-                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_f" rows="5" style="background-color: #F6FAFA; resize: none !important;">F) Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, inclusive os provenientes das receitas obtidas nas aplicações financeiras realizadas, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação; ou d)Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação; 
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3f" rows="5" style="background-color: #F6FAFA; resize: none !important;">F) Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, inclusive os provenientes das receitas obtidas nas aplicações financeiras realizadas, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação; ou d)Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação; 
 OU 
 F) Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação;
                       </textarea>
                     </div>
                     <div class="col-md-12 mb-3">
-                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_g" rows="5" style="background-color: #F6FAFA; resize: none !important;">G) Responsabilizar-se pelo recolhimento de impostos, taxas, contribuições e outros encargos porventura devidos em decorrência das atividades vinculadas a este Acordo de Parceria;
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3g" rows="5" style="background-color: #F6FAFA; resize: none !important;">G) Responsabilizar-se pelo recolhimento de impostos, taxas, contribuições e outros encargos porventura devidos em decorrência das atividades vinculadas a este Acordo de Parceria;
                       </textarea>
                     </div>
                     <div class="col-md-12 mb-3">
-                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_h" rows="5" style="background-color: #F6FAFA; resize: none !important;">H) Manter, durante toda a execução do Acordo de Parceria, todas as condições de habilitação e de qualificação exigidas para a sua celebração, responsabilizando-se pela boa e integral execução das atividades ora descritas;
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3h" rows="5" style="background-color: #F6FAFA; resize: none !important;">H) Manter, durante toda a execução do Acordo de Parceria, todas as condições de habilitação e de qualificação exigidas para a sua celebração, responsabilizando-se pela boa e integral execução das atividades ora descritas;
                       </textarea>
                     </div>
                     <div class="col-md-12 mb-3">
-                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_i" rows="5" style="background-color: #F6FAFA; resize: none !important;">I)  Nas compras de bens e nas contratações de serviços, observar as regras do Decreto nº 8.241/2014;
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3i" rows="5" style="background-color: #F6FAFA; resize: none !important;">I)  Nas compras de bens e nas contratações de serviços, observar as regras do Decreto nº 8.241/2014;
                       </textarea>
                     </div>
                     <div class="col-md-12 mb-3">
-                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_j" rows="5" style="background-color: #F6FAFA; resize: none !important;">J) Observar os princípios da legalidade, eficiência, moralidade, publicidade, economicidade, legalidade e impessoalidade, nas aquisições e contratações realizadas, bem como no desenvolvimento de todas as suas ações no âmbito deste Acordo de Parceria;
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3j" rows="5" style="background-color: #F6FAFA; resize: none !important;">J) Observar os princípios da legalidade, eficiência, moralidade, publicidade, economicidade, legalidade e impessoalidade, nas aquisições e contratações realizadas, bem como no desenvolvimento de todas as suas ações no âmbito deste Acordo de Parceria;
                       </textarea>
                     </div>
                     <div class="col-md-12 mb-3">
-                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_k" rows="5" style="background-color: #F6FAFA; resize: none !important;">K) Manter registros contábeis, fiscais e financeiros completos e fidedignos relativamente à aplicação dos aportes recebidos do PARCEIRO PRIVADO por este Acordo de Parceria, fazendo-o em estrita observância às normas tributário-fiscais em vigor e, especialmente, à legislação que instituiu contrapartidas em atividades de PD&I para a concessão de incentivos ou de benefícios dos quais o PARCEIRO PRIVADO seja ou se torne beneficiária;
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3k" rows="5" style="background-color: #F6FAFA; resize: none !important;">K) Manter registros contábeis, fiscais e financeiros completos e fidedignos relativamente à aplicação dos aportes recebidos do PARCEIRO PRIVADO por este Acordo de Parceria, fazendo-o em estrita observância às normas tributário-fiscais em vigor e, especialmente, à legislação que instituiu contrapartidas em atividades de PD&I para a concessão de incentivos ou de benefícios dos quais o PARCEIRO PRIVADO seja ou se torne beneficiária;
                       </textarea>
                     </div>
                     <div class="col-md-12 mb-3">
-                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_l" rows="5" style="background-color: #F6FAFA; resize: none !important;">L) Manter, com os recursos do projeto e sob sua coordenação direta, pessoal de pesquisa e desenvolvimento, através de contratação pela CLT, bolsa ou estágio de pesquisa e desenvolvimento, disponível para a execução das atividades relativas a este Acordo de Parceria e ao Plano de Trabalho, em número e com conhecimento técnico-acadêmico suficientes;
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3l" rows="5" style="background-color: #F6FAFA; resize: none !important;">L) Manter, com os recursos do projeto e sob sua coordenação direta, pessoal de pesquisa e desenvolvimento, através de contratação pela CLT, bolsa ou estágio de pesquisa e desenvolvimento, disponível para a execução das atividades relativas a este Acordo de Parceria e ao Plano de Trabalho, em número e com conhecimento técnico-acadêmico suficientes;
                       </textarea>
                     </div>
                     <div class="col-md-12 mb-3">
-                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_m" rows="5" style="background-color: #F6FAFA; resize: none !important;">M) Providenciar a remuneração dos colaboradores, conforme previsto em orçamento específico aprovado, em conformidade, ainda, com o art. 4º da Lei nº 8.958/1994;
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3m" rows="5" style="background-color: #F6FAFA; resize: none !important;">M) Providenciar a remuneração dos colaboradores, conforme previsto em orçamento específico aprovado, em conformidade, ainda, com o art. 4º da Lei nº 8.958/1994;
                       </textarea>
                     </div>
                     <div class="col-md-12 mb-3">
-                      <textarea class="form-control font-weight-bold text-justify" name="clausula_apoio_n" rows="5" style="background-color: #F6FAFA; resize: none !important;">N) Cumprir todas as normas pertencentes ao ordenamento jurídico brasileiro, em especial as trabalhistas, previdenciárias e tributárias derivadas da relação existente entre si e seus empregados e/ou contratados, durante a execução do Projeto objeto do Plano de Trabalho, de forma que não se estabelecerá, em hipótese alguma, vínculo empregatício entre esses empregados, funcionários, servidores ou contratados da FUNDAÇÃO e PARCEIRO PRIVADO ou as demais convenentes, cabendo a FUNDAÇÃO responsabilidade exclusiva pelos salários e todos os ônus trabalhistas e previdenciários, bem como pelas reclamações trabalhistas ajuizadas, e por quaisquer autos de infração, e ainda, fiscalização do Ministério do Trabalho e da Previdência Social a que a FUNDAÇÃO der causa, com relação a toda a mão de obra por ela contratada em decorrência do presente Acordo de Parceria.
+                      <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3n" rows="5" style="background-color: #F6FAFA; resize: none !important;">N) Cumprir todas as normas pertencentes ao ordenamento jurídico brasileiro, em especial as trabalhistas, previdenciárias e tributárias derivadas da relação existente entre si e seus empregados e/ou contratados, durante a execução do Projeto objeto do Plano de Trabalho, de forma que não se estabelecerá, em hipótese alguma, vínculo empregatício entre esses empregados, funcionários, servidores ou contratados da FUNDAÇÃO e PARCEIRO PRIVADO ou as demais convenentes, cabendo a FUNDAÇÃO responsabilidade exclusiva pelos salários e todos os ônus trabalhistas e previdenciários, bem como pelas reclamações trabalhistas ajuizadas, e por quaisquer autos de infração, e ainda, fiscalização do Ministério do Trabalho e da Previdência Social a que a FUNDAÇÃO der causa, com relação a toda a mão de obra por ela contratada em decorrência do presente Acordo de Parceria.
                       </textarea>
                     </div>
 
@@ -555,7 +575,7 @@ F) Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinente
                   <p><b>3.2.</b> <span id="coord_ict"></span><span id="coord_privado"></span> poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.<br>
                     <!--clausula editavel 3_3-->
                     <div class="col-md-12 mb-3">
-                      <textarea class="form-control font-weight-bold" name="clausula_edit_3c" rows="5" style="background-color: #F6FAFA; resize: none !important;">3.3. Os PARCEIROS são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente Acordo de Parceria para PD&I ou de publicações a ele referentes.&#13;&#13;
+                      <textarea class="form-control font-weight-bold" name="clausula_edit_3_3" rows="5" style="background-color: #F6FAFA; resize: none !important;">3.3. Os PARCEIROS são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente Acordo de Parceria para PD&I ou de publicações a ele referentes.&#13;&#13;
                     </textarea>
                    </div>
                       
@@ -613,10 +633,30 @@ F) Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinente
 
                 <!--clausula editavel 4-->
 
+                <div class="text-center d-flex">
+                  <p class="h4 p-3 font-italic text-primary font-weight-bold">Edite a(s) cláusula(s) abaixo (se julgar necessário):</p>
+                </div>
+
                 <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_4" rows="20" style="background-color: #F6FAFA; resize: none !important;">4.8. A transposição, o remanejamento ou a transferência de recursos de categoria de programação para outra poderão ocorrer com o objetivo de conferir eficácia e eficiência às atividades de ciência, tecnologia e inovação.&#13;&#13; 4.8.1 No âmbito deste projeto de pesquisa, desenvolvimento e inovação, o coordenador geral indicará a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.&#13;&#13;4.8.2 Por ocasião da ocorrência de quaisquer das ações previstas no item anterior, a ICT poderá alterar a distribuição inicialmente acordada, promover modificações internas ao seu orçamento, alterar rubricas ou itens de despesas, desde que não modifique o valor total do projeto.&#13;&#13; 4.9. São dispensáveis de formalização por meio de Termo Aditivo as alterações previstas no item 4.8 que importem em transposição, remanejamento ou transferência de recursos de categoria de programação para outra, com o objetivo de conferir eficácia e eficiência às atividades previstas no Plano de Trabalho, desde que não haja alteração do valor total do projeto.&#13;&#13;4.9.1. Alterações na distribuição entre grupos de natureza de despesa e alterações de rubricas ou itens de despesas, necessárias para efetiva execução do, ficarão dispensadas de prévia anuência d PARCEIRO PRIVADO, hipótese em que o coordenador do projeto solicitará a alteração à ICT, devendo constar as razões que ensejaram as alterações, indicando a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.&#13;&#13;4.10. A ICT/AGÊNCIA DE FOMENTO não responderá pela suplementação de recursos para fazer frente a despesas decorrentes de quaisquer fatores externos ao seu controle, como flutuação cambial e alterações nos valores de taxas escolares.&#13;&#13;  
-                </textarea>
-               </div>
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_4_8" rows="4">4.8. A transposição, o remanejamento ou a transferência de recursos de categoria de programação para outra poderão ocorrer com o objetivo de conferir eficácia e eficiência às atividades de ciência, tecnologia e inovação.</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_4_8_1" rows="4">4.8.1 No âmbito deste projeto de pesquisa, desenvolvimento e inovação, o coordenador geral indicará a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_4_8_2" rows="4">4.8.2 Por ocasião da ocorrência de quaisquer das ações previstas no item anterior, a ICT poderá alterar a distribuição inicialmente acordada, promover modificações internas ao seu orçamento, alterar rubricas ou itens de despesas, desde que não modifique o valor total do projeto.</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_4_9" rows="4">4.9. São dispensáveis de formalização por meio de Termo Aditivo as alterações previstas no item 4.8 que importem em transposição, remanejamento ou transferência de recursos de categoria de programação para outra, com o objetivo de conferir eficácia e eficiência às atividades previstas no Plano de Trabalho, desde que não haja alteração do valor total do projeto.</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_4_9_1" rows="4">4.9.1. Alterações na distribuição entre grupos de natureza de despesa e alterações de rubricas ou itens de despesas, necessárias para efetiva execução do, ficarão dispensadas de prévia anuência d PARCEIRO PRIVADO, hipótese em que o coordenador do projeto solicitará a alteração à ICT, devendo constar as razões que ensejaram as alterações, indicando a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.</textarea>
+                </div>
+                <div class="col-md-12 mb-5">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_4_10" rows="4">4.10. A ICT/AGÊNCIA DE FOMENTO não responderá pela suplementação de recursos para fazer frente a despesas decorrentes de quaisquer fatores externos ao seu controle, como flutuação cambial e alterações nos valores de taxas escolares.</textarea>
+                </div>
+
+
                <div class="alert alert-warning" role="alert">      
                   <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                     NOTAS EXPLICATIVAS!
@@ -735,29 +775,52 @@ F) Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinente
                     NOTAS EXPLICATIVAS!
                   <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#propriedade_intelectual">Saiba mais</button>
                 </div>  
-                <!--clausula editavel 6-->
+                
+               <!--clausula editavel 6-->
+
+                <div class="text-center d-flex">
+                  <p class="h4 p-3 font-italic text-primary font-weight-bold">Edite a(s) cláusula(s) abaixo (se julgar necessário):</p>
+                </div>
 
                 <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_6" rows="35" style="background-color: #F6FAFA; resize: none !important;">
-                  6.1. Todos os dados, técnicas, tecnologia, know-how, marcas, patentes e quaisquer outros bens ou direitos de propriedade intelectual/industrial de um parceiro que este venha a utilizar para execução do Projeto continuarão a ser de sua propriedade exclusiva, não podendo o outro parceiro cedê-los, transferi-los, aliená-los, divulgá-los ou empregá-los em quaisquer outros projetos ou sob qualquer outra forma sem o prévio consentimento escrito do seu proprietário.
-                  6.2. Todo desenvolvimento tecnológico passível de proteção intelectual, em qualquer modalidade, proveniente da execução do presente Acordo de Parceria, deverá ter a sua propriedade compartilhada entre as duas convenentes, na mesma proporção em que cada instituição contribuiu com recursos humanos, além do conhecimento pré-existente aplicado, conforme previsto no art. 9º, § 3°, da lei nº 10.973/2004.
-                  6.3. divisão da titularidade sobre a propriedade intelectual prevista na cláusula anterior será definida por meio de instrumento próprio, respeitando-se o percentual de x% (x por cento) para o ICT/AGÊNCIA DE FOMENTO.
- ou 
- 6.3 Todo desenvolvimento tecnológico passível de proteção intelectual, em qualquer modalidade, proveniente da execução do presente Acordo de Parceria, deverá ter a sua propriedade compartilhada entre as parceiras, por meio de instrumento próprio, respeitando-se o percentual de x% (x por cento) para o ICT/AGÊNCIA DE FOMENTO.
-                
-                  6.4. O instrumento previsto na subcláusula 6.3 deverá observar os requisitos legais e formais necessários para sua celebração e averbação junto aos órgãos competentes.
-                  6.5. Eventuais impedimentos de um dos parceiros não prejudicará a titularidade e/ou a exploração dos direitos da Propriedade Intelectual pelos demais.
-                  6.6. As Partes devem assegurar, na medida de suas respectivas responsabilidades, que os projetos propostos e que a alocação dos recursos tecnológicos correspondentes não infrinjam direitos autorais, patentes ou outros direitos intelectuais, assim como direitos de terceiros.
-                  6.7. Na hipótese de eventual infração de qualquer direito de propriedade intelectual relacionada às tecnologias resultantes, os parceiros concordam que as medidas judiciais cabíveis visando coibir a infração do respectivo direito podem ser adotadas em conjunto ou separadamente.
-                  6.8. Os depósitos de pedidos de proteção de propriedade intelectual devem ser iniciados necessariamente junto ao Instituto Nacional de Propriedade Industrial - INPI e registrados no sistema de acompanhamento d o  ICT/AGÊNCIA DE FOMENTO.
-                  6.9. Caberá ao PARCEIRO PRIVADO, com exclusividade, a responsabilidade de preparar, arquivar, processar e manter pedidos de patente no Brasil e em ouros países.
-                  6.10. As decisões relacionadas à preparação, processamento e manutenção de pedido de patente das tecnologias resultantes deste instrumento, no Brasil e em outros países, devem ser tomadas em conjunto pelos partícipes ora acordantes.
-                  6.11. Na hipótese de eventual infração de qualquer patente relacionada às tecnologias resultantes, os partícipes concordam que as medidas judiciais cabíveis visando a coibir a infração da respectiva patente podem ser adotadas pelos partícipes, em conjunto ou separadamente.
-                  6.11. Tanto no que se refere à proteção da propriedade intelectual quanto às medidas judiciais, os partícipes concordam que as despesas deverão ser suportadas de acordo com os percentuais definidos na exploração comercial das tecnologias.
-                  6.12. A FUNDAÇÃO DE APOIO não terá direitos sobre os resultados obtidos, passíveis ou não de proteção legal.
-                  6.13. O ICT/AGÊNCIA DE FOMENTO poderá outorgar poderes ao PARCEIRO PRIVADO para praticar todo e qualquer ato necessário para o depósito, acompanhamento e manutenção de pedido de patente das tecnologias resultantes do presente instrumento, no Brasil e em outros países. 
-                </textarea>
-               </div>
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_6_1" rows="4">6.1. Todos os dados, técnicas, tecnologia, know-how, marcas, patentes e quaisquer outros bens ou direitos de propriedade intelectual/industrial de um parceiro que este venha a utilizar para execução do Projeto continuarão a ser de sua propriedade exclusiva, não podendo o outro parceiro cedê-los, transferi-los, aliená-los, divulgá-los ou empregá-los em quaisquer outros projetos ou sob qualquer outra forma sem o prévio consentimento escrito do seu proprietário.</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_6_2" rows="4">6.2. Todo desenvolvimento tecnológico passível de proteção intelectual, em qualquer modalidade, proveniente da execução do presente Acordo de Parceria, deverá ter a sua propriedade compartilhada entre as duas convenentes, na mesma proporção em que cada instituição contribuiu com recursos humanos, além do conhecimento pré-existente aplicado, conforme previsto no art. 9º, § 3°, da lei nº 10.973/2004.</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_6_3" rows="4">6.3. divisão da titularidade sobre a propriedade intelectual prevista na cláusula anterior será definida por meio de instrumento próprio, respeitando-se o percentual de x% (x por cento) para o ICT/AGÊNCIA DE FOMENTO. Todo desenvolvimento tecnológico passível de proteção intelectual, em qualquer modalidade, proveniente da execução do presente Acordo de Parceria, deverá ter a sua propriedade compartilhada entre as parceiras, por meio de instrumento próprio, respeitando-se o percentual de x% (x por cento) para o ICT/AGÊNCIA DE FOMENTO.</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_6_4" rows="4">6.4. O instrumento previsto na subcláusula 6.3 deverá observar os requisitos legais e formais necessários para sua celebração e averbação junto aos órgãos competentes.</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_6_5" rows="4">6.5. Eventuais impedimentos de um dos parceiros não prejudicará a titularidade e/ou a exploração dos direitos da Propriedade Intelectual pelos demais.</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_6_6" rows="4">6.6. As Partes devem assegurar, na medida de suas respectivas responsabilidades, que os projetos propostos e que a alocação dos recursos tecnológicos correspondentes não infrinjam direitos autorais, patentes ou outros direitos intelectuais, assim como direitos de terceiros.</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_6_7" rows="4">6.7. Na hipótese de eventual infração de qualquer direito de propriedade intelectual relacionada às tecnologias resultantes, os parceiros concordam que as medidas judiciais cabíveis visando coibir a infração do respectivo direito podem ser adotadas em conjunto ou separadamente.</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_6_8" rows="4">6.8. Os depósitos de pedidos de proteção de propriedade intelectual devem ser iniciados necessariamente junto ao Instituto Nacional de Propriedade Industrial - INPI e registrados no sistema de acompanhamento d o  ICT/AGÊNCIA DE FOMENTO.</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_6_9" rows="4">6.9. Caberá ao PARCEIRO PRIVADO, com exclusividade, a responsabilidade de preparar, arquivar, processar e manter pedidos de patente no Brasil e em ouros países.</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_6_10" rows="4">6.10. As decisões relacionadas à preparação, processamento e manutenção de pedido de patente das tecnologias resultantes deste instrumento, no Brasil e em outros países, devem ser tomadas em conjunto pelos partícipes ora acordantes.</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_6_11" rows="4">6.11. Na hipótese de eventual infração de qualquer patente relacionada às tecnologias resultantes, os partícipes concordam que as medidas judiciais cabíveis visando a coibir a infração da respectiva patente podem ser adotadas pelos partícipes, em conjunto ou separadamente. Tanto no que se refere à proteção da propriedade intelectual quanto às medidas judiciais, os partícipes concordam que as despesas deverão ser suportadas de acordo com os percentuais definidos na exploração comercial das tecnologias.</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_6_12" rows="4">6.12. A FUNDAÇÃO DE APOIO não terá direitos sobre os resultados obtidos, passíveis ou não de proteção legal.</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_6_13" rows="4">6.13. O ICT/AGÊNCIA DE FOMENTO poderá outorgar poderes ao PARCEIRO PRIVADO para praticar todo e qualquer ato necessário para o depósito, acompanhamento e manutenção de pedido de patente das tecnologias resultantes do presente instrumento, no Brasil e em outros países. </textarea>
+                </div>
                 
               </div>
             </div>
@@ -831,16 +894,26 @@ F) Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinente
                   <b>8.5.</b> A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada.
                 </p>
 
-                <!--clausula editavel 8-->
                 <div class="alert alert-warning" role="alert">      
                   <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                     NOTAS EXPLICATIVAS!
                   <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#confidencial">Saiba mais</button>
                 </div> 
+
+              <!--clausula editavel 8-->
+               <div class="text-center d-flex">
+                  <p class="h4 p-3 font-italic text-primary font-weight-bold">Edite a(s) cláusula(s) abaixo (se julgar necessário):</p>
+                </div>
+
                 <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_8" rows="10" style="background-color: #F6FAFA; resize: none !important;">8.6. As obrigações de sigilo em relação às INFORMAÇÕES CONFIDENCIAIS serão mantidas durante o período de vigência deste Acordo e pelo prazo de 5 (cinco) anos após sua extinção.&#13;&#13; 8.7. Para efeito dessa cláusula, todas as informações referentes ao “processo/serviço/projeto........” serão consideradas como INFORMAÇÃO CONFIDENCIAL, retroagindo às informações obtidas antes da assinatura do acordo.&#13;&#13; 8.8. Para efeito dessa cláusula, a classificação das informações como confidenciais será de responsabilidade de seu titular, devendo indicar os conhecimentos ou informações classificáveis como CONFIDENCIAIS por qualquer meio.&#13;&#13;  
-                </textarea>
-               </div>
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_8_6" rows="3">8.6. As obrigações de sigilo em relação às INFORMAÇÕES CONFIDENCIAIS serão mantidas durante o período de vigência deste Acordo e pelo prazo de 5 (cinco) anos após sua extinção.</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_8_7" rows="3"> 8.7. Para efeito dessa cláusula, todas as informações referentes ao “processo/serviço/projeto........” serão consideradas como INFORMAÇÃO CONFIDENCIAL, retroagindo às informações obtidas antes da assinatura do acordo.</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_8_8" rows="3">8.8. Para efeito dessa cláusula, a classificação das informações como confidenciais será de responsabilidade de seu titular, devendo indicar os conhecimentos ou informações classificáveis como CONFIDENCIAIS por qualquer meio.</textarea>
+                </div>
                   
               </div>
           </div>
@@ -851,14 +924,41 @@ F) Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinente
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-blue">
                 
-                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">9 CLÁUSULA OITAVA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">9 CLÁUSULA NONA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
 
                 <!--clausula editavel 9-->
 
+                <div class="text-center d-flex">
+                  <p class="h4 p-3 font-italic text-primary font-weight-bold">Edite a(s) cláusula(s) abaixo (se julgar necessário):</p>
+                </div>
+
                 <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_9" rows="40" style="background-color: #F6FAFA; resize: none !important;">9.1. Os PARCEIROS deverão tomar todas as medidas necessárias, observados os princípios de civilidade e legalidade, e de acordo com as boas práticas empresariais para cumprir e assegurar que  (i) seus conselheiros, diretores, empregados qualquer pessoa agindo em seu nome, inclusive prepostos e subcontratados, quando houver (todos doravante referidos como “Partes Relacionadas” e, cada uma delas, como “uma Parte Relacionada”) obedecerão a todas as leis aplicáveis, incluindo àquelas  relativas ao combate à corrupção, suborno e lavagem de dinheiro, bem como àquelas  relativas a sanções econômicas, vigentes nas jurisdições em que os PARCEIROS estão constituídos e na jurisdição em que o Acordo de Parceria será cumprido (se diferentes), para impedir qualquer atividade fraudulenta por si ou por uma Parte Relacionada com relação ao cumprimento deste Acordo de Parceria.&#13;&#13; 9.2. Um PARCEIRO deverá notificar imediatamente o outro sobre eventual suspeita de qualquer fraude tenha ocorrido, esteja ocorrendo, ou provavelmente ocorrerá, para que sejam tomadas as medidas necessárias para apurá-las.&#13;&#13; 9.3. Os PARCEIROS obrigam-se a observar rigidamente as condições contidas nos itens abaixo, sob pena de imediata e justificada rescisão do acordo. &#13;&#13; 9.4. Os PARCEIROS declaram-se cientes de que seus Departamentos Jurídicos e/ou advogados contratados estão autorizados, em caso de práticas que atentem contra os preceitos dessa cláusula, a solicitar a imediata abertura dos procedimentos criminais, cíveis e administrativos cabíveis à cada hipótese:&#13;&#13; A) Os PARCEIROS não poderão, em hipótese alguma, dar ou oferecer nenhum tipo de presente, viagens, vantagens a qualquer empregado, servidor, preposto ou diretor de outro PARCEIRO, especialmente àqueles responsáveis pela fiscalização do presente Acordo. Serão admitidos apenas, em épocas específicas, a entrega de brindes, tais como canetas, agendas, folhinhas, cadernos etc;&#13;&#13; B)  Os PARCEIROS somente poderão representar outro PARCEIRO perante órgãos públicos quando devidamente autorizado para tal, seja no corpo do próprio Acordo, seja mediante autorização prévia, expressa e escrita de seu representante com poderes para assim proceder;&#13;&#13; C) Os PARCEIROS e seus empregados/prepostos, quando agirem em nome ou defendendo interesses deste Acordo perante órgãos, autoridades ou agentes públicos, não poderão dar, receber ou oferecer quaisquer presentes, vantagens ou favores a agentes públicos, sobretudo no intuito de obter qualquer tipo de favorecimento para os PARCEIROS;&#13;&#13; D) Os PARCEIROS, quando agirem em nome ou defendendo seus interesses, não poderão fornecer informações sigilosas a terceiros ou a agentes públicos, mesmo que isso venha a facilitar, de alguma forma, o cumprimento desse Acordo;&#13;&#13; E) Os PARCEIROS, ao tomar conhecimento de que algum de seus prepostos ou empregados descumpriram as premissas e obrigações acima pactuadas, denunciarão espontaneamente o fato, de forma que, juntas, elaborem e executem um plano de ação para (i) afastar o empregado ou preposto imediatamente; (ii) evitar que tais atos se repitam e (iii) garantir que o Acordo tenha condições de continuar vigente.&#13;&#13; 
-                </textarea>
-               </div>
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_9_1" rows="7">9.1. Os PARCEIROS deverão tomar todas as medidas necessárias, observados os princípios de civilidade e legalidade, e de acordo com as boas práticas empresariais para cumprir e assegurar que  (i) seus conselheiros, diretores, empregados qualquer pessoa agindo em seu nome, inclusive prepostos e subcontratados, quando houver (todos doravante referidos como “Partes Relacionadas” e, cada uma delas, como “uma Parte Relacionada”) obedecerão a todas as leis aplicáveis, incluindo àquelas  relativas ao combate à corrupção, suborno e lavagem de dinheiro, bem como àquelas  relativas a sanções econômicas, vigentes nas jurisdições em que os PARCEIROS estão constituídos e na jurisdição em que o Acordo de Parceria será cumprido (se diferentes), para impedir qualquer atividade fraudulenta por si ou por uma Parte Relacionada com relação ao cumprimento deste Acordo de Parceria.</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_9_2" rows="3">9.2. Um PARCEIRO deverá notificar imediatamente o outro sobre eventual suspeita de qualquer fraude tenha ocorrido, esteja ocorrendo, ou provavelmente ocorrerá, para que sejam tomadas as medidas necessárias para apurá-las.</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_9_3" rows="3">9.3. Os PARCEIROS obrigam-se a observar rigidamente as condições contidas nos itens abaixo, sob pena de imediata e justificada rescisão do acordo. </textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_9_4" rows="3">9.4. Os PARCEIROS declaram-se cientes de que seus Departamentos Jurídicos e/ou advogados contratados estão autorizados, em caso de práticas que atentem contra os preceitos dessa cláusula, a solicitar a imediata abertura dos procedimentos criminais, cíveis e administrativos cabíveis à cada hipótese:</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_9_a" rows="5">A) Os PARCEIROS não poderão, em hipótese alguma, dar ou oferecer nenhum tipo de presente, viagens, vantagens a qualquer empregado, servidor, preposto ou diretor de outro PARCEIRO, especialmente àqueles responsáveis pela fiscalização do presente Acordo. Serão admitidos apenas, em épocas específicas, a entrega de brindes, tais como canetas, agendas, folhinhas, cadernos etc;</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_9_b" rows="5">B)  Os PARCEIROS somente poderão representar outro PARCEIRO perante órgãos públicos quando devidamente autorizado para tal, seja no corpo do próprio Acordo, seja mediante autorização prévia, expressa e escrita de seu representante com poderes para assim proceder;</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_9_c" rows="5">C) Os PARCEIROS e seus empregados/prepostos, quando agirem em nome ou defendendo interesses deste Acordo perante órgãos, autoridades ou agentes públicos, não poderão dar, receber ou oferecer quaisquer presentes, vantagens ou favores a agentes públicos, sobretudo no intuito de obter qualquer tipo de favorecimento para os PARCEIROS;</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_9_d" rows="5">D) Os PARCEIROS, quando agirem em nome ou defendendo seus interesses, não poderão fornecer informações sigilosas a terceiros ou a agentes públicos, mesmo que isso venha a facilitar, de alguma forma, o cumprimento desse Acordo;</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_9_e" rows="5">E) Os PARCEIROS, ao tomar conhecimento de que algum de seus prepostos ou empregados descumpriram as premissas e obrigações acima pactuadas, denunciarão espontaneamente o fato, de forma que, juntas, elaborem e executem um plano de ação para (i) afastar o empregado ou preposto imediatamente; (ii) evitar que tais atos se repitam e (iii) garantir que o Acordo tenha condições de continuar vigente.</textarea>
+                </div>
     
               </div>
             </div>
@@ -912,17 +1012,25 @@ F) Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinente
                 <p><b>12.3.</b> É vedado o aditamento do presente Acordo com o intuito de alterar o seu objeto, sob pena de nulidade do ato e responsabilidade do agente que o praticou.</p>
                 <p><b>12.4.</b> São dispensáveis de formalização por meio de Termo Aditivo as alterações que importem em transposição, remanejamento ou transferência de recursos de categoria de programação para outra, com o objetivo de conferir eficácia e eficiência às atividades previstas no Plano de Trabalho, desde que não haja alteração do valor total do projeto.</p>
                 
-                <!--clausula editavel 12-->
+                
                 <div class="alert alert-warning" role="alert">     
                   <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                     NOTAS EXPLICATIVAS!
                   <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_pdi">Saiba mais</button>
                 </div> 
-                <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_12" rows="10" style="background-color: #F6FAFA; resize: none !important;">12.4.1. Alterações na distribuição entre grupos de natureza de despesa e alterações de rubricas ou itens de despesas, que não ultrapassarem 20% (vinte por cento) do valor total do projeto, ficarão dispensadas de prévia anuência da concedente, hipótese em o interessado comunicará aos PARCEIROS, devendo constar as razões que ensejaram as alterações, indicando a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.&#13;&#13;12.4.2. Alterações que superarem o percentual acima indicado dependerão de anuência prévia e expressa da concedente, que será formalizado por meio de ofício, nos termos da Cláusula 4.8.&#13;&#13; 
-                </textarea>
-               </div>
 
+                <!--clausula editavel 12-->
+                <div class="text-center d-flex">
+                  <p class="h4 p-3 font-italic text-primary font-weight-bold">Edite a(s) cláusula(s) abaixo (se julgar necessário):</p>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_12_4_1" rows="6">12.4.1. Alterações na distribuição entre grupos de natureza de despesa e alterações de rubricas ou itens de despesas, que não ultrapassarem 20% (vinte por cento) do valor total do projeto, ficarão dispensadas de prévia anuência da concedente, hipótese em o interessado comunicará aos PARCEIROS, devendo constar as razões que ensejaram as alterações, indicando a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_12_4_2" rows="3">12.4.2. Alterações que superarem o percentual acima indicado dependerão de anuência prévia e expressa da concedente, que será formalizado por meio de ofício, nos termos da Cláusula 4.8.</textarea>
+                </div>
+
+               </div>
               </div>
             </div>
             </div>
@@ -938,10 +1046,18 @@ F) Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinente
 
                 <!--clausula editavel 13-->
 
+                <div class="text-center d-flex">
+                  <p class="h4 p-3 font-italic text-primary font-weight-bold">Edite a(s) cláusula(s) abaixo (se julgar necessário):</p>
+                </div>
                 <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13" rows="7" style="background-color: #F6FAFA; resize: none !important;">13.2. O pesquisador deverá encaminhar ao Setor responsável ou COMISSÃO DA ICT ou à FUNDAÇÃO DE APOIO: &#13;&#13; A) Formulário de Resultado Parcial: anualmente, até o último dia útil do mês de dezembro de cada ano de vigência deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho;&#13;&#13; B) Formulário de Resultado Final: no prazo de até 120 (cento e vinte) dias contados da conclusão do objeto deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho.&#13;&#13; 
-                </textarea>
-               </div>
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_13_2" rows="3">13.2. O pesquisador deverá encaminhar ao Setor responsável ou COMISSÃO DA ICT ou à FUNDAÇÃO DE APOIO: </textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_13_2_a" rows="3">A) Formulário de Resultado Parcial: anualmente, até o último dia útil do mês de dezembro de cada ano de vigência deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho;</textarea>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_13_2_b" rows="3">B) Formulário de Resultado Final: no prazo de até 120 (cento e vinte) dias contados da conclusão do objeto deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho.</textarea>
+                </div>
 
                 <p><b>13.3.</b> No Formulário de Resultado de que trata a subcláusula 13.2, deverá ser demonstrada a compatibilidade entre as metas previstas e as alcançadas no período, bem como apontadas as justificativas em caso de discrepância, consolidando dados e valores das ações desenvolvidas.</p>
                 <p>
@@ -964,16 +1080,28 @@ F) Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinente
               <div class="container-fluid p-0 mt-0 m-0">
                 <div class="text-justify text-black">
                   <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">14. CLÁUSULA DÉCIMA QUARTA – DA EXTINÇÃO DO ACORDO<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
-      
                   <p><b>14.1.</b> Este Acordo poderá, a qualquer tempo, ser denunciado pelos <b>PARCEIROS</b>, devendo o interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de <span>60 (sessenta)</span> dias da data em que se pretenda que sejam encerradas as atividades, respeitadas as obrigações assumidas com terceiros entre os <b>PARCEIROS</b>, creditando eventuais benefícios adquiridos no período.</p>
-
 
                   <!--clausula editavel 14-->
 
+                  <div class="text-center d-flex">
+                    <p class="h4 p-3 font-italic text-primary font-weight-bold">Edite a(s) cláusula(s) abaixo (se julgar necessário):</p>
+                  </div>
                   <div class="col-md-12 mb-3">
-                    <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_14" rows="20" style="background-color: #F6FAFA; resize: none !important;">14.2. Constituem motivos para rescisão de pleno direito o inadimplemento de quaisquer das cláusulas pactuadas neste Acordo, o descumprimento das normas estabelecidas na legislação vigente ou a superveniência de norma legal ou fato que tome material ou formalmente inexequível o Acordo de Parceria para PD&I, imputando-se aos PARCEIROS as responsabilidades pelas obrigações até então assumidas, devendo o PARCEIRO que se julgar prejudicado notificar o parceiro para que apresente esclarecimentos no prazo de 15 (quinze) dias corridos.&#13;&#13;14.2.1 Prestados os esclarecimentos, os PARCEIROS deverão, por mútuo consenso, decidir pela rescisão ou manutenção do Acordo.&#13;&#13;14.2.2  Decorrido o prazo para esclarecimentos, caso não haja resposta, o Acordo será rescindido de pleno direito, independentemente de notificações ou interpelações, judiciais ou extrajudiciais.&#13;&#13;14.3 O Acordo de Parceria será rescindido em caso de decretação de falência, liquidação extrajudicial ou judicial, ou insolvência de qualquer dos PARCEIROS, ou, ainda, no caso de  10/11 propositura de quaisquer medidas ou procedimentos contra qualquer dos PARCEIROS para sua liquidação e/ou dissolução;&#13;&#13;14.4 O presente Acordo será extinto com o cumprimento do objeto ou com o decurso de prazo de vigência.&#13;&#13;
-                  </textarea>
-                 </div>
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_14_2" rows="5">14.2. Constituem motivos para rescisão de pleno direito o inadimplemento de quaisquer das cláusulas pactuadas neste Acordo, o descumprimento das normas estabelecidas na legislação vigente ou a superveniência de norma legal ou fato que tome material ou formalmente inexequível o Acordo de Parceria para PD&I, imputando-se aos PARCEIROS as responsabilidades pelas obrigações até então assumidas, devendo o PARCEIRO que se julgar prejudicado notificar o parceiro para que apresente esclarecimentos no prazo de 15 (quinze) dias corridos.</textarea>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_14_2_1" rows="3">14.2.1 Prestados os esclarecimentos, os PARCEIROS deverão, por mútuo consenso, decidir pela rescisão ou manutenção do Acordo.</textarea>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_14_2_2" rows="3">14.2.2  Decorrido o prazo para esclarecimentos, caso não haja resposta, o Acordo será rescindido de pleno direito, independentemente de notificações ou interpelações, judiciais ou extrajudiciais.</textarea>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_14_3" rows="3">14.3 O Acordo de Parceria será rescindido em caso de decretação de falência, liquidação extrajudicial ou judicial, ou insolvência de qualquer dos PARCEIROS, ou, ainda, no caso de  10/11 propositura de quaisquer medidas ou procedimentos contra qualquer dos PARCEIROS para sua liquidação e/ou dissolução;</textarea>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_14_4" rows="3">14.4 O presente Acordo será extinto com o cumprimento do objeto ou com o decurso de prazo de vigência.</textarea>
+                  </div>
 
                 </div>
               </div>
@@ -998,12 +1126,15 @@ F) Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinente
               <div class="container-fluid p-0 mt-0 m-0">
                 <div class="text-justify text-black">
                   <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">16. CLAUSULA DÉCIMA SEXTA – DOS BENS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
-                  <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_14" rows="20" style="background-color: #F6FAFA; resize: none !important;"> 16.1.Após execução integral do objeto desse acordo, os bens patrimoniais, materiais permanentes ou equipamentos adquiridos serão revertidos à ICT, diretamente ao campus envolvido, por meio de Termo de Doação.(CLAÚSULA PARA AS ICTs)
-
-16.1. Os bens gerados ou adquiridos no âmbito dos projetos de estímulo à ciência, à tecnologia e à inovação deste Acordo de Parceria serão incorporados, desde sua aquisição, ao patrimônio da ICT a que o pesquisador for vinculado. (CLÁUSULA PARA AS AGÊNCIAS DE FOMENTO)
-                  </textarea>
-                  <p>
-                </p>
+                  <div class="text-center d-flex">
+                    <p class="h4 p-3 font-italic text-primary font-weight-bold">Edite a(s) cláusula(s) abaixo (se julgar necessário):</p>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_16_1" rows="3"> 16.1.Após execução integral do objeto desse acordo, os bens patrimoniais, materiais permanentes ou equipamentos adquiridos serão revertidos à ICT, diretamente ao campus envolvido, por meio de Termo de Doação.(CLAÚSULA PARA AS ICTs)</textarea>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <textarea class="form-control font-weight-bold" name="clausula_edit_16_2" rows="3">16.2. Os bens gerados ou adquiridos no âmbito dos projetos de estímulo à ciência, à tecnologia e à inovação deste Acordo de Parceria serão incorporados, desde sua aquisição, ao patrimônio da ICT a que o pesquisador for vinculado. (CLÁUSULA PARA AS AGÊNCIAS DE FOMENTO)</textarea>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1425,6 +1556,7 @@ function fixStepIndicator(n) {
   x[n].className += " active";
 }
 </script>
-  
+
+@include('features.ckeditor')
 
 @endsection

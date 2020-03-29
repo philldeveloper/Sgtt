@@ -46,18 +46,83 @@ class CreateContratoCrsTable extends Migration
             $table->string('parceiro_cargo');
             $table->string('parceiro_doravante_denominado');
             $table->string('clausula_descricao')->nullable()->default(null);
-            $table->longText('clausula_edit_2')->nullable()->default(null);
+            $table->string('ict_plano_trabalho');
+
+            $table->longText('clausula_edit_2_3')->nullable()->default(null);
+            $table->longText('clausula_edit_2_4')->nullable()->default(null);
+            $table->longText('clausula_edit_2_5')->nullable()->default(null);
+            $table->longText('clausula_edit_2_6')->nullable()->default(null);
+
             $table->longText('clausula_edit_3a')->nullable()->default(null);
             $table->longText('clausula_edit_3b')->nullable()->default(null);
             $table->longText('clausula_edit_3c')->nullable()->default(null);
-            $table->longText('clausula_edit_4')->nullable()->default(null);
-            $table->longText('clausula_edit_6')->nullable()->default(null);
-            $table->longText('clausula_edit_8')->nullable()->default(null);
-            $table->longText('clausula_edit_9')->nullable()->default(null);
-            $table->longText('clausula_edit_12')->nullable()->default(null);
-            $table->longText('clausula_edit_13')->nullable()->default(null);
-            $table->longText('clausula_edit_14')->nullable()->default(null);
+            $table->longText('clausula_edit_3d')->nullable()->default(null);
+            $table->longText('clausula_edit_3e')->nullable()->default(null);
+            $table->longText('clausula_edit_3f')->nullable()->default(null);
+            $table->longText('clausula_edit_3g')->nullable()->default(null);
+            $table->longText('clausula_edit_3h')->nullable()->default(null);
+            $table->longText('clausula_edit_3i')->nullable()->default(null);
+            $table->longText('clausula_edit_3j')->nullable()->default(null);
+            $table->longText('clausula_edit_3l')->nullable()->default(null);
+            $table->longText('clausula_edit_3m')->nullable()->default(null);
+            $table->longText('clausula_edit_3n')->nullable()->default(null);
+            $table->longText('clausula_edit_3_3')->nullable()->default(null);
+
+            $table->longText('clausula_edit_4_8')->nullable()->default(null);
+            $table->longText('clausula_edit_4_8_1')->nullable()->default(null);
+            $table->longText('clausula_edit_4_8_2')->nullable()->default(null);
+            $table->longText('clausula_edit_4_9')->nullable()->default(null);
+            $table->longText('clausula_edit_4_9_1')->nullable()->default(null);
+            $table->longText('clausula_edit_4_10')->nullable()->default(null);
+
+            $table->longText('clausula_edit_6_1')->nullable()->default(null);
+            $table->longText('clausula_edit_6_2')->nullable()->default(null);
+            $table->longText('clausula_edit_6_3')->nullable()->default(null);
+            $table->longText('clausula_edit_6_4')->nullable()->default(null);
+            $table->longText('clausula_edit_6_5')->nullable()->default(null);
+            $table->longText('clausula_edit_6_6')->nullable()->default(null);
+            $table->longText('clausula_edit_6_7')->nullable()->default(null);
+            $table->longText('clausula_edit_6_8')->nullable()->default(null);
+            $table->longText('clausula_edit_6_9')->nullable()->default(null);
+            $table->longText('clausula_edit_6_10')->nullable()->default(null);
+            $table->longText('clausula_edit_6_11')->nullable()->default(null);
+            $table->longText('clausula_edit_6_12')->nullable()->default(null);
+            $table->longText('clausula_edit_6_13')->nullable()->default(null);
+
+            $table->longText('clausula_edit_8_6')->nullable()->default(null);
+            $table->longText('clausula_edit_8_7')->nullable()->default(null);
+            $table->longText('clausula_edit_8_8')->nullable()->default(null);
+
+            $table->longText('clausula_edit_9_1')->nullable()->default(null);
+            $table->longText('clausula_edit_9_2')->nullable()->default(null);
+            $table->longText('clausula_edit_9_3')->nullable()->default(null);
+            $table->longText('clausula_edit_9_4')->nullable()->default(null);
+            $table->longText('clausula_edit_9_a')->nullable()->default(null);
+            $table->longText('clausula_edit_9_b')->nullable()->default(null);
+            $table->longText('clausula_edit_9_c')->nullable()->default(null);
+            $table->longText('clausula_edit_9_d')->nullable()->default(null);
+            $table->longText('clausula_edit_9_e')->nullable()->default(null);
+
+            $table->longText('clausula_edit_12_4_1')->nullable()->default(null);
+            $table->longText('clausula_edit_12_4_2')->nullable()->default(null);
+
+
+            $table->longText('clausula_edit_13_2')->nullable()->default(null);
+            $table->longText('clausula_edit_13_a')->nullable()->default(null);
+            $table->longText('clausula_edit_13_b')->nullable()->default(null);
+
+            $table->longText('clausula_edit_14_2')->nullable()->default(null);
+            $table->longText('clausula_edit_14_2_1')->nullable()->default(null);
+            $table->longText('clausula_edit_14_2_2')->nullable()->default(null);
+            $table->longText('clausula_edit_14_3')->nullable()->default(null);
+            $table->longText('clausula_edit_14_4')->nullable()->default(null);
+
+            $table->longText('clausula_edit_16_1')->nullable()->default(null);
+            $table->longText('clausula_edit_16_2')->nullable()->default(null);
+
             $table->string('nome_inst_ict');
+            $table->string('nome_coordenador_ict');
+            $table->string('nome_coordenador_privado');
             $table->string('nome_inst_privado');
             $table->string('nome_inst_fundacao');
             $table->string('nome_parceiro_privado');

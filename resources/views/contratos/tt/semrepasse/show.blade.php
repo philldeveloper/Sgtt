@@ -84,8 +84,8 @@
             </div>
 
             <div class="container-fluid p-0 mt-0 m-0">
-              <div class="container-fluid pb-5 pt-5 mt-0 m-0">
-                <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">
+              <div class="container-fluid pb-5 pt-5 mt-0 m-0 text-center">
+                <h5 class="text-uppercase font-weight-bold roboto-font text-black ">
                   ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI
                   CELEBRAM <input class="mb-2  myform-control text-black" type="text" name="nome_ict" onchange="handleNameICT(event)" placeholder="{{$contratos_sr->nome_ict}}" disabled=""> E 
                   <input class="mb-2  myform-control text-black" type="text" name="nome_parceiro" onchange="handleNameParceiro(event)" placeholder="{{$contratos_sr->nome_parceiro}}" disabled=""> 

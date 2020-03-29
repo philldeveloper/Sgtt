@@ -149,8 +149,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
           </div>
         </div>
         <div class="card-body">
-          <h1 class="text-dark">{{$contratos_cr->count()}}</h1>
-          <p class="text-center">Contratos com repasse</p>
+          <h1 class="text-dark font-weight-bold display-4">{{$contratos_cr->count()}}</h1>
+          <p class="text-center h4 text-dark font-weight-bold">Contratos com repasse</p>
         </div>
       </div>
     </div>
@@ -162,8 +162,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
           </div>
         </div>
         <div class="card-body">
-          <h1 class="text-dark">{{$contratos_sr->count()}}</h1>
-          <p class="text-center">Contratos sem repasse</p>
+          <h1 class="text-dark font-weight-bold display-4">{{$contratos_sr->count()}}</h1>
+          <p class="text-center h4 text-dark font-weight-bold">Contratos sem repasse</p>
         </div>
       </div>
     </div>
@@ -175,8 +175,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
           </div>
         </div>
         <div class="card-body">
-          <h1 class="text-dark">{{$contratos_sr->count() + $contratos_cr->count()}}</h1>
-          <p class="text-center">Total</p>
+          <h1 class="text-dark font-weight-bold display-4">{{$contratos_sr->count() + $contratos_cr->count()}}</h1>
+          <p class="text-center h4 text-dark font-weight-bold">Total</p>
         </div>
       </div>
     </div>
@@ -194,13 +194,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 </div>
 
 
-<div class="container-fluid mt-5 mb-5">
+<div class="container-fluid mt-5 mb-2">
   <span class="h3 font-weight-bold text-dark" wfd-id="41">Todos os Contratos</span>
   <span class="font-italic ml-3 mb-3">Edite informações relacionadas aos contratos gerados.</span>
-</div><hr>
+</div>
 
 
-<div class="container-fluid">
+<div class="container-fluid mb-5">
 <div class="row">
 <div class="col-12 mt-4 rounded-0">
   <div class="card mb-4 rounded-0 shadow-sm">
@@ -260,7 +260,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
                     <div class="btn-group" role="group" aria-label="Basic example">
                       <a @popper(Ver) href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
                       <a @popper(Editar) href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
-                      <a @popper(Baixar) href="{{route('printpdf', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
+                      <a @popper(Baixar) href="#" data-toggle="modal" data-target="#modal-sr-loading" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
+                      <!-- <a @popper(Baixar) href="{{route('printpdf', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a> -->
                       <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$contratos->user->email}}" target="blank"><i class="fas fa-paper-plane"></i></a>
                       @csrf
                       @method('DELETE')
@@ -286,7 +287,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
                     <div class="btn-group" role="group" aria-label="Basic example">
                       <a @popper(Ver) href="{{route('contratocr_show', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
                       <a @popper(Editar) href="{{route('contratocr_edit', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
-                      <a @popper(Baixar) href="{{route('repassepdf', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-success font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
+                      <a @popper(Baixar) href="#" data-toggle="modal" data-target="#modal-cr-loading" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
                       <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-primary font-weight-bold" href="mailto:{{$cr->user->email}}?subject= SGTT - Informações sobre Contrato&body=Caro {{$cr->user->nome}}, " target="blank"><i class="fas fa-paper-plane"></i></a>
                       @csrf
                       @method('DELETE')
@@ -309,5 +310,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 </div>
 </div><!--container-fluid-->
-
+@include('pdf.modal-cr-loading')
+@include('pdf.modal-sr-loading')
 @endsection
