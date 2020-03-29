@@ -9,7 +9,8 @@
 
 </style>
 @section('content')
-
+<!-- Funções dinamicas para os contratos -->
+<script type="text/javascript" src="{{ asset('js/utils.js') }}"></script>
 @include('pesquisador.modals.modal_1')
 @include('pesquisador.modals.modal_2')
 @include('pesquisador.modals.modal_3')
@@ -24,7 +25,15 @@
 @include('pesquisador.modals.modal_12')
 @include('pesquisador.modals.modal_13')
 @include('pesquisador.modals.modal_14')
-
+@include('pesquisador.modals.modal_16')
+@include('pesquisador.modals.modal_17')
+@include('pesquisador.modals.modal_18')
+@include('pesquisador.modals.modal_19')
+@include('pesquisador.modals.modalAtribuicoes')
+@include('pesquisador.modals.modalCoordenador')
+@include('pesquisador.modals.modalCoordenadorPrivado')
+@include('pesquisador.modals.modalPropriedadeIntelectual')
+@include('pesquisador.modals.modalConfidencial')
 
 <div class="title-header">
     <span class="h3 ml-3 font-weight-bold text-primary">Exibir Contrato <span class="badge badge-primary">{{$contratos_sr->id}}</span></span>
@@ -78,8 +87,8 @@
               <div class="container-fluid pb-5 pt-5 mt-0 m-0">
                 <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">
                   ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI
-                  CELEBRAM <input class="mb-2  myform-control text-black" type="text" name="nome_ict" id="" placeholder="{{$contratos_sr->nome_ict}}" disabled=""> E 
-                  <input class="mb-2  myform-control text-black" type="text" name="nome_parceiro" id="" placeholder="{{$contratos_sr->nome_parceiro}}" disabled=""> 
+                  CELEBRAM <input class="mb-2  myform-control text-black" type="text" name="nome_ict" onchange="handleNameICT(event)" placeholder="{{$contratos_sr->nome_ict}}" disabled=""> E 
+                  <input class="mb-2  myform-control text-black" type="text" name="nome_parceiro" onchange="handleNameParceiro(event)" placeholder="{{$contratos_sr->nome_parceiro}}" disabled=""> 
                   NA FORMA A SEGUIR.</h5><br>
               </div>
 
@@ -488,7 +497,11 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").innerHTML = "Enviar";
+    var button = document.getElementById("nextBtn")
+    button.innerHTML = 'Menu'
+    button.addEventListener("click", function(){
+      window.location.href = "/home";
+    });
   } else {
     document.getElementById("nextBtn").innerHTML = "Proximo";
   }

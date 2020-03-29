@@ -48,7 +48,10 @@ class Contrato_sr extends Model
         'clausula_edit_2_6',
 
         'clausula_edit_3',
-
+        'nome_coordenador_ict',
+        'nome_coordenador_privado',
+        'clausula_edit_3_1_c',
+        'clausula_edit_3_2_b',
         'clausula_edit_5_1',
         'clausula_edit_5_2',
         'clausula_edit_5_3',
@@ -63,10 +66,6 @@ class Contrato_sr extends Model
         'clausula_edit_5_12',
         'clausula_edit_5_13',
 
-        'clausula_edit_6_2',
-        'clausula_edit_6_3',
-        'clausula_edit_6_4',
-
         'clausula_edit_7_6',
         'clausula_edit_7_7',
         'clausula_edit_7_8',
@@ -80,7 +79,7 @@ class Contrato_sr extends Model
         'clausula_edit_8_2_e',
 
         'clausula_edit_12_a',
-        'clausula_edit_12_b',
+        'clausula_prazo_12_b',
 
         'clausula_edit_13_2',
         'clausula_edit_13_2_1',
@@ -89,6 +88,18 @@ class Contrato_sr extends Model
         //fim das clausulas editaveis
 
         'nome_inst_ict',
+
+        //15.1 contato publico
+        'parceiro_contato_endereço',
+        'parceiro_contato_telefone',
+        'parceiro_contato_celular',
+        'parceiro_contato_email',
+        //15.1 contato privado
+        'privado_contato_endereço',
+        'privado_contato_telefone',
+        'privado_contato_celular',
+        'privado_contato_email',
+
         'nome_inst_privado',
         'nome_inst_fundacao',
         'nome_empresa_parceira',
@@ -103,7 +114,6 @@ class Contrato_sr extends Model
         'nome_inst_privado_foro',
         'nome_rep_privado_foro',
         'cargo_rep_privado_foro',
-        //'check_clausula', //recebe 1 por default
 
         'tipo',
         'user_id'

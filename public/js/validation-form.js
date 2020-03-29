@@ -190,6 +190,12 @@ $(document).ready(function($){
             },
             cargo_rep_privado_foro: {
                 ...valid_simple_string
+            },
+            nome_coordenador_ict: {
+                ...valid_simple_string
+            },
+            nome_coordenador_privado: {
+                ...valid_simple_string
             }
 
 

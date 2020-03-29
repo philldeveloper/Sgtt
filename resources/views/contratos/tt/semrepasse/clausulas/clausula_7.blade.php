@@ -1,7 +1,7 @@
 <div class="container-fluid p-0 mt-0 m-0">
     <div class="text-justify text-black">
     
-    <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">7 CLÁUSULA SÉTIMA - DAS INFORMAÇÕES CONFIDENCIAIS E SIGILOSAS<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+    <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">7 CLÁUSULA SÉTIMA - DAS INFORMAÇÕES CONFIDENCIAIS E SIGILOSAS</h5>
 
     <p><b>7.1 </b>Os PARCEIROS adotarão todas as medidas necessárias para proteger o sigilo das INFORMAÇÕES CONFIDENCIAIS recebidas em função da celebração, desenvolvimento e execução do presente Acordo de Parceria, inclusive na adoção de medidas que assegurem a tramitação do processo, não as divulgando a terceiros, sem a prévia e escrita autorização da outro PARCEIRO.</p>
 
@@ -16,6 +16,11 @@
         <br><br> <b>7.4.4.</b> Informações que possam ter divulgação exigida por lei, decisão judicial ou administrativa;
         <br><br> <b>7.4.5.</b> Revelação expressamente autorizada, por escrito, pelos PARCEIROS.
     </p>
+    <div class="alert alert-warning" role="alert">      
+        <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+        NOTAS EXPLICATIVAS!
+        <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#confidencial">Saiba mais</button>
+    </div>
     <p><b>7.5.</b> A divulgação científica, por meio de artigos em congressos, revistas e outros meios,
                     relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito
                     dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a

@@ -26,7 +26,17 @@
     background-clip: padding-box;
     border: 1px solid #d1d3e2;
     border-radius: .35rem;
+    width: auto;
 }
+
+.myform-control:disabled, .form-control[readonly] {
+    background-color: #eaecf4;
+    opacity: 1;
+}
+.myform-control:disabled:hover, .form-control[readonly]:hover {
+    cursor: not-allowed;
+}
+
 .bg-clean-rose{
   background-color: #FEF1F1 !important;
 }
