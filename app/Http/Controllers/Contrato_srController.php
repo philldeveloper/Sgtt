@@ -88,6 +88,10 @@ class Contrato_srController extends Controller
         $contrato_sr->clausula_edit_2_6 = $request->clausula_edit_2_6;
 
         $contrato_sr->clausula_edit_3 = $request->clausula_edit_3;
+        $contrato_sr->nome_coordenador_ict = $request->nome_coordenador_ict;
+        $contrato_sr->clausula_edit_3_1_c = $request->clausula_edit_3_1_c;
+        $contrato_sr->nome_coordenador_privado = $request->nome_coordenador_privado;
+        $contrato_sr->clausula_edit_3_2_c = $request->clausula_edit_3_2_c;
 
         $contrato_sr->clausula_edit_5_1 = $request->clausula_edit_5_1;
         $contrato_sr->clausula_edit_5_2 = $request->clausula_edit_5_2;
@@ -120,14 +124,23 @@ class Contrato_srController extends Controller
         $contrato_sr->clausula_edit_8_2_e = $request->clausula_edit_8_2_e;
 
         $contrato_sr->clausula_edit_12_a = $request->clausula_edit_12_a;
-        $contrato_sr->clausula_edit_12_b = $request->clausula_edit_12_b;
+        $contrato_sr->clausula_prazo_12_b = $request->clausula_prazo_12_b;
 
         $contrato_sr->clausula_edit_13_2 = $request->clausula_edit_13_2;
         $contrato_sr->clausula_edit_13_2_1 = $request->clausula_edit_13_2_1;
         $contrato_sr->clausula_edit_13_2_2 = $request->clausula_edit_13_2_2;
         $contrato_sr->clausula_edit_13_3 = $request->clausula_edit_13_3;
         
-        $contrato_sr->nome_inst_ict = $request->nome_inst_ict;
+        $contrato_sr->parceiro_contato_endereco = $request->parceiro_contato_endereco;
+        $contrato_sr->parceiro_contato_telefone = $request->parceiro_contato_telefone;
+        $contrato_sr->parceiro_contato_celular = $request->parceiro_contato_celular;
+        $contrato_sr->parceiro_contato_email = $request->parceiro_contato_email;
+
+        $contrato_sr->privado_contato_endereco = $request->privado_contato_endereco;
+        $contrato_sr->privado_contato_telefone = $request->privado_contato_telefone;
+        $contrato_sr->privado_contato_celular = $request->privado_contato_celular;
+        $contrato_sr->privado_contato_email = $request->privado_contato_email;
+
         $contrato_sr->nome_inst_privado = $request->nome_inst_privado;
         $contrato_sr->nome_inst_fundacao = $request->nome_inst_fundacao;
         $contrato_sr->nome_empresa_parceira = $request->nome_empresa_parceira;
@@ -142,7 +155,6 @@ class Contrato_srController extends Controller
         $contrato_sr->nome_inst_privado_foro = $request->nome_inst_privado_foro;
         $contrato_sr->nome_rep_privado_foro = $request->nome_rep_privado_foro;
         $contrato_sr->cargo_rep_privado_foro = $request->cargo_rep_privado_foro;
-        //$contrato_sr->check_clausula = $request->check_clausula;
 
         $contrato_sr->tipo = $request->tipo;
 

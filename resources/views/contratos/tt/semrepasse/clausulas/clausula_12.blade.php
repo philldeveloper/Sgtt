@@ -8,7 +8,9 @@
         <p><b>12.2</b>  O pesquisador deverá encaminhar ao <span class="text-blue">Setor responsável ou COMISSÃO DA ICT:</span></p>
 
         <p class="">{!! $contratos_sr->clausula_edit_12_a !!}</p>
-        <p class="">{!! $contratos_sr->clausula_edit_12_b !!}</p>
+        <div class="col-md-12 mb-3">
+            <p><b>B)</b> Formulário de Resultado Final: no prazo de até <input class="myform-control text-black" type="text" name="clausula_prazo_12_b" value="{{$contratos_sr->clausula_prazo_12_b}}" disabled> dias contados da conclusão do objeto deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho.</p>
+        </div>
         
         <p><b>12.3</b> No Formulário de Resultado de que trata a subcláusula 12.2, deverá ser demonstrada a
                         compatibilidade entre as metas previstas e as alcançadas no período, bem como apontadas as

@@ -1,6 +1,6 @@
 <div class="container-fluid p-0 mt-0 m-0">
     <div class="text-justify text-black">
-        <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">17. CLÁUSULA DÉCIMA SÉTIMA - DO FORO <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+        <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">17. CLÁUSULA DÉCIMA SÉTIMA - DO FORO</h5>
         <p><b>17.1.</b>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de
         <input class="myform-control text-black"  type="text" name="estado_foro" placeholder="{{$contratos_sr->estado_foro}}" disabled="">, cidade de <input  class="myform-control" type="text" name="cidade_foro" placeholder="{{$contratos_sr->cidade_foro}}" disabled="">,
                     para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109

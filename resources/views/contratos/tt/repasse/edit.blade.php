@@ -24,6 +24,15 @@
 @include('pesquisador.modals.modal_12')
 @include('pesquisador.modals.modal_13')
 @include('pesquisador.modals.modal_14')
+@include('pesquisador.modals.modal_16')
+@include('pesquisador.modals.modal_17')
+@include('pesquisador.modals.modal_18')
+@include('pesquisador.modals.modal_19')
+@include('pesquisador.modals.modalAtribuicoes')
+@include('pesquisador.modals.modalCoordenador')
+@include('pesquisador.modals.modalCoordenadorPrivado')
+@include('pesquisador.modals.modalPropriedadeIntelectual')
+@include('pesquisador.modals.modalConfidencial')
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
@@ -34,6 +43,8 @@
 <script src="{{ asset('js/validation-form-cr.js') }}"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<!-- Funções dinamicas para os contratos -->
+<script type="text/javascript" src="{{ asset('js/utils.js') }}"></script>
 
 <div class="title-header">
     <span class="h3 ml-3 font-weight-bold text-danger">Editar Contrato <span class="badge badge-danger">1</span></span>
@@ -85,11 +96,11 @@
                   CELEBRAM</h5> 
                   <div class="form-row" style="justify-content: center;">
                     <div class="form-group col-md-4">
-                      <input class="mb-2 text-black form-control text-uppercase font-weight-bold" type="text" name="nome_ict"  placeholder="ICT ou ente público" value="{{$contratos_cr->nome_ict}}"> 
+                      <input class="mb-2 text-black form-control text-uppercase font-weight-bold" type="text" name="nome_ict" onchange="handleNameICT(event)" placeholder="ICT ou ente público" value="{{$contratos_cr->nome_ict}}"> 
                     </div>
                     <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">E</h5>
                     <div class="form-group col-md-4">
-                      <input class="mb-2 text-black form-control text-uppercase font-weight-bold" type="text" name="nome_parceiro"  placeholder="Nome do parceiro" value="{{$contratos_cr->nome_parceiro}}">  
+                      <input class="mb-2 text-black form-control text-uppercase font-weight-bold" type="text" name="nome_parceiro" onchange="handleNameParceiro(event)"  placeholder="Nome do parceiro" value="{{$contratos_cr->nome_parceiro}}">  
                     </div>
                   </div>
                  <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center">NA FORMA A SEGUIR.</h5><br>

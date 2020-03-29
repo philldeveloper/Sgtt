@@ -23,6 +23,8 @@
 <script src="{{ asset('js/validation-form-cr.js') }}"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<!-- Funções dinamicas para os contratos -->
+<script type="text/javascript" src="{{ asset('js/utils.js') }}"></script>
 
 <div class="title-header">
     <span class="h3 ml-3 font-weight-bold text-primary">Exibir Contrato <span class="badge badge-primary">{{$contratos_cr->id}}</span></span>
@@ -77,11 +79,11 @@
                   CELEBRAM</h5> 
                   <div class="form-row" style="justify-content: center;">
                     <div class="form-group col-md-4">
-                      <input class="mb-2 text-black form-control text-uppercase font-weight-bold" type="text" name="nome_ict" placeholder="{{$contratos_cr->nome_ict}}"> 
+                      <input class="mb-2 text-black form-control text-uppercase font-weight-bold" type="text" name="nome_ict" onchange="handleNameICT(event)" placeholder="{{$contratos_cr->nome_ict}}"> 
                     </div>
                     <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">E</h5>
                     <div class="form-group col-md-4">
-                      <input class="mb-2 text-black form-control text-uppercase font-weight-bold" type="text" name="nome_parceiro"  placeholder="{{$contratos_cr->nome_parceiro}}">  
+                      <input class="mb-2 text-black form-control text-uppercase font-weight-bold" type="text" name="nome_parceiro" onchange="handleNameParceiro(event)"  placeholder="{{$contratos_cr->nome_parceiro}}">  
                     </div>
                   </div>
                  <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center">NA FORMA A SEGUIR.</h5><br>
