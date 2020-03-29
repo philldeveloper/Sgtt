@@ -11,8 +11,8 @@
     font-family: Raleway;
     width: 100%;
     height: auto;
-    min-height: 500px;
-    min-width: 300px;
+    /* min-height: 500px;
+    min-width: 300px; */
   }
   
   .buttonsControl{
