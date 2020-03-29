@@ -51,6 +51,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
  }
 
 </style>
+{{--
 <div class="container-fluid mt-5 mb-5">
     <span class="h3 font-weight-bold text-dark">Novo Contrato</span>
     <span class="font-italic ml-3">Escolha um tipo de contrato antes de prosseguir:.</span>
@@ -92,9 +93,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   </div>
 </div>
 </div>
+--}}
 
 <div class="container-fluid mt-5 mb-5">
-  <span class="h3 font-weight-bold text-dark" wfd-id="41">Estatísticas sobre Contratos</span>
+  <span class="h3 font-weight-bold text-dark" wfd-id="41">Estatísticas</span>
   <span class="font-italic ml-3 mb-3">Visualize informações relacionadas aos contratos gerados.</span>
 </div><hr>
 
@@ -208,7 +210,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
       
       <div class="table-responsive">
           <table class="table table-hover mb-0" id="example">
-            <thead class="roboto-font font-weight-bold text-dark border-left-success bg-light shadow-sm" style="font-size: 1.25rem">
+            <thead class="roboto-font font-weight-bold text-dark border-left-success border-bottom shadow-sm" style="font-size: 1.25rem">
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Tipo</th>
