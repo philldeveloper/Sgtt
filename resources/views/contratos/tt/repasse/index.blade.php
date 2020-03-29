@@ -58,11 +58,9 @@
 </div>
 
 
-<div class="card mt-5 color-card">
+<div class="card mt-5 color-card p-4">
   <div class="card-body p-3">
         <div class="tab-pane show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-          
-  
             <div class="modal-alert modal fade" id="minuta-inicial" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -97,7 +95,10 @@
               </div>
             </div>
             <div class="container-fluid p-0 mt-0 m-0">
-              <div class="container-fluid pt-5 mt-0 m-0">
+              <div class="container-fluid pt-3 mt-0 m-0">
+                <div class="text-center row justify-content-center mb-5">
+                  <img src="{{asset('assets/brazao.jpg')}}" alt="" width="10%" class="mx-auto text-center">
+                </div>
                 <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">
                 ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI
                   CELEBRAM</h5> 
@@ -328,10 +329,9 @@
                 <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_doravante_denominado" name="parceiro_doravante_denominado" placeholder="ICT/Agência de Fomento">
               </div>
              </div>
-             <hr>
-             <div class="form-group col-md-4 mt-3" style="margin-left: -15px">
+             <!-- <div class="form-group col-md-4 mt-3" style="margin-left: -15px">
                 <a class="btn btn-lg btn-primary font-weight-bold btn-block" href="#"> <i class="fa fa-plus text-right mr-auto"></i>  Adicionar parceiro</a>
-              </div>
+              </div> -->
 
             </div><!--end of content-->
           </div><!--end pane-->
@@ -505,7 +505,7 @@
                   <div class="dropdown-divider"></div>
                   <div class="form-check form-check-inline py-4">
                     <input class="form-check-input" onclick="handleCheckbox()" type="checkbox" id="possui_apoio" value="opcao1">
-                    <label class="form-check-label" for="possui_apoio">Possui Fundação de apio?</label>
+                    <label class="form-check-label h3 font-weight-bold text-primary" for="possui_apoio">Possui Fundação de apoio?</label>
                   </div>
                   <div id="clausula_apoio_wrapper" style="display: none;">
                     <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a): 
@@ -1227,7 +1227,7 @@ F) Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinente
   
                 <p>Seu contrato será revisado em até de 30 dias e uma resposta será gerada. Aguarde a confirmação do sistema. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolores excepturi ipsum rem, enim accusantium quam similique assumenda eum veniam saepe, quas earum nisi hic neque voluptate consectetur ex quo!</p><br>
 
-                <button type="submit" class="btn btn-success btn-lg">ENVIAR</button>
+                <button type="submit" class="btn btn-success btn-lg btn-block col-lg-4 col-sm-12 col-md-6">ENVIAR</button>
                 
               </div>
             </div>
@@ -1235,19 +1235,18 @@ F) Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinente
   
         <form id="regForm" class="form-horizontal" method="POST" action="{{ route('contrato_cr.store') }}">
           {{ csrf_field() }}
-          <div id="step-container" class="step-container m-4">
+          <div id="step-container" class="step-container mb-5">
             
           </div>
           
-         
           <div id="tab-here">
 
-          </div>
+          </div><hr>
           <!-- Circles which indicates the steps of the form: -->
-          <div class="buttonsControl pb-5" style="overflow:auto;">
+          <div class="buttonsControl pb-5 pt-4" style="overflow:auto;">
             <div>
-              <button type="button" class="btn btn-lg bg-secondary text-light" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
-              <button type="button" class="btn bg-success text-light btn-lg" id="nextBtn" onclick="nextPrev(1)">Proximo</button>
+              <button type="button" class="btn btn-lg btn-outline-dark font-weight-bold shadow-sm" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
+              <button type="button" class="btn btn-success btn-lg font-weight-bold shadow-sm" id="nextBtn" onclick="nextPrev(1)">Proximo</button>
             </div>
           </div>
         </form>

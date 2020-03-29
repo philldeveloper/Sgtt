@@ -52,7 +52,7 @@
 .color-card{
     width: 95%;
     margin: 0 auto;
-    padding: 15px;
+    /* padding: 15px; */
     -webkit-box-shadow: 0 0 8px 7px rgba(0, 0, 0, 0.05);
     -moz-box-shadow: 0 0 8px 7px rgba(0, 0, 0, 0.05);
     box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.03);

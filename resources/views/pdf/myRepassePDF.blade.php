@@ -19,6 +19,7 @@
    </style>
 </head>
 <body>
+<!-- <img src="{{asset('assets/brazao.jpg')}}" alt="" width="10%" class="mx-auto text-center"> -->
 	<h1>{{$title}}</h1>
   <br>
   <footer class="footer" style="position: fixed; right:5px; bottom: 5px; opacity: 0.3; margin-top: 20px !important">

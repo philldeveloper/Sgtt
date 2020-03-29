@@ -861,8 +861,8 @@
           <!-- Circles which indicates the steps of the form: -->
           <div class="buttonsControl pb-5" style="overflow:auto;">
             <div>
-              <button type="button" class="btn btn-lg bg-secondary text-light mt-3" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
-              <button type="button" class="btn bg-success text-light btn-lg mt-3" id="nextBtn" onclick="nextPrev(1)">Proximo</button>
+              <button type="button" class="btn btn-outline-dark shadow-sm font-weight-bold btn-lg" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
+              <button type="button" class="btn btn-success shadow-sm font-weight-bold btn-lg" id="nextBtn" onclick="nextPrev(1)">Proximo</button>
             </div>
           </div>
         </form>
