@@ -16,7 +16,11 @@
         <img src="{{asset('assets/preloader.gif')}}" alt="" width="40px" height="40px" class="text-center">
       </div>
       <h5 class="font-weight-bold text-dark py-3">Clique em Baixar e aguarde enquanto seu contrato está sendo gerado.</h5>
-      <a href="{{route('repassepdf', $cr->id)}}" class="btn btn-success font-weight-bold btn-block py-3 mb-4">Baixar PDF</a>
+      @if($contratos_cr)
+        <a href="{{route('repassepdf', $contratos->id)}}" class="btn btn-success font-weight-bold btn-block py-3 mb-4">Baixar PDF</a>
+      @else
+
+      @endif
       </div>
     </div>
   </div>

@@ -33,6 +33,7 @@
                 <tr>
                   <td></td>
                 </tr>
+                
                 @forelse($contratos_sr as $contratos) 
                 <tr class="">
                   <td>{{$contratos->id}}</td>
@@ -59,7 +60,8 @@
                 @empty
                 @endforelse
                 <!--- end of contrato sr-->
-
+              
+            
                 @forelse($contratos_cr as $cr) 
                 <tr class="">
                   <td>{{$cr->id}}</td>

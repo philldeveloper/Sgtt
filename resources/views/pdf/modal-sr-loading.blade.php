@@ -16,7 +16,9 @@
           <img src="{{asset('assets/preloader.gif')}}" alt="" width="40px" height="40px" class="text-center">
         </div>
         <h5 class="font-weight-bold text-dark py-3">Clique em Baixar e aguarde enquanto seu contrato está sendo gerado.</h5>
-        <a href="{{route('printpdf', $contratos->id)}}" class="btn btn-primary font-weight-bold btn-block py-3 mb-4">Baixar PDF</a>
+      
+            <a href="{{route('printpdf', $contratos->id)}}" class="btn btn-primary font-weight-bold btn-block py-3 mb-4">Baixar PDF</a>
+  
       </div>
     </div>
   </div>
