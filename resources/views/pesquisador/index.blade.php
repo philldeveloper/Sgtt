@@ -181,7 +181,7 @@
               <tr>
                 <td></td>
               </tr>
-           
+              
               @forelse($contratos_sr as $contratos) 
               <tr class="">
                 <td>{{$contratos->id}}</td>
@@ -198,7 +198,7 @@
                         <a @popper(Editar) href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
                         <a @popper(Baixar) href="#" data-toggle="modal" data-target="#modal-sr-loading" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
                         <!-- <a @popper(Baixar) href="{{route('printpdf', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a> -->
-                        <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$contratos->user->email}}" target="blank"><i class="fas fa-paper-plane"></i></a>
+                        <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$contratos->email}}" target="blank"><i class="fas fa-paper-plane"></i></a>
                         @csrf
                         @method('DELETE')
                         <button @popper(Excluir) class="btn btn-sm pl-3 pr-3 bg-danger text-light font-weight-bold" type="submit"><i class="fa fa-trash text-light"></i></button>
@@ -210,7 +210,9 @@
               @endforelse
               <!--- end of contrato sr-->
 
+          
               @forelse($contratos_cr as $cr) 
+
               <tr class="">
                 <td>{{$cr->id}}</td>
                 <td><div class="badge badge-success">{{$cr->tipo}}</div></td>
@@ -226,7 +228,7 @@
                         <a @popper(Editar) href="{{route('contratosr_edit', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
                         <a @popper(Baixar) href="#" data-toggle="modal" data-target="#modal-sr-loading" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
                         <!-- <a @popper(Baixar) href="{{route('printpdf', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a> -->
-                        <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$contratos->user->email}}" target="blank"><i class="fas fa-paper-plane"></i></a>
+                        <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$contratos->email}}" target="blank"><i class="fas fa-paper-plane"></i></a>
                         @csrf
                         @method('DELETE')
                         <button @popper(Excluir) class="btn btn-sm pl-3 pr-3 bg-danger text-light font-weight-bold" type="submit"><i class="fa fa-trash text-light"></i></button>
@@ -297,6 +299,11 @@ function parseFileName(name){
   return title
 }
 </script>
-@include('pdf.modal-cr-loading')
-@include('pdf.modal-sr-loading')
+@if(count($contratos_sr) > 0)
+  @extends('pdf.modal-sr-loading')
+@endif
+
+@if(count($contratos_cr) > 0)
+  @extends('pdf.modal-cr-loading')
+@endif
 @endsection
