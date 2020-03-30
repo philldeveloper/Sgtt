@@ -40,19 +40,23 @@ class HomeController extends Controller
 
             return view('admin.index', compact('contratos_sr', 'contratos_cr'));
         }else{
-            $id = Auth::user()->id;
+            // $id = Auth::user()->id;
           
-            $contratos_sr = DB::select("SELECT c.`*`, u.nome, u.email
-            FROM
-                contrato_srs c
-            INNER JOIN users u ON u.id = c.user_id
-            WHERE c.user_id = ? AND u.id = ?", [$id, $id]);
+            // $contratos_sr = DB::select("SELECT c.`*`, u.nome, u.email
+            // FROM
+            //     contrato_srs c
+            // INNER JOIN users u ON u.id = c.user_id
+            // WHERE c.user_id = ? AND u.id = ?", [$id, $id]);
 
-            $contratos_cr = DB::select("SELECT c.`*`, u.nome, u.email
-            FROM
-                contrato_crs c
-            INNER JOIN users u ON u.id = c.user_id
-            WHERE c.user_id = ? AND u.id = ?", [$id, $id]);
+            // $contratos_cr = DB::select("SELECT c.`*`, u.nome, u.email
+            // FROM
+            //     contrato_crs c
+            // INNER JOIN users u ON u.id = c.user_id
+            // WHERE c.user_id = ? AND u.id = ?", [$id, $id]);
+
+            $contratos_sr = Contrato_sr::all();
+
+            $contratos_cr = Contrato_cr::all();
 
             return view('pesquisador.index', compact('contratos_sr', 'contratos_cr'));
         }

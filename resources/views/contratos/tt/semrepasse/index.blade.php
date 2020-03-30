@@ -118,6 +118,9 @@
 
         <div class="container-fluid p-0 mt-0 m-0">
           <div class="container-fluid pb-5 pt-5 mt-0 m-0">
+          <div class="text-center row justify-content-center mb-5">
+              <img src="{{asset('assets/brazao.jpg')}}" alt="" width="10%" class="mx-auto text-center">
+            </div>
             <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">
             ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI
               CELEBRAM</h5> 

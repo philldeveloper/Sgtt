@@ -1,5 +1,7 @@
 @extends('layouts.admin')
 
+@include('popper::assets')
+
 @section('content')
 <style>
   body{
@@ -106,58 +108,54 @@
 </style>
 @include('popper::assets')
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+
 <div class="container-fluid mt-5 mb-5">
-    <span class="h3 font-weight-bold">Novo Contrato</span>
-    <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
-    
-    <a href="{{route('home')}}">
-      <img src="{{ asset('assets/Grouplogo.svg') }}" alt="sgtt" width="8%" class="float-right" style="opacity: 70%">
-    </a>
+    <span class="h3 font-weight-bold text-dark">Novo Contrato</span>
+    <span class="font-italic ml-3">Escolha um tipo de contrato antes de prosseguir:.</span>
 </div>
-
-
-<!-- Begin Page Content -->
-<div class="container-fluid">
+<hr>    
+<div class="container-fluid py-3">
 <div class="row">
-<div class="col-lg-6">
-    <div class="card card-shadow mb-4">
-    <div class="card-body">
-      <span class="h4 font-weight-bold text-black">Acordo de Cooperação <span class="text-dark">sem repasse</span></span>
-    <hr>
-      <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
-            <div class="container-button text-right">
-        <a href="{{route('contrato_sr.index')}}" class="btn btn-success btn-lg btn-icon-split">
-          <span class="icon text-white-50">
-            <i class="fas fa-arrow-right"></i>
-          </span>
-          <span class="text">Criar Contrato</span>
-        </a>
-      </div>
-    </div>
+  <div class="col-lg-6">
+    <div class="notice notice-info notice-lg">
+        <span class="h4 font-weight-bold text-dark text-uppercase">Acordo de Cooperação <span class="text-dark">sem repasse</span></span>
+        <hr>
+        <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+        
+        <div class="container-button text-right">
+          <a href="{{route('contrato_sr.index')}}" class="btn btn-success btn-lg btn-icon-split">
+            <span class="icon text-white-50">
+              <i class="fas fa-arrow-right"></i>
+            </span>
+            <span class="text">Criar Contrato</span>
+          </a>
+        </div>
     </div>
   </div>
   <div class="col-lg-6">
-    <div class="card card-shadow mb-4">
-    <div class="card-body">
-      <span class="h4 font-weight-bold text-black">Acordo de Cooperação <span class="text-dark">com repasse</span></span>
-      <hr>
-      <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
-      <div class="container-button text-right">
-        <a href="{{route('contrato_cr.index')}}" class="btn btn-success btn-lg btn-icon-split">
-          <span class="icon text-white-50">
-            <i class="fas fa-arrow-right"></i>
-          </span>
-          <span class="text">Criar Contrato</span>
-        </a>
-      </div>
-    </div>
+    <div class="notice notice-success notice-lg">
+        <span class="h4 font-weight-bold text-dark text-uppercase">Acordo de Cooperação <span class="text-dark">com repasse</span></span>
+        <hr>
+        <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+        <div class="container-button text-right">
+          <a href="{{route('contrato_cr.index')}}" class="btn btn-success btn-lg btn-icon-split">
+            <span class="icon text-white-50">
+              <i class="fas fa-arrow-right"></i>
+            </span>
+            <span class="text">Criar Contrato</span>
+          </a>
+        </div>
     </div>
   </div>
+</div>
+</div>
 
-<div class="container-fluid mt-5">
-    <span class="h3 font-weight-bold">Meus Contratos</span>
+<div class="container-fluid mt-5 mb-5">
+<span class="h3 font-weight-bold text-dark">Meus Contratos</span>
     <span class="font-italic ml-3">Visualizar todos os contratos cadastrados.</span>
 </div>
+<hr> 
 
 <div class="container-fluid">
 <div class="row">
@@ -175,6 +173,7 @@
                 <th scope="col">Desenv. por</th>
                 <th scope="col">ICT | Parceiro</th>
                 <th scope="col">E-mail</th>
+                <th scope="col">Criado em</th>
                 <th scope="col">Ações</th>
               </tr>
             </thead>
@@ -190,17 +189,20 @@
                 <td><div class="badge badge-dark">{{$contratos->nome}}</div></td>
                 <td>{{$contratos->nome_ict}} e {{$contratos->nome_parceiro}}</td>
                 <td>{{$contratos->email}}</td>
+                <td>{{$contratos->created_at}}</td>
+                
                 <td>
-                  <form id="endpoint" action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                      <a @popper(Ver) href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
-                      <a @popper(Editar) href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
-                      <a @popper(Baixar) id="download" onclick="loadingDownload(event)" href="{{route('printpdf', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold"><i class="fas fa-download"></i></a>
-                      
-                      @csrf
-                      @method('DELETE')
-                      <button @popper(Excluir) class="btn btn-sm pl-3 pr-3 bg-danger text-light font-weight-bold" type="submit"><i class="fa fa-trash text-light"></i></button>
-                    </div>
+                    <form action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                        <a @popper(Ver) href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
+                        <a @popper(Editar) href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
+                        <a @popper(Baixar) href="#" data-toggle="modal" data-target="#modal-sr-loading" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
+                        <!-- <a @popper(Baixar) href="{{route('printpdf', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a> -->
+                        <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$contratos->user->email}}" target="blank"><i class="fas fa-paper-plane"></i></a>
+                        @csrf
+                        @method('DELETE')
+                        <button @popper(Excluir) class="btn btn-sm pl-3 pr-3 bg-danger text-light font-weight-bold" type="submit"><i class="fa fa-trash text-light"></i></button>
+                      </div>
                   </form>
                 </td>
               </tr>
@@ -215,20 +217,22 @@
                 <td><div class="badge badge-dark">{{$cr->nome}}</div></td>
                 <td>{{$cr->nome_ict}} e {{$cr->nome_parceiro}}</td>
                 <td>{{$cr->email}}</td>
+                <td>{{$cr->created_at}}</td>
+                
                 <td>
-                  <form action="{{route('contrato_cr.destroy',$cr->id) }}" method="POST">
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                      <a @popper(Ver) href="{{route('contratocr_show', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
-                      <a @popper(Editar) href="{{route('contratocr_edit', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
-                      <a @popper(Baixar) id="download" href="{{route('repassepdf', $cr->id)}}" onclick="loadingDownload(event)" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold"><i class="fas fa-download"></i></a>
-
-                      @csrf
-                      @method('DELETE')
-                      <button @popper(Excluir) class="btn btn-sm pl-3 pr-3 bg-danger text-light font-weight-bold" type="submit"><i class="fa fa-trash text-light"></i></button>
-                    </div>
-                 </form>
+                    <form action="{{route('contrato_sr.destroy',$cr->id) }}" method="POST">
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                        <a @popper(Ver) href="{{route('contratosr_show', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
+                        <a @popper(Editar) href="{{route('contratosr_edit', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
+                        <a @popper(Baixar) href="#" data-toggle="modal" data-target="#modal-sr-loading" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
+                        <!-- <a @popper(Baixar) href="{{route('printpdf', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a> -->
+                        <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$contratos->user->email}}" target="blank"><i class="fas fa-paper-plane"></i></a>
+                        @csrf
+                        @method('DELETE')
+                        <button @popper(Excluir) class="btn btn-sm pl-3 pr-3 bg-danger text-light font-weight-bold" type="submit"><i class="fa fa-trash text-light"></i></button>
+                      </div>
+                  </form>
                 </td>
-              </tr>
               @empty
               @endforelse
 
@@ -247,6 +251,7 @@
 </div>
 </div>
 </div>
+
 <script>
 function loadingDownload(event){
   event.preventDefault();
@@ -292,4 +297,6 @@ function parseFileName(name){
   return title
 }
 </script>
+@include('pdf.modal-cr-loading')
+@include('pdf.modal-sr-loading')
 @endsection
