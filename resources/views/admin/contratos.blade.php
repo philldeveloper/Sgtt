@@ -97,12 +97,13 @@
     </div>
   </div>
 </div>
+
 @if(count($contratos_sr) > 0)
-  @extends('pdf.modal-sr-loading')
+  @include('pdf.modal-sr-loading')
 @endif
 
 @if(count($contratos_cr) > 0)
-  @extends('pdf.modal-cr-loading')
+  @include('pdf.modal-cr-loading')
 @endif
 
 <script>
