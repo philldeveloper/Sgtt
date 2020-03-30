@@ -55,6 +55,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 <div class="container-fluid mt-4 py-4">
     <span class="h3 font-weight-bold">Dados Gerais</span>
     <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
+    <a href="{{asset('contratos')}}" class="float-right btn btn-primary col-xl-2 col-lg-2 col-md-4 col-sm-12 font-weight-bold clearfix">Ir para Contratos</a>
 </div>
 
 <hr>
