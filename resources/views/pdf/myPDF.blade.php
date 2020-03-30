@@ -19,7 +19,7 @@
    </style>
 </head>
 <body>
-    <img src="{{asset('assets/brazao.jpg')}}" alt="" width="10%" class="mx-auto text-center">
+    <!-- <img src="{{asset('assets/brazao.jpg')}}" alt="" width="10%" class="mx-auto text-center"> -->
 	<h1>{{$title}}</h1>
 	<h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2" style="text-decoration: none; background-color: none !important"> ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI CELEBRAM {{$contrato->nome_ict}}" E {{$contrato->nome_parceiro}}" NA FORMA A SEGUIR.</h5><br>
 	<h5 class="text-uppercase" style="text-decoration: none; background-color: none !important">1º PARCEIRO</h5><hr>
