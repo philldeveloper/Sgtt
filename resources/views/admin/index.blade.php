@@ -110,6 +110,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 <hr>
 
+
 <div class="container-fluid my-auto mx-auto mt-5 mb-5">
   <div class="row justify-content-center mt-5 mb-5">
   @empty($contratos_sr && $contratos_cr)
@@ -195,6 +196,93 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     @endempty 
   </div>
 </div>
+
+<div class="container-fluid my-auto mx-auto mt-5 mb-5">
+  <div class="row justify-content-center mt-5 mb-5">
+  @empty($contratos_sr && $contratos_cr)
+    <div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-4 justify-col-center">
+      <div class="card card-shadow cr-card-size notice notice-info notice-lg">
+        <div class="icon-main">
+          <div class="icon-maker">
+            <i class="fas fa-hand-holding-usd"></i></i>
+          </div>
+        </div>
+        <div class="card-body">
+          <h1 class="text-dark">00</h1>
+          <p class="text-center">Contratos com repasse</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-4 justify-col-center">
+      <div class="card card-shadow cr-card-size">
+        <div class="icon-main">
+          <div class="icon-maker" style="background-image: linear-gradient( 135deg, #97ABFF 10%, #123597 100%);">
+          <i class="fas fa-handshake"></i>
+          </div>
+        </div>
+        <div class="card-body">
+          <h1 class="text-dark">00</h1>
+          <p class="text-center">Contratos sem repasse</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-4 justify-col-center">
+      <div class="card card-shadow cr-card-size">
+        <div class="icon-main">
+          <div class="icon-maker" style="background-image: linear-gradient( 135deg, #97ABFF 10%, #123597 100%);">
+            <i class="fas fa-file-medical-alt"></i>
+          </div>
+        </div>
+        <div class="card-body">
+          <h1 class="text-dark">00</h1>
+          <p class="text-center">Total</p>
+        </div>
+      </div>
+    </div>
+    @else
+    <div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-4 justify-col-center">
+      <div class="card card-shadow cr-card-size">
+        <div class="icon-main">
+          <div class="icon-maker">
+            <i class="fas fa-hand-holding-usd"></i></i>
+          </div>
+        </div>
+        <div class="card-body">
+          <h1 class="text-dark font-weight-bold display-4">12</h1>
+          <p class="text-center h4 text-dark font-weight-bold">Contratos Ativos</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-4 justify-col-center">
+      <div class="card card-shadow cr-card-size">
+        <div class="icon-main">
+          <div class="icon-maker" style="background-image: linear-gradient( 135deg, #97ABFF 10%, #123597 100%);">
+          <i class="fas fa-handshake"></i>
+          </div>
+        </div>
+        <div class="card-body">
+          <h1 class="text-dark font-weight-bold display-4">3</h1>
+          <p class="text-center h4 text-dark font-weight-bold">Contratos Inativos</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-4 justify-col-center">
+      <div class="card card-shadow cr-card-size">
+        <div class="icon-main">
+          <div class="icon-maker" style="background-image: linear-gradient( 135deg, #FEC163 10%, #DE4313 100%)">
+            <i class="fas fa-file-medical-alt"></i>
+          </div>
+        </div>
+        <div class="card-body">
+          <h1 class="text-dark font-weight-bold display-4">{{$user->count()}}</h1>
+          <p class="text-center h4 text-dark font-weight-bold">Usuários Cadastrados</p>
+        </div>
+      </div>
+    </div>
+    @endempty 
+  </div>
+</div>
+
 
 @endsection
 

@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use Auth;
 
+use App\User;
+
 use App\Contrato_sr;
 
 use App\Contrato_cr;
@@ -36,9 +38,11 @@ class HomeController extends Controller
 
             $contratos_sr = Contrato_sr::all();
 
+            $user = User::all();
+
             $contratos_cr = Contrato_cr::all();
 
-            return view('admin.index', compact('contratos_sr', 'contratos_cr'));
+            return view('admin.index', compact('contratos_sr', 'contratos_cr', 'user'));
         }else{
              $id = Auth::user()->id;
           
