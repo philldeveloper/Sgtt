@@ -254,51 +254,6 @@
 </div>
 </div>
 
-<script>
-function loadingDownload(event){
-  event.preventDefault();
-  const requestUrl = document.getElementById("download")
-  const icon = requestUrl.querySelector(".fas")
-  
-  $.ajax({
-    url: requestUrl,
-    type: 'GET',
-    xhrFields : {
-			responseType : 'arraybuffer'
-		},
-    dataType : 'binary',
-    success: function(data,textStatus, request) {
-      var MyBlob = new Blob([data], {type: "application/pdf"});
-      var title = request.getResponseHeader('Content-Disposition').match(/filename="(.+)"/)[1]; 
-      title = parseFileName(title);
-      var link = document.createElement('a');
-         link.href= window.URL.createObjectURL(MyBlob);
-         link.download= title;
-         link.click();
-    },
-    beforeSend: function (){
-      icon.classList.remove("fa-download")
-      icon.classList.add("fa-spinner", "fa-spin", "disabled")
-      requestUrl.setAttribute("disabled", true)
-    },
-    complete: function(){
-      icon.classList.remove("fa-spinner", "fa-spin", "disabled")
-      icon.classList.add("fa-download")
-      requestUrl.setAttribute("disabled", false)
-    }
-  })
-  .catch((err) => console.log(err))
-  
-}
-
-function parseFileName(name){
-  var title = name
-  while(title.includes('_')){
-    title = title.replace('_', '')
-  }
-  return title
-}
-</script>
 @if(count($contratos_sr) > 0)
   @extends('pdf.modal-sr-loading')
 @endif
