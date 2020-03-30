@@ -60,6 +60,11 @@
             <i class="fas fa-fw fa-hands-helping" style="color: white !important"></i>
             <span>Contratos</span></a>
         </li>
+        <li class="nav-item ">
+            <a class="nav-link" href="{{asset('meuperfil')}}">
+            <i class="fas fa-tools text-light" style="color: white !important"></i>
+              <span>Meu Perfil</span></a>  
+        </li>
         @else
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">

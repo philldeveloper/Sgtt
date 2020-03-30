@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/meuperfil', function () {
-    return view('pesquisador.perfil');
+    return view('features.perfil');
 })->name('perfil');
 
 Route::get('/faq', function () {

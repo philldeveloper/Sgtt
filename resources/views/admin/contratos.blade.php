@@ -14,7 +14,7 @@
 <div class="row m-3 py-4">
   <div class="col-12 mt-4 rounded-0">
     <div class="card mb-4 rounded-0 shadow-sm">
-      <div class="card-body p-0 pb-5 rounded-0">
+      <div class="card-body p-0 pb-5 rounded-0" style="min-height: 300px">
         
         <div class="table-responsive">
             <table class="table table-hover mb-0" id="example">
@@ -26,9 +26,6 @@
                   <th scope="col">ICT | Parceiro</th>
                   <th scope="col">E-mail</th>
                   <th scope="col">Criado em</th>
-                  <!--th scope="col">Modificado em</th-->
-                  <!--th scope="col">Status</th-->
-                  <!--th scope="col">Correções</th-->
                   <th scope="col">Ações</th>
                 </tr>
               </thead>
@@ -40,31 +37,10 @@
                 <tr class="">
                   <td>{{$contratos->id}}</td>
                   <td><div class="badge badge-info">{{$contratos->tipo}}</div></td>
-                  <td><div class="">{{$contratos->user->nome}}</div></td>
+                  <td><!--a class="" href="{{route('perfil', $contratos->id)}}"-->{{$contratos->user->nome}}<!--/a--></td>
                   <td>{{$contratos->nome_ict}} | {{$contratos->nome_parceiro}}</td>
                   <td>{{$contratos->user->email}}</td>
                   <td>{{$contratos->created_at}}</td>
-                  <!--td>
-                    <div class="progress mt-2 mr-3">
-                      <div class="progress-bar bg-primary pr-3 pl-3" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Apreciação</div>
-                    </div>
-                  </td-->
-                  
-                  {{--
-                  <!--@if (count($contratos->correcoes) >=1)
-                  <td>
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <a href="{{route('contrato_correcoes', $contratos->id)}}" class="btn btn-sm pl-4 pr-4 btn-warning  text-dark font-weight-bold" target="blank">{{$contratos->correcoes->count()}}</a>
-                    </div>
-                  </td>
-                  @else
-                  <td>
-                    <p class="text-center font-weight-bold text-danger">0</p>
-                  </td>
-                  @endif-->
-                  
-                  --}}
-
                   <td>
                     <form action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
                       <div class="btn-group" role="group" aria-label="Basic example">
@@ -72,7 +48,7 @@
                         <a @popper(Ver) href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
                         <a @popper(Editar) href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
                         <a @popper(Baixar) href="#" data-toggle="modal" data-target="#modal-sr-loading" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
-                        <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$contratos->user->email}}" target="blank"><i class="fas fa-paper-plane"></i></a>
+                        <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$contratos->user->email}}?subject= SGTT - Informações sobre Contrato&body=Caro {{$contratos->user->nome}}, " target="blank"><i class="fas fa-paper-plane"></i></a>
                         @csrf
                         @method('DELETE')
                         <button @popper(Excluir) class="btn btn-sm pl-3 pr-3 btn-outline-danger font-weight-bold" type="submit"><i class="fa fa-trash"></i></button>
@@ -88,7 +64,7 @@
                 <tr class="">
                   <td>{{$cr->id}}</td>
                   <td><div class="badge badge-success">{{$cr->tipo}}</div></td>
-                  <td><div class="">{{$cr->user->nome}}</div></td>
+                  <td><!--a class="" href="{{route('perfil', $contratos->id)}}"-->{{$cr->user->nome}}<!--/a--></td>
                   <td>{{$cr->nome_ict}} | {{$cr->nome_parceiro}}</td>
                   <td>{{$cr->user->email}}</td>
                   <td>{{$cr->created_at}}</td>

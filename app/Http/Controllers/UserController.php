@@ -27,6 +27,6 @@ class UserController extends Controller
 
         $user->update($request->all());
 
-        return redirect('/meuperfil')->with('message', 'Perfil editado com');
+        return redirect('meuperfil')->with('message', 'Perfil editado com Sucesso');
     }
 }
