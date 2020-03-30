@@ -45,8 +45,24 @@ class HomeController extends Controller
             return view('admin.index', compact('contratos_sr', 'contratos_cr', 'user'));
         }else{
              $id = Auth::user()->id;
-          
-             $contratos_sr = DB::select("SELECT c.`*`, u.nome, u.email
+
+    
+
+             $contratos_sr = DB::table('contrato_srs')
+             ->join('users', 'contrato_srs.user_id', '=', 'users.id')
+             ->select('contrato_srs.*', 'users.nome', 'users.email')
+             ->where('contrato_srs.user_id', '=', $id)
+             ->where('users.id', '=', $id)
+             ->get();
+
+             $contratos_cr = DB::table('contrato_crs')
+             ->join('users', 'contrato_crs.user_id', '=', 'users.id')
+             ->select('contrato_crs.*', 'users.nome', 'users.email')
+             ->where('contrato_crs.user_id', '=', $id)
+             ->where('users.id', '=', $id)
+             ->get();
+            
+           /*  $contratos_sr = DB::select("SELECT c.`*`, u.nome, u.email
             FROM
                 contrato_srs c
              INNER JOIN users u ON u.id = c.user_id
@@ -56,7 +72,7 @@ class HomeController extends Controller
              FROM
                  contrato_crs c
              INNER JOIN users u ON u.id = c.user_id
-             WHERE c.user_id = ? AND u.id = ?", [$id, $id]);
+             WHERE c.user_id = ? AND u.id = ?", [$id, $id]); */
 
             return view('pesquisador.index', compact('contratos_sr', 'contratos_cr'));
         }
