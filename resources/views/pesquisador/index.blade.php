@@ -253,6 +253,7 @@
 </div>
 </div>
 </div>
+
 <script>
   $('#lock-sr-tabs').click(function(){
     $(this).find('i').toggleClass('fa-lock fa-lock-open')
@@ -380,11 +381,12 @@ function parseFileName(name){
   return title
 }
 </script>
+
 @if(count($contratos_sr) > 0)
-  @extends('pdf.modal-sr-loading')
+  @include('pdf.modal-sr-loading')
 @endif
 
 @if(count($contratos_cr) > 0)
-  @extends('pdf.modal-cr-loading')
+  @include('pdf.modal-cr-loading')
 @endif
 @endsection

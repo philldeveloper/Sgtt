@@ -114,14 +114,25 @@
     $(this).find('i').toggleClass('fa-lock fa-lock-open')
   });
 </script>
+
+<!-- SCRIPT PARA SEM REPASSE -->
 <script>
-function loadingDownload(event){
+var userMessage = document.getElementById('user-message-sr')
+var iconSuccess = document.getElementById('success-icon-sr')
+
+function modaltoDefault(){
+  iconSuccess.style.display = 'none'
+  userMessage.innerHTML = 'Clique em Baixar para fazer o download do seu PDF.'
+
+}
+
+function loadingDownloadSR(event){
   event.preventDefault();
+
   const button = event.target
   const requestUrl = event.target.href
-  var userMessage = document.getElementById('user-message')
-  const gif = document.getElementById('gif-loading')
-  const iconSuccess = document.getElementById('success-icon')
+  const gif = document.getElementById('gif-loading-sr')
+  
   $.ajax({
     url: requestUrl,
     type: 'GET',
@@ -140,7 +151,67 @@ function loadingDownload(event){
     },
     beforeSend: function (){
       gif.style.display = 'block'
-      userMessage.innerHTML = 'Aguarde um pouco! seu contrato está sendo gerado...'
+      userMessage.innerHTML = 'Aguarde um pouco!<br> seu contrato está sendo gerado...'
+      button.setAttribute("disabled", true)
+    },
+    complete: function(){
+      gif.style.display = 'none'
+      iconSuccess.style.display = 'block'
+      userMessage.innerHTML = 'Download do contrato realizado com sucesso!'
+      button.setAttribute("disabled", false)
+    }
+  })
+  .catch((err) => console.log(err))
+  
+}
+
+function parseFileName(name){
+  var title = name
+  while(title.includes('_')){
+    title = title.replace('_', '')
+  }
+  return title
+}
+</script>
+
+
+<!-- SCRIPT COM REPASSE -->
+<script>
+var userMessage = document.getElementById('user-message-cr')
+var iconSuccess = document.getElementById('success-icon-cr')
+
+function modaltoDefault(){
+  iconSuccess.style.display = 'none'
+  userMessage.innerHTML = 'Clique em Baixar para fazer o download do seu PDF.'
+
+}
+
+function loadingDownloadCR(event){
+  event.preventDefault();
+
+  const button = event.target
+  const requestUrl = event.target.href
+  const gif = document.getElementById('gif-loading-cr')
+  
+  $.ajax({
+    url: requestUrl,
+    type: 'GET',
+    xhrFields : {
+			responseType : 'arraybuffer'
+		},
+    dataType : 'binary',
+    success: function(data,textStatus, request) {
+      var MyBlob = new Blob([data], {type: "application/pdf"});
+      var title = request.getResponseHeader('Content-Disposition').match(/filename="(.+)"/)[1]; 
+      title = parseFileName(title);
+      var link = document.createElement('a');
+         link.href= window.URL.createObjectURL(MyBlob);
+         link.download= title;
+         link.click();
+    },
+    beforeSend: function (){
+      gif.style.display = 'block'
+      userMessage.innerHTML = 'Aguarde um pouco!<br> seu contrato está sendo gerado...'
       button.setAttribute("disabled", true)
     },
     complete: function(){

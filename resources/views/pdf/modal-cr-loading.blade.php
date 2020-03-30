@@ -18,7 +18,7 @@
         </div>
         <h5 id="user-message-cr" class="font-weight-bold text-dark py-3">Clique em Baixar para fazer o download do seu PDF.</h5>
       
-            <a href="{{route('printpdf', $cr->id)}}" onclick="loadingDownloadCR(event)" class="btn btn-primary font-weight-bold btn-block py-3 mb-4">Baixar PDF</a>
+            <a href="{{route('repassepdf', $cr->id)}}" onclick="loadingDownloadCR(event)" class="btn btn-primary font-weight-bold btn-block py-3 mb-4">Baixar PDF</a>
   
       </div>
     </div>
