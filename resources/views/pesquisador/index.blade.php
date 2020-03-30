@@ -222,13 +222,13 @@
                 <td>{{$cr->created_at}}</td>
                 
                 <td>
-                    <form action="{{route('contrato_sr.destroy',$cr->id) }}" method="POST">
+                    <form action="{{route('contrato_sr.destroy', $cr->id) }}" method="POST">
                       <div class="btn-group" role="group" aria-label="Basic example">
                         <a @popper(Ver) href="{{route('contratosr_show', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
                         <a @popper(Editar) href="{{route('contratosr_edit', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
                         <a @popper(Baixar) href="#" data-toggle="modal" data-target="#modal-cr-loading" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
                         <!-- <a @popper(Baixar) href="{{route('printpdf', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a> -->
-                        <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$contratos->email}}" target="blank"><i class="fas fa-paper-plane"></i></a>
+                        <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$cr->email}}" target="blank"><i class="fas fa-paper-plane"></i></a>
                         @csrf
                         @method('DELETE')
                         <button @popper(Excluir) class="btn btn-sm pl-3 pr-3 bg-danger text-light font-weight-bold" type="submit"><i class="fa fa-trash text-light"></i></button>
@@ -383,10 +383,10 @@ function parseFileName(name){
 </script>
 
 @if(count($contratos_sr) > 0)
-  @include('pdf.modal-sr-loading')
+  @extend('pdf.modal-sr-loading')
 @endif
 
 @if(count($contratos_cr) > 0)
-  @include('pdf.modal-cr-loading')
+  @extend('pdf.modal-cr-loading')
 @endif
 @endsection
