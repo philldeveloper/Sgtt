@@ -49,8 +49,8 @@
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
           <a class="nav-link" href="{{route('home')}}">
-            <i class="fas fa-fw fa-home" style="color: white !important"></i>
-            <span>Inicio</span></a>
+            <i class="fas fa-chart-bar" style="color: white !important"></i>
+            <span>Dados Gerais</span></a>
         </li>
 
         @if(Auth::user()->admin == 1)
