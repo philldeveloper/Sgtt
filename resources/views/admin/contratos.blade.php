@@ -36,7 +36,7 @@
                 </tr>
                 
                 @forelse($contratos_sr as $contratos) 
-                <tr class="">
+                <tr class="border-bottom">
                   <td>{{$contratos->id}}</td>
                   <td><div class="badge badge-info">{{$contratos->tipo}}</div></td>
                   <td>
