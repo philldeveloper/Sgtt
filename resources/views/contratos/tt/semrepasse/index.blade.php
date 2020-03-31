@@ -7,11 +7,12 @@
   }
 
   textarea{
-    background-color: #DCF8FC !important;
-    color: #343434 !important;
-    border-color: #8DB7BD !important;
-    box-shadow: 3px 5px 5px #cdcdcd;
+    background-color: white !important;
+    color: black !important;
+    border-color: black !important;
+    box-shadow: 1px 2px 2px #cdcdcd;
     padding: 10px;
+    text-align: justify !important;
   }
 </style>
 @section('content')
@@ -353,12 +354,9 @@
             <input type="text" class="form-control text-black font-weight-bold" name="parceiro_cargo" id="parceiro_cargo" placeholder="">
           </div>
           </div>
-          <hr>
-          <div class="form-group col-md-4 mt-3" style="margin-left: -15px">
-            <a class="btn btn-lg btn-primary font-weight-bold btn-block" href="#"> <i class="fa fa-plus text-right mr-auto"></i>  Adicionar parceiro</a>
+          <div class="form-group col-md-4 mt-5 py-4">
+            <button class="btn btn-lg btn-light font-weight-bold btn-block" disabled=""> <i class="fa fa-plus text-right mr-auto"></i>  Adicionar parceiro</button>
           </div>
-
-        
         </div><!--end of content-->
       </div><!--end pane-->
       <!------------------------------------------------------------------------->
@@ -372,7 +370,7 @@
             Ciência, Tecnologia e Inovação (Emenda Constitucional nº85/15, Lei nº
             10.973/2004, Lei nº 13.243/2016, Decreto nº 9.283/2018 e Lei nº 8.958/1994), que deverá ser executado com estrita observância das seguintes cláusulas e condições:</p><br>
             
-            <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">1. Cláusula Primeira - do Objeto</h5>
+            <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">1. Cláusula Primeira - do Objeto </h4><hr>
 
             <p><b>1.1</b> O presente Acordo de Parceria para PD&I tem por objeto a cooperação técnica e científica entre os PARTÍCIPES para desenvolver
             o <br><div class="form-group col-md-12">
@@ -396,9 +394,9 @@
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
           
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">2. CLÁUSULA SEGUNDA – DO PLANO DE TRABALHO </h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">2. CLÁUSULA SEGUNDA – DO PLANO DE TRABALHO </h4><hr>
           <!-- Nota explicativa -->
-          <div class="alert alert-warning" role="alert">      
+          <div class="alert alert-warning mb-5 mt-5" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             NOTAS EXPLICATIVAS!
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modalExemplo12">Saiba mais</button>
@@ -409,39 +407,40 @@
           
           <!--clausula editavel 2-->
 
-          <div class="text-center d-flex">
-              <p class="h5 p-3 text-uppercase text-primary font-weight-bold">Edite a(s) cláusula(s) abaixo (se julgar necessário):</p>
+          <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+            <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+            Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
 
           <div class="container-fluid pt-4 pb-4 bg-light">
 
-          <div class="col-md-12 mb-3">
-            <div class="row">
-              <p class="col-lg-1 col-md-1 col-sm-2 col-xs-2 col-xl-1 text-uppercase font-weight-bold h3">2.3</p>
-              <textarea class="form-control font-weight-bold col-xl-11 col-lg-11 col-md-11 col-sm-10 col-xs-10" name="clausula_edit_2_3" rows="3" style="background-color: #F6FAFA; resize: none !important;">Na execução do Plano de Trabalho, a atuação dos PARCEIROS dar-se-á sempre de forma associada. Para tanto, os PARCEIROS indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.</textarea>
+            <div class="col-md-12 mb-3">
+              <div class="row">
+                <p class="col-lg-1 col-md-1 col-sm-2 col-xs-2 col-xl-1 text-uppercase font-weight-bold h3">2.3</p>
+                <textarea class="form-control col-xl-11 col-lg-11 col-md-11 col-sm-10 col-xs-10" name="clausula_edit_2_3" rows="3" style="background-color: #F6FAFA; resize: none !important;">Na execução do Plano de Trabalho, a atuação dos PARCEIROS dar-se-á sempre de forma associada. Para tanto, os PARCEIROS indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.</textarea>
+              </div>
             </div>
-          </div>
 
-          <div class="col-md-12 mb-3">
-            <div class="row">
-            <p class="col-lg-1 col-md-1 col-sm-2 col-xs-2 col-xl-1 text-uppercase font-weight-bold h3">2.4</p>
-              <textarea class="form-control font-weight-bold col-xl-11 col-lg-11 col-md-11 col-sm-10 col-xs-10" name="clausula_edit_2_4" rows="3" style="background-color: #F6FAFA; resize: none !important;">Recaem sobre o Coordenador do Projeto, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.</textarea>
+            <div class="col-md-12 mb-3">
+              <div class="row">
+              <p class="col-lg-1 col-md-1 col-sm-2 col-xs-2 col-xl-1 text-uppercase font-weight-bold h3">2.4</p>
+                <textarea class="form-control col-xl-11 col-lg-11 col-md-11 col-sm-10 col-xs-10" name="clausula_edit_2_4" rows="3" style="background-color: #F6FAFA; resize: none !important;">Recaem sobre o Coordenador do Projeto, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.</textarea>
+              </div>
             </div>
-          </div>
 
-          <div class="col-md-12 mb-3">
-            <div class="row">
-            <p class="col-lg-1 col-md-1 col-sm-2 col-xs-2 col-xl-1 text-uppercase font-weight-bold h3">2.5</p>
-              <textarea class="form-control font-weight-bold col-xl-11 col-lg-11 col-md-11 col-sm-10 col-xs-10" name="clausula_edit_2_5" rows="3" style="background-color: #F6FAFA; resize: none !important;">Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.</textarea>
+            <div class="col-md-12 mb-3">
+              <div class="row">
+              <p class="col-lg-1 col-md-1 col-sm-2 col-xs-2 col-xl-1 text-uppercase font-weight-bold h3">2.5</p>
+                <textarea class="form-control col-xl-11 col-lg-11 col-md-11 col-sm-10 col-xs-10" name="clausula_edit_2_5" rows="3" style="background-color: #F6FAFA; resize: none !important;">Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.</textarea>
+              </div>
             </div>
-          </div>
 
-          <div class="col-md-12 mb-3">
-            <div class="row">
-            <p class="col-lg-1 col-md-1 col-sm-2 col-xs-2 col-xl-1 text-uppercase font-weight-bold h3">2.6</p>
-              <textarea class="form-control font-weight-bold col-xl-11 col-lg-11 col-md-11 col-sm-10 col-xs-10" name="clausula_edit_2_6" rows="4" style="background-color: #F6FAFA; resize: none !important;">A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo.</textarea>
+            <div class="col-md-12 mb-3">
+              <div class="row">
+              <p class="col-lg-1 col-md-1 col-sm-2 col-xs-2 col-xl-1 text-uppercase font-weight-bold h3">2.6</p>
+                <textarea class="form-control col-xl-11 col-lg-11 col-md-11 col-sm-10 col-xs-10" name="clausula_edit_2_6" rows="4" style="background-color: #F6FAFA; resize: none !important;">A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo.</textarea>
+              </div>
             </div>
-          </div>
 
           </div><!--container-fluid-->
 
@@ -454,38 +453,78 @@
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
           
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">3 CLÁUSULA TERCEIRA – DAS ATRIBUIÇÕES E RESPONSABILIDADES</h5>
-          <div class="alert alert-warning" role="alert">      
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">3. CLÁUSULA TERCEIRA – DAS ATRIBUIÇÕES E RESPONSABILIDADES</h4><hr>
+          <div class="alert alert-warning mb-5 mt-5" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             NOTAS EXPLICATIVAS!
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_atribuicoes">Saiba mais</button>
           </div>
           <p><b>3.1 </b>São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I:</p>
             
-          <p class="ml-2 bg-light roboto-font"><b>3.1.1. Do(a) ICT:</b><input type="text" class="myform-control" name="nome_inst_ict" id="handle_ict" placeholder="Instituição" disabled></p>
-      
-            <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;<a href="#" data-toggle="modal" data-target="#modalCoordenador"><i class="fas fa-fw fa-question-circle"></i></a>
-            <div class="form-group col-md-6">
-              <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" placeholder="Nome coordenador ICT/Publico"><br>
+          <p class="mt-3 roboto-font"><b>3.1.1. Do(a) ICT:</b><input type="text" class="myform-control" name="nome_inst_ict" id="handle_ict" placeholder="Instituição" disabled></p>
+          <hr>      
+            <b>A)</b> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;<a href="#" data-toggle="modal" data-target="#modalCoordenador"><i class="fas fa-fw fa-question-circle"></i></a>
+            
+            <div class="form-group row p-2">
+              <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador ICT/Público:</label>
+              <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
+                <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" placeholder="Nome coordenador ICT/Publico">
+              </div>
             </div>
+
+            <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+              <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">Edite a(s) cláusula(s) abaixo (se julgar necessário):
+            </div>
+
             <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_3_1_b" rows="4" style="background-color: #F6FAFA; resize: none !important;">B) Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;</textarea>
+                <div class="row">
+                  <p class="col-1 text-uppercase font-weight-bold h3"><span class="badge badge-dark">B</span></p>
+                  <textarea class="form-control col-11" name="clausula_edit_3_1_b" rows="4" style="background-color: #F6FAFA; resize: none !important;">Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;</textarea>
+                </div>
             </div>
-            <div class="col-md-12 mb-3"><a href="#" data-toggle="modal" data-target="#modalExemplo16"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <textarea placeholder="C) Demais..." class="form-control font-weight-bold" name="clausula_edit_3_1_c" rows="4" style="background-color: #F6FAFA; resize: none !important;"></textarea>
+
+            <div class="col-md-12 mb-3">
+                <div class="row">
+                  
+                  <p class="col-1 text-uppercase font-weight-bold h3">
+                    <span class="badge badge-dark">C</span>
+                    <a href="#" data-toggle="modal" data-target="#modalExemplo16"><i class="fas fa-fw fa-question-circle"></i></a>
+                  </p>
+                  <textarea placeholder="Demais..." class="form-control col-11" name="clausula_edit_3_1_c" rows="4" style="background-color: #F6FAFA; resize: none !important;"></textarea>
+                </div>
             </div>
-            <p class="ml-2 bg-light roboto-font"><b>3.1.2.  Do(a) <input  class="myform-control" type="text" name="nome_inst_privado" id="handle_parceiro" placeholder="Instituição" disabled>:(PARCEIRO PRIVADO)</b></p>
+
+            <p class="mt-5 mb-3 roboto-font"><b>3.1.2.  Do(a) <input  class="myform-control" type="text" name="nome_inst_privado" id="handle_parceiro" placeholder="Instituição" disabled>:(PARCEIRO PRIVADO)</b></p>
+            <hr>
           
-            <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;<a href="#" data-toggle="modal" data-target="#modalCoordenadorPrivado"><i class="fas fa-fw fa-question-circle"></i></a>
-            <div class="form-group col-md-6">
-                <input type="text" name="nome_coordenador_privado" onchange="handleCoordenadorPrivado()" class="form-control" id="nome_coordenador_privado" placeholder="Nome do coordenador parceiro privado"> <br>
+            <b>A)</b> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;<a href="#" data-toggle="modal" data-target="#modalCoordenadorPrivado"><i class="fas fa-fw fa-question-circle"></i></a>
+            
+            <div class="form-group row p-2">
+              <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador Parceiro Privado:</label>
+              <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
+                <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorPrivado()" id="nome_coordenador_privado" class="form-control" placeholder="Nome do coordenador parceiro privado">
+              </div>
             </div>
-            <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div> Colaborar, nos termos do plano de trabalho, para que o Acordo alcance os objetivos nele descritos;
-            <div class="col-md-12 mb-3"><a href="#" data-toggle="modal" data-target="#modalExemplo17"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <textarea placeholder="C) Demais..." class="form-control font-weight-bold" name="clausula_edit_3_2_b" rows="4" style="background-color: #F6FAFA; resize: none !important;"></textarea>
+
+            <b>B)</b> Colaborar, nos termos do plano de trabalho, para que o Acordo alcance os objetivos nele descritos:
+            <div class="col-md-12 mb-3"><a href="#" data-toggle="modal" data-target="#modalExemplo17"><i class="fas fa-fw fa-question-circle float-right m-2"></i></a>
+                <textarea placeholder="C) Demais..." class="form-control font-weight-bold" name="clausula_edit_3_2_b" rows="4" style="background-color: #F6FAFA; resize: none !important;"></textarea>
+            </div> 
+
+            <p><b>3.2.</b><span id="coord_ict"></span><span id="coord_privado"></span>poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.</p>
+
+            <div class="alert alert-info py-2 mt-5 mb-4 text-dark font-weight-bold" role="alert">      
+              <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">Edite a(s) cláusula(s) abaixo (se julgar necessário):
             </div>
-            <!-- 3.1.3. Aqui Será clausula do novo parceiro caso tenha -->
-          <!--    <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a) <input type="text" class="myform-control" name="nome_inst_fundacao" placeholder="Instituição">:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p>
+
+            <div class="col-md-12 mb-3">
+                <a class="badge badge-info text-light font-weight-bold float-left m-2">Cláusula 3.3</a>
+                <textarea class="form-control" name="clausula_edit_3" rows="4" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente Acordo de Parceria para PD&I ou de publicações a ele referentes.</textarea>
+            </div>
+
+            
+              <!-- 3.1.3. Aqui Será clausula do novo parceiro caso tenha -->
+              <!-- <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a) <input type="text" class="myform-control" name="nome_inst_fundacao" placeholder="Instituição">:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p>
             
               <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div>  Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD& I; <br>
               <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div>  Prestar à ICT informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;<br>
@@ -497,25 +536,19 @@
               <br><br>
               <p class="ml-2 bg-light roboto-font"><b>3.1.3.  OU:</b></p>
           
-            <div class="badge badge-primary p-2 mb-1 font-weight-bold">D)</div> Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação;
-            <br>
-            <div class="badge badge-primary p-2 mb-1 font-weight-bold">G)</div>  Responsabilizar-se pelo recolhimento de impostos, taxas, contribuições e outros encargos porventura devidos em decorrência das atividades vinculadas a este Acordo de Parceria;<br>
-            <div class="badge badge-primary p-2 mb-1 font-weight-bold">H)</div>  Manter, durante toda a execução do Acordo de Parceria, todas as condições de habilitação e de qualificação exigidas para a sua celebração, responsabilizando-se pela boa e integral execução das atividades ora descritas;<br>
-            <div class="badge badge-primary p-2 mb-1 font-weight-bold">I)</div>  Nas compras de bens e nas contratações de serviços, observar as regras do Decreto nº 8.241/2014;<br>
-            <div class="badge badge-primary p-2 mb-1 font-weight-bold">J)</div>  Observar os princípios da legalidade, eficiência, moralidade, publicidade, economicidade, legalidade e impessoalidade, nas aquisições e contratações realizadas, bem como no desenvolvimento de todas as suas ações no âmbito deste Acordo de Parceria;
-            <br>
-            <div class="badge badge-primary p-2 mb-1 font-weight-bold">K)</div>  Manter registros contábeis, fiscais e financeiros completos e fidedignos relativamente à aplicação dos aportes recebidos do PARCEIRO PRIVADO por este Acordo de Parceria, fazendo-o em estrita observância às normas tributário-fiscais em vigor e, especialmente, à legislação que instituiu contrapartidas em atividades de PD&I para a concessão de incentivos ou de benefícios dos quais o PARCEIRO PRIVADO seja ou se torne beneficiária;<br>
-            <br> -->
-            <p><b>3.2.</b>
-            <span id="coord_ict"></span><span id="coord_privado"></span>
-              poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.</p>
+              <div class="badge badge-primary p-2 mb-1 font-weight-bold">D)</div> Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação;
+              <br>
+              <div class="badge badge-primary p-2 mb-1 font-weight-bold">G)</div>  Responsabilizar-se pelo recolhimento de impostos, taxas, contribuições e outros encargos porventura devidos em decorrência das atividades vinculadas a este Acordo de Parceria;<br>
+              <div class="badge badge-primary p-2 mb-1 font-weight-bold">H)</div>  Manter, durante toda a execução do Acordo de Parceria, todas as condições de habilitação e de qualificação exigidas para a sua celebração, responsabilizando-se pela boa e integral execução das atividades ora descritas;<br>
+              <div class="badge badge-primary p-2 mb-1 font-weight-bold">I)</div>  Nas compras de bens e nas contratações de serviços, observar as regras do Decreto nº 8.241/2014;<br>
+              <div class="badge badge-primary p-2 mb-1 font-weight-bold">J)</div>  Observar os princípios da legalidade, eficiência, moralidade, publicidade, economicidade, legalidade e impessoalidade, nas aquisições e contratações realizadas, bem como no desenvolvimento de todas as suas ações no âmbito deste Acordo de Parceria;
+              <br>
+              <div class="badge badge-primary p-2 mb-1 font-weight-bold">K)</div>  Manter registros contábeis, fiscais e financeiros completos e fidedignos relativamente à aplicação dos aportes recebidos do PARCEIRO PRIVADO por este Acordo de Parceria, fazendo-o em estrita observância às normas tributário-fiscais em vigor e, especialmente, à legislação que instituiu contrapartidas em atividades de PD&I para a concessão de incentivos ou de benefícios dos quais o PARCEIRO PRIVADO seja ou se torne beneficiária;<br>
+              <br> -->
             
           <!--clausula editavel 3-->
 
-          <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_3" rows="4" style="background-color: #F6FAFA; resize: none !important;">3.3. Os PARCEIROS são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente Acordo de Parceria para PD&I ou de publicações a ele referentes.
-          </textarea>
-          </div>
+          
           
           </div>
       </div>
@@ -525,20 +558,18 @@
     <div class="tab-pane " id="clausula4" role="tabpanel" aria-labelledby="clausula4-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          
           <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">4. CLÁUSULA QUARTA - DO PESSOAL <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
-          
-          <p>
-            <b>4.1.</b> Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações
-              trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si 
-              e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem 
-              na execução do objeto deste Acordo, de forma que não se estabelecerá, em hipótese alguma,
-            vínculo empregatício ou de qualquer outra natureza com a EMPRESA <input type="text" class="myform-control" name="nome_empresa_parceira"  id="handle_parceiro" placeholder="Empresa parceira" disabled> e
-            o pessoal <input type="text" class="myform-control" name="nome_ict_parceira" id="handle_ict" placeholder="ICT ou Agência de fomento" disabled> vice-versa, cabendo a cada PARCEIRO a responsabilidade 
-            pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a
-            documentação comprobatória da regularidade na contratação.<br>
-          </p>
         </div>
+        <p class="mt-3 text-justify text-black py-4">
+          <b>4.1.</b> Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações
+            trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si 
+            e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem 
+            na execução do objeto deste Acordo, de forma que não se estabelecerá, em hipótese alguma,
+          vínculo empregatício ou de qualquer outra natureza com a EMPRESA <input type="text" class="myform-control" name="nome_empresa_parceira"  id="handle_parceiro" placeholder="Empresa parceira" disabled> e
+          o pessoal <input type="text" class="myform-control" name="nome_ict_parceira" id="handle_ict" placeholder="ICT ou Agência de fomento" disabled> vice-versa, cabendo a cada PARCEIRO a responsabilidade 
+          pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a
+          documentação comprobatória da regularidade na contratação.<br>
+        </p>
       </div>
     </div><!--end of tab-content: insert all these here!-->
 
@@ -552,6 +583,8 @@
             NOTAS EXPLICATIVAS!
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#propriedade_intelectual">Saiba mais</button>
           </div>
+        </div><!--text-justify-->
+        <div class="mt-3 text-justify text-black py-4">
           <div class="col-md-12 mb-3">
             <textarea class="form-control font-weight-bold" name="clausula_edit_5_1" rows="4" style="background-color: #F6FAFA; resize: none !important;">5.1. Todos os dados, técnicas, tecnologia, know-how, marcas, patentes e quaisquer outros bens ou direitos de propriedade intelectual/industrial de um parceiro que este venha a utilizar para execução do Projeto continuarão a ser de sua propriedade exclusiva, não podendo o outro parceiro cedê-los, transferi-los, aliená-los, divulgá-los ou empregá-los em quaisquer outros projetos ou sob qualquer outra forma sem o prévio consentimento escrito do seu proprietário.</textarea>
           </div>
@@ -603,7 +636,7 @@
           <div class="col-md-12 mb-3">
             <textarea class="form-control font-weight-bold" name="clausula_edit_5_13" rows="4" style="background-color: #F6FAFA; resize: none !important;">5.13 A ICT/AGÊNCIA DE FOMENTO poderá outorgar poderes ao PARCEIRO PRIVADO para praticar todo e qualquer ato necessário para o depósito, acompanhamento e manutenção de pedido de patente das tecnologias resultantes do presente instrumento, no Brasil e em outros países.</textarea>
           </div>
-        </div>
+        </div><!--text-black-->
       </div>
     </div>
     <!------------------------------------------------------------------------->
