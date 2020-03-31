@@ -30,7 +30,7 @@
                   <span id="coord_ict">{{$contratos_sr->nome_coordenador_ict}};</span><span id="coord_privado"> {{$contratos_sr->nome_coordenador_privado}}</span>
                    poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.</p>
                   
-        <p class="">{!! $contratos_sr->clausula_edit_3 !!}</p>
+        <p class=""><b>3.3.</b>{!! $contratos_sr->clausula_edit_3 !!}</p>
 
     </p>
     </div>

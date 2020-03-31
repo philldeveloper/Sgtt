@@ -409,25 +409,41 @@
           
           <!--clausula editavel 2-->
 
+          <div class="text-center d-flex">
+              <p class="h5 p-3 text-uppercase text-primary font-weight-bold">Edite a(s) cláusula(s) abaixo (se julgar necessário):</p>
+          </div>
+
+          <div class="container-fluid pt-4 pb-4 bg-light">
+
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_2_3" rows="3" style="background-color: #F6FAFA; resize: none !important;">2.3 Na execução do Plano de Trabalho, a atuação dos PARCEIROS dar-se-á sempre de forma associada. Para tanto, os PARCEIROS indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.
-          </textarea>
+            <div class="row">
+              <p class="col-lg-1 col-md-1 col-sm-2 col-xs-2 col-xl-1 text-uppercase font-weight-bold h3">2.3</p>
+              <textarea class="form-control font-weight-bold col-xl-11 col-lg-11 col-md-11 col-sm-10 col-xs-10" name="clausula_edit_2_3" rows="3" style="background-color: #F6FAFA; resize: none !important;">Na execução do Plano de Trabalho, a atuação dos PARCEIROS dar-se-á sempre de forma associada. Para tanto, os PARCEIROS indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.</textarea>
+            </div>
           </div>
 
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_2_4" rows="3" style="background-color: #F6FAFA; resize: none !important;">2.4 Recaem sobre o Coordenador do Projeto, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.
-          </textarea>
+            <div class="row">
+            <p class="col-lg-1 col-md-1 col-sm-2 col-xs-2 col-xl-1 text-uppercase font-weight-bold h3">2.4</p>
+              <textarea class="form-control font-weight-bold col-xl-11 col-lg-11 col-md-11 col-sm-10 col-xs-10" name="clausula_edit_2_4" rows="3" style="background-color: #F6FAFA; resize: none !important;">Recaem sobre o Coordenador do Projeto, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.</textarea>
+            </div>
           </div>
 
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_2_5" rows="3" style="background-color: #F6FAFA; resize: none !important;">2.5 Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.
-          </textarea>
+            <div class="row">
+            <p class="col-lg-1 col-md-1 col-sm-2 col-xs-2 col-xl-1 text-uppercase font-weight-bold h3">2.5</p>
+              <textarea class="form-control font-weight-bold col-xl-11 col-lg-11 col-md-11 col-sm-10 col-xs-10" name="clausula_edit_2_5" rows="3" style="background-color: #F6FAFA; resize: none !important;">Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.</textarea>
+            </div>
           </div>
 
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_2_6" rows="4" style="background-color: #F6FAFA; resize: none !important;">2.6 A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo.
-          </textarea>
+            <div class="row">
+            <p class="col-lg-1 col-md-1 col-sm-2 col-xs-2 col-xl-1 text-uppercase font-weight-bold h3">2.6</p>
+              <textarea class="form-control font-weight-bold col-xl-11 col-lg-11 col-md-11 col-sm-10 col-xs-10" name="clausula_edit_2_6" rows="4" style="background-color: #F6FAFA; resize: none !important;">A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo.</textarea>
+            </div>
           </div>
+
+          </div><!--container-fluid-->
 
         </div>
       </div>
