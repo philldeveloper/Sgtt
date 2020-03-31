@@ -144,7 +144,7 @@ class Contrato_crsTableSeeder extends Seeder
 		    'cargo_rep_privado_foro' => 'Lorem Ipsum',
 
 		    'tipo' => 'Com Repasse',
-		    'user_id' => '1',
+		    'user_id' => '2',
 
 		]);
     }

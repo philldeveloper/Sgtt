@@ -18,10 +18,11 @@
         
         <div class="table-responsive">
             <table class="table table-hover mb-0" id="example">
-              <thead class="roboto-font font-weight-bold text-dark border-left-success border-bottom shadow-sm" style="font-size: 1.25rem">
+              <thead class="roboto-font font-weight-bold text-dark border-left-success border-bottom shadow-sm" style="font-size: 1.05rem">
                 <tr>
                   <th scope="col">#</th>
                   <th scope="col">Tipo</th>
+                  <th scope="col">Perfil</th>
                   <th scope="col">Desenv. por</th>
                   <th scope="col">ICT | Parceiro</th>
                   <th scope="col">E-mail</th>
@@ -38,6 +39,13 @@
                 <tr class="">
                   <td>{{$contratos->id}}</td>
                   <td><div class="badge badge-info">{{$contratos->tipo}}</div></td>
+                  <td>
+                  @if($contratos->user->admin == 1)
+                  <div class="badge badge-dark">Administrador</div>
+                  @else
+                  <div class="badge badge-info">Pesquisador</div>
+                  @endif
+                  </td>
                   <td><!--a class="" href="{{route('perfil', $contratos->id)}}"-->{{$contratos->user->nome}}<!--/a--></td>
                   <td>{{$contratos->nome_ict}} | {{$contratos->nome_parceiro}}</td>
                   <td>{{$contratos->user->email}}</td>
@@ -66,6 +74,13 @@
                 <tr class="">
                   <td>{{$cr->id}}</td>
                   <td><div class="badge badge-success">{{$cr->tipo}}</div></td>
+                  <td>
+                  @if($cr->user->admin == 1)
+                  <div class="badge badge-dark">Administrador</div>
+                  @else
+                  <div class="badge badge-secondary">Pesquisador</div>
+                  @endif
+                  </td>
                   <td><!--a class="" href="{{route('perfil', $contratos->id)}}"-->{{$cr->user->nome}}<!--/a--></td>
                   <td>{{$cr->nome_ict}} | {{$cr->nome_parceiro}}</td>
                   <td>{{$cr->user->email}}</td>
