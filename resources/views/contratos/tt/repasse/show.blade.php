@@ -14,6 +14,33 @@
 
 @section('content')
 
+@include('pesquisador.modals.modal_1')
+@include('pesquisador.modals.modal_2')
+@include('pesquisador.modals.modal_3')
+@include('pesquisador.modals.modal_4')
+@include('pesquisador.modals.modal_5')
+@include('pesquisador.modals.modal_6')
+@include('pesquisador.modals.modal_7')
+@include('pesquisador.modals.modal_8')
+@include('pesquisador.modals.modal_9')
+@include('pesquisador.modals.modal_10')
+@include('pesquisador.modals.modal_11')
+@include('pesquisador.modals.modal_12')
+@include('pesquisador.modals.modal_13')
+@include('pesquisador.modals.modal_14')
+@include('pesquisador.modals.modal_15')
+@include('pesquisador.modals.modalCoordenador')
+@include('pesquisador.modals.modalCoordenadorPrivado')
+@include('pesquisador.modals.modalFundApoio')
+@include('pesquisador.modals.modal_clausula_4')
+@include('pesquisador.modals.modalRecursoPrivado')
+@include('pesquisador.modals.modalVerificarMeta')
+@include('pesquisador.modals.modalPropriedadeIntelectual')
+@include('pesquisador.modals.modalConfidencial')
+@include('pesquisador.modals.modalVigencia')
+@include('pesquisador.modals.modalPDI')
+@include('pesquisador.modals.modalPublicidade')
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
 <script src="{{ asset('js/jquery.mask.min.js') }}"></script>
@@ -359,7 +386,25 @@
             </div>
   
         </div><!--end of tab-content: insert all these here!-->
-  
+         <!------------------------------------------------------------------------->
+        <div class="modal-alert modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title font-weight-bold" id="exampleModalLabel">NOTAS EXPLICATIVAS</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body"><p class="lead">
+              Para cada parceria deverá haver um único plano de trabalho. 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn-lg btn-primary" data-dismiss="modal">Fechar</button>
+              </div>
+            </div><!--modal-content-->
+          </div><!--modal-dialog-->
+        </div><!--modal-alert-->
         <!------------------------------------------------------------------------->
   
         <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
@@ -367,11 +412,37 @@
               <div class="text-justify text-black">
                 
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">2. CLÁUSULA SEGUNDA – DO PLANO DE TRABALHO <a href="#" data-toggle="modal" data-target="#modalExemplo12"><i class="fas fa-fw fa-question-circle float-right"></i></a></h5>
-    
+                <div class="alert alert-warning" role="alert">      
+                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+                    NOTAS EXPLICATIVAS!
+                  <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal">Saiba mais</button>
+                </div> 
                 <p><b>2.1 </b>O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
   
                 <p class=""><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a ICT <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
-
+                <div class="alert alert-warning" role="alert">      
+            <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+              NOTAS EXPLICATIVAS!
+            <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal2">Saiba mais</button>
+          </div> 
+            <div class="modal-alert modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title font-weight-bold" id="exampleModalLabel">NOTAS EXPLICATIVAS</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="lead">Cláusula abaixo são obrigatórias para ICTs, cabendo as Agências de Fomento verificar se há interesse na sua inclusão no Acordo.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn-lg btn-primary" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div><!--modal-dialog-->
+            </div><!--modal-alert-->  
                 <p class="text-blue font-weight-bold">{!! $contratos_cr->clausula_edit_2 !!}</p>
                 
               </div>
@@ -385,8 +456,31 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">3 CLÁUSULA TERCEIRA – DAS ATRIBUIÇÕES E RESPONSABILIDADES <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
-    
+                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">3 CLÁUSULA TERCEIRA – DAS ATRIBUIÇÕES E RESPONSABILIDADES</h5>
+                <!--  Nota explicativa 3 -->
+                <div class="alert alert-warning" role="alert">      
+                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+                    NOTAS EXPLICATIVAS!
+                  <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal3">Saiba mais</button>
+                </div>
+                <div class="modal-alert modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title font-weight-bold" id="exampleModalLabel">NOTAS EXPLICATIVAS</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                          <div class="modal-body"><p class="lead">
+                          Cabe a cada Parceiro especificar as atribuições de cada parte no Acordo, conforme a parceria que irá ser firmada e as obrigações que cada partícipe terá. 
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn-lg btn-primary" data-dismiss="modal">Fechar</button>
+                          </div>
+                      </div>
+                    </div>
+                </div><!--modal-alert-->
                 <p><b>3.1 </b>São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I:</p>
                  
                 <p class="ml-2 bg-light roboto-font"><b>3.1.1. Do(a):</b><input type="text" class="myform-control" name="nome_inst_ict" id="nome_inst_ict" placeholder="{{$contratos_cr->nome_inst_ict}}" disabled=""></p>

@@ -250,10 +250,10 @@
                 <td>{{$cr->created_at}}</td>
                 
                 <td>
-                    <form action="{{route('contrato_sr.destroy', $cr->id) }}" method="POST">
+                    <form action="{{route('contrato_cr.destroy', $cr->id) }}" method="POST">
                       <div class="btn-group" role="group" aria-label="Basic example">
-                        <a @popper(Ver) href="{{route('contratosr_show', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
-                        <a @popper(Editar) href="{{route('contratosr_edit', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
+                        <a @popper(Ver) href="{{route('contratocr_show', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
+                        <a @popper(Editar) href="{{route('contratocr_edit', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
                         <a @popper(Baixar) href="#" data-toggle="modal" data-target="#modal-cr-loading" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
                         <!-- <a @popper(Baixar) href="{{route('printpdf', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a> -->
                         <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$cr->email}}" target="blank"><i class="fas fa-paper-plane"></i></a>
