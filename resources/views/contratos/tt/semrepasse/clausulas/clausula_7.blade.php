@@ -30,9 +30,9 @@
                     execução das tarefas, deveres ou contratos relacionados com a informação divulgada. 
     </p>
 
-    <p class="">{!! $contratos_sr->clausula_edit_7_6 !!}</p>
-    <p class="">{!! $contratos_sr->clausula_edit_7_7 !!}</p>
-    <p class="">{!! $contratos_sr->clausula_edit_7_8 !!}</p>
+    <p><b>7.6.</b> {!! $contratos_sr->clausula_edit_7_6 !!}</p>
+    <p><b>7.7.</b> {!! $contratos_sr->clausula_edit_7_7 !!}</p>
+    <p><b>7.8.</b> {!! $contratos_sr->clausula_edit_7_8 !!}</p>
 
     </div>
 </div>

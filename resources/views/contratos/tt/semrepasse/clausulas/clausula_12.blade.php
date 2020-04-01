@@ -7,8 +7,9 @@
         <p><b>12.1</b> Os <b>PARCEIROS</b> exercerão a fiscalização técnico-financeira das atividades do presente Acordo. </p>
         <p><b>12.2</b>  O pesquisador deverá encaminhar ao <span class="text-blue">Setor responsável ou COMISSÃO DA ICT:</span></p>
 
-        <p class="">{!! $contratos_sr->clausula_edit_12_a !!}</p>
+        
         <div class="col-md-12 mb-3">
+            <p><b>A)</b>{!! $contratos_sr->clausula_edit_12_a !!}</p>
             <p><b>B)</b> Formulário de Resultado Final: no prazo de até <input class="myform-control text-black" type="text" name="clausula_prazo_12_b" value="{{$contratos_sr->clausula_prazo_12_b}}" disabled> dias contados da conclusão do objeto deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho.</p>
         </div>
         
