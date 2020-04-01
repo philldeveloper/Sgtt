@@ -415,31 +415,23 @@
           <div class="container-fluid pt-4 pb-4 bg-light">
 
             <div class="col-md-12 mb-3">
-              <div class="row">
-                <p class="col-lg-1 col-md-1 col-sm-2 col-xs-2 col-xl-1 text-uppercase font-weight-bold h3">2.3</p>
-                <textarea class="form-control col-xl-11 col-lg-11 col-md-11 col-sm-10 col-xs-10" name="clausula_edit_2_3" rows="3" style="background-color: #F6FAFA; resize: none !important;">Na execução do Plano de Trabalho, a atuação dos PARCEIROS dar-se-á sempre de forma associada. Para tanto, os PARCEIROS indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.</textarea>
-              </div>
+                <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
+                <textarea class="form-control" name="clausula_edit_2_3" rows="3" style="background-color: #F6FAFA; resize: none !important;">Na execução do Plano de Trabalho, a atuação dos PARCEIROS dar-se-á sempre de forma associada. Para tanto, os PARCEIROS indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.</textarea>
             </div>
 
             <div class="col-md-12 mb-3">
-              <div class="row">
-              <p class="col-lg-1 col-md-1 col-sm-2 col-xs-2 col-xl-1 text-uppercase font-weight-bold h3">2.4</p>
-                <textarea class="form-control col-xl-11 col-lg-11 col-md-11 col-sm-10 col-xs-10" name="clausula_edit_2_4" rows="3" style="background-color: #F6FAFA; resize: none !important;">Recaem sobre o Coordenador do Projeto, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.</textarea>
-              </div>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.4</a>
+                <textarea class="form-control" name="clausula_edit_2_4" rows="3" style="background-color: #F6FAFA; resize: none !important;">Recaem sobre o Coordenador do Projeto, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.</textarea>
             </div>
 
             <div class="col-md-12 mb-3">
-              <div class="row">
-              <p class="col-lg-1 col-md-1 col-sm-2 col-xs-2 col-xl-1 text-uppercase font-weight-bold h3">2.5</p>
-                <textarea class="form-control col-xl-11 col-lg-11 col-md-11 col-sm-10 col-xs-10" name="clausula_edit_2_5" rows="3" style="background-color: #F6FAFA; resize: none !important;">Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.</textarea>
-              </div>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.5</a>
+                <textarea class="form-control" name="clausula_edit_2_5" rows="3" style="background-color: #F6FAFA; resize: none !important;">Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.</textarea>
             </div>
 
             <div class="col-md-12 mb-3">
-              <div class="row">
-              <p class="col-lg-1 col-md-1 col-sm-2 col-xs-2 col-xl-1 text-uppercase font-weight-bold h3">2.6</p>
-                <textarea class="form-control col-xl-11 col-lg-11 col-md-11 col-sm-10 col-xs-10" name="clausula_edit_2_6" rows="4" style="background-color: #F6FAFA; resize: none !important;">A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo.</textarea>
-              </div>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.6</a>
+                <textarea class="form-control" name="clausula_edit_2_6" rows="4" style="background-color: #F6FAFA; resize: none !important;">A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo.</textarea>
             </div>
 
           </div><!--container-fluid-->
@@ -477,21 +469,14 @@
             </div>
 
             <div class="col-md-12 mb-3">
-                <div class="row">
-                  <p class="col-1 text-uppercase font-weight-bold h3"><span class="badge badge-dark">B</span></p>
-                  <textarea class="form-control col-11" name="clausula_edit_3_1_b" rows="4" style="background-color: #F6FAFA; resize: none !important;">Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;</textarea>
-                </div>
+                <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">LETRA B</a>
+                <textarea class="form-control" name="clausula_edit_3_1_b" rows="3" style="background-color: #F6FAFA; resize: none !important;">Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;</textarea>
             </div>
 
             <div class="col-md-12 mb-3">
-                <div class="row">
-                  
-                  <p class="col-1 text-uppercase font-weight-bold h3">
-                    <span class="badge badge-dark">C</span>
-                    <a href="#" data-toggle="modal" data-target="#modalExemplo16"><i class="fas fa-fw fa-question-circle"></i></a>
-                  </p>
-                  <textarea placeholder="Demais..." class="form-control col-11" name="clausula_edit_3_1_c" rows="4" style="background-color: #F6FAFA; resize: none !important;"></textarea>
-                </div>
+                <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">LETRA C</a>
+                <a href="#" data-toggle="modal" data-target="#modalExemplo16" class="float-left"><i class="fas fa-fw fa-question-circle"></i></a>
+                <textarea class="form-control" name="clausula_edit_3_1_c" rows="3" style="background-color: #F6FAFA; resize: none !important;" placeholder="demais..."></textarea>
             </div>
 
             <p class="mt-5 mb-3 roboto-font"><b>3.1.2.  Do(a) <input  class="myform-control" type="text" name="nome_inst_privado" id="handle_parceiro" placeholder="Instituição" disabled>:(PARCEIRO PRIVADO)</b></p>
@@ -506,9 +491,12 @@
               </div>
             </div>
 
-            <b>B)</b> Colaborar, nos termos do plano de trabalho, para que o Acordo alcance os objetivos nele descritos:
-            <div class="col-md-12 mb-3"><a href="#" data-toggle="modal" data-target="#modalExemplo17"><i class="fas fa-fw fa-question-circle float-right m-2"></i></a>
-                <textarea placeholder="C) Demais..." class="form-control font-weight-bold" name="clausula_edit_3_2_b" rows="4" style="background-color: #F6FAFA; resize: none !important;"></textarea>
+            <p><b>B)</b> Colaborar, nos termos do plano de trabalho, para que o Acordo alcance os objetivos nele descritos:</p>
+            
+            <div class="col-md-12 mb-3">
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">LETRA C</a>
+            <a href="#" data-toggle="modal" data-target="#modalExemplo17"><i class="fas fa-fw fa-question-circle float-right m-2"></i></a>
+                <textarea placeholder="Demais..." class="form-control font-weight-bold" name="clausula_edit_3_2_b" rows="4" style="background-color: #F6FAFA; resize: none !important;"></textarea>
             </div> 
 
             <p><b>3.2.</b><span id="coord_ict"></span><span id="coord_privado"></span>poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.</p>
@@ -518,7 +506,7 @@
             </div>
 
             <div class="col-md-12 mb-3">
-                <a class="badge badge-info text-light font-weight-bold float-left m-2">Cláusula 3.3</a>
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 3.3</a>
                 <textarea class="form-control" name="clausula_edit_3" rows="4" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente Acordo de Parceria para PD&I ou de publicações a ele referentes.</textarea>
             </div>
 
@@ -557,9 +545,7 @@
     <!------------------------------------------------------------------------->
     <div class="tab-pane " id="clausula4" role="tabpanel" aria-labelledby="clausula4-tab">
       <div class="container-fluid p-0 mt-0 m-0">
-        <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">4. CLÁUSULA QUARTA - DO PESSOAL <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
-        </div>
+        <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">4. CLÁUSULA QUARTA - DO PESSOAL <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr>
         <p class="mt-3 text-justify text-black py-4">
           <b>4.1.</b> Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações
             trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si 
@@ -577,66 +563,73 @@
     <div class="tab-pane" id="clausula4_a" role="tabpanel" aria-labelledby="clausula4_a-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">5. CLÁUSULA QUINTA - DA PROPRIEDADE INTELECTUAL E DA CRIAÇÃO PROTEGIDA</h5>
-          <div class="alert alert-warning" role="alert">      
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">5. CLÁUSULA QUINTA - DA PROPRIEDADE INTELECTUAL E DA CRIAÇÃO PROTEGIDA</h4><hr>
+          <div class="alert alert-warning mb-5 mt-5" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             NOTAS EXPLICATIVAS!
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#propriedade_intelectual">Saiba mais</button>
           </div>
         </div><!--text-justify-->
-        <div class="mt-3 text-justify text-black py-4">
-          <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_5_1" rows="4" style="background-color: #F6FAFA; resize: none !important;">5.1. Todos os dados, técnicas, tecnologia, know-how, marcas, patentes e quaisquer outros bens ou direitos de propriedade intelectual/industrial de um parceiro que este venha a utilizar para execução do Projeto continuarão a ser de sua propriedade exclusiva, não podendo o outro parceiro cedê-los, transferi-los, aliená-los, divulgá-los ou empregá-los em quaisquer outros projetos ou sob qualquer outra forma sem o prévio consentimento escrito do seu proprietário.</textarea>
-          </div>
 
-          <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_5_2" rows="4" style="background-color: #F6FAFA; resize: none !important;">5.2. Todo desenvolvimento tecnológico passível de proteção intelectual, em qualquer modalidade, proveniente da execução do presente Acordo de Parceria, deverá ter a sua propriedade compartilhada entre os PARCEIROS, na mesma proporção em que cada instituição contribuiu com recursos humanos, além do conhecimento pré-existente aplicado, conforme previsto no art. 9º, § 3°, da Lei nº 10.973/2004.</textarea>
-          </div>
+        <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+          <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+          Edite a(s) cláusula(s) abaixo (se julgar necessário):
+        </div>
 
+        <div class="container-fluid pt-4 pb-4 pl-0 pr-0">
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_5_3" rows="4" style="background-color: #F6FAFA; resize: none !important;">5.3. A divisão da titularidade sobre a propriedade intelectual prevista na cláusula anterior será definida por meio de instrumento próprio, respeitando-se o percentual de x% (x por cento) para a ICT/AGÊNCIA DE FOMENTO.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.1</a>
+              <textarea class="form-control" name="clausula_edit_5_1" rows="3" style="background-color: #F6FAFA; resize: none !important;">Todos os dados, técnicas, tecnologia, know-how, marcas, patentes e quaisquer outros bens ou direitos de propriedade intelectual/industrial de um parceiro que este venha a utilizar para execução do Projeto continuarão a ser de sua propriedade exclusiva, não podendo o outro parceiro cedê-los, transferi-los, aliená-los, divulgá-los ou empregá-los em quaisquer outros projetos ou sob qualquer outra forma sem o prévio consentimento escrito do seu proprietário.</textarea>
           </div>
-
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_5_4" rows="4" style="background-color: #F6FAFA; resize: none !important;">5.4 O instrumento previsto na subcláusula 5.3 deverá observar os requisitos legais e formais necessários para sua celebração e averbação junto aos órgãos competentes.</textarea>
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.2</a>
+              <textarea class="form-control" name="clausula_edit_5_2" rows="3" style="background-color: #F6FAFA; resize: none !important;">Todo desenvolvimento tecnológico passível de proteção intelectual, em qualquer modalidade, proveniente da execução do presente Acordo de Parceria, deverá ter a sua propriedade compartilhada entre os PARCEIROS, na mesma proporção em que cada instituição contribuiu com recursos humanos, além do conhecimento pré-existente aplicado, conforme previsto no art. 9º, § 3°, da Lei nº 10.973/2004.</textarea>
           </div>
-
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_5_5" rows="4" style="background-color: #F6FAFA; resize: none !important;">5.5 Eventuais impedimentos de um dos parceiros não prejudicará a titularidade e/ou a exploração dos direitos da Propriedade Intelectual pelos demais.</textarea>
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.3</a>
+              <textarea class="form-control" name="clausula_edit_5_3" rows="3" style="background-color: #F6FAFA; resize: none !important;">A divisão da titularidade sobre a propriedade intelectual prevista na cláusula anterior será definida por meio de instrumento próprio, respeitando-se o percentual de x% (x por cento) para a ICT/AGÊNCIA DE FOMENTO.</textarea>
           </div>
-
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_5_6" rows="4" style="background-color: #F6FAFA; resize: none !important;">5.6 Os PARCEIROS devem assegurar, na medida de suas respectivas responsabilidades, que os projetos propostos e que a alocação dos recursos tecnológicos correspondentes não infrinjam direitos autorais, patentes ou outros direitos intelectuais, assim como direitos de terceiros.</textarea>
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.4</a>
+              <textarea class="form-control" name="clausula_edit_5_4" rows="3" style="background-color: #F6FAFA; resize: none !important;">O instrumento previsto na subcláusula 5.3 deverá observar os requisitos legais e formais necessários para sua celebração e averbação junto aos órgãos competentes.</textarea>
           </div>
-
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_5_7" rows="4" style="background-color: #F6FAFA; resize: none !important;">5.7 Na hipótese de eventual infração de qualquer direito de propriedade intelectual relacionada às tecnologias resultantes, os parceiros concordam que as medidas judiciais cabíveis visando coibir a infração do respectivo direito podem ser adotadas em conjunto ou separadamente.</textarea>
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.5</a>
+              <textarea class="form-control" name="clausula_edit_5_5" rows="3" style="background-color: #F6FAFA; resize: none !important;">Eventuais impedimentos de um dos parceiros não prejudicará a titularidade e/ou a exploração dos direitos da Propriedade Intelectual pelos demais.</textarea>
           </div>
-
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_5_8" rows="4" style="background-color: #F6FAFA; resize: none !important;">5.8 Os depósitos de pedidos de proteção de propriedade intelectual devem ser iniciados necessariamente junto ao Instituto Nacional de Propriedade Industrial - INPI e registrados no sistema de acompanhamento da ICT/AGÊNCIA DE FOMENTO.</textarea>
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.6</a>
+              <textarea class="form-control" name="clausula_edit_5_6" rows="3" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS devem assegurar, na medida de suas respectivas responsabilidades, que os projetos propostos e que a alocação dos recursos tecnológicos correspondentes não infrinjam direitos autorais, patentes ou outros direitos intelectuais, assim como direitos de terceiros.</textarea>
           </div>
-
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_5_9" rows="4" style="background-color: #F6FAFA; resize: none !important;">5.9 Caberá ao PARCEIRO PRIVADO, com exclusividade, a responsabilidade de preparar, arquivar, processar e manter pedidos de patente no Brasil e em ouros países. </textarea>
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.7</a>
+              <textarea class="form-control" name="clausula_edit_5_7" rows="3" style="background-color: #F6FAFA; resize: none !important;">Na hipótese de eventual infração de qualquer direito de propriedade intelectual relacionada às tecnologias resultantes, os parceiros concordam que as medidas judiciais cabíveis visando coibir a infração do respectivo direito podem ser adotadas em conjunto ou separadamente.</textarea>
           </div>
-
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_5_10" rows="4" style="background-color: #F6FAFA; resize: none !important;">5.10 As decisões relacionadas à preparação, processamento e manutenção de pedido de patente das tecnologias resultantes deste instrumento, no Brasil e em outros países, devem ser tomadas em conjunto pelos PARCEIROS ora acordantes.</textarea>
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.8</a>
+              <textarea class="form-control" name="clausula_edit_5_8" rows="3" style="background-color: #F6FAFA; resize: none !important;">Os depósitos de pedidos de proteção de propriedade intelectual devem ser iniciados necessariamente junto ao Instituto Nacional de Propriedade Industrial - INPI e registrados no sistema de acompanhamento da ICT/AGÊNCIA DE FOMENTO.</textarea>
           </div>
-
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_5_11" rows="4" style="background-color: #F6FAFA; resize: none !important;">5.11 Na hipótese de eventual infração de qualquer patente relacionada às tecnologias resultantes, os PARCEIROS concordam que as medidas judiciais cabíveis visando a coibir a infração da respectiva patente podem ser adotadas pelos PARCEIROS, em conjunto ou separadamente.</textarea>
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.9</a>
+              <textarea class="form-control" name="clausula_edit_5_9" rows="3" style="background-color: #F6FAFA; resize: none !important;">Caberá ao PARCEIRO PRIVADO, com exclusividade, a responsabilidade de preparar, arquivar, processar e manter pedidos de patente no Brasil e em ouros países. </textarea>
           </div>
-
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_5_12" rows="4" style="background-color: #F6FAFA; resize: none !important;">5.12 Tanto no que se refere à proteção da propriedade intelectual quanto às medidas judiciais, os PARCEIROS concordam que as despesas deverão ser suportadas de acordo com os percentuais definidos na exploração comercial das tecnologias.</textarea>
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.10</a>
+              <textarea class="form-control" name="clausula_edit_5_10" rows="3" style="background-color: #F6FAFA; resize: none !important;">As decisões relacionadas à preparação, processamento e manutenção de pedido de patente das tecnologias resultantes deste instrumento, no Brasil e em outros países, devem ser tomadas em conjunto pelos PARCEIROS ora acordantes.</textarea>
           </div>
-
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_5_13" rows="4" style="background-color: #F6FAFA; resize: none !important;">5.13 A ICT/AGÊNCIA DE FOMENTO poderá outorgar poderes ao PARCEIRO PRIVADO para praticar todo e qualquer ato necessário para o depósito, acompanhamento e manutenção de pedido de patente das tecnologias resultantes do presente instrumento, no Brasil e em outros países.</textarea>
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.11</a>
+              <textarea class="form-control" name="clausula_edit_5_11" rows="3" style="background-color: #F6FAFA; resize: none !important;">Na hipótese de eventual infração de qualquer patente relacionada às tecnologias resultantes, os PARCEIROS concordam que as medidas judiciais cabíveis visando a coibir a infração da respectiva patente podem ser adotadas pelos PARCEIROS, em conjunto ou separadamente.</textarea>
           </div>
-        </div><!--text-black-->
+          <div class="col-md-12 mb-3">
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.12</a>
+              <textarea class="form-control" name="clausula_edit_5_12" rows="3" style="background-color: #F6FAFA; resize: none !important;">Tanto no que se refere à proteção da propriedade intelectual quanto às medidas judiciais, os PARCEIROS concordam que as despesas deverão ser suportadas de acordo com os percentuais definidos na exploração comercial das tecnologias.</textarea>
+          </div>
+          <div class="col-md-12 mb-3">
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.13</a>
+              <textarea class="form-control" name="clausula_edit_5_13" rows="3" style="background-color: #F6FAFA; resize: none !important;">A ICT/AGÊNCIA DE FOMENTO poderá outorgar poderes ao PARCEIRO PRIVADO para praticar todo e qualquer ato necessário para o depósito, acompanhamento e manutenção de pedido de patente das tecnologias resultantes do presente instrumento, no Brasil e em outros países.</textarea>
+          </div>
+        </div><!--container-fluid-->
       </div>
     </div>
     <!------------------------------------------------------------------------->
@@ -644,8 +637,8 @@
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
           
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">6. CLÁUSULA SEXTA - DA DIVULGAÇÃO E DAS PUBLICAÇÕES</h5>
-
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">6. CLÁUSULA SEXTA - DA DIVULGAÇÃO E DAS PUBLICAÇÕES</h4><hr>
+          <br>
           <p><b>6.1</b> Os PARCEIROS concordam em não utilizar o nome do outro PARCEIRO ou de seus empregados em qualquer propaganda, informação à imprensa ou publicidade relativa ao acordo ou a qualquer produto ou serviço decorrente deste, sem a prévia aprovação por escrito do PARCEIRO referido.</p>
           
           <p>
@@ -661,84 +654,120 @@
       </div>
     </div><!--end of tab-content: insert all these here!-->
     <!------------------------------------------------------------------------->
-    <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
+    <div class="tab-pane" id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
           
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">7 CLÁUSULA SÉTIMA - DAS INFORMAÇÕES CONFIDENCIAIS E SIGILOSAS<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
-
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">7 CLÁUSULA SÉTIMA - DAS INFORMAÇÕES CONFIDENCIAIS E SIGILOSAS<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr>
+          <br>
           <p><b>7.1 </b>Os PARCEIROS adotarão todas as medidas necessárias para proteger o sigilo das INFORMAÇÕES CONFIDENCIAIS recebidas em função da celebração, desenvolvimento e execução do presente Acordo de Parceria, inclusive na adoção de medidas que assegurem a tramitação do processo, não as divulgando a terceiros, sem a prévia e escrita autorização da outro PARCEIRO.</p>
-
           <p><b>7.2 </b>Fica vedado aos PARCEIROS utilizar, no âmbito deste Acordo de Parceria, nomes, símbolos e imagens que caracterizem promoção pessoal de autoridades ou servidores públicos.Os PARCEIROS informarão aos seus funcionários e prestadores de serviços e consultores que necessitem ter acesso às informações e conhecimentos que envolvem o objeto do Acordo, acerca das obrigações de sigilo assumidas, responsabilizando-se integralmente por eventuais infrações que estes possam cometer. </p>
           <p><b>7.3 </b>As PARCEIROS farão com que cada pessoa de sua organização, ou sob o seu controle, que receba informações confidenciais, assuma o compromisso de confidencialidade, por meio assinatura de Termo de Confidencialidade.</p>
-
           <p><b>7.4 </b>Não haverá violação das obrigações de CONFIDENCIALIDADE previstas no Acordo de Parceria nas seguintes hipóteses: </p>
-          <p><b>7.4.1.</b> Informações técnicas ou comerciais que já sejam do conhecimento dos PARCEIROS na data da divulgação, ou que tenham sido comprovadamente desenvolvidas de maneira independente e sem relação com o Acordo pelo PARCEIRO que a revele; 
-              <br><br>  <b>7.4.2.</b> Informações técnicas ou comerciais que sejam ou se tornem de domínio público, sem culpa da(s) PARCEIROS (S);
-              <br><br> <b>7.4.2.1.</b> Qualquer informação que tenha sido revelada somente em termos gerais, não será considerada de conhecimento ou domínio público. 
-              <br><br> <b>7.4.3.</b> Informações técnicas ou comerciais que sejam recebidas de um terceiro que não esteja sob obrigação de manter as informações técnicas ou comerciais em confidencialidade;
-              <br><br> <b>7.4.4.</b> Informações que possam ter divulgação exigida por lei, decisão judicial ou administrativa;
-              <br><br> <b>7.4.5.</b> Revelação expressamente autorizada, por escrito, pelos PARCEIROS.
-          </p>
-          <p><b>7.5.</b> A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada. A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada. 
-          </p>
+          <p><b>7.4.1.</b> Informações técnicas ou comerciais que já sejam do conhecimento dos PARCEIROS na data da divulgação, ou que tenham sido comprovadamente desenvolvidas de maneira independente e sem relação com o Acordo pelo PARCEIRO que a revele; </p>
+          <p><b>7.4.2.</b> Informações técnicas ou comerciais que sejam ou se tornem de domínio público, sem culpa da(s) PARCEIROS (S);</p>
+          <p><b>7.4.2.1.</b> Qualquer informação que tenha sido revelada somente em termos gerais, não será considerada de conhecimento ou domínio público. </p>
+          <p><b>7.4.3.</b> Informações técnicas ou comerciais que sejam recebidas de um terceiro que não esteja sob obrigação de manter as informações técnicas ou comerciais em confidencialidade;</p>
+          <p><b>7.4.4.</b> Informações que possam ter divulgação exigida por lei, decisão judicial ou administrativa;</p>
+          <p><b>7.4.5.</b> Revelação expressamente autorizada, por escrito, pelos PARCEIROS.</p>
+          <p><b>7.5.</b> A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada. A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada. </p>
+          
           <div class="alert alert-warning" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             NOTAS EXPLICATIVAS!
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#confidencial">Saiba mais</button>
           </div>
-          <!--clausula editavel 7-->
-          <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_7_6" rows="3" style="background-color: #F6FAFA; resize: none !important;">7.6.As obrigações de sigilo em relação às INFORMAÇÕES CONFIDENCIAIS serão mantidas durante o período de vigência deste Acordo e pelo prazo de 5 (cinco) anos após sua extinção.</textarea>
+
+          <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+            <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+            Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
-          <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_7_7" rows="3" style="background-color: #F6FAFA; resize: none !important;">7.7.Para efeito dessa cláusula, todas as informações referentes ao “processo/serviço/projeto........” serão consideradas como INFORMAÇÃO CONFIDENCIAL, retroagindo às informações obtidas antes da assinatura do acordo.</textarea>
-          </div>
-          <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_7_8" rows="3" style="background-color: #F6FAFA; resize: none !important;">7.8.Para efeito dessa cláusula, a classificação das informações como confidenciais será de responsabilidade de seu titular, devendo indicar os conhecimentos ou informações classificáveis como CONFIDENCIAIS por qualquer meio.</textarea>
-          </div>
+
+          <div class="container-fluid bg-light p-3 pt-4 pb-4">
+            <div class="col-md-12 mb-3">
+                <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.6</a>
+                <textarea class="form-control" name="clausula_edit_7_6" rows="3" style="background-color: #F6FAFA; resize: none !important;">As obrigações de sigilo em relação às INFORMAÇÕES CONFIDENCIAIS serão mantidas durante o período de vigência deste Acordo e pelo prazo de 5 (cinco) anos após sua extinção.</textarea>
+            </div>
+            <div class="col-md-12 mb-3">
+                <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.7</a>
+                <textarea class="form-control" name="clausula_edit_7_7" rows="3" style="background-color: #F6FAFA; resize: none !important;">Para efeito dessa cláusula, todas as informações referentes ao “processo/serviço/projeto........” serão consideradas como INFORMAÇÃO CONFIDENCIAL, retroagindo às informações obtidas antes da assinatura do acordo.</textarea>
+            </div>
+            <div class="col-md-12 mb-3">
+                <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.8</a>
+                <textarea class="form-control" name="clausula_edit_7_8" rows="3" style="background-color: #F6FAFA; resize: none !important;">Para efeito dessa cláusula, a classificação das informações como confidenciais será de responsabilidade de seu titular, devendo indicar os conhecimentos ou informações classificáveis como CONFIDENCIAIS por qualquer meio.</textarea>
+            </div>
+          </div><!--container-->
+
         </div>
       </div>
     </div>
     <!------------------------------------------------------------------------->
     <div class="tab-pane" id="clausula3" role="tabpanel" aria-labelledby="clausula3-tab">
       <div class="container-fluid p-0 mt-0 m-0">
-        <div class="text-justify text-blue">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">8 CLÁUSULA OITAVA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h5>
-          <!--clausula editavel 8-->
-          <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_8_1" rows="7" style="background-color: #F6FAFA; resize: none !important;">8.1 Os PARCEIROS deverão tomar todas as medidas necessárias, observados os princípios de civilidade e legalidade, e de acordo com as boas práticas empresariais para cumprir e assegurar que  (i) seus conselheiros, diretores, empregados qualquer pessoa agindo em seu nome, inclusive prepostos e subcontratados, quando houver (todos doravante referidos como “Partes Relacionadas” e, cada uma delas, como “uma Parte Relacionada”) obedecerão a todas as leis aplicáveis, incluindo àquelas  relativas ao combate à corrupção, suborno e lavagem de dinheiro, bem como àquelas  relativas a sanções econômicas, vigentes nas jurisdições em que os PARCEIROS estão constituídos e na jurisdição em que o Acordo de Parceria será cumprido (se diferentes), para impedir qualquer atividade fraudulenta por si ou por uma Parte Relacionada com relação ao cumprimento deste Acordo de Parceria. Os PARCEIROS obrigam-se a observar rigidamente as condições contidas nos itens abaixo, sob pena de imediata e justificada rescisão do acordo.</textarea>
+        
+
+        <div class="text-justify text-black">
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">8 CLÁUSULA OITAVA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h4><hr>
+          <div class="alert alert-warning mb-5 mt-5" role="alert">      
+            <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+            NOTAS EXPLICATIVAS!
+            <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#propriedade_intelectual">Saiba mais</button>
           </div>
-          <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_8_2" rows="5" style="background-color: #F6FAFA; resize: none !important;">8.2 Um PARCEIRO deverá notificar imediatamente o outro sobre eventual suspeita de qualquer fraude tenha ocorrido, esteja ocorrendo, ou provavelmente ocorrerá, para que sejam tomadas as medidas necessárias para apurá-las. Os PARCEIROS declaram-se cientes de que seus Departamentos Jurídicos e/ou advogados contratados estão autorizados, em caso de práticas que atentem contra os preceitos dessa cláusula, a solicitar a imediata abertura dos procedimentos criminais, cíveis e administrativos cabíveis à cada hipótese:</textarea>
-          </div>
-          <div class="">
-            <div class="col-md-12 mb-3">
-                <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_8_2_a" rows="3" style="background-color: #F6FAFA; resize: none !important;">A) Os PARCEIROS não poderão, em hipótese alguma, dar ou oferecer nenhum tipo de presente, viagens, vantagens a qualquer empregado, servidor, preposto ou diretor de outro PARCEIRO, especialmente àqueles responsáveis pela fiscalização do presente Acordo. Serão admitidos apenas, em épocas específicas, a entrega de brindes, tais como canetas, agendas, folhinhas, cadernos etc;</textarea>
-            </div>
-            <div class="col-md-12 mb-3">
-                <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_8_2_b" rows="3" style="background-color: #F6FAFA; resize: none !important;">B) Os PARCEIROS somente poderão representar outro PARCEIRO perante órgãos públicos quando devidamente autorizado para tal, seja no corpo do próprio Acordo, seja mediante autorização prévia, expressa e escrita de seu representante com poderes para assim proceder;</textarea>
-            </div>
-            <div class="col-md-12 mb-3">
-                <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_8_2_c" rows="3" style="background-color: #F6FAFA; resize: none !important;">C) Os PARCEIROS e seus empregados/prepostos, quando agirem em nome ou defendendo interesses deste Acordo perante órgãos, autoridades ou agentes públicos, não poderão dar, receber ou oferecer quaisquer presentes, vantagens ou favores a agentes públicos, sobretudo no intuito de obter qualquer tipo de favorecimento para os PARCEIROS;</textarea>
-            </div>
-            <div class="col-md-12 mb-3">
-                <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_8_2_d" rows="3" style="background-color: #F6FAFA; resize: none !important;">D) Os PARCEIROS, quando agirem em nome ou defendendo seus interesses, não poderão fornecer informações sigilosas a terceiros ou a agentes públicos, mesmo que isso venha a facilitar, de alguma forma, o cumprimento desse Acordo;</textarea>
-            </div>
-            <div class="col-md-12 mb-3">
-                <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_8_2_e" rows="3" style="background-color: #F6FAFA; resize: none !important;">E) Os PARCEIROS, ao tomar conhecimento de que algum de seus prepostos ou empregados descumpriram as premissas e obrigações acima pactuadas, denunciarão espontaneamente o fato, de forma que, juntas, elaborem e executem um plano de ação para (i) afastar o empregado ou preposto imediatamente; (ii) evitar que tais atos se repitam e (iii) garantir que o Acordo tenha condições de continuar vigente.</textarea>
-            </div>
-          </div>
+        </div><!--text-justify-->
+
+        <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+          <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+          Edite a(s) cláusula(s) abaixo (se julgar necessário):
         </div>
+
+        <div class="container-fluid pt-4 pb-4 pl-0 pr-0">
+          
+          <div class="col-md-12 mb-3">
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.1</a>
+            <textarea class="form-control" name="clausula_edit_8_1" rows="8" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS deverão tomar todas as medidas necessárias, observados os princípios de civilidade e legalidade, e de acordo com as boas práticas empresariais para cumprir e assegurar que  (i) seus conselheiros, diretores, empregados qualquer pessoa agindo em seu nome, inclusive prepostos e subcontratados, quando houver (todos doravante referidos como “Partes Relacionadas” e, cada uma delas, como “uma Parte Relacionada”) obedecerão a todas as leis aplicáveis, incluindo àquelas  relativas ao combate à corrupção, suborno e lavagem de dinheiro, bem como àquelas  relativas a sanções econômicas, vigentes nas jurisdições em que os PARCEIROS estão constituídos e na jurisdição em que o Acordo de Parceria será cumprido (se diferentes), para impedir qualquer atividade fraudulenta por si ou por uma Parte Relacionada com relação ao cumprimento deste Acordo de Parceria. Os PARCEIROS obrigam-se a observar rigidamente as condições contidas nos itens abaixo, sob pena de imediata e justificada rescisão do acordo.</textarea>
+          </div>
+
+          <div class="col-md-12 mb-3">
+          <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.2</a>
+            <textarea class="form-control" name="clausula_edit_8_2" rows="6" style="background-color: #F6FAFA; resize: none !important;">Um PARCEIRO deverá notificar imediatamente o outro sobre eventual suspeita de qualquer fraude tenha ocorrido, esteja ocorrendo, ou provavelmente ocorrerá, para que sejam tomadas as medidas necessárias para apurá-las. Os PARCEIROS declaram-se cientes de que seus Departamentos Jurídicos e/ou advogados contratados estão autorizados, em caso de práticas que atentem contra os preceitos dessa cláusula, a solicitar a imediata abertura dos procedimentos criminais, cíveis e administrativos cabíveis à cada hipótese:</textarea>
+          </div>
+
+          <div class="col-md-12 mb-3">
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA A)</a>
+            <textarea class="form-control" name="clausula_edit_8_2_a" rows="3" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS não poderão, em hipótese alguma, dar ou oferecer nenhum tipo de presente, viagens, vantagens a qualquer empregado, servidor, preposto ou diretor de outro PARCEIRO, especialmente àqueles responsáveis pela fiscalização do presente Acordo. Serão admitidos apenas, em épocas específicas, a entrega de brindes, tais como canetas, agendas, folhinhas, cadernos etc;</textarea>
+          </div>
+
+          <div class="col-md-12 mb-3">
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA B)</a>
+            <textarea class="form-control" name="clausula_edit_8_2_b" rows="3" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS somente poderão representar outro PARCEIRO perante órgãos públicos quando devidamente autorizado para tal, seja no corpo do próprio Acordo, seja mediante autorização prévia, expressa e escrita de seu representante com poderes para assim proceder;</textarea>
+          </div>
+
+          <div class="col-md-12 mb-3">
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA C)</a>
+            <textarea class="form-control" name="clausula_edit_8_2_c" rows="3" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS e seus empregados/prepostos, quando agirem em nome ou defendendo interesses deste Acordo perante órgãos, autoridades ou agentes públicos, não poderão dar, receber ou oferecer quaisquer presentes, vantagens ou favores a agentes públicos, sobretudo no intuito de obter qualquer tipo de favorecimento para os PARCEIROS;</textarea>
+          </div>
+
+          <div class="col-md-12 mb-3">
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA D)</a>
+            <textarea class="form-control" name="clausula_edit_8_2_d" rows="3" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS, quando agirem em nome ou defendendo seus interesses, não poderão fornecer informações sigilosas a terceiros ou a agentes públicos, mesmo que isso venha a facilitar, de alguma forma, o cumprimento desse Acordo;</textarea>
+          </div>
+
+          <div class="col-md-12 mb-3">
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA E)</a>
+            <textarea class="form-control" name="clausula_edit_8_2_e" rows="3" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS, ao tomar conhecimento de que algum de seus prepostos ou empregados descumpriram as premissas e obrigações acima pactuadas, denunciarão espontaneamente o fato, de forma que, juntas, elaborem e executem um plano de ação para (i) afastar o empregado ou preposto imediatamente; (ii) evitar que tais atos se repitam e (iii) garantir que o Acordo tenha condições de continuar vigente.</textarea>
+          </div>
+
+        </div>
+
+        
       </div><!--container-fluid-->
     </div><!--end of tab-content: insert all these here!-->
     <!------------------------------------------------------------------------->
     <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">9 CLÁUSULA NONA - DO ACOMPANHAMENTO</h5>
-
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">9 CLÁUSULA NONA - DO ACOMPANHAMENTO</h4><hr>
+          <br>
           <p><b>9.1</b> Aos coordenadores indicados pelos PARCEIROS competirá dirimir as dúvidas que surgirem na sua execução e de tudo dará ciência às respectivas autoridades.</p>
           <p><b>9.2</b> O coordenador do projeto indicado pela ICT/AGÊNCIA DE FOMENTO anotará, em registro próprio, as ocorrências relacionadas com a execução do objeto, recomendando as medidas necessárias à autoridade competente para regularização das inconsistências observadas. </p>
           <p><b>9.3</b> O acompanhamento do projeto pelos coordenadores não exclui nem reduz a responsabilidade dos PARCEIROS perante terceiros. </p>
@@ -752,8 +781,8 @@
     <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">10. CLÁUSULA DÉCIMA - DA VIGÊNCIA E DA PRORROGAÇÃO</h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">10. CLÁUSULA DÉCIMA - DA VIGÊNCIA E DA PRORROGAÇÃO</h4><hr>
+          <br>
           <p><b>10.1</b> O presente Acordo de Parceria para PD&I vigerá pelo prazo de <input class="myform-control text-black" type="text" name="prazo_vigencia" placeholder="Quantidade de anos"> anos, a partir da data de sua assinatura, prorrogáveis.</p>
           <div class="alert alert-warning" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
@@ -769,9 +798,8 @@
     <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">11. CLÁUSULA DÉCIMA PRIMEIRA- DAS ALTERAÇÕES</h5>
-
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">11. CLÁUSULA DÉCIMA PRIMEIRA- DAS ALTERAÇÕES</h4><hr>
+          <br>
           <p><b>11.1</b> As cláusulas e condições estabelecidas no presente instrumento poderão ser alteradas mediante celebração de termo aditivo.</p>
           <p><b>11.2</b> A proposta de alteração, devidamente justificada, deverá ser apresentada por escrito, dentro da vigência do instrumento.</p>
           <p><b>11.3</b> É vedado o aditamento do presente Acordo com o intuito de alterar o seu objeto, sob pena de nulidade do ato e responsabilidade do agente que o praticou.</p>
@@ -783,18 +811,22 @@
     <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">12. CLÁUSULA DÉCIMA SEGUNDA – DO MONITORAMENTO, DA
-              AVALIAÇÃO E DA PRESTAÇÃO DE CONTAS</h5>
-
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">12. CLÁUSULA DÉCIMA SEGUNDA – DO MONITORAMENTO, DA
+              AVALIAÇÃO E DA PRESTAÇÃO DE CONTAS</h4><hr>
+          <br>
           <p><b>12.1</b> Os <b>PARCEIROS</b> exercerão a fiscalização técnico-financeira das atividades do presente Acordo. </p>
-          <p><b>12.2</b>  O pesquisador deverá encaminhar ao <span class="text-blue">Setor responsável ou COMISSÃO DA ICT/AGÊNCIA DE FOMENTO:</span>  </p>
+          <p><b>12.2</b>  O pesquisador deverá encaminhar ao <span class="font-weight-bold">Setor responsável ou COMISSÃO DA ICT/AGÊNCIA DE FOMENTO:</span>  </p>
 
           <!--clausula editavel 12-->
+          <div class="alert alert-info py-2 mt-5 mb-4 text-dark font-weight-bold" role="alert">      
+            <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">Edite a(s) cláusula(s) abaixo (se julgar necessário):
+          </div>
 
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_12_a" rows="3" style="background-color: #F6FAFA; resize: none !important;">A) Formulário de Resultado Parcial: anualmente, até o último dia útil do mês de dezembro de cada ano de vigência deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho;</textarea>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Letra A)</a>
+              <textarea class="form-control" name="clausula_edit_12_a" rows="3" style="background-color: #F6FAFA; resize: none !important;">Formulário de Resultado Parcial: anualmente, até o último dia útil do mês de dezembro de cada ano de vigência deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho;</textarea>
           </div>
+
           <div class="col-md-12 mb-3">
             <p><b>B)</b> Formulário de Resultado Final: no prazo de até <input class="myform-control text-black" type="text" name="clausula_prazo_12_b" placeholder="Prazo em dias"> dias contados da conclusão do objeto deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho.</p>
           </div>
@@ -815,25 +847,30 @@
     <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">13. CLÁUSULA DÉCIMA TERCEIRA – DA EXTINÇÃO DO ACORDO</h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">13. CLÁUSULA DÉCIMA TERCEIRA – DA EXTINÇÃO DO ACORDO</h4><hr>
+          <br>
 
           <p><b>13.1</b> Este Acordo poderá, a qualquer tempo, ser denunciado pelos <b>PARCEIROS</b>, devendo o interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de <span>60 (sessenta)</span> dias da data em que se pretenda que sejam encerradas as atividades, respeitadas as obrigações assumidas com terceiros entre os <b>PARCEIROS</b>, creditando eventuais benefícios adquiridos no período.</p>
 
         <!--clausula editavel 13-->
 
         <div class="col-md-12 mb-3">
+          <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">13.2</a>
           <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13_2" rows="5" style="background-color: #F6FAFA; resize: none !important;">13.2 Constituem motivos para rescisão de pleno direito o inadimplemento de quaisquer das cláusulas pactuadas neste Acordo, o descumprimento das normas estabelecidas na legislação vigente ou a superveniência de norma legal ou fato que tome material ou formalmente inexequível o Acordo de Parceria para PD&I, imputando-se aos PARCEIROS as responsabilidades pelas obrigações até então assumidas, devendo o PARCEIRO que se julgar prejudicado notificar o parceiro para que apresente esclarecimentos no prazo de 15 (quinze) dias corridos.</textarea>
         </div>
 
         <div class="col-md-12 mb-3">
+          <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">13.2.1</a>
           <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13_2_1" rows="3" style="background-color: #F6FAFA; resize: none !important;">13.2.1  Prestados os esclarecimentos, os PARCEIROS deverão, por mútuo consenso, decidir pela rescisão ou manutenção do Acordo.</textarea>
         </div>
 
         <div class="col-md-12 mb-3">
+          <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">13.2.2</a>
           <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13_2_2" rows="3" style="background-color: #F6FAFA; resize: none !important;">13.2.2  Decorrido o prazo para esclarecimentos, caso não haja resposta, o Acordo será rescindido de pleno direito, independentemente de notificações ou interpelações, judiciais ou extrajudiciais.</textarea>
         </div>
 
         <div class="col-md-12 mb-3">
+          <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">13.3</a>
           <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13_3" rows="5" style="background-color: #F6FAFA; resize: none !important;">13.3 O Acordo de Parceria será rescindido em caso de decretação de falência, liquidação extrajudicial ou judicial, ou insolvência de qualquer dos PARCEIROS, ou, ainda, no caso de  10/11 propositura de quaisquer medidas ou procedimentos contra qualquer dos PARCEIROS para sua liquidação e/ou dissolução.</textarea>
         </div>
         
@@ -847,7 +884,8 @@
     <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">14. CLÁUSULA DÉCIMA QUARTA - DA PUBLICIDADE  <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">14. CLÁUSULA DÉCIMA QUARTA - DA PUBLICIDADE</h4><hr>
+          <br>
           <p><b>14.1</b> A publicação do extrato do presente Acordo de Parceria para PD&I no Diário Oficial da União (DOU) é condição indispensável para sua eficácia e será providenciada pela(o) <input type="text" class="myform-control" name="nome_inst_ict" id="handle_ict" placeholder="Instituição" disabled> no prazo de até 20 (vinte) dias da sua assinatura. </p>
         </div>
       </div>
@@ -856,7 +894,8 @@
     <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">15. CLÁUSULA DÉCIMA QUINTA – DAS NOTIFICAÇÕES  <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">15. CLÁUSULA DÉCIMA QUINTA – DAS NOTIFICAÇÕES </h4><hr>
+          <br>
 
           <p><b>15.1</b> Qualquer comunicação ou notificação relacionada ao Acordo de Parceria poderá ser feita
                         pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no
@@ -878,16 +917,14 @@
                 class="form-control text-black font-weight-bold"
                 name="parceiro_contato_telefone" 
                 id="parceiro_contato_telefone" 
-                placeholder="Telefone"
-              >
+                placeholder="Telefone">
             </div>
             <div class="form-group col-md-3">
               <label for="parceiro_contato_celular" class="font-weight-bold text-black">Celular</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="parceiro_contato_celular" id="parceiro_contato_celular" 
-                placeholder="Celular"
-              >
+                placeholder="Celular">
             </div>
             <div class="form-group col-md-3">
               <label for="parceiro_contato_email" class="font-weight-bold text-black">Email</label>
@@ -895,8 +932,7 @@
                 class="form-control text-black font-weight-bold"
                 name="parceiro_contato_email" 
                 id="parceiro_contato_email" 
-                placeholder="E-mail"
-              >
+                placeholder="E-mail">
             </div>
           </div><!-- /.row-->
           <!-- Pariceiro privado -->
@@ -917,16 +953,14 @@
                 class="form-control text-black font-weight-bold"
                 name="privado_contato_telefone" 
                 id="privado_contato_telefone" 
-                placeholder="Telefone"
-              >
+                placeholder="Telefone">
             </div>
             <div class="form-group col-md-3">
               <label for="privado_contato_celular" class="font-weight-bold text-black">Celular</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="privado_contato_celular" id="privado_contato_celular" 
-                placeholder="Celular"
-              >
+                placeholder="Celular">
             </div>
             <div class="form-group col-md-3">
               <label for="privado_contato_email" class="font-weight-bold text-black">Email</label>
@@ -934,8 +968,7 @@
                 class="form-control text-black font-weight-bold"
                 name="privado_contato_email" 
                 id="privado_contato_email" 
-                placeholder="E-mail"
-              >
+                placeholder="E-mail">
             </div>
           </div><!-- /.row-->
                       
@@ -952,8 +985,9 @@
     <!------------------------------------------------------------------------->
     <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
+        <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">16. CLÁUSULA DÉCIMA SEXTA – DISPOSIÇÕES GERAIS</h4><hr>
+        <br>
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">16. CLÁUSULA DÉCIMA SEXTA – DISPOSIÇÕES GERAIS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
           <p><b>16.1.</b> É livre o acesso dos agentes da administração pública, do controle interno e do Tribunal de Contas aos documentos e às informações relacionados a esse Acordo, bem como aos locais de execução do respectivo objeto, ressalvadas as informações tecnológicas e dados das pesquisas que possam culminar em alguma inovação. </p>
         </div>
       </div>
@@ -961,33 +995,73 @@
     <!------------------------------------------------------------------------->
     <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
+        <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">17. CLÁUSULA DÉCIMA SÉTIMA - DO FORO</h4><hr>
+        <br>
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">17. CLÁUSULA DÉCIMA SÉTIMA - DO FORO <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
-
           <p><b>17.1.</b>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de <input class="myform-control text-black"  type="text" name="estado_foro" placeholder="Estado">, cidade de <input  class="myform-control" type="text" name="cidade_foro" placeholder="Cidade">, para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109 da Constituição Federal. E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.</p>
           <br>
-          <p>Cidade, UF, Dia do Mês e ano:</p>
-          <input type="text" class="myform-control text-black"  name="cidade_uf_dia_foro"  placeholder="Cidade/UF, dia de mês de ano. ">   <br>   
-          <div class="mb-4 row justify-content-center">
-            <div class="col-6 align-self-center">
-              <div class="input-control-center">
-                <p class="mt-4">Pelo(a)  <span class="text-blue">ICT:</span> 
-                <input class="myform-control text-black" type="text" name="ict_inst_foro"  placeholder="Instituição"> </p>   
-                <input class="mb-2 myform-control text-black" type="text" name="nome_rep_foro"  placeholder="Nome do representante legal"> 
-                <br>
-                <input class="mb-2  myform-control text-black" type="text" name="cargo_rep_foro"  placeholder="Cargo">
-              </div>
+          <div class="form-row mt-3">
+            <div class="form-group col-md-3">
+              <label for="cidade_uf_dia_foro" class="font-weight-bold text-black">Cidade, UF, Dia do Mês e Ano</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold" 
+                name="cidade_uf_dia_foro"
+                id="cidade_uf_dia_foro" 
+                placeholder="Cidade, UF, Dia do Mês e Ano">
             </div>
-          </div>
-          <div class="mt-4 row justify-content-center">
-            <div class="col-6 align-self-center">
-              <div class="input-control-center">
-                <p>Pelo(a) <span class="text-blue">PARCEIRO PRIVADO:</span> <input class="myform-control text-black" type="text" name="nome_inst_privado_foro"  placeholder="Instituição"> </p>      
-                <input class="mb-2 myform-control text-black" type="text" name="nome_rep_privado_foro"  placeholder="Nome do representante legal"> 
-                <br><input class="mb-2  myform-control text-black" type="text" name="cargo_rep_privado_foro"  placeholder="Cargo"> 
-              </div>
+          </div><!-- /.row-->
+
+          <div class="form-row mt-3">
+            <div class="form-group col-md-3">
+              <label for="ict_inst_foro" class="font-weight-bold text-black">ICT:</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold"
+                name="ict_inst_foro" 
+                id="ict_inst_foro" 
+                placeholder="Instituição">
             </div>
-          </div>
+            <div class="form-group col-md-3">
+              <label for="nome_rep_foro" class="font-weight-bold text-black">Representante:</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold" 
+                name="nome_rep_foro" id="nome_rep_foro" 
+                placeholder="Nome do Representante">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="cargo_rep_foro" class="font-weight-bold text-black">Cargo</label>
+              <input type="email" 
+                class="form-control text-black font-weight-bold"
+                name="cargo_rep_foro" 
+                id="cargo_rep_foro" 
+                placeholder="Cargo">
+            </div>
+          </div><!-- /.row-->
+
+          <div class="form-row mt-3">
+            <div class="form-group col-md-3">
+              <label for="nome_inst_privado_foro" class="font-weight-bold text-black">Parceiro Privado:</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold"
+                name="nome_inst_privado_foro" 
+                id="nome_inst_privado_foro" 
+                placeholder="Instituição">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="nome_rep_privado_foro" class="font-weight-bold text-black">Representante:</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold" 
+                name="nome_rep_privado_foro" id="nome_rep_privado_foro" 
+                placeholder="Nome do Representante">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="cargo_rep_privado_foro" class="font-weight-bold text-black">Cargo</label>
+              <input type="email" 
+                class="form-control text-black font-weight-bold"
+                name="cargo_rep_privado_foro" 
+                id="cargo_rep_privado_foro" 
+                placeholder="Cargo">
+            </div>
+          </div><!-- /.row-->
         </div>
       </div>
     </div>
@@ -995,11 +1069,12 @@
     <div class="tab-pane " id="clausulaF" role="tabpanel" aria-labelledby="clausulaF-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-black">
+
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">SEU CONTRATO ESTÁ PRONTO PARA ANÁLISE.<i class="fas fa-fw fa-check ml-2"></i></h4><hr>
+          <br>
           
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black bg-light p-2 mb-3">SEU CONTRATO ESTÁ PRONTO PARA ANÁLISE. <a href="#"><i class="fas fa-fw fa-check ml-2"></i></a></h5>
-          
-          <p>Seu contrato será revisado em até de 30 dias e uma resposta será gerada. Aguarde a confirmação do sistema. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolores excepturi ipsum rem, enim accusantium quam similique assumenda eum veniam saepe, quas earum nisi hic neque voluptate consectetur ex quo!</p><br>
-          <button type="submit" class="btn btn-primary py-4">ENVIAR</button>
+          <p>Seu contrato será revisado em até de 30 dias e uma resposta será gerada. Aguarde a confirmação do sistema. </p><br>
+          <!-- <a href="{{route('home')}}" class="btn btn-primary p-2 btn-lg col-4">Ver Contrato</a> -->
         </div>
       </div>
     </div>
