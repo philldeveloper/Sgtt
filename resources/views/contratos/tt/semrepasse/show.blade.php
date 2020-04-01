@@ -8,12 +8,13 @@
   }
 
   textarea{
-    background-color: #DCF8FC !important;
-    color: black !important;
-    font-weight: bold !important;
-    border-color: #8DB7BD !important;
-    box-shadow: 3px 5px 5px #cdcdcd;
+    background-color: white !important;
+    /* color: black !important; */
+    border-color: black !important;
+    box-shadow: 1px 2px 2px #cdcdcd;
     padding: 10px;
+    text-align: justify !important;
+    font-weight: bold !important;
   }
   input, span, p{
     /* color: black !important; */
@@ -58,7 +59,8 @@
 <div class="card mt-5 mb-5 color-card">
 
   <!--form id="regForm" action="/action_page.php"-->
-  <form id="regForm" class="form-horizontal" method="POST" action="{{ route('contrato_sr.store') }}">
+  <!-- <form id="regForm" class="form-horizontal" method="POST" action="{{ route('contrato_sr.store') }}"> -->
+  <form action="">
     {{ csrf_field() }}
     <div class="card-header py-1">
         <div id="step-container" class="step-container align-items-center py-3 mt-2"></div>
@@ -75,7 +77,7 @@
 
   <div class="container-fluid">
     <div class="tab-pane show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-      <div class="modal-alert modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- <div class="modal-alert modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -110,7 +112,7 @@
               </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="container-fluid pb-5 pt-5 mt-0 m-0 text-center">
@@ -124,14 +126,13 @@
             NA FORMA A SEGUIR.</h5><br>
         </div>
 
-        <div class="alert alert-warning" role="alert">      
+        <!-- <div class="alert alert-warning" role="alert">      
           <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
           NOTAS EXPLICATIVAS!
           <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal">Saiba mais</button>
-        </div>
+        </div> -->
 
-        
-        <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">ICT/ente público</h5>
+        <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">ICT/ente público</h4><hr><br>
 
         <div class="form-row">
           <div class="form-group col-md-4">
@@ -141,13 +142,13 @@
           <div class="form-group col-md-4">
             <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
             <!-- Botão para acionar modal -->
-            <a href="#" data-toggle="modal" data-target="#modalExemplo1"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+            <!-- <a href="#" data-toggle="modal" data-target="#modalExemplo1"><i class="fas fa-fw fa-question-circle float-right"></i></a> -->
             <input type="text" class="form-control text-black font-weight-bold" name="nat_juridica" id="inputPassword4" placeholder="{{$contratos_sr->nat_juridica}}" disabled="">
           </div>
           <div class="form-group col-md-4">
             <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
             <!-- Botão para acionar modal -->
-            <a href="#" data-toggle="modal" data-target="#modalExemplo2"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+            <!-- <a href="#" data-toggle="modal" data-target="#modalExemplo2"><i class="fas fa-fw fa-question-circle float-right"></i></a> -->
             <input type="text" class="form-control text-black font-weight-bold" name="cnpj" id="inputCity" placeholder="{{$contratos_sr->cnpj}}" disabled="">
           </div>
         </div>
@@ -175,7 +176,7 @@
         <div class="form-group col-md-4">
           <label for="inputEmail4" class="font-weight-bold text-black">Representante Legal</label>
           <!-- Botão para acionar modal -->
-            <a href="#" data-toggle="modal" data-target="#modalExemplo3"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+            <!-- <a href="#" data-toggle="modal" data-target="#modalExemplo3"><i class="fas fa-fw fa-question-circle float-right"></i></a> -->
           <input type="text" class="form-control text-black font-weight-bold" name="rep_legal" id="inputEmail4" placeholder="{{$contratos_sr->rep_legal}}" disabled="">
         </div>
         <div class="form-group col-md-3">
@@ -217,7 +218,7 @@
     <!------------------------------------------------------------------------->
     <div class="tab-pane " id="profile" role="tabpanel" aria-labelledby="profile-tab">
       <div class="container-fluid p-0 mt-0 m-0">
-        <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">2º PARCEIRO</h5>
+      <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">2° Parceiro</h4><hr><br>
         <div class="form-row">
           <div class="form-group col-md-4">
             <label for="inputEmail4" class="font-weight-bold text-black">Instituição</label>                  
@@ -226,13 +227,13 @@
           <div class="form-group col-md-4">
             <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
             <!-- Botão para acionar modal -->
-            <a href="#" data-toggle="modal" data-target="#modalExemplo4"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+            <!-- <a href="#" data-toggle="modal" data-target="#modalExemplo4"><i class="fas fa-fw fa-question-circle float-right"></i></a> -->
             <input type="text" class="form-control text-black font-weight-bold" name="parceiro_nat_juridica" id="inputPassword4" placeholder="{{$contratos_sr->parceiro_nat_juridica}}" disabled="">
           </div>
           <div class="form-group col-md-4">
             <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
             <!-- Botão para acionar modal -->
-            <a href="#" data-toggle="modal" data-target="#modalExemplo5"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+            <!-- <a href="#" data-toggle="modal" data-target="#modalExemplo5"><i class="fas fa-fw fa-question-circle float-right"></i></a> -->
             <input type="text" class="form-control text-black font-weight-bold" name="parceiro_cnpj" id="inputPassword4" placeholder="{{$contratos_sr->parceiro_cnpj}}" disabled="">
           </div>
         </div>
@@ -260,7 +261,7 @@
         <div class="form-group col-md-4">
           <label for="inputEmail4" class="font-weight-bold text-black">Representante Legal</label>
           <!-- Botão para acionar modal -->
-            <a href="#" data-toggle="modal" data-target="#modalExemplo6"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+            <!-- <a href="#" data-toggle="modal" data-target="#modalExemplo6"><i class="fas fa-fw fa-question-circle float-right"></i></a> -->
           <input type="text" class="form-control text-black font-weight-bold" name="parceiro_rep_legal" id="inputEmail4" placeholder="{{$contratos_sr->parceiro_rep_legal}}" disabled="">
         </div>
         <div class="form-group col-md-3">

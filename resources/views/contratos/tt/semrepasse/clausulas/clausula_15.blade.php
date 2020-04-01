@@ -1,6 +1,6 @@
 <div class="container-fluid p-0 mt-0 m-0">
     <div class="text-justify text-black">
-        <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">15. CLÁUSULA DÉCIMA QUINTA – DAS NOTIFICAÇÕES  <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+        <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">15. CLÁUSULA DÉCIMA QUINTA – DAS NOTIFICAÇÕES</h4><hr><br>
 
         <p><b>15.1</b> Qualquer comunicação ou notificação relacionada ao Acordo de Parceria poderá ser feita
                     pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no
