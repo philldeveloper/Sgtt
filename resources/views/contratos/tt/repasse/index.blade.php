@@ -50,7 +50,8 @@
 <script src="{{ asset('js/validation-form-cr.js') }}"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-
+<!-- Funções dinamicas para os contratos -->
+<script type="text/javascript" src="{{ asset('js/utils.js') }}"></script>
 <div class="title-header">
     <span class="h3 ml-3 font-weight-bold">Novo Contrato</span>
     <div class="badge badge-dark lead  mr-auto float-right">Com repasse</div>
@@ -426,19 +427,24 @@
               </div>
             </div><!--modal-dialog-->
           </div><!--modal-alert-->
-          <div class="text-center d-flex">
-              <p class="h4 p-3 font-italic text-primary font-weight-bold">Edite a(s) cláusula(s) abaixo (se julgar necessário):</p>
+          <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+            <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+            Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
           <div class="col-md-12 mb-3">
+          <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
             <textarea class="form-control font-weight-bold" name="clausula_edit_2_3" rows="3">2.3 Na execução do Plano de Trabalho, a atuação dos PARCEIROS dar-se-á sempre de forma associada. Para tanto, os PARCEIROS indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.</textarea>
           </div>
           <div class="col-md-12 mb-3">
+          <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.4</a>
             <textarea class="form-control font-weight-bold" name="clausula_edit_2_4" rows="3">2.4 Recaem sobre o Coordenador do Projeto, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.</textarea>
           </div>
           <div class="col-md-12 mb-3">
+          <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.5</a>
             <textarea class="form-control font-weight-bold" name="clausula_edit_2_5" rows="3">2.5 Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.</textarea>
           </div>
           <div class="col-md-12 mb-3">
+          <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.6</a>
             <textarea class="form-control font-weight-bold" name="clausula_edit_2_6" rows="3">2.6 A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo.</textarea>
           </div>
         </div><!--text-justify-->
@@ -567,7 +573,11 @@
               </textarea>
             </div>
           </div><!--clausula_apoio_wrapper-->
-
+          
+          <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+            <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+            Edite a(s) cláusula(s) abaixo (se julgar necessário):
+          </div>
           <p><b>3.2.</b> <span id="coord_ict"></span><span id="coord_privado"></span> poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.<br></p>
             <!--clausula editavel 3_3-->
           <div class="col-md-12 mb-3">
@@ -609,7 +619,7 @@
           </p>
           <p>
             <b>4.6.</b>Qualquer aumento ao orçamento do Plano de Trabalho executado por este Acordo de Parceria, que torne necessário o aporte de recursos adicionais pelo parceiro privado deverá ser prévia e formalmente analisado e aprovado pelas Parceiros,
-            <select class="myform-control">
+            <select class="myform-control" name="clausula_opcional_4_6">>
                 <option value="devendo">devendo</option>
                 <option value="podendo">podendo</option>
             </select> 
@@ -758,9 +768,10 @@
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#propriedade_intelectual">Saiba mais</button>
           </div>  
           <!--clausula editavel 6-->
-          <div class="text-center d-flex">
-            <p class="h4 p-3 font-italic text-primary font-weight-bold">Edite a(s) cláusula(s) abaixo (se julgar necessário):</p>
-          </div>
+          <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+          <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+          Edite a(s) cláusula(s) abaixo (se julgar necessário):
+        </div>
           <div class="col-md-12 mb-3">
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_1" rows="4">6.1. Todos os dados, técnicas, tecnologia, know-how, marcas, patentes e quaisquer outros bens ou direitos de propriedade intelectual/industrial de um parceiro que este venha a utilizar para execução do Projeto continuarão a ser de sua propriedade exclusiva, não podendo o outro parceiro cedê-los, transferi-los, aliená-los, divulgá-los ou empregá-los em quaisquer outros projetos ou sob qualquer outra forma sem o prévio consentimento escrito do seu proprietário.</textarea>
           </div>
@@ -828,7 +839,7 @@
     <div class="tab-pane" id="clausula3" role="tabpanel" aria-labelledby="clausula3-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">8 CLÁUSULA OITAVA - DAS INFORMAÇÕES CONFIDENCIAIS E SIGILOSAS<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">8 CLÁUSULA OITAVA - DAS INFORMAÇÕES CONFIDENCIAIS E SIGILOSAS</h5>
           <p>
             <b>8.1.</b> Os PARCEIROS adotarão todas as medidas necessárias para proteger o sigilo das INFORMAÇÕES CONFIDENCIAIS recebidas em função da celebração, desenvolvimento e execução do presente Acordo de Parceria, inclusive na adoção de medidas que assegurem a tramitação do processo, não as divulgando a terceiros, sem a prévia e escrita autorização da outro PARCEIRO.
           </p>
@@ -870,8 +881,9 @@
           </div> 
 
           <!--clausula editavel 8-->
-          <div class="text-center d-flex">
-            <p class="h4 p-3 font-italic text-primary font-weight-bold">Edite a(s) cláusula(s) abaixo (se julgar necessário):</p>
+          <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+            <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+            Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
 
           <div class="col-md-12 mb-3">
@@ -891,12 +903,12 @@
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-blue">
           
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">9 CLÁUSULA NONA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">9 CLÁUSULA NONA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h5>
 
           <!--clausula editavel 9-->
-
-          <div class="text-center d-flex">
-            <p class="h4 p-3 font-italic text-primary font-weight-bold">Edite a(s) cláusula(s) abaixo (se julgar necessário):</p>
+          <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+          <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+            Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
 
           <div class="col-md-12 mb-3">
@@ -934,7 +946,7 @@
     <div class="tab-pane" id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">10 CLÁUSULA DÉCIMA - DO ACOMPANHAMENTO<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">10 CLÁUSULA DÉCIMA - DO ACOMPANHAMENTO</h5>
           <p><b>10.1.</b> Aos coordenadores indicados pelos <b>PARCEIROS</b> competirá dirimir as dúvidas que surgirem na sua execução e de tudo dará ciência às respectivas autoridades.</p>
           <p><b>10.2.</b> O coordenador do projeto indicado pela <b>ICT/AGÊNCIA DE FOMENTO</b> anotará, em registro próprio, as ocorrências relacionadas com a execução do objeto, recomendando as medidas necessárias à autoridade competente para regularização das inconsistências observadas. </p>
           <p><b>10.3.</b> O acompanhamento do projeto pelos coordenadores não exclui nem reduz a responsabilidade dos <b>PARCEIROS</b> perante terceiros. </p>
@@ -946,7 +958,7 @@
     <div class="tab-pane" id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">11. CLÁUSULA DÉCIMA PRIMEIRA - DA VIGÊNCIA E DA PRORROGAÇÃO<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">11. CLÁUSULA DÉCIMA PRIMEIRA - DA VIGÊNCIA E DA PRORROGAÇÃO</h5>
           <div class="alert alert-warning" role="alert">     
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
               NOTAS EXPLICATIVAS!
@@ -977,8 +989,9 @@
           </div> 
 
           <!--clausula editavel 12-->
-          <div class="text-center d-flex">
-            <p class="h4 p-3 font-italic text-primary font-weight-bold">Edite a(s) cláusula(s) abaixo (se julgar necessário):</p>
+          <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+            <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+            Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
           <div class="col-md-12 mb-3">
               <textarea class="form-control font-weight-bold" name="clausula_edit_12_4_1" rows="6">12.4.1. Alterações na distribuição entre grupos de natureza de despesa e alterações de rubricas ou itens de despesas, que não ultrapassarem 20% (vinte por cento) do valor total do projeto, ficarão dispensadas de prévia anuência da concedente, hipótese em o interessado comunicará aos PARCEIROS, devendo constar as razões que ensejaram as alterações, indicando a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.</textarea>
@@ -994,20 +1007,21 @@
     <div class="tab-pane" id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2"> 13. CLÁUSULA DÉCIMA TERCEIRA – DO MONITORAMENTO, DA AVALIAÇÃO E DA PRESTAÇÃO DE CONTAS<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2"> 13. CLÁUSULA DÉCIMA TERCEIRA – DO MONITORAMENTO, DA AVALIAÇÃO E DA PRESTAÇÃO DE CONTAS</h5>
           <p><b>13.1.</b> Os <b>PARCEIROS</b> exercerão a fiscalização técnico-financeira das atividades do presente Acordo. </p>
           <!--clausula editavel 13-->
-          <div class="text-center d-flex">
-            <p class="h4 p-3 font-italic text-primary font-weight-bold">Edite a(s) cláusula(s) abaixo (se julgar necessário):</p>
+          <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+          <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+            Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
           <div class="col-md-12 mb-3">
               <textarea class="form-control font-weight-bold" name="clausula_edit_13_2" rows="3">13.2. O pesquisador deverá encaminhar ao Setor responsável ou COMISSÃO DA ICT ou à FUNDAÇÃO DE APOIO: </textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_13_2_a" rows="3">A) Formulário de Resultado Parcial: anualmente, até o último dia útil do mês de dezembro de cada ano de vigência deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho;</textarea>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_13_a" rows="3">A) Formulário de Resultado Parcial: anualmente, até o último dia útil do mês de dezembro de cada ano de vigência deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho;</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_13_2_b" rows="3">B) Formulário de Resultado Final: no prazo de até 120 (cento e vinte) dias contados da conclusão do objeto deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho.</textarea>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_13_b" rows="3">B) Formulário de Resultado Final: no prazo de até 120 (cento e vinte) dias contados da conclusão do objeto deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho.</textarea>
           </div>
           <p><b>13.3.</b> No Formulário de Resultado de que trata a subcláusula 13.2, deverá ser demonstrada a compatibilidade entre as metas previstas e as alcançadas no período, bem como apontadas as justificativas em caso de discrepância, consolidando dados e valores das ações desenvolvidas.</p>
           <p>
@@ -1027,11 +1041,12 @@
     <div class="tab-pane" id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">14. CLÁUSULA DÉCIMA QUARTA – DA EXTINÇÃO DO ACORDO<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">14. CLÁUSULA DÉCIMA QUARTA – DA EXTINÇÃO DO ACORDO</h5>
           <p><b>14.1.</b> Este Acordo poderá, a qualquer tempo, ser denunciado pelos <b>PARCEIROS</b>, devendo o interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de <span>60 (sessenta)</span> dias da data em que se pretenda que sejam encerradas as atividades, respeitadas as obrigações assumidas com terceiros entre os <b>PARCEIROS</b>, creditando eventuais benefícios adquiridos no período.</p>
           <!--clausula editavel 14-->
-          <div class="text-center d-flex">
-            <p class="h4 p-3 font-italic text-primary font-weight-bold">Edite a(s) cláusula(s) abaixo (se julgar necessário):</p>
+          <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+            <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+            Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
           <div class="col-md-12 mb-3">
             <textarea class="form-control font-weight-bold" name="clausula_edit_14_2" rows="5">14.2. Constituem motivos para rescisão de pleno direito o inadimplemento de quaisquer das cláusulas pactuadas neste Acordo, o descumprimento das normas estabelecidas na legislação vigente ou a superveniência de norma legal ou fato que tome material ou formalmente inexequível o Acordo de Parceria para PD&I, imputando-se aos PARCEIROS as responsabilidades pelas obrigações até então assumidas, devendo o PARCEIRO que se julgar prejudicado notificar o parceiro para que apresente esclarecimentos no prazo de 15 (quinze) dias corridos.</textarea>
@@ -1055,7 +1070,7 @@
     <div class="tab-pane" id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">15. CLÁUSULA DÉCIMA QUINTA - DA PUBLICIDADE <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">15. CLÁUSULA DÉCIMA QUINTA - DA PUBLICIDADE</h5>
           <div class="alert alert-warning" role="alert">     
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
               NOTAS EXPLICATIVAS!
@@ -1069,9 +1084,10 @@
     <div class="tab-pane" id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">16. CLAUSULA DÉCIMA SEXTA – DOS BENS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
-          <div class="text-center d-flex">
-            <p class="h4 p-3 font-italic text-primary font-weight-bold">Edite a(s) cláusula(s) abaixo (se julgar necessário):</p>
+          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">16. CLAUSULA DÉCIMA SEXTA – DOS BENS</h5>
+          <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+            <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+            Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
           <div class="col-md-12 mb-3">
             <textarea class="form-control font-weight-bold" name="clausula_edit_16_1" rows="3"> 16.1.Após execução integral do objeto desse acordo, os bens patrimoniais, materiais permanentes ou equipamentos adquiridos serão revertidos à ICT, diretamente ao campus envolvido, por meio de Termo de Doação.(CLAÚSULA PARA AS ICTs)</textarea>
@@ -1087,31 +1103,124 @@
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
           <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">17. CLÁUSULA DÉCIMA QUINTA – DAS NOTIFICAÇÕES  <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
-          <p>
-            <b>17.1.</b> Qualquer comunicação ou notificação relacionada ao Acordo de Parceria poderá ser feita pelos PARCEIROS/FUNDAÇÃO DE APOIO, por e-mail, fax, correio ou entregue pessoalmente, 
-            diretamente no respectivo endereço do PARCEIRO/FUNDAÇÃO DE APOIO notificado, conforme as seguintes informações: <br><br>
-              <b>ICT/AGÊNCIA DE FOMENTO:</b> (endereço completo, telefone, celular e e-mail) <br>
-              <b>PARCEIRO PRIVADO:</b> (endereço completo, telefone, celular e e-mail) <br>
-              <b>FUNDAÇÃO DE APOIO:</b> (endereço completo, telefone, celular e e-mail) <br>
-          </p>  
-          <p>
-            <b>17.2.</b> Qualquer comunicação ou solicitação prevista neste Acordo de Parceria será considerada como tendo sido legalmente entregue:
-          </p>   
-          <p>
-            <b>17.2.1.</b> Quando entregue em mão  a quem destinada, com o comprovante de recebimento;
-          </p>   
-          <p>
-            <b>17.2.2.</b> Se enviada por correio, registrada ou certificada, porte pago e devidamente endereçada, quando recebida pelo destinatário ou no 5° (quinto) dia seguinte à data do despacho, o que ocorrer primeiro;
-          </p>   
-          <p>
-            <b>17.2.3.</b> Se enviada por fax, quando recebida pelo destinatário;
-          </p>   
-          <p>
-            <b>17.2.4.</b> Se enviada por e-mail, desde que confirmado o recebimento pelo destinatário, ou, após transcorridos 5 (cinco) dias úteis, o que ocorrer primeiro. Na hipótese de transcurso do prazo sem confirmação, será enviada cópia por correio, considerando-se, todavia, a notificação devidamente realizada.
-          </p>   
-          <p>
-            <b>17.3.</b> Qualquer dos PARCEIROS/FUNDAÇÃO DE APOIO poderá, mediante comunicação por escrito, alterar o endereço para o qual as comunicações ou solicitações deverão ser enviadas.
-          </p>   
+          <p><b>17.1</b> Qualquer comunicação ou notificação relacionada ao Acordo de Parceria poderá ser feita
+                        pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no
+                        respectivo endereço do PARCEIRO notificado, conforme as seguintes informações:<br>
+          <span class="font-weight-bold">PARCEIRO(S) PÚBLICO(S):</span> 
+          <div class="form-row">
+            <div class="form-group col-md-3">
+              <label for="endereco" class="font-weight-bold text-black">Endereço</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold" 
+                name="parceiro_contato_endereço"
+                id="endereco" 
+                placeholder="Endereço">
+            </div>
+
+            <div class="form-group col-md-3">
+              <label for="parceiro_contato_telefone" class="font-weight-bold text-black">Telefone</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold"
+                name="parceiro_contato_telefone" 
+                id="parceiro_contato_telefone" 
+                placeholder="Telefone">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="parceiro_contato_celular" class="font-weight-bold text-black">Celular</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold" 
+                name="parceiro_contato_celular" id="parceiro_contato_celular" 
+                placeholder="Celular">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="parceiro_contato_email" class="font-weight-bold text-black">Email</label>
+              <input type="email" 
+                class="form-control text-black font-weight-bold"
+                name="parceiro_contato_email" 
+                id="parceiro_contato_email" 
+                placeholder="E-mail">
+            </div>
+          </div><!-- /.row-->
+          <!-- Pariceiro privado -->
+          <span class="font-weight-bold ">PARCEIRO(S) PRIVADO(S):</span> 
+          <div class="form-row mt-3">
+            <div class="form-group col-md-3">
+              <label for="endereco" class="font-weight-bold text-black">Endereço</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold" 
+                name="privado_contato_endereço"
+                id="endereco" 
+                placeholder="Endereço">
+            </div>
+
+            <div class="form-group col-md-3">
+              <label for="privado_contato_telefone" class="font-weight-bold text-black">Telefone</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold"
+                name="privado_contato_telefone" 
+                id="privado_contato_telefone" 
+                placeholder="Telefone">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="privado_contato_celular" class="font-weight-bold text-black">Celular</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold" 
+                name="privado_contato_celular" id="privado_contato_celular" 
+                placeholder="Celular">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="privado_contato_email" class="font-weight-bold text-black">Email</label>
+              <input type="email" 
+                class="form-control text-black font-weight-bold"
+                name="privado_contato_email" 
+                id="privado_contato_email" 
+                placeholder="E-mail">
+            </div>
+          <!-- Fundacao de apoio -->
+          <div id="clausula_apoio_wrapper" style="display: none;">
+            <span class="font-weight-bold ">FUNDAÇÃO DE APOIO:</span> 
+            <div class="form-row mt-3">
+              <div class="form-group col-md-3">
+                <label for="endereco" class="font-weight-bold text-black">Endereço</label>
+                <input type="text" 
+                  class="form-control text-black font-weight-bold" 
+                  name="privado_contato_endereço"
+                  id="endereco" 
+                  placeholder="Endereço">
+              </div>
+  
+              <div class="form-group col-md-3">
+                <label for="privado_contato_telefone" class="font-weight-bold text-black">Telefone</label>
+                <input type="text" 
+                  class="form-control text-black font-weight-bold"
+                  name="privado_contato_telefone" 
+                  id="privado_contato_telefone" 
+                  placeholder="Telefone">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="privado_contato_celular" class="font-weight-bold text-black">Celular</label>
+                <input type="text" 
+                  class="form-control text-black font-weight-bold" 
+                  name="privado_contato_celular" id="privado_contato_celular" 
+                  placeholder="Celular">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="privado_contato_email" class="font-weight-bold text-black">Email</label>
+                <input type="email" 
+                  class="form-control text-black font-weight-bold"
+                  name="privado_contato_email" 
+                  id="privado_contato_email" 
+                  placeholder="E-mail">
+              </div>
+            </div><!-- /.row-->
+          </div>
+          <p><b>17.2</b> Qualquer comunicação ou solicitação prevista neste Acordo de Parceria será considerada como tendo sido legalmente entregue: </p>
+          <p><b>17.2.1</b> Quando entregue em mão a quem destinada, com o comprovante de recebimento;  </p>
+          <p><b>17.2.2</b> Se enviada por correio, registrada ou certificada, porte pago e devidamente endereçada, quando recebida pelo destinatário ou no 5° (quinto) dia seguinte à data do despacho, o que ocorrer primeiro; </p>
+          <p><b>17.2.3</b>  Se enviada por fax, quando recebida pelo destinatário; </p>
+          <p><b>17.2.4</b>  Se enviada por e-mail, desde que confirmado o recebimento pelo destinatário, ou, após transcorridos 5 (cinco) dias úteis, o que ocorrer primeiro. Na hipótese de transcurso do prazo sem confirmação, será enviada cópia por correio, considerando-se, todavia, a notificação devidamente realizada.  </p>
+          <p><b>17.3</b>  Qualquer dos PARCEIROS poderá, mediante comunicação por escrito, alterar o endereço para o qual as comunicações ou solicitações deverão ser enviadas. </p>
+      
         </div>
       </div>
     </div><!--tab-pane-->
@@ -1175,30 +1284,7 @@
   </div><!--container-fluid-->
 </div><!--card-->
 
-<script>
-  function handleCheckbox(){
-    const checkBox = document.getElementById("possui_apoio")
-    const clausula = document.getElementById("clausula_apoio_wrapper")
-    if (checkBox.checked == true){
-      clausula.style.display = "block"
-    } else {
-      clausula.style.display = "none"
-    }
-    
-  }
 
-  function handleCoordenadorICT(){
-    const elem = document.getElementById('nome_coordenador_ict').value;
-    const coord_ict = document.getElementById('coord_ict')
-    coord_ict.innerText = `${elem};`
-  }
-
-  function handleCoordenadorPrivado(){
-    const elem = document.getElementById('nome_coordenador_privado').value;
-    const coord_privado = document.getElementById('coord_privado')
-    coord_privado.innerText = ` ${elem}`
-  }
-</script>
 <script>
     //container do conteúdo necessário para os buttons ficar em baixo
     const wrapper = document.getElementById("tab-here")
