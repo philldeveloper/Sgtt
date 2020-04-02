@@ -44,19 +44,26 @@ class CreateContratoSrsTable extends Migration
             $table->string('parceiro_rg');
             $table->string('parceiro_orgao_exp');
             $table->string('parceiro_cargo');
+
             $table->string('clausula_descricao')->nullable()->default(null);
             $table->string('clausula_objetivo')->nullable()->default(null);
+
             $table->longText('clausula_edit_2_3')->nullable()->default(null);
             $table->longText('clausula_edit_2_4')->nullable()->default(null);
             $table->longText('clausula_edit_2_5')->nullable()->default(null);
             $table->longText('clausula_edit_2_6')->nullable()->default(null);
 
-            $table->longText('clausula_edit_3')->nullable()->default(null);
+            $table->string('nome_inst_ict');
             $table->string('nome_coordenador_ict');
+
             $table->longText('clausula_edit_3_1_b')->nullable()->default(null);
             $table->longText('clausula_edit_3_1_c')->nullable()->default(null);
+
+            $table->string('nome_inst_privado');
             $table->string('nome_coordenador_privado');
-            $table->longText('clausula_edit_3_2_c')->nullable()->default(null);
+            
+            $table->longText('clausula_edit_3_1_2_c')->nullable()->default(null);
+            $table->longText('clausula_edit_3_3')->nullable()->default(null);
 
             $table->longText('clausula_edit_5_1')->nullable()->default(null);
             $table->longText('clausula_edit_5_2')->nullable()->default(null);
@@ -84,6 +91,8 @@ class CreateContratoSrsTable extends Migration
             $table->longText('clausula_edit_8_2_d')->nullable()->default(null);
             $table->longText('clausula_edit_8_2_e')->nullable()->default(null);
 
+            $table->string('prazo_vigencia');
+
             $table->longText('clausula_edit_12_a')->nullable()->default(null);
             $table->string('clausula_prazo_12_b');
             
@@ -92,30 +101,27 @@ class CreateContratoSrsTable extends Migration
             $table->longText('clausula_edit_13_2_2')->nullable()->default(null);
             $table->longText('clausula_edit_13_3')->nullable()->default(null);
 
-            $table->string('nome_inst_ict');
-
-            $table->string('parceiro_contato_endereço');
+            $table->string('parceiro_contato_endereco');
             $table->string('parceiro_contato_telefone');
             $table->string('parceiro_contato_celular');
             $table->string('parceiro_contato_email');
 
-            $table->string('privado_contato_endereço');
+            $table->string('privado_contato_endereco');
             $table->string('privado_contato_telefone');
             $table->string('privado_contato_celular');
             $table->string('privado_contato_email');
 
-
-            $table->string('nome_inst_privado');
             $table->string('nome_inst_fundacao');
             $table->string('nome_empresa_parceira');
             $table->string('nome_ict_parceira');
-            $table->string('prazo_vigencia');
+            
             $table->string('estado_foro');
             $table->string('cidade_foro');
             $table->string('cidade_uf_dia_foro');
             $table->string('ict_inst_foro');
             $table->string('nome_rep_foro');
             $table->string('cargo_rep_foro');
+
             $table->string('nome_inst_privado_foro');
             $table->string('nome_rep_privado_foro');
             $table->string('cargo_rep_privado_foro');

@@ -496,7 +496,7 @@
             <div class="col-md-12 mb-3">
             <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">LETRA C</a>
             <a href="#" data-toggle="modal" data-target="#modalExemplo17"><i class="fas fa-fw fa-question-circle float-right m-2"></i></a>
-                <textarea placeholder="Demais..." class="form-control font-weight-bold" name="clausula_edit_3_2_b" rows="4" style="background-color: #F6FAFA; resize: none !important;"></textarea>
+                <textarea placeholder="Demais..." class="form-control font-weight-bold" name="clausula_edit_3_1_2_c" rows="4" style="background-color: #F6FAFA; resize: none !important;"></textarea>
             </div> 
 
             <p><b>3.2.</b><span id="coord_ict"></span><span id="coord_privado"></span>poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.</p>
@@ -507,7 +507,7 @@
 
             <div class="col-md-12 mb-3">
             <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 3.3</a>
-                <textarea class="form-control" name="clausula_edit_3" rows="4" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente Acordo de Parceria para PD&I ou de publicações a ele referentes.</textarea>
+                <textarea class="form-control" name="clausula_edit_3_3" rows="4" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente Acordo de Parceria para PD&I ou de publicações a ele referentes.</textarea>
             </div>
 
             

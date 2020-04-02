@@ -13,7 +13,7 @@
                         class="form-control text-black font-weight-bold" 
                         name="parceiro_contato_endereço"
                         id="endereco" 
-                        placeholder="{{$contratos_sr->parceiro_contato_endereço}}"
+                        placeholder="{{$contratos_sr->parceiro_contato_endereco}}"
                         disabled
                         >
                         
@@ -56,9 +56,9 @@
                       <label for="endereco" class="font-weight-bold text-black">Endereço</label>
                       <input type="text" 
                         class="form-control text-black font-weight-bold" 
-                        name="privado_contato_endereço"
+                        name="privado_contato_endereco"
                         id="endereco" 
-                        placeholder="{{$contratos_sr->privado_contato_endereço}}"
+                        placeholder="{{$contratos_sr->privado_contato_endereco}}"
                         disabled
                       >
                     </div>
@@ -105,7 +105,7 @@
                                         após transcorridos 5 (cinco) dias úteis, o que ocorrer primeiro. Na hipótese de transcurso do
                                         prazo sem confirmação, será enviada cópia por correio, considerando-se, todavia, a
                                         notificação devidamente realizada.  </p>
-                    <p><b>15.3</b>  Qualquer dos PARCEIROS poderá, mediante comunicação por escrito, alterar o endereço
+                    <p><b>15.3</b>  Qualquer dos PARCEIROS poderá, mediante comunicação por escrito, alterar o endereco
                                     para o qual as comunicações ou solicitações deverão ser enviadas. </p>
     </div>
 </div>

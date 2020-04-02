@@ -79,6 +79,7 @@ class Contrato_srController extends Controller
         $contrato_sr->parceiro_rg = $request->parceiro_rg;
         $contrato_sr->parceiro_orgao_exp = $request->parceiro_orgao_exp;
         $contrato_sr->parceiro_cargo = $request->parceiro_cargo;
+        
         $contrato_sr->clausula_descricao = $request->clausula_descricao;
         $contrato_sr->clausula_objetivo = $request->clausula_objetivo;
 
@@ -87,11 +88,17 @@ class Contrato_srController extends Controller
         $contrato_sr->clausula_edit_2_5 = $request->clausula_edit_2_5;
         $contrato_sr->clausula_edit_2_6 = $request->clausula_edit_2_6;
 
-        $contrato_sr->clausula_edit_3 = $request->clausula_edit_3;
+        $contrato_sr->nome_inst_ict = $request->nome_inst_ict;
         $contrato_sr->nome_coordenador_ict = $request->nome_coordenador_ict;
+
+        $contrato_sr->clausula_edit_3_1_b = $request->clausula_edit_3_1_b;
         $contrato_sr->clausula_edit_3_1_c = $request->clausula_edit_3_1_c;
+
+        $contrato_sr->nome_inst_privado = $request->nome_inst_privado;
         $contrato_sr->nome_coordenador_privado = $request->nome_coordenador_privado;
-        $contrato_sr->clausula_edit_3_2_c = $request->clausula_edit_3_2_c;
+
+        $contrato_sr->clausula_edit_3_1_2_c = $request->clausula_edit_3_1_2_c;
+        $contrato_sr->clausula_edit_3_3 = $request->clausula_edit_3_3;
 
         $contrato_sr->clausula_edit_5_1 = $request->clausula_edit_5_1;
         $contrato_sr->clausula_edit_5_2 = $request->clausula_edit_5_2;
@@ -107,10 +114,6 @@ class Contrato_srController extends Controller
         $contrato_sr->clausula_edit_5_12 = $request->clausula_edit_5_12;
         $contrato_sr->clausula_edit_5_13 = $request->clausula_edit_5_13;
 
-        $contrato_sr->clausula_edit_6_2 = $request->clausula_edit_6_2;
-        $contrato_sr->clausula_edit_6_3 = $request->clausula_edit_6_3;
-        $contrato_sr->clausula_edit_6_4 = $request->clausula_edit_6_4;
-
         $contrato_sr->clausula_edit_7_6 = $request->clausula_edit_7_6;
         $contrato_sr->clausula_edit_7_7 = $request->clausula_edit_7_7;
         $contrato_sr->clausula_edit_7_8 = $request->clausula_edit_7_8;
@@ -122,6 +125,8 @@ class Contrato_srController extends Controller
         $contrato_sr->clausula_edit_8_2_c = $request->clausula_edit_8_2_c;
         $contrato_sr->clausula_edit_8_2_d = $request->clausula_edit_8_2_d;
         $contrato_sr->clausula_edit_8_2_e = $request->clausula_edit_8_2_e;
+
+        $contrato_sr->prazo_vigencia = $request->prazo_vigencia;
 
         $contrato_sr->clausula_edit_12_a = $request->clausula_edit_12_a;
         $contrato_sr->clausula_prazo_12_b = $request->clausula_prazo_12_b;
@@ -145,13 +150,14 @@ class Contrato_srController extends Controller
         $contrato_sr->nome_inst_fundacao = $request->nome_inst_fundacao;
         $contrato_sr->nome_empresa_parceira = $request->nome_empresa_parceira;
         $contrato_sr->nome_ict_parceira = $request->nome_ict_parceira;
-        $contrato_sr->prazo_vigencia = $request->prazo_vigencia;
+        
         $contrato_sr->estado_foro = $request->estado_foro;
         $contrato_sr->cidade_foro = $request->cidade_foro;
         $contrato_sr->cidade_uf_dia_foro = $request->cidade_uf_dia_foro;
         $contrato_sr->ict_inst_foro = $request->ict_inst_foro;
         $contrato_sr->nome_rep_foro = $request->nome_rep_foro;
         $contrato_sr->cargo_rep_foro = $request->cargo_rep_foro;
+
         $contrato_sr->nome_inst_privado_foro = $request->nome_inst_privado_foro;
         $contrato_sr->nome_rep_privado_foro = $request->nome_rep_privado_foro;
         $contrato_sr->cargo_rep_privado_foro = $request->cargo_rep_privado_foro;
