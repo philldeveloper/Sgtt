@@ -15,14 +15,14 @@
         <div class="form-group row p-2">
             <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador ICT/Público:</label>
             <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
-            <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" placeholder="Nome coordenador ICT/Publico" disabled="" value="{{$contratos_sr->nome_coordenador_ict}}">
+            <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" placeholder="Nome coordenador ICT/Publico" disabled="" >
             </div>
         </div>
 
         <p class=""><b>B) </b>{!! $contratos_sr->clausula_edit_3_1_b !!}</p>
         <p class=""><b>C) </b>{!! $contratos_sr->clausula_edit_3_1_c !!}</p>
 
-        <p class="mt-5 mb-3 roboto-font"><b>3.1.2.  Do(a) <input  class="myform-control" type="text" name="nome_inst_privado" id="handle_parceiro" placeholder="Instituição" disabled>:(PARCEIRO PRIVADO)</b></p>
+        <p class="mt-5 mb-3 roboto-font"><b>3.1.2.  Do(a) PARCEIRO PRIVADO: <input  class="myform-control" type="text" name="nome_inst_privado" id="handle_parceiro" placeholder="{{$contratos_sr->nome_inst_privado}}" disabled=""></b></p>
         <hr>
         
         <b>A) </b> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;
@@ -30,17 +30,17 @@
         <div class="form-group row p-2">
             <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador Parceiro Privado:</label>
             <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
-            <input type="text" name="nome_coordenador_privado" onchange="handleCoordenadorPrivado()" id="nome_coordenador_privado" class="form-control" placeholder="Nome do coordenador parceiro privado" disabled value="{{$contratos_sr->nome_coordenador_privado}}">
+            <input type="text" name="nome_coordenador_privado" onchange="handleCoordenadorPrivado()" id="nome_coordenador_privado" class="form-control" placeholder="{{$contratos_sr->nome_coordenador_privado}}" disabled="">
             </div>
         </div>
 
         <p><b>B) </b> Colaborar, nos termos do plano de trabalho, para que o Acordo alcance os objetivos nele descritos:</p>
 
-        <p><b>C) </b>{!! $contratos_sr->clausula_edit_3_2_c !!}</p>
+        <p><b>C) </b>{!! $contratos_sr->clausula_edit_3_1_2_c !!}</p>
         
         <p><b>3.2. </b><span id="coord_ict"></span><span id="coord_privado"></span>poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.</p>
 
-        <p><b>3.3 </b>{!! $contratos_sr->clausula_edit_3 !!}</p>
+        <p><b>3.3 </b>{!! $contratos_sr->clausula_edit_3_3 !!}</p>
 
     </div>
 </div>

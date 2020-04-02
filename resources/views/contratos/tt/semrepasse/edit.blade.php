@@ -63,8 +63,9 @@
 <div class="card mt-5 mb-5 color-card">
 
   <!--form id="regForm" action="/action_page.php"-->
-  <form id="regForm" class="form-horizontal" method="POST" action="{{ route('contrato_sr.store') }}">
+  <form id="regForm" class="form-horizontal" method="POST" action="{{ route('contrato_sr.update', $contratos_sr->id) }}">
     {{ csrf_field() }}
+    {{ method_field('PUT') }}
     <div class="card-header py-1">
       <div id="step-container" class="step-container align-items-center py-3 mt-2"></div>
     </div>
@@ -266,34 +267,34 @@
           <div class="form-row">
             <div class="form-group col-md-4">
               <label for="inputEmail4" class="font-weight-bold text-black">Instituição</label>                  
-              <input type="text" class="form-control text-black font-weight-bold"  name="nome_parceiro_instituicao" id="inputEmail4" placeholder="Nome">
+              <input type="text" class="form-control text-black font-weight-bold"  value="{{$contratos_sr->nome_parceiro_instituicao}}" name="nome_parceiro_instituicao" id="inputEmail4" placeholder="Nome">
             </div>
             <div class="form-group col-md-4">
               <label for="natureza-juridica" class="font-weight-bold text-black">Natureza Jurídica</label>
               <!-- Botão para acionar modal -->
               <a href="#" data-toggle="modal" data-target="#modalExemplo4"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control text-black font-weight-bold" name="parceiro_nat_juridica" id="natureza-juridica" placeholder="Natureza Jurídica">
+              <input type="text" class="form-control text-black font-weight-bold" value="{{$contratos_sr->parceiro_nat_juridica}}" name="parceiro_nat_juridica" id="natureza-juridica" placeholder="Natureza Jurídica">
             </div>
             <div class="form-group col-md-4">
               <label for="cnpj-n" class="font-weight-bold text-black">CNPJ nº</label>
               <!-- Botão para acionar modal -->
               <a href="#" data-toggle="modal" data-target="#modalExemplo5"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control text-black font-weight-bold cnpj" name="parceiro_cnpj" id="cnpj-n" placeholder="CNPJ">
+              <input type="text" class="form-control text-black font-weight-bold cnpj" value="{{$contratos_sr->parceiro_cnpj}}" name="parceiro_cnpj" id="cnpj-n" placeholder="CNPJ">
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group col-md-5">
               <label for="parceiro-endereco" class="font-weight-bold text-black">Endereço</label>
-                <input type="text" class="form-control text-black font-weight-bold" name="parceiro_endereco" id="parceiro-endereco">
+                <input type="text" class="form-control text-black font-weight-bold" value="{{$contratos_sr->parceiro_endereco}}" name="parceiro_endereco" id="parceiro-endereco">
             </div>
             <div class="form-group col-md-3">
               <label for="parceiro_cidade" class="font-weight-bold text-black">Cidade</label>
-                <input type="text" class="form-control text-black font-weight-bold" name="parceiro_cidade" id="parceiro_cidade">
+                <input type="text" class="form-control text-black font-weight-bold" value="{{$contratos_sr->parceiro_cidade}}" name="parceiro_cidade" id="parceiro_cidade">
             </div>
             <div class="form-group col-md-2">
               <label for="parceiro_uf" class="font-weight-bold text-black">UF</label>
-              <select class="custom-select" id="UF" name="parceiro_uf">
+              <select class="custom-select" id="UF" value="{{$contratos_sr->parceiro_uf}}" name="parceiro_uf">
                 <option value="">Selecione</option>
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
@@ -326,7 +327,7 @@
             </div>
             <div class="form-group col-md-2">
               <label for="parceiro_cep" class="font-weight-bold text-black">CEP</label>
-                <input type="text" class="form-control text-black font-weight-bold cep" name="parceiro_cep" id="parceiro_cep">
+                <input type="text" class="form-control text-black font-weight-bold cep" value="{{$contratos_sr->parceiro_cep}}" name="parceiro_cep" id="parceiro_cep">
             </div>
           </div>
 
@@ -335,23 +336,23 @@
             <label for="parceiro_rep_legal" class="font-weight-bold text-black">Representante Legal</label>
             <!-- Botão para acionar modal -->
               <a href="#" data-toggle="modal" data-target="#modalExemplo6"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-            <input type="text" class="form-control text-black font-weight-bold" name="parceiro_rep_legal" id="parceiro_rep_legal" placeholder="Nome">
+            <input type="text" class="form-control text-black font-weight-bold" value="{{$contratos_sr->parceiro_rep_legal}}" name="parceiro_rep_legal" id="parceiro_rep_legal" placeholder="Nome">
           </div>
           <div class="form-group col-md-3">
             <label for="parceiro_cpf" class="font-weight-bold text-black">CPF/M.F</label>
-            <input type="text" class="form-control text-black font-weight-bold cpf" name="parceiro_cpf" id="parceiro_cpf" placeholder="">
+            <input type="text" class="form-control text-black font-weight-bold cpf" value="{{$contratos_sr->parceiro_cpf}}" name="parceiro_cpf" id="parceiro_cpf" placeholder="">
           </div>
           <div class="form-group col-md-3">
             <label for="parceiro_rg" class="font-weight-bold text-black">Identidade nº</label>
-            <input type="text" class="form-control text-black font-weight-bold rg" name="parceiro_rg" id="parceiro_rg" placeholder="">
+            <input type="text" class="form-control text-black font-weight-bold rg" value="{{$contratos_sr->parceiro_rg}}" name="parceiro_rg" id="parceiro_rg" placeholder="">
           </div>
           <div class="form-group col-md-2">
             <label for="parceiro_orgao_exp" class="font-weight-bold text-black">Órgão Expedidor</label>
-            <input type="text" class="form-control text-black font-weight-bold" name="parceiro_orgao_exp" id="parceiro_orgao_exp" placeholder="">
+            <input type="text" class="form-control text-black font-weight-bold" value="{{$contratos_sr->parceiro_orgao_exp}}" name="parceiro_orgao_exp" id="parceiro_orgao_exp" placeholder="">
           </div>
           <div class="form-group col-md-2">
             <label for="parceiro_cargo" class="font-weight-bold text-black">Cargo</label>
-            <input type="text" class="form-control text-black font-weight-bold" name="parceiro_cargo" id="parceiro_cargo" placeholder="">
+            <input type="text" class="form-control text-black font-weight-bold" value="{{$contratos_sr->parceiro_cargo}}" name="parceiro_cargo" id="parceiro_cargo" placeholder="">
           </div>
           </div>
           <div class="form-group col-md-4 mt-5 py-4">
@@ -374,13 +375,13 @@
 
             <p><b>1.1</b> O presente Acordo de Parceria para PD&I tem por objeto a cooperação técnica e científica entre os PARTÍCIPES para desenvolver
             o <br><div class="form-group col-md-12">
-              <textarea class="form-control" name="clausula_descricao"></textarea></div>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_descricao}}" name="clausula_descricao">{{$contratos_sr->clausula_objetivo}}</textarea></div>
 
             <a href="#" data-toggle="modal" data-target="#modalExemplo10"><i class="fas fa-fw fa-question-circle float-right"></i></a>
 
             <br>a ser executado nos termos do Plano de Trabalho, anexo, visando 
 
-            <br><div class="form-group col-md-12"><textarea name="clausula_objetivo" class="form-control"></textarea></div>
+            <br><div class="form-group col-md-12"><textarea value="{{$contratos_sr->clausula_objetivo}}" name="clausula_objetivo" class="form-control">{{$contratos_sr->clausula_objetivo}}</textarea></div>
 
             <a href="#" data-toggle="modal" data-target="#modalExemplo11"><i class="fas fa-fw fa-question-circle float-right"></i></a>
 
@@ -403,7 +404,7 @@
           </div>
 
           <p><b>2.1 </b>O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
-          <p class=""><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a(o) <input class="mb-2 text-black myform-control" id="handle_ict" type="text" disabled> <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
+          <p class=""><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a(o) <input class="mb-2 text-black myform-control" id="handle_ict" type="text"  > <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
           
           <!--clausula editavel 2-->
 
@@ -416,22 +417,22 @@
 
             <div class="col-md-12 mb-3">
                 <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
-                <textarea class="form-control" name="clausula_edit_2_3" rows="3" style="background-color: #F6FAFA; resize: none !important;">Na execução do Plano de Trabalho, a atuação dos PARCEIROS dar-se-á sempre de forma associada. Para tanto, os PARCEIROS indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.</textarea>
+                <textarea class="form-control" value="{{$contratos_sr->clausula_edit_2_3}}" name="clausula_edit_2_3" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_3}}</textarea>
             </div>
 
             <div class="col-md-12 mb-3">
               <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.4</a>
-                <textarea class="form-control" name="clausula_edit_2_4" rows="3" style="background-color: #F6FAFA; resize: none !important;">Recaem sobre o Coordenador do Projeto, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.</textarea>
+                <textarea class="form-control" value="{{$contratos_sr->clausula_edit_2_4}}" name="clausula_edit_2_4" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_4}}</textarea>
             </div>
 
             <div class="col-md-12 mb-3">
               <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.5</a>
-                <textarea class="form-control" name="clausula_edit_2_5" rows="3" style="background-color: #F6FAFA; resize: none !important;">Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.</textarea>
+                <textarea class="form-control" value="{{$contratos_sr->clausula_edit_2_5}}" name="clausula_edit_2_5" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_5}}</textarea>
             </div>
 
             <div class="col-md-12 mb-3">
               <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.6</a>
-                <textarea class="form-control" name="clausula_edit_2_6" rows="4" style="background-color: #F6FAFA; resize: none !important;">A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo.</textarea>
+                <textarea class="form-control" value="{{$contratos_sr->clausula_edit_2_6}}" name="clausula_edit_2_6" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_6}}</textarea>
             </div>
 
           </div><!--container-fluid-->
@@ -453,14 +454,14 @@
           </div>
           <p><b>3.1 </b>São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I:</p>
             
-          <p class="mt-3 roboto-font"><b>3.1.1. Do(a) ICT:</b><input type="text" class="myform-control" name="nome_inst_ict" id="handle_ict" placeholder="Instituição" disabled></p>
+          <p class="mt-3 roboto-font"><b>3.1.1. Do(a) ICT:</b><input type="text" class="myform-control" name="nome_inst_ict" id="handle_ict" placeholder="{{$contratos_sr->nome_inst_ict}}" disabled></p>
           <hr>      
             <b>A)</b> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;<a href="#" data-toggle="modal" data-target="#modalCoordenador"><i class="fas fa-fw fa-question-circle"></i></a>
             
             <div class="form-group row p-2">
               <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador ICT/Público:</label>
               <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
-                <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" placeholder="Nome coordenador ICT/Publico">
+                <input type="text" name="nome_coordenador_ict" value="{{$contratos_sr->nome_coordenador_ict}}" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" placeholder="{{$contratos_sr->nome_coordenador_ict}}">{{$contratos_sr->nome_coordenador_ict}}
               </div>
             </div>
 
@@ -470,16 +471,16 @@
 
             <div class="col-md-12 mb-3">
                 <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">LETRA B</a>
-                <textarea class="form-control" name="clausula_edit_3_1_b" rows="3" style="background-color: #F6FAFA; resize: none !important;">Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;</textarea>
+                <textarea class="form-control" value="{{$contratos_sr->clausula_edit_3_1_b}}" name="clausula_edit_3_1_b" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_3_1_b}}</textarea>
             </div>
 
             <div class="col-md-12 mb-3">
                 <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">LETRA C</a>
                 <a href="#" data-toggle="modal" data-target="#modalExemplo16" class="float-left"><i class="fas fa-fw fa-question-circle"></i></a>
-                <textarea class="form-control" name="clausula_edit_3_1_c" rows="3" style="background-color: #F6FAFA; resize: none !important;" placeholder="demais..."></textarea>
+                <textarea class="form-control" value="{{$contratos_sr->clausula_edit_3_1_c}}" name="clausula_edit_3_1_c" rows="3" style="background-color: #F6FAFA; resize: none !important;" placeholder="">{{$contratos_sr->clausula_edit_3_1_c}}</textarea>
             </div>
 
-            <p class="mt-5 mb-3 roboto-font"><b>3.1.2.  Do(a) <input  class="myform-control" type="text" name="nome_inst_privado" id="handle_parceiro" placeholder="Instituição" disabled>:(PARCEIRO PRIVADO)</b></p>
+            <p class="mt-5 mb-3 roboto-font"><b>3.1.2.  Do(a) PARCEIRO PRIVADO: <input  class="myform-control" type="text" value="{{$contratos_sr->nome_inst_privado}}" name="nome_inst_privado" id="handle_parceiro" placeholder="{{$contratos_sr->nome_inst_privado}}"></b></p>
             <hr>
           
             <b>A)</b> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;<a href="#" data-toggle="modal" data-target="#modalCoordenadorPrivado"><i class="fas fa-fw fa-question-circle"></i></a>
@@ -487,7 +488,7 @@
             <div class="form-group row p-2">
               <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador Parceiro Privado:</label>
               <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
-                <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorPrivado()" id="nome_coordenador_privado" class="form-control" placeholder="Nome do coordenador parceiro privado">
+                <input type="text" name="nome_coordenador_privado" value="{{$contratos_sr->nome_coordenador_privado}}" onchange="handleCoordenadorPrivado()" id="nome_coordenador_privado" class="form-control" placeholder="{{$contratos_sr->nome_coordenador_privado}}">{{$contratos_sr->nome_coordenador_privado}}
               </div>
             </div>
 
@@ -496,7 +497,7 @@
             <div class="col-md-12 mb-3">
             <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">LETRA C</a>
             <a href="#" data-toggle="modal" data-target="#modalExemplo17"><i class="fas fa-fw fa-question-circle float-right m-2"></i></a>
-                <textarea placeholder="Demais..." class="form-control font-weight-bold" name="clausula_edit_3_2_b" rows="4" style="background-color: #F6FAFA; resize: none !important;"></textarea>
+                <textarea placeholder="{{$contratos_sr->clausula_edit_3_b}}" class="form-control font-weight-bold" value="{{$contratos_sr->clausula_edit_3_1_2_c}}" name="clausula_edit_3_1_2_c" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_3_1_2_c}}</textarea>
             </div> 
 
             <p><b>3.2.</b><span id="coord_ict"></span><span id="coord_privado"></span>poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.</p>
@@ -507,7 +508,7 @@
 
             <div class="col-md-12 mb-3">
             <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 3.3</a>
-                <textarea class="form-control" name="clausula_edit_3" rows="4" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente Acordo de Parceria para PD&I ou de publicações a ele referentes.</textarea>
+                <textarea class="form-control" value="{{$contratos_sr->clausula_edit_3_3}}" name="clausula_edit_3_3" rows="4" style="background-color: #F6FAFA; resize: none !important;" placeholder="{{$contratos_sr->clausula_edit_3_3}}">{{$contratos_sr->clausula_edit_3_3}}</textarea>
             </div>
 
             
@@ -551,10 +552,9 @@
             trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si 
             e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem 
             na execução do objeto deste Acordo, de forma que não se estabelecerá, em hipótese alguma,
-          vínculo empregatício ou de qualquer outra natureza com a EMPRESA <input type="text" class="myform-control" name="nome_empresa_parceira"  id="handle_parceiro" placeholder="Empresa parceira" disabled> e
-          o pessoal <input type="text" class="myform-control" name="nome_ict_parceira" id="handle_ict" placeholder="ICT ou Agência de fomento" disabled> vice-versa, cabendo a cada PARCEIRO a responsabilidade 
-          pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a
-          documentação comprobatória da regularidade na contratação.<br>
+          vínculo empregatício ou de qualquer outra natureza com a EMPRESA <input type="text" class="myform-control font-weight-bold" value="{{$contratos_sr->nome_empresa_parceira}}" name="nome_empresa_parceira"  id="handle_parceiro" placeholder="{{$contratos_sr->nome_empresa_parceira}}"> e
+          o pessoal <input type="text" class="myform-control font-weight-bold" value="{{$contratos_sr->nome_ict_parceira}}" name="nome_ict_parceira" id="handle_ict" placeholder="{{$contratos_sr->nome_ict_parceira}}"> vice-versa, cabendo a cada PARCEIRO a responsabilidade 
+          pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a documentação comprobatória da regularidade na contratação.<br>
         </p>
       </div>
     </div><!--end of tab-content: insert all these here!-->
@@ -579,55 +579,55 @@
         <div class="container-fluid pt-4 pb-4 pl-0 pr-0">
           <div class="col-md-12 mb-3">
               <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.1</a>
-              <textarea class="form-control" name="clausula_edit_5_1" rows="3" style="background-color: #F6FAFA; resize: none !important;">Todos os dados, técnicas, tecnologia, know-how, marcas, patentes e quaisquer outros bens ou direitos de propriedade intelectual/industrial de um parceiro que este venha a utilizar para execução do Projeto continuarão a ser de sua propriedade exclusiva, não podendo o outro parceiro cedê-los, transferi-los, aliená-los, divulgá-los ou empregá-los em quaisquer outros projetos ou sob qualquer outra forma sem o prévio consentimento escrito do seu proprietário.</textarea>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_1}}" name="clausula_edit_5_1" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_1}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
             <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.2</a>
-              <textarea class="form-control" name="clausula_edit_5_2" rows="3" style="background-color: #F6FAFA; resize: none !important;">Todo desenvolvimento tecnológico passível de proteção intelectual, em qualquer modalidade, proveniente da execução do presente Acordo de Parceria, deverá ter a sua propriedade compartilhada entre os PARCEIROS, na mesma proporção em que cada instituição contribuiu com recursos humanos, além do conhecimento pré-existente aplicado, conforme previsto no art. 9º, § 3°, da Lei nº 10.973/2004.</textarea>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_2}}" name="clausula_edit_5_2" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_2}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
             <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.3</a>
-              <textarea class="form-control" name="clausula_edit_5_3" rows="3" style="background-color: #F6FAFA; resize: none !important;">A divisão da titularidade sobre a propriedade intelectual prevista na cláusula anterior será definida por meio de instrumento próprio, respeitando-se o percentual de x% (x por cento) para a ICT/AGÊNCIA DE FOMENTO.</textarea>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_3}}" name="clausula_edit_5_3" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_3}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
             <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.4</a>
-              <textarea class="form-control" name="clausula_edit_5_4" rows="3" style="background-color: #F6FAFA; resize: none !important;">O instrumento previsto na subcláusula 5.3 deverá observar os requisitos legais e formais necessários para sua celebração e averbação junto aos órgãos competentes.</textarea>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_4}}" name="clausula_edit_5_4" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_4}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
             <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.5</a>
-              <textarea class="form-control" name="clausula_edit_5_5" rows="3" style="background-color: #F6FAFA; resize: none !important;">Eventuais impedimentos de um dos parceiros não prejudicará a titularidade e/ou a exploração dos direitos da Propriedade Intelectual pelos demais.</textarea>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_5}}" name="clausula_edit_5_5" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_5}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
             <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.6</a>
-              <textarea class="form-control" name="clausula_edit_5_6" rows="3" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS devem assegurar, na medida de suas respectivas responsabilidades, que os projetos propostos e que a alocação dos recursos tecnológicos correspondentes não infrinjam direitos autorais, patentes ou outros direitos intelectuais, assim como direitos de terceiros.</textarea>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_6}}" name="clausula_edit_5_6" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_6}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
             <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.7</a>
-              <textarea class="form-control" name="clausula_edit_5_7" rows="3" style="background-color: #F6FAFA; resize: none !important;">Na hipótese de eventual infração de qualquer direito de propriedade intelectual relacionada às tecnologias resultantes, os parceiros concordam que as medidas judiciais cabíveis visando coibir a infração do respectivo direito podem ser adotadas em conjunto ou separadamente.</textarea>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_7}}" name="clausula_edit_5_7" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_7}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
             <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.8</a>
-              <textarea class="form-control" name="clausula_edit_5_8" rows="3" style="background-color: #F6FAFA; resize: none !important;">Os depósitos de pedidos de proteção de propriedade intelectual devem ser iniciados necessariamente junto ao Instituto Nacional de Propriedade Industrial - INPI e registrados no sistema de acompanhamento da ICT/AGÊNCIA DE FOMENTO.</textarea>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_8}}" name="clausula_edit_5_8" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_8}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
             <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.9</a>
-              <textarea class="form-control" name="clausula_edit_5_9" rows="3" style="background-color: #F6FAFA; resize: none !important;">Caberá ao PARCEIRO PRIVADO, com exclusividade, a responsabilidade de preparar, arquivar, processar e manter pedidos de patente no Brasil e em ouros países. </textarea>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_9}}" name="clausula_edit_5_9" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_9}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
             <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.10</a>
-              <textarea class="form-control" name="clausula_edit_5_10" rows="3" style="background-color: #F6FAFA; resize: none !important;">As decisões relacionadas à preparação, processamento e manutenção de pedido de patente das tecnologias resultantes deste instrumento, no Brasil e em outros países, devem ser tomadas em conjunto pelos PARCEIROS ora acordantes.</textarea>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_10}}" name="clausula_edit_5_10" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_10}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
             <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.11</a>
-              <textarea class="form-control" name="clausula_edit_5_11" rows="3" style="background-color: #F6FAFA; resize: none !important;">Na hipótese de eventual infração de qualquer patente relacionada às tecnologias resultantes, os PARCEIROS concordam que as medidas judiciais cabíveis visando a coibir a infração da respectiva patente podem ser adotadas pelos PARCEIROS, em conjunto ou separadamente.</textarea>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_11}}" name="clausula_edit_5_11" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_11}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
             <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.12</a>
-              <textarea class="form-control" name="clausula_edit_5_12" rows="3" style="background-color: #F6FAFA; resize: none !important;">Tanto no que se refere à proteção da propriedade intelectual quanto às medidas judiciais, os PARCEIROS concordam que as despesas deverão ser suportadas de acordo com os percentuais definidos na exploração comercial das tecnologias.</textarea>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_12}}" name="clausula_edit_5_12" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_12}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
             <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.13</a>
-              <textarea class="form-control" name="clausula_edit_5_13" rows="3" style="background-color: #F6FAFA; resize: none !important;">A ICT/AGÊNCIA DE FOMENTO poderá outorgar poderes ao PARCEIRO PRIVADO para praticar todo e qualquer ato necessário para o depósito, acompanhamento e manutenção de pedido de patente das tecnologias resultantes do presente instrumento, no Brasil e em outros países.</textarea>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_13}}" name="clausula_edit_5_13" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_13}}</textarea>
           </div>
         </div><!--container-fluid-->
       </div>
@@ -686,15 +686,15 @@
           <div class="container-fluid bg-light p-3 pt-4 pb-4">
             <div class="col-md-12 mb-3">
                 <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.6</a>
-                <textarea class="form-control" name="clausula_edit_7_6" rows="3" style="background-color: #F6FAFA; resize: none !important;">As obrigações de sigilo em relação às INFORMAÇÕES CONFIDENCIAIS serão mantidas durante o período de vigência deste Acordo e pelo prazo de 5 (cinco) anos após sua extinção.</textarea>
+                <textarea class="form-control" value="{{$contratos_sr->clausula_edit_7_6}}" name="clausula_edit_7_6" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_7_6}}</textarea>
             </div>
             <div class="col-md-12 mb-3">
                 <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.7</a>
-                <textarea class="form-control" name="clausula_edit_7_7" rows="3" style="background-color: #F6FAFA; resize: none !important;">Para efeito dessa cláusula, todas as informações referentes ao “processo/serviço/projeto........” serão consideradas como INFORMAÇÃO CONFIDENCIAL, retroagindo às informações obtidas antes da assinatura do acordo.</textarea>
+                <textarea class="form-control" value="{{$contratos_sr->clausula_edit_7_7}}" name="clausula_edit_7_7" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_7_7}}</textarea>
             </div>
             <div class="col-md-12 mb-3">
                 <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.8</a>
-                <textarea class="form-control" name="clausula_edit_7_8" rows="3" style="background-color: #F6FAFA; resize: none !important;">Para efeito dessa cláusula, a classificação das informações como confidenciais será de responsabilidade de seu titular, devendo indicar os conhecimentos ou informações classificáveis como CONFIDENCIAIS por qualquer meio.</textarea>
+                <textarea class="form-control" value="{{$contratos_sr->clausula_edit_7_8}}" name="clausula_edit_7_8" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_7_8}}</textarea>
             </div>
           </div><!--container-->
 
@@ -724,37 +724,37 @@
           
           <div class="col-md-12 mb-3">
             <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.1</a>
-            <textarea class="form-control" name="clausula_edit_8_1" rows="8" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS deverão tomar todas as medidas necessárias, observados os princípios de civilidade e legalidade, e de acordo com as boas práticas empresariais para cumprir e assegurar que  (i) seus conselheiros, diretores, empregados qualquer pessoa agindo em seu nome, inclusive prepostos e subcontratados, quando houver (todos doravante referidos como “Partes Relacionadas” e, cada uma delas, como “uma Parte Relacionada”) obedecerão a todas as leis aplicáveis, incluindo àquelas  relativas ao combate à corrupção, suborno e lavagem de dinheiro, bem como àquelas  relativas a sanções econômicas, vigentes nas jurisdições em que os PARCEIROS estão constituídos e na jurisdição em que o Acordo de Parceria será cumprido (se diferentes), para impedir qualquer atividade fraudulenta por si ou por uma Parte Relacionada com relação ao cumprimento deste Acordo de Parceria. Os PARCEIROS obrigam-se a observar rigidamente as condições contidas nos itens abaixo, sob pena de imediata e justificada rescisão do acordo.</textarea>
+            <textarea class="form-control" value="{{$contratos_sr->clausula_edit_8_1}}" name="clausula_edit_8_1" rows="8" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_1}}</textarea>
           </div>
 
           <div class="col-md-12 mb-3">
           <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.2</a>
-            <textarea class="form-control" name="clausula_edit_8_2" rows="6" style="background-color: #F6FAFA; resize: none !important;">Um PARCEIRO deverá notificar imediatamente o outro sobre eventual suspeita de qualquer fraude tenha ocorrido, esteja ocorrendo, ou provavelmente ocorrerá, para que sejam tomadas as medidas necessárias para apurá-las. Os PARCEIROS declaram-se cientes de que seus Departamentos Jurídicos e/ou advogados contratados estão autorizados, em caso de práticas que atentem contra os preceitos dessa cláusula, a solicitar a imediata abertura dos procedimentos criminais, cíveis e administrativos cabíveis à cada hipótese:</textarea>
+            <textarea class="form-control" value="{{$contratos_sr->clausula_edit_8_2}}" name="clausula_edit_8_2" rows="6" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_2}}</textarea>
           </div>
 
           <div class="col-md-12 mb-3">
             <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA A)</a>
-            <textarea class="form-control" name="clausula_edit_8_2_a" rows="3" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS não poderão, em hipótese alguma, dar ou oferecer nenhum tipo de presente, viagens, vantagens a qualquer empregado, servidor, preposto ou diretor de outro PARCEIRO, especialmente àqueles responsáveis pela fiscalização do presente Acordo. Serão admitidos apenas, em épocas específicas, a entrega de brindes, tais como canetas, agendas, folhinhas, cadernos etc;</textarea>
+            <textarea class="form-control" value="{{$contratos_sr->clausula_edit_8_2_a}}" name="clausula_edit_8_2_a" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_2_a}}</textarea>
           </div>
 
           <div class="col-md-12 mb-3">
             <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA B)</a>
-            <textarea class="form-control" name="clausula_edit_8_2_b" rows="3" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS somente poderão representar outro PARCEIRO perante órgãos públicos quando devidamente autorizado para tal, seja no corpo do próprio Acordo, seja mediante autorização prévia, expressa e escrita de seu representante com poderes para assim proceder;</textarea>
+            <textarea class="form-control" value="{{$contratos_sr->clausula_edit_8_2_b}}" name="clausula_edit_8_2_b" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_2_b}}</textarea>
           </div>
 
           <div class="col-md-12 mb-3">
           <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA C)</a>
-            <textarea class="form-control" name="clausula_edit_8_2_c" rows="3" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS e seus empregados/prepostos, quando agirem em nome ou defendendo interesses deste Acordo perante órgãos, autoridades ou agentes públicos, não poderão dar, receber ou oferecer quaisquer presentes, vantagens ou favores a agentes públicos, sobretudo no intuito de obter qualquer tipo de favorecimento para os PARCEIROS;</textarea>
+            <textarea class="form-control" value="{{$contratos_sr->clausula_edit_8_2_c}}" name="clausula_edit_8_2_c" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_2_c}}</textarea>
           </div>
 
           <div class="col-md-12 mb-3">
           <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA D)</a>
-            <textarea class="form-control" name="clausula_edit_8_2_d" rows="3" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS, quando agirem em nome ou defendendo seus interesses, não poderão fornecer informações sigilosas a terceiros ou a agentes públicos, mesmo que isso venha a facilitar, de alguma forma, o cumprimento desse Acordo;</textarea>
+            <textarea class="form-control" value="{{$contratos_sr->clausula_edit_8_2_d}}" name="clausula_edit_8_2_d" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_2_d}}</textarea>
           </div>
 
           <div class="col-md-12 mb-3">
             <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA E)</a>
-            <textarea class="form-control" name="clausula_edit_8_2_e" rows="3" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS, ao tomar conhecimento de que algum de seus prepostos ou empregados descumpriram as premissas e obrigações acima pactuadas, denunciarão espontaneamente o fato, de forma que, juntas, elaborem e executem um plano de ação para (i) afastar o empregado ou preposto imediatamente; (ii) evitar que tais atos se repitam e (iii) garantir que o Acordo tenha condições de continuar vigente.</textarea>
+            <textarea class="form-control" value="{{$contratos_sr->clausula_edit_8_2_e}}" name="clausula_edit_8_2_e" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_2_e}}</textarea>
           </div>
 
         </div>
@@ -783,7 +783,7 @@
         <div class="text-justify text-black">
           <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">10. CLÁUSULA DÉCIMA - DA VIGÊNCIA E DA PRORROGAÇÃO</h4><hr>
           <br>
-          <p><b>10.1</b> O presente Acordo de Parceria para PD&I vigerá pelo prazo de <input class="myform-control text-black" type="text" name="prazo_vigencia" placeholder="Quantidade de anos"> anos, a partir da data de sua assinatura, prorrogáveis.</p>
+          <p><b>10.1</b> O presente Acordo de Parceria para PD&I vigerá pelo prazo de <input class="myform-control text-black" type="text" value="{{$contratos_sr->prazo_vigencia}}" name="prazo_vigencia" placeholder="{{$contratos_sr->prazo_vigencia}}"> anos, a partir da data de sua assinatura, prorrogáveis.</p>
           <div class="alert alert-warning" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             NOTAS EXPLICATIVAS!
@@ -824,11 +824,11 @@
 
           <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Letra A)</a>
-              <textarea class="form-control" name="clausula_edit_12_a" rows="3" style="background-color: #F6FAFA; resize: none !important;">Formulário de Resultado Parcial: anualmente, até o último dia útil do mês de dezembro de cada ano de vigência deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho;</textarea>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_edit_12_a}}" name="clausula_edit_12_a" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_12_a}}</textarea>
           </div>
 
           <div class="col-md-12 mb-3">
-            <p><b>B)</b> Formulário de Resultado Final: no prazo de até <input class="myform-control text-black" type="text" name="clausula_prazo_12_b" placeholder="Prazo em dias"> dias contados da conclusão do objeto deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho.</p>
+            <p><b>B)</b> Formulário de Resultado Final: no prazo de até <input class="myform-control text-black" type="text" value="{{$contratos_sr->clausula_prazo_12_b}}" name="clausula_prazo_12_b" placeholder="{{$contratos_sr->clausula_prazo_12_b}}"> dias contados da conclusão do objeto deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho.</p>
           </div>
 
           <p><b>12.3</b> No Formulário de Resultado de que trata a subcláusula 12.2, deverá ser demonstrada a compatibilidade entre as metas previstas e as alcançadas no período, bem como apontadas as justificativas em caso de discrepância, consolidando dados e valores das ações desenvolvidas.</p>
@@ -838,7 +838,7 @@
             NOTAS EXPLICATIVAS!
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_19">Saiba mais</button>
           </div>
-          <p><b>12.5</b> A prestação de contas será simplificada, privilegiando os resultados da pesquisa, e seguirá as regras previstas no <span class="text-blue">artigo 58 do Decreto nº 9.283/18 e/ou na Política de Inovação da entidade pública. </span></p>
+          <p><b>12.5</b> A prestação de contas será simplificada, privilegiando os resultados da pesquisa, e seguirá as regras previstas no artigo 58 do Decreto nº 9.283/18 e/ou na Política de Inovação da entidade pública. </p>
         </div>
       </div>
     </div>
@@ -856,22 +856,22 @@
 
         <div class="col-md-12 mb-3">
           <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">13.2</a>
-          <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13_2" rows="5" style="background-color: #F6FAFA; resize: none !important;">13.2 Constituem motivos para rescisão de pleno direito o inadimplemento de quaisquer das cláusulas pactuadas neste Acordo, o descumprimento das normas estabelecidas na legislação vigente ou a superveniência de norma legal ou fato que tome material ou formalmente inexequível o Acordo de Parceria para PD&I, imputando-se aos PARCEIROS as responsabilidades pelas obrigações até então assumidas, devendo o PARCEIRO que se julgar prejudicado notificar o parceiro para que apresente esclarecimentos no prazo de 15 (quinze) dias corridos.</textarea>
+          <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_13_2}}" name="clausula_edit_13_2" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_13_2}}</textarea>
         </div>
 
         <div class="col-md-12 mb-3">
           <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">13.2.1</a>
-          <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13_2_1" rows="3" style="background-color: #F6FAFA; resize: none !important;">13.2.1  Prestados os esclarecimentos, os PARCEIROS deverão, por mútuo consenso, decidir pela rescisão ou manutenção do Acordo.</textarea>
+          <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_13_2_1}}" name="clausula_edit_13_2_1" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_13_2_1}}</textarea>
         </div>
 
         <div class="col-md-12 mb-3">
           <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">13.2.2</a>
-          <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13_2_2" rows="3" style="background-color: #F6FAFA; resize: none !important;">13.2.2  Decorrido o prazo para esclarecimentos, caso não haja resposta, o Acordo será rescindido de pleno direito, independentemente de notificações ou interpelações, judiciais ou extrajudiciais.</textarea>
+          <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_13_2_2}}" name="clausula_edit_13_2_2" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_13_2_2}}</textarea>
         </div>
 
         <div class="col-md-12 mb-3">
           <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">13.3</a>
-          <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13_3" rows="5" style="background-color: #F6FAFA; resize: none !important;">13.3 O Acordo de Parceria será rescindido em caso de decretação de falência, liquidação extrajudicial ou judicial, ou insolvência de qualquer dos PARCEIROS, ou, ainda, no caso de  10/11 propositura de quaisquer medidas ou procedimentos contra qualquer dos PARCEIROS para sua liquidação e/ou dissolução.</textarea>
+          <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_13_3}}" name="clausula_edit_13_3" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_13_3}}</textarea>
         </div>
         
 
@@ -886,7 +886,7 @@
         <div class="text-justify text-black">
           <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">14. CLÁUSULA DÉCIMA QUARTA - DA PUBLICIDADE</h4><hr>
           <br>
-          <p><b>14.1</b> A publicação do extrato do presente Acordo de Parceria para PD&I no Diário Oficial da União (DOU) é condição indispensável para sua eficácia e será providenciada pela(o) <input type="text" class="myform-control" name="nome_inst_ict" id="handle_ict" placeholder="Instituição" disabled> no prazo de até 20 (vinte) dias da sua assinatura. </p>
+          <p><b>14.1</b> A publicação do extrato do presente Acordo de Parceria para PD&I no Diário Oficial da União (DOU) é condição indispensável para sua eficácia e será providenciada pela(o) <input type="text" class="myform-control" name="nome_inst_ict" id="handle_ict" placeholder="{{$contratos_sr->nome_inst_ict}}" disabled> no prazo de até 20 (vinte) dias da sua assinatura. </p>
         </div>
       </div>
     </div>
@@ -908,7 +908,8 @@
                 class="form-control text-black font-weight-bold" 
                 name="parceiro_contato_endereço"
                 id="endereco" 
-                placeholder="Endereço">
+                placeholder="{{$contratos_sr->parceiro_contato_endereco}}"
+                value="{{$contratos_sr->parceiro_contato_endereco}}">
             </div>
 
             <div class="form-group col-md-3">
@@ -917,14 +918,16 @@
                 class="form-control text-black font-weight-bold"
                 name="parceiro_contato_telefone" 
                 id="parceiro_contato_telefone" 
-                placeholder="Telefone">
+                placeholder="{{$contratos_sr->parceiro_contato_telefone}}"
+                value="{{$contratos_sr->parceiro_contato_telefone}}">
             </div>
             <div class="form-group col-md-3">
               <label for="parceiro_contato_celular" class="font-weight-bold text-black">Celular</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="parceiro_contato_celular" id="parceiro_contato_celular" 
-                placeholder="Celular">
+                placeholder="{{$contratos_sr->parceiro_contato_celular}}"
+                value="{{$contratos_sr->parceiro_contato_celular}}">
             </div>
             <div class="form-group col-md-3">
               <label for="parceiro_contato_email" class="font-weight-bold text-black">Email</label>
@@ -932,7 +935,8 @@
                 class="form-control text-black font-weight-bold"
                 name="parceiro_contato_email" 
                 id="parceiro_contato_email" 
-                placeholder="E-mail">
+                placeholder="{{$contratos_sr->parceiro_contato_email}}"
+                value="{{$contratos_sr->parceiro_contato_email}}">
             </div>
           </div><!-- /.row-->
           <!-- Pariceiro privado -->
@@ -944,7 +948,8 @@
                 class="form-control text-black font-weight-bold" 
                 name="privado_contato_endereço"
                 id="endereco" 
-                placeholder="Endereço">
+                placeholder="{{$contratos_sr->privado_contato_endereco}}"
+                value="{{$contratos_sr->privado_contato_endereco}}">
             </div>
 
             <div class="form-group col-md-3">
@@ -953,14 +958,16 @@
                 class="form-control text-black font-weight-bold"
                 name="privado_contato_telefone" 
                 id="privado_contato_telefone" 
-                placeholder="Telefone">
+                placeholder="{{$contratos_sr->privado_contato_telefone}}"
+                value="{{$contratos_sr->privado_contato_telefone}}">
             </div>
             <div class="form-group col-md-3">
               <label for="privado_contato_celular" class="font-weight-bold text-black">Celular</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="privado_contato_celular" id="privado_contato_celular" 
-                placeholder="Celular">
+                placeholder="{{$contratos_sr->privado_contato_celular}}"
+                value="{{$contratos_sr->privado_contato_celular}}">
             </div>
             <div class="form-group col-md-3">
               <label for="privado_contato_email" class="font-weight-bold text-black">Email</label>
@@ -968,7 +975,8 @@
                 class="form-control text-black font-weight-bold"
                 name="privado_contato_email" 
                 id="privado_contato_email" 
-                placeholder="E-mail">
+                placeholder="{{$contratos_sr->privado_contato_email}}"
+                value="{{$contratos_sr->privado_contato_email}}">
             </div>
           </div><!-- /.row-->
                       
@@ -998,7 +1006,7 @@
         <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">17. CLÁUSULA DÉCIMA SÉTIMA - DO FORO</h4><hr>
         <br>
         <div class="text-justify text-black">
-          <p><b>17.1.</b>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de <input class="myform-control text-black"  type="text" name="estado_foro" placeholder="Estado">, cidade de <input  class="myform-control" type="text" name="cidade_foro" placeholder="Cidade">, para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109 da Constituição Federal. E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.</p>
+          <p><b>17.1.</b>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de <input class="myform-control font-weight-bold"  type="text" value="{{$contratos_sr->estado_foro}}" name="estado_foro" placeholder="{{$contratos_sr->estado_foro}}">, cidade de <input  class="myform-control font-weight-bold" type="text" value="{{$contratos_sr->cidade_foro}}" name="cidade_foro" placeholder="{{$contratos_sr->cidade_foro}}">, para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109 da Constituição Federal. E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.</p>
           <br>
           <div class="form-row mt-3">
             <div class="form-group col-md-3">
@@ -1007,7 +1015,8 @@
                 class="form-control text-black font-weight-bold" 
                 name="cidade_uf_dia_foro"
                 id="cidade_uf_dia_foro" 
-                placeholder="Cidade, UF, Dia do Mês e Ano">
+                placeholder="{{$contratos_sr->cidade_uf_dia_foro}}"
+                value="{{$contratos_sr->cidade_uf_dia_foro}}">
             </div>
           </div><!-- /.row-->
 
@@ -1018,14 +1027,16 @@
                 class="form-control text-black font-weight-bold"
                 name="ict_inst_foro" 
                 id="ict_inst_foro" 
-                placeholder="Instituição">
+                placeholder="{{$contratos_sr->ict_inst_foro}}"
+                value="{{$contratos_sr->ict_inst_foro}}">
             </div>
             <div class="form-group col-md-3">
               <label for="nome_rep_foro" class="font-weight-bold text-black">Representante:</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="nome_rep_foro" id="nome_rep_foro" 
-                placeholder="Nome do Representante">
+                placeholder="{{$contratos_sr->nome_rep_foro}}"
+                value="{{$contratos_sr->nome_rep_foro}}">
             </div>
             <div class="form-group col-md-3">
               <label for="cargo_rep_foro" class="font-weight-bold text-black">Cargo</label>
@@ -1033,7 +1044,8 @@
                 class="form-control text-black font-weight-bold"
                 name="cargo_rep_foro" 
                 id="cargo_rep_foro" 
-                placeholder="Cargo">
+                placeholder="{{$contratos_sr->cargo_rep_foro}}"
+                value="{{$contratos_sr->cargo_rep_foro}}">
             </div>
           </div><!-- /.row-->
 
@@ -1044,14 +1056,16 @@
                 class="form-control text-black font-weight-bold"
                 name="nome_inst_privado_foro" 
                 id="nome_inst_privado_foro" 
-                placeholder="Instituição">
+                placeholder="{{$contratos_sr->nome_inst_privado_foro}}"
+                value="{{$contratos_sr->nome_inst_privado_foro}}">
             </div>
             <div class="form-group col-md-3">
               <label for="nome_rep_privado_foro" class="font-weight-bold text-black">Representante:</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="nome_rep_privado_foro" id="nome_rep_privado_foro" 
-                placeholder="Nome do Representante">
+                placeholder="{{$contratos_sr->nome_rep_privado_foro}}"
+                value="{{$contratos_sr->nome_rep_privado_foro}}">
             </div>
             <div class="form-group col-md-3">
               <label for="cargo_rep_privado_foro" class="font-weight-bold text-black">Cargo</label>
@@ -1059,8 +1073,10 @@
                 class="form-control text-black font-weight-bold"
                 name="cargo_rep_privado_foro" 
                 id="cargo_rep_privado_foro" 
-                placeholder="Cargo">
+                placeholder="{{$contratos_sr->cargo_rep_privado_foro}}"
+                value="{{$contratos_sr->cargo_rep_privado_foro}}">
             </div>
+            <input type="hidden" id="tipo" name="{{$contratos_sr->tipo}}" value="Sem Repasse">
           </div><!-- /.row-->
         </div>
       </div>
