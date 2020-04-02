@@ -20,11 +20,12 @@ function handleNameParceiro(event){
 
 function handleCheckbox(){
     const checkBox = document.getElementById("possui_apoio")
-    const clausula = document.getElementById("clausula_apoio_wrapper")
+    const clausulas = document.querySelectorAll("#clausula_apoio_wrapper")
     if (checkBox.checked == true){
-      clausula.style.display = "block"
+        console.log(clausulas)
+        clausulas.forEach( clausula => clausula.style.display = "block")
     } else {
-      clausula.style.display = "none"
+        clausulas.forEach( clausula => clausula.style.display = "none")
     }
 }
 

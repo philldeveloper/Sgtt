@@ -91,6 +91,7 @@ class Contrato_crController extends Controller
         $contrato_cr->clausula_edit_3g = $request->clausula_edit_3g;
         $contrato_cr->clausula_edit_3h = $request->clausula_edit_3h;
         $contrato_cr->clausula_edit_3i = $request->clausula_edit_3i;
+        $contrato_cr->clausula_edit_3k = $request->clausula_edit_3k;
         $contrato_cr->clausula_edit_3j = $request->clausula_edit_3j;
         $contrato_cr->clausula_edit_3l = $request->clausula_edit_3l;
         $contrato_cr->clausula_edit_3m = $request->clausula_edit_3c;
@@ -98,6 +99,9 @@ class Contrato_crController extends Controller
         $contrato_cr->clausula_edit_3_3 = $request->clausula_edit_3_3;
 
         $contrato_cr->clausula_edit_4_8 = $request->clausula_edit_4_8;
+        $contrato_cr->clausula_opcional_4_6 = $request->clausula_opcional_4_6;
+
+
         $contrato_cr->clausula_edit_4_8_1 = $request->clausula_edit_4_8_1;
         $contrato_cr->clausula_edit_4_8_2 = $request->clausula_edit_4_8_2;
         $contrato_cr->clausula_edit_4_9 = $request->clausula_edit_4_9;
