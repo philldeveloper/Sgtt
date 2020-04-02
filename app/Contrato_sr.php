@@ -100,18 +100,17 @@ class Contrato_sr extends Model
         //fim das clausulas editaveis
 
         //15.1 contato publico
-        'parceiro_contato_endereço',
+        'parceiro_contato_endereco',
         'parceiro_contato_telefone',
         'parceiro_contato_celular',
         'parceiro_contato_email',
         
         //15.1 contato privado
-        'privado_contato_endereço',
+        'privado_contato_endereco',
         'privado_contato_telefone',
         'privado_contato_celular',
         'privado_contato_email',
 
-        'nome_inst_privado',
         'nome_inst_fundacao',
         'nome_empresa_parceira',
         'nome_ict_parceira',

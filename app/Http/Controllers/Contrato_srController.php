@@ -157,7 +157,7 @@ class Contrato_srController extends Controller
         $contrato_sr->ict_inst_foro = $request->ict_inst_foro;
         $contrato_sr->nome_rep_foro = $request->nome_rep_foro;
         $contrato_sr->cargo_rep_foro = $request->cargo_rep_foro;
-        
+
         $contrato_sr->nome_inst_privado_foro = $request->nome_inst_privado_foro;
         $contrato_sr->nome_rep_privado_foro = $request->nome_rep_privado_foro;
         $contrato_sr->cargo_rep_privado_foro = $request->cargo_rep_privado_foro;

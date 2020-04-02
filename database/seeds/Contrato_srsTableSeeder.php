@@ -62,7 +62,7 @@ class Contrato_srsTableSeeder extends Seeder
 			'nome_inst_privado' => 'Teste',
 			'nome_coordenador_privado' => 'Tauan',
 
-			'clausula_edit_3_2_c' => 'Demais...',
+			'clausula_edit_3_1_2_c' => 'Demais...',
 			'clausula_edit_3_3' => 'Os PARCEIROS são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente Acordo de Parceria para PD&I ou de publicações a ele referentes.',
 
 			'clausula_edit_5_1' => 'Todos os dados, técnicas, tecnologia, know-how, marcas, patentes e quaisquer outros bens ou direitos de propriedade intelectual/industrial de um parceiro que este venha a utilizar para execução do Projeto continuarão a ser de sua propriedade exclusiva, não podendo o outro parceiro cedê-los, transferi-los, aliená-los, divulgá-los ou empregá-los em quaisquer outros projetos ou sob qualquer outra forma sem o prévio consentimento escrito do seu proprietário.',
@@ -101,17 +101,16 @@ class Contrato_srsTableSeeder extends Seeder
 			'clausula_edit_13_2_2' => 'Decorrido o prazo para esclarecimentos, caso não haja resposta, o Acordo será rescindido de pleno direito, independentemente de notificações ou interpelações, judiciais ou extrajudiciais',
 			'clausula_edit_13_3' => 'O Acordo de Parceria será rescindido em caso de decretação de falência, liquidação extrajudicial ou judicial, ou insolvência de qualquer dos PARCEIROS, ou, ainda, no caso de  10/11 propositura de quaisquer medidas ou procedimentos contra qualquer dos PARCEIROS para sua liquidação e/ou dissolução;',
 			
-			'parceiro_contato_endereço' => 'Rua Onze',
+			'parceiro_contato_endereco' => 'Rua Onze',
 			'parceiro_contato_telefone' => '3864-0000',
 			'parceiro_contato_celular' => '87 8832-6362',
 			'parceiro_contato_email' => 'loremipsum@lorem.com',
 
-			'privado_contato_endereço' => 'Rua Doze',
+			'privado_contato_endereco' => 'Rua Doze',
 			'privado_contato_telefone' => '3864-1111',
 			'privado_contato_celular' => '87 9619-5263',
 			'privado_contato_email' => 'loremipsum_privado@lorem.com',
 
-		    'nome_inst_privado' => 'Lorem Ipsum',
 		    'nome_inst_fundacao' => 'Lorem Ipsum',
 		    'nome_empresa_parceira' => 'Lorem Ipsum',
 			'nome_ict_parceira' => 'Lorem Ipsum',

@@ -404,7 +404,7 @@
           </div>
 
           <p><b>2.1 </b>O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
-          <p class=""><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a(o) <input class="mb-2 text-black myform-control" id="handle_ict" type="text"  > <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
+          <p class=""><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a(o) <input class="mb-2 text-black myform-control font-weight-bold text-uppercase" id="handle_ict" type="text" value="{{$contratos_sr->nome_ict}}" disabled=""><a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
           
           <!--clausula editavel 2-->
 
