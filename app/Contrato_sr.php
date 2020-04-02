@@ -39,24 +39,25 @@ class Contrato_sr extends Model
         'parceiro_rg',
         'parceiro_orgao_exp',
         'parceiro_cargo',
+
+        //clausulas e variaveis na ordem em que aparecem no sistema.
+
         'clausula_descricao',
         'clausula_objetivo',
 
-        //clausulas editaveis
         'clausula_edit_2_3',
         'clausula_edit_2_4',
         'clausula_edit_2_5',
         'clausula_edit_2_6',
 
- 
-        'nome_inst_ict', //refeita
-        'nome_coordenador_ict',//refeita
+        'nome_inst_ict',
+        'nome_coordenador_ict',
 
-        'clausula_edit_3_1_b',//refeita
-        'clausula_edit_3_1_c',//refeita
+        'clausula_edit_3_1_b',
+        'clausula_edit_3_1_c',
 
-        'nome_inst_privado',//refeita
-        'nome_coordenador_privado',//refeita
+        'nome_inst_privado',
+        'nome_coordenador_privado',
 
         'clausula_edit_3_1_2_c',//refeita
         'clausula_edit_3_3',//refeita

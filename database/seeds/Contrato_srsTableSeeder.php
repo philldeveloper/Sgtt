@@ -43,7 +43,8 @@ class Contrato_srsTableSeeder extends Seeder
 		    'parceiro_cpf' => '123456784',
 		    'parceiro_rg' => '46798123',
 		    'parceiro_orgao_exp' => 'Lorem Ipsum',
-		    'parceiro_cargo' => 'Lorem Ipsum',
+			'parceiro_cargo' => 'Lorem Ipsum',
+			
 		    'clausula_descricao' => 'Lorem Ipsum',
 		    'clausula_objetivo' => 'Lorem Ipsum',
 
@@ -52,12 +53,17 @@ class Contrato_srsTableSeeder extends Seeder
 			'clausula_edit_2_5' => 'Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.',
 			'clausula_edit_2_6' => 'A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo.',
 
-		    'clausula_edit_3' => 'Os PARCEIROS são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente Acordo de Parceria para PD&I ou de publicações a ele referentes.',
+			'nome_inst_ict' => 'If Sertao',
 			'nome_coordenador_ict' => 'Philip',
-			'clausula_edit_3_1_b' => 'B) Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;',
-			'clausula_edit_3_1_c' => 'C) Demais...',
+			
+			'clausula_edit_3_1_b' => 'Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;',
+			'clausula_edit_3_1_c' => 'Demais...',
+
+			'nome_inst_privado' => 'Teste',
 			'nome_coordenador_privado' => 'Tauan',
-			'clausula_edit_3_2_c' => 'C) Demais...',
+
+			'clausula_edit_3_2_c' => 'Demais...',
+			'clausula_edit_3_3' => 'Os PARCEIROS são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente Acordo de Parceria para PD&I ou de publicações a ele referentes.',
 
 			'clausula_edit_5_1' => 'Todos os dados, técnicas, tecnologia, know-how, marcas, patentes e quaisquer outros bens ou direitos de propriedade intelectual/industrial de um parceiro que este venha a utilizar para execução do Projeto continuarão a ser de sua propriedade exclusiva, não podendo o outro parceiro cedê-los, transferi-los, aliená-los, divulgá-los ou empregá-los em quaisquer outros projetos ou sob qualquer outra forma sem o prévio consentimento escrito do seu proprietário.',
 			'clausula_edit_5_2' => 'Todo desenvolvimento tecnológico passível de proteção intelectual, em qualquer modalidade, proveniente da execução do presente Acordo de Parceria, deverá ter a sua propriedade compartilhada entre os PARCEIROS, na mesma proporção em que cada instituição contribuiu com recursos humanos, além do conhecimento pré-existente aplicado, conforme previsto no art. 9º, § 3°, da Lei nº 10.973/2004.',
@@ -85,6 +91,8 @@ class Contrato_srsTableSeeder extends Seeder
 			'clausula_edit_8_2_d' => 'Os PARCEIROS, quando agirem em nome ou defendendo seus interesses, não poderão fornecer informações sigilosas a terceiros ou a agentes públicos, mesmo que isso venha a facilitar, de alguma forma, o cumprimento desse Acordo;',
 			'clausula_edit_8_2_e' => 'Os PARCEIROS, ao tomar conhecimento de que algum de seus prepostos ou empregados descumpriram as premissas e obrigações acima pactuadas, denunciarão espontaneamente o fato, de forma que, juntas, elaborem e executem um plano de ação para (i) afastar o empregado ou preposto imediatamente; (ii) evitar que tais atos se repitam e (iii) garantir que o Acordo tenha condições de continuar vigente.',
 
+			'prazo_vigencia' => '10',
+
 			'clausula_edit_12_a' => 'Formulário de Resultado Parcial: anualmente, até o último dia útil do mês de dezembro de cada ano de vigência deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho;',
 			'clausula_prazo_12_b' => '120 (cento e vinte)',
 
@@ -92,8 +100,6 @@ class Contrato_srsTableSeeder extends Seeder
 			'clausula_edit_13_2_1' => 'Prestados os esclarecimentos, os PARCEIROS deverão, por mútuo consenso, decidir pela rescisão ou manutenção do Acordo.',
 			'clausula_edit_13_2_2' => 'Decorrido o prazo para esclarecimentos, caso não haja resposta, o Acordo será rescindido de pleno direito, independentemente de notificações ou interpelações, judiciais ou extrajudiciais',
 			'clausula_edit_13_3' => 'O Acordo de Parceria será rescindido em caso de decretação de falência, liquidação extrajudicial ou judicial, ou insolvência de qualquer dos PARCEIROS, ou, ainda, no caso de  10/11 propositura de quaisquer medidas ou procedimentos contra qualquer dos PARCEIROS para sua liquidação e/ou dissolução;',
-		    
-			'nome_inst_ict' => 'Lorem Ipsum',
 			
 			'parceiro_contato_endereço' => 'Rua Onze',
 			'parceiro_contato_telefone' => '3864-0000',
@@ -108,17 +114,19 @@ class Contrato_srsTableSeeder extends Seeder
 		    'nome_inst_privado' => 'Lorem Ipsum',
 		    'nome_inst_fundacao' => 'Lorem Ipsum',
 		    'nome_empresa_parceira' => 'Lorem Ipsum',
-		    'nome_ict_parceira' => 'Lorem Ipsum',
-		    'prazo_vigencia' => '02',
+			'nome_ict_parceira' => 'Lorem Ipsum',
+			
 		    'estado_foro' => 'Lorem Ipsum',
 		    'cidade_foro' => 'Lorem Ipsum',
 		    'cidade_uf_dia_foro' => 'Lorem Ipsum',
 		    'ict_inst_foro' => 'Lorem Ipsum',
 		    'nome_rep_foro' => 'Lorem Ipsum',
-		    'cargo_rep_foro' => 'Lorem Ipsum',
+			'cargo_rep_foro' => 'Lorem Ipsum',
+			
 		    'nome_inst_privado_foro' => 'Lorem Ipsum',
 		    'nome_rep_privado_foro' => 'Lorem Ipsum',
-		    'cargo_rep_privado_foro' => 'Lorem Ipsum',
+			'cargo_rep_privado_foro' => 'Lorem Ipsum',
+			
 		    'user_id' => '1',
 		    'tipo' => 'Sem Repasse',
 		]);
