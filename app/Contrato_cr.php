@@ -60,12 +60,14 @@ class Contrato_cr extends Model
         'clausula_edit_3h',
         'clausula_edit_3i',
         'clausula_edit_3j',
+        'clausula_edit_3k',
         'clausula_edit_3l',
         'clausula_edit_3m',
         'clausula_edit_3n',
         'clausula_edit_3_3',
 
         'clausula_edit_4_8',
+        'clausula_opcional_4_6',
         'clausula_edit_4_8_1',
         'clausula_edit_4_8_2',
         'clausula_edit_4_9',
@@ -115,7 +117,22 @@ class Contrato_cr extends Model
 
         'clausula_edit_16_1',
         'clausula_edit_16_2',
-
+        //17.1 contato publico
+        'parceiro_contato_endereço',
+        'parceiro_contato_telefone',
+        'parceiro_contato_celular',
+        'parceiro_contato_email',
+        //17.1 contato privado
+        'privado_contato_endereço',
+        'privado_contato_telefone',
+        'privado_contato_celular',
+        'privado_contato_email',
+        //17.1 contato fundacao apoio
+        'apoio_contato_endereço',
+        'apoio_contato_telefone',
+        'apoio_contato_celular',
+        'apoio_contato_email',
+        
         'nome_inst_ict', //clausula_3
         'nome_coordenador_ict', //clausula_3 *Novo
         'nome_coordenador_privado',//clausula_3 *Novo

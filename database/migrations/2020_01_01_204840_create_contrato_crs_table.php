@@ -63,12 +63,14 @@ class CreateContratoCrsTable extends Migration
             $table->longText('clausula_edit_3h')->nullable()->default(null);
             $table->longText('clausula_edit_3i')->nullable()->default(null);
             $table->longText('clausula_edit_3j')->nullable()->default(null);
+            $table->longText('clausula_edit_3k')->nullable()->default(null);
             $table->longText('clausula_edit_3l')->nullable()->default(null);
             $table->longText('clausula_edit_3m')->nullable()->default(null);
             $table->longText('clausula_edit_3n')->nullable()->default(null);
             $table->longText('clausula_edit_3_3')->nullable()->default(null);
 
             $table->longText('clausula_edit_4_8')->nullable()->default(null);
+            $table->longText('clausula_opcional_4_6')->nullable()->default(null);
             $table->longText('clausula_edit_4_8_1')->nullable()->default(null);
             $table->longText('clausula_edit_4_8_2')->nullable()->default(null);
             $table->longText('clausula_edit_4_9')->nullable()->default(null);
@@ -138,6 +140,23 @@ class CreateContratoCrsTable extends Migration
             $table->string('nome_inst_privado_foro');
             $table->string('nome_rep_privado_foro');
             $table->string('cargo_rep_privado_foro');
+
+            $table->string('parceiro_contato_endereço');
+            $table->string('parceiro_contato_telefone');
+            $table->string('parceiro_contato_celular');
+            $table->string('parceiro_contato_email');
+            
+            $table->string('privado_contato_endereço');
+            $table->string('privado_contato_telefone');
+            $table->string('privado_contato_celular');
+            $table->string('privado_contato_email');
+
+            $table->string('apoio_contato_endereço');
+            $table->string('apoio_contato_telefone');
+            $table->string('apoio_contato_celular');
+            $table->string('apoio_contato_email');
+
+
             $table->string('tipo')->nullable()->default(null);
 
             $table->integer('user_id')->unsigned(); //referencia a tabela de users
