@@ -499,7 +499,7 @@
                 <textarea placeholder="Demais..." class="form-control font-weight-bold" name="clausula_edit_3_1_2_c" rows="4" style="background-color: #F6FAFA; resize: none !important;"></textarea>
             </div> 
 
-            <p><b>3.2.</b><span id="coord_ict"></span><span id="coord_privado"></span>poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.</p>
+            <p><b>3.2.</b><span id="coord_ict"></span><span id="coord_privado"></span> poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.</p>
 
             <div class="alert alert-info py-2 mt-5 mb-4 text-dark font-weight-bold" role="alert">      
               <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">Edite a(s) cláusula(s) abaixo (se julgar necessário):
