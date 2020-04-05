@@ -1038,10 +1038,12 @@
             Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_12_4_1" rows="6">12.4.1. Alterações na distribuição entre grupos de natureza de despesa e alterações de rubricas ou itens de despesas, que não ultrapassarem 20% (vinte por cento) do valor total do projeto, ficarão dispensadas de prévia anuência da concedente, hipótese em o interessado comunicará aos PARCEIROS, devendo constar as razões que ensejaram as alterações, indicando a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 12.4.1</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_12_4_1" rows="6">Alterações na distribuição entre grupos de natureza de despesa e alterações de rubricas ou itens de despesas, que não ultrapassarem 20% (vinte por cento) do valor total do projeto, ficarão dispensadas de prévia anuência da concedente, hipótese em o interessado comunicará aos PARCEIROS, devendo constar as razões que ensejaram as alterações, indicando a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_12_4_2" rows="3">12.4.2. Alterações que superarem o percentual acima indicado dependerão de anuência prévia e expressa da concedente, que será formalizado por meio de ofício, nos termos da Cláusula 4.8.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 12.4.2</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_12_4_2" rows="3">Alterações que superarem o percentual acima indicado dependerão de anuência prévia e expressa da concedente, que será formalizado por meio de ofício, nos termos da Cláusula 4.8.</textarea>
           </div>
 
         </div>
@@ -1051,7 +1053,7 @@
     <div class="tab-pane" id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2"> 13. CLÁUSULA DÉCIMA TERCEIRA – DO MONITORAMENTO, DA AVALIAÇÃO E DA PRESTAÇÃO DE CONTAS</h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2"> 13. CLÁUSULA DÉCIMA TERCEIRA – DO MONITORAMENTO, DA AVALIAÇÃO E DA PRESTAÇÃO DE CONTAS</h4><hr><br>
           <p><b>13.1.</b> Os <b>PARCEIROS</b> exercerão a fiscalização técnico-financeira das atividades do presente Acordo. </p>
           <!--clausula editavel 13-->
           <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
@@ -1059,13 +1061,16 @@
             Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_13_2" rows="3">13.2. O pesquisador deverá encaminhar ao Setor responsável ou COMISSÃO DA ICT ou à FUNDAÇÃO DE APOIO: </textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 13.2</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_13_2" rows="3">O pesquisador deverá encaminhar ao Setor responsável ou COMISSÃO DA ICT ou à FUNDAÇÃO DE APOIO: </textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_13_a" rows="3">A) Formulário de Resultado Parcial: anualmente, até o último dia útil do mês de dezembro de cada ano de vigência deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho;</textarea>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA A)</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_13_a" rows="3">Formulário de Resultado Parcial: anualmente, até o último dia útil do mês de dezembro de cada ano de vigência deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho;</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_13_b" rows="3">B) Formulário de Resultado Final: no prazo de até 120 (cento e vinte) dias contados da conclusão do objeto deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho.</textarea>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA B)</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_13_b" rows="3">Formulário de Resultado Final: no prazo de até 120 (cento e vinte) dias contados da conclusão do objeto deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho.</textarea>
           </div>
           <p><b>13.3.</b> No Formulário de Resultado de que trata a subcláusula 13.2, deverá ser demonstrada a compatibilidade entre as metas previstas e as alcançadas no período, bem como apontadas as justificativas em caso de discrepância, consolidando dados e valores das ações desenvolvidas.</p>
           <p>
@@ -1085,7 +1090,7 @@
     <div class="tab-pane" id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">14. CLÁUSULA DÉCIMA QUARTA – DA EXTINÇÃO DO ACORDO</h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">14. CLÁUSULA DÉCIMA QUARTA – DA EXTINÇÃO DO ACORDO</h4><hr><br>
           <p><b>14.1.</b> Este Acordo poderá, a qualquer tempo, ser denunciado pelos <b>PARCEIROS</b>, devendo o interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de <span>60 (sessenta)</span> dias da data em que se pretenda que sejam encerradas as atividades, respeitadas as obrigações assumidas com terceiros entre os <b>PARCEIROS</b>, creditando eventuais benefícios adquiridos no período.</p>
           <!--clausula editavel 14-->
           <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
@@ -1093,19 +1098,24 @@
             Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_14_2" rows="5">14.2. Constituem motivos para rescisão de pleno direito o inadimplemento de quaisquer das cláusulas pactuadas neste Acordo, o descumprimento das normas estabelecidas na legislação vigente ou a superveniência de norma legal ou fato que tome material ou formalmente inexequível o Acordo de Parceria para PD&I, imputando-se aos PARCEIROS as responsabilidades pelas obrigações até então assumidas, devendo o PARCEIRO que se julgar prejudicado notificar o parceiro para que apresente esclarecimentos no prazo de 15 (quinze) dias corridos.</textarea>
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.2</a>
+            <textarea class="form-control font-weight-bold" name="clausula_edit_14_2" rows="5">Constituem motivos para rescisão de pleno direito o inadimplemento de quaisquer das cláusulas pactuadas neste Acordo, o descumprimento das normas estabelecidas na legislação vigente ou a superveniência de norma legal ou fato que tome material ou formalmente inexequível o Acordo de Parceria para PD&I, imputando-se aos PARCEIROS as responsabilidades pelas obrigações até então assumidas, devendo o PARCEIRO que se julgar prejudicado notificar o parceiro para que apresente esclarecimentos no prazo de 15 (quinze) dias corridos.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_14_2_1" rows="3">14.2.1 Prestados os esclarecimentos, os PARCEIROS deverão, por mútuo consenso, decidir pela rescisão ou manutenção do Acordo.</textarea>
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.2.1</a>
+            <textarea class="form-control font-weight-bold" name="clausula_edit_14_2_1" rows="3">Prestados os esclarecimentos, os PARCEIROS deverão, por mútuo consenso, decidir pela rescisão ou manutenção do Acordo.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_14_2_2" rows="3">14.2.2  Decorrido o prazo para esclarecimentos, caso não haja resposta, o Acordo será rescindido de pleno direito, independentemente de notificações ou interpelações, judiciais ou extrajudiciais.</textarea>
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.2.2</a>
+            <textarea class="form-control font-weight-bold" name="clausula_edit_14_2_2" rows="3">Decorrido o prazo para esclarecimentos, caso não haja resposta, o Acordo será rescindido de pleno direito, independentemente de notificações ou interpelações, judiciais ou extrajudiciais.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_14_3" rows="3">14.3 O Acordo de Parceria será rescindido em caso de decretação de falência, liquidação extrajudicial ou judicial, ou insolvência de qualquer dos PARCEIROS, ou, ainda, no caso de  10/11 propositura de quaisquer medidas ou procedimentos contra qualquer dos PARCEIROS para sua liquidação e/ou dissolução;</textarea>
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.3</a>
+            <textarea class="form-control font-weight-bold" name="clausula_edit_14_3" rows="3">Acordo de Parceria será rescindido em caso de decretação de falência, liquidação extrajudicial ou judicial, ou insolvência de qualquer dos PARCEIROS, ou, ainda, no caso de  10/11 propositura de quaisquer medidas ou procedimentos contra qualquer dos PARCEIROS para sua liquidação e/ou dissolução;</textarea>
           </div>
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_14_4" rows="3">14.4 O presente Acordo será extinto com o cumprimento do objeto ou com o decurso de prazo de vigência.</textarea>
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.4</a>
+            <textarea class="form-control font-weight-bold" name="clausula_edit_14_4" rows="3">O presente Acordo será extinto com o cumprimento do objeto ou com o decurso de prazo de vigência.</textarea>
           </div>
         </div>
       </div>
@@ -1114,7 +1124,7 @@
     <div class="tab-pane" id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">15. CLÁUSULA DÉCIMA QUINTA - DA PUBLICIDADE</h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">15. CLÁUSULA DÉCIMA QUINTA - DA PUBLICIDADE</h4><hr><br>
           <div class="alert alert-warning" role="alert">     
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
               NOTAS EXPLICATIVAS!
@@ -1128,15 +1138,17 @@
     <div class="tab-pane" id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">16. CLAUSULA DÉCIMA SEXTA – DOS BENS</h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">16. CLAUSULA DÉCIMA SEXTA – DOS BENS</h4><hr>
           <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
           <div class="col-md-12 mb-3">
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 16.1</a>
             <textarea class="form-control font-weight-bold" name="clausula_edit_16_1" rows="3"> 16.1.Após execução integral do objeto desse acordo, os bens patrimoniais, materiais permanentes ou equipamentos adquiridos serão revertidos à ICT, diretamente ao campus envolvido, por meio de Termo de Doação.(CLAÚSULA PARA AS ICTs)</textarea>
           </div>
           <div class="col-md-12 mb-3">
+            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 16.2</a>
             <textarea class="form-control font-weight-bold" name="clausula_edit_16_2" rows="3">16.2. Os bens gerados ou adquiridos no âmbito dos projetos de estímulo à ciência, à tecnologia e à inovação deste Acordo de Parceria serão incorporados, desde sua aquisição, ao patrimônio da ICT a que o pesquisador for vinculado. (CLÁUSULA PARA AS AGÊNCIAS DE FOMENTO)</textarea>
           </div>
         </div>
@@ -1146,7 +1158,7 @@
     <div class="tab-pane" id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">17. CLÁUSULA DÉCIMA QUINTA – DAS NOTIFICAÇÕES  <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">17. CLÁUSULA DÉCIMA QUINTA – DAS NOTIFICAÇÕES  <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr><br>
           <p><b>17.1</b> Qualquer comunicação ou notificação relacionada ao Acordo de Parceria poderá ser feita
                         pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no
                         respectivo endereço do PARCEIRO notificado, conforme as seguintes informações:<br>
@@ -1272,7 +1284,7 @@
     <div class="tab-pane" id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">18. CLÁUSULA DÉCIMA OITAVA – DISPOSIÇÕES GERAIS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">18. CLÁUSULA DÉCIMA OITAVA – DISPOSIÇÕES GERAIS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr><br>
           <p>
             <b>18.1.</b> É livre o acesso dos agentes da administração pública, do controle interno e do Tribunal de Contas aos documentos e às informações relacionados a esse Acordo, bem como aos locais de execução do respectivo objeto, ressalvadas as informações tecnológicas e dados das pesquisas que possam culminar com alguma inovação.
           </p>
@@ -1283,33 +1295,77 @@
     <div class="tab-pane" id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">19. CLÁUSULA DÉCIMA NONA - DO FORO <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">19. CLÁUSULA DÉCIMA NONA - DO FORO <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr><br>
           <p><b>19.1.</b>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de <input class="myform-control text-black"  type="text" name="estado_foro" id="estado_foro" placeholder="Estado">, cidade de <input  class="myform-control" type="text" name="cidade_foro" id="cidade_foro" placeholder="Cidade">,
             para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109
             da Constituição Federal.
             E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente
             instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.
           </p>
-          <input type="text" class="myform-control text-black"  name="cidade_uf_dia_foro" id="cidade_uf_dia_foro" placeholder="Cidade/UF, dia de mês de ano. ">   <br>   
-          <div class="mb-4 row justify-content-center">
-            <div class="col-6 align-self-center">
-              <div class="input-control-center">
-                <p class="mt-4">Pelo(a)  <span class="text-blue">ICT:</span> <input class="myform-control text-black" type="text" name="ict_inst_foro" id="ict_inst_foro" placeholder="Instituição"> </p>   
-                  <input class="mb-2 myform-control text-black" type="text" name="nome_rep_foro" id="nome_rep_foro" placeholder="Nome do representante legal"> 
-                  <br><input class="mb-2  myform-control text-black" type="text" name="cargo_rep_foro" id="cargo_rep_foro" placeholder="Cargo"> 
-                </div>
+
+          <div class="form-row mt-3">
+            <div class="form-group col-md-3">
+              <label for="cidade_uf_dia_foro" class="font-weight-bold text-black">Cidade, UF, Dia do Mês e Ano</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold" 
+                name="cidade_uf_dia_foro"
+                id="cidade_uf_dia_foro" 
+                placeholder="Cidade, UF, Dia do Mês e Ano">
             </div>
+          </div><!-- /.row-->
+
+          <div class="form-row mt-3">
+            <div class="form-group col-md-3">
+              <label for="ict_inst_foro" class="font-weight-bold text-black">ICT:</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold"
+                name="ict_inst_foro" 
+                id="ict_inst_foro" 
+                placeholder="Instituição">
             </div>
-            <div class="mt-4 row justify-content-center">
-              <div class="col-6 align-self-center">
-                <div class="input-control-center">
-                  <p>Pelo(a) <span class="text-blue">PARCEIRO PRIVADO:</span> <input class="myform-control text-black" type="text" name="nome_inst_privado_foro" id="nome_inst_privado_foro" placeholder="Instituição"> </p>      
-                  <input class="mb-2 myform-control text-black" type="text" name="nome_rep_privado_foro" id="nome_rep_privado_foro" placeholder="Nome do representante legal"> 
-                  <br><input class="mb-2  myform-control text-black" type="text" name="cargo_rep_privado_foro" id="cargo_rep_privado_foro" placeholder="Cargo"> 
-                </div>
-              </div>
+            <div class="form-group col-md-3">
+              <label for="nome_rep_foro" class="font-weight-bold text-black">Representante:</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold" 
+                name="nome_rep_foro" id="nome_rep_foro" 
+                placeholder="Nome do Representante">
             </div>
-          </div><!--mb-4-->
+            <div class="form-group col-md-3">
+              <label for="cargo_rep_foro" class="font-weight-bold text-black">Cargo</label>
+              <input type="email" 
+                class="form-control text-black font-weight-bold"
+                name="cargo_rep_foro" 
+                id="cargo_rep_foro" 
+                placeholder="Cargo">
+            </div>
+          </div><!-- /.row-->
+
+          <div class="form-row mt-3">
+            <div class="form-group col-md-3">
+              <label for="nome_inst_privado_foro" class="font-weight-bold text-black">Parceiro Privado:</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold"
+                name="nome_inst_privado_foro" 
+                id="nome_inst_privado_foro" 
+                placeholder="Instituição">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="nome_rep_privado_foro" class="font-weight-bold text-black">Representante:</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold" 
+                name="nome_rep_privado_foro" id="nome_rep_privado_foro" 
+                placeholder="Nome do Representante">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="cargo_rep_privado_foro" class="font-weight-bold text-black">Cargo</label>
+              <input type="email" 
+                class="form-control text-black font-weight-bold"
+                name="cargo_rep_privado_foro" 
+                id="cargo_rep_privado_foro" 
+                placeholder="Cargo">
+            </div>
+          </div><!-- /.row-->
+
         </div><!--text-justify-->
       </div><!--container-fl-->
     </div><!--tab-pane-->
@@ -1319,7 +1375,7 @@
         <div class="text-black">
           <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black bg-light p-2 mb-3">SEU CONTRATO ESTÁ PRONTO PARA ANÁLISE. <a href="#"><i class="fas fa-fw fa-check ml-2"></i></a></h5>
           <p>Seu contrato será revisado em até de 30 dias e uma resposta será gerada. Aguarde a confirmação do sistema. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolores excepturi ipsum rem, enim accusantium quam similique assumenda eum veniam saepe, quas earum nisi hic neque voluptate consectetur ex quo!</p><br>
-          <button type="submit" class="btn btn-success btn-lg btn-block col-lg-4 col-sm-12 col-md-6">ENVIAR</button>
+          <!-- <button type="submit" class="btn btn-success btn-lg btn-block col-lg-4 col-sm-12 col-md-6">ENVIAR</button> -->
         </div>
       </div>
     </div><!--tab-pane-->
