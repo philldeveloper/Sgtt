@@ -766,7 +766,7 @@
     <div class="tab-pane" id="clausula4_a" role="tabpanel" aria-labelledby="clausula4_a-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">5. CLÁUSULA QUINTA - DO PESSOAL</h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">5. CLÁUSULA QUINTA - DO PESSOAL</h4><hr><br>
           <p>
             <b>5.1.</b> Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações trabalhistas, previdenciárias, fundiárias e tributárias
             derivadas da relação existente entre si e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem na execução do objeto 
@@ -780,7 +780,7 @@
     <div class="tab-pane" id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">6. CLÁUSULA SEXTA - DA PROPRIEDADE INTELECTUAL E DA CRIAÇÃO PROTEGIDA</h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">6. CLÁUSULA SEXTA - DA PROPRIEDADE INTELECTUAL E DA CRIAÇÃO PROTEGIDA</h4><hr><br>
           <div class="alert alert-warning" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
               NOTAS EXPLICATIVAS!
@@ -792,43 +792,56 @@
           Edite a(s) cláusula(s) abaixo (se julgar necessário):
         </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_1" rows="4">6.1. Todos os dados, técnicas, tecnologia, know-how, marcas, patentes e quaisquer outros bens ou direitos de propriedade intelectual/industrial de um parceiro que este venha a utilizar para execução do Projeto continuarão a ser de sua propriedade exclusiva, não podendo o outro parceiro cedê-los, transferi-los, aliená-los, divulgá-los ou empregá-los em quaisquer outros projetos ou sob qualquer outra forma sem o prévio consentimento escrito do seu proprietário.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.1</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_6_1" rows="4">Todos os dados, técnicas, tecnologia, know-how, marcas, patentes e quaisquer outros bens ou direitos de propriedade intelectual/industrial de um parceiro que este venha a utilizar para execução do Projeto continuarão a ser de sua propriedade exclusiva, não podendo o outro parceiro cedê-los, transferi-los, aliená-los, divulgá-los ou empregá-los em quaisquer outros projetos ou sob qualquer outra forma sem o prévio consentimento escrito do seu proprietário.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_2" rows="4">6.2. Todo desenvolvimento tecnológico passível de proteção intelectual, em qualquer modalidade, proveniente da execução do presente Acordo de Parceria, deverá ter a sua propriedade compartilhada entre as duas convenentes, na mesma proporção em que cada instituição contribuiu com recursos humanos, além do conhecimento pré-existente aplicado, conforme previsto no art. 9º, § 3°, da lei nº 10.973/2004.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.2</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_6_2" rows="4">Todo desenvolvimento tecnológico passível de proteção intelectual, em qualquer modalidade, proveniente da execução do presente Acordo de Parceria, deverá ter a sua propriedade compartilhada entre as duas convenentes, na mesma proporção em que cada instituição contribuiu com recursos humanos, além do conhecimento pré-existente aplicado, conforme previsto no art. 9º, § 3°, da lei nº 10.973/2004.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_3" rows="4">6.3. divisão da titularidade sobre a propriedade intelectual prevista na cláusula anterior será definida por meio de instrumento próprio, respeitando-se o percentual de x% (x por cento) para o ICT/AGÊNCIA DE FOMENTO. Todo desenvolvimento tecnológico passível de proteção intelectual, em qualquer modalidade, proveniente da execução do presente Acordo de Parceria, deverá ter a sua propriedade compartilhada entre as parceiras, por meio de instrumento próprio, respeitando-se o percentual de x% (x por cento) para o ICT/AGÊNCIA DE FOMENTO.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.3</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_6_3" rows="4">divisão da titularidade sobre a propriedade intelectual prevista na cláusula anterior será definida por meio de instrumento próprio, respeitando-se o percentual de x% (x por cento) para o ICT/AGÊNCIA DE FOMENTO. Todo desenvolvimento tecnológico passível de proteção intelectual, em qualquer modalidade, proveniente da execução do presente Acordo de Parceria, deverá ter a sua propriedade compartilhada entre as parceiras, por meio de instrumento próprio, respeitando-se o percentual de x% (x por cento) para o ICT/AGÊNCIA DE FOMENTO.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_4" rows="4">6.4. O instrumento previsto na subcláusula 6.3 deverá observar os requisitos legais e formais necessários para sua celebração e averbação junto aos órgãos competentes.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.4</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_6_4" rows="4">O instrumento previsto na subcláusula 6.3 deverá observar os requisitos legais e formais necessários para sua celebração e averbação junto aos órgãos competentes.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_5" rows="4">6.5. Eventuais impedimentos de um dos parceiros não prejudicará a titularidade e/ou a exploração dos direitos da Propriedade Intelectual pelos demais.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.5</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_6_5" rows="4">Eventuais impedimentos de um dos parceiros não prejudicará a titularidade e/ou a exploração dos direitos da Propriedade Intelectual pelos demais.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_6" rows="4">6.6. As Partes devem assegurar, na medida de suas respectivas responsabilidades, que os projetos propostos e que a alocação dos recursos tecnológicos correspondentes não infrinjam direitos autorais, patentes ou outros direitos intelectuais, assim como direitos de terceiros.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.6</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_6_6" rows="4">As Partes devem assegurar, na medida de suas respectivas responsabilidades, que os projetos propostos e que a alocação dos recursos tecnológicos correspondentes não infrinjam direitos autorais, patentes ou outros direitos intelectuais, assim como direitos de terceiros.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_7" rows="4">6.7. Na hipótese de eventual infração de qualquer direito de propriedade intelectual relacionada às tecnologias resultantes, os parceiros concordam que as medidas judiciais cabíveis visando coibir a infração do respectivo direito podem ser adotadas em conjunto ou separadamente.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.7</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_6_7" rows="4">Na hipótese de eventual infração de qualquer direito de propriedade intelectual relacionada às tecnologias resultantes, os parceiros concordam que as medidas judiciais cabíveis visando coibir a infração do respectivo direito podem ser adotadas em conjunto ou separadamente.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_8" rows="4">6.8. Os depósitos de pedidos de proteção de propriedade intelectual devem ser iniciados necessariamente junto ao Instituto Nacional de Propriedade Industrial - INPI e registrados no sistema de acompanhamento d o  ICT/AGÊNCIA DE FOMENTO.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.8</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_6_8" rows="4">Os depósitos de pedidos de proteção de propriedade intelectual devem ser iniciados necessariamente junto ao Instituto Nacional de Propriedade Industrial - INPI e registrados no sistema de acompanhamento d o  ICT/AGÊNCIA DE FOMENTO.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_9" rows="4">6.9. Caberá ao PARCEIRO PRIVADO, com exclusividade, a responsabilidade de preparar, arquivar, processar e manter pedidos de patente no Brasil e em ouros países.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.9</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_6_9" rows="4">Caberá ao PARCEIRO PRIVADO, com exclusividade, a responsabilidade de preparar, arquivar, processar e manter pedidos de patente no Brasil e em ouros países.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_10" rows="4">6.10. As decisões relacionadas à preparação, processamento e manutenção de pedido de patente das tecnologias resultantes deste instrumento, no Brasil e em outros países, devem ser tomadas em conjunto pelos partícipes ora acordantes.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.10</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_6_10" rows="4">As decisões relacionadas à preparação, processamento e manutenção de pedido de patente das tecnologias resultantes deste instrumento, no Brasil e em outros países, devem ser tomadas em conjunto pelos partícipes ora acordantes.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_11" rows="4">6.11. Na hipótese de eventual infração de qualquer patente relacionada às tecnologias resultantes, os partícipes concordam que as medidas judiciais cabíveis visando a coibir a infração da respectiva patente podem ser adotadas pelos partícipes, em conjunto ou separadamente. Tanto no que se refere à proteção da propriedade intelectual quanto às medidas judiciais, os partícipes concordam que as despesas deverão ser suportadas de acordo com os percentuais definidos na exploração comercial das tecnologias.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.11</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_6_11" rows="4">Na hipótese de eventual infração de qualquer patente relacionada às tecnologias resultantes, os partícipes concordam que as medidas judiciais cabíveis visando a coibir a infração da respectiva patente podem ser adotadas pelos partícipes, em conjunto ou separadamente. Tanto no que se refere à proteção da propriedade intelectual quanto às medidas judiciais, os partícipes concordam que as despesas deverão ser suportadas de acordo com os percentuais definidos na exploração comercial das tecnologias.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_12" rows="4">6.12. A FUNDAÇÃO DE APOIO não terá direitos sobre os resultados obtidos, passíveis ou não de proteção legal.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.12</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_6_12" rows="4">A FUNDAÇÃO DE APOIO não terá direitos sobre os resultados obtidos, passíveis ou não de proteção legal.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_13" rows="4">6.13. O ICT/AGÊNCIA DE FOMENTO poderá outorgar poderes ao PARCEIRO PRIVADO para praticar todo e qualquer ato necessário para o depósito, acompanhamento e manutenção de pedido de patente das tecnologias resultantes do presente instrumento, no Brasil e em outros países. </textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.13</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_6_13" rows="4">O ICT/AGÊNCIA DE FOMENTO poderá outorgar poderes ao PARCEIRO PRIVADO para praticar todo e qualquer ato necessário para o depósito, acompanhamento e manutenção de pedido de patente das tecnologias resultantes do presente instrumento, no Brasil e em outros países. </textarea>
           </div>
           
         </div><!--text-justify-->
@@ -838,7 +851,7 @@
     <div class="tab-pane" id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">7 CLÁUSULA SÉTIMA - DA DIVULGAÇÃO E DAS PUBLICAÇÕES</h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">7 CLÁUSULA SÉTIMA - DA DIVULGAÇÃO E DAS PUBLICAÇÕES</h4><hr><br>
           <p>
             <b>7.1. </b>Os PARCEIROS concordam em não utilizar o nome do outro PARCEIRO ou de seus empregados em qualquer propaganda, informação à imprensa ou publicidade relativa ao contrato ou a qualquer produto ou serviço decorrente deste, sem a prévia aprovação por escrito da PARTE referida.
           </p>
@@ -858,7 +871,7 @@
     <div class="tab-pane" id="clausula3" role="tabpanel" aria-labelledby="clausula3-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">8 CLÁUSULA OITAVA - DAS INFORMAÇÕES CONFIDENCIAIS E SIGILOSAS</h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">8 CLÁUSULA OITAVA - DAS INFORMAÇÕES CONFIDENCIAIS E SIGILOSAS</h4><hr><br>
           <p>
             <b>8.1.</b> Os PARCEIROS adotarão todas as medidas necessárias para proteger o sigilo das INFORMAÇÕES CONFIDENCIAIS recebidas em função da celebração, desenvolvimento e execução do presente Acordo de Parceria, inclusive na adoção de medidas que assegurem a tramitação do processo, não as divulgando a terceiros, sem a prévia e escrita autorização da outro PARCEIRO.
           </p>
@@ -906,13 +919,16 @@
           </div>
 
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_8_6" rows="3">8.6. As obrigações de sigilo em relação às INFORMAÇÕES CONFIDENCIAIS serão mantidas durante o período de vigência deste Acordo e pelo prazo de 5 (cinco) anos após sua extinção.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.6</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_8_6" rows="3">As obrigações de sigilo em relação às INFORMAÇÕES CONFIDENCIAIS serão mantidas durante o período de vigência deste Acordo e pelo prazo de 5 (cinco) anos após sua extinção.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_8_7" rows="3"> 8.7. Para efeito dessa cláusula, todas as informações referentes ao “processo/serviço/projeto........” serão consideradas como INFORMAÇÃO CONFIDENCIAL, retroagindo às informações obtidas antes da assinatura do acordo.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.7</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_8_7" rows="3">Para efeito dessa cláusula, todas as informações referentes ao “processo/serviço/projeto........” serão consideradas como INFORMAÇÃO CONFIDENCIAL, retroagindo às informações obtidas antes da assinatura do acordo.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_8_8" rows="3">8.8. Para efeito dessa cláusula, a classificação das informações como confidenciais será de responsabilidade de seu titular, devendo indicar os conhecimentos ou informações classificáveis como CONFIDENCIAIS por qualquer meio.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.8</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_8_8" rows="3">Para efeito dessa cláusula, a classificação das informações como confidenciais será de responsabilidade de seu titular, devendo indicar os conhecimentos ou informações classificáveis como CONFIDENCIAIS por qualquer meio.</textarea>
           </div>
         </div><!--text-justify-->
       </div><!--container-fluid-->
@@ -922,7 +938,7 @@
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-blue">
           
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">9 CLÁUSULA NONA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">9 CLÁUSULA NONA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h4><hr><br>
 
           <!--clausula editavel 9-->
           <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
@@ -931,31 +947,40 @@
           </div>
 
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_9_1" rows="7">9.1. Os PARCEIROS deverão tomar todas as medidas necessárias, observados os princípios de civilidade e legalidade, e de acordo com as boas práticas empresariais para cumprir e assegurar que  (i) seus conselheiros, diretores, empregados qualquer pessoa agindo em seu nome, inclusive prepostos e subcontratados, quando houver (todos doravante referidos como “Partes Relacionadas” e, cada uma delas, como “uma Parte Relacionada”) obedecerão a todas as leis aplicáveis, incluindo àquelas  relativas ao combate à corrupção, suborno e lavagem de dinheiro, bem como àquelas  relativas a sanções econômicas, vigentes nas jurisdições em que os PARCEIROS estão constituídos e na jurisdição em que o Acordo de Parceria será cumprido (se diferentes), para impedir qualquer atividade fraudulenta por si ou por uma Parte Relacionada com relação ao cumprimento deste Acordo de Parceria.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.1</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_9_1" rows="7">Os PARCEIROS deverão tomar todas as medidas necessárias, observados os princípios de civilidade e legalidade, e de acordo com as boas práticas empresariais para cumprir e assegurar que  (i) seus conselheiros, diretores, empregados qualquer pessoa agindo em seu nome, inclusive prepostos e subcontratados, quando houver (todos doravante referidos como “Partes Relacionadas” e, cada uma delas, como “uma Parte Relacionada”) obedecerão a todas as leis aplicáveis, incluindo àquelas  relativas ao combate à corrupção, suborno e lavagem de dinheiro, bem como àquelas  relativas a sanções econômicas, vigentes nas jurisdições em que os PARCEIROS estão constituídos e na jurisdição em que o Acordo de Parceria será cumprido (se diferentes), para impedir qualquer atividade fraudulenta por si ou por uma Parte Relacionada com relação ao cumprimento deste Acordo de Parceria.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_9_2" rows="3">9.2. Um PARCEIRO deverá notificar imediatamente o outro sobre eventual suspeita de qualquer fraude tenha ocorrido, esteja ocorrendo, ou provavelmente ocorrerá, para que sejam tomadas as medidas necessárias para apurá-las.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.2</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_9_2" rows="3">Um PARCEIRO deverá notificar imediatamente o outro sobre eventual suspeita de qualquer fraude tenha ocorrido, esteja ocorrendo, ou provavelmente ocorrerá, para que sejam tomadas as medidas necessárias para apurá-las.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_9_3" rows="3">9.3. Os PARCEIROS obrigam-se a observar rigidamente as condições contidas nos itens abaixo, sob pena de imediata e justificada rescisão do acordo. </textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.3</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_9_3" rows="3">Os PARCEIROS obrigam-se a observar rigidamente as condições contidas nos itens abaixo, sob pena de imediata e justificada rescisão do acordo. </textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_9_4" rows="3">9.4. Os PARCEIROS declaram-se cientes de que seus Departamentos Jurídicos e/ou advogados contratados estão autorizados, em caso de práticas que atentem contra os preceitos dessa cláusula, a solicitar a imediata abertura dos procedimentos criminais, cíveis e administrativos cabíveis à cada hipótese:</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.4</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_9_4" rows="3">Os PARCEIROS declaram-se cientes de que seus Departamentos Jurídicos e/ou advogados contratados estão autorizados, em caso de práticas que atentem contra os preceitos dessa cláusula, a solicitar a imediata abertura dos procedimentos criminais, cíveis e administrativos cabíveis à cada hipótese:</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_9_a" rows="5">A) Os PARCEIROS não poderão, em hipótese alguma, dar ou oferecer nenhum tipo de presente, viagens, vantagens a qualquer empregado, servidor, preposto ou diretor de outro PARCEIRO, especialmente àqueles responsáveis pela fiscalização do presente Acordo. Serão admitidos apenas, em épocas específicas, a entrega de brindes, tais como canetas, agendas, folhinhas, cadernos etc;</textarea>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA A)</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_9_a" rows="5">Os PARCEIROS não poderão, em hipótese alguma, dar ou oferecer nenhum tipo de presente, viagens, vantagens a qualquer empregado, servidor, preposto ou diretor de outro PARCEIRO, especialmente àqueles responsáveis pela fiscalização do presente Acordo. Serão admitidos apenas, em épocas específicas, a entrega de brindes, tais como canetas, agendas, folhinhas, cadernos etc;</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_9_b" rows="5">B)  Os PARCEIROS somente poderão representar outro PARCEIRO perante órgãos públicos quando devidamente autorizado para tal, seja no corpo do próprio Acordo, seja mediante autorização prévia, expressa e escrita de seu representante com poderes para assim proceder;</textarea>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA B)</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_9_b" rows="5">Os PARCEIROS somente poderão representar outro PARCEIRO perante órgãos públicos quando devidamente autorizado para tal, seja no corpo do próprio Acordo, seja mediante autorização prévia, expressa e escrita de seu representante com poderes para assim proceder;</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_9_c" rows="5">C) Os PARCEIROS e seus empregados/prepostos, quando agirem em nome ou defendendo interesses deste Acordo perante órgãos, autoridades ou agentes públicos, não poderão dar, receber ou oferecer quaisquer presentes, vantagens ou favores a agentes públicos, sobretudo no intuito de obter qualquer tipo de favorecimento para os PARCEIROS;</textarea>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA C)</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_9_c" rows="5">Os PARCEIROS e seus empregados/prepostos, quando agirem em nome ou defendendo interesses deste Acordo perante órgãos, autoridades ou agentes públicos, não poderão dar, receber ou oferecer quaisquer presentes, vantagens ou favores a agentes públicos, sobretudo no intuito de obter qualquer tipo de favorecimento para os PARCEIROS;</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_9_d" rows="5">D) Os PARCEIROS, quando agirem em nome ou defendendo seus interesses, não poderão fornecer informações sigilosas a terceiros ou a agentes públicos, mesmo que isso venha a facilitar, de alguma forma, o cumprimento desse Acordo;</textarea>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA D)</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_9_d" rows="5">Os PARCEIROS, quando agirem em nome ou defendendo seus interesses, não poderão fornecer informações sigilosas a terceiros ou a agentes públicos, mesmo que isso venha a facilitar, de alguma forma, o cumprimento desse Acordo;</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_9_e" rows="5">E) Os PARCEIROS, ao tomar conhecimento de que algum de seus prepostos ou empregados descumpriram as premissas e obrigações acima pactuadas, denunciarão espontaneamente o fato, de forma que, juntas, elaborem e executem um plano de ação para (i) afastar o empregado ou preposto imediatamente; (ii) evitar que tais atos se repitam e (iii) garantir que o Acordo tenha condições de continuar vigente.</textarea>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA E)</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_9_e" rows="5">Os PARCEIROS, ao tomar conhecimento de que algum de seus prepostos ou empregados descumpriram as premissas e obrigações acima pactuadas, denunciarão espontaneamente o fato, de forma que, juntas, elaborem e executem um plano de ação para (i) afastar o empregado ou preposto imediatamente; (ii) evitar que tais atos se repitam e (iii) garantir que o Acordo tenha condições de continuar vigente.</textarea>
           </div>
 
         </div>
@@ -965,7 +990,7 @@
     <div class="tab-pane" id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">10 CLÁUSULA DÉCIMA - DO ACOMPANHAMENTO</h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">10 CLÁUSULA DÉCIMA - DO ACOMPANHAMENTO</h4><hr><br>
           <p><b>10.1.</b> Aos coordenadores indicados pelos <b>PARCEIROS</b> competirá dirimir as dúvidas que surgirem na sua execução e de tudo dará ciência às respectivas autoridades.</p>
           <p><b>10.2.</b> O coordenador do projeto indicado pela <b>ICT/AGÊNCIA DE FOMENTO</b> anotará, em registro próprio, as ocorrências relacionadas com a execução do objeto, recomendando as medidas necessárias à autoridade competente para regularização das inconsistências observadas. </p>
           <p><b>10.3.</b> O acompanhamento do projeto pelos coordenadores não exclui nem reduz a responsabilidade dos <b>PARCEIROS</b> perante terceiros. </p>
@@ -977,7 +1002,7 @@
     <div class="tab-pane" id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">11. CLÁUSULA DÉCIMA PRIMEIRA - DA VIGÊNCIA E DA PRORROGAÇÃO</h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">11. CLÁUSULA DÉCIMA PRIMEIRA - DA VIGÊNCIA E DA PRORROGAÇÃO</h4><hr><br>
           <div class="alert alert-warning" role="alert">     
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
               NOTAS EXPLICATIVAS!
@@ -994,7 +1019,7 @@
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
           
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">12. CLÁUSULA DÉCIMA SEGUNDA - DAS ALTERAÇÕES</h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">12. CLÁUSULA DÉCIMA SEGUNDA - DAS ALTERAÇÕES</h4><hr><br>
 
           <p><b>12.1.</b> As cláusulas e condições estabelecidas no presente instrumento poderão ser alteradas mediante celebração de termo aditivo.</p>
           <p><b>12.2.</b> A proposta de alteração, devidamente justificada, deverá ser apresentada por escrito, dentro da vigência do instrumento.</p>
