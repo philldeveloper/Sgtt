@@ -4,12 +4,14 @@
   #wrapper #content-wrapper {
     background-color: white !important;
   }
+
   textarea{
-    background-color: #EFFCFC !important;
-    color: #343434 !important;
-    border-color: #4e73df !important;
-    box-shadow: 3px 5px 5px #cdcdcd;
+    background-color: white !important;
+    color: black !important;
+    border-color: black !important;
+    box-shadow: 1px 2px 2px #cdcdcd;
     padding: 10px;
+    text-align: justify !important;
   }
 </style>
 @section('content')
@@ -349,9 +351,9 @@
     <div class="tab-pane" id="clausula1" role="tabpanel" aria-labelledby="clausula1-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <p>Os <b>PARCEIROS</b>, anteriormente qualificados, resolvem celebrar o presente Acordo de Parceria para Pesquisa, Desenvolvimento e Inovação - PD&I, em conformidade com as normas legais vigentes no Marco Legal de Ciência, Tecnologia e Inovação (Emenda Constitucional nº 85/15, Lei nº 10.973/2004, Lei nº 13.243/2016 e Decreto nº 9.283/2018), que deverá ser executado com estrita observância das seguintes cláusulas e condições:
+          <p>Os <b>PARCEIROS</b>, anteriormente qualificados, resolvem celebrar o presente Acordo de Parceria para Pesquisa, Desenvolvimento e Inovação - PD&I, em conformidade com as normas legais vigentes no Marco Legal de Ciência, Tecnologia e Inovação (Emenda Constitucional nº 85/15, Lei nº 10.973/2004, Lei nº 13.243/2016 e Decreto nº 9.283/2018), que deverá ser executado com estrita observância das seguintes cláusulas e condições:</p>
 
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">1. Cláusula Primeira - do Objeto</h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">1. Cláusula Primeira - do Objeto </h4><hr>
 
           <p><b>1.1</b> O presente Acordo de Parceria para PD&I tem por objeto a cooperação técnica e científica entre os PARTÍCIPES 
           para desenvolver o</p>
@@ -392,7 +394,7 @@
     <div class="tab-pane" id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">2. CLÁUSULA SEGUNDA – DO PLANO DE TRABALHO</h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">2. CLÁUSULA SEGUNDA – DO PLANO DE TRABALHO</h4><hr>
           <div class="alert alert-warning" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
               NOTAS EXPLICATIVAS!
@@ -454,8 +456,7 @@
     <div class="tab-pane" id="clausula3" role="tabpanel" aria-labelledby="clausula3-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">3 CLÁUSULA TERCEIRA – DAS ATRIBUIÇÕES E RESPONSABILIDADES</h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">3. CLÁUSULA TERCEIRA – DAS ATRIBUIÇÕES E RESPONSABILIDADES</h4><hr>
           <!--  Nota explicativa 3 -->
           <div class="alert alert-warning" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
@@ -482,28 +483,38 @@
           </div><!--modal-alert-->
 
           <p><b>3.1 </b>São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I:</p>
+          <p class="mt-3 roboto-font"><b>3.1.1. Do(a):</b><input type="text" class="myform-control" name="nome_inst_ict" id="handle_ict" placeholder="Instituição" disabled><a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a></p><hr>
             
-          <p class="ml-2 bg-light roboto-font"><b>3.1.1. Do(a):</b><input type="text" class="myform-control" name="nome_inst_ict" id="nome_inst_ict" placeholder="Instituição"><a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a></p>
-          <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div> Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD&I ;<br>
-          <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div> Manter rigoroso controle das despesas efetuadas e dos respectivos comprovantes com vistas à prestação de contas da execução do objeto deste Acordo;<br>
-          <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução<a href="#" data-toggle="modal" data-target="#modalCoordenador"><i class="fas fa-fw fa-question-circle"></i></a>
-          <div class="form-group col-md-6">
-            <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" placeholder="Nome coordenador ICT/Publico"><br>
+          <p><b>A)</b> Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD&I ;<br></p>
+          <p><b>B)</b> Manter rigoroso controle das despesas efetuadas e dos respectivos comprovantes com vistas à prestação de contas da execução do objeto deste Acordo;<br></p>
+
+          <p><b>C)</b> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;<a href="#" data-toggle="modal" data-target="#modalCoordenador"><i class="fas fa-fw fa-question-circle"></i></a></p>
+            
+          <div class="form-group row p-2">
+            <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador ICT/Público:</label>
+            <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
+              <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" placeholder="Nome coordenador ICT/Publico">
+            </div>
           </div>
-          <div class="badge badge-primary p-2 mb-1 font-weight-bold">D)</div> Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;<br>
-          <div class="badge badge-primary p-2 mb-1 font-weight-bold">E)</div> Monitorar, avaliar e prestar contas nos termos deste Acordo; </p>
+
+          <p><b>D)</b> Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;<br></p>
+          <p><b>E)</b> Monitorar, avaliar e prestar contas nos termos deste Acordo; </p>
           
           <!--inicio das clausulas 3-->
-          <p class="ml-2 bg-light roboto-font"><b>3.1.2. Do(a):</b>
-            <input class="myform-control" type="text" name="nome_inst_privado" id="nome_inst_privado" placeholder="Instituição"><a href="#" data-toggle="modal" data-target="#modalExemplo15"><i class="fas fa-fw fa-question-circle"></i></a> (PARCEIRO PRIVADO)
-          </p>
+          <p class="mt-3 roboto-font"><b>3.1.2. Do Parceiro Privado:</b><input type="text" class="myform-control" name="nome_inst_privado" id="nome_inst_privado" placeholder="Instituição" disabled><a href="#" data-toggle="modal" data-target="#modalExemplo15"><i class="fas fa-fw fa-question-circle"></i></a></p><hr>
 
-          <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div>Transferir os recursos financeiros acordados, segundo o Cronograma de Desembolso constante no Plano de Trabalho, por meio do aporte de recursos financeiros de sua responsabilidade;<br>
-          <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução<a href="#" data-toggle="modal" data-target="#modalCoordenadorPrivado"><i class="fas fa-fw fa-question-circle"></i></a>
-          <div class="form-group col-md-6">
-            <input type="text" name="nome_coordenador_privado" onchange="handleCoordenadorPrivado()" class="form-control" id="nome_coordenador_privado" placeholder="Nome Coordenador privado"><br>
+          <p><b>A)</b>Transferir os recursos financeiros acordados, segundo o Cronograma de Desembolso constante no Plano de Trabalho, por meio do aporte de recursos financeiros de sua responsabilidade;<br></p>
+          
+          <p><b>B)</b> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução<a href="#" data-toggle="modal" data-target="#modalCoordenadorPrivado"><i class="fas fa-fw fa-question-circle"></i></a></p>
+            
+          <div class="form-group row p-2">
+            <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador Privado:</label>
+            <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
+              <input type="text" name="nome_coordenador_privado" onchange="handleCoordenadorPrivado()" id="nome_coordenador_privado" class="form-control" placeholder="Nome coordenador Privado">
+            </div>
           </div>
-          <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div> Colaborar, nos termos do plano de trabalho, para que o Acordo alcance os objetivos nele descritos;
+
+          <p><b>C)</b> Colaborar, nos termos do plano de trabalho, para que o Acordo alcance os objetivos nele descritos;</p>
             
           <br><br>
 
@@ -515,7 +526,7 @@
           </div>
 
           <div id="clausula_apoio_wrapper" style="display: none;">
-            <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a): <input type="text" class="myform-control" name="nome_inst_fundacao" id="nome_inst_fundacao" placeholder="Instituição"> <a href="#" data-toggle="modal" data-target="#modalFundApoio"><i class="fas fa-fw fa-question-circle"></i></a>:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p>
+            <p class="ml-2 roboto-font"><b>3.1.3.  Do(a): <input type="text" class="myform-control" name="nome_inst_fundacao" id="nome_inst_fundacao" placeholder="Instituição"> <a href="#" data-toggle="modal" data-target="#modalFundApoio"><i class="fas fa-fw fa-question-circle"></i></a>:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p><hr>
             <div class="col-md-12 mb-3">
               <textarea  name="clausula_edit_3a" class="form-control font-weight-bold text-justify" style="background-color: #F6FAFA; resize: none !important;"  id="" cols="30" rows="3">A) Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD& I;
               </textarea>
@@ -574,14 +585,16 @@
             </div>
           </div><!--clausula_apoio_wrapper-->
           
+          <p><b>3.2.</b> <span id="coord_ict"></span><span id="coord_privado"></span> poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.<br></p>
+          
           <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
-          <p><b>3.2.</b> <span id="coord_ict"></span><span id="coord_privado"></span> poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.<br></p>
-            <!--clausula editavel 3_3-->
+
           <div class="col-md-12 mb-3">
-            <textarea class="form-control font-weight-bold" name="clausula_edit_3_3" rows="5" style="background-color: #F6FAFA; resize: none !important;">3.3. Os PARCEIROS são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente Acordo de Parceria para PD&I ou de publicações a ele referentes.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 3.3</a>
+              <textarea class="form-control" name="clausula_edit_3_3" rows="4" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente Acordo de Parceria para PD&I ou de publicações a ele referentes.</textarea>
           </div>
                 
         </div><!--text-justify-->
@@ -591,7 +604,7 @@
     <div class="tab-pane" id="clausula4" role="tabpanel" aria-labelledby="clausula4-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">4. CLÁUSULA QUARTA - DOS RECURSOS FINANCEIROS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">4. CLÁUSULA QUARTA - DOS RECURSOS FINANCEIROS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr>
           <div class="alert alert-warning" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
               NOTAS EXPLICATIVAS!
@@ -634,27 +647,33 @@
 
           <!--clausula editavel 4-->
 
-          <div class="text-center d-flex">
-            <p class="h4 p-3 font-italic text-primary font-weight-bold">Edite a(s) cláusula(s) abaixo (se julgar necessário):</p>
+          <div class="alert alert-info py-2 mt-5 mb-4 text-dark font-weight-bold" role="alert">      
+              <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
 
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_4_8" rows="4">4.8. A transposição, o remanejamento ou a transferência de recursos de categoria de programação para outra poderão ocorrer com o objetivo de conferir eficácia e eficiência às atividades de ciência, tecnologia e inovação.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.8</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_4_8" rows="4">A transposição, o remanejamento ou a transferência de recursos de categoria de programação para outra poderão ocorrer com o objetivo de conferir eficácia e eficiência às atividades de ciência, tecnologia e inovação.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_4_8_1" rows="4">4.8.1 No âmbito deste projeto de pesquisa, desenvolvimento e inovação, o coordenador geral indicará a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.8.1</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_4_8_1" rows="4">No âmbito deste projeto de pesquisa, desenvolvimento e inovação, o coordenador geral indicará a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_4_8_2" rows="4">4.8.2 Por ocasião da ocorrência de quaisquer das ações previstas no item anterior, a ICT poderá alterar a distribuição inicialmente acordada, promover modificações internas ao seu orçamento, alterar rubricas ou itens de despesas, desde que não modifique o valor total do projeto.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.8.2</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_4_8_2" rows="4">Por ocasião da ocorrência de quaisquer das ações previstas no item anterior, a ICT poderá alterar a distribuição inicialmente acordada, promover modificações internas ao seu orçamento, alterar rubricas ou itens de despesas, desde que não modifique o valor total do projeto.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_4_9" rows="4">4.9. São dispensáveis de formalização por meio de Termo Aditivo as alterações previstas no item 4.8 que importem em transposição, remanejamento ou transferência de recursos de categoria de programação para outra, com o objetivo de conferir eficácia e eficiência às atividades previstas no Plano de Trabalho, desde que não haja alteração do valor total do projeto.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.9</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_4_9" rows="4">São dispensáveis de formalização por meio de Termo Aditivo as alterações previstas no item 4.8 que importem em transposição, remanejamento ou transferência de recursos de categoria de programação para outra, com o objetivo de conferir eficácia e eficiência às atividades previstas no Plano de Trabalho, desde que não haja alteração do valor total do projeto.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_4_9_1" rows="4">4.9.1. Alterações na distribuição entre grupos de natureza de despesa e alterações de rubricas ou itens de despesas, necessárias para efetiva execução do, ficarão dispensadas de prévia anuência d PARCEIRO PRIVADO, hipótese em que o coordenador do projeto solicitará a alteração à ICT, devendo constar as razões que ensejaram as alterações, indicando a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.9.1</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_4_9_1" rows="4">Alterações na distribuição entre grupos de natureza de despesa e alterações de rubricas ou itens de despesas, necessárias para efetiva execução do, ficarão dispensadas de prévia anuência d PARCEIRO PRIVADO, hipótese em que o coordenador do projeto solicitará a alteração à ICT, devendo constar as razões que ensejaram as alterações, indicando a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.</textarea>
           </div>
           <div class="col-md-12 mb-5">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_4_10" rows="4">4.10. A ICT/AGÊNCIA DE FOMENTO não responderá pela suplementação de recursos para fazer frente a despesas decorrentes de quaisquer fatores externos ao seu controle, como flutuação cambial e alterações nos valores de taxas escolares.</textarea>
+              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.10</a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_4_10" rows="4">A ICT/AGÊNCIA DE FOMENTO não responderá pela suplementação de recursos para fazer frente a despesas decorrentes de quaisquer fatores externos ao seu controle, como flutuação cambial e alterações nos valores de taxas escolares.</textarea>
           </div>
 
 
