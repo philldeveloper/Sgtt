@@ -1,3 +1,29 @@
-h1{
-	color: red !important;
+
+body{
+	font-family: 'Times New Roman' !important;
+	text-align: justify;
+}
+
+h5#main-title{
+	font-size: 15pt !important;
+	border: none !important;
+	margin-bottom: 10px !important;
+}
+
+h5{
+ 	font-size: 12pt !important;
+ 	border-bottom: 1px solid #cdcdcd !important;
+}
+p>span#p-title{
+	margin-left: 8px !important;
+	margin-right: 8px !important;
+	font-weight: bold !important;
+}
+p#nota-explicativa{
+	padding: 8px;
+	background-color: #EAEAEA;
+}
+
+.font-weight-bold{
+	font-weight: bold !important;
 }
