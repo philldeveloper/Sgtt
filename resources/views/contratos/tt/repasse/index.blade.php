@@ -56,7 +56,7 @@
 <script type="text/javascript" src="{{ asset('js/utils.js') }}"></script>
 <div class="title-header">
     <span class="h3 ml-3 font-weight-bold">Novo Contrato</span>
-    <div class="badge badge-dark lead  mr-auto float-right">Com repasse</div>
+    <div class="badge badge-success lead  mr-auto float-right">Com repasse</div>
     <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
 </div>
 

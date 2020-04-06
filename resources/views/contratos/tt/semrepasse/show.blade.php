@@ -51,7 +51,7 @@
 
 <div class="title-header">
     <span class="h3 ml-3 font-weight-bold">Exibir Contrato <span class="badge badge-primary">{{$contratos_sr->id}}</span></span>
-    <div class="badge badge-dark lead  mr-auto float-right">sem repasse</div>
+    <div class="badge badge-primary lead  mr-auto float-right">sem repasse</div>
     <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
 </div>
 
