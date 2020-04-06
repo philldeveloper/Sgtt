@@ -5,9 +5,12 @@ body{
 }
 
 h5#main-title{
-	font-size: 15pt !important;
+	font-size: 14pt !important;
 	border: none !important;
 	margin-bottom: 10px !important;
+	text-transform: uppercase;
+	text-align: center;
+	justify-content: center;
 }
 
 h5{
