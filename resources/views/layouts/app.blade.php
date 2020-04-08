@@ -11,6 +11,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/utils.js') }}"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -80,5 +81,20 @@
             @yield('content')
         </main>
     </div>
+
+<script type="text/javascript">
+
+function handleCheckBox(event){
+    event.preventDefault();
+    const termo = document.getElementById('termo_de_uso')
+
+    if(termo){
+        console.log('true ', termo)
+    }else{
+        console.log('false ', termo)
+    }
+}
+
+</script>
 </body>
 </html>

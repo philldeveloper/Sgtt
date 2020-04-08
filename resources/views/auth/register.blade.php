@@ -113,10 +113,39 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
-
+                        <div class="dropdown-divider"></div>
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn teste btn-block mt-3 btn-dark btn-lg font-weight-bold p-3" style="background-color: #3490dc !important; border-color: #3490dc !important;">{{ __('Registrar') }}</button>
+                                <div class="custom-control custom-checkbox">
+                                    <input name="termo_de_uso" id="termo_de_uso" type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="termo_de_uso">li e concordo com o <a  href="#termoDeUso" data-toggle="modal" data-target="#termoDeUso">Termo de uso</a></label>
+                                    <span id="termo_msg_error" style="display: none;">Termo de uso é um campo obrigatório.</span>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade bd-example-modal-lg" id="termoDeUso" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Termo de uso SGTT</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                    <div class="modal-body">
+                                            @include('auth.modalTermoDeUso')
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                        <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" onclick="handleCheckBoxTermoDeUso(event)" class="btn teste btn-block mt-3 btn-dark btn-lg font-weight-bold p-3" style="background-color: #3490dc !important; border-color: #3490dc !important;">{{ __('Registrar') }}</button>
                             </div>
                         </div>
                         <div class="dropdown-divider"></div>
