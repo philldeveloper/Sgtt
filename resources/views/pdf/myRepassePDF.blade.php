@@ -316,6 +316,24 @@
 <p><b>17.3</b> Qualquer dos PARCEIROS poderá, mediante comunicação por escrito, alterar o endereço para o qual as comunicações ou solicitações deverão ser enviadas.</p>
 
 
+<!------clausula-18--->
+<h5 class="font-weight-bold">18. CLÁUSULA DÉCIMA OITAVA – DISPOSIÇÕES GERAIS</h5>
+<p><b>18.1</b> É livre o acesso dos agentes da administração pública, do controle interno e do Tribunal de Contas aos documentos e às informações relacionados a esse Acordo, bem como aos locais de execução do respectivo objeto, ressalvadas as informações tecnológicas e dados das pesquisas que possam culminar com alguma inovação.</p>
+
+<div style="margin-top: 300px !important"></div>
+<!------clausula-19--->
+<h5 class="font-weight-bold">19. CLÁUSULA DÉCIMA NONA - DO FORO</h5>
+<p><b>19.1</b> Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de(a) {!! $contrato->estado_foro !!}, cidade de {!! $contrato->cidade_foro !!}, para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109 da Constituição Federal. E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.</p>
+
+<br>
+<p>{!! $contrato->cidade_uf_dia_foro !!}</p>
+<br>
+
+<p style="text-align: center; justify-content:center">Pelo(a) {!! $contrato->ict_inst_foro !!} <br>{!! $contrato->nome_rep_foro !!}<br>{!! $contrato->cargo_rep_foro !!}.</p>
+
+<p style="text-align: center; justify-content:center">Pelo(a) {!! $contrato->nome_inst_privado_foro !!} <br>{!! $contrato->nome_rep_privado_foro !!} <br> {!! $contrato->cargo_rep_privado_foro !!}.</p>
+
+
 <img src="../public/assets/sgtt_small.png" alt="sgtt" width="60px" style="position: fixed; right:5px; bottom: 25px; opacity: 0.3; margin-top: 20px !important; margin-bottom: 20px !important">
 
 </body>

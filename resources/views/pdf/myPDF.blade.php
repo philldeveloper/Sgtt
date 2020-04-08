@@ -269,8 +269,6 @@
 			Pelo(a) {{$contrato->nome_inst_privado_foro}} <br>{{$contrato->nome_rep_privado_foro}}.</p>
 		</p>
 
-	<footer class="footer" style="position: fixed; right:5px; bottom: 25px; opacity: 0.3; margin-top: 20px !important; margin-bottom: 20px !important">
-		<img src="../public/assets/sgtt_small.png" alt="sgtt" width="60px">
-	</footer>
+		<img src="../public/assets/sgtt_small.png" alt="sgtt" width="60px" style="position: fixed; right:5px; bottom: 25px; opacity: 0.3; margin-top: 20px !important; margin-bottom: 20px !important">
 </body>
 </html>
