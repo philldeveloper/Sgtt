@@ -42,3 +42,16 @@ function handleCoordenadorPrivado(){
     coord_privado.style.fontWeight = 'bold'
     coord_privado.innerText = ` ${elem}`
 }
+
+function handleCheckBoxTermoDeUso(event){
+    const termo = document.getElementById('termo_de_uso')
+    const termo_msg_error = document.getElementById('termo_msg_error')
+    if(!termo.checked){  
+        event.preventDefault();
+        termo_msg_error.style.display = 'block'
+        termo_msg_error.style.color = 'red'
+    }else{
+        termo_msg_error.style.display = 'none'
+    }
+   
+}
