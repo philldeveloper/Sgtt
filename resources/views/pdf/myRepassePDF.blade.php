@@ -22,8 +22,8 @@
 	<span class="font-weight-bold">CNPJ nº:</span> {{$contrato->cnpj}}<br>
 	<span class="font-weight-bold">Endereço:</span> {{$contrato->endereco}}<br>
 	<span class="font-weight-bold">Cidade:</span> {{$contrato->cidade}},
-	<span class="font-weight-bold">UF:</span> {{$contrato->uf}}, 
-	<span class="font-weight-bold">CEP:</span> {{$contrato->cep}}<br>
+	<span class="font-weight-bold" style="margin-left: 50px !important">UF:</span> {{$contrato->uf}} 
+	<span class="font-weight-bold" style="margin-left: 50px !important">CEP:</span> {{$contrato->cep}}<br>
 	<span class="font-weight-bold">Representante Legal:</span> {{$contrato->rep_legal}}<br>
 	<span class="font-weight-bold">C.P.F / M.F:</span> {{$contrato->cpf}}<br>
 	<span class="font-weight-bold">Identidade n.º:</span> {{$contrato->rg}}<br>
@@ -41,8 +41,8 @@
 	<span class="font-weight-bold">CNPJ nº:</span> {{$contrato->parceiro_cnpj}}<br>
 	<span class="font-weight-bold">Endereço:</span> {{$contrato->parceiro_endereco}}<br>
 	<span class="font-weight-bold">Cidade:</span> {{$contrato->parceiro_cidade}},
-	<span class="font-weight-bold">UF:</span> {{$contrato->parceiro_uf}}, 
-	<span class="font-weight-bold">CEP:</span> {{$contrato->parceiro_cep}}<br>
+	<span class="font-weight-bold" style="margin-left: 50px !important">UF:</span> {{$contrato->parceiro_uf}} 
+	<span class="font-weight-bold" style="margin-left: 50px !important">CEP:</span> {{$contrato->parceiro_cep}}<br>
 	<span class="font-weight-bold">Representante Legal:</span> {{$contrato->parceiro_rep_legal}}<br>
 	<span class="font-weight-bold">C.P.F / M.F:</span> {{$contrato->parceiro_cpf}}<br>
 	<span class="font-weight-bold">Identidade n.º:</span> {{$contrato->parceiro_rg}}<br>
@@ -182,6 +182,63 @@
 <p><b>6.12</b> {!! $contrato->clausula_edit_6_12 !!}</p>
 <p><b>6.13</b> {!! $contrato->clausula_edit_6_13 !!}</p>
 
+<!------clausula-7--->
+<h5 class="font-weight-bold">7. CLÁUSULA SÉTIMA - DA DIVULGAÇÃO E DAS PUBLICAÇÕES</h5>
+
+<p><b>7.1</b> Os PARCEIROS concordam em não utilizar o nome do outro PARCEIRO ou de seus empregados em qualquer propaganda, informação à imprensa ou publicidade relativa ao contrato ou a qualquer produto ou serviço decorrente deste, sem a prévia aprovação por escrito da PARTE referida.</p>
+<p><b>7.2</b> Fica vedado aos PARCEIROS utilizar, no âmbito deste Acordo de Parceria, nomes, símbolos e imagens que caracterizem promoção pessoal de autoridades ou servidores públicos.</p>
+<p><b>7.3</b> Os PARCEIROS não poderão utilizar o nome, logomarca ou símbolo um do outro em promoções e atividades afins alheias ao objeto deste Acordo, sem prévia autorização do respectivo PARCEIRO sob pena de responsabilidade civil em decorrência do uso indevido do seu nome e da imagem.</p>
+<p><b>7.4</b> As publicações, materiais de divulgação e resultados materiais, relacionados com os recursos do presente Acordo, deverão mencionar expressamente o apoio recebido dos PARCEIROS.</p>
+
+<!------clausula-8--->
+<h5 class="font-weight-bold">8. CLÁUSULA OITAVA - DAS INFORMAÇÕES CONFIDENCIAIS E SIGILOSAS</h5>
+
+<p><b>8.1</b> Os PARCEIROS adotarão todas as medidas necessárias para proteger o sigilo das INFORMAÇÕES CONFIDENCIAIS recebidas em função da celebração, desenvolvimento e execução do presente Acordo de Parceria, inclusive na adoção de medidas que assegurem a tramitação do processo, não as divulgando a terceiros, sem a prévia e escrita autorização da outro PARCEIRO.</p>
+<p><b>8.2</b> Os PARCEIROS informarão aos seus funcionários e prestadores de serviços e consultores que necessitem ter acesso às informações e conhecimentos que envolvem o objeto do Acordo, acerca das obrigações de sigilo assumidas, responsabilizando-se integralmente por eventuais infrações que estes possam cometer.</p>
+<p><b>8.3</b> As PARCEIROS farão com que cada pessoa de sua organização, ou sob o seu controle, que receba informações confidenciais, assuma o compromisso de confidencialidade, por meio assinatura de Termo de Confidencialidade.</p>
+<p><b>8.4</b> Não haverá violação das obrigações de CONFIDENCIALIDADE previstas no Acordo de Parceria nas seguintes hipóteses:</p>
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">8.4.1</b> Informações técnicas ou comerciais que já sejam do conhecimento das PARTES na data da divulgação, ou que tenham sido comprovadamente desenvolvidas de maneira independente e sem relação com o Acordo pela PARCEIRO que a revele;</p>
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">8.4.2</b> Informações técnicas ou comerciais que sejam ou se tornem de domínio público, sem culpa da(s) PARCEIROS (S);</p>
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">8.4.2.1</b> Qualquer informação que tenha sido revelada somente em termos gerais, não será considerada de conhecimento ou domínio público.</p>
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">8.4.3</b> Informações técnicas ou comerciais que sejam recebidas de um terceiro que não esteja sob obrigação de manter as informações técnicas ou comerciais em confidencialidade;</p>
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">8.4.4</b> Informações que possam ter divulgação exigida por lei, decisão judicial ou administrativa;</p>
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">8.4.5</b> Revelação expressamente autorizada, por escrito, pelas PARTES.</p>
+<p><b>8.5</b> A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada.</p>
+
+<p id="nota-explicativa"><b>NOTA EXPLICATIVA:</b> Os parceiros deverão eleger a cláusula de classificação de confidencialidade que melhor se adapte aos seus interesses.</p>
+
+<p><b>8.6</b> {!! $contrato->clausula_edit_8_6 !!}</p>
+<p><b>8.7</b> {!! $contrato->clausula_edit_8_7 !!}</p>
+<p><b>8.8</b> {!! $contrato->clausula_edit_8_8 !!}</p>
+
+<!------clausula-9--->
+<h5 class="font-weight-bold">9. CLÁUSULA NONA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h5>
+
+<p><b>9.1</b> {!! $contrato->clausula_edit_9_1 !!}</p>
+<p><b>9.2</b> {!! $contrato->clausula_edit_9_2 !!}</p>
+<p><b>9.3</b> {!! $contrato->clausula_edit_9_3 !!}</p>
+<p><b>9.4</b> {!! $contrato->clausula_edit_9_4 !!}</p>
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">a)</b> {!! $contrato->clausula_edit_9_a !!}</p>
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">b)</b> {!! $contrato->clausula_edit_9_b !!}</p>
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">c)</b> {!! $contrato->clausula_edit_9_c !!}</p>
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">d)</b> {!! $contrato->clausula_edit_9_d !!}</p>
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">e)</b> {!! $contrato->clausula_edit_9_e !!}</p>
+
+<!------clausula-10--->
+<h5 class="font-weight-bold">10. CLÁUSULA DÉCIMA - DO ACOMPANHAMENTO</h5>
+
+<p><b>10.1</b> Aos coordenadores indicados pelos PARCEIROS competirá dirimir as dúvidas que surgirem na sua execução e de tudo dará ciência às respectivas autoridades.</p>
+<p><b>10.2</b> O coordenador do projeto indicado pela ICT/AGÊNCIA DE FOMENTO anotará, em registro próprio, as ocorrências relacionadas com a execução do objeto, recomendando as medidas necessárias à autoridade competente para regularização das inconsistências observadas.</p>
+<p><b>10.3</b> O acompanhamento do projeto pelos coordenadores não exclui nem reduz a responsabilidade dos PARCEIROS perante terceiros.</p>
+<p><b>10.4</b> A impossibilidade técnica ou científica quanto ao cumprimento de qualquer fase do Plano de Trabalho, que seja devidamente comprovada e justificada, acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou término do Plano de Trabalho e consequente extinção deste Acordo.</p>
+
+<!------clausula-11--->
+<h5 class="font-weight-bold">11. CLÁUSULA DÉCIMA PRIMEIRA - DA VIGÊNCIA E DA PRORROGAÇÃO</h5>
+
+<p id="nota-explicativa"><b>NOTA EXPLICATIVA:</b> Observar que no § 3º do artigo 9-A da Lei nº10.973/2004 estabelece que “A vigência dos instrumentos jurídicos aos quais se refere o caput deverá ser suficiente à plena realização do objeto, admitida a prorrogação, desde que justificada tecnicamente e refletida em ajuste do plano de trabalho.”</p>
+
+<p><b>11.1</b> O presente Acordo de Parceria para PD&I vigerá pelo prazo de {!! $contrato->prazo_vigencia !!} anos, a partir da data de sua assinatura, prorrogáveis.</p>
+<p><b>11.2</b> Este Acordo de Parceria poderá ser prorrogado por meio de termo aditivo, com as respectivas alterações no Plano de Trabalho, mediante a apresentação de justifica técnica.</p>
 
 
 
@@ -198,8 +255,14 @@
 
 
 
-<footer class="footer" style="position: fixed; right:5px; bottom: 25px; opacity: 0.3; margin-top: 20px !important; margin-bottom: 20px !important">
-	<img src="../public/assets/sgtt_small.png" alt="sgtt" width="60px">
-</footer>
+
+
+
+
+
+
+
+<img src="../public/assets/sgtt_small.png" alt="sgtt" width="60px" style="position: fixed; right:5px; bottom: 25px; opacity: 0.3; margin-top: 20px !important; margin-bottom: 20px !important">
+
 </body>
 </html>
