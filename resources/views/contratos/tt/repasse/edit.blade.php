@@ -2,12 +2,20 @@
 
 
 <style type="text/css">
-  input{
-    text-transform: uppercase !important;
-    font-weight: bold !important;
-    color: #0A5C83 !important;
+  #wrapper #content-wrapper {
+    background-color: white !important;
+  }
+
+  textarea{
+    background-color: white !important;
+    color: black !important;
+    border-color: black !important;
+    box-shadow: 1px 2px 2px #cdcdcd;
+    padding: 10px;
+    text-align: justify !important;
   }
 </style>
+
 @section('content')
 
 @include('pesquisador.modals.modal_1')
@@ -50,13 +58,31 @@
 <script type="text/javascript" src="{{ asset('js/utils.js') }}"></script>
 
 <div class="title-header">
-    <span class="h3 ml-3 font-weight-bold text-danger">Editar Contrato <span class="badge badge-danger">1</span></span>
-    <div class="badge badge-dark lead  mr-auto float-right">Com repasse</div>
+    <span class="h3 ml-3 font-weight-bold text-primary">Editar Contrato <span class="badge badge-primary">1</span></span>
+    <div class="badge badge-success lead  mr-auto float-right">Com repasse</div>
     <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
 </div>
 
-<div class="card mt-5 color-card">
-  <div class="card-body p-3">
+<div class="card mt-5 mb-5 color-card">
+
+  <form id="regForm" class="form-horizontal" method="POST" action="{{ route('contrato_cr.update', $contratos_cr->id) }}">
+    {{ csrf_field() }}
+    {{ method_field('PUT') }}
+    <div class="card-header py-1">
+      <div id="step-container" class="step-container align-items-center py-3 mt-2"></div>
+    </div>
+    <div id="tab-here" class="p-5 card-body mb-0"></div>
+    <!-- Circles which indicates the steps of the form: -->
+    <div class="buttonsControl card-footer bg-transparent p-0 clearfix" style="overflow:auto;">
+      <div class="m-3 mt-0 mb-0">
+        <button type="button" class="btn btn-lg btn-outline-dark font-weight-bold shadow-sm" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
+        <button type="button" class="btn btn-success btn-lg font-weight-bold shadow-sm" id="nextBtn" onclick="nextPrev(1)">Proximo</button>
+      </div>
+    </div>
+  </form><!--form-->
+
+
+  <div class="container-fluid">
         <div class="tab-pane show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
             <div class="modal-alert modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -94,6 +120,9 @@
 
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="container-fluid pb-5 pt-5 mt-0 m-0">
+                <div class="text-center row justify-content-center mb-5">
+                  <img src="{{asset('assets/brazao.jpg')}}" alt="" width="10%" class="mx-auto text-center">
+                </div>
                 <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">
                 ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI
                   CELEBRAM</h5> 
@@ -351,7 +380,7 @@
               <div class="text-justify text-black">
                 <p>Os <b>PARCEIROS</b>, anteriormente qualificados, resolvem celebrar o presente Acordo de Parceria para Pesquisa, Desenvolvimento e Inovação - PD&I, em conformidade com as normas legais vigentes no Marco Legal de Ciência, Tecnologia e Inovação (Emenda Constitucional nº 85/15, Lei nº 10.973/2004, Lei nº 13.243/2016 e Decreto nº 9.283/2018), que deverá ser executado com estrita observância das seguintes cláusulas e condições:
 
-                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">1. Cláusula Primeira - do Objeto</h5>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">1. Cláusula Primeira - do Objeto</h4><hr><br>
     
                 <p><b>1.1</b> O presente Acordo de Parceria para PD&I tem por objeto a cooperação técnica e científica entre os PARTÍCIPES 
                 para desenvolver
@@ -392,7 +421,7 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">2. CLÁUSULA SEGUNDA – DO PLANO DE TRABALHO <a href="#" data-toggle="modal" data-target="#modalExemplo12"><i class="fas fa-fw fa-question-circle float-right"></i></a></h5>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">2. CLÁUSULA SEGUNDA – DO PLANO DE TRABALHO <a href="#" data-toggle="modal" data-target="#modalExemplo12"><i class="fas fa-fw fa-question-circle float-right"></i></a></h4><hr><br>
                 <div class="alert alert-warning" role="alert">      
                   <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                     NOTAS EXPLICATIVAS!
@@ -458,7 +487,7 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">3 CLÁUSULA TERCEIRA – DAS ATRIBUIÇÕES E RESPONSABILIDADES</h5>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">3 CLÁUSULA TERCEIRA – DAS ATRIBUIÇÕES E RESPONSABILIDADES</h4><hr><br>
                 <!--  Nota explicativa 3 -->
                 <div class="alert alert-warning" role="alert">      
                   <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
@@ -483,29 +512,39 @@
                     </div>
                   </div>
               </div><!--modal-alert-->
-              <p class="ml-2 bg-light roboto-font"><b>3.1.1. Do(a):</b><input type="text" class="myform-control" name="nome_inst_ict" id="nome_inst_ict" value="{{$contratos_cr->nome_inst_ict}}" placeholder="Instituição"><a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a></p>
-            <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div> Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD&I ;<br>
-            <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div> Manter rigoroso controle das despesas efetuadas e dos respectivos comprovantes com vistas à prestação de contas da execução do objeto deste Acordo;<br>
-            <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução<a href="#" data-toggle="modal" data-target="#modalCoordenador"><i class="fas fa-fw fa-question-circle"></i></a>
-            <div class="form-group col-md-6">
-              <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorICT()" value="{{$contratos_cr->nome_coordenador_ict}}" id="nome_coordenador_ict" class="form-control" placeholder="Nome coordenador ICT/Publico"><br>
-            </div>
-            <div class="badge badge-primary p-2 mb-1 font-weight-bold">D)</div> Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;<br>
-            <div class="badge badge-primary p-2 mb-1 font-weight-bold">E)</div> Monitorar, avaliar e prestar contas nos termos deste Acordo; </p>
             
-            <!--inicio das clausulas 3-->
-            <p class="ml-2 bg-light roboto-font"><b>3.1.2. Do(a):</b>
-              <input class="myform-control" type="text" name="nome_inst_privado" value="{{$contratos_cr->nome_inst_privado}}" id="nome_inst_privado" placeholder="Instituição"><a href="#" data-toggle="modal" data-target="#modalExemplo15"><i class="fas fa-fw fa-question-circle"></i></a> (PARCEIRO PRIVADO)
-            </p>
-  
-            <div class="badge badge-primary p-2 mb-1 font-weight-bold">A)</div>Transferir os recursos financeiros acordados, segundo o Cronograma de Desembolso constante no Plano de Trabalho, por meio do aporte de recursos financeiros de sua responsabilidade;<br>
-            <div class="badge badge-primary p-2 mb-1 font-weight-bold">B)</div> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução<a href="#" data-toggle="modal" data-target="#modalCoordenadorPrivado"><i class="fas fa-fw fa-question-circle"></i></a>
-            <div class="form-group col-md-6">
-              <input type="text" name="nome_coordenador_privado" value="{{$contratos_cr->nome_coordenador_privado}}" onchange="handleCoordenadorPrivado()" class="form-control" id="nome_coordenador_privado" placeholder="Nome Coordenador privado"><br>
-            </div>
-            <div class="badge badge-primary p-2 mb-1 font-weight-bold">C)</div> Colaborar, nos termos do plano de trabalho, para que o Acordo alcance os objetivos nele descritos;
+              <p><b>3.1 </b>São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I:</p>
+              <p class="mt-3 roboto-font"><b>3.1.1. Do(a) ICT:</b><input type="text" class="myform-control" name="nome_inst_ict" id="handle_ict" placeholder="{{$contratos_cr->nome_inst_ict}}"><a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a></p><hr>
+              <p><b>A)</b> Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD&I ;</p>
+              <p><b>B)</b> Manter rigoroso controle das despesas efetuadas e dos respectivos comprovantes com vistas à prestação de contas da execução do objeto deste Acordo;</p>
+              <p><b>C)</b> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução<a href="#" data-toggle="modal" data-target="#modalCoordenador"><i class="fas fa-fw fa-question-circle"></i></a></p>
+          
+              <div class="form-group row p-2">
+                <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador ICT/Público:</label>
+                <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
+                  <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" placeholder="{{$contratos_cr->nome_coordenador_ict}}">
+                </div>
+              </div>
+
+              <p><b>D)</b> Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;</p>
+              <p><b>E)</b> Monitorar, avaliar e prestar contas nos termos deste Acordo; </p></p>
               
-            <br><br>
+              <!--inicio das clausulas 3-->
+              <p class="mt-3 roboto-font"><b>3.1.2. Do Parceiro Privado:</b><input type="text" class="myform-control" name="nome_inst_privado" id="nome_inst_privado" placeholder="{{$contratos_cr->nome_inst_privado}}"></p><hr>
+
+              <p><b>A)</b> Transferir os recursos financeiros acordados, segundo o Cronograma de Desembolso constante no Plano de Trabalho, por meio do aporte de recursos financeiros de sua responsabilidade;</p>
+              <p><b>B)</b> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução<a href="#" data-toggle="modal" data-target="#modalCoordenadorPrivado"><i class="fas fa-fw fa-question-circle"></i></a></p>
+              
+              <div class="form-group row p-2">
+                <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador Privado:</label>
+                <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
+                  <input type="text" name="nome_coordenador_privado" onchange="handleCoordenadorPrivado()" id="nome_coordenador_privado" class="form-control" placeholder="{{$contratos_cr->nome_coordenador_privado}}">
+                </div>
+              </div>
+
+              <b>C)</b> Colaborar, nos termos do plano de trabalho, para que o Acordo alcance os objetivos nele descritos;
+                
+              <br><br>
   
             <!--    Checkbox clausula condicional fundo de apoio  -->
             <div class="dropdown-divider"></div>´
@@ -595,7 +634,7 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">4. CLÁUSULA QUARTA - DOS RECURSOS FINANCEIROS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">4. CLÁUSULA QUARTA - DOS RECURSOS FINANCEIROS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr><br>
                 <div class="alert alert-warning" role="alert">      
                 <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                   NOTAS EXPLICATIVAS!
@@ -752,7 +791,7 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">5. CLÁUSULA QUINTA - DO PESSOAL</h5>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">5. CLÁUSULA QUINTA - DO PESSOAL</h4><hr><br>
                 
                 <p>
                 <b>5.1.</b> Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações trabalhistas, previdenciárias, fundiárias e tributárias
@@ -772,7 +811,7 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-              <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">6. CLÁUSULA SEXTA - DA PROPRIEDADE INTELECTUAL E DA CRIAÇÃO PROTEGIDA</h5>
+              <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">6. CLÁUSULA SEXTA - DA PROPRIEDADE INTELECTUAL E DA CRIAÇÃO PROTEGIDA</h4><hr><br>
               <div class="alert alert-warning" role="alert">      
               <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                 NOTAS EXPLICATIVAS!
@@ -836,7 +875,7 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">7 CLÁUSULA SÉTIMA - DA DIVULGAÇÃO E DAS PUBLICAÇÕES</h5>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">7 CLÁUSULA SÉTIMA - DA DIVULGAÇÃO E DAS PUBLICAÇÕES</h4><hr><br>
     
                 <p>
                   <b>7.1. </b>Os PARCEIROS concordam em não utilizar o nome do outro PARCEIRO ou de seus empregados em qualquer propaganda, informação à imprensa ou publicidade relativa ao contrato ou a qualquer produto ou serviço decorrente deste, sem a prévia aprovação por escrito da PARTE referida.
@@ -861,7 +900,7 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-              <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">8 CLÁUSULA OITAVA - DAS INFORMAÇÕES CONFIDENCIAIS E SIGILOSAS</h5>
+              <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">8 CLÁUSULA OITAVA - DAS INFORMAÇÕES CONFIDENCIAIS E SIGILOSAS</h4><hr><br>
           <p>
             <b>8.1.</b> Os PARCEIROS adotarão todas as medidas necessárias para proteger o sigilo das INFORMAÇÕES CONFIDENCIAIS recebidas em função da celebração, desenvolvimento e execução do presente Acordo de Parceria, inclusive na adoção de medidas que assegurem a tramitação do processo, não as divulgando a terceiros, sem a prévia e escrita autorização da outro PARCEIRO.
           </p>
@@ -927,7 +966,7 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-blue">
                 
-              <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">9 CLÁUSULA NONA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h5>
+              <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">9 CLÁUSULA NONA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h4><hr><br>
 
               <!--clausula editavel 9-->
               <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
@@ -974,7 +1013,7 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">10 CLÁUSULA DÉCIMA - DO ACOMPANHAMENTO<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">10 CLÁUSULA DÉCIMA - DO ACOMPANHAMENTO<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr><br>
     
                 <p><b>10.1.</b>Aos coordenadores indicados pelos <b>PARCEIROS</b> competirá dirimir as dúvidas que surgirem na sua execução e de tudo dará ciência às respectivas autoridades.</p>
                 <p><b>10.2.</b>O coordenador do projeto indicado pela <b>ICT/AGÊNCIA DE FOMENTO</b> anotará, em registro próprio, as ocorrências relacionadas com a execução do objeto, recomendando as medidas necessárias à autoridade competente para regularização das inconsistências observadas. </p>
@@ -990,7 +1029,7 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-              <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">11. CLÁUSULA DÉCIMA PRIMEIRA - DA VIGÊNCIA E DA PRORROGAÇÃO</h5>
+              <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">11. CLÁUSULA DÉCIMA PRIMEIRA - DA VIGÊNCIA E DA PRORROGAÇÃO</h4><hr><br>
               <div class="alert alert-warning" role="alert">     
                 <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                   NOTAS EXPLICATIVAS!
@@ -1008,7 +1047,7 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-              <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">12. CLÁUSULA DÉCIMA SEGUNDA - DAS ALTERAÇÕES</h5>
+              <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">12. CLÁUSULA DÉCIMA SEGUNDA - DAS ALTERAÇÕES</h4><hr><br>
 
               <p><b>12.1.</b> As cláusulas e condições estabelecidas no presente instrumento poderão ser alteradas mediante celebração de termo aditivo.</p>
               <p><b>12.2.</b> A proposta de alteração, devidamente justificada, deverá ser apresentada por escrito, dentro da vigência do instrumento.</p>
@@ -1041,7 +1080,7 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-              <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2"> 13. CLÁUSULA DÉCIMA TERCEIRA – DO MONITORAMENTO, DA AVALIAÇÃO E DA PRESTAÇÃO DE CONTAS</h5>
+              <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2"> 13. CLÁUSULA DÉCIMA TERCEIRA – DO MONITORAMENTO, DA AVALIAÇÃO E DA PRESTAÇÃO DE CONTAS</h4><hr><br>
               <p><b>13.1.</b> Os <b>PARCEIROS</b> exercerão a fiscalização técnico-financeira das atividades do presente Acordo. </p>
               <!--clausula editavel 13-->
               <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
@@ -1077,7 +1116,7 @@
             <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
               <div class="container-fluid p-0 mt-0 m-0">
                 <div class="text-justify text-black">
-                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">14. CLÁUSULA DÉCIMA QUARTA – DA EXTINÇÃO DO ACORDO<</h5>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">14. CLÁUSULA DÉCIMA QUARTA – DA EXTINÇÃO DO ACORDO</h4><hr><br>
                 <p><b>14.1.</b> Este Acordo poderá, a qualquer tempo, ser denunciado pelos <b>PARCEIROS</b>, devendo o interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de <span>60 (sessenta)</span> dias da data em que se pretenda que sejam encerradas as atividades, respeitadas as obrigações assumidas com terceiros entre os <b>PARCEIROS</b>, creditando eventuais benefícios adquiridos no período.</p>
                 <!--clausula editavel 14-->
                 <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
@@ -1107,7 +1146,7 @@
               <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
               <div class="container-fluid p-0 mt-0 m-0">
                 <div class="text-justify text-black">
-                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">15. CLÁUSULA DÉCIMA QUINTA - DA PUBLICIDADE</h5>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">15. CLÁUSULA DÉCIMA QUINTA - DA PUBLICIDADE</h4><hr><br>
                 <div class="alert alert-warning" role="alert">     
                   <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                     NOTAS EXPLICATIVAS!
@@ -1123,7 +1162,7 @@
               <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
               <div class="container-fluid p-0 mt-0 m-0">
                 <div class="text-justify text-black">
-                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">16. CLAUSULA DÉCIMA SEXTA – DOS BENS</h5>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">16. CLAUSULA DÉCIMA SEXTA – DOS BENS</h4><hr><br>
                 <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
                   <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                   Edite a(s) cláusula(s) abaixo (se julgar necessário):
@@ -1141,7 +1180,7 @@
             <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
               <div class="container-fluid p-0 mt-0 m-0">
                 <div class="text-justify text-black">
-                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">17. CLÁUSULA DÉCIMA QUINTA – DAS NOTIFICAÇÕES  <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">17. CLÁUSULA DÉCIMA QUINTA – DAS NOTIFICAÇÕES  <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr><br>
                 <p><b>17.1</b> Qualquer comunicação ou notificação relacionada ao Acordo de Parceria poderá ser feita
                               pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no
                               respectivo endereço do PARCEIRO notificado, conforme as seguintes informações:<br>
@@ -1281,7 +1320,7 @@
              <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
               <div class="container-fluid p-0 mt-0 m-0">
                 <div class="text-justify text-black">
-                  <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">18. CLÁUSULA DÉCIMA OITAVA – DISPOSIÇÕES GERAIS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+                  <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">18. CLÁUSULA DÉCIMA OITAVA – DISPOSIÇÕES GERAIS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr><br>
       
                   <p>
                     <b>18.1.</b> É livre o acesso dos agentes da administração pública, do controle interno e do Tribunal de Contas aos documentos e às informações relacionados a esse Acordo, bem como aos locais de execução do respectivo objeto, ressalvadas as informações tecnológicas e dados das pesquisas que possam culminar com alguma inovação.
@@ -1294,33 +1333,78 @@
           <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
               <div class="container-fluid p-0 mt-0 m-0">
                 <div class="text-justify text-dark">
-                  <h5 class="text-uppercase font-weight-bold roboto-font text-left text-dark mb-3 bg-light p-2">19. CLÁUSULA DÉCIMA NONA - DO FORO <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h5>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">19. CLÁUSULA DÉCIMA NONA - DO FORO <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr><br>
       
                   <p><b>19.1.</b>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de <input class="myform-control font-weight-bold text-dark"  type="text" name="estado_foro" id="estado_foro" value="{{$contratos_cr->estado_foro}}">, cidade de <input  class="myform-control font-weight-bold" type="text" name="cidade_foro" id="cidade_foro" value="{{$contratos_cr->cidade_foro}}">,
-                                para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109
-                                da Constituição Federal.
-                                E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente
-                                instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.
-                                </p>
-                      <input type="text" class="myform-control font-weight-bold text-dark"  name="cidade_uf_dia_foro" id="cidade_uf_dia_foro" value="{{$contratos_cr->cidade_uf_dia_foro}}">   <br>   
-                    <div class="mb-4 row justify-content-center">
-                      <div class="col-6 align-self-center">
-                        <div class="input-control-center">
-                          <p class="mt-4">Pelo(a)  <span class="text-blue">ICT:</span> <input class="myform-control text-dark font-weight-bold" type="text" name="ict_inst_foro" id="ict_inst_foro" value="{{$contratos_cr->ict_inst_foro}}"> </p>   
-                            <input class="mb-2 myform-control text-dark font-weight-bold" type="text" name="nome_rep_foro" id="nome_rep_foro" value="{{$contratos_cr->nome_rep_foro}}"> 
-                            <br><input class="mb-2  myform-control text-dark font-weight-bold" type="text" name="cargo_rep_foro" id="cargo_rep_foro" value="{{$contratos_cr->cargo_rep_foro}}"> 
-                          </div>
-                      </div>
+                  para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109
+                  da Constituição Federal.
+                  E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente
+                  instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.
+                  </p>
+
+                  <div class="form-row mt-3">
+                    <div class="form-group col-md-3">
+                      <label for="cidade_uf_dia_foro" class="font-weight-bold text-black">Cidade, UF, Dia do Mês e Ano</label>
+                      <input type="text" 
+                        class="form-control text-black font-weight-bold" 
+                        name="cidade_uf_dia_foro"
+                        id="cidade_uf_dia_foro"  
+                        placeholder="{{$contratos_cr->cidade_uf_dia_foro}}">
                     </div>
-                       <div class="mt-4 row justify-content-center">
-                         <div class="col-6 align-self-center">
-                           <div class="input-control-center">
-                             <p>Pelo(a) <span class="text-blue">PARCEIRO PRIVADO:</span> <input class="myform-control text-dark font-weight-bold" type="text" name="nome_inst_privado_foro" id="nome_inst_privado_foro" value="{{$contratos_cr->nome_inst_privado_foro}}"> </p>      
-                             <input class="mb-2 myform-control text-dark font-weight-bold" type="text" name="nome_rep_privado_foro" id="nome_rep_privado_foro" value="{{$contratos_cr->nome_rep_privado_foro}}"> 
-                             <br><input class="mb-2  myform-control text-dark font-weight-bold" type="text" name="cargo_rep_privado_foro" id="cargo_rep_privado_foro" value="{{$contratos_cr->cargo_rep_privado_foro}}"> 
-                           </div>
-                         </div>
-                       </div>
+                  </div><!-- /.row-->
+
+                  <div class="form-row mt-3">
+                    <div class="form-group col-md-3">
+                      <label for="ict_inst_foro" class="font-weight-bold text-black">ICT:</label>
+                      <input type="text" 
+                        class="form-control text-black font-weight-bold"
+                        name="ict_inst_foro" 
+                        id="ict_inst_foro"  
+                        placeholder="{{$contratos_cr->ict_inst_foro}}">
+                    </div>
+                    <div class="form-group col-md-3">
+                      <label for="nome_rep_foro" class="font-weight-bold text-black">Representante:</label>
+                      <input type="text" 
+                        class="form-control text-black font-weight-bold" 
+                        name="nome_rep_foro" id="nome_rep_foro"  
+                        placeholder="{{$contratos_cr->nome_rep_foro}}">
+                    </div>
+                    <div class="form-group col-md-3">
+                      <label for="cargo_rep_foro" class="font-weight-bold text-black">Cargo</label>
+                      <input type="email" 
+                        class="form-control text-black font-weight-bold"
+                        name="cargo_rep_foro" 
+                        id="cargo_rep_foro"  
+                        placeholder="{{$contratos_cr->cargo_rep_foro}}">
+                    </div>
+                  </div><!-- /.row-->
+
+                  <div class="form-row mt-3">
+                    <div class="form-group col-md-3">
+                      <label for="nome_inst_privado_foro" class="font-weight-bold text-black">Parceiro Privado:</label>
+                      <input type="text" 
+                        class="form-control text-black font-weight-bold"
+                        name="nome_inst_privado_foro" 
+                        id="nome_inst_privado_foro"  
+                        placeholder="{{$contratos_cr->nome_inst_privado_foro}}">
+                    </div>
+                    <div class="form-group col-md-3">
+                      <label for="nome_rep_privado_foro" class="font-weight-bold text-black">Representante:</label>
+                      <input type="text" 
+                        class="form-control text-black font-weight-bold" 
+                        name="nome_rep_privado_foro" id="nome_rep_privado_foro"  
+                        placeholder="{{$contratos_cr->nome_rep_privado_foro}}">
+                    </div>
+                    <div class="form-group col-md-3">
+                      <label for="cargo_rep_privado_foro" class="font-weight-bold text-black">Cargo</label>
+                      <input type="email" 
+                        class="form-control text-black font-weight-bold"
+                        name="cargo_rep_privado_foro" 
+                        id="cargo_rep_privado_foro"  
+                        placeholder="{{$contratos_cr->cargo_rep_privado_foro}}">
+                    </div>
+                  </div><!-- /.row-->
+
                 </div>
               </div>
           </div>
@@ -1333,35 +1417,16 @@
   
                 <p class="text-justify py-4">Seu contrato será revisado em até de 30 dias e uma resposta será gerada. Aguarde a confirmação do sistema. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolores excepturi ipsum rem, enim accusantium quam similique assumenda eum veniam saepe, quas earum nisi hic neque voluptate consectetur ex quo!</p><br>
 
-                <div class="col-lg-6 col-md-12 text-left py-4">
+                <!-- <div class="col-lg-6 col-md-12 text-left py-4">
                   <button class="btn btn-lg btn-info btn-block" type="submit">
                     Salvar Alterações
                   </button>
-                </div>
+                </div> -->
                 
               </div>
             </div>
         </div>
   
-        <form id="regForm" class="form-horizontal" method="POST" action="{{ route('contrato_cr.update', $contratos_cr->id) }}">
-          {{ csrf_field() }}
-          {{ method_field('PUT') }}
-          <div id="step-container" class="step-container m-4">
-            
-          </div>
-          
-         
-          <div id="tab-here">
-
-          </div>
-          <!-- Circles which indicates the steps of the form: -->
-          <div class="buttonsControl pb-5" style="overflow:auto;">
-            <div>
-              <button type="button" class="btn bg-secondary btn-lg text-light" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
-              <button type="button" class="btn bg-success btn-lg text-light" id="nextBtn" onclick="nextPrev(1)">Proximo</button>
-            </div>
-          </div>
-        </form>
   </div>
 
 </div>

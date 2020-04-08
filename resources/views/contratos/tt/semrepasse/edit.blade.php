@@ -56,7 +56,7 @@
 <script type="text/javascript" src="{{ asset('js/utils.js') }}"></script>
 <div class="title-header">
     <span class="h3 ml-3 font-weight-bold">Novo Contrato</span>
-    <div class="badge badge-dark lead  mr-auto float-right">sem repasse</div>
+    <div class="badge badge-primary lead  mr-auto float-right">sem repasse</div>
     <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
 </div>
 
@@ -461,7 +461,7 @@
             <div class="form-group row p-2">
               <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador ICT/Público:</label>
               <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
-                <input type="text" name="nome_coordenador_ict" value="{{$contratos_sr->nome_coordenador_ict}}" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" placeholder="{{$contratos_sr->nome_coordenador_ict}}">{{$contratos_sr->nome_coordenador_ict}}
+                <input type="text" name="nome_coordenador_ict" value="{{$contratos_sr->nome_coordenador_ict}}" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" placeholder="{{$contratos_sr->nome_coordenador_ict}}">
               </div>
             </div>
 
@@ -488,7 +488,7 @@
             <div class="form-group row p-2">
               <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador Parceiro Privado:</label>
               <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
-                <input type="text" name="nome_coordenador_privado" value="{{$contratos_sr->nome_coordenador_privado}}" onchange="handleCoordenadorPrivado()" id="nome_coordenador_privado" class="form-control" placeholder="{{$contratos_sr->nome_coordenador_privado}}">{{$contratos_sr->nome_coordenador_privado}}
+                <input type="text" name="nome_coordenador_privado" value="{{$contratos_sr->nome_coordenador_privado}}" onchange="handleCoordenadorPrivado()" id="nome_coordenador_privado" class="form-control" placeholder="{{$contratos_sr->nome_coordenador_privado}}">
               </div>
             </div>
 
