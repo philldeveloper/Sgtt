@@ -241,25 +241,79 @@
 <p><b>11.2</b> Este Acordo de Parceria poderá ser prorrogado por meio de termo aditivo, com as respectivas alterações no Plano de Trabalho, mediante a apresentação de justifica técnica.</p>
 
 
+<!------clausula-12--->
+<h5 class="font-weight-bold">12. CLÁUSULA DÉCIMA SEGUNDA - DAS ALTERAÇÕES</h5>
+
+<p><b>12.1</b> As cláusulas e condições estabelecidas no presente instrumento poderão ser alteradas mediante celebração de termo aditivo.</p>
+<p><b>12.2</b> A proposta de alteração, devidamente justificada, deverá ser apresentada por escrito, dentro da vigência do instrumento.</p>
+<p><b>12.3</b> É vedado o aditamento do presente Acordo com o intuito de alterar o seu objeto, sob pena de nulidade do ato e responsabilidade do agente que o praticou.</p>
+<p><b>12.4</b> São dispensáveis de formalização por meio de Termo Aditivo as alterações que importem em transposição, remanejamento ou transferência de recursos de categoria de programação para outra, com o objetivo de conferir eficácia e eficiência às atividades previstas no Plano de Trabalho, desde que não haja alteração do valor total do projeto.</p>
+
+<p id="nota-explicativa"><b>NOTA EXPLICATIVA:</b> As cláusulas abaixo são sugeridas para os Acordos de Parceria para PD&I em que haja transferência de recurso do parceiro privado diretamente para o púbico, tendo em vista que os recursos passarão a ser orçamentários. Nas hipóteses de Acordos de Parceria para PD&I com intermediação de Fundação de Apoio, as cláusulas abaixo são facultativas.</p>
+
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">12.4.1</b> {!! $contrato->clausula_edit_12_4_1 !!}</p>
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">12.4.2</b> {!! $contrato->clausula_edit_12_4_2 !!}</p>
 
 
+<!------clausula-13--->
+<h5 class="font-weight-bold">13. CLÁUSULA DÉCIMA TERCEIRA – DO MONITORAMENTO, DA AVALIAÇÃO E DA PRESTAÇÃO DE CONTAS</h5>
+
+<p><b>13.1</b> Os PARCEIROS exercerão a fiscalização técnico-financeira das atividades do presente Acordo.</p>
+<p><b>13.2</b> {!! $contrato->clausula_edit_13_2 !!}.</p>
+
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">a)</b> {!! $contrato->clausula_edit_13_2_a !!}</p>
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">b)</b> {!! $contrato->clausula_edit_13_2_b !!}</p>
+
+<p><b>13.3</b> No Formulário de Resultado de que trata a subcláusula 13.2, deverá ser demonstrada a compatibilidade entre as metas previstas e as alcançadas no período, bem como apontadas as justificativas em caso de discrepância, consolidando dados e valores das ações desenvolvidas.</p>
+<p><b>13.4</b> Caberá a cada PARCEIRO adotar as providências necessárias julgadas cabíveis, caso os relatórios parciais de que trata a subcláusula primeira demonstrem inconsistências na execução do objeto deste Acordo.</p>
+<p><b>13.5</b> O pesquisador deverá apresentar a prestação de contas financeira, em até 180 (cento e oitenta) dias, contados do termo final do prazo de vigência previsto neste Acordo.</p>
+<p><b>13.6</b> A prestação de contas será simplificada, privilegiando os resultados da pesquisa, e seguirá as regras previstas no artigo 58 do Decreto nº 9.283/18 e/ou na Política de Inovação da entidade pública.</p>
+
+<!------clausula-14--->
+<h5 class="font-weight-bold">14. CLÁUSULA DÉCIMA QUARTA – DA EXTINÇÃO DO ACORDO</h5>
+
+<p><b>14.1</b> Este Acordo poderá, a qualquer tempo, ser denunciado pelos PARCEIROS, devendo o interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de 60 (sessenta) dias da data em que se pretenda que sejam encerradas as atividades, respeitadas as obrigações assumidas com terceiros entre os PARCEIROS, creditando eventuais benefícios adquiridos no período.</p>
+
+<p><b>14.2</b> {!! $contrato->clausula_edit_14_2 !!}.</p>
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">14.2.1</b> {!! $contrato->clausula_edit_14_2_1 !!}.</p>
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">14.2.2</b> {!! $contrato->clausula_edit_14_2_2 !!}.</p>
+<p><b>14.3</b> {!! $contrato->clausula_edit_14_3 !!}</p>
+<p><b>14.4</b> {!! $contrato->clausula_edit_14_4 !!}</p>
 
 
+<!------clausula-15--->
+<h5 class="font-weight-bold">15. CLÁUSULA DÉCIMA QUINTA - DA PUBLICIDADE</h5>
 
+<p id="nota-explicativa" style="text-transform: lowercase"><b style="text-transform: uppercase !important">NOTA EXPLICATIVA:</b> DEPENDENDO SE O ACORDO É, RESPECTIVAMENTE, COM TRANSFERÊNCIA DIRETA DE RECURSOS OU POR INTERMÉDIO DE FUNDAÇÃO DE APOIO.</p>
 
+<p><b>14.1</b> A publicação do extrato do presente Acordo de Parceria para PD&I no Diário Oficial da União (DOU) é condição indispensável para sua eficácia e será providenciada pela ICT no prazo de até 20 (vinte) dias da sua assinatura.</p>
 
+<!------clausula-16--->
+<h5 class="font-weight-bold">16. CLAUSULA DÉCIMA SEXTA – DOS BENS</h5>
+<p><b>16.1</b> {!! $contrato->clausula_edit_16_1 !!}</p>
+<p><b>16.2</b> {!! $contrato->clausula_edit_16_2 !!}</p>
 
+<!------clausula-17--->
+<h5 class="font-weight-bold">17. CLÁUSULA DÉCIMA QUINTA – DAS NOTIFICAÇÕES</h5>
+<p><b>17.1</b> Qualquer comunicação ou notificação relacionada ao Acordo de Parceria poderá ser feita pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no respectivo endereço do PARCEIRO notificado, conforme as seguintes informações:</p>
 
+<br>
 
+<p><b>PARCEIRO PÚBLICO:</b></p>
+<p><b>Endereço:</b> {!! $contrato->parceiro_contato_endereço !!}, <b>Telefone:</b> {!! $contrato->parceiro_contato_telefone !!}, <b>Celular:</b> {!! $contrato->parceiro_contato_celular !!}, <b>E-mail:</b> {!! $contrato->parceiro_contato_email !!}</p>
 
+<p><b>PARCEIRO PRIVADO:</b></p>
+<p><b>Endereço:</b> {!! $contrato->privado_contato_endereço !!}, <b>Telefone:</b> {!! $contrato->privado_contato_telefone !!}, <b>Celular:</b> {!! $contrato->privado_contato_celular !!}, <b>E-mail:</b> {!! $contrato->privado_contato_email !!}</p>
 
+<p><b>FUNDAÇÃO DE APOIO:</b></p>
+<p><b>Endereço:</b> {!! $contrato->apoio_contato_endereço !!}, <b>Telefone:</b> {!! $contrato->apoio_contato_telefone !!}, <b>Celular:</b> {!! $contrato->apoio_contato_celular !!}, <b>E-mail:</b> {!! $contrato->apoio_contato_email !!}</p>
 
-
-
-
-
-
-
+<p><b>17.2</b> Qualquer comunicação ou solicitação prevista neste Acordo de Parceria será considerada como tendo sido legalmente entregue:</p>
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">17.2.1</b> Quando entregue em mão a quem destinada, com o comprovante de recebimento;</p>
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">17.2.2</b> Se enviada por correio, registrada ou certificada, porte pago e devidamente endereçada, quando recebida pelo destinatário ou no 5° (quinto) dia seguinte à data do despacho, o que ocorrer primeiro;</p>
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">17.2.3</b> Se enviada por fax, quando recebida pelo destinatário;</p>
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">17.2.4</b> Se enviada por e-mail, desde que confirmado o recebimento pelo destinatário, ou, após transcorridos 5 (cinco) dias úteis, o que ocorrer primeiro. Na hipótese de transcurso do prazo sem confirmação, será enviada cópia por correio, considerando-se, todavia, a notificação devidamente realizada.</p>
+<p><b>17.3</b> Qualquer dos PARCEIROS poderá, mediante comunicação por escrito, alterar o endereço para o qual as comunicações ou solicitações deverão ser enviadas.</p>
 
 
 <img src="../public/assets/sgtt_small.png" alt="sgtt" width="60px" style="position: fixed; right:5px; bottom: 25px; opacity: 0.3; margin-top: 20px !important; margin-bottom: 20px !important">
