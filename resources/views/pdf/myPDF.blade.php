@@ -9,7 +9,7 @@
 <body>
 	<h1>{{$title}}</h1>
 	<div style="justify-content: center; margin-bottom: 20px !important; text-align: center !important">
-		<img src="../public/assets/brazao.png" alt="">
+		<img src="../public/assets/brazao.jpg" alt="">
 	</div>
 
 	<h5 id="main-title"> ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI CELEBRAM {{$contrato->nome_ict}} E {{$contrato->nome_parceiro}} NA FORMA ABAIXO.</h5><br><br>
@@ -269,6 +269,6 @@
 			Pelo(a) {{$contrato->nome_inst_privado_foro}} <br>{{$contrato->nome_rep_privado_foro}}.</p>
 		</p>
 
-		<img src="../public/assets/sgtt_small.png" alt="sgtt" width="60px" style="position: fixed; right:5px; bottom: 25px; opacity: 0.3; margin-top: 20px !important; margin-bottom: 20px !important">
+		<img src="../public/assets/sgtt_small.jpg" alt="sgtt" width="60px" style="position: fixed; right:5px; bottom: 25px; opacity: 0.3; margin-top: 20px !important; margin-bottom: 20px !important">
 </body>
 </html>
