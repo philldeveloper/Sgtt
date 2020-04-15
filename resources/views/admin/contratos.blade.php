@@ -133,10 +133,10 @@
 <!-- SCRIPT PARA SEM REPASSE -->
 <script>
 var userMessage = document.getElementById('user-message-sr')
-var iconSuccess = document.getElementById('success-icon-sr')
+var iconSuccess_SR = document.getElementById('success-icon-sr')
 
 function modaltoDefault(){
-  iconSuccess.style.display = 'none'
+  iconSuccess_SR.style.display = 'none'
   userMessage.innerHTML = 'Clique em Baixar para fazer o download do seu PDF.'
 
 }
@@ -171,7 +171,7 @@ function loadingDownloadSR(event){
     },
     complete: function(){
       gif.style.display = 'none'
-      iconSuccess.style.display = 'block'
+      iconSuccess_SR.style.display = 'block'
       userMessage.innerHTML = 'Download do contrato realizado com sucesso!'
       button.setAttribute("disabled", false)
     }

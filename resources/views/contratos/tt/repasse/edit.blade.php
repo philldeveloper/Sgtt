@@ -1462,44 +1462,24 @@
   
   </script>
 <script>
-var currentTab = 0;
-var lastTab = 99;
-
- // Current tab is set to be the first tab (0)
+var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
+
 function stepButton(n) {
   let x = document.getElementsByClassName("tab");
-  console.log(window.firstStep)
-  //Verificando se o array contém o numeros de campos validos = 17, firstStep
-  if (window.firstStep !== undefined || n <= lastTab){
-      console.log( lastTab)
-      console.log( n)
-      if(n <= lastTab){
-        for (let i = 0; i < x.length; i++) {
-          x[i].style.display = "none"; 
-        }
-        x[n].style.display = "block";
-        //... and fix the Previous/Next buttons:
-        currentTab = n
-        showTab(n)
-        return true
-    }else{
-        Toastify({
-          text: "Você precisa preencher todos campos.",
-              backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
-              duration: 3000
-        }).showToast(); 
-        return false
-    }
-  }else{
-      Toastify({
-        text: "Você precisa preencher todos campos.",
-            backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
-            duration: 3000
-      }).showToast(); 
-    return
+
+  for (let i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
   }
+
+  x[n].style.display = "block";
+ 
+ 
+  //... and fix the Previous/Next buttons:
+  
+  showTab(n)
 }
+
 function showTab(n) {
   
   // This function will display the specified tab of the form...
@@ -1512,7 +1492,12 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").innerHTML = "Enviar";
+    var button = document.getElementById("nextBtn")
+    button.type = 'submit'
+    button.innerHTML = 'Salvar';
+    button.addEventListener("click", function(){
+      window.location.href = "/home";
+    });
   } else {
     document.getElementById("nextBtn").innerHTML = "Proximo";
   }
@@ -1520,7 +1505,12 @@ function showTab(n) {
   fixStepIndicator(n)
 }
 
-function handleDisplay(x, currentTab, lastTab){
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateStep()) return false;
+
   for (let i = 0; i < x.length; i++) {
     x[i].style.display = "none"; 
   }
@@ -1528,175 +1518,38 @@ function handleDisplay(x, currentTab, lastTab){
   x[currentTab].style.display = "none";
   // Increase or decrease the current tab by 1:
   currentTab = currentTab + n;
-        
-  if (lastTab <= currentTab){
-      lastTab = currentTab
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
   }
   // Otherwise, display the correct tab:
   showTab(currentTab);
 }
 
-function nextPrev(n) {
-  // This function will figure out which tab to display
-  var x = document.getElementsByClassName("tab");
-  if (n == 1 && !validateStep()) return false;
- //Regra para o botão anterior
-  if (n === -1){
-    for (let i = 0; i < x.length; i++) {
-          x[i].style.display = "none"; 
-        }
-        // Hide the current tab:
-      //  x[currentTab].style.display = "none";
-        // Increase or decrease the current tab by 1:
-        currentTab = currentTab + n;
-        
-        // Otherwise, display the correct tab:
-        showTab(currentTab);
-        return true
-  }
-    //Verificando se o array contém o numeros de campos validos = 17, firstStep
-    if (window.firstStep !== undefined){
-      console.log(window.firstStep)
-      console.log(lastTab)
-      if(window.firstStep.length === 17 && currentTab == 0){
-        for (let i = 0; i < x.length; i++) {
-          x[i].style.display = "none"; 
-        }
-        // Hide the current tab:
-        x[currentTab].style.display = "none";
-        // Increase or decrease the current tab by 1:
-        currentTab = currentTab + n;
-        
-        if (lastTab <= currentTab){
-          lastTab = currentTab
-        }
-        // Otherwise, display the correct tab:
-        showTab(currentTab);
-        return true
-      }else if(window.firstStep.length === 29 && currentTab == 1 ){
-        
-        for (let i = 0; i < x.length; i++) {
-          x[i].style.display = "none"; 
-        }
-        // Hide the current tab:
-        x[currentTab].style.display = "none";
-        // Increase or decrease the current tab by 1:
-        currentTab = currentTab + n;
-        if (lastTab <= currentTab){
-          lastTab = currentTab
-        }
-        // Otherwise, display the correct tab:
-        showTab(currentTab);
-        return true
-      }else if(window.firstStep.length === 31 && currentTab == 2 ){
-          for (let i = 0; i < x.length; i++) {
-            x[i].style.display = "none"; 
-          }
-          // Hide the current tab:
-          x[currentTab].style.display = "none";
-          // Increase or decrease the current tab by 1:
-          currentTab = currentTab + n;
-          if (lastTab <= currentTab){
-            lastTab = currentTab
-          }
-          // Otherwise, display the correct tab:
-          showTab(currentTab);
-          return true
-      }else if(window.firstStep.length === 34 && currentTab == 4 ){
-        for (let i = 0; i < x.length; i++) {
-            x[i].style.display = "none"; 
-          }
-          // Hide the current tab:
-          x[currentTab].style.display = "none";
-          // Increase or decrease the current tab by 1:
-          currentTab = currentTab + n;
-          if (lastTab <= currentTab){
-            lastTab = currentTab
-          }
-          // Otherwise, display the correct tab:
-          showTab(currentTab);
-          return true
-      }else if(window.firstStep.length === 37 && currentTab === 11 ){
-        for (let i = 0; i < x.length; i++) {
-            x[i].style.display = "none"; 
-          }
-          // Hide the current tab:
-          x[currentTab].style.display = "none";
-          // Increase or decrease the current tab by 1:
-          currentTab = currentTab + n;
-          if (lastTab <= currentTab){
-            lastTab = currentTab
-          }
-          // Otherwise, display the correct tab:
-          showTab(currentTab);
-          return true
-      }else if(window.firstStep.length === 46 && currentTab === 18 ){
-        for (let i = 0; i < x.length; i++) {
-            x[i].style.display = "none"; 
-          }
-          // Hide the current tab:
-          x[currentTab].style.display = "none";
-          // Increase or decrease the current tab by 1:
-          currentTab = currentTab + n;
-          if (lastTab <= currentTab){
-            lastTab = currentTab
-          }
-          // Otherwise, display the correct tab:
-          showTab(currentTab);
-          return true
-      }else if( currentTab === 3 || (currentTab >= 3 && currentTab <= 10) || (currentTab >= 12 && currentTab <= 17)){
-        for (let i = 0; i < x.length; i++) {
-            x[i].style.display = "none"; 
-          }
-          // Hide the current tab:
-          x[currentTab].style.display = "none";
-          // Increase or decrease the current tab by 1:
-          currentTab = currentTab + n;
-          if (lastTab <= currentTab){
-            lastTab = currentTab
-          }
-          // Otherwise, display the correct tab:
-          showTab(currentTab);
-          return true
-           
-      }else if(currentTab < lastTab){ 
-        for (let i = 0; i < x.length; i++) {
-            x[i].style.display = "none"; 
-          }
-          // Hide the current tab:
-          x[currentTab].style.display = "none";
-          currentTab = currentTab + n;
-          if (lastTab <= currentTab){
-            lastTab = currentTab
-          }
-          showTab(currentTab)
-          return true
-      }else{
-        Toastify({
-          text: "Você precisa preencher todos campos.",
-              backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
-              duration: 3000
-        }).showToast(); 
-        return false
-    }
-  }else{
-      Toastify({
-        text: "Você precisa preencher todos campos.",
-            backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
-            duration: 3000
-      }).showToast(); 
-    return
-  }
-}
 function validateStep() {
   // This function deals with validation of the form fields
   var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+      /*  for (i = 0; i < y.length; i++) {
+          // If a field is empty...
+          if (y[i].value == "") {
+            // add an "invalid" class to the field:
+            y[i].className += " invalid";
+            // and set the current valid status to false
+            valid = false;
+          }
+        } */
   // If the valid status is true, mark the step as finished and valid:
   if (valid) {
     document.getElementsByClassName("step")[currentTab].className += " finish";
   }
   return valid; // return the valid status
 }
+
 function fixStepIndicator(n) {
   // This function removes the "active" class of all steps...
   var i, x = document.getElementsByClassName("step");

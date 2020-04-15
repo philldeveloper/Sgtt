@@ -9,7 +9,7 @@
 <body>
 	<h1>{{$title}}</h1>
 	<div style="justify-content: center; margin-bottom: 20px !important; text-align: center !important">
-		<img src="../public/assets/brazao.png" alt="">
+		<img src="../public/assets/brazao.jpg" alt="">
 	</div>
 
 	<h5 id="main-title"> ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI CELEBRAM {{$contrato->nome_ict}} E {{$contrato->nome_parceiro}} NA FORMA ABAIXO.</h5><br><br>
@@ -220,12 +220,12 @@
 
 	<h5 class="font-weight-bold">13. CLÁUSULA DÉCIMA TERCEIRA – DA EXTINÇÃO DO ACORDO</h5>
 
-	<p><span id="p-title">13.1</span> Este Acordo poderá, a qualquer tempo, ser denunciado pelos PARCEIROS, devendo o interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de 60 (sessenta) dias da data em que se pretenda que sejam encerradas as atividades, respeitadas as obrigações assumidas com terceiros entre os PARCEIROS, creditando eventuais benefícios adquiridos no período.. </p>
+	<p><span class="font-weight-bold">13.1</span> Este Acordo poderá, a qualquer tempo, ser denunciado pelos PARCEIROS, devendo o interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de 60 (sessenta) dias da data em que se pretenda que sejam encerradas as atividades, respeitadas as obrigações assumidas com terceiros entre os PARCEIROS, creditando eventuais benefícios adquiridos no período.. </p>
 
-	<p><span id="p-title">13.2</span>{!! $contrato->clausula_edit_13_2 !!}</p>
-	<p><span id="p-title">13.2.1</span>{!! $contrato->clausula_edit_13_2_1 !!}</p>
-	<p><span id="p-title">13.2.2</span>{!! $contrato->clausula_edit_13_2_2 !!}</p>
-	<p><span id="p-title">13.3</span>{!! $contrato->clausula_edit_13_3 !!}</p>
+	<p><span class="font-weight-bold">13.2</span> {!! $contrato->clausula_edit_13_2 !!}</p>
+	<p><span id="p-title">13.2.1</span> {!! $contrato->clausula_edit_13_2_1 !!}</p>
+	<p><span id="p-title">13.2.2</span> {!! $contrato->clausula_edit_13_2_2 !!}</p>
+	<p><span class="font-weight-bold">13.3</span> {!! $contrato->clausula_edit_13_3 !!}</p>
 
 	<p><span span id="p-title">13.4 O</span> presente Acordo será extinto com o cumprimento do objeto ou com o decurso de prazo de vigência. </p>
 
@@ -241,13 +241,13 @@
 	
 	<h5 class="font-weight-bold">15. CLÁUSULA DÉCIMA QUINTA – DAS NOTIFICAÇÕES</h5>
 	
-	<p><span id="p-title">15.1</span> Qualquer comunicação ou notificação relacionada ao Acordo de Parceria poderá ser feita pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no respectivo endereço do PARCEIRO notificado, conforme as seguintes informações: PARCEIRO(S) PÚBLICO(S): (endereço completo, telefone, celular e e-mail) PARCEIRO(S) PÚBLICO(S): (endereço completo, telefone, celular e e-mail). </p>
-	<p><span id="p-title">15.2</span> Qualquer comunicação ou solicitação prevista neste Acordo de Parceria será considerada como tendo sido legalmente entregue: </p>
+	<p><span class="font-weight-bold">15.1</span> Qualquer comunicação ou notificação relacionada ao Acordo de Parceria poderá ser feita pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no respectivo endereço do PARCEIRO notificado, conforme as seguintes informações: PARCEIRO(S) PÚBLICO(S): (endereço completo, telefone, celular e e-mail) PARCEIRO(S) PÚBLICO(S): (endereço completo, telefone, celular e e-mail). </p>
+	<p><span class="font-weight-bold">15.2</span> Qualquer comunicação ou solicitação prevista neste Acordo de Parceria será considerada como tendo sido legalmente entregue: </p>
 	<p><span id="p-title">15.2.1</span> Quando entregue em mão a quem destinada, com o comprovante de recebimento; </p>
 	<p><span id="p-title">15.2.2</span> Se enviada por correio, registrada ou certificada, porte pago e devidamente endereçada, quando recebida pelo destinatário ou no 5° (quinto) dia seguinte à data do despacho, o que ocorrer primeiro; </p>
 	<p><span id="p-title">15.2.3</span> Se enviada por fax, quando recebida pelo destinatário; </p>
 	<p><span id="p-title">15.2.4</span> Se enviada por e-mail, desde que confirmado o recebimento pelo destinatário, ou, após transcorridos 5 (cinco) dias úteis, o que ocorrer primeiro. Na hipótese de transcurso do prazo sem confirmação, será enviada cópia por correio, considerando-se, todavia, a notificação devidamente realizada. </p>
-	<p><span id="p-title">15.3</span> Qualquer dos PARCEIROS poderá, mediante comunicação por escrito, alterar o endereço para o qual as comunicações ou solicitações deverão ser enviadas. </p>
+	<p><span class="font-weight-bold">15.3</span> Qualquer dos PARCEIROS poderá, mediante comunicação por escrito, alterar o endereço para o qual as comunicações ou solicitações deverão ser enviadas. </p>
 
 	<!------clausula---->
 	
@@ -269,8 +269,6 @@
 			Pelo(a) {{$contrato->nome_inst_privado_foro}} <br>{{$contrato->nome_rep_privado_foro}}.</p>
 		</p>
 
-	<footer class="footer" style="position: fixed; right:5px; bottom: 25px; opacity: 0.3; margin-top: 20px !important; margin-bottom: 20px !important">
-		<img src="../public/assets/sgtt_small.png" alt="sgtt" width="60px">
-	</footer>
+		<img src="../public/assets/sgtt_small.jpg" alt="sgtt" width="60px" style="position: fixed; right:5px; bottom: 25px; opacity: 0.3; margin-top: 20px !important; margin-bottom: 20px !important">
 </body>
 </html>
