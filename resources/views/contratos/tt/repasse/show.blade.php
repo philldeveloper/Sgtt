@@ -1488,7 +1488,7 @@ function stepButton(n) {
  
  
   //... and fix the Previous/Next buttons:
-  
+  currentTab = n
   showTab(n)
 }
 
@@ -1521,7 +1521,13 @@ function nextPrev(n) {
   var x = document.getElementsByClassName("tab");
   // Exit the function if any field in the current tab is invalid:
   if (n == 1 && !validateStep()) return false;
-
+  if(n == -1 && currentTab == 0) {
+    for (let i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    showTab(currentTab);
+    return
+  }
   for (let i = 0; i < x.length; i++) {
     x[i].style.display = "none"; 
   }

@@ -80,6 +80,8 @@
 
   <div class="container-fluid">
     <div class="tab-pane show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <!-- TIPO do CONTRATO -->
+      <input type="hidden" name="tipo" value="Sem repasse">
 
         <div class="modal-alert modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
@@ -403,7 +405,7 @@
           </div>
 
           <p><b>2.1 </b>O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
-          <p class=""><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a(o) <input class="mb-2 text-black myform-control" id="handle_ict" type="text" disabled> <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
+          <p class=""><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a(o) <input class="mb-2 text-black myform-control" id="handle_ict" name="nome_inst_ict" type="text" disabled> <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
           
           <!--clausula editavel 2-->
 
@@ -453,7 +455,7 @@
           </div>
           <p><b>3.1 </b>São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I:</p>
             
-          <p class="mt-3 roboto-font"><b>3.1.1. Do(a) ICT:</b><input type="text" class="myform-control" name="nome_inst_ict" id="handle_ict" placeholder="Instituição" disabled></p>
+          <p class="mt-3 roboto-font"><b>3.1.1. Do(a) ICT:</b><input type="text" class="myform-control" id="handle_ict" placeholder="Instituição" disabled></p>
           <hr>      
             <b>A)</b> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;<a href="#" data-toggle="modal" data-target="#modalCoordenador"><i class="fas fa-fw fa-question-circle"></i></a>
             
@@ -479,7 +481,7 @@
                 <textarea class="form-control" name="clausula_edit_3_1_c" rows="3" style="background-color: #F6FAFA; resize: none !important;" placeholder="demais..."></textarea>
             </div>
 
-            <p class="mt-5 mb-3 roboto-font"><b>3.1.2.  Do(a) <input  class="myform-control" type="text" name="nome_inst_privado" id="handle_parceiro" placeholder="Instituição" disabled>:(PARCEIRO PRIVADO)</b></p>
+            <p class="mt-5 mb-3 roboto-font"><b>3.1.2.  Do(a) <input  class="myform-control" type="text" id="handle_parceiro" placeholder="Instituição" disabled>:(PARCEIRO PRIVADO)</b></p>
             <hr>
           
             <b>A)</b> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;<a href="#" data-toggle="modal" data-target="#modalCoordenadorPrivado"><i class="fas fa-fw fa-question-circle"></i></a>
@@ -487,7 +489,7 @@
             <div class="form-group row p-2">
               <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador Parceiro Privado:</label>
               <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
-                <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorPrivado()" id="nome_coordenador_privado" class="form-control" placeholder="Nome do coordenador parceiro privado">
+                <input type="text" name="nome_coordenador_privado" onchange="handleCoordenadorPrivado()" id="nome_coordenador_privado" class="form-control" placeholder="Nome do coordenador parceiro privado">
               </div>
             </div>
 
@@ -551,7 +553,7 @@
             trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si 
             e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem 
             na execução do objeto deste Acordo, de forma que não se estabelecerá, em hipótese alguma,
-          vínculo empregatício ou de qualquer outra natureza com a EMPRESA <input type="text" class="myform-control" name="nome_empresa_parceira"  id="handle_parceiro" placeholder="Empresa parceira" disabled> e
+          vínculo empregatício ou de qualquer outra natureza com a EMPRESA <input type="text" class="myform-control" id="handle_parceiro" placeholder="Empresa parceira" disabled> e
           o pessoal <input type="text" class="myform-control" name="nome_ict_parceira" id="handle_ict" placeholder="ICT ou Agência de fomento" disabled> vice-versa, cabendo a cada PARCEIRO a responsabilidade 
           pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a
           documentação comprobatória da regularidade na contratação.<br>
@@ -886,7 +888,7 @@
         <div class="text-justify text-black">
           <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">14. CLÁUSULA DÉCIMA QUARTA - DA PUBLICIDADE</h4><hr>
           <br>
-          <p><b>14.1</b> A publicação do extrato do presente Acordo de Parceria para PD&I no Diário Oficial da União (DOU) é condição indispensável para sua eficácia e será providenciada pela(o) <input type="text" class="myform-control" name="nome_inst_ict" id="handle_ict" placeholder="Instituição" disabled> no prazo de até 20 (vinte) dias da sua assinatura. </p>
+          <p><b>14.1</b> A publicação do extrato do presente Acordo de Parceria para PD&I no Diário Oficial da União (DOU) é condição indispensável para sua eficácia e será providenciada pela(o) <input type="text" class="myform-control" id="handle_ict" placeholder="Instituição" disabled> no prazo de até 20 (vinte) dias da sua assinatura. </p>
         </div>
       </div>
     </div>
@@ -906,7 +908,7 @@
               <label for="endereco" class="font-weight-bold text-black">Endereço</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
-                name="parceiro_contato_endereço"
+                name="parceiro_contato_endereco"
                 id="endereco" 
                 placeholder="Endereço">
             </div>
@@ -942,7 +944,7 @@
               <label for="endereco" class="font-weight-bold text-black">Endereço</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
-                name="privado_contato_endereço"
+                name="privado_contato_endereco"
                 id="endereco" 
                 placeholder="Endereço">
             </div>
@@ -1029,7 +1031,7 @@
             </div>
             <div class="form-group col-md-3">
               <label for="cargo_rep_foro" class="font-weight-bold text-black">Cargo</label>
-              <input type="email" 
+              <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="cargo_rep_foro" 
                 id="cargo_rep_foro" 
@@ -1055,7 +1057,7 @@
             </div>
             <div class="form-group col-md-3">
               <label for="cargo_rep_privado_foro" class="font-weight-bold text-black">Cargo</label>
-              <input type="email" 
+              <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="cargo_rep_privado_foro" 
                 id="cargo_rep_privado_foro" 
@@ -1119,29 +1121,24 @@ var lastTab = 99;
 
  // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
+
+//Regra para avançar os step do formulario pelo header
 function stepButton(n) {
   let x = document.getElementsByClassName("tab");
-  console.log(window.firstStep)
-  //Verificando se o array contém o numeros de campos validos = 17, firstStep
   if (window.firstStep !== undefined || n <= lastTab){
-      console.log( lastTab)
-      console.log( n)
       if(n <= lastTab){
         for (let i = 0; i < x.length; i++) {
           x[i].style.display = "none"; 
         }
         x[n].style.display = "block";
-        //... and fix the Previous/Next buttons:
         currentTab = n
         showTab(n)
-        return true
     }else{
         Toastify({
           text: "Você precisa preencher todos campos.",
               backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
               duration: 3000
         }).showToast(); 
-        return false
     }
   }else{
       Toastify({
@@ -1149,11 +1146,11 @@ function stepButton(n) {
             backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
             duration: 3000
       }).showToast(); 
-    return
   }
 }
+
+//Função para mostrar os Campos de cada etapa
 function showTab(n) {
-  
   // This function will display the specified tab of the form...
   var x = document.getElementsByClassName("tab");
   x[n].style.display = "block";
@@ -1174,7 +1171,71 @@ function showTab(n) {
   fixStepIndicator(n)
 }
 
-function handleDisplay(x, currentTab, lastTab){
+//Regra do butão para avançar ou voltar uma etapa
+function nextPrev(n) {
+ 
+  var x = document.getElementsByClassName("tab");
+  if (n == 1 && !validateCleanElements()) 
+    return false;
+
+  handleStep(x, n)
+}
+
+function validateCleanElements() {
+  // This function deals with validation of the form fields
+  var x, inputs, selects, i, valid = true;
+  x = document.getElementsByClassName("tab-pane");
+  inputs = x[currentTab].getElementsByTagName("input");
+  selects = x[currentTab].getElementsByTagName("select");
+  for (i = 0; i < inputs.length; i++) {
+    if (inputs[i].value == "") {
+      inputs[i].className += " invalid";
+      valid = false;
+    }
+
+    if(i < selects.length){
+      if (selects[i].value == "") {
+        selects[i].className += " invalid";
+        valid = false;
+      }
+    }
+
+  } 
+
+  if (window.firstStep !== undefined){
+    for (i = 0; i < inputs.length; i++) {
+      if(window.firstStep.includes(inputs[i].name)){
+        console.log(inputs[i].name)
+        valid = false
+      }
+    }
+    
+  }
+  
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }else{
+    Toastify({
+        text: "Você precisa preencher todos campos.",
+        backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
+        duration: 3000
+    }).showToast(); 
+  }
+  return valid; // return the valid status
+}
+
+//Remove as classes "active" dos campos que não estão ativos
+function fixStepIndicator(n) {
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+
+function handleStep(x, n){
   for (let i = 0; i < x.length; i++) {
     x[i].style.display = "none"; 
   }
@@ -1182,184 +1243,12 @@ function handleDisplay(x, currentTab, lastTab){
   x[currentTab].style.display = "none";
   // Increase or decrease the current tab by 1:
   currentTab = currentTab + n;
-        
+  
   if (lastTab <= currentTab){
-      lastTab = currentTab
+    lastTab = currentTab
   }
   // Otherwise, display the correct tab:
   showTab(currentTab);
-}
-
-function nextPrev(n) {
-  // This function will figure out which tab to display
-  var x = document.getElementsByClassName("tab");
-  if (n == 1 && !validateStep()) return false;
- //Regra para o botão anterior
-  if (n === -1){
-    for (let i = 0; i < x.length; i++) {
-          x[i].style.display = "none"; 
-        }
-        // Hide the current tab:
-      //  x[currentTab].style.display = "none";
-        // Increase or decrease the current tab by 1:
-        currentTab = currentTab + n;
-        
-        // Otherwise, display the correct tab:
-        showTab(currentTab);
-        return true
-  }
-    //Verificando se o array contém o numeros de campos validos = 17, firstStep
-    if (window.firstStep !== undefined){
-      console.log(window.firstStep)
-      console.log(lastTab)
-      if(window.firstStep.length === 17 && currentTab == 0){
-        for (let i = 0; i < x.length; i++) {
-          x[i].style.display = "none"; 
-        }
-        // Hide the current tab:
-        x[currentTab].style.display = "none";
-        // Increase or decrease the current tab by 1:
-        currentTab = currentTab + n;
-        
-        if (lastTab <= currentTab){
-          lastTab = currentTab
-        }
-        // Otherwise, display the correct tab:
-        showTab(currentTab);
-        return true
-      }else if(window.firstStep.length === 29 && currentTab == 1 ){
-        
-        for (let i = 0; i < x.length; i++) {
-          x[i].style.display = "none"; 
-        }
-        // Hide the current tab:
-        x[currentTab].style.display = "none";
-        // Increase or decrease the current tab by 1:
-        currentTab = currentTab + n;
-        if (lastTab <= currentTab){
-          lastTab = currentTab
-        }
-        // Otherwise, display the correct tab:
-        showTab(currentTab);
-        return true
-      }else if(window.firstStep.length === 31 && currentTab == 2 ){
-          for (let i = 0; i < x.length; i++) {
-            x[i].style.display = "none"; 
-          }
-          // Hide the current tab:
-          x[currentTab].style.display = "none";
-          // Increase or decrease the current tab by 1:
-          currentTab = currentTab + n;
-          if (lastTab <= currentTab){
-            lastTab = currentTab
-          }
-          // Otherwise, display the correct tab:
-          showTab(currentTab);
-          return true
-      }else if((window.firstStep.length === 33 || window.firstStep.length <= 35) && currentTab == 4 ){
-        for (let i = 0; i < x.length; i++) {
-            x[i].style.display = "none"; 
-          }
-          // Hide the current tab:
-          x[currentTab].style.display = "none";
-          // Increase or decrease the current tab by 1:
-          currentTab = currentTab + n;
-          if (lastTab <= currentTab){
-            lastTab = currentTab
-          }
-          // Otherwise, display the correct tab:
-          showTab(currentTab);
-          return true
-      }else if(window.firstStep.length === 35 && currentTab === 11 ){
-        for (let i = 0; i < x.length; i++) {
-            x[i].style.display = "none"; 
-          }
-          // Hide the current tab:
-          x[currentTab].style.display = "none";
-          // Increase or decrease the current tab by 1:
-          currentTab = currentTab + n;
-          if (lastTab <= currentTab){
-            lastTab = currentTab
-          }
-          // Otherwise, display the correct tab:
-          showTab(currentTab);
-          return true
-      }else if(window.firstStep.length === 46 && currentTab === 18 ){
-        for (let i = 0; i < x.length; i++) {
-            x[i].style.display = "none"; 
-          }
-          // Hide the current tab:
-          x[currentTab].style.display = "none";
-          // Increase or decrease the current tab by 1:
-          currentTab = currentTab + n;
-          if (lastTab <= currentTab){
-            lastTab = currentTab
-          }
-          // Otherwise, display the correct tab:
-          showTab(currentTab);
-          return true
-      }else if( currentTab === 3 ){
-        /* || (currentTab >= 3 && currentTab <= 10) || (currentTab >= 12 && currentTab <= 17 */
-        for (let i = 0; i < x.length; i++) {
-            x[i].style.display = "none"; 
-          }
-          // Hide the current tab:
-          x[currentTab].style.display = "none";
-          // Increase or decrease the current tab by 1:
-          currentTab = currentTab + n;
-          if (lastTab <= currentTab){
-            lastTab = currentTab
-          }
-          // Otherwise, display the correct tab:
-          showTab(currentTab);
-          return true
-           
-      }else if(currentTab < lastTab){ 
-        for (let i = 0; i < x.length; i++) {
-            x[i].style.display = "none"; 
-          }
-          // Hide the current tab:
-          x[currentTab].style.display = "none";
-          currentTab = currentTab + n;
-          if (lastTab <= currentTab){
-            lastTab = currentTab
-          }
-          showTab(currentTab)
-          return true
-      }else{
-        Toastify({
-          text: "Você precisa preencher todos campos.",
-              backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
-              duration: 3000
-        }).showToast(); 
-        return false
-    }
-  }else{
-      Toastify({
-        text: "Você precisa preencher todos campos.",
-            backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
-            duration: 3000
-      }).showToast(); 
-    return
-  }
-}
-function validateStep() {
-  // This function deals with validation of the form fields
-  var x, y, i, valid = true;
-  // If the valid status is true, mark the step as finished and valid:
-  if (valid) {
-    document.getElementsByClassName("step")[currentTab].className += " finish";
-  }
-  return valid; // return the valid status
-}
-function fixStepIndicator(n) {
-  // This function removes the "active" class of all steps...
-  var i, x = document.getElementsByClassName("step");
-  for (i = 0; i < x.length; i++) {
-    x[i].className = x[i].className.replace(" active", "");
-  }
-  //... and adds the "active" class on the current step:
-  x[n].className += " active";
 }
 </script>
   

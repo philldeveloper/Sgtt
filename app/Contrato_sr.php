@@ -50,13 +50,11 @@ class Contrato_sr extends Model
         'clausula_edit_2_5',
         'clausula_edit_2_6',
 
-        'nome_inst_ict',
         'nome_coordenador_ict',
 
         'clausula_edit_3_1_b',
         'clausula_edit_3_1_c',
 
-        'nome_inst_privado',
         'nome_coordenador_privado',
 
         'clausula_edit_3_1_2_c',//refeita
@@ -110,10 +108,6 @@ class Contrato_sr extends Model
         'privado_contato_telefone',
         'privado_contato_celular',
         'privado_contato_email',
-
-        'nome_inst_fundacao',
-        'nome_empresa_parceira',
-        'nome_ict_parceira',
         
         'estado_foro',
         'cidade_foro',

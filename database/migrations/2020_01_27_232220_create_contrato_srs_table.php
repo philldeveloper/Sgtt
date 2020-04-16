@@ -53,13 +53,11 @@ class CreateContratoSrsTable extends Migration
             $table->longText('clausula_edit_2_5')->nullable()->default(null);
             $table->longText('clausula_edit_2_6')->nullable()->default(null);
 
-            $table->string('nome_inst_ict');
             $table->string('nome_coordenador_ict');
 
             $table->longText('clausula_edit_3_1_b')->nullable()->default(null);
             $table->longText('clausula_edit_3_1_c')->nullable()->default(null);
 
-            $table->string('nome_inst_privado');
             $table->string('nome_coordenador_privado');
             
             $table->longText('clausula_edit_3_1_2_c')->nullable()->default(null);
@@ -111,9 +109,6 @@ class CreateContratoSrsTable extends Migration
             $table->string('privado_contato_celular');
             $table->string('privado_contato_email');
 
-            $table->string('nome_inst_fundacao');
-            $table->string('nome_empresa_parceira');
-            $table->string('nome_ict_parceira');
             
             $table->string('estado_foro');
             $table->string('cidade_foro');

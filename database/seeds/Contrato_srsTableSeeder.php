@@ -53,13 +53,11 @@ class Contrato_srsTableSeeder extends Seeder
 			'clausula_edit_2_5' => 'Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.',
 			'clausula_edit_2_6' => 'A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo.',
 
-			'nome_inst_ict' => 'If Sertao',
 			'nome_coordenador_ict' => 'Philip',
 			
 			'clausula_edit_3_1_b' => 'Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;',
 			'clausula_edit_3_1_c' => 'Demais...',
 
-			'nome_inst_privado' => 'Teste',
 			'nome_coordenador_privado' => 'Tauan',
 
 			'clausula_edit_3_1_2_c' => 'Demais...',
@@ -110,10 +108,6 @@ class Contrato_srsTableSeeder extends Seeder
 			'privado_contato_telefone' => '3864-1111',
 			'privado_contato_celular' => '87 9619-5263',
 			'privado_contato_email' => 'loremipsum_privado@lorem.com',
-
-		    'nome_inst_fundacao' => 'Lorem Ipsum',
-		    'nome_empresa_parceira' => 'Lorem Ipsum',
-			'nome_ict_parceira' => 'Lorem Ipsum',
 			
 		    'estado_foro' => 'Lorem Ipsum',
 		    'cidade_foro' => 'Lorem Ipsum',

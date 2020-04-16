@@ -63,7 +63,7 @@
 	</p>
 
 	<p><span id="p-title">2.1.</span>O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
-	<p><span id="p-title">2.2.</span>Respeitadas as previsões contidas na legislação em vigor, a ICT fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
+	<p><span id="p-title">2.2.</span>Respeitadas as previsões contidas na legislação em vigor, a(o) {{$contrato->nome_ict}} ICT com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
 
 	<p><span id="p-title">2.3.</span>{!! $contrato->clausula_edit_2_3 !!}</p>
 	<p><span id="p-title">2.4.</span>{!! $contrato->clausula_edit_2_4 !!}</p>
@@ -91,7 +91,7 @@
 	<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">b)</b>Colaborar, nos termos do plano de trabalho, para que o Acordo alcance os objetivos nele descritos;</p> 
 	<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">a)</b>Demais</p> 
 	
-	<p style="margin-left: 8px !important"><b>3.1.3. Do(a) {{$contrato->nome_inst_fundacao}}:</b><span style="text-transform: uppercase !important">(FUNDAÇÃO DE APOIO - QUANDO HOUVER)</span></p>
+	<p style="margin-left: 8px !important"><b>3.1.3. Do(a) :</b><span style="text-transform: uppercase !important">(FUNDAÇÃO DE APOIO - QUANDO HOUVER)</span></p>
 
 	<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">a)</b>Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD& I; </p>
 	<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">b)</b>Prestar à ICT informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;</p>
@@ -106,7 +106,7 @@
 
 	<h5 class="font-weight-bold">4. CLÁUSULA QUARTA - DO PESSOAL</h5>
 
-	<p><b>4.1.</b>Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem na execução do objeto deste Acordo, de forma que não se estabelecerá, em hipótese alguma, vínculo empregatício ou de qualquer outra natureza com a <span style="text-transform: uppercase !important; font-weight: bold !important">{{$contrato->nome_empresa_parceira}}</span> e o pessoal da <span style="text-transform: uppercase !important; font-weight: bold !important">{!! $contrato->nome_ict_parceira !!}</span> e vice-versa, cabendo a cada PARCEIRO a responsabilidade pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a documentação comprobatória da regularidade na contratação.</p>
+	<p><b>4.1.</b>Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem na execução do objeto deste Acordo, de forma que não se estabelecerá, em hipótese alguma, vínculo empregatício ou de qualquer outra natureza com a <span style="text-transform: uppercase !important; font-weight: bold !important">{{$contrato->nome_parceiro}}</span> e o pessoal da <span style="text-transform: uppercase !important; font-weight: bold !important">{!! $contrato->nome_ict !!}</span> e vice-versa, cabendo a cada PARCEIRO a responsabilidade pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a documentação comprobatória da regularidade na contratação.</p>
 
 	<br>
 

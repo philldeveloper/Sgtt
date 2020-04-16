@@ -233,16 +233,16 @@ $(document).ready(function($){
                    }).showToast();   
                    $(element).addClass('invalid')   
         
-                   if (firstStep.includes(t) && t !== undefined){
-                       firstStep.splice(removeInput(firstStep, t), 1)
+                   if (!firstStep.includes(t) && t !== undefined){
+                       firstStep.push(t)
                        window.firstStep = firstStep
                    }   
-               }else{
-                $(element).removeClass('invalid'); 
-                if (!firstStep.includes(t) && t !== undefined){
-                    firstStep.push(t)
-                    window.firstStep = firstStep
-                }   
+                }else{
+                    if (firstStep.includes(t) && t !== undefined){
+                        firstStep.splice(removeInput(firstStep, t), 1)
+                        window.firstStep = firstStep
+                    }   
+                    $(element).removeClass('invalid'); 
                }
             }else{
                 this.element(element);
@@ -257,25 +257,24 @@ $(document).ready(function($){
 
     highlight: function(element) {
         let t = $(element).attr('name')
-            if ($(element).attr('name') === 'nome_ict' || $(element).attr('name') === 'nome_parceiro'){
+            /* if ($(element).attr('name') === 'nome_ict' || $(element).attr('name') === 'nome_parceiro'){
                 return null
-            }
+            } */
             $(element).addClass('invalid')
-            if (firstStep.includes(t) && t !== undefined){
-                firstStep.splice(removeInput(firstStep, t), 1)
-                window.firstStep = firstStep
-            }
-    },
-    
-    // Chamado quando for valido
-    unhighlight: function(element) {
-            let t = $(element).attr('name')
-            $(element).removeClass('invalid');   
-            this.countError = ++error
             if (!firstStep.includes(t) && t !== undefined){
                 firstStep.push(t)
                 window.firstStep = firstStep
             }
-    },
+        },
+        
+        // Chamado quando for valido
+        unhighlight: function(element) {
+            let t = $(element).attr('name')
+            $(element).removeClass('invalid');   
+            if (firstStep.includes(t) && t !== undefined){
+                firstStep.splice(removeInput(firstStep, t), 1)
+                window.firstStep = firstStep
+            }
+        },
     })
 })

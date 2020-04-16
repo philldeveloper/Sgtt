@@ -1144,7 +1144,7 @@ function stepButton(n) {
  
  
   //... and fix the Previous/Next buttons:
-  
+  currentTab = n
   showTab(n)
 }
 
@@ -1161,18 +1161,16 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) {
-    button.type = 'submit'
     button.innerHTML = 'Salvar';
-    button.addEventListener("click", function(){
-      window.location.href = "/home";
-    });
+    if (n == x.length){
+      button.type = 'submit';
+    }
+   
   } else {
     button.type = 'button'
     button.innerHTML = 'Proximo';
-    button.removeEventListener("click", function(){
-      
-    });
-    document.getElementById("nextBtn").innerHTML = "Proximo";
+  
+  
   }
   //... and run a function that will display the correct step indicator:
   fixStepIndicator(n)
@@ -1181,9 +1179,19 @@ function showTab(n) {
 function nextPrev(n) {
   // This function will figure out which tab to display
   var x = document.getElementsByClassName("tab");
+
+  if(currentTab == (x.length +1)) return false;
+  
+  console.log(x.length, currentTab)
   // Exit the function if any field in the current tab is invalid:
   if (n == 1 && !validateStep()) return false;
-
+  if(n == -1 && currentTab == 0) {
+    for (let i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    showTab(currentTab);
+    return
+  }
   for (let i = 0; i < x.length; i++) {
     x[i].style.display = "none"; 
   }
@@ -1192,9 +1200,12 @@ function nextPrev(n) {
   // Increase or decrease the current tab by 1:
   currentTab = currentTab + n;
   // if you have reached the end of the form...
-  if (currentTab >= x.length) {
+  console.log(n, currentTab, x.length )
+  if (currentTab > x.length) {
+    event.preventDefault()
+    console.log("entrou")
     // ... the form gets submitted:
-    document.getElementById("regForm").submit();
+    //document.getElementById("regForm").submit();
     return false;
   }
   // Otherwise, display the correct tab:
@@ -1204,8 +1215,9 @@ function nextPrev(n) {
 function validateStep() {
   // This function deals with validation of the form fields
   var x, y, i, valid = true;
-  x = document.getElementsByClassName("tab");
+  x = document.getElementsByClassName("tab-pane");
   y = x[currentTab].getElementsByTagName("input");
+ 
   // A loop that checks every input field in the current tab:
       /*  for (i = 0; i < y.length; i++) {
           // If a field is empty...
