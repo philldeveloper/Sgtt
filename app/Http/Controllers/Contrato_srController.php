@@ -156,12 +156,12 @@ class Contrato_srController extends Controller
         $contrato_sr->cargo_rep_privado_foro = $request->cargo_rep_privado_foro;
 
         $contrato_sr->tipo = $request->tipo;
-
         $contrato_sr->user_id = Auth::id();      
         
         $contrato_sr->save();
 
-        return redirect()->back();
+        return redirect('contrato_sr')
+        ->with('stepCount', $request->stepCount);
     }
 
     /**
