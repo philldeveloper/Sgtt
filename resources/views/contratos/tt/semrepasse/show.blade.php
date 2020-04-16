@@ -397,7 +397,8 @@
   
   </script>
 <script>
-var currentTab = 0; // Current tab is set to be the first tab (0)
+var currentTab = 0;
+var lastTab = 99; 
 showTab(currentTab); // Display the current tab
 
 function stepButton(n) {
@@ -439,34 +440,22 @@ function showTab(n) {
   fixStepIndicator(n)
 }
 
+//Regra do butão para avançar ou voltar uma etapa
 function nextPrev(n) {
-  // This function will figure out which tab to display
+  var button = document.getElementById("nextBtn");
+  var stepCount = document.getElementById("stepCount")
   var x = document.getElementsByClassName("tab");
-  // Exit the function if any field in the current tab is invalid:
-  if (n == 1 && !validateStep()) return false;
-  if(n == -1 && currentTab == 0) {
-    for (let i = 0; i < x.length; i++) {
-      x[i].style.display = "none"; 
-    }
-    showTab(currentTab);
-    return
-  }
-  for (let i = 0; i < x.length; i++) {
-    x[i].style.display = "none"; 
-  }
-  // Hide the current tab:
-  x[currentTab].style.display = "none";
-  // Increase or decrease the current tab by 1:
-  currentTab = currentTab + n;
-  // if you have reached the end of the form...
-  if (currentTab >= x.length) {
-    // ... the form gets submitted:
-    document.getElementById("regForm").submit();
+  
+  if (n == 1 && !validateStep()) 
     return false;
+
+  if (button.innerHTML === "Menu"){
+    return false
   }
-  // Otherwise, display the correct tab:
-  showTab(currentTab);
+
+  handleStep(x, n)
 }
+
 
 function validateStep() {
   // This function deals with validation of the form fields
@@ -499,6 +488,23 @@ function fixStepIndicator(n) {
   //... and adds the "active" class on the current step:
   x[n].className += " active";
 }
+
+function handleStep(x, n){
+  for (let i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  
+  if (lastTab <= currentTab){
+    lastTab = currentTab
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
 </script>
   
 

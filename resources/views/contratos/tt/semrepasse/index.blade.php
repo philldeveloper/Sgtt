@@ -82,6 +82,14 @@
     <div class="tab-pane show active" id="home" role="tabpanel" aria-labelledby="home-tab">
       <!-- TIPO do CONTRATO -->
       <input type="hidden" name="tipo" value="Sem repasse">
+      <!-- Campo para o step correto caso o cadastro tenha sido realizado com sucesso -->
+      @if(Session::has('stepCount')) 
+        <input type="hidden" name="stepcount" id="stepCount" value="{{Session::get('stepCount')}}">
+        {{dd(Session::get('stepCount'))}}
+        @else
+        <input type="hidden" name="stepcount" id="stepCount" value="0">
+      @endif
+     
 
         <div class="modal-alert modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
@@ -1116,9 +1124,14 @@
   
   </script>
 <script>
+var stepCount = document.getElementById('stepCount')
+
 var currentTab = 0;
 var lastTab = 99;
-
+if(stepCount.value > 0){
+  currentTab = stepCount;
+}
+console.log(stepCount.value, currentTab)
  // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
@@ -1153,6 +1166,7 @@ function stepButton(n) {
 function showTab(n) {
   // This function will display the specified tab of the form...
   var x = document.getElementsByClassName("tab");
+  var button = document.getElementById("nextBtn")
   x[n].style.display = "block";
   //... and fix the Previous/Next buttons:
   if (n == 0) {
@@ -1161,10 +1175,10 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) {
-    var button = document.getElementById("nextBtn")
     button.innerHTML = "Enviar";
-    button.type = 'submit'
+
   } else {
+    button.type = 'button'
     document.getElementById("nextBtn").innerHTML = "Proximo";
   }
   //... and run a function that will display the correct step indicator:
@@ -1173,15 +1187,23 @@ function showTab(n) {
 
 //Regra do butão para avançar ou voltar uma etapa
 function nextPrev(n) {
- 
+  var button = document.getElementById("nextBtn");
+  var stepCount = document.getElementById("stepCount")
   var x = document.getElementsByClassName("tab");
-  if (n == 1 && !validateCleanElements()) 
+  
+  if (n == 1 && !validateStepForm()) 
     return false;
+
+  if (button.innerHTML === "Enviar"){
+    stepCount.value = x.length
+    document.getElementById("regForm").submit();
+    return false
+  }
 
   handleStep(x, n)
 }
 
-function validateCleanElements() {
+function validateStepForm() {
   // This function deals with validation of the form fields
   var x, inputs, selects, i, valid = true;
   x = document.getElementsByClassName("tab-pane");
@@ -1199,7 +1221,6 @@ function validateCleanElements() {
         valid = false;
       }
     }
-
   } 
 
   if (window.firstStep !== undefined){
@@ -1209,7 +1230,6 @@ function validateCleanElements() {
         valid = false
       }
     }
-    
   }
   
   // If the valid status is true, mark the step as finished and valid:
@@ -1251,6 +1271,5 @@ function handleStep(x, n){
   showTab(currentTab);
 }
 </script>
-  
 
 @endsection

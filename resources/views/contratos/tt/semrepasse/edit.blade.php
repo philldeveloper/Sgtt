@@ -177,8 +177,9 @@
             </div>
             <div class="form-group col-md-2">
               <label for="uf" class="font-weight-bold text-black">UF</label>
-              <select class="custom-select" id="UF" value="{{$contratos_sr->uf}}" name="uf">
+              <select class="custom-select" id="UF" name="uf">
                 <option value="">Selecione</option>
+                <option selected value="{{$contratos_sr->uf}}">{{$contratos_sr->uf}}</option>
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
                 <option value="AP">Amapá</option>
@@ -294,8 +295,9 @@
             </div>
             <div class="form-group col-md-2">
               <label for="parceiro_uf" class="font-weight-bold text-black">UF</label>
-              <select class="custom-select" id="UF" value="{{$contratos_sr->parceiro_uf}}" name="parceiro_uf">
+              <select class="custom-select" id="UF" name="parceiro_uf">
                 <option value="">Selecione</option>
+                <option selected value="{{$contratos_sr->uf}}">{{$contratos_sr->uf}}</option>
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
                 <option value="AP">Amapá</option>
@@ -454,7 +456,7 @@
           </div>
           <p><b>3.1 </b>São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I:</p>
             
-          <p class="mt-3 roboto-font"><b>3.1.1. Do(a) ICT:</b><input type="text" class="myform-control" name="nome_inst_ict" id="handle_ict" placeholder="{{$contratos_sr->nome_inst_ict}}" disabled></p>
+          <p class="mt-3 roboto-font"><b>3.1.1. Do(a) ICT:</b><input type="text" class="myform-control" id="handle_ict" value="{{$contratos_sr->nome_ict}}" disabled></p>
           <hr>      
             <b>A)</b> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;<a href="#" data-toggle="modal" data-target="#modalCoordenador"><i class="fas fa-fw fa-question-circle"></i></a>
             
@@ -480,7 +482,7 @@
                 <textarea class="form-control" value="{{$contratos_sr->clausula_edit_3_1_c}}" name="clausula_edit_3_1_c" rows="3" style="background-color: #F6FAFA; resize: none !important;" placeholder="">{{$contratos_sr->clausula_edit_3_1_c}}</textarea>
             </div>
 
-            <p class="mt-5 mb-3 roboto-font"><b>3.1.2.  Do(a) PARCEIRO PRIVADO: <input  class="myform-control" type="text" value="{{$contratos_sr->nome_inst_privado}}" name="nome_inst_privado" id="handle_parceiro" placeholder="{{$contratos_sr->nome_inst_privado}}"></b></p>
+            <p class="mt-5 mb-3 roboto-font"><b>3.1.2.  Do(a) PARCEIRO PRIVADO: <input  class="myform-control" type="text" value="{{$contratos_sr->nome_parceiro}}" id="handle_parceiro" disabled></b></p>
             <hr>
           
             <b>A)</b> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;<a href="#" data-toggle="modal" data-target="#modalCoordenadorPrivado"><i class="fas fa-fw fa-question-circle"></i></a>
@@ -552,8 +554,8 @@
             trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si 
             e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem 
             na execução do objeto deste Acordo, de forma que não se estabelecerá, em hipótese alguma,
-          vínculo empregatício ou de qualquer outra natureza com a EMPRESA <input type="text" class="myform-control font-weight-bold" value="{{$contratos_sr->nome_empresa_parceira}}" name="nome_empresa_parceira"  id="handle_parceiro" placeholder="{{$contratos_sr->nome_empresa_parceira}}"> e
-          o pessoal <input type="text" class="myform-control font-weight-bold" value="{{$contratos_sr->nome_ict_parceira}}" name="nome_ict_parceira" id="handle_ict" placeholder="{{$contratos_sr->nome_ict_parceira}}"> vice-versa, cabendo a cada PARCEIRO a responsabilidade 
+          vínculo empregatício ou de qualquer outra natureza com a EMPRESA <input type="text" class="myform-control font-weight-bold" value="{{$contratos_sr->nome_parceiro}}"  id="handle_parceiro" disabled> e
+          o pessoal <input type="text" class="myform-control font-weight-bold" value="{{$contratos_sr->nome_ict}}" id="handle_ict" disabled> vice-versa, cabendo a cada PARCEIRO a responsabilidade 
           pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a documentação comprobatória da regularidade na contratação.<br>
         </p>
       </div>
@@ -886,7 +888,7 @@
         <div class="text-justify text-black">
           <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">14. CLÁUSULA DÉCIMA QUARTA - DA PUBLICIDADE</h4><hr>
           <br>
-          <p><b>14.1</b> A publicação do extrato do presente Acordo de Parceria para PD&I no Diário Oficial da União (DOU) é condição indispensável para sua eficácia e será providenciada pela(o) <input type="text" class="myform-control" name="nome_inst_ict" id="handle_ict" placeholder="{{$contratos_sr->nome_inst_ict}}" disabled> no prazo de até 20 (vinte) dias da sua assinatura. </p>
+          <p><b>14.1</b> A publicação do extrato do presente Acordo de Parceria para PD&I no Diário Oficial da União (DOU) é condição indispensável para sua eficácia e será providenciada pela(o) <input type="text" class="myform-control" id="handle_ict" value="{{$contratos_sr->nome_ict}}" disabled> no prazo de até 20 (vinte) dias da sua assinatura. </p>
         </div>
       </div>
     </div>
@@ -1130,29 +1132,44 @@
   
   </script>
 <script>
-var currentTab = 0; // Current tab is set to be the first tab (0)
+var currentTab = 0;
+var lastTab = 99;
+
+ // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
+//Regra para avançar os step do formulario pelo header
 function stepButton(n) {
   let x = document.getElementsByClassName("tab");
-
-  for (let i = 0; i < x.length; i++) {
-    x[i].style.display = "none"; 
+  if (window.firstStep !== undefined || n <= lastTab){
+      if(n <= lastTab){
+        for (let i = 0; i < x.length; i++) {
+          x[i].style.display = "none"; 
+        }
+        x[n].style.display = "block";
+        currentTab = n
+        showTab(n)
+    }else{
+        Toastify({
+          text: "Você precisa preencher todos campos.",
+              backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
+              duration: 3000
+        }).showToast(); 
+    }
+  }else{
+      Toastify({
+        text: "Você precisa preencher todos campos.",
+            backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
+            duration: 3000
+      }).showToast(); 
   }
-
-  x[n].style.display = "block";
- 
- 
-  //... and fix the Previous/Next buttons:
-  currentTab = n
-  showTab(n)
 }
 
+//Função para mostrar os Campos de cada etapa
 function showTab(n) {
-  
   // This function will display the specified tab of the form...
   var x = document.getElementsByClassName("tab");
-  var button = document.getElementById("nextBtn");
+  var button = document.getElementById("nextBtn")
   x[n].style.display = "block";
   //... and fix the Previous/Next buttons:
   if (n == 0) {
@@ -1161,37 +1178,86 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) {
-    button.innerHTML = 'Salvar';
-    if (n == x.length){
-      button.type = 'submit';
-    }
-   
+    button.innerHTML = "Salvar";
+
   } else {
     button.type = 'button'
-    button.innerHTML = 'Proximo';
-  
-  
+    document.getElementById("nextBtn").innerHTML = "Proximo";
   }
   //... and run a function that will display the correct step indicator:
   fixStepIndicator(n)
 }
 
+//Regra do butão para avançar ou voltar uma etapa
 function nextPrev(n) {
-  // This function will figure out which tab to display
+  var button = document.getElementById("nextBtn");
   var x = document.getElementsByClassName("tab");
-
-  if(currentTab == (x.length +1)) return false;
   
-  console.log(x.length, currentTab)
-  // Exit the function if any field in the current tab is invalid:
-  if (n == 1 && !validateStep()) return false;
-  if(n == -1 && currentTab == 0) {
-    for (let i = 0; i < x.length; i++) {
-      x[i].style.display = "none"; 
-    }
-    showTab(currentTab);
-    return
+  if (n == 1 && !validateStepForm()) 
+    return false;
+
+  if (button.innerHTML === "Salvar"){
+  
+    document.getElementById("regForm").submit();
+    return false
   }
+
+  handleStep(x, n)
+}
+
+function validateStepForm() {
+  // This function deals with validation of the form fields
+  var x, inputs, selects, i, valid = true;
+  x = document.getElementsByClassName("tab-pane");
+  inputs = x[currentTab].getElementsByTagName("input");
+  selects = x[currentTab].getElementsByTagName("select");
+  for (i = 0; i < inputs.length; i++) {
+    if (inputs[i].value == "") {
+      inputs[i].className += " invalid";
+      valid = false;
+    }
+
+    if(i < selects.length){
+      if (selects[i].value == "") {
+        selects[i].className += " invalid";
+        valid = false;
+      }
+    }
+  } 
+
+  if (window.firstStep !== undefined){
+    for (i = 0; i < inputs.length; i++) {
+      if(window.firstStep.includes(inputs[i].name)){
+        console.log(inputs[i].name)
+        valid = false
+      }
+    }
+  }
+  
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }else{
+    Toastify({
+        text: "Você precisa preencher todos campos.",
+        backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
+        duration: 3000
+    }).showToast(); 
+  }
+  return valid; // return the valid status
+}
+
+//Remove as classes "active" dos campos que não estão ativos
+function fixStepIndicator(n) {
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+
+function handleStep(x, n){
   for (let i = 0; i < x.length; i++) {
     x[i].style.display = "none"; 
   }
@@ -1199,50 +1265,12 @@ function nextPrev(n) {
   x[currentTab].style.display = "none";
   // Increase or decrease the current tab by 1:
   currentTab = currentTab + n;
-  // if you have reached the end of the form...
-  console.log(n, currentTab, x.length )
-  if (currentTab > x.length) {
-    event.preventDefault()
-    console.log("entrou")
-    // ... the form gets submitted:
-    //document.getElementById("regForm").submit();
-    return false;
+  
+  if (lastTab <= currentTab){
+    lastTab = currentTab
   }
   // Otherwise, display the correct tab:
   showTab(currentTab);
-}
-
-function validateStep() {
-  // This function deals with validation of the form fields
-  var x, y, i, valid = true;
-  x = document.getElementsByClassName("tab-pane");
-  y = x[currentTab].getElementsByTagName("input");
- 
-  // A loop that checks every input field in the current tab:
-      /*  for (i = 0; i < y.length; i++) {
-          // If a field is empty...
-          if (y[i].value == "") {
-            // add an "invalid" class to the field:
-            y[i].className += " invalid";
-            // and set the current valid status to false
-            valid = false;
-          }
-        } */
-  // If the valid status is true, mark the step as finished and valid:
-  if (valid) {
-    document.getElementsByClassName("step")[currentTab].className += " finish";
-  }
-  return valid; // return the valid status
-}
-
-function fixStepIndicator(n) {
-  // This function removes the "active" class of all steps...
-  var i, x = document.getElementsByClassName("step");
-  for (i = 0; i < x.length; i++) {
-    x[i].className = x[i].className.replace(" active", "");
-  }
-  //... and adds the "active" class on the current step:
-  x[n].className += " active";
 }
 </script>
   
