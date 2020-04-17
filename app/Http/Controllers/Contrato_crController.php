@@ -177,7 +177,7 @@ class Contrato_crController extends Controller
 
         $contrato_cr->save();
 
-        return redirect()->back();
+        return redirect()->action('HomeController@index')->with('status', 'Contrato criado com sucesso!');
     }
 
     /**
@@ -272,7 +272,8 @@ class Contrato_crController extends Controller
         $contratos_cr->fill ($request->all()); //fill (preencher)
         $contratos_cr->save();
 
-        return redirect()->back();
+        return redirect()->back()->with('status_edit', 'Contrato Editado com sucesso!');
+
     }
 
     /**

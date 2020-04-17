@@ -111,7 +111,6 @@
 @include('popper::assets')
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-
 <div class="container-fluid mt-5 mb-5">
     <span class="h3 font-weight-bold text-dark">Novo Contrato</span>
     <span class="font-italic ml-3">Escolha um tipo de contrato antes de prosseguir:.</span>
@@ -159,6 +158,16 @@
 </div>
 <hr> 
 
+@if (session('status'))
+<div class="alert alert-success border-0 m-2 mr-4 ml-4 border-0 alert-dismissible fade show" role="alert">
+  <i class="fas fa-check-circle text-success mr-3"></i>
+  <strong class="mr-5 text-uppercase">{{ session('status') }}</strong> Clique abaixo para ver mais.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+@endif
+
 <div class="container-fluid">
 <div class="row">
 
@@ -170,9 +179,10 @@
           <table class="table table-hover mb-0" id="example">
             <thead class="roboto-font font-weight-bold text-dark border-left-success bg-light shadow-sm" style="font-size: 1.25rem">
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">Tipo</th>
+                <!-- <th scope="col">#</th> -->
+                
                 <th scope="col">Desenv. por</th>
+                <th scope="col">Tipo</th>
                 <th scope="col">ICT | Parceiro</th>
                 <th scope="col">E-mail</th>
                 <th scope="col">Criado em</th>
@@ -186,12 +196,12 @@
               
               @forelse($contratos_sr as $contratos) 
               <tr class="">
-                <td>{{$contratos->id}}</td>
-                <td><div class="badge badge-info">{{$contratos->tipo}}</div></td>
+                <!-- <td>{{$contratos->id}}</td> -->
                 <td><div class="badge badge-dark">{{$contratos->nome}}</div></td>
+                <td><div class="badge badge-info">{{$contratos->tipo}}</div></td>
                 <td>{{$contratos->nome_ict}} e {{$contratos->nome_parceiro}}</td>
                 <td>{{$contratos->email}}</td>
-                <td>{{$contratos->created_at}}</td>
+                <td>{{date('d/m/Y', strtotime($contratos->created_at))}}</td>
                 
                 <td>
                     <form action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
@@ -242,12 +252,12 @@
               @forelse($contratos_cr as $cr) 
 
               <tr class="">
-                <td>{{$cr->id}}</td>
-                <td><div class="badge badge-success">{{$cr->tipo}}</div></td>
+                <!-- <td>{{$cr->id}}</td> -->
                 <td><div class="badge badge-dark">{{$cr->nome}}</div></td>
+                <td><div class="badge badge-success">{{$cr->tipo}}</div></td>
                 <td>{{$cr->nome_ict}} e {{$cr->nome_parceiro}}</td>
                 <td>{{$cr->email}}</td>
-                <td>{{$cr->created_at}}</td>
+                <td>{{date('d/m/Y', strtotime($cr->created_at))}}</td>
                 
                 <td>
                     <form action="{{route('contrato_cr.destroy', $cr->id) }}" method="POST">

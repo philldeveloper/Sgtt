@@ -55,10 +55,20 @@
 <!-- Funções dinamicas para os contratos -->
 <script type="text/javascript" src="{{ asset('js/utils.js') }}"></script>
 <div class="title-header">
-    <span class="h3 ml-3 font-weight-bold">Novo Contrato</span>
+    <span class="h3 ml-3 font-weight-bold">Editar Contrato</span>
     <div class="badge badge-primary lead  mr-auto float-right">sem repasse</div>
     <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
 </div>
+
+@if (session('status_edit'))
+<div class="alert alert-success border-0 m-2 mt-4 mr-4 ml-4 border-0 alert-dismissible fade show" role="alert">
+  <i class="fas fa-check-circle text-success mr-3"></i>
+  <strong class="mr-5 text-uppercase">{{ session('status_edit') }}</strong> Clique abaixo para ver mais.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+@endif
 
 <div class="card mt-5 mb-5 color-card">
 
