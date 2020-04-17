@@ -111,7 +111,6 @@
 @include('popper::assets')
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-
 <div class="container-fluid mt-5 mb-5">
     <span class="h3 font-weight-bold text-dark">Novo Contrato</span>
     <span class="font-italic ml-3">Escolha um tipo de contrato antes de prosseguir:.</span>
@@ -158,6 +157,16 @@
     <span class="font-italic ml-3">Visualizar todos os contratos cadastrados.</span>
 </div>
 <hr> 
+
+@if (session('status'))
+<div class="alert alert-success border-0 m-2 mr-4 ml-4 border-0 alert-dismissible fade show" role="alert">
+  <i class="fas fa-check-circle text-success mr-3"></i>
+  <strong class="mr-5 text-uppercase">{{ session('status') }}</strong> Clique abaixo para ver mais.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+@endif
 
 <div class="container-fluid">
 <div class="row">

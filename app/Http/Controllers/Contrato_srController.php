@@ -160,8 +160,10 @@ class Contrato_srController extends Controller
         
         $contrato_sr->save();
 
-        return redirect('contrato_sr')
-        ->with('stepCount', $request->stepCount);
+        // return redirect('contrato_sr')
+        // ->with('stepCount', $request->stepCount);
+
+        return redirect()->action('HomeController@index')->with('status', 'Contrato criado com sucesso!');
     }
 
     /**
@@ -206,21 +208,8 @@ class Contrato_srController extends Controller
         $contratos_sr->fill ($request->all()); //fill (preencher)
         $contratos_sr->save();
 
-        if(Auth::user()->admin == 1){
-
-            $contratos_sr = Contrato_sr::all();
-            $contratos_cr = Contrato_cr::all();
-
-            return view('admin.contratos', compact('contratos_sr', 'contratos_cr'))
-            ->with('success','Product updated successfully');
-        }else{
-            
-            $contratos_sr = Contrato_sr::all();
-            $contratos_cr = Contrato_sr::all();
-
-            return view('pesquisador.index', compact('contratos_sr', 'contratos_cr'))
-            ->with('success','Product updated successfully');
-        }
+        return redirect()->back()->with('status_edit', 'Contrato Editado com sucesso!');
+        // return redirect()->action('HomeController@index')->with('status', 'Contrato Editado com sucesso!');
     }
 
     /**
