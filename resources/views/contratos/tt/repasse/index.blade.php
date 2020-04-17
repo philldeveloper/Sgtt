@@ -121,11 +121,11 @@
             <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2"> ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI CELEBRAM</h5> 
               <div class="form-row" style="justify-content: center;">
                 <div class="form-group col-md-4">
-                  <input class="mb-2 text-black form-control" type="text" name="nome_ict"  placeholder="Nome da ICT (IFSertão-PE ou UNIVASF)"> 
+                  <input class="mb-2 text-black form-control" type="text" name="nome_ict" onchange="handleNameICT(event)"  placeholder="Nome da ICT (IFSertão-PE ou UNIVASF)"> 
                 </div>
                 <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">E</h5>
                 <div class="form-group col-md-4">
-                  <input class="mb-2 text-black form-control" type="text" name="nome_parceiro"  placeholder="Nome do Parceiro (Empresa ou ICT)">  
+                  <input class="mb-2 text-black form-control" type="text" onchange="handleNameParceiro(event)" name="nome_parceiro"  placeholder="Nome do Parceiro (Empresa ou ICT)">  
                 </div>
               </div>
               <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center">NA FORMA A SEGUIR.</h5><br>
@@ -154,7 +154,7 @@
               <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
               <!-- Botão para acionar modal -->
               <a href="#" data-toggle="modal" data-target="#modalExemplo2"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control text-black font-weight-bold"  id="cnpj" name="cnpj">
+              <input type="text" class="form-control text-black font-weight-bold cnpj"  id="cnpj" name="cnpj">
             </div>
           </div><!--form-row-->
 
@@ -202,7 +202,7 @@
             </div>
             <div class="form-group col-md-2">
               <label for="inputZip" class="font-weight-bold text-black">CEP</label>
-              <input type="text" class="form-control text-black font-weight-bold"  id="cep" name="cep">
+              <input type="text" class="form-control text-black font-weight-bold cep"  id="cep" name="cep">
             </div>
           </div><!--form-row-->
 
@@ -215,11 +215,11 @@
             </div>
             <div class="form-group col-md-3">
               <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
-              <input type="text" class="form-control text-black font-weight-bold"  id="cpf" name="cpf" placeholder="">
+              <input type="text" class="form-control text-black font-weight-bold cpf"  id="cpf" name="cpf" placeholder="">
             </div>
             <div class="form-group col-md-3">
               <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
-              <input type="text" class="form-control text-black font-weight-bold"  id="rg" name="rg" placeholder="">
+              <input type="text" class="form-control text-black font-weight-bold rg"  id="rg" name="rg" placeholder="">
             </div>
             <div class="form-group col-md-2">
               <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
@@ -267,7 +267,7 @@
             <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
             <!-- Botão para acionar modal -->
             <a href="#" data-toggle="modal" data-target="#modalExemplo5"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-            <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_cnpj" name="parceiro_cnpj" placeholder="CNPJ">
+            <input type="text" class="form-control text-black font-weight-bold cnpj"  id="parceiro_cnpj" name="parceiro_cnpj" placeholder="CNPJ">
           </div>
         </div><!--form-row-->
         <div class="form-row">
@@ -326,11 +326,11 @@
           </div>
           <div class="form-group col-md-3">
             <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
-            <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_cpf" name="parceiro_cpf" placeholder="">
+            <input type="text" class="form-control text-black font-weight-bold cpf"  id="parceiro_cpf" name="parceiro_cpf" placeholder="">
           </div>
           <div class="form-group col-md-3">
             <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
-            <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_rg" name="parceiro_rg" placeholder="">
+            <input type="text" class="form-control text-black font-weight-bold rg"  id="parceiro_rg" name="parceiro_rg" placeholder="">
           </div>
           <div class="form-group col-md-2">
             <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
@@ -402,7 +402,7 @@
           </div>   
           <p><b>2.1 </b>O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
           <p><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a(o) ICT 
-          <input type="text" class="myform-control text-black" name="ict_plano_trabalho" id="ict_plano_trabalho" placeholder="Nome da ICT/Agência de Fomento">
+          <input type="text" class="myform-control text-black" id="handle_ict" disabled placeholder="Nome da ICT/Agência de Fomento">
           <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
 
           <!--clausula editavel 2-->
@@ -501,7 +501,7 @@
           <p><b>E)</b> Monitorar, avaliar e prestar contas nos termos deste Acordo; </p>
           
           <!--inicio das clausulas 3-->
-          <p class="mt-3 roboto-font"><b>3.1.2. Do Parceiro Privado:</b><input type="text" class="myform-control" name="nome_inst_privado" id="nome_inst_privado" placeholder="Instituição" disabled><a href="#" data-toggle="modal" data-target="#modalExemplo15"><i class="fas fa-fw fa-question-circle"></i></a></p><hr>
+          <p class="mt-3 roboto-font"><b>3.1.2. Do Parceiro Privado:</b><input type="text" class="myform-control" id="handle_parceiro" placeholder="Instituição" disabled><a href="#" data-toggle="modal" data-target="#modalExemplo15"><i class="fas fa-fw fa-question-circle"></i></a></p><hr>
 
           <p><b>A)</b>Transferir os recursos financeiros acordados, segundo o Cronograma de Desembolso constante no Plano de Trabalho, por meio do aporte de recursos financeiros de sua responsabilidade;<br></p>
           
@@ -526,7 +526,7 @@
           </div>
 
           <div id="clausula_apoio_wrapper" style="display: none;">
-            <p class="ml-2 roboto-font"><b>3.1.3.  Do(a): <input type="text" class="myform-control" name="nome_inst_fundacao" id="nome_inst_fundacao" placeholder="Instituição"> <a href="#" data-toggle="modal" data-target="#modalFundApoio"><i class="fas fa-fw fa-question-circle"></i></a>:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p><hr>
+            <p class="ml-2 roboto-font"><b>3.1.3.  Do(a): <input type="text" class="myform-control" name="nome_inst_fundacao" onchange="handleFundacaoNameApoio(event)" id="nome_inst_fundacao" placeholder="Instituição"> <a href="#" data-toggle="modal" data-target="#modalFundApoio"><i class="fas fa-fw fa-question-circle"></i></a>:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p><hr>
             <div class="col-md-12 mb-3">
               <textarea  name="clausula_edit_3a" class="form-control font-weight-bold text-justify" style="background-color: #F6FAFA; resize: none !important;"  id="" cols="30" rows="3">A) Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD& I;
               </textarea>
@@ -611,12 +611,12 @@
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_clausula_4">Saiba mais</button>
           </div>  
           <p>
-            <b>4.1.</b> O (A) <input class="myform-control text-black"type="text" name="nome_parceiro_privado" id="nome_parceiro_privado" placeholder="Parceiro privado">
+            <b>4.1.</b> O (A) <input class="myform-control text-black"type="text" id="handle_parceiro" placeholder="Parceiro privado">
               transferirá recursos financeiros no valor total de R$ <input class="myform-control text-black" type="text" name="valor_financeiro" id="valor_financeiro" placeholder="Valor por Extenso">
               , conforme cronograma de desembolso constante no Plano de Trabalho, anexo a este Acordo. 
           </p>
           <p>
-            <b>4.2.</b> Os valores especificados no item acima serão recebidos pela <input class="myform-control text-black" type="text" name="nome_fund_apoio" id="nome_fund_apoio" placeholder="Fundação de apoio"><a href="#"><i class="fas fa-fw fa-question-circle pos"></i></a> em conta específica. 
+            <b>4.2.</b> Os valores especificados no item acima serão recebidos pela <input class="myform-control text-black" type="text" id="handle_apoio" placeholder="Fundação de apoio"><a href="#"><i class="fas fa-fw fa-question-circle pos"></i></a> em conta específica. 
           </p>
           <p>
             <b>4.3.</b> O Parceiro Privado efetuará os aportes financeiros previstos no Plano de Trabalho através de depósitos em conta- corrente específica, servindo o 
@@ -683,7 +683,7 @@
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#recurso_privado">Saiba mais</button>
           </div>  
           <p>
-            <b>4.1.</b> O (A) <input class="myform-control text-black"type="text" name="nome_parceiro_privado" id="nome_parceiro_privado" placeholder="Parceiro privado">
+            <b>4.1.</b> O (A) <input class="myform-control text-black"type="text" id="handle_parceiro" placeholder="Parceiro privado">
               transferirá recursos financeiros no valor total de R$ <input class="myform-control text-black" type="text" name="valor_financeiro" id="valor_financeiro" placeholder="Valor por Extenso">
               , conforme cronograma de desembolso constante no Plano de Trabalho, anexo a este Acordo. 
           </p>
@@ -1170,7 +1170,10 @@
                 class="form-control text-black font-weight-bold" 
                 name="parceiro_contato_endereço"
                 id="endereco" 
-                placeholder="Endereço">
+                placeholder="Endereço"
+                privado-fundacao-false
+                >
+                
             </div>
 
             <div class="form-group col-md-3">
@@ -1179,14 +1182,18 @@
                 class="form-control text-black font-weight-bold"
                 name="parceiro_contato_telefone" 
                 id="parceiro_contato_telefone" 
-                placeholder="Telefone">
+                placeholder="Telefone"
+                privado-fundacao-false
+                >
             </div>
             <div class="form-group col-md-3">
               <label for="parceiro_contato_celular" class="font-weight-bold text-black">Celular</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="parceiro_contato_celular" id="parceiro_contato_celular" 
-                placeholder="Celular">
+                placeholder="Celular"
+                privado-fundacao-false
+                >
             </div>
             <div class="form-group col-md-3">
               <label for="parceiro_contato_email" class="font-weight-bold text-black">Email</label>
@@ -1194,7 +1201,9 @@
                 class="form-control text-black font-weight-bold"
                 name="parceiro_contato_email" 
                 id="parceiro_contato_email" 
-                placeholder="E-mail">
+                placeholder="E-mail"
+                privado-fundacao-false
+                >
             </div>
           </div><!-- /.row-->
           <!-- Pariceiro privado -->
@@ -1206,7 +1215,9 @@
                 class="form-control text-black font-weight-bold" 
                 name="privado_contato_endereço"
                 id="endereco" 
-                placeholder="Endereço">
+                placeholder="Endereço"
+                privado-fundacao-false
+                >
             </div>
 
             <div class="form-group col-md-3">
@@ -1215,14 +1226,18 @@
                 class="form-control text-black font-weight-bold"
                 name="privado_contato_telefone" 
                 id="privado_contato_telefone" 
-                placeholder="Telefone">
+                placeholder="Telefone"
+                privado-fundacao-false
+                >
             </div>
             <div class="form-group col-md-3">
               <label for="privado_contato_celular" class="font-weight-bold text-black">Celular</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="privado_contato_celular" id="privado_contato_celular" 
-                placeholder="Celular">
+                placeholder="Celular"
+                privado-fundacao-false
+                >
             </div>
             <div class="form-group col-md-3">
               <label for="privado_contato_email" class="font-weight-bold text-black">Email</label>
@@ -1230,7 +1245,9 @@
                 class="form-control text-black font-weight-bold"
                 name="privado_contato_email" 
                 id="privado_contato_email" 
-                placeholder="E-mail">
+                placeholder="E-mail"
+                privado-fundacao-false
+                >
             </div>
           <!-- Fundacao de apoio -->
           <div id="clausula_apoio_wrapper" style="display: none;">
@@ -1241,7 +1258,8 @@
                 <input type="text" 
                   class="form-control text-black font-weight-bold" 
                   name="privado_contato_endereço"
-                  id="endereco" 
+                  id="endereco"
+                  privado-fundacao-true 
                   placeholder="Endereço">
               </div>
   
@@ -1251,14 +1269,18 @@
                   class="form-control text-black font-weight-bold"
                   name="privado_contato_telefone" 
                   id="privado_contato_telefone" 
-                  placeholder="Telefone">
+                  placeholder="Telefone"
+                  privado-fundacao-true 
+                  >
               </div>
               <div class="form-group col-md-3">
                 <label for="privado_contato_celular" class="font-weight-bold text-black">Celular</label>
                 <input type="text" 
                   class="form-control text-black font-weight-bold" 
                   name="privado_contato_celular" id="privado_contato_celular" 
-                  placeholder="Celular">
+                  placeholder="Celular"
+                  privado-fundacao-true 
+                  >
               </div>
               <div class="form-group col-md-3">
                 <label for="privado_contato_email" class="font-weight-bold text-black">Email</label>
@@ -1266,7 +1288,9 @@
                   class="form-control text-black font-weight-bold"
                   name="privado_contato_email" 
                   id="privado_contato_email" 
-                  placeholder="E-mail">
+                  placeholder="E-mail"
+                  privado-fundacao-true 
+                  >
               </div>
             </div><!-- /.row-->
           </div>
@@ -1332,7 +1356,7 @@
             </div>
             <div class="form-group col-md-3">
               <label for="cargo_rep_foro" class="font-weight-bold text-black">Cargo</label>
-              <input type="email" 
+              <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="cargo_rep_foro" 
                 id="cargo_rep_foro" 
@@ -1358,7 +1382,7 @@
             </div>
             <div class="form-group col-md-3">
               <label for="cargo_rep_privado_foro" class="font-weight-bold text-black">Cargo</label>
-              <input type="email" 
+              <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="cargo_rep_privado_foro" 
                 id="cargo_rep_privado_foro" 
@@ -1417,34 +1441,32 @@
   
   </script>
 <script>
+
+
 var currentTab = 0;
 var lastTab = 99;
 
+
  // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
+
+//Regra para avançar os step do formulario pelo header
 function stepButton(n) {
   let x = document.getElementsByClassName("tab");
-  console.log(window.firstStep)
-  //Verificando se o array contém o numeros de campos validos = 17, firstStep
   if (window.firstStep !== undefined || n <= lastTab){
-      console.log( lastTab)
-      console.log( n)
       if(n <= lastTab){
         for (let i = 0; i < x.length; i++) {
           x[i].style.display = "none"; 
         }
         x[n].style.display = "block";
-        //... and fix the Previous/Next buttons:
         currentTab = n
         showTab(n)
-        return true
     }else{
         Toastify({
           text: "Você precisa preencher todos campos.",
               backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
               duration: 3000
         }).showToast(); 
-        return false
     }
   }else{
       Toastify({
@@ -1452,13 +1474,14 @@ function stepButton(n) {
             backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
             duration: 3000
       }).showToast(); 
-    return
   }
 }
+
+//Função para mostrar os Campos de cada etapa
 function showTab(n) {
-  
   // This function will display the specified tab of the form...
   var x = document.getElementsByClassName("tab");
+  var button = document.getElementById("nextBtn")
   x[n].style.display = "block";
   //... and fix the Previous/Next buttons:
   if (n == 0) {
@@ -1467,15 +1490,112 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").innerHTML = "Enviar";
+    button.innerHTML = "Enviar";
+
   } else {
+    button.type = 'button'
     document.getElementById("nextBtn").innerHTML = "Proximo";
   }
   //... and run a function that will display the correct step indicator:
   fixStepIndicator(n)
 }
 
-function handleDisplay(x, currentTab, lastTab){
+//Regra do butão para avançar ou voltar uma etapa
+function nextPrev(n) {
+  var button = document.getElementById("nextBtn");
+  var x = document.getElementsByClassName("tab");
+  
+  if (n == 1 && !validateStepForm()) 
+    return false;
+
+  if (button.innerHTML === "Enviar"){
+    document.getElementById("regForm").submit();
+    return false
+  }
+
+  handleStep(x, n)
+}
+
+function validateStepForm() {
+  // This function deals with validation of the form fields
+  var x, inputs, selects, i, valid = true;
+  x = document.getElementsByClassName("tab-pane");
+  inputs = x[currentTab].getElementsByTagName("input");
+  selects = x[currentTab].getElementsByTagName("select");
+  var checkbox = document.getElementById('possui_apoio');
+  //caso não tenha tenha fund. apoio pular todos esses campos da variavel 'dados_privados'
+  var DADOS_FUNDACAO = document.querySelectorAll('[privado-fundacao-true]');
+  var DADOS_ICT_PRIVADO = document.querySelectorAll('[privado-fundacao-false]');
+  DADOS_FUNDACAO = Array.from(DADOS_FUNDACAO);
+  DADOS_ICT_PRIVADO = Array.from(DADOS_ICT_PRIVADO);
+
+  for (i = 0; i < inputs.length; i++) {
+    if (inputs[i].value == "" ) {
+      inputs[i].className += " invalid";
+      
+      valid = false;
+
+      if(inputs[i].classList.contains('ck-hidden') || inputs[i].classList.contains('ck-input')){
+        valid = true;
+      }
+
+      if(inputs[i].name === "nome_inst_fundacao" && !checkbox.checked || inputs[i].type === "checkbox"){
+        console.log(inputs[i].name)
+        valid = true
+      }
+      
+      if(
+          !checkbox.checked 
+          && DADOS_FUNDACAO.some(input => input.name === inputs[i].name)
+          && DADOS_ICT_PRIVADO.every(input => input.value != '')
+      ){
+        console.log('Entrou!')
+        valid = true
+      }
+    }
+
+    if(i < selects.length){
+      if (selects[i].value == "") {
+        selects[i].className += " invalid";
+        valid = false;
+      }
+    }
+  }
+  if (window.firstStep !== undefined){
+    for (i = 0; i < inputs.length; i++) {
+      if(window.firstStep.includes(inputs[i].name)){
+        console.log(inputs[i].name)
+        valid = false
+      }
+    }
+  }
+ /*  if(!checkbox.checked && dados_privados.some(input => input.value === '')){
+    valid = true
+  }  */
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }else{
+    Toastify({
+        text: "Você precisa preencher todos campos.",
+        backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
+        duration: 3000
+    }).showToast(); 
+  }
+  return valid; // return the valid status
+}
+
+//Remove as classes "active" dos campos que não estão ativos
+function fixStepIndicator(n) {
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+
+function handleStep(x, n){
   for (let i = 0; i < x.length; i++) {
     x[i].style.display = "none"; 
   }
@@ -1483,183 +1603,12 @@ function handleDisplay(x, currentTab, lastTab){
   x[currentTab].style.display = "none";
   // Increase or decrease the current tab by 1:
   currentTab = currentTab + n;
-        
+  
   if (lastTab <= currentTab){
-      lastTab = currentTab
+    lastTab = currentTab
   }
   // Otherwise, display the correct tab:
   showTab(currentTab);
-}
-
-function nextPrev(n) {
-  // This function will figure out which tab to display
-  var x = document.getElementsByClassName("tab");
-  if (n == 1 && !validateStep()) return false;
- //Regra para o botão anterior
-  if (n === -1){
-    for (let i = 0; i < x.length; i++) {
-          x[i].style.display = "none"; 
-        }
-        // Hide the current tab:
-      //  x[currentTab].style.display = "none";
-        // Increase or decrease the current tab by 1:
-        currentTab = currentTab + n;
-        
-        // Otherwise, display the correct tab:
-        showTab(currentTab);
-        return true
-  }
-    //Verificando se o array contém o numeros de campos validos = 17, firstStep
-    if (window.firstStep !== undefined){
-      console.log(window.firstStep)
-      console.log(lastTab)
-      if(window.firstStep.length === 17 && currentTab == 0){
-        for (let i = 0; i < x.length; i++) {
-          x[i].style.display = "none"; 
-        }
-        // Hide the current tab:
-        x[currentTab].style.display = "none";
-        // Increase or decrease the current tab by 1:
-        currentTab = currentTab + n;
-        
-        if (lastTab <= currentTab){
-          lastTab = currentTab
-        }
-        // Otherwise, display the correct tab:
-        showTab(currentTab);
-        return true
-      }else if(window.firstStep.length === 29 && currentTab == 1 ){
-        
-        for (let i = 0; i < x.length; i++) {
-          x[i].style.display = "none"; 
-        }
-        // Hide the current tab:
-        x[currentTab].style.display = "none";
-        // Increase or decrease the current tab by 1:
-        currentTab = currentTab + n;
-        if (lastTab <= currentTab){
-          lastTab = currentTab
-        }
-        // Otherwise, display the correct tab:
-        showTab(currentTab);
-        return true
-      }else if(window.firstStep.length === 31 && currentTab == 2 ){
-          for (let i = 0; i < x.length; i++) {
-            x[i].style.display = "none"; 
-          }
-          // Hide the current tab:
-          x[currentTab].style.display = "none";
-          // Increase or decrease the current tab by 1:
-          currentTab = currentTab + n;
-          if (lastTab <= currentTab){
-            lastTab = currentTab
-          }
-          // Otherwise, display the correct tab:
-          showTab(currentTab);
-          return true
-      }else if(window.firstStep.length === 34 && currentTab == 4 ){
-        for (let i = 0; i < x.length; i++) {
-            x[i].style.display = "none"; 
-          }
-          // Hide the current tab:
-          x[currentTab].style.display = "none";
-          // Increase or decrease the current tab by 1:
-          currentTab = currentTab + n;
-          if (lastTab <= currentTab){
-            lastTab = currentTab
-          }
-          // Otherwise, display the correct tab:
-          showTab(currentTab);
-          return true
-      }else if(window.firstStep.length === 37 && currentTab === 11 ){
-        for (let i = 0; i < x.length; i++) {
-            x[i].style.display = "none"; 
-          }
-          // Hide the current tab:
-          x[currentTab].style.display = "none";
-          // Increase or decrease the current tab by 1:
-          currentTab = currentTab + n;
-          if (lastTab <= currentTab){
-            lastTab = currentTab
-          }
-          // Otherwise, display the correct tab:
-          showTab(currentTab);
-          return true
-      }else if(window.firstStep.length === 46 && currentTab === 18 ){
-        for (let i = 0; i < x.length; i++) {
-            x[i].style.display = "none"; 
-          }
-          // Hide the current tab:
-          x[currentTab].style.display = "none";
-          // Increase or decrease the current tab by 1:
-          currentTab = currentTab + n;
-          if (lastTab <= currentTab){
-            lastTab = currentTab
-          }
-          // Otherwise, display the correct tab:
-          showTab(currentTab);
-          return true
-      }else if( currentTab === 3 || (currentTab >= 3 && currentTab <= 10) || (currentTab >= 12 && currentTab <= 17)){
-        for (let i = 0; i < x.length; i++) {
-            x[i].style.display = "none"; 
-          }
-          // Hide the current tab:
-          x[currentTab].style.display = "none";
-          // Increase or decrease the current tab by 1:
-          currentTab = currentTab + n;
-          if (lastTab <= currentTab){
-            lastTab = currentTab
-          }
-          // Otherwise, display the correct tab:
-          showTab(currentTab);
-          return true
-           
-      }else if(currentTab < lastTab){ 
-        for (let i = 0; i < x.length; i++) {
-            x[i].style.display = "none"; 
-          }
-          // Hide the current tab:
-          x[currentTab].style.display = "none";
-          currentTab = currentTab + n;
-          if (lastTab <= currentTab){
-            lastTab = currentTab
-          }
-          showTab(currentTab)
-          return true
-      }else{
-        Toastify({
-          text: "Você precisa preencher todos campos.",
-              backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
-              duration: 3000
-        }).showToast(); 
-        return false
-    }
-  }else{
-      Toastify({
-        text: "Você precisa preencher todos campos.",
-            backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
-            duration: 3000
-      }).showToast(); 
-    return
-  }
-}
-function validateStep() {
-  // This function deals with validation of the form fields
-  var x, y, i, valid = true;
-  // If the valid status is true, mark the step as finished and valid:
-  if (valid) {
-    document.getElementsByClassName("step")[currentTab].className += " finish";
-  }
-  return valid; // return the valid status
-}
-function fixStepIndicator(n) {
-  // This function removes the "active" class of all steps...
-  var i, x = document.getElementsByClassName("step");
-  for (i = 0; i < x.length; i++) {
-    x[i].className = x[i].className.replace(" active", "");
-  }
-  //... and adds the "active" class on the current step:
-  x[n].className += " active";
 }
 </script>
 

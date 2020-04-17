@@ -46,7 +46,6 @@ class CreateContratoCrsTable extends Migration
             $table->string('parceiro_cargo');
             $table->string('parceiro_doravante_denominado');
             $table->string('clausula_descricao')->nullable()->default(null);
-            $table->string('ict_plano_trabalho');
 
             $table->longText('clausula_edit_2_3')->nullable()->default(null);
             $table->longText('clausula_edit_2_4')->nullable()->default(null);
@@ -125,9 +124,7 @@ class CreateContratoCrsTable extends Migration
             $table->string('nome_inst_ict');
             $table->string('nome_coordenador_ict');
             $table->string('nome_coordenador_privado');
-            $table->string('nome_inst_privado');
-            $table->string('nome_inst_fundacao');
-            $table->string('nome_parceiro_privado');
+            $table->string('nome_inst_fundacao')->nullable();
             $table->string('valor_financeiro');
             $table->string('prazo_vigencia');
             $table->string('nome_fund_apoio');

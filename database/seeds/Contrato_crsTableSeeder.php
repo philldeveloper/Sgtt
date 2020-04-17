@@ -48,7 +48,6 @@ class Contrato_crsTableSeeder extends Seeder
 		    'parceiro_doravante_denominado' => 'Lorem Ipsum',
 
 			'clausula_descricao' => 'Lorem Ipsum',
-			'ict_plano_trabalho' => 'Lorem Ipsum',
 
 			'clausula_edit_2_3' => 'Lorem Ipsum',
 			'clausula_edit_2_4' => 'Lorem Ipsum',
@@ -126,10 +125,8 @@ class Contrato_crsTableSeeder extends Seeder
 			'nome_inst_ict' => 'lorem ipsum', //clausula_3
 			'nome_coordenador_ict' => 'lorem ipsum', 
 			'nome_coordenador_privado' => 'lorem ipsum', 
-        	'nome_inst_privado' => 'lorem ipsum', //clausula_3
         	'nome_inst_fundacao' => 'lorem ipsum', //clausula_3
 
-		    'nome_parceiro_privado' => 'Lorem Ipsum',
 		    'valor_financeiro' => 'Lorem Ipsum',
 		    'nome_fund_apoio' => 'Lorem Ipsum',
 
