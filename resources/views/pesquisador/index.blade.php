@@ -179,9 +179,10 @@
           <table class="table table-hover mb-0" id="example">
             <thead class="roboto-font font-weight-bold text-dark border-left-success bg-light shadow-sm" style="font-size: 1.25rem">
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">Tipo</th>
+                <!-- <th scope="col">#</th> -->
+                
                 <th scope="col">Desenv. por</th>
+                <th scope="col">Tipo</th>
                 <th scope="col">ICT | Parceiro</th>
                 <th scope="col">E-mail</th>
                 <th scope="col">Criado em</th>
@@ -195,12 +196,12 @@
               
               @forelse($contratos_sr as $contratos) 
               <tr class="">
-                <td>{{$contratos->id}}</td>
-                <td><div class="badge badge-info">{{$contratos->tipo}}</div></td>
+                <!-- <td>{{$contratos->id}}</td> -->
                 <td><div class="badge badge-dark">{{$contratos->nome}}</div></td>
+                <td><div class="badge badge-info">{{$contratos->tipo}}</div></td>
                 <td>{{$contratos->nome_ict}} e {{$contratos->nome_parceiro}}</td>
                 <td>{{$contratos->email}}</td>
-                <td>{{$contratos->created_at}}</td>
+                <td>{{date('d/m/Y', strtotime($contratos->created_at))}}</td>
                 
                 <td>
                     <form action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
@@ -251,12 +252,12 @@
               @forelse($contratos_cr as $cr) 
 
               <tr class="">
-                <td>{{$cr->id}}</td>
-                <td><div class="badge badge-success">{{$cr->tipo}}</div></td>
+                <!-- <td>{{$cr->id}}</td> -->
                 <td><div class="badge badge-dark">{{$cr->nome}}</div></td>
+                <td><div class="badge badge-success">{{$cr->tipo}}</div></td>
                 <td>{{$cr->nome_ict}} e {{$cr->nome_parceiro}}</td>
                 <td>{{$cr->email}}</td>
-                <td>{{$cr->created_at}}</td>
+                <td>{{date('d/m/Y', strtotime($cr->created_at))}}</td>
                 
                 <td>
                     <form action="{{route('contrato_cr.destroy', $cr->id) }}" method="POST">

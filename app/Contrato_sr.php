@@ -119,9 +119,13 @@ class Contrato_sr extends Model
         'nome_inst_privado_foro',
         'nome_rep_privado_foro',
         'cargo_rep_privado_foro',
-
+        
         'tipo',
         'user_id'
+    ];
+
+    protected $casts = [
+        'created_at' => 'datetime:d/m/Y',
     ];
 
     public function user () {

@@ -33,6 +33,7 @@
         <a class="nav-link font-weight-bold p-4" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Tutoriais</a>
         <a class="nav-link font-weight-bold p-4" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Documentação</a>
         <a class="nav-link font-weight-bold p-4" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Sobre o NIT</a>
+        <a class="nav-link font-weight-bold p-4" id="v-pills-manual-tab" data-toggle="pill" href="#v-pills-manual" role="tab" aria-controls="v-pills-manual" aria-selected="false">Manual da Marca</a>
       </div>
     </div>
     <div class="col-9">
@@ -68,6 +69,10 @@
         </div>
         <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
           <h2 class="font-weight-bold text-dark bg-light mb-5">Sobre o NIT</h2>
+          <p>Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</p>
+        </div>
+        <div class="tab-pane fade" id="v-pills-manual" role="tabpanel" aria-labelledby="v-pills-manual-tab">
+          <h2 class="font-weight-bold text-dark bg-light mb-5">Manual da Marca</h2>
           <p>Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</p>
         </div>
       </div>
