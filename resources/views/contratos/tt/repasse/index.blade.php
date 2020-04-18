@@ -1168,7 +1168,7 @@
               <label for="endereco" class="font-weight-bold text-black">Endereço</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
-                name="parceiro_contato_endereço"
+                name="parceiro_contato_endereco"
                 id="endereco" 
                 placeholder="Endereço"
                 privado-fundacao-false
@@ -1213,7 +1213,7 @@
               <label for="endereco" class="font-weight-bold text-black">Endereço</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
-                name="privado_contato_endereço"
+                name="privado_contato_endereco"
                 id="endereco" 
                 placeholder="Endereço"
                 privado-fundacao-false
@@ -1257,37 +1257,37 @@
                 <label for="endereco" class="font-weight-bold text-black">Endereço</label>
                 <input type="text" 
                   class="form-control text-black font-weight-bold" 
-                  name="privado_contato_endereço"
+                  name="apoio_contato_endereco"
                   id="endereco"
                   privado-fundacao-true 
                   placeholder="Endereço">
               </div>
   
               <div class="form-group col-md-3">
-                <label for="privado_contato_telefone" class="font-weight-bold text-black">Telefone</label>
+                <label for="apoio_contato_telefone" class="font-weight-bold text-black">Telefone</label>
                 <input type="text" 
                   class="form-control text-black font-weight-bold"
-                  name="privado_contato_telefone" 
-                  id="privado_contato_telefone" 
+                  name="apoio_contato_telefone" 
+                  id="apoio_contato_telefone" 
                   placeholder="Telefone"
                   privado-fundacao-true 
                   >
               </div>
               <div class="form-group col-md-3">
-                <label for="privado_contato_celular" class="font-weight-bold text-black">Celular</label>
+                <label for="apoio_contato_celular" class="font-weight-bold text-black">Celular</label>
                 <input type="text" 
                   class="form-control text-black font-weight-bold" 
-                  name="privado_contato_celular" id="privado_contato_celular" 
+                  name="apoio_contato_celular" id="apoio_contato_celular" 
                   placeholder="Celular"
                   privado-fundacao-true 
                   >
               </div>
               <div class="form-group col-md-3">
-                <label for="privado_contato_email" class="font-weight-bold text-black">Email</label>
+                <label for="apoio_contato_email" class="font-weight-bold text-black">Email</label>
                 <input type="email" 
                   class="form-control text-black font-weight-bold"
-                  name="privado_contato_email" 
-                  id="privado_contato_email" 
+                  name="apoio_contato_email" 
+                  id="apoio_contato_email" 
                   placeholder="E-mail"
                   privado-fundacao-true 
                   >

@@ -518,7 +518,7 @@
                     </div>
                   </div><!--modal-alert-->
                 <p><b>3.1 </b>São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I:</p>
-                <p class="mt-3 roboto-font"><b>3.1.1. Do(a) ICT:</b><input type="text" disabled readonly="" class="myform-control" name="nome_inst_ict" id="handle_ict" placeholder="{{$contratos_cr->nome_inst_ict}}" disabled><a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a></p><hr>
+                <p class="mt-3 roboto-font"><b>3.1.1. Do(a) ICT:</b><input type="text" disabled readonly="" class="myform-control" id="handle_ict" placeholder="{{$contratos_cr->nome_ict}}" disabled><a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a></p><hr>
                 <p><b>A)</b> Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD&I ;</p>
                 <p><b>B)</b> Manter rigoroso controle das despesas efetuadas e dos respectivos comprovantes com vistas à prestação de contas da execução do objeto deste Acordo;</p>
                 <p><b>C)</b> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução<a href="#" data-toggle="modal" data-target="#modalCoordenador"><i class="fas fa-fw fa-question-circle"></i></a></p>
@@ -534,7 +534,7 @@
                 <p><b>E)</b> Monitorar, avaliar e prestar contas nos termos deste Acordo; </p></p>
                 
                 <!--inicio das clausulas 3-->
-                <p class="mt-3 roboto-font"><b>3.1.2. Do Parceiro Privado:</b><input type="text" class="myform-control" name="nome_inst_privado" id="nome_inst_privado" placeholder="{{$contratos_cr->nome_inst_privado}}" disabled></p><hr>
+                <p class="mt-3 roboto-font"><b>3.1.2. Do Parceiro Privado:</b><input type="text" class="myform-control" id="nome_inst_privado" placeholder="{{$contratos_cr->nome_parceiro}}" disabled></p><hr>
 
                 <p><b>A)</b> Transferir os recursos financeiros acordados, segundo o Cronograma de Desembolso constante no Plano de Trabalho, por meio do aporte de recursos financeiros de sua responsabilidade;</p>
                 <p><b>B)</b> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução<a href="#" data-toggle="modal" data-target="#modalCoordenadorPrivado"><i class="fas fa-fw fa-question-circle"></i></a></p>
@@ -646,7 +646,7 @@
                 <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_clausula_4">Saiba mais</button>
               </div>
                 <p>
-                  <b>4.1.</b> O (A) <input class="myform-control text-black font-weight-bold"type="text" name="nome_parceiro_privado" id="nome_parceiro_privado" placeholder="{{$contratos_cr->nome_parceiro_privado}}" disabled="">
+                  <b>4.1.</b> O (A) <input class="myform-control text-black font-weight-bold" type="text" placeholder="{{$contratos_cr->nome_ict}}" disabled="">
                    transferirá recursos financeiros no valor total de R$ <input class="myform-control text-black font-weight-bold" type="text" name="valor_financeiro" id="valor_financeiro" placeholder="{{$contratos_cr->valor_financeiro}}" disabled="">
                    , conforme cronograma de desembolso constante no Plano de Trabalho, anexo a este Acordo. 
                 </p>
@@ -708,8 +708,8 @@
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#recurso_privado">Saiba mais</button>
           </div>  
           <p>
-            <b>4.1.</b> O (A) <input class="myform-control text-black"type="text" name="nome_parceiro_privado" id="handle_parceiro" disabled value="{{$contratos_cr->nome_parceiro_privado}}">
-              transferirá recursos financeiros no valor total de R$ <input class="myform-control text-black" type="text" name="valor_financeiro" id="valor_financeiro" value="{{$contratos_cr->valor_financeiro}}" disabled placeholder="Valor por Extenso">
+            <b>4.1.</b> O (A) <input class="myform-control text-black" type="text" id="handle_parceiro" disabled placeholder="{{$contratos_cr->nome_parceiro}}">
+              transferirá recursos financeiros no valor total de R$ <input class="myform-control text-black" type="text" name="valor_financeiro" id="valor_financeiro" placeholder="{{$contratos_cr->valor_financeiro}}" disabled placeholder="Valor por Extenso">
               , conforme cronograma de desembolso constante no Plano de Trabalho, anexo a este Acordo. 
           </p>
           <p>
@@ -1189,13 +1189,13 @@
                 <span class="font-weight-bold">PARCEIRO(S) PÚBLICO(S):</span> 
                 <div class="form-row">
                   <div class="form-group col-md-3">
-                    <label for="endereco" class= text-black">Endereço</label>
+                    <label for="endereco" class="text-black">Endereço</label>
                     <input type="text" 
                       class="form-control text-black" 
                       name="parceiro_contato_endereço"
                       disabled id="endereco" 
-                      value="{{$contratos_cr->parceiro_contato_endereço}}"
-                      placeholder="Endereço">
+                      placeholder="{{$contratos_cr->parceiro_contato_endereço}}"
+                      >
                   </div>
 
                   <div class="form-group col-md-3">
@@ -1204,16 +1204,16 @@
                       class="form-control text-black"
                       name="parceiro_contato_telefone" 
                       disabled id="parceiro_contato_telefone" 
-                      value="{{$contratos_cr->parceiro_contato_telefone}}"
-                      placeholder="Telefone">
+                      placeholder="{{$contratos_cr->parceiro_contato_telefone}}"
+                      >
                   </div>
                   <div class="form-group col-md-3">
                     <label for="parceiro_contato_celular" class= text-black">Celular</label>
                     <input type="text" 
                       class="form-control text-black" 
                       name="parceiro_contato_celular" disabled id="parceiro_contato_celular"
-                      value="{{$contratos_cr->parceiro_contato_celular}}" 
-                      placeholder="Celular">
+                      placeholder="{{$contratos_cr->parceiro_contato_celular}}" 
+                      >
                   </div>
                   <div class="form-group col-md-3">
                     <label for="parceiro_contato_email" class= text-black">Email</label>
@@ -1221,8 +1221,8 @@
                       class="form-control text-black"
                       name="parceiro_contato_email" 
                       disabled id="parceiro_contato_email" 
-                      value="{{$contratos_cr->parceiro_contato_email}}"
-                      placeholder="E-mail">
+                      placeholder="{{$contratos_cr->parceiro_contato_email}}"
+                      >
                   </div>
                 </div><!-- /.row-->
                 <!-- Pariceiro privado -->
@@ -1234,8 +1234,8 @@
                       class="form-control text-black " 
                       name="privado_contato_endereço"
                       disabled id="endereco" 
-                      value="{{$contratos_cr->privado_contato_endereço}}"
-                      placeholder="Endereço">
+                      placeholder="{{$contratos_cr->privado_contato_endereço}}"
+                      >
                   </div>
                   <div class="form-group col-md-3">
                     <label for="privado_contato_telefone" class=" text-black">Telefone</label>
@@ -1243,16 +1243,16 @@
                       class="form-control text-black "
                       name="privado_contato_telefone" 
                       disabled id="privado_contato_telefone" 
-                      value="{{$contratos_cr->privado_contato_telefone}}"
-                      placeholder="Telefone">
+                      placeholder="{{$contratos_cr->privado_contato_telefone}}"
+                    >
                   </div>
                   <div class="form-group col-md-3">
                     <label for="privado_contato_celular" class=" text-black">Celular</label>
                     <input type="text" 
                       class="form-control text-black " 
                       name="privado_contato_celular" disabled id="privado_contato_celular"
-                      value="{{$contratos_cr->privado_contato_celular}}" 
-                      placeholder="Celular">
+                      placeholder="{{$contratos_cr->privado_contato_celular}}" 
+                      >
                   </div>
                   <div class="form-group col-md-3">
                     <label for="privado_contato_email" class=" text-black">Email</label>
@@ -1260,8 +1260,8 @@
                       class="form-control text-black "
                       name="privado_contato_email" 
                       disabled id="privado_contato_email" 
-                      value="{{$contratos_cr->privado_contato_email}}" 
-                      placeholder="E-mail">
+                      placeholder="{{$contratos_cr->privado_contato_email}}" 
+                      >
                   </div>
                 </div>
                 <!-- Fundacao de apoio -->
@@ -1474,7 +1474,8 @@
   
   </script>
 <script>
-var currentTab = 0; // Current tab is set to be the first tab (0)
+var currentTab = 0;
+var lastTab = 99; 
 showTab(currentTab); // Display the current tab
 
 function stepButton(n) {
@@ -1516,34 +1517,22 @@ function showTab(n) {
   fixStepIndicator(n)
 }
 
+//Regra do butão para avançar ou voltar uma etapa
 function nextPrev(n) {
-  // This function will figure out which tab to display
+  var button = document.getElementById("nextBtn");
+  var stepCount = document.getElementById("stepCount")
   var x = document.getElementsByClassName("tab");
-  // Exit the function if any field in the current tab is invalid:
-  if (n == 1 && !validateStep()) return false;
-  if(n == -1 && currentTab == 0) {
-    for (let i = 0; i < x.length; i++) {
-      x[i].style.display = "none"; 
-    }
-    showTab(currentTab);
-    return
-  }
-  for (let i = 0; i < x.length; i++) {
-    x[i].style.display = "none"; 
-  }
-  // Hide the current tab:
-  x[currentTab].style.display = "none";
-  // Increase or decrease the current tab by 1:
-  currentTab = currentTab + n;
-  // if you have reached the end of the form...
-  if (currentTab >= x.length) {
-    // ... the form gets submitted:
-    document.getElementById("regForm").submit();
+  
+  if (n == 1 && !validateStep()) 
     return false;
+
+  if (button.innerHTML === "Menu"){
+    return false
   }
-  // Otherwise, display the correct tab:
-  showTab(currentTab);
+
+  handleStep(x, n)
 }
+
 
 function validateStep() {
   // This function deals with validation of the form fields
@@ -1576,6 +1565,23 @@ function fixStepIndicator(n) {
   //... and adds the "active" class on the current step:
   x[n].className += " active";
 }
+
+function handleStep(x, n){
+  for (let i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  
+  if (lastTab <= currentTab){
+    lastTab = currentTab
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
 </script>
   
 

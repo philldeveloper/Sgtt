@@ -117,17 +117,17 @@ class Contrato_cr extends Model
         'clausula_edit_16_1',
         'clausula_edit_16_2',
         //17.1 contato publico
-        'parceiro_contato_endereço',
+        'parceiro_contato_endereco',
         'parceiro_contato_telefone',
         'parceiro_contato_celular',
         'parceiro_contato_email',
         //17.1 contato privado
-        'privado_contato_endereço',
+        'privado_contato_endereco',
         'privado_contato_telefone',
         'privado_contato_celular',
         'privado_contato_email',
         //17.1 contato fundacao apoio
-        'apoio_contato_endereço',
+        'apoio_contato_endereco',
         'apoio_contato_telefone',
         'apoio_contato_celular',
         'apoio_contato_email',

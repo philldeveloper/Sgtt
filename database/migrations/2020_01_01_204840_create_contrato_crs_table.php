@@ -121,13 +121,12 @@ class CreateContratoCrsTable extends Migration
             $table->longText('clausula_edit_16_1')->nullable()->default(null);
             $table->longText('clausula_edit_16_2')->nullable()->default(null);
 
-            $table->string('nome_inst_ict');
             $table->string('nome_coordenador_ict');
             $table->string('nome_coordenador_privado');
             $table->string('nome_inst_fundacao')->nullable();
             $table->string('valor_financeiro');
             $table->string('prazo_vigencia');
-            $table->string('nome_fund_apoio');
+            $table->string('nome_fund_apoio')->nullable()->default(null);
             $table->string('estado_foro');
             $table->string('cidade_foro');
             $table->string('cidade_uf_dia_foro');
@@ -138,20 +137,20 @@ class CreateContratoCrsTable extends Migration
             $table->string('nome_rep_privado_foro');
             $table->string('cargo_rep_privado_foro');
 
-            $table->string('parceiro_contato_endereço');
+            $table->string('parceiro_contato_endereco');
             $table->string('parceiro_contato_telefone');
             $table->string('parceiro_contato_celular');
             $table->string('parceiro_contato_email');
             
-            $table->string('privado_contato_endereço');
+            $table->string('privado_contato_endereco');
             $table->string('privado_contato_telefone');
             $table->string('privado_contato_celular');
             $table->string('privado_contato_email');
 
-            $table->string('apoio_contato_endereço');
-            $table->string('apoio_contato_telefone');
-            $table->string('apoio_contato_celular');
-            $table->string('apoio_contato_email');
+            $table->string('apoio_contato_endereco')->nullable()->default(null);
+            $table->string('apoio_contato_telefone')->nullable()->default(null);
+            $table->string('apoio_contato_celular')->nullable()->default(null);
+            $table->string('apoio_contato_email')->nullable()->default(null);
 
 
             $table->string('tipo')->nullable()->default(null);
