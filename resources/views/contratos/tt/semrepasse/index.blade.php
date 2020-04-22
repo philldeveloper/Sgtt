@@ -1256,12 +1256,18 @@ function validateStepForm() {
     if (inputs[i].value == "") {
       inputs[i].className += " invalid";
       valid = false;
+
+      if(inputs[i].name === "parceiro_contato_celular" || inputs[i].name === "privado_contato_celular"){
+        inputs[i].className = inputs[i].className.replace(" invalid", "");
+        valid = true
+      }
     }
 
     if(i < selects.length){
       if (selects[i].value == "") {
         selects[i].className += " invalid";
         valid = false;
+
       }
     }
   } 
