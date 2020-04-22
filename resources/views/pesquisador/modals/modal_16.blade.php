@@ -10,7 +10,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <p class="lead text-dark font-weight-bold">Nesse item, “Demais”, deve-se inserir alíneas, caso haja mais atribuições ou funções que serão desempenhadas na execução do Acordo de Cooperação Técnica, pela ICT. (Mantenha a ordem CRESCENTE)</p>
+        <p class="lead text-dark">Nesse item, “Demais”, deve-se inserir alíneas, caso haja mais atribuições ou funções que serão desempenhadas na execução do Acordo de Cooperação Técnica, pela ICT. (Mantenha a ordem CRESCENTE)</p>
       </div>
     </div>
   </div>
