@@ -15,10 +15,10 @@ h5#main-title{
 
 h5{
  	font-size: 12pt !important;
- 	border-bottom: 1px solid #cdcdcd !important;
+ 	/* border-bottom: 1px solid #cdcdcd !important; */
 }
 p>span#p-title{
-	margin-left: 8px !important;
+	/* margin-left: 8px !important; */
 	margin-right: 8px !important;
 	font-weight: bold !important;
 }

@@ -60,7 +60,6 @@
 
 <!------clausula-2--->
 <h5 class="font-weight-bold">2. CLÁUSULA SEGUNDA – DO PLANO DE TRABALHO</h5>
-<p id="nota-explicativa"><b>NOTA EXPLICATIVA:</b> Cláusula abaixo são obrigatórias para ICTs, cabendo as Agências de Fomento verificar se há interesse na sua inclusão no Acordo.</p>
 
 <p><span id="p-title">2.1.</span>O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
 <p><span id="p-title">2.2.</span>Respeitadas as previsões contidas na legislação em vigor, a ICT, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
@@ -72,7 +71,6 @@
 
 <!------clausula-3--->
 <h5 class="font-weight-bold">3. CLÁUSULA TERCEIRA – DAS ATRIBUIÇÕES E RESPONSABILIDADES</h5>
-<p id="nota-explicativa"><b>NOTA EXPLICATIVA:</b> Cabe a cada Parceiro especificar as atribuições de cada parte no Acordo, conforme a parceria que irá ser firmada e as obrigações que cada partícipe terá.</p>
 
 <p><b>3.1.</b>São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I:</p>
 
@@ -112,7 +110,6 @@
 
 <!------clausula-4--->
 <h5 class="font-weight-bold">4. CLÁUSULA QUARTA - DOS RECURSOS FINANCEIROS</h5>
-<p id="nota-explicativa"><b>NOTA EXPLICATIVA:</b> Cláusulas para hipótese do recurso financeiro ser repassado do parceiro privado para o parceiro público, POR INTERMÉDIO DA FUNDAÇÃO DE APOIO.</p>
 
 <p><b>4.1.</b> O(A) {!! $contrato->nome_parceiro_privado!!} transferirá recursos financeiros no valor total de R$ {!! $contrato->valor_financeiro !!}, conforme cronograma de desembolso constante no Plano de Trabalho, anexo a este Acordo.</p>
 <p><b>4.2</b> Os valores especificados no item acima serão recebidos pela {!! $contrato->nome_fund_apoio !!} em conta específica.</p>
@@ -134,9 +131,6 @@
 <p style="margin-left: 16px !important"><b style="margin-right: 8px !important">4.9.1</b> {!! $contrato->clausula_edit_4_9_1 !!}</p>
 
 <p><b>4.10</b> {!! $contrato->clausula_edit_4_10 !!}</p>
-
-
-<p id="nota-explicativa"><b>NOTA EXPLICATIVA:</b> Cláusulas para hipótese do recurso financeiro ser repassado do parceiro privado DIRETAMENTE PARA O PARCEIRO PÚBLICO (Sem intermédio de Fundação de Apoio).</p>
 
 <p><b>4.1.</b> O(A) {!! $contrato->nome_parceiro_privado!!} transferirá recursos financeiros no valor total de R$ {!! $contrato->valor_financeiro !!}, conforme cronograma de desembolso constante no Plano de Trabalho, anexo a este Acordo.</p>
 <p><b>4.2</b> Os recursos financeiros serão transferidos à ICT/AGÊNCIA DE FOMENTO mediante depósito(s) no Banco do Brasil, por meio de Guia de Recolhimento da União-GRU, na qual deverá constar o código da UG, gestão e código do recolhimento indicados pela ICT/AGÊNCIA DE FOMENTO.</p>
@@ -165,8 +159,6 @@
 
 <!------clausula-6--->
 <h5 class="font-weight-bold">6. CLÁUSULA SEXTA - DA PROPRIEDADE INTELECTUAL E DA CRIAÇÃO PROTEGIDA</h5>
-
-<p id="nota-explicativa"><b>NOTA EXPLICATIVA:</b> As cláusulas sobre Propriedade Intelectual dependem da Política de Inovação da Instituição, uma vez que cada ente estabelece as regras, possibilidades, percentuais e formas de gerir seu patrimônio intelectual. Desta forma, as cláusulas a seguir servem como sugestões de redação cabendo a cada entidade adequar a o texto do Acordo em conformidade com a sua Política de Inovação.</p>
 
 <p><b>6.1</b> {!! $contrato->clausula_edit_6_1 !!}</p>
 <p><b>6.2</b> {!! $contrato->clausula_edit_6_2 !!}</p>
@@ -205,8 +197,6 @@
 <p style="margin-left: 16px !important"><b style="margin-right: 8px !important">8.4.5</b> Revelação expressamente autorizada, por escrito, pelas PARTES.</p>
 <p><b>8.5</b> A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada.</p>
 
-<p id="nota-explicativa"><b>NOTA EXPLICATIVA:</b> Os parceiros deverão eleger a cláusula de classificação de confidencialidade que melhor se adapte aos seus interesses.</p>
-
 <p><b>8.6</b> {!! $contrato->clausula_edit_8_6 !!}</p>
 <p><b>8.7</b> {!! $contrato->clausula_edit_8_7 !!}</p>
 <p><b>8.8</b> {!! $contrato->clausula_edit_8_8 !!}</p>
@@ -235,8 +225,6 @@
 <!------clausula-11--->
 <h5 class="font-weight-bold">11. CLÁUSULA DÉCIMA PRIMEIRA - DA VIGÊNCIA E DA PRORROGAÇÃO</h5>
 
-<p id="nota-explicativa"><b>NOTA EXPLICATIVA:</b> Observar que no § 3º do artigo 9-A da Lei nº10.973/2004 estabelece que “A vigência dos instrumentos jurídicos aos quais se refere o caput deverá ser suficiente à plena realização do objeto, admitida a prorrogação, desde que justificada tecnicamente e refletida em ajuste do plano de trabalho.”</p>
-
 <p><b>11.1</b> O presente Acordo de Parceria para PD&I vigerá pelo prazo de {!! $contrato->prazo_vigencia !!} anos, a partir da data de sua assinatura, prorrogáveis.</p>
 <p><b>11.2</b> Este Acordo de Parceria poderá ser prorrogado por meio de termo aditivo, com as respectivas alterações no Plano de Trabalho, mediante a apresentação de justifica técnica.</p>
 
@@ -248,8 +236,6 @@
 <p><b>12.2</b> A proposta de alteração, devidamente justificada, deverá ser apresentada por escrito, dentro da vigência do instrumento.</p>
 <p><b>12.3</b> É vedado o aditamento do presente Acordo com o intuito de alterar o seu objeto, sob pena de nulidade do ato e responsabilidade do agente que o praticou.</p>
 <p><b>12.4</b> São dispensáveis de formalização por meio de Termo Aditivo as alterações que importem em transposição, remanejamento ou transferência de recursos de categoria de programação para outra, com o objetivo de conferir eficácia e eficiência às atividades previstas no Plano de Trabalho, desde que não haja alteração do valor total do projeto.</p>
-
-<p id="nota-explicativa"><b>NOTA EXPLICATIVA:</b> As cláusulas abaixo são sugeridas para os Acordos de Parceria para PD&I em que haja transferência de recurso do parceiro privado diretamente para o púbico, tendo em vista que os recursos passarão a ser orçamentários. Nas hipóteses de Acordos de Parceria para PD&I com intermediação de Fundação de Apoio, as cláusulas abaixo são facultativas.</p>
 
 <p style="margin-left: 16px !important"><b style="margin-right: 8px !important">12.4.1</b> {!! $contrato->clausula_edit_12_4_1 !!}</p>
 <p style="margin-left: 16px !important"><b style="margin-right: 8px !important">12.4.2</b> {!! $contrato->clausula_edit_12_4_2 !!}</p>
@@ -283,8 +269,6 @@
 
 <!------clausula-15--->
 <h5 class="font-weight-bold">15. CLÁUSULA DÉCIMA QUINTA - DA PUBLICIDADE</h5>
-
-<p id="nota-explicativa" style="text-transform: lowercase"><b style="text-transform: uppercase !important">NOTA EXPLICATIVA:</b> DEPENDENDO SE O ACORDO É, RESPECTIVAMENTE, COM TRANSFERÊNCIA DIRETA DE RECURSOS OU POR INTERMÉDIO DE FUNDAÇÃO DE APOIO.</p>
 
 <p><b>14.1</b> A publicação do extrato do presente Acordo de Parceria para PD&I no Diário Oficial da União (DOU) é condição indispensável para sua eficácia e será providenciada pela ICT no prazo de até 20 (vinte) dias da sua assinatura.</p>
 
