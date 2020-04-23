@@ -122,8 +122,12 @@
     <div class="notice notice-info notice-lg">
         <span class="h4 font-weight-bold text-dark text-uppercase">Acordo de Cooperação <span class="text-dark">sem repasse</span></span>
         <hr>
-        <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
-        
+        <p class="subtitle pt-2 mr-auto text-justify" style="font-size: 14px;">
+        ESTA MINUTA DEVE SER UTILIZADA PARA ACORDOS DE PARCERIA PARA PD&I QUANDO NÃO HOUVER REPASSE DE RECURSOS ENTRE OS PARCEIROS. 
+        <!-- Este tipo de Acordo é apropriado para ser utilizado na construção de ambientes inovadores (como parques tecnológico, co-working, 
+        entre outras possibilidades), servindo como instrumento que estabelece as regras de interação entre os parceiros. Pode tanto ser usado 
+        em relações bilaterais como multilaterais. -->
+        </p>
         <div class="container-button text-right">
           <a href="{{route('contrato_sr.index')}}" class="btn btn-success btn-lg btn-icon-split">
             <span class="icon text-white-50">
@@ -138,7 +142,11 @@
     <div class="notice notice-success notice-lg">
         <span class="h4 font-weight-bold text-dark text-uppercase">Acordo de Cooperação <span class="text-dark">com repasse</span></span>
         <hr>
-        <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+        <p class="subtitle pt-2 mr-auto text-justify" style="font-size: 14px;">
+        ESTA MINUTA DEVE SER UTILIZADA PARA ACORDOS DE PARCERIA PARA PD&I QUANDO HOUVER REPASSE DE RECURSOS PRIVADOS PARA O PROJETO DE PESQUISA. 
+       <!--  Este repasse tanto pode ser feito diretamente à ICT ou Agência de Fomento, com ou sem por intermédio de Fundação de Apoio (Lei nº 8.958/94) – nas cláusulas abaixo serão contempladas estas duas hipóteses (cabe a cada entidade verificar qual é a sua situação e adequar o instrumento jurídico. 
+        Base Legal: §§ 6º e 7º do Artigo 35 do Decreto nº 9.283/18. -->
+        </p>
         <div class="container-button text-right">
           <a href="{{route('contrato_cr.index')}}" class="btn btn-success btn-lg btn-icon-split">
             <span class="icon text-white-50">

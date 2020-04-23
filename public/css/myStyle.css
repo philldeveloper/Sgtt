@@ -66,8 +66,24 @@ html, body {
 
 .content {
     text-align: center;
+    width: 100%;
+}
+
+.content img {
+    min-width: 300px;
     width: 40%;
 }
+
+.content .subtitle{
+    width: 70%;
+    min-width: 320px;
+}
+
+@media screen and (max-width: 600px) {
+    .content .text-secondary{
+        font-size: 20px;
+    }
+  }
 
 .title {
     font-size: 84px;

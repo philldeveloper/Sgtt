@@ -32,18 +32,28 @@
 @include('pesquisador.modals.modal_12')
 @include('pesquisador.modals.modal_13')
 @include('pesquisador.modals.modal_14')
-@include('pesquisador.modals.modal_15')
+@include('pesquisador.modals.modal_16')
+@include('pesquisador.modals.modal_17')
+@include('pesquisador.modals.modal_18')
+@include('pesquisador.modals.modal_19')
+@include('pesquisador.modals.modalAtribuicoes')
 @include('pesquisador.modals.modalCoordenador')
 @include('pesquisador.modals.modalCoordenadorPrivado')
-@include('pesquisador.modals.modalFundApoio')
-@include('pesquisador.modals.modal_clausula_4')
-@include('pesquisador.modals.modalRecursoPrivado')
-@include('pesquisador.modals.modalVerificarMeta')
 @include('pesquisador.modals.modalPropriedadeIntelectual')
 @include('pesquisador.modals.modalConfidencial')
-@include('pesquisador.modals.modalVigencia')
-@include('pesquisador.modals.modalPDI')
-@include('pesquisador.modals.modalPublicidade')
+@include('pesquisador.modals.ModalAtoNomeacao')
+@include('pesquisador.modals.modal_clausula_2_3')
+@include('pesquisador.modals.modal_clausula_2_4')
+@include('pesquisador.modals.modal_clausula_2_5')
+@include('pesquisador.modals.modal_clausula_2_6')
+@include('pesquisador.modals.modal_clausula_5_2')
+@include('pesquisador.modals.modal_clausula_5_3')
+@include('pesquisador.modals.modal_clausula_5_4')
+@include('pesquisador.modals.modal_clausula_7_all')
+@include('pesquisador.modals.modal_clausula_8_all')
+@include('pesquisador.modals.modal_clausula_10_1')
+@include('pesquisador.modals.modal_clausula_default')
+@include('pesquisador.modals.modal_anti_corrupcao')
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
@@ -226,6 +236,7 @@
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">Ato de Nomeação</label>
+                <a href="#" data-toggle="modal" data-target="#atoNomeacao"><i class="fas fa-fw fa-question-circle float-right"></i></a>
                 <input type="text" class="form-control text-black font-weight-bold"  id="ato_nomeacao" name="ato_nomeacao" value="{{$contratos_cr->ato_nomeacao}}">
               </div>
               <div class="form-group col-md-3">
@@ -470,19 +481,19 @@
                 Edite a(s) cláusula(s) abaixo (se julgar necessário):
               </div>
               <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
                 <textarea class="form-control font-weight-bold" name="clausula_edit_2_3" rows="3">{{$contratos_cr->clausula_edit_2_3}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.4</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.4</a>
                 <textarea class="form-control font-weight-bold" name="clausula_edit_2_4" rows="3">{{$contratos_cr->clausula_edit_2_4}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.5</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.5</a>
                 <textarea class="form-control font-weight-bold" name="clausula_edit_2_5" rows="3">{{$contratos_cr->clausula_edit_2_5}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.6</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.6</a>
                 <textarea class="form-control font-weight-bold" name="clausula_edit_2_6" rows="3">{{$contratos_cr->clausula_edit_2_6}}</textarea>
               </div>
                 

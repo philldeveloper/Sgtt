@@ -17,11 +17,11 @@
 
             <div class="content">
                 <div class="title mb-3">
-                    <img src="{{ asset('assets/new_sgtt.svg') }}" alt="sgtt" width="80%" style="opacity: 95%">
+                    <img src="{{ asset('assets/new_sgtt.svg') }}" alt="sgtt" style="opacity: 95%">
                 </div>
 
                 <div class="subtitle mb-5 py-4 h1">
-                    <p class="text-secondary">Sistema de Gerenciamento e Transferência de Tecnologia</p>
+                    <p class="text-secondary">Sistema para Gestão de Processos de Acordos e Contratos de Transferência de Tecnologia</p>
                 </div>
 
                 @if (Auth::check())

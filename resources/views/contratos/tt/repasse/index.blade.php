@@ -15,7 +15,6 @@
   }
 </style>
 @section('content')
-
 @include('pesquisador.modals.modal_1')
 @include('pesquisador.modals.modal_2')
 @include('pesquisador.modals.modal_3')
@@ -30,18 +29,28 @@
 @include('pesquisador.modals.modal_12')
 @include('pesquisador.modals.modal_13')
 @include('pesquisador.modals.modal_14')
-@include('pesquisador.modals.modal_15')
+@include('pesquisador.modals.modal_16')
+@include('pesquisador.modals.modal_17')
+@include('pesquisador.modals.modal_18')
+@include('pesquisador.modals.modal_19')
+@include('pesquisador.modals.modalAtribuicoes')
 @include('pesquisador.modals.modalCoordenador')
 @include('pesquisador.modals.modalCoordenadorPrivado')
-@include('pesquisador.modals.modalFundApoio')
-@include('pesquisador.modals.modal_clausula_4')
-@include('pesquisador.modals.modalRecursoPrivado')
-@include('pesquisador.modals.modalVerificarMeta')
 @include('pesquisador.modals.modalPropriedadeIntelectual')
 @include('pesquisador.modals.modalConfidencial')
-@include('pesquisador.modals.modalVigencia')
-@include('pesquisador.modals.modalPDI')
-@include('pesquisador.modals.modalPublicidade')
+@include('pesquisador.modals.ModalAtoNomeacao')
+@include('pesquisador.modals.modal_clausula_2_3')
+@include('pesquisador.modals.modal_clausula_2_4')
+@include('pesquisador.modals.modal_clausula_2_5')
+@include('pesquisador.modals.modal_clausula_2_6')
+@include('pesquisador.modals.modal_clausula_5_2')
+@include('pesquisador.modals.modal_clausula_5_3')
+@include('pesquisador.modals.modal_clausula_5_4')
+@include('pesquisador.modals.modal_clausula_7_all')
+@include('pesquisador.modals.modal_clausula_8_all')
+@include('pesquisador.modals.modal_clausula_10_1')
+@include('pesquisador.modals.modal_clausula_default')
+@include('pesquisador.modals.modal_anti_corrupcao')
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
@@ -238,6 +247,7 @@
             </div>
             <div class="form-group col-md-3">
               <label for="inputPassword4" class="font-weight-bold text-black">Ato de Nomeação</label>
+            <a href="#" data-toggle="modal" data-target="#atoNomeacao"><i class="fas fa-fw fa-question-circle float-right"></i></a>
               <input type="text" class="form-control text-black font-weight-bold"  id="ato_nomeacao" name="ato_nomeacao" placeholder="Ato de Nomeação">
             </div>
             <div class="form-group col-md-3">
@@ -434,19 +444,19 @@
             Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
           <div class="col-md-12 mb-3">
-          <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
             <textarea class="form-control font-weight-bold" name="clausula_edit_2_3" rows="3">2.3 Na execução do Plano de Trabalho, a atuação dos PARCEIROS dar-se-á sempre de forma associada. Para tanto, os PARCEIROS indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-          <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.4</a>
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.4</a>
             <textarea class="form-control font-weight-bold" name="clausula_edit_2_4" rows="3">2.4 Recaem sobre o Coordenador do Projeto, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-          <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.5</a>
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.5</a>
             <textarea class="form-control font-weight-bold" name="clausula_edit_2_5" rows="3">2.5 Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-          <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.6</a>
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.6</a>
             <textarea class="form-control font-weight-bold" name="clausula_edit_2_6" rows="3">2.6 A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo.</textarea>
           </div>
         </div><!--text-justify-->
@@ -593,7 +603,7 @@
           </div>
 
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 3.3</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 3.3</a>
               <textarea class="form-control" name="clausula_edit_3_3" rows="4" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente Acordo de Parceria para PD&I ou de publicações a ele referentes.</textarea>
           </div>
                 
@@ -652,27 +662,27 @@
           </div>
 
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.8</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.8</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_4_8" rows="4">A transposição, o remanejamento ou a transferência de recursos de categoria de programação para outra poderão ocorrer com o objetivo de conferir eficácia e eficiência às atividades de ciência, tecnologia e inovação.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.8.1</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.8.1</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_4_8_1" rows="4">No âmbito deste projeto de pesquisa, desenvolvimento e inovação, o coordenador geral indicará a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.8.2</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.8.2</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_4_8_2" rows="4">Por ocasião da ocorrência de quaisquer das ações previstas no item anterior, a ICT poderá alterar a distribuição inicialmente acordada, promover modificações internas ao seu orçamento, alterar rubricas ou itens de despesas, desde que não modifique o valor total do projeto.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.9</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.9</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_4_9" rows="4">São dispensáveis de formalização por meio de Termo Aditivo as alterações previstas no item 4.8 que importem em transposição, remanejamento ou transferência de recursos de categoria de programação para outra, com o objetivo de conferir eficácia e eficiência às atividades previstas no Plano de Trabalho, desde que não haja alteração do valor total do projeto.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.9.1</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.9.1</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_4_9_1" rows="4">Alterações na distribuição entre grupos de natureza de despesa e alterações de rubricas ou itens de despesas, necessárias para efetiva execução do, ficarão dispensadas de prévia anuência d PARCEIRO PRIVADO, hipótese em que o coordenador do projeto solicitará a alteração à ICT, devendo constar as razões que ensejaram as alterações, indicando a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.</textarea>
           </div>
           <div class="col-md-12 mb-5">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.10</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.10</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_4_10" rows="4">A ICT/AGÊNCIA DE FOMENTO não responderá pela suplementação de recursos para fazer frente a despesas decorrentes de quaisquer fatores externos ao seu controle, como flutuação cambial e alterações nos valores de taxas escolares.</textarea>
           </div>
 
@@ -792,55 +802,55 @@
           Edite a(s) cláusula(s) abaixo (se julgar necessário):
         </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.1</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.1</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_1" rows="4">Todos os dados, técnicas, tecnologia, know-how, marcas, patentes e quaisquer outros bens ou direitos de propriedade intelectual/industrial de um parceiro que este venha a utilizar para execução do Projeto continuarão a ser de sua propriedade exclusiva, não podendo o outro parceiro cedê-los, transferi-los, aliená-los, divulgá-los ou empregá-los em quaisquer outros projetos ou sob qualquer outra forma sem o prévio consentimento escrito do seu proprietário.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.2</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.2</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_2" rows="4">Todo desenvolvimento tecnológico passível de proteção intelectual, em qualquer modalidade, proveniente da execução do presente Acordo de Parceria, deverá ter a sua propriedade compartilhada entre as duas convenentes, na mesma proporção em que cada instituição contribuiu com recursos humanos, além do conhecimento pré-existente aplicado, conforme previsto no art. 9º, § 3°, da lei nº 10.973/2004.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.3</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.3</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_3" rows="4">divisão da titularidade sobre a propriedade intelectual prevista na cláusula anterior será definida por meio de instrumento próprio, respeitando-se o percentual de x% (x por cento) para o ICT/AGÊNCIA DE FOMENTO. Todo desenvolvimento tecnológico passível de proteção intelectual, em qualquer modalidade, proveniente da execução do presente Acordo de Parceria, deverá ter a sua propriedade compartilhada entre as parceiras, por meio de instrumento próprio, respeitando-se o percentual de x% (x por cento) para o ICT/AGÊNCIA DE FOMENTO.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.4</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.4</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_4" rows="4">O instrumento previsto na subcláusula 6.3 deverá observar os requisitos legais e formais necessários para sua celebração e averbação junto aos órgãos competentes.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.5</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.5</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_5" rows="4">Eventuais impedimentos de um dos parceiros não prejudicará a titularidade e/ou a exploração dos direitos da Propriedade Intelectual pelos demais.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.6</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.6</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_6" rows="4">As Partes devem assegurar, na medida de suas respectivas responsabilidades, que os projetos propostos e que a alocação dos recursos tecnológicos correspondentes não infrinjam direitos autorais, patentes ou outros direitos intelectuais, assim como direitos de terceiros.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.7</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.7</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_7" rows="4">Na hipótese de eventual infração de qualquer direito de propriedade intelectual relacionada às tecnologias resultantes, os parceiros concordam que as medidas judiciais cabíveis visando coibir a infração do respectivo direito podem ser adotadas em conjunto ou separadamente.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.8</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.8</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_8" rows="4">Os depósitos de pedidos de proteção de propriedade intelectual devem ser iniciados necessariamente junto ao Instituto Nacional de Propriedade Industrial - INPI e registrados no sistema de acompanhamento d o  ICT/AGÊNCIA DE FOMENTO.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.9</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.9</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_9" rows="4">Caberá ao PARCEIRO PRIVADO, com exclusividade, a responsabilidade de preparar, arquivar, processar e manter pedidos de patente no Brasil e em ouros países.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.10</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.10</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_10" rows="4">As decisões relacionadas à preparação, processamento e manutenção de pedido de patente das tecnologias resultantes deste instrumento, no Brasil e em outros países, devem ser tomadas em conjunto pelos partícipes ora acordantes.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.11</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.11</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_11" rows="4">Na hipótese de eventual infração de qualquer patente relacionada às tecnologias resultantes, os partícipes concordam que as medidas judiciais cabíveis visando a coibir a infração da respectiva patente podem ser adotadas pelos partícipes, em conjunto ou separadamente. Tanto no que se refere à proteção da propriedade intelectual quanto às medidas judiciais, os partícipes concordam que as despesas deverão ser suportadas de acordo com os percentuais definidos na exploração comercial das tecnologias.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.12</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.12</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_12" rows="4">A FUNDAÇÃO DE APOIO não terá direitos sobre os resultados obtidos, passíveis ou não de proteção legal.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.13</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.13</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_13" rows="4">O ICT/AGÊNCIA DE FOMENTO poderá outorgar poderes ao PARCEIRO PRIVADO para praticar todo e qualquer ato necessário para o depósito, acompanhamento e manutenção de pedido de patente das tecnologias resultantes do presente instrumento, no Brasil e em outros países. </textarea>
           </div>
           
@@ -919,15 +929,15 @@
           </div>
 
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.6</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.6</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_8_6" rows="3">As obrigações de sigilo em relação às INFORMAÇÕES CONFIDENCIAIS serão mantidas durante o período de vigência deste Acordo e pelo prazo de 5 (cinco) anos após sua extinção.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.7</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.7</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_8_7" rows="3">Para efeito dessa cláusula, todas as informações referentes ao “processo/serviço/projeto........” serão consideradas como INFORMAÇÃO CONFIDENCIAL, retroagindo às informações obtidas antes da assinatura do acordo.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.8</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.8</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_8_8" rows="3">Para efeito dessa cláusula, a classificação das informações como confidenciais será de responsabilidade de seu titular, devendo indicar os conhecimentos ou informações classificáveis como CONFIDENCIAIS por qualquer meio.</textarea>
           </div>
         </div><!--text-justify-->
@@ -947,19 +957,19 @@
           </div>
 
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.1</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.1</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_9_1" rows="7">Os PARCEIROS deverão tomar todas as medidas necessárias, observados os princípios de civilidade e legalidade, e de acordo com as boas práticas empresariais para cumprir e assegurar que  (i) seus conselheiros, diretores, empregados qualquer pessoa agindo em seu nome, inclusive prepostos e subcontratados, quando houver (todos doravante referidos como “Partes Relacionadas” e, cada uma delas, como “uma Parte Relacionada”) obedecerão a todas as leis aplicáveis, incluindo àquelas  relativas ao combate à corrupção, suborno e lavagem de dinheiro, bem como àquelas  relativas a sanções econômicas, vigentes nas jurisdições em que os PARCEIROS estão constituídos e na jurisdição em que o Acordo de Parceria será cumprido (se diferentes), para impedir qualquer atividade fraudulenta por si ou por uma Parte Relacionada com relação ao cumprimento deste Acordo de Parceria.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.2</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.2</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_9_2" rows="3">Um PARCEIRO deverá notificar imediatamente o outro sobre eventual suspeita de qualquer fraude tenha ocorrido, esteja ocorrendo, ou provavelmente ocorrerá, para que sejam tomadas as medidas necessárias para apurá-las.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.3</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.3</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_9_3" rows="3">Os PARCEIROS obrigam-se a observar rigidamente as condições contidas nos itens abaixo, sob pena de imediata e justificada rescisão do acordo. </textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.4</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.4</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_9_4" rows="3">Os PARCEIROS declaram-se cientes de que seus Departamentos Jurídicos e/ou advogados contratados estão autorizados, em caso de práticas que atentem contra os preceitos dessa cláusula, a solicitar a imediata abertura dos procedimentos criminais, cíveis e administrativos cabíveis à cada hipótese:</textarea>
           </div>
           <div class="col-md-12 mb-3">
@@ -1038,11 +1048,11 @@
             Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 12.4.1</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 12.4.1</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_12_4_1" rows="6">Alterações na distribuição entre grupos de natureza de despesa e alterações de rubricas ou itens de despesas, que não ultrapassarem 20% (vinte por cento) do valor total do projeto, ficarão dispensadas de prévia anuência da concedente, hipótese em o interessado comunicará aos PARCEIROS, devendo constar as razões que ensejaram as alterações, indicando a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 12.4.2</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 12.4.2</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_12_4_2" rows="3">Alterações que superarem o percentual acima indicado dependerão de anuência prévia e expressa da concedente, que será formalizado por meio de ofício, nos termos da Cláusula 4.8.</textarea>
           </div>
 
@@ -1061,7 +1071,7 @@
             Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 13.2</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 13.2</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_13_2" rows="3">O pesquisador deverá encaminhar ao Setor responsável ou COMISSÃO DA ICT ou à FUNDAÇÃO DE APOIO: </textarea>
           </div>
           <div class="col-md-12 mb-3">
@@ -1098,23 +1108,23 @@
             Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
           <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.2</a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.2</a>
             <textarea class="form-control font-weight-bold" name="clausula_edit_14_2" rows="5">Constituem motivos para rescisão de pleno direito o inadimplemento de quaisquer das cláusulas pactuadas neste Acordo, o descumprimento das normas estabelecidas na legislação vigente ou a superveniência de norma legal ou fato que tome material ou formalmente inexequível o Acordo de Parceria para PD&I, imputando-se aos PARCEIROS as responsabilidades pelas obrigações até então assumidas, devendo o PARCEIRO que se julgar prejudicado notificar o parceiro para que apresente esclarecimentos no prazo de 15 (quinze) dias corridos.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.2.1</a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.2.1</a>
             <textarea class="form-control font-weight-bold" name="clausula_edit_14_2_1" rows="3">Prestados os esclarecimentos, os PARCEIROS deverão, por mútuo consenso, decidir pela rescisão ou manutenção do Acordo.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.2.2</a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.2.2</a>
             <textarea class="form-control font-weight-bold" name="clausula_edit_14_2_2" rows="3">Decorrido o prazo para esclarecimentos, caso não haja resposta, o Acordo será rescindido de pleno direito, independentemente de notificações ou interpelações, judiciais ou extrajudiciais.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.3</a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.3</a>
             <textarea class="form-control font-weight-bold" name="clausula_edit_14_3" rows="3">Acordo de Parceria será rescindido em caso de decretação de falência, liquidação extrajudicial ou judicial, ou insolvência de qualquer dos PARCEIROS, ou, ainda, no caso de  10/11 propositura de quaisquer medidas ou procedimentos contra qualquer dos PARCEIROS para sua liquidação e/ou dissolução;</textarea>
           </div>
           <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.4</a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.4</a>
             <textarea class="form-control font-weight-bold" name="clausula_edit_14_4" rows="3">O presente Acordo será extinto com o cumprimento do objeto ou com o decurso de prazo de vigência.</textarea>
           </div>
         </div>
@@ -1144,11 +1154,11 @@
             Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
           <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 16.1</a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 16.1</a>
             <textarea class="form-control font-weight-bold" name="clausula_edit_16_1" rows="3"> 16.1.Após execução integral do objeto desse acordo, os bens patrimoniais, materiais permanentes ou equipamentos adquiridos serão revertidos à ICT, diretamente ao campus envolvido, por meio de Termo de Doação.(CLAÚSULA PARA AS ICTs)</textarea>
           </div>
           <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 16.2</a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 16.2</a>
             <textarea class="form-control font-weight-bold" name="clausula_edit_16_2" rows="3">16.2. Os bens gerados ou adquiridos no âmbito dos projetos de estímulo à ciência, à tecnologia e à inovação deste Acordo de Parceria serão incorporados, desde sua aquisição, ao patrimônio da ICT a que o pesquisador for vinculado. (CLÁUSULA PARA AS AGÊNCIAS DE FOMENTO)</textarea>
           </div>
         </div>

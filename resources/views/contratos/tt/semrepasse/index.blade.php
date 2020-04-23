@@ -954,6 +954,7 @@
                         pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no
                         respectivo endereço do PARCEIRO notificado, conforme as seguintes informações:<br>
           <span class="font-weight-bold">PARCEIRO(S) PÚBLICO(S):</span> 
+          <a href="#" data-toggle="modal" data-target="#dados_instituicoes"><i class="fas fa-fw fa-question-circle m-2"></i></a>
           <div class="form-row">
             <div class="form-group col-md-3">
               <label for="endereco" class="font-weight-bold text-black">Endereço</label>
@@ -990,6 +991,7 @@
           </div><!-- /.row-->
           <!-- Pariceiro privado -->
           <span class="font-weight-bold ">PARCEIRO(S) PRIVADO(S):</span> 
+          <a href="#" data-toggle="modal" data-target="#dados_instituicoes"><i class="fas fa-fw fa-question-circle m-2"></i></a>
           <div class="form-row mt-3">
             <div class="form-group col-md-3">
               <label for="endereco" class="font-weight-bold text-black">Endereço</label>
@@ -1054,19 +1056,21 @@
           <p><b>17.1.</b>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de <input class="myform-control text-black"  type="text" name="estado_foro" placeholder="Estado">, cidade de <input  class="myform-control" type="text" name="cidade_foro" placeholder="Cidade">, para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109 da Constituição Federal. E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.</p>
           <br>
           <div class="form-row mt-3">
-            <div class="form-group col-md-3">
-              <label for="cidade_uf_dia_foro" class="font-weight-bold text-black">Cidade, UF, Dia do Mês e Ano</label>
+            <div class="form-group col-md-6">
+              
+              <label for="cidade_uf_dia_foro" class="font-weight-bold text-black">Cidade/UF, dia de mês de ano.</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="cidade_uf_dia_foro"
                 id="cidade_uf_dia_foro" 
-                placeholder="Cidade, UF, Dia do Mês e Ano">
+                placeholder="Cidade/UF, dia de mês de ano">
             </div>
           </div><!-- /.row-->
 
           <div class="form-row mt-3">
             <div class="form-group col-md-3">
               <label for="ict_inst_foro" class="font-weight-bold text-black">ICT:</label>
+              <a href="#" data-toggle="modal" data-target="#ict"><i class="fas fa-fw fa-question-circle m-2"></i></a>
               <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="ict_inst_foro" 
@@ -1093,6 +1097,7 @@
           <div class="form-row mt-3">
             <div class="form-group col-md-3">
               <label for="nome_inst_privado_foro" class="font-weight-bold text-black">Parceiro Privado:</label>
+              <a href="#" data-toggle="modal" data-target="#parceiro"><i class="fas fa-fw fa-question-circle m-2"></i></a>
               <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="nome_inst_privado_foro" 
