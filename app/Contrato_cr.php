@@ -147,7 +147,7 @@ class Contrato_cr extends Model
         
         'estado_foro', //clausula_19
         'cidade_foro', //clausula_19
-        'cidade_uf_dia_foro', //clausula_19
+        'data_foro', //clausula_19
         'ict_inst_foro', //clausula_19
         'nome_rep_foro', //clausula_19
         'cargo_rep_foro', //clausula_19

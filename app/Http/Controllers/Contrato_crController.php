@@ -314,7 +314,7 @@ class Contrato_crController extends Controller
             'prazo_vigencia' => 'required',
             'estado_foro' => 'required',
             'cidade_foro' => 'required',
-            'cidade_uf_dia_foro' => 'required',
+            'data_foro' => 'required',
             'ict_inst_foro' => 'required',
             'nome_rep_foro' => 'required',
             'cargo_rep_foro' => 'required',

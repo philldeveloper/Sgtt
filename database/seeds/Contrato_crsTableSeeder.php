@@ -137,7 +137,7 @@ class Contrato_crsTableSeeder extends Seeder
 
 		    'estado_foro' => 'Lorem Ipsum',
 		    'cidade_foro' => 'Lorem Ipsum',
-		    'cidade_uf_dia_foro' => 'Lorem Ipsum',
+		    'data_foro' => '23/04/2020',
 		    'ict_inst_foro' => 'Lorem Ipsum',
 		    'nome_rep_foro' => 'Lorem Ipsum',
 		    'cargo_rep_foro' => 'Lorem Ipsum',
