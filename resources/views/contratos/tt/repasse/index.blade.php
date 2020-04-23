@@ -438,19 +438,19 @@
           </div>
           <div class="col-md-12 mb-3">
           <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
-            <textarea class="form-control" name="clausula_edit_2_3" rows="3">2.3 Na execução do Plano de Trabalho, a atuação dos PARCEIROS dar-se-á sempre de forma associada. Para tanto, os PARCEIROS indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.</textarea>
+            <textarea class="form-control" name="clausula_edit_2_3" rows="3">Na execução do Plano de Trabalho, a atuação dos PARCEIROS dar-se-á sempre de forma associada. Para tanto, os PARCEIROS indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.</textarea>
           </div>
           <div class="col-md-12 mb-3">
           <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.4</a>
-            <textarea class="form-control" name="clausula_edit_2_4" rows="3">2.4 Recaem sobre o Coordenador do Projeto, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.</textarea>
+            <textarea class="form-control" name="clausula_edit_2_4" rows="3">Recaem sobre o Coordenador do Projeto, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.</textarea>
           </div>
           <div class="col-md-12 mb-3">
           <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.5</a>
-            <textarea class="form-control" name="clausula_edit_2_5" rows="3">2.5 Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.</textarea>
+            <textarea class="form-control" name="clausula_edit_2_5" rows="3">Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.</textarea>
           </div>
           <div class="col-md-12 mb-3">
           <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.6</a>
-            <textarea class="form-control" name="clausula_edit_2_6" rows="3">2.6 A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo.</textarea>
+            <textarea class="form-control" name="clausula_edit_2_6" rows="3">A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo.</textarea>
           </div>
         </div><!--text-justify-->
       </div><!--container-fluid-->       
@@ -531,59 +531,73 @@
           <div id="clausula_apoio_wrapper" style="display: none;">
             <p class="ml-2 roboto-font"><b>3.1.3.  Do(a): <input type="text" class="myform-control" name="nome_inst_fundacao" onchange="handleFundacaoNameApoio(event)" id="nome_inst_fundacao" placeholder="Instituição"> <a href="#" data-toggle="modal" data-target="#modalFundApoio"><i class="fas fa-fw fa-question-circle"></i></a>:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p><hr>
             <div class="col-md-12 mb-3">
-              <textarea  name="clausula_edit_3a" class="form-control text-justify" style="background-color: #F6FAFA; resize: none !important;"  id="" cols="30" rows="3">A) Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD& I;
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">A)</a>
+              <textarea  name="clausula_edit_3a" class="form-control text-justify" style="background-color: #F6FAFA; resize: none !important;"  id="" cols="30" rows="3">Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD& I;
               </textarea>
             </div>
             <div class="col-md-12 mb-3">
-              <textarea  name="clausula_edit_3b" class="form-control text-justify" style="background-color: #F6FAFA; resize: none !important;" id="" cols="30" rows="3">B) Prestar à ICT informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">B)</a>
+              <textarea  name="clausula_edit_3b" class="form-control text-justify" style="background-color: #F6FAFA; resize: none !important;" id="" cols="30" rows="3">Prestar à ICT informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;
               </textarea>
             </div>
             <div class="col-md-12 mb-3">
-              <textarea  name="clausula_edit_3c" class="form-control text-justify" style="background-color: #F6FAFA; resize: none !important;" id="" cols="30" rows="3">C) Indicar coordenador, no prazo de 15 (quinze) dias úteis, contados da assinatura deste Acordo, para acompanhar a sua execução;
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">C)</a>
+              <textarea  name="clausula_edit_3c" class="form-control text-justify" style="background-color: #F6FAFA; resize: none !important;" id="" cols="30" rows="3">Indicar coordenador, no prazo de 15 (quinze) dias úteis, contados da assinatura deste Acordo, para acompanhar a sua execução;
               </textarea>
             </div>
             <div class="col-md-12 mb-3">
-              <textarea class="form-control text-justify" name="clausula_edit_3d" rows="5" style="background-color: #F6FAFA; resize: none !important;">D) Executar a gestão administrativa e financeira dos recursos transferidos para a execução do objeto deste Acordo, em conta específica.;&#13;&#13;Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação;&#13;&#13;
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">D)</a>
+              <textarea class="form-control text-justify" name="clausula_edit_3d" rows="5" style="background-color: #F6FAFA; resize: none !important;">Executar a gestão administrativa e financeira dos recursos transferidos para a execução do objeto deste Acordo, em conta específica.;&#13;&#13;Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação;&#13;&#13;
               </textarea>
             </div>
             <div class="col-md-12 mb-3">
-              <textarea class="form-control text-justify" name="clausula_edit_3e" rows="5" style="background-color: #F6FAFA; resize: none !important;">E) Informar previamente ao PARCEIRO PRIVADO os dados bancários e cadastrais necessários à realização dos aportes financeiros, cuidando para que a conta corrente a qual serão destinados os recursos seja específica para o projeto executado em conformidade com este Acordo de Parceria;
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">E)</a>
+              <textarea class="form-control text-justify" name="clausula_edit_3e" rows="5" style="background-color: #F6FAFA; resize: none !important;">Informar previamente ao PARCEIRO PRIVADO os dados bancários e cadastrais necessários à realização dos aportes financeiros, cuidando para que a conta corrente a qual serão destinados os recursos seja específica para o projeto executado em conformidade com este Acordo de Parceria;
               </textarea>
             </div>
             <div class="col-md-12 mb-3">
-              <textarea class="form-control text-justify" name="clausula_edit_3f" rows="5" style="background-color: #F6FAFA; resize: none !important;">F) Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, inclusive os provenientes das receitas obtidas nas aplicações financeiras realizadas, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação; ou d)Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação; OU F) Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação;
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">F)</a>
+              <textarea class="form-control text-justify" name="clausula_edit_3f" rows="5" style="background-color: #F6FAFA; resize: none !important;">Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, inclusive os provenientes das receitas obtidas nas aplicações financeiras realizadas, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação; ou d)Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação; OU F) Restituir ao PARCEIRO PRIVADO os saldos financeiros remanescentes, pertinentes ao seu respectivo aporte, não utilizadas no objeto pactuado, no prazo máximo de 60 (sessenta), dias contados da data do término da vigência ou da denúncia deste Acordo de Parceria, sendo facultado ao PARCEIRO PRIVADO a doação dos valores ao PARCEIRO PÚBLICO ou destinar estes valores para outro projeto de pesquisa, desenvolvimento e inovação;
               </textarea>
             </div>
             <div class="col-md-12 mb-3">
-              <textarea class="form-control text-justify" name="clausula_edit_3g" rows="5" style="background-color: #F6FAFA; resize: none !important;">G) Responsabilizar-se pelo recolhimento de impostos, taxas, contribuições e outros encargos porventura devidos em decorrência das atividades vinculadas a este Acordo de Parceria;
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">G)</a>
+              <textarea class="form-control text-justify" name="clausula_edit_3g" rows="5" style="background-color: #F6FAFA; resize: none !important;">Responsabilizar-se pelo recolhimento de impostos, taxas, contribuições e outros encargos porventura devidos em decorrência das atividades vinculadas a este Acordo de Parceria;
               </textarea>
             </div>
             <div class="col-md-12 mb-3">
-              <textarea class="form-control text-justify" name="clausula_edit_3h" rows="5" style="background-color: #F6FAFA; resize: none !important;">H) Manter, durante toda a execução do Acordo de Parceria, todas as condições de habilitação e de qualificação exigidas para a sua celebração, responsabilizando-se pela boa e integral execução das atividades ora descritas;
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">H)</a>
+              <textarea class="form-control text-justify" name="clausula_edit_3h" rows="5" style="background-color: #F6FAFA; resize: none !important;">Manter, durante toda a execução do Acordo de Parceria, todas as condições de habilitação e de qualificação exigidas para a sua celebração, responsabilizando-se pela boa e integral execução das atividades ora descritas;
               </textarea>
             </div>
             <div class="col-md-12 mb-3">
-              <textarea class="form-control text-justify" name="clausula_edit_3i" rows="5" style="background-color: #F6FAFA; resize: none !important;">I)  Nas compras de bens e nas contratações de serviços, observar as regras do Decreto nº 8.241/2014;
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">I)</a>
+              <textarea class="form-control text-justify" name="clausula_edit_3i" rows="5" style="background-color: #F6FAFA; resize: none !important;">Nas compras de bens e nas contratações de serviços, observar as regras do Decreto nº 8.241/2014;
               </textarea>
             </div>
             <div class="col-md-12 mb-3">
-              <textarea class="form-control text-justify" name="clausula_edit_3j" rows="5" style="background-color: #F6FAFA; resize: none !important;">J) Observar os princípios da legalidade, eficiência, moralidade, publicidade, economicidade, legalidade e impessoalidade, nas aquisições e contratações realizadas, bem como no desenvolvimento de todas as suas ações no âmbito deste Acordo de Parceria;
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">J)</a>
+              <textarea class="form-control text-justify" name="clausula_edit_3j" rows="5" style="background-color: #F6FAFA; resize: none !important;">Observar os princípios da legalidade, eficiência, moralidade, publicidade, economicidade, legalidade e impessoalidade, nas aquisições e contratações realizadas, bem como no desenvolvimento de todas as suas ações no âmbito deste Acordo de Parceria;
               </textarea>
             </div>
             <div class="col-md-12 mb-3">
-              <textarea class="form-control text-justify" name="clausula_edit_3k" rows="5" style="background-color: #F6FAFA; resize: none !important;">K) Manter registros contábeis, fiscais e financeiros completos e fidedignos relativamente à aplicação dos aportes recebidos do PARCEIRO PRIVADO por este Acordo de Parceria, fazendo-o em estrita observância às normas tributário-fiscais em vigor e, especialmente, à legislação que instituiu contrapartidas em atividades de PD&I para a concessão de incentivos ou de benefícios dos quais o PARCEIRO PRIVADO seja ou se torne beneficiária;
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">K)</a>
+              <textarea class="form-control text-justify" name="clausula_edit_3k" rows="5" style="background-color: #F6FAFA; resize: none !important;">Manter registros contábeis, fiscais e financeiros completos e fidedignos relativamente à aplicação dos aportes recebidos do PARCEIRO PRIVADO por este Acordo de Parceria, fazendo-o em estrita observância às normas tributário-fiscais em vigor e, especialmente, à legislação que instituiu contrapartidas em atividades de PD&I para a concessão de incentivos ou de benefícios dos quais o PARCEIRO PRIVADO seja ou se torne beneficiária;
               </textarea>
             </div>
             <div class="col-md-12 mb-3">
-              <textarea class="form-control text-justify" name="clausula_edit_3l" rows="5" style="background-color: #F6FAFA; resize: none !important;">L) Manter, com os recursos do projeto e sob sua coordenação direta, pessoal de pesquisa e desenvolvimento, através de contratação pela CLT, bolsa ou estágio de pesquisa e desenvolvimento, disponível para a execução das atividades relativas a este Acordo de Parceria e ao Plano de Trabalho, em número e com conhecimento técnico-acadêmico suficientes;
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">L)</a>
+              <textarea class="form-control text-justify" name="clausula_edit_3l" rows="5" style="background-color: #F6FAFA; resize: none !important;">Manter, com os recursos do projeto e sob sua coordenação direta, pessoal de pesquisa e desenvolvimento, através de contratação pela CLT, bolsa ou estágio de pesquisa e desenvolvimento, disponível para a execução das atividades relativas a este Acordo de Parceria e ao Plano de Trabalho, em número e com conhecimento técnico-acadêmico suficientes;
               </textarea>
             </div>
             <div class="col-md-12 mb-3">
-              <textarea class="form-control text-justify" name="clausula_edit_3m" rows="5" style="background-color: #F6FAFA; resize: none !important;">M) Providenciar a remuneração dos colaboradores, conforme previsto em orçamento específico aprovado, em conformidade, ainda, com o art. 4º da Lei nº 8.958/1994;
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">M)</a>
+              <textarea class="form-control text-justify" name="clausula_edit_3m" rows="5" style="background-color: #F6FAFA; resize: none !important;">Providenciar a remuneração dos colaboradores, conforme previsto em orçamento específico aprovado, em conformidade, ainda, com o art. 4º da Lei nº 8.958/1994;
               </textarea>
             </div>
             <div class="col-md-12 mb-3">
-              <textarea class="form-control text-justify" name="clausula_edit_3n" rows="5" style="background-color: #F6FAFA; resize: none !important;">N) Cumprir todas as normas pertencentes ao ordenamento jurídico brasileiro, em especial as trabalhistas, previdenciárias e tributárias derivadas da relação existente entre si e seus empregados e/ou contratados, durante a execução do Projeto objeto do Plano de Trabalho, de forma que não se estabelecerá, em hipótese alguma, vínculo empregatício entre esses empregados, funcionários, servidores ou contratados da FUNDAÇÃO e PARCEIRO PRIVADO ou as demais convenentes, cabendo a FUNDAÇÃO responsabilidade exclusiva pelos salários e todos os ônus trabalhistas e previdenciários, bem como pelas reclamações trabalhistas ajuizadas, e por quaisquer autos de infração, e ainda, fiscalização do Ministério do Trabalho e da Previdência Social a que a FUNDAÇÃO der causa, com relação a toda a mão de obra por ela contratada em decorrência do presente Acordo de Parceria.
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">N)</a>
+              <textarea class="form-control text-justify" name="clausula_edit_3n" rows="5" style="background-color: #F6FAFA; resize: none !important;">Cumprir todas as normas pertencentes ao ordenamento jurídico brasileiro, em especial as trabalhistas, previdenciárias e tributárias derivadas da relação existente entre si e seus empregados e/ou contratados, durante a execução do Projeto objeto do Plano de Trabalho, de forma que não se estabelecerá, em hipótese alguma, vínculo empregatício entre esses empregados, funcionários, servidores ou contratados da FUNDAÇÃO e PARCEIRO PRIVADO ou as demais convenentes, cabendo a FUNDAÇÃO responsabilidade exclusiva pelos salários e todos os ônus trabalhistas e previdenciários, bem como pelas reclamações trabalhistas ajuizadas, e por quaisquer autos de infração, e ainda, fiscalização do Ministério do Trabalho e da Previdência Social a que a FUNDAÇÃO der causa, com relação a toda a mão de obra por ela contratada em decorrência do presente Acordo de Parceria.
               </textarea>
             </div>
           </div><!--clausula_apoio_wrapper-->

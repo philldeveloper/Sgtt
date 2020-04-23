@@ -1,7 +1,7 @@
 <div class="container-fluid p-0 mt-0 m-0">
     <div class="text-justify text-black">
         
-        <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">12. CLÁUSULA DÉCIMA SEGUNDA – DO MONITORAMENTO, DAAVALIAÇÃO E DA PRESTAÇÃO DE CONTAS</h4><hr><br>
+        <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">12. CLÁUSULA DÉCIMA SEGUNDA – DO MONITORAMENTO, DA AVALIAÇÃO E DA PRESTAÇÃO DE CONTAS</h4><hr><br>
 
         <p><b>12.1</b> Os <b>PARCEIROS</b> exercerão a fiscalização técnico-financeira das atividades do presente Acordo. </p>
         <p><b>12.2</b>  O pesquisador deverá encaminhar ao Setor responsável ou COMISSÃO DA ICT:</p>

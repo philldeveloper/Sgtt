@@ -1117,10 +1117,10 @@
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-black">
 
-          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">SEU CONTRATO ESTÁ PRONTO PARA ANÁLISE.<i class="fas fa-fw fa-check ml-2"></i></h4><hr>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">SEU CONTRATO ESTÁ PRONTO.<i class="fas fa-fw fa-check ml-2"></i></h4><hr>
           <br>
           
-          <p>Seu contrato será revisado em até de 30 dias e uma resposta será gerada. Aguarde a confirmação do sistema. </p><br>
+          <p>Clique em enviar, e você será redirecionado para a tela inicial onde poderá visualizar seu contrato. </p><br>
           <!-- <a href="{{route('home')}}" class="btn btn-primary p-2 btn-lg col-4">Ver Contrato</a> -->
         </div>
       </div>
