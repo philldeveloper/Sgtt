@@ -146,7 +146,7 @@ class Contrato_srController extends Controller
         
         $contrato_sr->estado_foro = $request->estado_foro;
         $contrato_sr->cidade_foro = $request->cidade_foro;
-        $contrato_sr->cidade_uf_dia_foro = $request->cidade_uf_dia_foro;
+        $contrato_sr->data_foro = $request->data_foro;
         $contrato_sr->ict_inst_foro = $request->ict_inst_foro;
         $contrato_sr->nome_rep_foro = $request->nome_rep_foro;
         $contrato_sr->cargo_rep_foro = $request->cargo_rep_foro;

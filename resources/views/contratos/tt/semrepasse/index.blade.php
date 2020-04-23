@@ -1012,12 +1012,12 @@
           <br>
           <div class="form-row mt-3">
             <div class="form-group col-md-3">
-              <label for="cidade_uf_dia_foro" class="font-weight-bold text-black">Cidade, UF, Dia do Mês e Ano</label>
-              <input type="text" 
+              <label for="data_foro" class="font-weight-bold text-black">Data:</label>
+              <input type="date" 
                 class="form-control text-black font-weight-bold" 
-                name="cidade_uf_dia_foro"
-                id="cidade_uf_dia_foro" 
-                placeholder="Cidade, UF, Dia do Mês e Ano">
+                name="data_foro"
+                id="data_foro" 
+                placeholder="XX/XX/XXXX">
             </div>
           </div><!-- /.row-->
 

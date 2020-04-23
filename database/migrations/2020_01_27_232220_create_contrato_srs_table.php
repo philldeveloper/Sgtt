@@ -112,7 +112,7 @@ class CreateContratoSrsTable extends Migration
             
             $table->string('estado_foro');
             $table->string('cidade_foro');
-            $table->string('cidade_uf_dia_foro');
+            $table->string('data_foro');
             $table->string('ict_inst_foro');
             $table->string('nome_rep_foro');
             $table->string('cargo_rep_foro');

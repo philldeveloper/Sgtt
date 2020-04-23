@@ -111,7 +111,7 @@ class Contrato_sr extends Model
         
         'estado_foro',
         'cidade_foro',
-        'cidade_uf_dia_foro',
+        'data_foro',
         'ict_inst_foro',
         'nome_rep_foro',
         'cargo_rep_foro',

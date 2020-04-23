@@ -241,7 +241,7 @@
 	<h5 class="font-weight-bold">CLÁUSULA DÉCIMA SETIMA – DO FORO</h5>
 	<span class="font-weight-bold">17.1. </span>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de {{$contrato->estado_foro}}, cidade de {{$contrato->cidade_foro}}, para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109 da Constituição Federal. E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais. <br>
 	<br>
-	<p class="font-weight-bold" style="margin-left: 9px !important">{{$contrato->cidade_uf_dia_foro}}</p><br>
+	<p class="font-weight-bold" style="margin-left: 9px !important">{{$contrato->cidade_foro}}, {{$contrato->estado_foro}}, {{$contrato->data_foro}}</p><br>
 
 	<hr style="text-align: center !important; justify-content:center !important; align-itens: center !important" width="40%">		
 	<p style="text-align: center !important; justify-content:center !important; align-itens: center !important">
