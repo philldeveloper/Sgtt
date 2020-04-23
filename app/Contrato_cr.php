@@ -43,7 +43,6 @@ class Contrato_cr extends Model
         'parceiro_doravante_denominado', //2_parceiro
 
         'clausula_descricao', //clausula_1
-        'ict_plano_trabalho', //clausula 2 *Novo*
 
         'clausula_edit_2_3',
         'clausula_edit_2_4',
@@ -118,17 +117,17 @@ class Contrato_cr extends Model
         'clausula_edit_16_1',
         'clausula_edit_16_2',
         //17.1 contato publico
-        'parceiro_contato_endereço',
+        'parceiro_contato_endereco',
         'parceiro_contato_telefone',
         'parceiro_contato_celular',
         'parceiro_contato_email',
         //17.1 contato privado
-        'privado_contato_endereço',
+        'privado_contato_endereco',
         'privado_contato_telefone',
         'privado_contato_celular',
         'privado_contato_email',
         //17.1 contato fundacao apoio
-        'apoio_contato_endereço',
+        'apoio_contato_endereco',
         'apoio_contato_telefone',
         'apoio_contato_celular',
         'apoio_contato_email',
@@ -136,10 +135,8 @@ class Contrato_cr extends Model
         'nome_inst_ict', //clausula_3
         'nome_coordenador_ict', //clausula_3 *Novo
         'nome_coordenador_privado',//clausula_3 *Novo
-        'nome_inst_privado', //clausula_3
         'nome_inst_fundacao', //clausula_3
 
-        'nome_parceiro_privado', //clausula_4
         'valor_financeiro', //clausula_4
         'nome_fund_apoio', //clausula_4
 

@@ -18,6 +18,15 @@ function handleNameParceiro(event){
     })
 }
 
+function handleFundacaoNameApoio(event){
+    const name = event.target.value
+    const campos_fund_apoio = document.querySelectorAll('#handle_apoio')
+    campos_fund_apoio.forEach((campo) => {
+        campo.value = name
+        console.log(campo)
+    })
+}
+
 function handleCheckbox(){
     const checkBox = document.getElementById("possui_apoio")
     const clausulas = document.querySelectorAll("#clausula_apoio_wrapper")

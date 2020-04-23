@@ -42,59 +42,6 @@ class Contrato_crController extends Controller
      */
     public function store(Request $request)
     {   
-        $request->validate([
-            'nome_ict' => 'required|unique:posts|max:255',
-            'nome_parceiro' => 'required',
-            'nome_teste' => 'required',
-            'nat_juridica' => 'required',
-            'cnpj' => 'required',
-            'endereco' => 'required',
-            'cidade' => 'required',
-            'uf' => 'required',
-            'cep' => 'required',
-            'rep_legal' => 'required',
-            'cpf' => 'required',
-            'rg' => 'required',
-            'orgao_exp' => 'required',
-            'nacionalidade' => 'required',
-            'est_civil' => 'required',
-            'ato_nomeacao' => 'required',
-            'doravante_denominado' => 'required',
-            'nome_parceiro_instituicao' => 'required',
-            'parceiro_nat_juridica' => 'required',
-            'parceiro_cnpj' => 'required',
-            'parceiro_endereco' => 'required',
-            'parceiro_cidade' => 'required',
-            'parceiro_uf' => 'required',
-            'parceiro_rep_legal' => 'required',
-            'parceiro_cep' => 'required',
-            'parceiro_cpf' => 'required',
-            'parceiro_rg' => 'required',
-            'parceiro_orgao_exp' => 'required',
-            'parceiro_cargo' => 'required',
-            'parceiro_doravante_denominado' => 'required',
-            'clausula_descricao' => 'required',
-            'ict_plano_trabalho' => 'required',
-            
-            'nome_coordenador_ict' => 'required',
-            'nome_coordenador_privado' => 'required',
-            'nome_inst_privado' => 'required',
-            'nome_inst_fundacao' => 'required',
-            'nome_parceiro_privado' => 'required',
-            'nome_fund_apoio' => 'required',
-            'prazo_vigencia' => 'required',
-            'estado_foro' => 'required',
-            'cidade_foro' => 'required',
-            'cidade_uf_dia_foro' => 'required',
-            'ict_inst_foro' => 'required',
-            'nome_rep_foro' => 'required',
-            'cargo_rep_foro' => 'required',
-            'nome_inst_privado_foro' => 'required',
-            'nome_rep_privado_foro' => 'required',
-            'cargo_rep_privado_foro' => 'required',
-        ]);
-
-
         $contrato_cr = new Contrato_cr;
 
         $contrato_cr->nome_ict = $request->nome_ict;
@@ -128,7 +75,6 @@ class Contrato_crController extends Controller
         $contrato_cr->parceiro_cargo = $request->parceiro_cargo;
         $contrato_cr->parceiro_doravante_denominado = $request->parceiro_doravante_denominado;
         $contrato_cr->clausula_descricao = $request->clausula_descricao;
-        $contrato_cr->ict_plano_trabalho = $request->ict_plano_trabalho;
 
         $contrato_cr->clausula_edit_2_3 = $request->clausula_edit_2_3;
         $contrato_cr->clausula_edit_2_4 = $request->clausula_edit_2_4;
@@ -202,15 +148,27 @@ class Contrato_crController extends Controller
         $contrato_cr->clausula_edit_14_3 = $request->clausula_edit_14_3;
         $contrato_cr->clausula_edit_14_4 = $request->clausula_edit_14_4;
 
+        $contrato_cr->parceiro_contato_endereco = $request->parceiro_contato_endereco;
+        $contrato_cr->parceiro_contato_telefone = $request->parceiro_contato_telefone;
+        $contrato_cr->parceiro_contato_celular = $request->parceiro_contato_celular;
+        $contrato_cr->parceiro_contato_email = $request->parceiro_contato_email;
+        //17.1 contato privado
+        $contrato_cr->privado_contato_endereco = $request->privado_contato_endereco;
+        $contrato_cr->privado_contato_telefone = $request->privado_contato_telefone;
+        $contrato_cr->privado_contato_celular = $request->privado_contato_celular;
+        $contrato_cr->privado_contato_email = $request->privado_contato_email;
+        //17.1 contato fundacao apoio
+        $contrato_cr->apoio_contato_endereco = $request->apoio_contato_endereco;
+        $contrato_cr->apoio_contato_telefone = $request->apoio_contato_telefone;
+        $contrato_cr->apoio_contato_celular = $request->apoio_contato_celular;
+        $contrato_cr->apoio_contato_email = $request->apoio_contato_email;
+        
         $contrato_cr->clausula_edit_16_1 = $request->clausula_edit_16_1;
         $contrato_cr->clausula_edit_16_2 = $request->clausula_edit_16_2;
 
-        $contrato_cr->nome_inst_ict = $request->nome_inst_ict;
         $contrato_cr->nome_coordenador_ict = $request->nome_coordenador_ict;
         $contrato_cr->nome_coordenador_privado = $request->nome_coordenador_privado;
-        $contrato_cr->nome_inst_privado = $request->nome_inst_privado;
         $contrato_cr->nome_inst_fundacao = $request->nome_inst_fundacao;
-        $contrato_cr->nome_parceiro_privado = $request->nome_parceiro_privado;
         $contrato_cr->valor_financeiro = $request->valor_financeiro;
         $contrato_cr->nome_fund_apoio = $request->nome_fund_apoio;
         $contrato_cr->prazo_vigencia = $request->prazo_vigencia;
@@ -272,7 +230,7 @@ class Contrato_crController extends Controller
     public function update(Request $request, $id)
     {   
         $request->validate([
-            'nome_ict' => 'required|unique:posts|max:255',
+            'nome_ict' => 'required',
             'nome_parceiro' => 'required',
             'nome_teste' => 'required',
             'nat_juridica' => 'required',
@@ -303,13 +261,10 @@ class Contrato_crController extends Controller
             'parceiro_cargo' => 'required',
             'parceiro_doravante_denominado' => 'required',
             'clausula_descricao' => 'required',
-            'ict_plano_trabalho' => 'required',
             
             'nome_coordenador_ict' => 'required',
             'nome_coordenador_privado' => 'required',
-            'nome_inst_privado' => 'required',
             'nome_inst_fundacao' => 'required',
-            'nome_parceiro_privado' => 'required',
             'nome_fund_apoio' => 'required',
             'prazo_vigencia' => 'required',
             'estado_foro' => 'required',

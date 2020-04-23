@@ -218,63 +218,58 @@ $(document).ready(function($){
         }
     },
     onfocusout: function(element) {
-         let t = $(element).attr('name');
-            if (($(element).attr('name') === 'nome_ict' || $(element).attr('name') === 'nome_parceiro')){
-               if (!element.value || element.value.length < 3){
-                console.log(element)
-                   Toastify({
-                       text: "Esse campo deve conter ao menos 3 caracteres.",
-                       backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
-                       duration: 3000
-                   }).showToast();   
-                   $(element).addClass('invalid')   
-        
+        let t = $(element).attr('name');
+           if (($(element).attr('name') === 'nome_ict' || $(element).attr('name') === 'nome_parceiro')){
+              if (!element.value || element.value.length < 3){
+                  Toastify({
+                      text: "Esse campo deve conter ao menos 3 caracteres.",
+                      backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
+                      duration: 3000
+                  }).showToast();   
+                  $(element).addClass('invalid')   
+       
+                  if (!firstStep.includes(t) && t !== undefined){
+                      firstStep.push(t)
+                      window.firstStep = firstStep
+                  }   
+               }else{
                    if (firstStep.includes(t) && t !== undefined){
                        firstStep.splice(removeInput(firstStep, t), 1)
                        window.firstStep = firstStep
                    }   
-               }else{
-                $(element).removeClass('invalid'); 
-                console.log(element)
-                if (!firstStep.includes(t) && t !== undefined){
-                    firstStep.push(t)
-                    window.firstStep = firstStep
-                }   
-               }
-            }else{
-                this.element(element);
-            }
+                   $(element).removeClass('invalid'); 
+              }
+           }else{
+               this.element(element);
+           }
 
-            //Verificando se o array contém o numeros de campos validos =17
-    
-            window.firstStep = firstStep
-    
-    },
-      // Chamado quando for invalido
+           //Verificando se o array contém o numeros de campos validos =17
+   
+           window.firstStep = firstStep
+   
+   },
+     // Chamado quando for invalido
 
-    highlight: function(element) {
-        let t = $(element).attr('name')
-        console.log(element)
-        if ($(element).attr('name') === 'nome_ict' || $(element).attr('name') === 'nome_parceiro'){
-            return null
-        }
-        $(element).addClass('invalid')
-        if (firstStep.includes(t) && t !== undefined){
-            firstStep.splice(removeInput(firstStep, t), 1)
-            window.firstStep = firstStep
-        }
-    },
-    
-    // Chamado quando for valido
-    unhighlight: function(element) {
-        console.log(element)
-        let t = $(element).attr('name')
-            $(element).removeClass('invalid');   
-            this.countError = ++error
-            if (!firstStep.includes(t) && t !== undefined){
-                firstStep.push(t)
-                window.firstStep = firstStep
-            }
-    },
+   highlight: function(element) {
+       let t = $(element).attr('name')
+           /* if ($(element).attr('name') === 'nome_ict' || $(element).attr('name') === 'nome_parceiro'){
+               return null
+           } */
+           $(element).addClass('invalid')
+           if (!firstStep.includes(t) && t !== undefined){
+               firstStep.push(t)
+               window.firstStep = firstStep
+           }
+       },
+       
+       // Chamado quando for valido
+       unhighlight: function(element) {
+           let t = $(element).attr('name')
+           $(element).removeClass('invalid');   
+           if (firstStep.includes(t) && t !== undefined){
+               firstStep.splice(removeInput(firstStep, t), 1)
+               window.firstStep = firstStep
+           }
+       },
     })
 })

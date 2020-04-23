@@ -527,7 +527,7 @@
               </div><!--modal-alert-->
             
               <p><b>3.1 </b>São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I:</p>
-              <p class="mt-3 roboto-font"><b>3.1.1. Do(a) ICT:</b><input type="text" class="myform-control" name="nome_inst_ict" id="handle_ict" placeholder="{{$contratos_cr->nome_inst_ict}}"><a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a></p><hr>
+              <p class="mt-3 roboto-font"><b>3.1.1. Do(a) ICT:</b><input type="text" class="myform-control" id="handle_ict" value="{{$contratos_cr->nome_ict}}"><a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a></p><hr>
               <p><b>A)</b> Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD&I ;</p>
               <p><b>B)</b> Manter rigoroso controle das despesas efetuadas e dos respectivos comprovantes com vistas à prestação de contas da execução do objeto deste Acordo;</p>
               <p><b>C)</b> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução<a href="#" data-toggle="modal" data-target="#modalCoordenador"><i class="fas fa-fw fa-question-circle"></i></a></p>
@@ -535,7 +535,7 @@
               <div class="form-group row p-2">
                 <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador ICT/Público:</label>
                 <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
-                  <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" placeholder="{{$contratos_cr->nome_coordenador_ict}}">
+                  <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" value="{{$contratos_cr->nome_coordenador_ict}}">
                 </div>
               </div>
 
@@ -543,7 +543,7 @@
               <p><b>E)</b> Monitorar, avaliar e prestar contas nos termos deste Acordo; </p></p>
               
               <!--inicio das clausulas 3-->
-              <p class="mt-3 roboto-font"><b>3.1.2. Do Parceiro Privado:</b><input type="text" class="myform-control" name="nome_inst_privado" id="nome_inst_privado" placeholder="{{$contratos_cr->nome_inst_privado}}"></p><hr>
+              <p class="mt-3 roboto-font"><b>3.1.2. Do Parceiro Privado:</b><input type="text" class="myform-control" id="nome_inst_privado" value="{{$contratos_cr->nome_parceiro}}"></p><hr>
 
               <p><b>A)</b> Transferir os recursos financeiros acordados, segundo o Cronograma de Desembolso constante no Plano de Trabalho, por meio do aporte de recursos financeiros de sua responsabilidade;</p>
               <p><b>B)</b> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução<a href="#" data-toggle="modal" data-target="#modalCoordenadorPrivado"><i class="fas fa-fw fa-question-circle"></i></a></p>
@@ -551,7 +551,7 @@
               <div class="form-group row p-2">
                 <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador Privado:</label>
                 <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
-                  <input type="text" name="nome_coordenador_privado" onchange="handleCoordenadorPrivado()" id="nome_coordenador_privado" class="form-control" placeholder="{{$contratos_cr->nome_coordenador_privado}}">
+                  <input type="text" name="nome_coordenador_privado" onchange="handleCoordenadorPrivado()" id="nome_coordenador_privado" class="form-control" value="{{$contratos_cr->nome_coordenador_privado}}">
                 </div>
               </div>
 
@@ -668,7 +668,7 @@
                 <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_clausula_4">Saiba mais</button>
               </div>
                 <p>
-                  <b>4.1.</b> O (A) <input class="myform-control text-black"type="text" name="nome_parceiro_privado" id="nome_parceiro_privado" value="{{$contratos_cr->nome_parceiro_privado}}">
+                  <b>4.1.</b> O (A) <input class="myform-control text-black"type="text" id="nome_parceiro_privado" value="{{$contratos_cr->nome_parceiro}}">
                    transferirá recursos financeiros no valor total de R$ <input class="myform-control text-black" type="text" name="valor_financeiro" id="valor_financeiro" value="{{$contratos_cr->valor_financeiro}}">
                    , conforme cronograma de desembolso constante no Plano de Trabalho, anexo a este Acordo. 
                 </p>
@@ -739,7 +739,7 @@
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#recurso_privado">Saiba mais</button>
           </div>  
           <p>
-            <b>4.1.</b> O (A) <input class="myform-control text-black"type="text" value="{{$contratos_cr->nome_parceiro_privado}}" name="nome_parceiro_privado" id="handle_parceiro">
+            <b>4.1.</b> O (A) <input class="myform-control text-black"type="text" value="{{$contratos_cr->nome_parceiro}}" id="handle_parceiro">
               transferirá recursos financeiros no valor total de R$ <input class="myform-control text-black" type="text" name="valor_financeiro" id="valor_financeiro" value="{{$contratos_cr->valor_financeiro}}">
               , conforme cronograma de desembolso constante no Plano de Trabalho, anexo a este Acordo. 
           </p>
@@ -1257,17 +1257,17 @@
                 <span class="font-weight-bold">PARCEIRO(S) PÚBLICO(S):</span> 
                 <div class="form-row">
                   <div class="form-group col-md-3">
-                    <label for="endereco" class= text-black">Endereço</label>
+                    <label for="endereco" class="text-black">Endereço</label>
                     <input type="text" 
                       class="form-control text-black" 
-                      name="parceiro_contato_endereço"
+                      name="parceiro_contato_endereco"
                       id="endereco" 
-                      value="{{$contratos_cr->parceiro_contato_endereço}}"
+                      value="{{$contratos_cr->parceiro_contato_endereco}}"
                       placeholder="Endereço">
                   </div>
 
                   <div class="form-group col-md-3">
-                    <label for="parceiro_contato_telefone" class= text-black">Telefone</label>
+                    <label for="parceiro_contato_telefone" class="text-black">Telefone</label>
                     <input type="text" 
                       class="form-control text-black"
                       name="parceiro_contato_telefone" 
@@ -1276,7 +1276,7 @@
                       placeholder="Telefone">
                   </div>
                   <div class="form-group col-md-3">
-                    <label for="parceiro_contato_celular" class= text-black">Celular</label>
+                    <label for="parceiro_contato_celular" class="text-black">Celular</label>
                     <input type="text" 
                       class="form-control text-black" 
                       name="parceiro_contato_celular" id="parceiro_contato_celular"
@@ -1284,7 +1284,7 @@
                       placeholder="Celular">
                   </div>
                   <div class="form-group col-md-3">
-                    <label for="parceiro_contato_email" class= text-black">Email</label>
+                    <label for="parceiro_contato_email" class="text-black">Email</label>
                     <input type="email" 
                       class="form-control text-black"
                       name="parceiro_contato_email" 
@@ -1297,12 +1297,12 @@
                 <span class="font-weight-bold">PARCEIRO(S) PRIVADO(S):</span> 
                 <div class="form-row mt-3">
                   <div class="form-group col-md-3">
-                    <label for="endereco" class=" text-black">Endereço</label>
+                    <label for="endereco" class="text-black">Endereço</label>
                     <input type="text" 
                       class="form-control text-black " 
-                      name="privado_contato_endereço"
+                      name="privado_contato_endereco"
                       id="endereco" 
-                      value="{{$contratos_cr->privado_contato_endereço}}"
+                      value="{{$contratos_cr->privado_contato_endereco}}"
                       placeholder="Endereço">
                   </div>
                   <div class="form-group col-md-3">
@@ -1341,9 +1341,9 @@
                       <label for="endereco" class=" text-black">Endereço</label>
                       <input type="text" 
                         class="form-control text-black " 
-                        name="apoio_contato_endereço"
+                        name="apoio_contato_endereco"
                         id="endereco" 
-                        value="{{$contratos_cr->apoio_contato_endereço}}"
+                        value="{{$contratos_cr->apoio_contato_endereco}}"
                         placeholder="Endereço">
                     </div>
         
@@ -1430,14 +1430,14 @@
                         class="form-control text-black font-weight-bold"
                         name="ict_inst_foro" 
                         id="ict_inst_foro"  
-                        placeholder="{{$contratos_cr->ict_inst_foro}}">
+                        value="{{$contratos_cr->ict_inst_foro}}">
                     </div>
                     <div class="form-group col-md-3">
                       <label for="nome_rep_foro" class="font-weight-bold text-black">Representante:</label>
                       <input type="text" 
                         class="form-control text-black font-weight-bold" 
                         name="nome_rep_foro" id="nome_rep_foro"  
-                        placeholder="{{$contratos_cr->nome_rep_foro}}">
+                        value="{{$contratos_cr->nome_rep_foro}}">
                     </div>
                     <div class="form-group col-md-3">
                       <label for="cargo_rep_foro" class="font-weight-bold text-black">Cargo</label>
@@ -1445,7 +1445,7 @@
                         class="form-control text-black font-weight-bold"
                         name="cargo_rep_foro" 
                         id="cargo_rep_foro"  
-                        placeholder="{{$contratos_cr->cargo_rep_foro}}">
+                        value="{{$contratos_cr->cargo_rep_foro}}">
                     </div>
                   </div><!-- /.row-->
 
@@ -1456,14 +1456,14 @@
                         class="form-control text-black font-weight-bold"
                         name="nome_inst_privado_foro" 
                         id="nome_inst_privado_foro"  
-                        placeholder="{{$contratos_cr->nome_inst_privado_foro}}">
+                        value="{{$contratos_cr->nome_inst_privado_foro}}">
                     </div>
                     <div class="form-group col-md-3">
                       <label for="nome_rep_privado_foro" class="font-weight-bold text-black">Representante:</label>
                       <input type="text" 
                         class="form-control text-black font-weight-bold" 
                         name="nome_rep_privado_foro" id="nome_rep_privado_foro"  
-                        placeholder="{{$contratos_cr->nome_rep_privado_foro}}">
+                        value="{{$contratos_cr->nome_rep_privado_foro}}">
                     </div>
                     <div class="form-group col-md-3">
                       <label for="cargo_rep_privado_foro" class="font-weight-bold text-black">Cargo</label>
@@ -1471,7 +1471,7 @@
                         class="form-control text-black font-weight-bold"
                         name="cargo_rep_privado_foro" 
                         id="cargo_rep_privado_foro"  
-                        placeholder="{{$contratos_cr->cargo_rep_privado_foro}}">
+                        value="{{$contratos_cr->cargo_rep_privado_foro}}">
                     </div>
                   </div><!-- /.row-->
                   
@@ -1550,28 +1550,44 @@
   
   </script>
 <script>
-var currentTab = 0; // Current tab is set to be the first tab (0)
+var currentTab = 0;
+var lastTab = 99;
+
+ // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
+//Regra para avançar os step do formulario pelo header
 function stepButton(n) {
   let x = document.getElementsByClassName("tab");
-
-  for (let i = 0; i < x.length; i++) {
-    x[i].style.display = "none"; 
+  if (window.firstStep !== undefined || n <= lastTab){
+      if(n <= lastTab){
+        for (let i = 0; i < x.length; i++) {
+          x[i].style.display = "none"; 
+        }
+        x[n].style.display = "block";
+        currentTab = n
+        showTab(n)
+    }else{
+        Toastify({
+          text: "Você precisa preencher todos campos.",
+              backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
+              duration: 3000
+        }).showToast(); 
+    }
+  }else{
+      Toastify({
+        text: "Você precisa preencher todos campos.",
+            backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
+            duration: 3000
+      }).showToast(); 
   }
-
-  x[n].style.display = "block";
- 
- 
-  //... and fix the Previous/Next buttons:
-  currentTab = n
-  showTab(n)
 }
 
+//Função para mostrar os Campos de cada etapa
 function showTab(n) {
-  
   // This function will display the specified tab of the form...
   var x = document.getElementsByClassName("tab");
+  var button = document.getElementById("nextBtn")
   x[n].style.display = "block";
   //... and fix the Previous/Next buttons:
   if (n == 0) {
@@ -1580,31 +1596,86 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) {
-    var button = document.getElementById("nextBtn")
-    button.type = 'submit'
-    button.innerHTML = 'Salvar';
-    button.addEventListener("click", function(){
-      window.location.href = "/home";
-    });
+    button.innerHTML = "Salvar";
+
   } else {
+    button.type = 'button'
     document.getElementById("nextBtn").innerHTML = "Proximo";
   }
   //... and run a function that will display the correct step indicator:
   fixStepIndicator(n)
 }
 
+//Regra do butão para avançar ou voltar uma etapa
 function nextPrev(n) {
-  // This function will figure out which tab to display
+  var button = document.getElementById("nextBtn");
   var x = document.getElementsByClassName("tab");
-  // Exit the function if any field in the current tab is invalid:
-  if (n == 1 && !validateStep()) return false;
-  if(n == -1 && currentTab == 0) {
-    for (let i = 0; i < x.length; i++) {
-      x[i].style.display = "none"; 
-    }
-    showTab(currentTab);
-    return
+  
+  if (n == 1 && !validateStepForm()) 
+    return false;
+
+  if (button.innerHTML === "Salvar"){
+  
+    document.getElementById("regForm").submit();
+    return false
   }
+
+  handleStep(x, n)
+}
+
+function validateStepForm() {
+  // This function deals with validation of the form fields
+  var x, inputs, selects, i, valid = true;
+  x = document.getElementsByClassName("tab-pane");
+  inputs = x[currentTab].getElementsByTagName("input");
+  selects = x[currentTab].getElementsByTagName("select");
+  for (i = 0; i < inputs.length; i++) {
+    if (inputs[i].value == "") {
+      inputs[i].className += " invalid";
+      valid = false;
+    }
+
+    if(i < selects.length){
+      if (selects[i].value == "") {
+        selects[i].className += " invalid";
+        valid = false;
+      }
+    }
+  } 
+
+  if (window.firstStep !== undefined){
+    for (i = 0; i < inputs.length; i++) {
+      if(window.firstStep.includes(inputs[i].name)){
+        console.log(inputs[i].name)
+        valid = false
+      }
+    }
+  }
+  
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }else{
+    Toastify({
+        text: "Você precisa preencher todos campos.",
+        backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
+        duration: 3000
+    }).showToast(); 
+  }
+  return valid; // return the valid status
+}
+
+//Remove as classes "active" dos campos que não estão ativos
+function fixStepIndicator(n) {
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+
+function handleStep(x, n){
   for (let i = 0; i < x.length; i++) {
     x[i].style.display = "none"; 
   }
@@ -1612,46 +1683,12 @@ function nextPrev(n) {
   x[currentTab].style.display = "none";
   // Increase or decrease the current tab by 1:
   currentTab = currentTab + n;
-  // if you have reached the end of the form...
-  if (currentTab >= x.length) {
-    // ... the form gets submitted:
-    document.getElementById("regForm").submit();
-    return false;
+  
+  if (lastTab <= currentTab){
+    lastTab = currentTab
   }
   // Otherwise, display the correct tab:
   showTab(currentTab);
-}
-
-function validateStep() {
-  // This function deals with validation of the form fields
-  var x, y, i, valid = true;
-  x = document.getElementsByClassName("tab");
-  y = x[currentTab].getElementsByTagName("input");
-  // A loop that checks every input field in the current tab:
-      /*  for (i = 0; i < y.length; i++) {
-          // If a field is empty...
-          if (y[i].value == "") {
-            // add an "invalid" class to the field:
-            y[i].className += " invalid";
-            // and set the current valid status to false
-            valid = false;
-          }
-        } */
-  // If the valid status is true, mark the step as finished and valid:
-  if (valid) {
-    document.getElementsByClassName("step")[currentTab].className += " finish";
-  }
-  return valid; // return the valid status
-}
-
-function fixStepIndicator(n) {
-  // This function removes the "active" class of all steps...
-  var i, x = document.getElementsByClassName("step");
-  for (i = 0; i < x.length; i++) {
-    x[i].className = x[i].className.replace(" active", "");
-  }
-  //... and adds the "active" class on the current step:
-  x[n].className += " active";
 }
 </script>
   

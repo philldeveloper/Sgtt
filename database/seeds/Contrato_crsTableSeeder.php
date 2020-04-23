@@ -48,7 +48,6 @@ class Contrato_crsTableSeeder extends Seeder
 		    'parceiro_doravante_denominado' => 'Lorem Ipsum',
 
 			'clausula_descricao' => 'Lorem Ipsum',
-			'ict_plano_trabalho' => 'Lorem Ipsum',
 
 			'clausula_edit_2_3' => 'Lorem Ipsum',
 			'clausula_edit_2_4' => 'Lorem Ipsum',
@@ -123,13 +122,10 @@ class Contrato_crsTableSeeder extends Seeder
 			'clausula_edit_16_1' => 'Lorem Ipsum',  
 			'clausula_edit_16_2' => 'Lorem Ipsum',  
 
-			'nome_inst_ict' => 'lorem ipsum', //clausula_3
 			'nome_coordenador_ict' => 'lorem ipsum', 
 			'nome_coordenador_privado' => 'lorem ipsum', 
-        	'nome_inst_privado' => 'lorem ipsum', //clausula_3
         	'nome_inst_fundacao' => 'lorem ipsum', //clausula_3
 
-		    'nome_parceiro_privado' => 'Lorem Ipsum',
 		    'valor_financeiro' => 'Lorem Ipsum',
 		    'nome_fund_apoio' => 'Lorem Ipsum',
 
@@ -145,17 +141,17 @@ class Contrato_crsTableSeeder extends Seeder
 		    'nome_rep_privado_foro' => 'Lorem Ipsum',
 			'cargo_rep_privado_foro' => 'Lorem Ipsum',
 			//17.1 contato publico
-			'parceiro_contato_endereço' => 'Lorem Ispum',
+			'parceiro_contato_endereco' => 'Lorem Ispum',
 			'parceiro_contato_telefone' => 'Lorem Ispum',
 			'parceiro_contato_celular' => 'Lorem Ispum',
 			'parceiro_contato_email' => 'Lorem Ispum',
 			//17.1 contato privado
-			'privado_contato_endereço' => 'Lorem Ispum',
+			'privado_contato_endereco' => 'Lorem Ispum',
 			'privado_contato_telefone' => 'Lorem Ispum',
 			'privado_contato_celular' => 'Lorem Ispum',
 			'privado_contato_email' => 'Lorem Ispum',
 			//17.1 contato fundacao apoio
-			'apoio_contato_endereço' => 'Lorem Ispum',
+			'apoio_contato_endereco' => 'Lorem Ispum',
 			'apoio_contato_telefone' => 'Lorem Ispum',
 			'apoio_contato_celular' => 'Lorem Ispum',
 			'apoio_contato_email' => 'Lorem Ispum',
