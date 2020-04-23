@@ -1421,6 +1421,28 @@
                     </div>
                   </div><!-- /.row-->
 
+                  <div class="form-row mt-3">
+                    <div class="form-group col-md-3">
+                      <label for="nome_testemunha_1" class="font-weight-bold text-black">Testemunha 1:</label>
+                      <input type="text" 
+                        class="form-control text-black font-weight-bold" 
+                        name="nome_testemunha_1" id="nome_testemunha_1" 
+                        disabled 
+                        readonly="" 
+                        placeholder="{{$contratos_cr->nome_testemunha_1}}">
+                    </div>
+                    <div class="form-group col-md-3">
+                      <label for="nome_testemunha_2" class="font-weight-bold text-black">Testemunha 2:</label>
+                      <input type="email" 
+                        class="form-control text-black font-weight-bold"
+                        name="nome_testemunha_2" 
+                        id="nome_testemunha_2" 
+                        disabled 
+                        readonly="" 
+                        placeholder="{{$contratos_cr->nome_testemunha_2}}">
+                    </div>
+                  </div><!-- /.row-->
+
                 </div><!--text-justify-->
               </div>
           </div>

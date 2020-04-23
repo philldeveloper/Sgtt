@@ -154,6 +154,9 @@ class Contrato_cr extends Model
         'nome_inst_privado_foro', //clausula_19
         'nome_rep_privado_foro', //clausula_19
         'cargo_rep_privado_foro', //clausula_19
+
+        'nome_testemunha_1', 
+        'nome_testemunha_2', 
         
         'tipo',
         'user_id'

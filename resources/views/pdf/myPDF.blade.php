@@ -13,7 +13,7 @@
 	</div>
 	<h4 style="text-align:center; justify-content: center; align-itens: center">SERVIÇO PÚBLICO FEDERAL<br>MINISTÉRIO DA EDUCAÇÃO<br>SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA</h4>
 	<br><br>
-	<h4 style="text-align:justify !important; text-transform: uppercase !important">ACORDO DE COOPERAÇÃO TÉCNICA QUE ENTRE SI CELEBRAM {{$contrato->nome_ict}}, POR MEIO DO NÚCLEO DE INOVAÇÃO TECNOLÓGICA E {{$contrato->nome_ict}}, PARA FINS QUE ESPECIFICA.</h5>
+	<h4 style="text-align:justify !important; text-transform: uppercase !important">ACORDO DE COOPERAÇÃO TÉCNICA QUE ENTRE SI CELEBRAM {{$contrato->nome_ict}}, POR MEIO DO NÚCLEO DE INOVAÇÃO TECNOLÓGICA E {{$contrato->nome_parceiro}}, PARA FINS QUE ESPECIFICA.</h5>
 	<br><br><br>
 	<h5 class="text-uppercase display-4 border-bottom border-dark">1º PARCEIRO</h5>
 	<p>
@@ -239,29 +239,30 @@
 	<!------clausula---->
 	
 	<h5 class="font-weight-bold">CLÁUSULA DÉCIMA SETIMA – DO FORO</h5>
-		<span class="font-weight-bold">17.1. </span>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de {{$contrato->estado_foro}}, cidade de {{$contrato->cidade_foro}}, para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109 da Constituição Federal. E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais. <br>
-		<br>
-		<p class="font-weight-bold" style="margin-left: 9px !important">{{$contrato->cidade_uf_dia_foro}}</p><br>
+	<span class="font-weight-bold">17.1. </span>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de {{$contrato->estado_foro}}, cidade de {{$contrato->cidade_foro}}, para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109 da Constituição Federal. E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais. <br>
+	<br>
+	<p class="font-weight-bold" style="margin-left: 9px !important">{{$contrato->cidade_uf_dia_foro}}</p><br>
 
-		<hr style="text-align: center !important; justify-content:center !important; align-itens: center !important" width="40%">		
-		<p style="text-align: center !important; justify-content:center !important; align-itens: center !important">
-			{{$contrato->nome_rep_foro}} <br> {{$contrato->cargo_rep_foro}} do(a) {{$contrato->ict_inst_foro}}</p>
-		</p><br>
+	<hr style="text-align: center !important; justify-content:center !important; align-itens: center !important" width="40%">		
+	<p style="text-align: center !important; justify-content:center !important; align-itens: center !important">
+		{{$contrato->nome_rep_foro}} <br> {{$contrato->cargo_rep_foro}} do(a) {{$contrato->ict_inst_foro}}</p>
+	</p><br>
 
-		<hr style="text-align: center !important; justify-content:center !important; align-itens: center !important" width="40%">		
-		<p style="text-align: center !important; justify-content:center !important; align-itens: center !important">
-			{{$contrato->nome_rep_privado_foro}} <br> {{$contrato->nome_inst_privado_foro}}</p>
-		</p><br>
+	<hr style="text-align: center !important; justify-content:center !important; align-itens: center !important" width="40%">		
+	<p style="text-align: center !important; justify-content:center !important; align-itens: center !important">
+		{{$contrato->nome_rep_privado_foro}} <br> {{$contrato->nome_inst_privado_foro}}</p>
+	</p><br>
 
-		<hr style="text-align: center !important; justify-content:center !important; align-itens: center !important" width="40%">		
-		<p style="text-align: center !important; justify-content:center !important; align-itens: center !important; margin-top: 0 !important">
-			{{$contrato->nome_testemunha_1}} <br> Testemunha 1</p>
-		</p><br>
+	<hr style="text-align: center !important; justify-content:center !important; align-itens: center !important" width="40%">		
+	<p style="text-align: center !important; justify-content:center !important; align-itens: center !important; margin-top: 0 !important">
+		{{$contrato->nome_testemunha_1}} <br> Testemunha 1</p>
+	</p><br>
 
-		<hr style="text-align: center !important; justify-content:center !important; align-itens: center !important" width="40%">		
-		<p style="text-align: center !important; justify-content:center !important; align-itens: center !important; margin-top: 0 !important">
-			{{$contrato->nome_testemunha_2}} <br> Testemunha 2</p>
-		</p><br>
+	<hr style="text-align: center !important; justify-content:center !important; align-itens: center !important" width="40%">		
+	<p style="text-align: center !important; justify-content:center !important; align-itens: center !important; margin-top: 0 !important">
+		{{$contrato->nome_testemunha_2}} <br> Testemunha 2</p>
+	</p>
+	<br>
 
 </div><!--big-div-->
 

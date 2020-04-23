@@ -156,6 +156,9 @@ class CreateContratoCrsTable extends Migration
             $table->string('apoio_contato_celular');
             $table->string('apoio_contato_email');
 
+            $table->string('nome_testemunha_1');
+            $table->string('nome_testemunha_2');
+
 
             $table->string('tipo')->nullable()->default(null);
 

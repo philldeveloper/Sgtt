@@ -159,6 +159,8 @@ class Contrato_crsTableSeeder extends Seeder
 			'apoio_contato_telefone' => 'Lorem Ispum',
 			'apoio_contato_celular' => 'Lorem Ispum',
 			'apoio_contato_email' => 'Lorem Ispum',
+			'nome_testemunha_1' => 'Tauan Almeida',
+			'nome_testemunha_2' => 'Dialles Nogueira',
 			
 		    'tipo' => 'Com Repasse',
 		    'user_id' => '2',
