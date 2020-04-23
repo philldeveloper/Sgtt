@@ -13,7 +13,7 @@
 	</div>
 	<h4 style="text-align:center; justify-content: center; align-itens: center">SERVIÇO PÚBLICO FEDERAL<br>MINISTÉRIO DA EDUCAÇÃO<br>SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA</h4>
 	<br><br>
-	<h4 style="text-align:justify !important">ACORDO DE COOPERAÇÃO TÉCNICA QUE ENTRE SI CELEBRAM {{$contrato->nome_ict}}, POR MEIO DO NÚCLEO DE INOVAÇÃO TECNOLÓGICA E {{$contrato->nome_ict}}, PARA FINS QUE ESPECIFICA.</h5>
+	<h4 style="text-align:justify !important; text-transform: uppercase !important">ACORDO DE COOPERAÇÃO TÉCNICA QUE ENTRE SI CELEBRAM {{$contrato->nome_ict}}, POR MEIO DO NÚCLEO DE INOVAÇÃO TECNOLÓGICA E {{$contrato->nome_ict}}, PARA FINS QUE ESPECIFICA.</h5>
 	<br><br><br>
 	<h5 class="text-uppercase display-4 border-bottom border-dark">1º PARCEIRO</h5>
 	<p>
@@ -99,9 +99,7 @@
 
 	<h5 class="font-weight-bold">CLÁUSULA QUARTA - DO PESSOAL</h5>
 
-	<p><b>4.1.</b>Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem na execução do objeto deste Acordo, de forma que não se estabelecerá, em hipótese alguma, vínculo empregatício ou de qualquer outra natureza com a <span style="text-transform: uppercase !important; font-weight: bold !important">{{$contrato->nome_parceiro}}</span> e o pessoal da <span style="text-transform: uppercase !important; font-weight: bold !important">{!! $contrato->nome_ict !!}</span> e vice-versa, cabendo a cada PARCEIRO a responsabilidade pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a documentação comprobatória da regularidade na contratação.</p>
-
-	<br>
+	<p><span id="p-title">4.1</span>Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem na execução do objeto deste Acordo, de forma que não se estabelecerá, em hipótese alguma, vínculo empregatício ou de qualquer outra natureza com a <span style="text-transform: uppercase !important; font-weight: bold !important">{{$contrato->nome_parceiro}}</span> e o pessoal da <span style="text-transform: uppercase !important; font-weight: bold !important">{!! $contrato->nome_ict !!}</span> e vice-versa, cabendo a cada PARCEIRO a responsabilidade pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a documentação comprobatória da regularidade na contratação.</p>
 
 	<!------clausula---->
 
@@ -125,7 +123,7 @@
 
 	<h5 class="font-weight-bold">CLÁUSULA SEXTA - DA DIVULGAÇÃO E DAS PUBLICAÇÕES</h5>
 
-	<p><span id="p-title">6.1</span> Os PARCEIROS concordam em não utilizar o nome do outro PARCEIRO ou de seus empregados em qualquer propaganda, informação à imprensa ou publicidade relativa ao acordo ou a qualquer produto ou serviço decorrente deste, sem a prévia aprovação por escrito do PARCEIRO referido.</p>
+	<p><span id="p-title">6.1</span>Os PARCEIROS concordam em não utilizar o nome do outro PARCEIRO ou de seus empregados em qualquer propaganda, informação à imprensa ou publicidade relativa ao acordo ou a qualquer produto ou serviço decorrente deste, sem a prévia aprovação por escrito do PARCEIRO referido.</p>
 
 	<!------clausula---->
 
@@ -135,13 +133,13 @@
 	<p><span id="p-title">7.2</span>Fica vedado aos PARCEIROS utilizar, no âmbito deste Acordo de Parceria, nomes, símbolos e imagens que caracterizem promoção pessoal de autoridades ou servidores públicos.Os PARCEIROS informarão aos seus funcionários e prestadores de serviços e consultores que necessitem ter acesso às informações e conhecimentos que envolvem o objeto do Acordo, acerca das obrigações de sigilo assumidas, responsabilizando-se integralmente por eventuais infrações que estes possam cometer. </p>
 	<p><span id="p-title">7.3</span>As PARCEIROS farão com que cada pessoa de sua organização, ou sob o seu controle, que receba informações confidenciais, assuma o compromisso de confidencialidade, por meio assinatura de Termo de Confidencialidade. </p>
 	<p><span id="p-title">7.4</span>Não haverá violação das obrigações de CONFIDENCIALIDADE previstas no Acordo de Parceria nas seguintes hipóteses: </p>
-	<p><span id="p-title">7.4.1.</span> Informações técnicas ou comerciais que já sejam do conhecimento dos PARCEIROS na data da divulgação, ou que tenham sido comprovadamente desenvolvidas de maneira independente e sem relação com o Acordo pelo PARCEIRO que a revele; </p>
-	<p><span id="p-title">7.4.2.</span> Informações técnicas ou comerciais que sejam ou se tornem de domínio público, sem culpa da(s) PARCEIROS (S); </p>
+	<p><span id="p-title">7.4.1.</span>Informações técnicas ou comerciais que já sejam do conhecimento dos PARCEIROS na data da divulgação, ou que tenham sido comprovadamente desenvolvidas de maneira independente e sem relação com o Acordo pelo PARCEIRO que a revele; </p>
+	<p><span id="p-title">7.4.2.</span>Informações técnicas ou comerciais que sejam ou se tornem de domínio público, sem culpa da(s) PARCEIROS (S); </p>
 	<p><span id="p-title">7.4.2.1.</span>Qualquer informação que tenha sido revelada somente em termos gerais, não será considerada de conhecimento ou domínio público. </p>
-	<p><span id="p-title">7.4.3.</span> Informações técnicas ou comerciais que sejam recebidas de um terceiro que não esteja sob obrigação de manter as informações técnicas ou comerciais em confidencialidade; </p>
-	<p><span id="p-title">7.4.4.</span> Informações que possam ter divulgação exigida por lei, decisão judicial ou administrativa; </p>
-	<p><span id="p-title">7.4.5.</span> Revelação expressamente autorizada, por escrito, pelos PARCEIROS. </p>
-	<p><span id="p-title">7.5.</span> A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada. A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada. </p>
+	<p><span id="p-title">7.4.3.</span>Informações técnicas ou comerciais que sejam recebidas de um terceiro que não esteja sob obrigação de manter as informações técnicas ou comerciais em confidencialidade; </p>
+	<p><span id="p-title">7.4.4.</span>Informações que possam ter divulgação exigida por lei, decisão judicial ou administrativa; </p>
+	<p><span id="p-title">7.4.5.</span>Revelação expressamente autorizada, por escrito, pelos PARCEIROS. </p>
+	<p><span id="p-title">7.5.</span>A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada. A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada. </p>
 
 	<p><span id="p-title">7.6</span>{!! $contrato->clausula_edit_7_6 !!}</p>
 	<p><span id="p-title">7.7</span>{!! $contrato->clausula_edit_7_7 !!}</p>
@@ -154,46 +152,46 @@
 
 	<p><span id="p-title">8.1</span>{!! $contrato->clausula_edit_8_1 !!}</p>
 	<p><span id="p-title">8.2</span>{!! $contrato->clausula_edit_8_2 !!}</p>
-	<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">8.2.a</b>{!! $contrato->clausula_edit_8_2_a !!}</p>
-	<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">8.2.b</b>{!! $contrato->clausula_edit_8_2_b !!}</p>
-	<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">8.2.c</b>{!! $contrato->clausula_edit_8_2_c !!}</p>
-	<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">8.2.d</b>{!! $contrato->clausula_edit_8_2_d !!}</p>
-	<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">8.2.e</b>{!! $contrato->clausula_edit_8_2_e !!}</p>
+	<p style="margin-left: 16px !important"><span style="margin-right: 8px !important">a)</span>{!! $contrato->clausula_edit_8_2_a !!}</p>
+	<p style="margin-left: 16px !important"><span style="margin-right: 8px !important">b)</span>{!! $contrato->clausula_edit_8_2_b !!}</p>
+	<p style="margin-left: 16px !important"><span style="margin-right: 8px !important">c)</span>{!! $contrato->clausula_edit_8_2_c !!}</p>
+	<p style="margin-left: 16px !important"><span style="margin-right: 8px !important">d)</span></b>{!! $contrato->clausula_edit_8_2_d !!}</p>
+	<p style="margin-left: 16px !important"><span style="margin-right: 8px !important">e)</span>{!! $contrato->clausula_edit_8_2_e !!}</p>
 
 	
 	<!------clausula---->
 
 	<h5 class="font-weight-bold">CLÁUSULA NONA - DO ACOMPANHAMENTO</h5>
 
-	<p><span id="p-title">9.1</span> Aos coordenadores indicados pelos PARCEIROS competirá dirimir as dúvidas que surgirem na sua execução e de tudo dará ciência às respectivas autoridades. </p>
-	<p><span id="p-title">9.2</span> O coordenador do projeto indicado pela ICT/AGÊNCIA DE FOMENTO anotará, em registro próprio, as ocorrências relacionadas com a execução do objeto, recomendando as medidas necessárias à autoridade competente para regularização das inconsistências observadas. </p>
-	<p><span id="p-title">9.3</span> O acompanhamento do projeto pelos coordenadores não exclui nem reduz a responsabilidade dos PARCEIROS perante terceiros. </p>
-	<p><span id="p-title">9.4</span> A impossibilidade técnica ou científica quanto ao cumprimento de qualquer fase do Plano de Trabalho, que seja devidamente comprovada e justificada, acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou término do Plano de Trabalho e consequente extinção deste Acordo. </p>
+	<p><span id="p-title">9.1</span>Aos coordenadores indicados pelos PARCEIROS competirá dirimir as dúvidas que surgirem na sua execução e de tudo dará ciência às respectivas autoridades. </p>
+	<p><span id="p-title">9.2</span>O coordenador do projeto indicado pela ICT/AGÊNCIA DE FOMENTO anotará, em registro próprio, as ocorrências relacionadas com a execução do objeto, recomendando as medidas necessárias à autoridade competente para regularização das inconsistências observadas. </p>
+	<p><span id="p-title">9.3</span>O acompanhamento do projeto pelos coordenadores não exclui nem reduz a responsabilidade dos PARCEIROS perante terceiros. </p>
+	<p><span id="p-title">9.4</span>A impossibilidade técnica ou científica quanto ao cumprimento de qualquer fase do Plano de Trabalho, que seja devidamente comprovada e justificada, acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou término do Plano de Trabalho e consequente extinção deste Acordo. </p>
 
 	<!------clausula---->
 
 	<h5 class="font-weight-bold">CLÁUSULA DÉCIMA - DA VIGÊNCIA E DA PRORROGAÇÃO</h5>
-	<p><span id="p-title">10.1</span> O presente Acordo de Parceria para PD&I vigerá pelo prazo de {{$contrato->prazo_vigencia}} anos, a partir da data de sua assinatura, prorrogáveis.</p>
+	<p><span id="p-title">10.1</span>O presente Acordo de Parceria para PD&I vigerá pelo prazo de {{$contrato->prazo_vigencia}} anos, a partir da data de sua assinatura, prorrogáveis.</p>
 		
 
-	<p><span id="p-title">10.2</span> Este Acordo de Parceria poderá ser prorrogado por meio de termo aditivo, com as respectivas alterações no Plano de Trabalho, mediante a apresentação de justifica técnica.</p>
+	<p><span id="p-title">10.2</span>Este Acordo de Parceria poderá ser prorrogado por meio de termo aditivo, com as respectivas alterações no Plano de Trabalho, mediante a apresentação de justifica técnica.</p>
 	
 
 	<h5 class="font-weight-bold">CLÁUSULA DÉCIMA PRIMEIRA- DAS ALTERAÇÕES</h5>
 
-	<p><span id="p-title">11.1</span> As cláusulas e condições estabelecidas no presente instrumento poderão ser alteradas mediante celebração de termo aditivo. </p>
-	<p><span id="p-title">11.2</span> A proposta de alteração, devidamente justificada, deverá ser apresentada por escrito, dentro da vigência do instrumento. </p>
-	<p><span id="p-title">11.3</span> É vedado o aditamento do presente Acordo com o intuito de alterar o seu objeto, sob pena de nulidade do ato e responsabilidade do agente que o praticou. </p>
+	<p><span id="p-title">11.1</span>As cláusulas e condições estabelecidas no presente instrumento poderão ser alteradas mediante celebração de termo aditivo. </p>
+	<p><span id="p-title">11.2</span>A proposta de alteração, devidamente justificada, deverá ser apresentada por escrito, dentro da vigência do instrumento. </p>
+	<p><span id="p-title">11.3</span>É vedado o aditamento do presente Acordo com o intuito de alterar o seu objeto, sob pena de nulidade do ato e responsabilidade do agente que o praticou. </p>
 	
 	<!------clausula---->
 
 	<h5 class="font-weight-bold">CLÁUSULA DÉCIMA SEGUNDA – DO MONITORAMENTO, DA AVALIAÇÃO E DA PRESTAÇÃO DE CONTAS</h5>
 
-	<p><span id="p-title">12.1</span> Os PARCEIROS exercerão a fiscalização técnico-financeira das atividades do presente Acordo. </p>
-	<p><span id="p-title">12.2</span> O pesquisador deverá encaminhar ao Setor responsável ou COMISSÃO DA ICT: </p>
+	<p><span id="p-title">12.1</span>Os PARCEIROS exercerão a fiscalização técnico-financeira das atividades do presente Acordo. </p>
+	<p><span id="p-title">12.2</span>O pesquisador deverá encaminhar ao Setor responsável ou COMISSÃO DA ICT: </p>
 
-	<p class="font-italic text-dark font-weight-bold">{!! $contrato->clausula_edit_12_a !!}</p>
-	<p class="font-italic text-dark font-weight-bold">{!! $contrato->clausula_edit_12_b !!}</p>
+	<p style="margin-left: 16px !important"><span style="margin-right: 8px !important">a)</span>{!! $contrato->clausula_edit_12_a !!}</p>
+	<p style="margin-left: 16px !important"><span style="margin-right: 8px !important">b)</span>{!! $contrato->clausula_edit_12_b !!}</p>
 
 	<p><span class="font-weight-bold">12.3</span> No Formulário de Resultado de que trata a subcláusula 12.2, deverá ser demonstrada a compatibilidade entre as metas previstas e as alcançadas no período, bem como apontadas as justificativas em caso de discrepância, consolidando dados e valores das ações desenvolvidas. </p>
 	<p><span class="font-weight-bold">12.4</span> Caberá a cada PARCEIRO adotar as providências necessárias julgadas cabíveis</p>
@@ -204,12 +202,11 @@
 
 	<h5 class="font-weight-bold">CLÁUSULA DÉCIMA TERCEIRA – DA EXTINÇÃO DO ACORDO</h5>
 
-	<p><span class="font-weight-bold">13.1</span> Este Acordo poderá, a qualquer tempo, ser denunciado pelos PARCEIROS, devendo o interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de 60 (sessenta) dias da data em que se pretenda que sejam encerradas as atividades, respeitadas as obrigações assumidas com terceiros entre os PARCEIROS, creditando eventuais benefícios adquiridos no período.. </p>
-
-	<p><span class="font-weight-bold">13.2</span> {!! $contrato->clausula_edit_13_2 !!}</p>
-	<p><span id="p-title">13.2.1</span> {!! $contrato->clausula_edit_13_2_1 !!}</p>
-	<p><span id="p-title">13.2.2</span> {!! $contrato->clausula_edit_13_2_2 !!}</p>
-	<p><span class="font-weight-bold">13.3</span> {!! $contrato->clausula_edit_13_3 !!}</p>
+	<p><span id="p-title">13.1</span>Este Acordo poderá, a qualquer tempo, ser denunciado pelos PARCEIROS, devendo o interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de 60 (sessenta) dias da data em que se pretenda que sejam encerradas as atividades, respeitadas as obrigações assumidas com terceiros entre os PARCEIROS, creditando eventuais benefícios adquiridos no período.. </p>
+	<p><span id="p-title">13.2</span>{!! $contrato->clausula_edit_13_2 !!}</p>
+	<p><span id="p-title">13.2.1</span>{!! $contrato->clausula_edit_13_2_1 !!}</p>
+	<p><span id="p-title">13.2.2</span>{!! $contrato->clausula_edit_13_2_2 !!}</p>
+	<p><span id="p-title">13.3</span>{!! $contrato->clausula_edit_13_3 !!}</p>
 
 	<p><span span id="p-title">13.4 O</span> presente Acordo será extinto com o cumprimento do objeto ou com o decurso de prazo de vigência. </p>
 
@@ -219,20 +216,21 @@
 	<h5 class="font-weight-bold">CLÁUSULA DÉCIMA QUARTA - DA PUBLICIDADE </h5>
 	<p>
 		<span class="font-weight-bold">14.1</span> A publicação do extrato do presente Acordo de Parceria para PD&I no Diário Oficial da União (DOU) é condição indispensável para sua eficácia e será providenciada pela ICT no prazo de até 20 (vinte) dias da sua assinatura. <br>
-	</p><br>
+	</p>
 
 	<!------clausula---->
 	
 	<h5 class="font-weight-bold">CLÁUSULA DÉCIMA QUINTA – DAS NOTIFICAÇÕES</h5>
 	
-	<p><span class="font-weight-bold">15.1</span> Qualquer comunicação ou notificação relacionada ao Acordo de Parceria poderá ser feita pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no respectivo endereço do PARCEIRO notificado, conforme as seguintes informações: PARCEIRO(S) PÚBLICO(S): (endereço completo, telefone, celular e e-mail) PARCEIRO(S) PÚBLICO(S): (endereço completo, telefone, celular e e-mail). </p>
-	<p><span class="font-weight-bold">15.2</span> Qualquer comunicação ou solicitação prevista neste Acordo de Parceria será considerada como tendo sido legalmente entregue: </p>
-	<p><span id="p-title">15.2.1</span> Quando entregue em mão a quem destinada, com o comprovante de recebimento; </p>
-	<p><span id="p-title">15.2.2</span> Se enviada por correio, registrada ou certificada, porte pago e devidamente endereçada, quando recebida pelo destinatário ou no 5° (quinto) dia seguinte à data do despacho, o que ocorrer primeiro; </p>
-	<p><span id="p-title">15.2.3</span> Se enviada por fax, quando recebida pelo destinatário; </p>
-	<p><span id="p-title">15.2.4</span> Se enviada por e-mail, desde que confirmado o recebimento pelo destinatário, ou, após transcorridos 5 (cinco) dias úteis, o que ocorrer primeiro. Na hipótese de transcurso do prazo sem confirmação, será enviada cópia por correio, considerando-se, todavia, a notificação devidamente realizada. </p>
-	<p><span class="font-weight-bold">15.3</span> Qualquer dos PARCEIROS poderá, mediante comunicação por escrito, alterar o endereço para o qual as comunicações ou solicitações deverão ser enviadas. </p>
-
+	<p><span id="p-title">15.1</span>Qualquer comunicação ou notificação relacionada ao Acordo de Parceria poderá ser feita pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no respectivo endereço do PARCEIRO notificado, conforme as seguintes informações: PARCEIRO(S) PÚBLICO(S): (endereço completo, telefone, celular e e-mail) PARCEIRO(S) PÚBLICO(S): (endereço completo, telefone, celular e e-mail). </p>
+	<p><span id="p-title">15.2</span>Qualquer comunicação ou solicitação prevista neste Acordo de Parceria será considerada como tendo sido legalmente entregue: </p>
+	<p><span id="p-title">15.2.1</span>Quando entregue em mão a quem destinada, com o comprovante de recebimento; </p>
+	<p><span id="p-title">15.2.2</span>Se enviada por correio, registrada ou certificada, porte pago e devidamente endereçada, quando recebida pelo destinatário ou no 5° (quinto) dia seguinte à data do despacho, o que ocorrer primeiro; </p>
+	<p><span id="p-title">15.2.3</span>Se enviada por fax, quando recebida pelo destinatário; </p>
+	<p><span id="p-title">15.2.4</span>Se enviada por e-mail, desde que confirmado o recebimento pelo destinatário, ou, após transcorridos 5 (cinco) dias úteis, o que ocorrer primeiro. Na hipótese de transcurso do prazo sem confirmação, será enviada cópia por correio, considerando-se, todavia, a notificação devidamente realizada. </p>
+	<p><span id="p-title">15.3</span> Qualquer dos PARCEIROS poderá, mediante comunicação por escrito, alterar o endereço para o qual as comunicações ou solicitações deverão ser enviadas. </p>
+	
+	<br><br><br>
 	<!------clausula---->
 	
 	<h5 class="font-weight-bold">CLÁUSULA DÉCIMA SEXTA – DISPOSIÇÕES GERAIS</h5>
@@ -256,12 +254,12 @@
 		</p><br>
 
 		<hr style="text-align: center !important; justify-content:center !important; align-itens: center !important" width="40%">		
-		<p style="text-align: center !important; justify-content:center !important; align-itens: center !important">
+		<p style="text-align: center !important; justify-content:center !important; align-itens: center !important; margin-top: 0 !important">
 			{{$contrato->nome_testemunha_1}} <br> Testemunha 1</p>
 		</p><br>
 
 		<hr style="text-align: center !important; justify-content:center !important; align-itens: center !important" width="40%">		
-		<p style="text-align: center !important; justify-content:center !important; align-itens: center !important">
+		<p style="text-align: center !important; justify-content:center !important; align-itens: center !important; margin-top: 0 !important">
 			{{$contrato->nome_testemunha_2}} <br> Testemunha 2</p>
 		</p><br>
 

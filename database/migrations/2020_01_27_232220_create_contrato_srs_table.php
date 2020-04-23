@@ -120,6 +120,9 @@ class CreateContratoSrsTable extends Migration
             $table->string('nome_inst_privado_foro');
             $table->string('nome_rep_privado_foro');
             $table->string('cargo_rep_privado_foro');
+
+            $table->string('nome_testemunha_1');
+            $table->string('nome_testemunha_2');
            
             $table->string('tipo')->nullable()->default(null);
 

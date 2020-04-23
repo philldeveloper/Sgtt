@@ -119,6 +119,8 @@ class Contrato_sr extends Model
         'nome_inst_privado_foro',
         'nome_rep_privado_foro',
         'cargo_rep_privado_foro',
+        'nome_testemunha_1',
+        'nome_testemunha_2',
         
         'tipo',
         'user_id'

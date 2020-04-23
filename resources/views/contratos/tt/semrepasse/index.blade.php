@@ -1072,6 +1072,27 @@
                 placeholder="Cargo">
             </div>
           </div><!-- /.row-->
+
+          <div class="form-row mt-5">
+            <div class="form-group col-md-3">
+              <label for="nome_testemunha_1" class="font-weight-bold text-black">Testemunha 1:</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold" 
+                name="nome_testemunha_1" id="nome_testemunha_1" 
+                placeholder="Nome da testemunha"
+                required="">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="nome_testemunha_2" class="font-weight-bold text-black">Testemunha 2:</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold"
+                name="nome_testemunha_2" 
+                id="nome_testemunha_2" 
+                placeholder="Nome da testemunha"
+                required="">
+            </div>
+          </div><!-- /.row-->
+
         </div>
       </div>
     </div>

@@ -155,6 +155,9 @@ class Contrato_srController extends Controller
         $contrato_sr->nome_rep_privado_foro = $request->nome_rep_privado_foro;
         $contrato_sr->cargo_rep_privado_foro = $request->cargo_rep_privado_foro;
 
+        $contrato_sr->nome_testemunha_1 = $request->nome_testemunha_1;
+        $contrato_sr->nome_testemunha_2 = $request->nome_testemunha_2;
+
         $contrato_sr->tipo = $request->tipo;
         $contrato_sr->user_id = Auth::id();      
         

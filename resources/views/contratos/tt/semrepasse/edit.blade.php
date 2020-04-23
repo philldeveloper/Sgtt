@@ -1052,7 +1052,7 @@
             </div>
             <div class="form-group col-md-3">
               <label for="cargo_rep_foro" class="font-weight-bold text-black">Cargo</label>
-              <input type="email" 
+              <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="cargo_rep_foro" 
                 id="cargo_rep_foro" 
@@ -1081,7 +1081,7 @@
             </div>
             <div class="form-group col-md-3">
               <label for="cargo_rep_privado_foro" class="font-weight-bold text-black">Cargo</label>
-              <input type="email" 
+              <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="cargo_rep_privado_foro" 
                 id="cargo_rep_privado_foro" 
@@ -1089,6 +1089,25 @@
                 value="{{$contratos_sr->cargo_rep_privado_foro}}">
             </div>
             <input type="hidden" id="tipo" name="{{$contratos_sr->tipo}}" value="Sem Repasse">
+          </div><!-- /.row-->
+          <div class="form-row mt-5">
+            <div class="form-group col-md-3">
+              <label for="nome_testemunha_1" class="font-weight-bold text-black">Testemunha 1:</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold" 
+                name="nome_testemunha_1" id="nome_testemunha_1" 
+                placeholder="{{$contratos_sr->nome_testemunha_1}}"
+                value="{{$contratos_sr->nome_testemunha_1}}">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="nome_testemunha_2" class="font-weight-bold text-black">Testemunha 2:</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold"
+                name="nome_testemunha_2" 
+                id="nome_testemunha_2" 
+                placeholder="{{$contratos_sr->nome_testemunha_2}}"
+                value="{{$contratos_sr->nome_testemunha_2}}">
+            </div>
           </div><!-- /.row-->
         </div>
       </div>
