@@ -48,6 +48,19 @@
 @include('pesquisador.modals.modalCoordenadorPrivado')
 @include('pesquisador.modals.modalPropriedadeIntelectual')
 @include('pesquisador.modals.modalConfidencial')
+@include('pesquisador.modals.ModalAtoNomeacao')
+@include('pesquisador.modals.modal_clausula_2_3')
+@include('pesquisador.modals.modal_clausula_2_4')
+@include('pesquisador.modals.modal_clausula_2_5')
+@include('pesquisador.modals.modal_clausula_2_6')
+@include('pesquisador.modals.modal_clausula_5_2')
+@include('pesquisador.modals.modal_clausula_5_3')
+@include('pesquisador.modals.modal_clausula_5_4')
+@include('pesquisador.modals.modal_clausula_7_all')
+@include('pesquisador.modals.modal_clausula_8_all')
+@include('pesquisador.modals.modal_clausula_10_1')
+@include('pesquisador.modals.modal_clausula_default')
+@include('pesquisador.modals.modal_anti_corrupcao')
 
 <div class="title-header">
     <span class="h3 ml-3 font-weight-bold">Exibir Contrato <span class="badge badge-primary">{{$contratos_sr->id}}</span></span>

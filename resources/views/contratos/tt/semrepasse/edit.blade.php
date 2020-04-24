@@ -41,6 +41,19 @@
 @include('pesquisador.modals.modalCoordenadorPrivado')
 @include('pesquisador.modals.modalPropriedadeIntelectual')
 @include('pesquisador.modals.modalConfidencial')
+@include('pesquisador.modals.ModalAtoNomeacao')
+@include('pesquisador.modals.modal_clausula_2_3')
+@include('pesquisador.modals.modal_clausula_2_4')
+@include('pesquisador.modals.modal_clausula_2_5')
+@include('pesquisador.modals.modal_clausula_2_6')
+@include('pesquisador.modals.modal_clausula_5_2')
+@include('pesquisador.modals.modal_clausula_5_3')
+@include('pesquisador.modals.modal_clausula_5_4')
+@include('pesquisador.modals.modal_clausula_7_all')
+@include('pesquisador.modals.modal_clausula_8_all')
+@include('pesquisador.modals.modal_clausula_10_1')
+@include('pesquisador.modals.modal_clausula_default')
+@include('pesquisador.modals.modal_anti_corrupcao')
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
@@ -257,6 +270,7 @@
           </div>
           <div class="form-group col-md-3">
             <label for="ato-nomeacao" class="font-weight-bold text-black">Ato de Nomeação</label>
+            <a href="#" data-toggle="modal" data-target="#atoNomeacao"><i class="fas fa-fw fa-question-circle float-right"></i></a>
             <input type="text" class="form-control text-black font-weight-bold" value="{{$contratos_sr->ato_nomeacao}}" name="ato_nomeacao" id="ato-nomeacao" placeholder="Ato de Nomeação">
           </div>
           <div class="form-group col-md-3">
@@ -428,22 +442,26 @@
           <div class="container-fluid pt-4 pb-4 bg-light">
 
             <div class="col-md-12 mb-3">
-                <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
+                <a href="#" data-toggle="modal" data-target="#modal_clausula_2_3"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
                 <textarea class="form-control" value="{{$contratos_sr->clausula_edit_2_3}}" name="clausula_edit_2_3" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_3}}</textarea>
             </div>
 
             <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.4</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.4</a>
+              <a href="#" data-toggle="modal" data-target="#modal_clausula_2_4"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
                 <textarea class="form-control" value="{{$contratos_sr->clausula_edit_2_4}}" name="clausula_edit_2_4" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_4}}</textarea>
             </div>
 
             <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.5</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.5</a>
+              <a href="#" data-toggle="modal" data-target="#modal_clausula_2_5"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
                 <textarea class="form-control" value="{{$contratos_sr->clausula_edit_2_5}}" name="clausula_edit_2_5" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_5}}</textarea>
             </div>
 
             <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.6</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.6</a>
+              <a href="#" data-toggle="modal" data-target="#modal_clausula_2_6"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
                 <textarea class="form-control" value="{{$contratos_sr->clausula_edit_2_6}}" name="clausula_edit_2_6" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_6}}</textarea>
             </div>
 
@@ -482,12 +500,12 @@
             </div>
 
             <div class="col-md-12 mb-3">
-                <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">LETRA B</a>
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA B</a>
                 <textarea class="form-control" value="{{$contratos_sr->clausula_edit_3_1_b}}" name="clausula_edit_3_1_b" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_3_1_b}}</textarea>
             </div>
 
             <div class="col-md-12 mb-3">
-                <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">LETRA C</a>
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA C</a>
                 <a href="#" data-toggle="modal" data-target="#modalExemplo16" class="float-left"><i class="fas fa-fw fa-question-circle"></i></a>
                 <textarea class="form-control" value="{{$contratos_sr->clausula_edit_3_1_c}}" name="clausula_edit_3_1_c" rows="3" style="background-color: #F6FAFA; resize: none !important;" placeholder="">{{$contratos_sr->clausula_edit_3_1_c}}</textarea>
             </div>
@@ -507,8 +525,8 @@
             <p><b>B)</b> Colaborar, nos termos do plano de trabalho, para que o Acordo alcance os objetivos nele descritos:</p>
             
             <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">LETRA C</a>
-            <a href="#" data-toggle="modal" data-target="#modalExemplo17"><i class="fas fa-fw fa-question-circle float-right m-2"></i></a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA C</a>
+            <a href="#" data-toggle="modal" data-target="#modalExemplo17"><i class="fas fa-fw fa-question-circle m-2"></i></a>
                 <textarea placeholder="{{$contratos_sr->clausula_edit_3_b}}" class="form-control font-weight-bold" value="{{$contratos_sr->clausula_edit_3_1_2_c}}" name="clausula_edit_3_1_2_c" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_3_1_2_c}}</textarea>
             </div> 
 
@@ -519,7 +537,8 @@
             </div>
 
             <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 3.3</a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 3.3</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left mt-1 m-2"></i></a>
                 <textarea class="form-control" value="{{$contratos_sr->clausula_edit_3_3}}" name="clausula_edit_3_3" rows="4" style="background-color: #F6FAFA; resize: none !important;" placeholder="{{$contratos_sr->clausula_edit_3_3}}">{{$contratos_sr->clausula_edit_3_3}}</textarea>
             </div>
 
@@ -590,55 +609,64 @@
 
         <div class="container-fluid pt-4 pb-4 pl-0 pr-0">
           <div class="col-md-12 mb-3">
-              <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.1</a>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.1</a>
+              <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_1}}" name="clausula_edit_5_1" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_1}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.2</a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.2</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_5_2"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_2}}" name="clausula_edit_5_2" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_2}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.3</a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.3</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_5_3"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_3}}" name="clausula_edit_5_3" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_3}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.4</a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.4</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_5_4"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_4}}" name="clausula_edit_5_4" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_4}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.5</a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.5</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_5_5"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_5}}" name="clausula_edit_5_5" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_5}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.6</a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.6</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_5_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_6}}" name="clausula_edit_5_6" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_6}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.7</a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.7</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_5_7"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_7}}" name="clausula_edit_5_7" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_7}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.8</a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.8</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_5_8"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_8}}" name="clausula_edit_5_8" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_8}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.9</a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.9</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_5_9"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_9}}" name="clausula_edit_5_9" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_9}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.10</a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.10</a>
               <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_10}}" name="clausula_edit_5_10" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_10}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.11</a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.11</a>
               <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_11}}" name="clausula_edit_5_11" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_11}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.12</a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.12</a>
               <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_12}}" name="clausula_edit_5_12" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_12}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.13</a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.13</a>
               <textarea class="form-control" value="{{$contratos_sr->clausula_edit_5_13}}" name="clausula_edit_5_13" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_5_13}}</textarea>
           </div>
         </div><!--container-fluid-->
@@ -670,7 +698,7 @@
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
           
-          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">7 CLÁUSULA SÉTIMA - DAS INFORMAÇÕES CONFIDENCIAIS E SIGILOSAS<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">7 CLÁUSULA SÉTIMA - DAS INFORMAÇÕES CONFIDENCIAIS E SIGILOSAS</h4><hr>
           <br>
           <p><b>7.1 </b>Os PARCEIROS adotarão todas as medidas necessárias para proteger o sigilo das INFORMAÇÕES CONFIDENCIAIS recebidas em função da celebração, desenvolvimento e execução do presente Acordo de Parceria, inclusive na adoção de medidas que assegurem a tramitação do processo, não as divulgando a terceiros, sem a prévia e escrita autorização da outro PARCEIRO.</p>
           <p><b>7.2 </b>Fica vedado aos PARCEIROS utilizar, no âmbito deste Acordo de Parceria, nomes, símbolos e imagens que caracterizem promoção pessoal de autoridades ou servidores públicos.Os PARCEIROS informarão aos seus funcionários e prestadores de serviços e consultores que necessitem ter acesso às informações e conhecimentos que envolvem o objeto do Acordo, acerca das obrigações de sigilo assumidas, responsabilizando-se integralmente por eventuais infrações que estes possam cometer. </p>
@@ -697,15 +725,15 @@
 
           <div class="container-fluid bg-light p-3 pt-4 pb-4">
             <div class="col-md-12 mb-3">
-                <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.6</a>
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.6</a>
                 <textarea class="form-control" value="{{$contratos_sr->clausula_edit_7_6}}" name="clausula_edit_7_6" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_7_6}}</textarea>
             </div>
             <div class="col-md-12 mb-3">
-                <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.7</a>
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.7</a>
                 <textarea class="form-control" value="{{$contratos_sr->clausula_edit_7_7}}" name="clausula_edit_7_7" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_7_7}}</textarea>
             </div>
             <div class="col-md-12 mb-3">
-                <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.8</a>
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.8</a>
                 <textarea class="form-control" value="{{$contratos_sr->clausula_edit_7_8}}" name="clausula_edit_7_8" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_7_8}}</textarea>
             </div>
           </div><!--container-->
@@ -735,37 +763,44 @@
         <div class="container-fluid pt-4 pb-4 pl-0 pr-0">
           
           <div class="col-md-12 mb-3">
-            <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.1</a>
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.1</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_8_all"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
             <textarea class="form-control" value="{{$contratos_sr->clausula_edit_8_1}}" name="clausula_edit_8_1" rows="8" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_1}}</textarea>
           </div>
 
           <div class="col-md-12 mb-3">
-          <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.2</a>
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.2</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_8_all"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
             <textarea class="form-control" value="{{$contratos_sr->clausula_edit_8_2}}" name="clausula_edit_8_2" rows="6" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_2}}</textarea>
           </div>
 
           <div class="col-md-12 mb-3">
             <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA A)</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_8_all"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
             <textarea class="form-control" value="{{$contratos_sr->clausula_edit_8_2_a}}" name="clausula_edit_8_2_a" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_2_a}}</textarea>
           </div>
 
           <div class="col-md-12 mb-3">
             <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA B)</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_8_all"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
             <textarea class="form-control" value="{{$contratos_sr->clausula_edit_8_2_b}}" name="clausula_edit_8_2_b" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_2_b}}</textarea>
           </div>
 
           <div class="col-md-12 mb-3">
           <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA C)</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_8_all"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
             <textarea class="form-control" value="{{$contratos_sr->clausula_edit_8_2_c}}" name="clausula_edit_8_2_c" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_2_c}}</textarea>
           </div>
 
           <div class="col-md-12 mb-3">
           <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA D)</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_8_all"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
             <textarea class="form-control" value="{{$contratos_sr->clausula_edit_8_2_d}}" name="clausula_edit_8_2_d" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_2_d}}</textarea>
           </div>
 
           <div class="col-md-12 mb-3">
             <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA E)</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_8_all"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
             <textarea class="form-control" value="{{$contratos_sr->clausula_edit_8_2_e}}" name="clausula_edit_8_2_e" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_2_e}}</textarea>
           </div>
 
@@ -795,7 +830,10 @@
         <div class="text-justify text-black">
           <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">10. CLÁUSULA DÉCIMA - DA VIGÊNCIA E DA PRORROGAÇÃO</h4><hr>
           <br>
-          <p><b>10.1</b> O presente Acordo de Parceria para PD&I vigerá pelo prazo de <input class="myform-control text-black" type="text" value="{{$contratos_sr->prazo_vigencia}}" name="prazo_vigencia" placeholder="{{$contratos_sr->prazo_vigencia}}"> anos, a partir da data de sua assinatura, prorrogáveis.</p>
+          <p><b>10.1</b> O presente Acordo de Parceria para PD&I vigerá pelo prazo de <input class="myform-control text-black" type="text" value="{{$contratos_sr->prazo_vigencia}}" name="prazo_vigencia" placeholder="{{$contratos_sr->prazo_vigencia}}">
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_10_1"><i class="fas fa-fw fa-question-circle"></i></a>
+           anos, a partir da data de sua assinatura, prorrogáveis.</p>
+          
           <div class="alert alert-warning" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             NOTAS EXPLICATIVAS!
@@ -867,22 +905,26 @@
         <!--clausula editavel 13-->
 
         <div class="col-md-12 mb-3">
-          <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">13.2</a>
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.2</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
           <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_13_2}}" name="clausula_edit_13_2" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_13_2}}</textarea>
         </div>
 
         <div class="col-md-12 mb-3">
-          <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">13.2.1</a>
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.2.1</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
           <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_13_2_1}}" name="clausula_edit_13_2_1" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_13_2_1}}</textarea>
         </div>
 
         <div class="col-md-12 mb-3">
-          <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">13.2.2</a>
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.2.2</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
           <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_13_2_2}}" name="clausula_edit_13_2_2" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_13_2_2}}</textarea>
         </div>
 
         <div class="col-md-12 mb-3">
-          <a class="badge badge-dark text-light font-weight-bold float-left mb-2 p-2">13.3</a>
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.3</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
           <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_13_3}}" name="clausula_edit_13_3" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_13_3}}</textarea>
         </div>
         
@@ -913,6 +955,7 @@
                         pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no
                         respectivo endereço do PARCEIRO notificado, conforme as seguintes informações:<br>
           <span class="font-weight-bold">PARCEIRO(S) PÚBLICO(S):</span> 
+          <a href="#" data-toggle="modal" data-target="#dados_instituicoes"><i class="fas fa-fw fa-question-circle m-2"></i></a>
           <div class="form-row">
             <div class="form-group col-md-3">
               <label for="endereco" class="font-weight-bold text-black">Endereço</label>
@@ -953,6 +996,7 @@
           </div><!-- /.row-->
           <!-- Pariceiro privado -->
           <span class="font-weight-bold ">PARCEIRO(S) PRIVADO(S):</span> 
+          <a href="#" data-toggle="modal" data-target="#dados_instituicoes"><i class="fas fa-fw fa-question-circle m-2"></i></a>
           <div class="form-row mt-3">
             <div class="form-group col-md-3">
               <label for="endereco" class="font-weight-bold text-black">Endereço</label>
@@ -1035,6 +1079,7 @@
           <div class="form-row mt-3">
             <div class="form-group col-md-3">
               <label for="ict_inst_foro" class="font-weight-bold text-black">ICT:</label>
+              <a href="#" data-toggle="modal" data-target="#ict"><i class="fas fa-fw fa-question-circle m-2"></i></a>
               <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="ict_inst_foro" 
@@ -1064,6 +1109,7 @@
           <div class="form-row mt-3">
             <div class="form-group col-md-3">
               <label for="nome_inst_privado_foro" class="font-weight-bold text-black">Parceiro Privado:</label>
+              <a href="#" data-toggle="modal" data-target="#parceiro"><i class="fas fa-fw fa-question-circle m-2"></i></a>
               <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="nome_inst_privado_foro" 
@@ -1244,6 +1290,11 @@ function validateStepForm() {
     if (inputs[i].value == "") {
       inputs[i].className += " invalid";
       valid = false;
+      
+      if(inputs[i].name === "parceiro_contato_celular" || inputs[i].name === "privado_contato_celular"){
+        inputs[i].className = inputs[i].className.replace(" invalid", "");
+        valid = true
+      }
     }
 
     if(i < selects.length){

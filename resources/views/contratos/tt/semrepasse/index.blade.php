@@ -954,6 +954,7 @@
                         pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no
                         respectivo endereço do PARCEIRO notificado, conforme as seguintes informações:<br>
           <span class="font-weight-bold">PARCEIRO(S) PÚBLICO(S):</span> 
+          <a href="#" data-toggle="modal" data-target="#dados_instituicoes"><i class="fas fa-fw fa-question-circle m-2"></i></a>
           <div class="form-row">
             <div class="form-group col-md-3">
               <label for="endereco" class="font-weight-bold text-black">Endereço</label>
@@ -990,6 +991,7 @@
           </div><!-- /.row-->
           <!-- Pariceiro privado -->
           <span class="font-weight-bold ">PARCEIRO(S) PRIVADO(S):</span> 
+          <a href="#" data-toggle="modal" data-target="#dados_instituicoes"><i class="fas fa-fw fa-question-circle m-2"></i></a>
           <div class="form-row mt-3">
             <div class="form-group col-md-3">
               <label for="endereco" class="font-weight-bold text-black">Endereço</label>
@@ -1067,6 +1069,7 @@
           <div class="form-row mt-3">
             <div class="form-group col-md-3">
               <label for="ict_inst_foro" class="font-weight-bold text-black">ICT:</label>
+              <a href="#" data-toggle="modal" data-target="#ict"><i class="fas fa-fw fa-question-circle m-2"></i></a>
               <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="ict_inst_foro" 
@@ -1093,6 +1096,7 @@
           <div class="form-row mt-3">
             <div class="form-group col-md-3">
               <label for="nome_inst_privado_foro" class="font-weight-bold text-black">Parceiro Privado:</label>
+              <a href="#" data-toggle="modal" data-target="#parceiro"><i class="fas fa-fw fa-question-circle m-2"></i></a>
               <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="nome_inst_privado_foro" 
