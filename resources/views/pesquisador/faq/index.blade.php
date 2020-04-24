@@ -18,27 +18,27 @@
 </style>
 
 <!-- Begin Page Content -->
-<div class="mb-4 col-md-12 faq-container bg-white box-shadow">
-  <h1 class="h3 mb-0 text-gray-800 font-weight-bold">Como podemos ajudar você?</h1>
+<div class="mb-4 col-md-12 faq-container bg-white p-5" style="min-height: 200px !important">
+  <h1 class="h2 mb-0 text-gray-800 font-weight-bold">Como podemos ajudar você?</h1>
 </div>
 
 <div class="container p-5">
   <div class="row justify-content-center">
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
       <li class="nav-item">
-        <a class="nav-link py-3 mb-4 font-weight-bold active" id="pills-ask-tab" data-toggle="pill" href="#pills-ask" role="tab" aria-controls="pills-ask" aria-selected="true">Perguntas Frequentes</a>
+        <a class="nav-link rounded-0 py-3 mb-4 font-weight-bold active" id="pills-ask-tab" data-toggle="pill" href="#pills-ask" role="tab" aria-controls="pills-ask" aria-selected="true">Perguntas Frequentes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link py-3 mb-4 font-weight-bold" id="pills-tutorials-tab" data-toggle="pill" href="#pills-tutorials" role="tab" aria-controls="pills-tutorials" aria-selected="false">Tutoriais</a>
+        <a class="nav-link rounded-0 py-3 mb-4 font-weight-bold" id="pills-tutorials-tab" data-toggle="pill" href="#pills-tutorials" role="tab" aria-controls="pills-tutorials" aria-selected="false">Tutoriais</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link py-3 mb-4 font-weight-bold" id="pills-docs-tab" data-toggle="pill" href="#pills-docs" role="tab" aria-controls="pills-docs" aria-selected="false">Documentação</a>
+        <a class="nav-link rounded-0 py-3 mb-4 font-weight-bold" id="pills-docs-tab" data-toggle="pill" href="#pills-docs" role="tab" aria-controls="pills-docs" aria-selected="false">Documentação</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link py-3 mb-4 font-weight-bold" id="pills-nit-tab" data-toggle="pill" href="#pills-nit" role="tab" aria-controls="pills-nit" aria-selected="false">Sobre o NIT</a>
+        <a class="nav-link rounded-0 py-3 mb-4 font-weight-bold" id="pills-nit-tab" data-toggle="pill" href="#pills-nit" role="tab" aria-controls="pills-nit" aria-selected="false">Sobre o NIT</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link py-3 mb-4 font-weight-bold" id="pills-marca-tab" data-toggle="pill" href="#pills-marca" role="tab" aria-controls="pills-marca" aria-selected="false">Manual da Marca</a>
+        <a class="nav-link rounded-0 py-3 mb-4 font-weight-bold" id="pills-marca-tab" data-toggle="pill" href="#pills-marca" role="tab" aria-controls="pills-marca" aria-selected="false">Manual da Marca</a>
       </li>
     </ul>
   </div>
@@ -71,8 +71,8 @@
     <div class="tab-pane fade" id="pills-tutorials" role="tabpanel" aria-labelledby="pills-tutorials-tab">
       <h2 class="font-weight-bold text-dark mb-5">Tutoriais</h2>
       <h4 class="">Como gerar um contrato</h4><hr>
-      <p>Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint.Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-      <a href="#" class="btn btn-success btn-lg">Ver PDF</a>
+      <!-- <p>Veja em pdf como criar um novo contrato usando o SGTT.</p> -->
+      <a href="{{asset('assets/tutorial_sistema.pdf')}}" target="blank" class="btn btn-success btn-lg">Ver PDF</a>
     </div>
 
 
