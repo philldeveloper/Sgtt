@@ -218,7 +218,7 @@
                         <a @popper(Editar) href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
                         <a @popper(Baixar) href="#" data-toggle="modal" data-target="#modal-sr-loading--{{$contratos->id}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
                         <!-- <a @popper(Baixar) href="{{route('printpdf', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a> -->
-                        <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$contratos->email}}?subject= SGTT - Informações sobre Contrato SEM Repasse&body=Caro {{$contratos->nome}}, " target="blank"><i class="fas fa-paper-plane"></i></a>
+                        <!-- <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$contratos->email}}?subject= SGTT - Informações sobre Contrato SEM Repasse&body=Caro {{$contratos->nome}}, " target="blank"><i class="fas fa-paper-plane"></i></a> -->
                         @csrf
                         @method('DELETE')
                         <button @popper(Excluir) class="btn btn-sm pl-3 pr-3 bg-danger text-light font-weight-bold" type="submit"><i class="fa fa-trash text-light"></i></button>
@@ -274,7 +274,7 @@
                         <a @popper(Editar) href="{{route('contratocr_edit', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
                         <a @popper(Baixar) href="#" data-toggle="modal" data-target="#modal-cr-loading--{{$cr->id}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
                         <!-- <a @popper(Baixar) href="{{route('printpdf', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a> -->
-                        <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$cr->email}}?subject= SGTT - Informações sobre Contrato COM Repasse&body=Caro {{$cr->nome}}, " target="blank"><i class="fas fa-paper-plane"></i></a>
+                        <!-- <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$cr->email}}?subject= SGTT - Informações sobre Contrato COM Repasse&body=Caro {{$cr->nome}}, " target="blank"><i class="fas fa-paper-plane"></i></a> -->
                         @csrf
                         @method('DELETE')
                         <button @popper(Excluir) class="btn btn-sm pl-3 pr-3 bg-danger text-light font-weight-bold" type="submit"><i class="fa fa-trash text-light"></i></button>
