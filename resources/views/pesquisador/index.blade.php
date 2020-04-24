@@ -120,10 +120,14 @@
 <div class="row">
   <div class="col-lg-6">
     <div class="notice notice-info notice-lg">
-        <span class="h4 font-weight-bold text-dark text-uppercase">Acordo de Cooperação <span class="text-dark">sem repasse</span></span>
+        <span class="h4 font-weight-bold text-dark text-uppercase">Acordo de Cooperação <span class="text-dark">sem repasse</span>
+          <a class="float-right" data-toggle="modal" data-target="#semrepasseModal" href=""><i class="fas fa-exclamation-circle text-warning"></i></a>
+        </span>
         <hr>
-        <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
-        
+        <p class="subtitle pt-3 text-justify" style="padding-bottom: 2.7rem!important;">
+          Esta minuta deve ser utilizada para acordos de parceria para PD&I quando não houver repasse de recursos entre os parceiros.
+        </p>
+
         <div class="container-button text-right">
           <a href="{{route('contrato_sr.index')}}" class="btn btn-success btn-lg btn-icon-split">
             <span class="icon text-white-50">
@@ -136,9 +140,13 @@
   </div>
   <div class="col-lg-6">
     <div class="notice notice-success notice-lg">
-        <span class="h4 font-weight-bold text-dark text-uppercase">Acordo de Cooperação <span class="text-dark">com repasse</span></span>
+        <span class="h4 font-weight-bold text-dark text-uppercase">Acordo de Cooperação <span class="text-dark">com repasse</span>
+          <a class="float-right" data-toggle="modal" data-target="#repasseModal" href=""><i class="fas fa-exclamation-circle text-warning"></i></a>
+        </span>
         <hr>
-        <p class="subtitle pt-2 mr-auto">Lero voluptatem fugiat, incidunt id quibusdam quis odit, expedita molestiae dolorem animi. Provident.</p>
+        <p class="subtitle pt-3 pb-3 text-justify">
+          Esta minuta deve ser utilizada para acordos de parceria para PD&I quando houver repasse de recursos privados para o projeto de pesquisa.
+        </p>
         <div class="container-button text-right">
           <a href="{{route('contrato_cr.index')}}" class="btn btn-success btn-lg btn-icon-split">
             <span class="icon text-white-50">
@@ -316,6 +324,47 @@
 
 </div>
 </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="semrepasseModal" tabindex="-1" role="dialog" aria-labelledby="semrepasseModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title font-weight-bold" id="semrepasseModalLabel">ACORDO DE COOPERAÇÃO SEM REPASSE</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="p-2 text-justify">Este tipo de Acordo é apropriado para ser utilizado na construção de ambientes inovadores (como parques tecnológico, co-working, entre outras possibilidades), servindo como instrumento que estabelece as regras de interação entre os parceiros. Pode tanto ser usado em relações bilaterais como multilaterais.</p>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="repasseModal" tabindex="-1" role="dialog" aria-labelledby="repasseModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title font-weight-bold" id="repasseModalLabel">ACORDO DE COOPERAÇÃO COM REPASSE</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="p-2 text-justify">Este repasse tanto pode ser feito diretamente à ICT ou Agência de Fomento, com ou sem por intermédio de Fundação de Apoio (Lei nº 8.958/94) – nas cláusulas abaixo serão contempladas estas duas hipóteses (cabe a cada entidade verificar qual é a sua situação e adequar o instrumento jurídico. Base Legal: §§ 6º e 7º do Artigo 35 do Decreto nº 9.283/18.</p>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+  </div>
 </div>
 
 <script>
