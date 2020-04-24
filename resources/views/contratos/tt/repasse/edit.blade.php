@@ -1485,7 +1485,7 @@
                     </div>
                     <div class="form-group col-md-3">
                       <label for="nome_testemunha_2" class="font-weight-bold text-black">Testemunha 2:</label>
-                      <input type="email" 
+                      <input type="text" 
                         class="form-control text-black font-weight-bold"
                         name="nome_testemunha_2" 
                         id="nome_testemunha_2" 

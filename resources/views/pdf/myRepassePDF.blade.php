@@ -96,6 +96,7 @@
 <p style="margin-left: 16px !important"><span style="text-transform:uppercase"><b>Do Coordenador Privado:</b></span>{{$contrato->nome_coordenador_privado}}</p>
 <p style="margin-left: 16px !important"><span style="margin-right: 8px !important">c)</span> Colaborar, nos termos do plano de trabalho, para que o Acordo alcance os objetivos nele descritos;</p>
 
+@if(isset($contrato->nome_inst_fundacao))
 <p><span id="p-title" style="text-transform: uppercase !important">3.1.3. DA FUNDAÇÃO DE APOIO:</span>{{$contrato->nome_inst_fundacao}}</p>
 
 <p style="margin-left: 16px !important"><span style="margin-right: 8px !important">a)</span>{!! $contrato->clausula_edit_3a !!}</p>
@@ -112,8 +113,9 @@
 <p style="margin-left: 16px !important"><span style="margin-right: 8px !important">l)</span>{!! $contrato->clausula_edit_3l !!}</p>
 <p style="margin-left: 16px !important"><span style="margin-right: 8px !important">m)</span>{!! $contrato->clausula_edit_3m !!}</p>
 <p style="margin-left: 16px !important"><span style="margin-right: 8px !important">n)</span>{!! $contrato->clausula_edit_3n !!}</p>
-
 <br>
+@else
+@endif
 
 <p><span id="p-title">3.2.</span>Poderão ser substituídos a qualquer tempo, competindo a cada PARCEIRO comunicar ao (s) outro (s) acerca desta alteração.</span></p>
 <p><span id="p-title">3.3.</span>{!! $contrato->clausula_edit_3_3 !!}</p>
