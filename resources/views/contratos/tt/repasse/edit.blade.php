@@ -18,6 +18,7 @@
 
 @section('content')
 
+@section('content')
 @include('pesquisador.modals.modal_1')
 @include('pesquisador.modals.modal_2')
 @include('pesquisador.modals.modal_3')
@@ -46,6 +47,7 @@
 @include('pesquisador.modals.modal_clausula_2_4')
 @include('pesquisador.modals.modal_clausula_2_5')
 @include('pesquisador.modals.modal_clausula_2_6')
+@include('pesquisador.modals.modal_clausula_4')
 @include('pesquisador.modals.modal_clausula_5_2')
 @include('pesquisador.modals.modal_clausula_5_3')
 @include('pesquisador.modals.modal_clausula_5_4')
@@ -54,6 +56,7 @@
 @include('pesquisador.modals.modal_clausula_10_1')
 @include('pesquisador.modals.modal_clausula_default')
 @include('pesquisador.modals.modal_anti_corrupcao')
+@include('pesquisador.modals.modal_novos')
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
@@ -105,7 +108,7 @@
   <div class="container-fluid">
         <div class="tab-pane show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-            <div class="modal-alert modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-alert modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -161,7 +164,7 @@
               <div class="alert alert-warning" role="alert">      
                 <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                 NOTAS EXPLICATIVAS!
-                <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal">Saiba mais</button>
+                <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal1">Saiba mais</button>
               </div>
 
               <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">ICT/ente público</h5>
@@ -450,50 +453,55 @@
                 </div>   
                 <p><b>2.1 </b>O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
   
-                <p class=""><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a ICT <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
-
+                <p><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a(o) ICT 
+                <input type="text" class="myform-control text-black" id="handle_ict" disabled value="{{$contratos_cr->nome_ict}}" placeholder="Nome da ICT/Agência de Fomento">
+                <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
                 <div class="alert alert-warning" role="alert">      
-            <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
-              NOTAS EXPLICATIVAS!
-            <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal2">Saiba mais</button>
-          </div> 
-            <div class="modal-alert modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title font-weight-bold" id="exampleModalLabel">NOTAS EXPLICATIVAS</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p class="lead">Cláusula abaixo são obrigatórias para ICTs, cabendo as Agências de Fomento verificar se há interesse na sua inclusão no Acordo.</p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn-lg btn-primary" data-dismiss="modal">Fechar</button>
+              <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+                NOTAS EXPLICATIVAS!
+              <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModa2_0">Saiba mais</button>
+            </div> 
+              <div class="modal-alert modal fade" id="exampleModa2_0" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title font-weight-bold" id="exampleModalLabel">NOTAS EXPLICATIVAS</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="lead">Cláusula abaixo são obrigatórias para ICTs, cabendo as Agências de Fomento verificar se há interesse na sua inclusão no Acordo.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn-lg btn-primary" data-dismiss="modal">Fechar</button>
+                    </div>
                   </div>
                 </div>
-              </div><!--modal-dialog-->
-            </div><!--modal-alert-->
+              </div><!--modal-alert--> 
                 <!--clausula editavel 2-->
               <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
                 <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                 Edite a(s) cláusula(s) abaixo (se julgar necessário):
               </div>
               <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
+                <a href="#" data-toggle="modal" data-target="#modal_clausula_2_3"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
                 <textarea class="form-control font-weight-bold" name="clausula_edit_2_3" rows="3">{{$contratos_cr->clausula_edit_2_3}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.4</a>
-                <textarea class="form-control font-weight-bold" name="clausula_edit_2_4" rows="3">{{$contratos_cr->clausula_edit_2_4}}</textarea>
+              <a href="#" data-toggle="modal" data-target="#modal_clausula_2_4"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
+              <textarea class="form-control font-weight-bold" name="clausula_edit_2_4" rows="3">{{$contratos_cr->clausula_edit_2_4}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.5</a>
+              <a href="#" data-toggle="modal" data-target="#modal_clausula_2_5"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
                 <textarea class="form-control font-weight-bold" name="clausula_edit_2_5" rows="3">{{$contratos_cr->clausula_edit_2_5}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.6</a>
+              <a href="#" data-toggle="modal" data-target="#modal_clausula_2_6"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
                 <textarea class="form-control font-weight-bold" name="clausula_edit_2_6" rows="3">{{$contratos_cr->clausula_edit_2_6}}</textarea>
               </div>
                 
@@ -662,12 +670,15 @@
                 <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_clausula_4">Saiba mais</button>
               </div>
                 <p>
-                  <b>4.1.</b> O (A) <input class="myform-control text-black"type="text" id="nome_parceiro_privado" value="{{$contratos_cr->nome_parceiro}}">
-                   transferirá recursos financeiros no valor total de R$ <input class="myform-control text-black" type="text" name="valor_financeiro" id="valor_financeiro" value="{{$contratos_cr->valor_financeiro}}">
+                  <b>4.1.</b> O (A) <input class="myform-control text-black"type="text" is-empty id="nome_parceiro_privado" value="{{$contratos_cr->nome_parceiro}}">
+   
+                   transferirá recursos financeiros no valor total de R$ <input class="myform-control text-black" type="text" is-empty name="valor_financeiro" id="valor_financeiro" value="{{$contratos_cr->valor_financeiro}}">
+                  <a href="#" data-toggle="modal" data-target="#modal_clausula_4_1_real"><i class="fas fa-fw fa-question-circle mt-1"></i></a>
                    , conforme cronograma de desembolso constante no Plano de Trabalho, anexo a este Acordo. 
                 </p>
                 <p>
-                  <b>4.2.</b> Os valores especificados no item acima serão recebidos pela <input class="myform-control text-black" type="text" name="nome_fund_apoio" id="nome_fund_apoio" value="{{$contratos_cr->nome_fund_apoio}}"><a href="#"><i class="fas fa-fw fa-question-circle pos"></i></a> em conta específica. 
+                  <b>4.2.</b> Os valores especificados no item acima serão recebidos pela <input class="myform-control text-black" is-empty type="text" name="nome_fund_apoio" id="nome_fund_apoio" value="{{$contratos_cr->nome_fund_apoio}}">
+                  <a href="#" data-toggle="modal" data-target="#modal_clausula_4_2"><i class="fas fa-fw fa-question-circle mt-1"></i></a> em conta específica. 
                 </p>
                 <p>
                   <b>4.3.</b> O Parceiro Privado efetuará os aportes financeiros previstos no Plano de Trabalho através de depósitos em conta- corrente específica, servindo o 
@@ -704,21 +715,33 @@
                 </div>
 
                 <div class="col-md-12 mb-3">
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.8</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left mt-1 m-2"></i></a>
                     <textarea class="form-control font-weight-bold" name="clausula_edit_4_8" rows="4">{{$contratos_cr->clausula_edit_4_8}}</textarea>
                 </div>
                 <div class="col-md-12 mb-3">
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.8.1</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left mt-1 m-2"></i></a>
                     <textarea class="form-control font-weight-bold" name="clausula_edit_4_8_1" rows="4">{{$contratos_cr->clausula_edit_4_8_1}}</textarea>
                 </div>
                 <div class="col-md-12 mb-3">
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.8.2</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left mt-1 m-2"></i></a>
                     <textarea class="form-control font-weight-bold" name="clausula_edit_4_8_2" rows="4">{{$contratos_cr->clausula_edit_4_8_2}}</textarea>
                 </div>
                 <div class="col-md-12 mb-3">
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.9</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left mt-1 m-2"></i></a>
                     <textarea class="form-control font-weight-bold" name="clausula_edit_4_9" rows="4">{{$contratos_cr->clausula_edit_4_9}}</textarea>
                 </div>
                 <div class="col-md-12 mb-3">
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.9.1</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left mt-1 m-2"></i></a>
                     <textarea class="form-control font-weight-bold" name="clausula_edit_4_9_1" rows="4">{{$contratos_cr->clausula_edit_4_9_1}}</textarea>
                 </div>
                 <div class="col-md-12 mb-5">
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 4.10</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left mt-1 m-2"></i></a>
                     <textarea class="form-control font-weight-bold" name="clausula_edit_4_10" rows="4">{{$contratos_cr->clausula_edit_4_10}}</textarea>
                 </div>
                 <div class="alert alert-warning" role="alert">      
@@ -814,12 +837,16 @@
                 
                 <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">5. CLÁUSULA QUINTA - DO PESSOAL</h4><hr><br>
                 
-                <p>
-                <b>5.1.</b> Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações trabalhistas, previdenciárias, fundiárias e tributárias
-                 derivadas da relação existente entre si e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem na execução do objeto 
-                 deste Acordo, de forma que não se estabelecerá, em hipótese alguma, vínculo empregatício ou de qualquer outra natureza com a EMPRESA PARCERIA e o pessoal 
-                da  <span class="text-blue">ICT/AGÊNCIA DE FOMENTO (E DA FUNDAÇAO DE APOIO, se houver) </span>  e vice-versa, cabendo a cada PARCEIRO a responsabilidade pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a documentação comprobatória da regularidade na contratação.
-                </p>
+                <p class="mt-3 text-justify text-black py-4">
+                <b>5.1.</b> Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações
+                  trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si 
+                  e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem 
+                  na execução do objeto deste Acordo, de forma que não se estabelecerá, em hipótese alguma,
+                vínculo empregatício ou de qualquer outra natureza com a EMPRESA <input type="text" class="myform-control" id="handle_parceiro" placeholder="Empresa parceira" value="{{$contratos_cr->nome_parceiro}}" disabled> e
+                o pessoal <input type="text" class="myform-control" name="nome_ict_parceira" id="handle_ict" placeholder="ICT ou Agência de fomento" value="{{$contratos_cr->nome_ict}}" disabled> vice-versa, cabendo a cada PARCEIRO a responsabilidade 
+                pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a
+                documentação comprobatória da regularidade na contratação.<br>
+              </p>
              
               </div>
             </div>
@@ -845,42 +872,67 @@
           </div>
       
           <div class="col-md-12 mb-3">
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.1</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_1" rows="4">{{$contratos_cr->clausula_edit_6_1}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.2</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_6_2"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_2" rows="4">{{$contratos_cr->clausula_edit_6_2}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.3</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_6_3"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_3" rows="4">{{$contratos_cr->clausula_edit_6_3}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.4</a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_4" rows="4">{{$contratos_cr->clausula_edit_6_4}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.5</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_5" rows="4">{{$contratos_cr->clausula_edit_6_5}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.6</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_6" rows="4">{{$contratos_cr->clausula_edit_6_6}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.7</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_6_7"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_7" rows="4">{{$contratos_cr->clausula_edit_6_7}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.8</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_8" rows="4">{{$contratos_cr->clausula_edit_6_8}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.9</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_6_9"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_9" rows="4">{{$contratos_cr->clausula_edit_6_9}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.10</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_6_9"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_10" rows="4">{{$contratos_cr->clausula_edit_6_10}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.11</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_6_9"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_11" rows="4">{{$contratos_cr->clausula_edit_6_11}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.12</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_6_9"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_12" rows="4">{{$contratos_cr->clausula_edit_6_12}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.13</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_6_9"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_6_13" rows="4">{{$contratos_cr->clausula_edit_6_13}}</textarea>
           </div>
           
@@ -969,12 +1021,18 @@
           </div>
 
           <div class="col-md-12 mb-3">
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.6</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_6_9"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_8_6" rows="3">{{$contratos_cr->clausula_edit_8_6}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.7</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_6_9"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_8_7" rows="3">{{$contratos_cr->clausula_edit_8_7}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.8</a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_6_9"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
               <textarea class="form-control font-weight-bold" name="clausula_edit_8_8" rows="3">{{$contratos_cr->clausula_edit_8_8}}</textarea>
           </div>
                   
@@ -996,30 +1054,48 @@
               </div>
 
               <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_9_1" rows="7">{{$contratos_cr->clausula_edit_9_1}}</textarea>
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.1</a>
+               <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
+               <textarea class="form-control font-weight-bold" name="clausula_edit_9_1" rows="7">{{$contratos_cr->clausula_edit_9_1}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_9_2" rows="3">{{$contratos_cr->clausula_edit_9_2}}</textarea>
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.2</a>
+                <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
+                <textarea class="form-control font-weight-bold" name="clausula_edit_9_2" rows="3">{{$contratos_cr->clausula_edit_9_2}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_9_3" rows="3">{{$contratos_cr->clausula_edit_9_3}}</textarea>
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.3</a>
+                <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
+                <textarea class="form-control font-weight-bold" name="clausula_edit_9_3" rows="3">{{$contratos_cr->clausula_edit_9_3}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_9_4" rows="3">{{$contratos_cr->clausula_edit_9_4}}</textarea>
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.4</a>
+                <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>        
+                <textarea class="form-control font-weight-bold" name="clausula_edit_9_4" rows="3">{{$contratos_cr->clausula_edit_9_4}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_9_a" rows="5">{{$contratos_cr->clausula_edit_9_a}}</textarea>
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA A)</a>
+                <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>        
+                <textarea class="form-control font-weight-bold" name="clausula_edit_9_a" rows="5">{{$contratos_cr->clausula_edit_9_a}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_9_b" rows="5">{{$contratos_cr->clausula_edit_9_b}}</textarea>
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA B)</a>
+                <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>        
+                <textarea class="form-control font-weight-bold" name="clausula_edit_9_b" rows="5">{{$contratos_cr->clausula_edit_9_b}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_9_c" rows="5">{{$contratos_cr->clausula_edit_9_c}}</textarea>
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA C)</a>
+                <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>        
+                <textarea class="form-control font-weight-bold" name="clausula_edit_9_c" rows="5">{{$contratos_cr->clausula_edit_9_c}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_9_d" rows="5">{{$contratos_cr->clausula_edit_9_d}}</textarea>
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA D)</a>
+                <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>        
+                <textarea class="form-control font-weight-bold" name="clausula_edit_9_d" rows="5">{{$contratos_cr->clausula_edit_9_d}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA E)</a>
+                <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>        
                   <textarea class="form-control font-weight-bold" name="clausula_edit_9_e" rows="5">{{$contratos_cr->clausula_edit_9_e}}</textarea>
               </div>
     
@@ -1087,9 +1163,13 @@
                 Edite a(s) cláusula(s) abaixo (se julgar necessário):
               </div>
               <div class="col-md-12 mb-3">
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 12.4.1</a>
+              <a href="#" data-toggle="modal" data-target="#modal_clausula_6_9"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>        
                   <textarea class="form-control font-weight-bold" name="clausula_edit_12_4_1" rows="6">{{$contratos_cr->clausula_edit_12_4_1}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 12.4.2</a>
+              <a href="#" data-toggle="modal" data-target="#modal_clausula_6_9"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>    
                   <textarea class="form-control font-weight-bold" name="clausula_edit_12_4_2" rows="3">{{$contratos_cr->clausula_edit_12_4_2}}</textarea>
               </div>
 
@@ -1145,18 +1225,27 @@
                   Edite a(s) cláusula(s) abaixo (se julgar necessário):
                 </div>
                 <div class="col-md-12 mb-3">
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.2</a>
+                  <a href="#" data-toggle="modal" data-target="#modal_clausula_6_9"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>    
                   <textarea class="form-control font-weight-bold" name="clausula_edit_14_2"  rows="5">{{$contratos_cr->clausula_edit_14_2}}</textarea>
                 </div>
                 <div class="col-md-12 mb-3">
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.2.1</a>
+                  <a href="#" data-toggle="modal" data-target="#modal_clausula_6_9"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>        
                   <textarea class="form-control font-weight-bold" name="clausula_edit_14_2_1" rows="3">{{$contratos_cr->clausula_edit_14_2_1}}</textarea>
                 </div>
                 <div class="col-md-12 mb-3">
+                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.2.2</a>
+                  <a href="#" data-toggle="modal" data-target="#modal_clausula_6_9"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>    
                   <textarea class="form-control font-weight-bold" name="clausula_edit_14_2_2" rows="3">{{$contratos_cr->clausula_edit_14_2_2}}</textarea>
                 </div>
                 <div class="col-md-12 mb-3">
+                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.3</a>
+                  <a href="#" data-toggle="modal" data-target="#modal_clausula_6_9"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>      
                   <textarea class="form-control font-weight-bold" name="clausula_edit_14_3" rows="3">{{$contratos_cr->clausula_edit_14_3}}</textarea>
                 </div>
                 <div class="col-md-12 mb-3">
+                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.4</a>
                   <textarea class="form-control font-weight-bold" name="clausula_edit_14_4" rows="3">{{$contratos_cr->clausula_edit_14_4}}</textarea>
                 </div>
 
@@ -1189,9 +1278,13 @@
                   Edite a(s) cláusula(s) abaixo (se julgar necessário):
                 </div>
                 <div class="col-md-12 mb-3">
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 16.1</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_6_9"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a> 
                   <textarea class="form-control font-weight-bold" name="clausula_edit_16_1" rows="3">{{$contratos_cr->clausula_edit_16_1}}</textarea>
                 </div>
                 <div class="col-md-12 mb-3">
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 16.2</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_6_9"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>        
                   <textarea class="form-control font-weight-bold" name="clausula_edit_16_2" rows="3">{{$contratos_cr->clausula_edit_16_2}}</textarea>
                 </div>
                 </div>
@@ -1201,7 +1294,7 @@
             <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
               <div class="container-fluid p-0 mt-0 m-0">
                 <div class="text-justify text-black">
-                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">17. CLÁUSULA DÉCIMA QUINTA – DAS NOTIFICAÇÕES  <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr><br>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">17. CLÁUSULA DÉCIMA QUINTA – DAS NOTIFICAÇÕES </h4><hr><br>
                 <p><b>17.1</b> Qualquer comunicação ou notificação relacionada ao Acordo de Parceria poderá ser feita
                               pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no
                               respectivo endereço do PARCEIRO notificado, conforme as seguintes informações:<br>
@@ -1341,7 +1434,7 @@
              <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
               <div class="container-fluid p-0 mt-0 m-0">
                 <div class="text-justify text-black">
-                  <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">18. CLÁUSULA DÉCIMA OITAVA – DISPOSIÇÕES GERAIS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr><br>
+                  <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">18. CLÁUSULA DÉCIMA OITAVA – DISPOSIÇÕES GERAIS</h4><hr><br>
       
                   <p>
                     <b>18.1.</b> É livre o acesso dos agentes da administração pública, do controle interno e do Tribunal de Contas aos documentos e às informações relacionados a esse Acordo, bem como aos locais de execução do respectivo objeto, ressalvadas as informações tecnológicas e dados das pesquisas que possam culminar com alguma inovação.
@@ -1354,7 +1447,7 @@
           <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
               <div class="container-fluid p-0 mt-0 m-0">
                 <div class="text-justify text-dark">
-                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">19. CLÁUSULA DÉCIMA NONA - DO FORO <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr><br>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">19. CLÁUSULA DÉCIMA NONA - DO FORO</h4><hr><br>
       
                   <p><b>19.1.</b>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de <input class="myform-control font-weight-bold text-dark"  type="text" name="estado_foro" id="estado_foro" value="{{$contratos_cr->estado_foro}}">, cidade de <input  class="myform-control font-weight-bold" type="text" name="cidade_foro" id="cidade_foro" value="{{$contratos_cr->cidade_foro}}">,
                   para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109
