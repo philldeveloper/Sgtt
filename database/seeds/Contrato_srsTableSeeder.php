@@ -111,7 +111,7 @@ class Contrato_srsTableSeeder extends Seeder
 			
 		    'estado_foro' => 'Lorem Ipsum',
 		    'cidade_foro' => 'Lorem Ipsum',
-		    'cidade_uf_dia_foro' => 'Lorem Ipsum',
+		    'data_foro' => '22/05/2020',
 		    'ict_inst_foro' => 'Lorem Ipsum',
 		    'nome_rep_foro' => 'Lorem Ipsum',
 			'cargo_rep_foro' => 'Lorem Ipsum',
@@ -119,8 +119,11 @@ class Contrato_srsTableSeeder extends Seeder
 		    'nome_inst_privado_foro' => 'Lorem Ipsum',
 		    'nome_rep_privado_foro' => 'Lorem Ipsum',
 			'cargo_rep_privado_foro' => 'Lorem Ipsum',
+
+			'nome_testemunha_1' => 'Philip Ramon',
+			'nome_testemunha_2' => 'Mark Zukenberg',
 			
-		    'user_id' => '1',
+		    'user_id' => '2',
 		    'tipo' => 'Sem Repasse',
 		]);
     }

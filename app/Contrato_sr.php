@@ -111,7 +111,7 @@ class Contrato_sr extends Model
         
         'estado_foro',
         'cidade_foro',
-        'cidade_uf_dia_foro',
+        'data_foro',
         'ict_inst_foro',
         'nome_rep_foro',
         'cargo_rep_foro',
@@ -119,6 +119,8 @@ class Contrato_sr extends Model
         'nome_inst_privado_foro',
         'nome_rep_privado_foro',
         'cargo_rep_privado_foro',
+        'nome_testemunha_1',
+        'nome_testemunha_2',
         
         'tipo',
         'user_id'

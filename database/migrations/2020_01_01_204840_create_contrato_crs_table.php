@@ -129,7 +129,7 @@ class CreateContratoCrsTable extends Migration
             $table->string('nome_fund_apoio')->nullable()->default(null);
             $table->string('estado_foro');
             $table->string('cidade_foro');
-            $table->string('cidade_uf_dia_foro');
+            $table->string('data_foro');
             $table->string('ict_inst_foro');
             $table->string('nome_rep_foro');
             $table->string('cargo_rep_foro');
@@ -151,6 +151,9 @@ class CreateContratoCrsTable extends Migration
             $table->string('apoio_contato_telefone')->nullable()->default(null);
             $table->string('apoio_contato_celular')->nullable()->default(null);
             $table->string('apoio_contato_email')->nullable()->default(null);
+
+            $table->string('nome_testemunha_1');
+            $table->string('nome_testemunha_2');
 
 
             $table->string('tipo')->nullable()->default(null);

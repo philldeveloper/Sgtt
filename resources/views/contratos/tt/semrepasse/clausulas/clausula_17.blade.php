@@ -7,12 +7,12 @@
         <br>
         <div class="form-row mt-3">
         <div class="form-group col-md-3">
-            <label for="cidade_uf_dia_foro" class="font-weight-bold text-black">Cidade, UF, Dia do Mês e Ano</label>
-            <input type="text" 
+            <label for="data_foro" class="font-weight-bold text-black">Data:</label>
+            <input type="string" 
             class="form-control text-black font-weight-bold" 
-            name="cidade_uf_dia_foro"
-            id="cidade_uf_dia_foro" 
-            placeholder="{{$contratos_sr->cidade_uf_dia_foro}}"
+            name="data_foro"
+            id="data_foro" 
+            placeholder="{{$contratos_sr->data_foro}}"
             disabled="">
         </div>
         </div><!-- /.row-->
@@ -73,6 +73,25 @@
             placeholder="{{$contratos_sr->cargo_rep_privado_foro}}"
             disabled="">
         </div>
+        </div><!-- /.row-->
+        <div class="form-row mt-5">
+            <div class="form-group col-md-3">
+              <label for="nome_testemunha_1" class="font-weight-bold text-black">Testemunha 1:</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold" 
+                name="nome_testemunha_1" id="nome_testemunha_1" 
+                placeholder="{{$contratos_sr->nome_testemunha_1}}"
+                disabled="">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="nome_testemunha_2" class="font-weight-bold text-black">Testemunha 2:</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold"
+                name="nome_testemunha_2" 
+                id="nome_testemunha_2" 
+                placeholder="{{$contratos_sr->nome_testemunha_2}}"
+                disabled="">
+            </div>
         </div><!-- /.row-->
     </div>
 </div>

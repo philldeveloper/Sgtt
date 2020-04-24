@@ -50,7 +50,7 @@
         <li class="nav-item active">
           <a class="nav-link" href="{{route('home')}}">
             <i class="fas fa-chart-bar" style="color: white !important"></i>
-            <span>Dados Gerais</span></a>
+            <span>Início</span></a>
         </li>
 
         @if(Auth::user()->admin == 1)

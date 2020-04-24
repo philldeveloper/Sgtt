@@ -9,7 +9,7 @@
   textarea{
     background-color: white !important;
     color: black !important;
-    border-color: black !important;
+    border-color: #3490dc !important;
     box-shadow: 1px 2px 2px #cdcdcd;
     padding: 10px;
     text-align: justify !important;
@@ -907,25 +907,25 @@
         <div class="col-md-12 mb-3">
           <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.2</a>
           <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
-          <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13_2" rows="5" style="background-color: #F6FAFA; resize: none !important;">13.2 Constituem motivos para rescisão de pleno direito o inadimplemento de quaisquer das cláusulas pactuadas neste Acordo, o descumprimento das normas estabelecidas na legislação vigente ou a superveniência de norma legal ou fato que tome material ou formalmente inexequível o Acordo de Parceria para PD&I, imputando-se aos PARCEIROS as responsabilidades pelas obrigações até então assumidas, devendo o PARCEIRO que se julgar prejudicado notificar o parceiro para que apresente esclarecimentos no prazo de 15 (quinze) dias corridos.</textarea>
+          <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13_2" rows="5" style="background-color: #F6FAFA; resize: none !important;">Constituem motivos para rescisão de pleno direito o inadimplemento de quaisquer das cláusulas pactuadas neste Acordo, o descumprimento das normas estabelecidas na legislação vigente ou a superveniência de norma legal ou fato que tome material ou formalmente inexequível o Acordo de Parceria para PD&I, imputando-se aos PARCEIROS as responsabilidades pelas obrigações até então assumidas, devendo o PARCEIRO que se julgar prejudicado notificar o parceiro para que apresente esclarecimentos no prazo de 15 (quinze) dias corridos.</textarea>
         </div>
         
         <div class="col-md-12 mb-3">
           <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.2.1</a>
           <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
-          <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13_2_1" rows="3" style="background-color: #F6FAFA; resize: none !important;">13.2.1  Prestados os esclarecimentos, os PARCEIROS deverão, por mútuo consenso, decidir pela rescisão ou manutenção do Acordo.</textarea>
+          <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13_2_1" rows="3" style="background-color: #F6FAFA; resize: none !important;">Prestados os esclarecimentos, os PARCEIROS deverão, por mútuo consenso, decidir pela rescisão ou manutenção do Acordo.</textarea>
         </div>
         
         <div class="col-md-12 mb-3">
           <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.2.2</a>
           <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
-          <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13_2_2" rows="3" style="background-color: #F6FAFA; resize: none !important;">13.2.2  Decorrido o prazo para esclarecimentos, caso não haja resposta, o Acordo será rescindido de pleno direito, independentemente de notificações ou interpelações, judiciais ou extrajudiciais.</textarea>
+          <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13_2_2" rows="3" style="background-color: #F6FAFA; resize: none !important;">Decorrido o prazo para esclarecimentos, caso não haja resposta, o Acordo será rescindido de pleno direito, independentemente de notificações ou interpelações, judiciais ou extrajudiciais.</textarea>
         </div>
         
         <div class="col-md-12 mb-3">
           <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.3</a>
           <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
-          <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13_3" rows="5" style="background-color: #F6FAFA; resize: none !important;">13.3 O Acordo de Parceria será rescindido em caso de decretação de falência, liquidação extrajudicial ou judicial, ou insolvência de qualquer dos PARCEIROS, ou, ainda, no caso de  10/11 propositura de quaisquer medidas ou procedimentos contra qualquer dos PARCEIROS para sua liquidação e/ou dissolução.</textarea>
+          <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13_3" rows="5" style="background-color: #F6FAFA; resize: none !important;">Acordo de Parceria será rescindido em caso de decretação de falência, liquidação extrajudicial ou judicial, ou insolvência de qualquer dos PARCEIROS, ou, ainda, no caso de  10/11 propositura de quaisquer medidas ou procedimentos contra qualquer dos PARCEIROS para sua liquidação e/ou dissolução.</textarea>
         </div>
         
         
@@ -954,6 +954,7 @@
                         pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no
                         respectivo endereço do PARCEIRO notificado, conforme as seguintes informações:<br>
           <span class="font-weight-bold">PARCEIRO(S) PÚBLICO(S):</span> 
+          <a href="#" data-toggle="modal" data-target="#dados_instituicoes"><i class="fas fa-fw fa-question-circle m-2"></i></a>
           <div class="form-row">
             <div class="form-group col-md-3">
               <label for="endereco" class="font-weight-bold text-black">Endereço</label>
@@ -990,6 +991,7 @@
           </div><!-- /.row-->
           <!-- Pariceiro privado -->
           <span class="font-weight-bold ">PARCEIRO(S) PRIVADO(S):</span> 
+          <a href="#" data-toggle="modal" data-target="#dados_instituicoes"><i class="fas fa-fw fa-question-circle m-2"></i></a>
           <div class="form-row mt-3">
             <div class="form-group col-md-3">
               <label for="endereco" class="font-weight-bold text-black">Endereço</label>
@@ -1055,18 +1057,19 @@
           <br>
           <div class="form-row mt-3">
             <div class="form-group col-md-3">
-              <label for="cidade_uf_dia_foro" class="font-weight-bold text-black">Cidade, UF, Dia do Mês e Ano</label>
-              <input type="text" 
+              <label for="data_foro" class="font-weight-bold text-black">Data:</label>
+              <input type="date" 
                 class="form-control text-black font-weight-bold" 
-                name="cidade_uf_dia_foro"
-                id="cidade_uf_dia_foro" 
-                placeholder="Cidade, UF, Dia do Mês e Ano">
+                name="data_foro"
+                id="data_foro" 
+                placeholder="XX/XX/XXXX">
             </div>
           </div><!-- /.row-->
 
           <div class="form-row mt-3">
             <div class="form-group col-md-3">
               <label for="ict_inst_foro" class="font-weight-bold text-black">ICT:</label>
+              <a href="#" data-toggle="modal" data-target="#ict"><i class="fas fa-fw fa-question-circle m-2"></i></a>
               <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="ict_inst_foro" 
@@ -1093,6 +1096,7 @@
           <div class="form-row mt-3">
             <div class="form-group col-md-3">
               <label for="nome_inst_privado_foro" class="font-weight-bold text-black">Parceiro Privado:</label>
+              <a href="#" data-toggle="modal" data-target="#parceiro"><i class="fas fa-fw fa-question-circle m-2"></i></a>
               <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="nome_inst_privado_foro" 
@@ -1115,6 +1119,27 @@
                 placeholder="Cargo">
             </div>
           </div><!-- /.row-->
+
+          <div class="form-row mt-5">
+            <div class="form-group col-md-3">
+              <label for="nome_testemunha_1" class="font-weight-bold text-black">Testemunha 1:</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold" 
+                name="nome_testemunha_1" id="nome_testemunha_1" 
+                placeholder="Nome da testemunha"
+                required="">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="nome_testemunha_2" class="font-weight-bold text-black">Testemunha 2:</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold"
+                name="nome_testemunha_2" 
+                id="nome_testemunha_2" 
+                placeholder="Nome da testemunha"
+                required="">
+            </div>
+          </div><!-- /.row-->
+
         </div>
       </div>
     </div>
@@ -1123,10 +1148,10 @@
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-black">
 
-          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">SEU CONTRATO ESTÁ PRONTO PARA ANÁLISE.<i class="fas fa-fw fa-check ml-2"></i></h4><hr>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">SEU CONTRATO ESTÁ PRONTO.<i class="fas fa-fw fa-check ml-2"></i></h4><hr>
           <br>
           
-          <p>Seu contrato será revisado em até de 30 dias e uma resposta será gerada. Aguarde a confirmação do sistema. </p><br>
+          <p>Clique em enviar, e você será redirecionado para a tela inicial onde poderá visualizar seu contrato. </p><br>
           <!-- <a href="{{route('home')}}" class="btn btn-primary p-2 btn-lg col-4">Ver Contrato</a> -->
         </div>
       </div>
@@ -1256,12 +1281,18 @@ function validateStepForm() {
     if (inputs[i].value == "") {
       inputs[i].className += " invalid";
       valid = false;
+
+      if(inputs[i].name === "parceiro_contato_celular" || inputs[i].name === "privado_contato_celular"){
+        inputs[i].className = inputs[i].className.replace(" invalid", "");
+        valid = true
+      }
     }
 
     if(i < selects.length){
       if (selects[i].value == "") {
         selects[i].className += " invalid";
         valid = false;
+
       }
     }
   } 

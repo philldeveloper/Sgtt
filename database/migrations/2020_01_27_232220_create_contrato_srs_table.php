@@ -101,18 +101,18 @@ class CreateContratoSrsTable extends Migration
 
             $table->string('parceiro_contato_endereco');
             $table->string('parceiro_contato_telefone');
-            $table->string('parceiro_contato_celular');
+            $table->string('parceiro_contato_celular')->nullable()->default(null);
             $table->string('parceiro_contato_email');
 
             $table->string('privado_contato_endereco');
             $table->string('privado_contato_telefone');
-            $table->string('privado_contato_celular');
+            $table->string('privado_contato_celular')->nullable()->default(null);
             $table->string('privado_contato_email');
 
             
             $table->string('estado_foro');
             $table->string('cidade_foro');
-            $table->string('cidade_uf_dia_foro');
+            $table->string('data_foro');
             $table->string('ict_inst_foro');
             $table->string('nome_rep_foro');
             $table->string('cargo_rep_foro');
@@ -120,6 +120,9 @@ class CreateContratoSrsTable extends Migration
             $table->string('nome_inst_privado_foro');
             $table->string('nome_rep_privado_foro');
             $table->string('cargo_rep_privado_foro');
+
+            $table->string('nome_testemunha_1');
+            $table->string('nome_testemunha_2');
            
             $table->string('tipo')->nullable()->default(null);
 

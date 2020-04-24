@@ -180,7 +180,10 @@ class Contrato_crController extends Controller
         $contrato_cr->cargo_rep_foro = $request->cargo_rep_foro;
         $contrato_cr->nome_inst_privado_foro = $request->nome_inst_privado_foro;
         $contrato_cr->nome_rep_privado_foro = $request->nome_rep_privado_foro;
-        $contrato_cr->cargo_rep_privado_foro = $request->cargo_rep_foro;
+        $contrato_cr->cargo_rep_privado_foro = $request->cargo_rep_privado_foro;
+
+        $contrato_cr->nome_testemunha_1 = $request->nome_testemunha_1;
+        $contrato_cr->nome_testemunha_2 = $request->nome_testemunha_2;
 
         $contrato_cr->tipo = 'Com Repasse';
         
@@ -266,13 +269,15 @@ class Contrato_crController extends Controller
             'prazo_vigencia' => 'required',
             'estado_foro' => 'required',
             'cidade_foro' => 'required',
-            'cidade_uf_dia_foro' => 'required',
+            'data_foro' => 'required',
             'ict_inst_foro' => 'required',
             'nome_rep_foro' => 'required',
             'cargo_rep_foro' => 'required',
             'nome_inst_privado_foro' => 'required',
             'nome_rep_privado_foro' => 'required',
             'cargo_rep_privado_foro' => 'required',
+            'nome_testemunha_1' => 'required',
+            'nome_testemunha_2' => 'required',
         ]);
     
 
