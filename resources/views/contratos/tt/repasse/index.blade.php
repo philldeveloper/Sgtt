@@ -56,6 +56,7 @@
 @include('pesquisador.modals.modal_clausula_10_1')
 @include('pesquisador.modals.modal_clausula_default')
 @include('pesquisador.modals.modal_anti_corrupcao')
+@include('pesquisador.modals.modalVigencia')
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
@@ -638,7 +639,7 @@
     <div class="tab-pane" id="clausula4" role="tabpanel" aria-labelledby="clausula4-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">4. CLÁUSULA QUARTA - DOS RECURSOS FINANCEIROS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">4. CLÁUSULA QUARTA - DOS RECURSOS FINANCEIROS</h4><hr>
           <div class="alert alert-warning" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
               NOTAS EXPLICATIVAS!
@@ -807,8 +808,8 @@
     <div class="tab-pane" id="clausula4_a" role="tabpanel" aria-labelledby="clausula4_a-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
-          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">5. CLÁUSULA QUINTA - DO PESSOAL</h4><hr><br>
-          <p class="mt-3 text-justify text-black py-4">
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">5. CLÁUSULA QUINTA - DO PESSOAL</h4><hr>
+          <p class="text-justify text-black">
             <b>5.1.</b> Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações
               trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si 
               e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem 
@@ -998,10 +999,10 @@
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-blue">
           
-          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">9 CLÁUSULA NONA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h4><hr><br>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">9 CLÁUSULA NONA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h4><hr>
 
           <!--clausula editavel 9-->
-          <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+          <div class="alert alert-info text-dark font-weight-bold" role="alert">      
           <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>

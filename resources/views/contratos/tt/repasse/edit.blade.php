@@ -60,6 +60,7 @@
 @include('pesquisador.modals.modal_clausula_default')
 @include('pesquisador.modals.modal_anti_corrupcao')
 @include('pesquisador.modals.modal_novos')
+@include('pesquisador.modals.modalVigencia')
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
@@ -181,7 +182,7 @@
             <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
             <!-- Botão para acionar modal -->
             <a href="#" data-toggle="modal" data-target="#modalExemplo2"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-            <input type="text" class="form-control text-black font-weight-bold"  id="cnpj" name="cnpj" value="{{$contratos_cr->cnpj}}">
+            <input type="text" class="form-control text-black font-weight-bold cnpj"  id="cnpj" name="cnpj" value="{{$contratos_cr->cnpj}}">
           </div>
         </div><!--form-row-->
 
@@ -200,7 +201,7 @@
           </div>
           <div class="form-group col-md-2">
             <label for="inputZip" class="font-weight-bold text-black">CEP</label>
-            <input type="text" class="form-control text-black font-weight-bold"  id="cep" name="cep" value="{{$contratos_cr->cep}}">
+            <input type="text" class="form-control text-black font-weight-bold cep"  id="cep" name="cep" value="{{$contratos_cr->cep}}">
           </div>
         </div><!--form-row-->
 
@@ -213,11 +214,11 @@
           </div>
           <div class="form-group col-md-3">
             <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
-            <input type="text" class="form-control text-black font-weight-bold"  id="cpf" name="cpf" value="{{$contratos_cr->cpf}}">
+            <input type="text" class="form-control text-black font-weight-bold cpf"  id="cpf" name="cpf" value="{{$contratos_cr->cpf}}">
           </div>
           <div class="form-group col-md-3">
             <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
-            <input type="text" class="form-control text-black font-weight-bold"  id="rg" name="rg" value="{{$contratos_cr->rg}}">
+            <input type="text" class="form-control text-black font-weight-bold rg"  id="rg" name="rg" value="{{$contratos_cr->rg}}">
           </div>
           <div class="form-group col-md-2">
             <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
@@ -273,7 +274,7 @@
                   <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
                   <!-- Botão para acionar modal -->
                   <a href="#" data-toggle="modal" data-target="#modalExemplo5"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_cnpj" name="parceiro_cnpj" value="{{$contratos_cr->parceiro_cnpj}}">
+                  <input type="text" class="form-control text-black font-weight-bold cnpj"  id="parceiro_cnpj" name="parceiro_cnpj" value="{{$contratos_cr->parceiro_cnpj}}">
                 </div>
               </div>
   
@@ -292,7 +293,7 @@
                 </div>
                 <div class="form-group col-md-2">
                   <label for="inputZip" class="font-weight-bold text-black">CEP</label>
-                    <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_cep" name="parceiro_cep" value="{{$contratos_cr->parceiro_cep}}">
+                    <input type="text" class="form-control text-black font-weight-bold cep"  id="parceiro_cep" name="parceiro_cep" value="{{$contratos_cr->parceiro_cep}}">
                 </div>
               </div>
   
@@ -305,11 +306,11 @@
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
-                <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_cpf" name="parceiro_cpf" value="{{$contratos_cr->parceiro_cpf}}">
+                <input type="text" class="form-control text-black font-weight-bold cpf"  id="parceiro_cpf" name="parceiro_cpf" value="{{$contratos_cr->parceiro_cpf}}">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
-                <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_rg" name="parceiro_rg" value="{{$contratos_cr->parceiro_rg}}">
+                <input type="text" class="form-control text-black font-weight-bold rg"  id="parceiro_rg" name="parceiro_rg" value="{{$contratos_cr->parceiro_rg}}">
               </div>
               <div class="form-group col-md-2">
                 <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
@@ -374,7 +375,7 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">2. CLÁUSULA SEGUNDA – DO PLANO DE TRABALHO <a href="#" data-toggle="modal" data-target="#modalExemplo12"><i class="fas fa-fw fa-question-circle float-right"></i></a></h4><hr><br>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">2. CLÁUSULA SEGUNDA – DO PLANO DE TRABALHO</h4><hr><br>
                 <div class="alert alert-warning" role="alert">      
                   <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                     NOTAS EXPLICATIVAS!
@@ -606,7 +607,7 @@
           <div class="container-fluid p-0 mt-0 m-0">
             <div class="text-justify text-black">
               
-              <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">4. CLÁUSULA QUARTA - DOS RECURSOS FINANCEIROS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr><br>
+              <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">4. CLÁUSULA QUARTA - DOS RECURSOS FINANCEIROS</h4><hr><br>
               <div class="alert alert-warning" role="alert">      
               <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                 NOTAS EXPLICATIVAS!
@@ -782,9 +783,8 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">5. CLÁUSULA QUINTA - DO PESSOAL</h4><hr><br>
-                
-                <p class="mt-3 text-justify text-black py-4">
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">5. CLÁUSULA QUINTA - DO PESSOAL</h4><hr>
+                <p class="mt-3 text-justify text-black">
                 <b>5.1.</b> Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações
                   trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si 
                   e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem 
@@ -992,10 +992,10 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-blue">
                 
-              <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">9 CLÁUSULA NONA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h4><hr><br>
+              <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">9 CLÁUSULA NONA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h4><hr>
 
               <!--clausula editavel 9-->
-              <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+              <div class="alert alert-info text-dark font-weight-bold" role="alert">      
               <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                 Edite a(s) cláusula(s) abaixo (se julgar necessário):
               </div>
@@ -1057,7 +1057,7 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">10 CLÁUSULA DÉCIMA - DO ACOMPANHAMENTO<a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr><br>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">10 CLÁUSULA DÉCIMA - DO ACOMPANHAMENTO</h4><hr><br>
     
                 <p><b>10.1.</b>Aos coordenadores indicados pelos <b>PARCEIROS</b> competirá dirimir as dúvidas que surgirem na sua execução e de tudo dará ciência às respectivas autoridades.</p>
                 <p><b>10.2.</b>O coordenador do projeto indicado pela <b>ICT/AGÊNCIA DE FOMENTO</b> anotará, em registro próprio, as ocorrências relacionadas com a execução do objeto, recomendando as medidas necessárias à autoridade competente para regularização das inconsistências observadas. </p>
@@ -1319,7 +1319,7 @@
                   </div>
                 </div>
                 <!-- Fundacao de apoio -->
-                @if($contratos_cr->apoio_contato_endereço)
+                @if($contratos_cr->apoio_contato_endereco)
                 <div id="clausula_apoio_wrapper">
                   <span class="font-weight-bold ">FUNDAÇÃO DE APOIO:</span> 
                   <div class="form-row mt-3">
@@ -1486,7 +1486,7 @@
                 
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black bg-light p-2 mb-3">SEU CONTRATO ESTÁ PRONTO. <a href="#"><i class="fas fa-fw fa-check ml-2"></i></a></h5>
   
-                <p>Clique em enviar, e você será redirecionado para a tela inicial onde poderá visualizar seu contrato. </p><br>
+                <p>Clique em Salvar, e você será redirecionado para a tela inicial onde poderá visualizar seu contrato. </p><br>
 
                 <!-- <div class="col-lg-6 col-md-12 text-left py-4">
                   <button class="btn btn-lg btn-info btn-block" type="submit">
