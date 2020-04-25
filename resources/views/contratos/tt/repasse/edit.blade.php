@@ -182,7 +182,7 @@
             <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
             <!-- Botão para acionar modal -->
             <a href="#" data-toggle="modal" data-target="#modalExemplo2"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-            <input type="text" class="form-control text-black font-weight-bold"  id="cnpj" name="cnpj" value="{{$contratos_cr->cnpj}}">
+            <input type="text" class="form-control text-black font-weight-bold cnpj"  id="cnpj" name="cnpj" value="{{$contratos_cr->cnpj}}">
           </div>
         </div><!--form-row-->
 
@@ -201,7 +201,7 @@
           </div>
           <div class="form-group col-md-2">
             <label for="inputZip" class="font-weight-bold text-black">CEP</label>
-            <input type="text" class="form-control text-black font-weight-bold"  id="cep" name="cep" value="{{$contratos_cr->cep}}">
+            <input type="text" class="form-control text-black font-weight-bold cep"  id="cep" name="cep" value="{{$contratos_cr->cep}}">
           </div>
         </div><!--form-row-->
 
@@ -214,11 +214,11 @@
           </div>
           <div class="form-group col-md-3">
             <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
-            <input type="text" class="form-control text-black font-weight-bold"  id="cpf" name="cpf" value="{{$contratos_cr->cpf}}">
+            <input type="text" class="form-control text-black font-weight-bold cpf"  id="cpf" name="cpf" value="{{$contratos_cr->cpf}}">
           </div>
           <div class="form-group col-md-3">
             <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
-            <input type="text" class="form-control text-black font-weight-bold"  id="rg" name="rg" value="{{$contratos_cr->rg}}">
+            <input type="text" class="form-control text-black font-weight-bold rg"  id="rg" name="rg" value="{{$contratos_cr->rg}}">
           </div>
           <div class="form-group col-md-2">
             <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
@@ -274,7 +274,7 @@
                   <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
                   <!-- Botão para acionar modal -->
                   <a href="#" data-toggle="modal" data-target="#modalExemplo5"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_cnpj" name="parceiro_cnpj" value="{{$contratos_cr->parceiro_cnpj}}">
+                  <input type="text" class="form-control text-black font-weight-bold cnpj"  id="parceiro_cnpj" name="parceiro_cnpj" value="{{$contratos_cr->parceiro_cnpj}}">
                 </div>
               </div>
   
@@ -293,7 +293,7 @@
                 </div>
                 <div class="form-group col-md-2">
                   <label for="inputZip" class="font-weight-bold text-black">CEP</label>
-                    <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_cep" name="parceiro_cep" value="{{$contratos_cr->parceiro_cep}}">
+                    <input type="text" class="form-control text-black font-weight-bold cep"  id="parceiro_cep" name="parceiro_cep" value="{{$contratos_cr->parceiro_cep}}">
                 </div>
               </div>
   
@@ -306,11 +306,11 @@
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
-                <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_cpf" name="parceiro_cpf" value="{{$contratos_cr->parceiro_cpf}}">
+                <input type="text" class="form-control text-black font-weight-bold cpf"  id="parceiro_cpf" name="parceiro_cpf" value="{{$contratos_cr->parceiro_cpf}}">
               </div>
               <div class="form-group col-md-3">
                 <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
-                <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_rg" name="parceiro_rg" value="{{$contratos_cr->parceiro_rg}}">
+                <input type="text" class="form-control text-black font-weight-bold rg"  id="parceiro_rg" name="parceiro_rg" value="{{$contratos_cr->parceiro_rg}}">
               </div>
               <div class="form-group col-md-2">
                 <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
@@ -1319,7 +1319,7 @@
                   </div>
                 </div>
                 <!-- Fundacao de apoio -->
-                @if($contratos_cr->apoio_contato_endereço)
+                @if($contratos_cr->apoio_contato_endereco)
                 <div id="clausula_apoio_wrapper">
                   <span class="font-weight-bold ">FUNDAÇÃO DE APOIO:</span> 
                   <div class="form-row mt-3">
@@ -1486,7 +1486,7 @@
                 
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black bg-light p-2 mb-3">SEU CONTRATO ESTÁ PRONTO. <a href="#"><i class="fas fa-fw fa-check ml-2"></i></a></h5>
   
-                <p>Clique em enviar, e você será redirecionado para a tela inicial onde poderá visualizar seu contrato. </p><br>
+                <p>Clique em Salvar, e você será redirecionado para a tela inicial onde poderá visualizar seu contrato. </p><br>
 
                 <!-- <div class="col-lg-6 col-md-12 text-left py-4">
                   <button class="btn btn-lg btn-info btn-block" type="submit">
