@@ -43,7 +43,7 @@
                   @if($contratos->user->admin == 1)
                   <div class="badge badge-dark">Administrador</div>
                   @else
-                  <div class="badge badge-info">Pesquisador</div>
+                  <div class="badge badge-secondary">Pesquisador</div>
                   @endif
                   </td>
                   <td><!--a class="" href="{{route('perfil', $contratos->id)}}"-->{{$contratos->user->nome}}<!--/a--></td>
