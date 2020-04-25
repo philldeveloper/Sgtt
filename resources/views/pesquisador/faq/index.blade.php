@@ -72,7 +72,7 @@
       <h2 class="font-weight-bold text-dark mb-5">Tutoriais</h2>
       <h4 class="">Como gerar um contrato</h4><hr>
       <!-- <p>Veja em pdf como criar um novo contrato usando o SGTT.</p> -->
-      <a href="{{asset('assets/tutorial_sistema.pdf')}}" target="blank" class="btn btn-success btn-lg">Ver PDF</a>
+      <a href="{{asset('assets/tutorial_sistema.pdf')}}" target="_blank" class="btn btn-success btn-lg">Ver PDF</a>
     </div>
 
 
