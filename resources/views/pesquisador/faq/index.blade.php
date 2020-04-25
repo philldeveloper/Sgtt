@@ -72,7 +72,7 @@
       <h2 class="font-weight-bold text-dark mb-5">Tutoriais</h2>
       <h4 class="">Como gerar um contrato</h4><hr>
       <!-- <p>Veja em pdf como criar um novo contrato usando o SGTT.</p> -->
-      <a href="{{asset('assets/tutorial_sistema.pdf')}}" target="blank" class="btn btn-success btn-lg">Ver PDF</a>
+      <a href="{{asset('assets/tutorial_sistema.pdf')}}" target="_blank" class="btn btn-success btn-lg">Ver PDF</a>
     </div>
 
 
@@ -81,19 +81,19 @@
       
       <h4 class="font-weight-bold">LEI Nº 9.279, DE 14 DE MAIO DE 1996.</h4><hr>
       <p>Regula direitos e obrigações relativos à propriedade industrial.</p>
-      <a href="http://www.planalto.gov.br/ccivil_03/Leis/L9279.htm" class="btn btn-outline-dark btn-lg mb-5" target="blank">Abrir Link</a>
+      <a href="http://www.planalto.gov.br/ccivil_03/Leis/L9279.htm" class="btn btn-outline-dark btn-lg mb-5" target="_blank">Abrir Link</a>
 
       <h4 class="font-weight-bold">LEI Nº 10.973, DE 2 DE DEZEMBRO DE 2004.</h4><hr>
       <p>Dispõe sobre incentivos à inovação e à pesquisa científica e tecnológica no ambiente produtivo e dá outras providências.</p>
-      <a href="http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.973.htm" class="btn btn-outline-dark btn-lg mb-5" target="blank">Abrir Link</a>
+      <a href="http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.973.htm" class="btn btn-outline-dark btn-lg mb-5" target="_blank">Abrir Link</a>
 
       <h4 class="font-weight-bold">LEI Nº 13.243, DE 11 DE JANEIRO DE 2016.</h4><hr>
       <p>Dispõe sobre incentivos à inovação e à pesquisa científica e tecnológica no ambiente produtivo e dá outras providências.</p>
-      <a href="http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2016/Lei/L13243.htm" class="btn btn-outline-dark btn-lg mb-5" target="blank">Abrir Link</a>
+      <a href="http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2016/Lei/L13243.htm" class="btn btn-outline-dark btn-lg mb-5" target="_blank">Abrir Link</a>
 
       <h4 class="font-weight-bold">DECRETO Nº 9.283, DE 7 DE FEVEREIRO DE 2018.</h4><hr>
       <p>Regulamenta a Lei nº 10.973, de 2 de dezembro de 2004, a Lei nº 13.243, de 11 de janeiro de 2016, o art. 24, § 3º, e o art. 32, § 7º, da Lei nº 8.666, de 21 de junho de 1993, o art. 1º da Lei nº 8.010, de 29 de março de 1990, e o art. 2º, caput, inciso I, alínea "g", da Lei nº 8.032, de 12 de abril de 1990, e altera o Decreto nº 6.759, de 5 de fevereiro de 2009</p>
-      <a href="http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2018/Decreto/D9283.htm" class="btn btn-outline-dark btn-lg mb-5" target="blank">Abrir Link</a>
+      <a href="http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2018/Decreto/D9283.htm" class="btn btn-outline-dark btn-lg mb-5" target="_blank">Abrir Link</a>
 
 
     </div>
@@ -115,7 +115,7 @@
       <h2 class="font-weight-bold text-dark mb-5">Manual da Marca</h2>
       <h4 class="">Manual</h4><hr>
       <p>O Manual de Identidade Visual é o guia técnico para uso dos padrões visuais e verbais na comunicação da marca SGTT. Você pode baixar uma cópia deste manual para consulta no link abaixo.</p>
-      <a href="{{asset('assets/manual_sgtt.pdf')}}" class="btn btn-lg btn-success py-3 mt-3" target="blank">Baixar Manual</a>
+      <a href="{{asset('assets/manual_sgtt.pdf')}}" class="btn btn-lg btn-success py-3 mt-3" target="_blank">Baixar Manual</a>
     </div>
   </div>
 </div>
