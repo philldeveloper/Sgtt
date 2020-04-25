@@ -58,9 +58,10 @@
                         <a @popper(Editar) href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
                         <a @popper(Baixar) href="#" data-toggle="modal" data-target="#modal-sr-loading" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
                         <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$contratos->user->email}}?subject= SGTT - Informações sobre Contrato&body=Caro {{$contratos->user->nome}}, " target="blank"><i class="fas fa-paper-plane"></i></a>
-                        @csrf
-                        @method('DELETE')
-                        <button @popper(Excluir) class="btn btn-sm pl-3 pr-3 btn-outline-danger font-weight-bold" type="submit"><i class="fa fa-trash"></i></button>
+                        
+                        @include('pesquisador.modals.contrato-sr_delete') 
+                        
+                        <a @popper(Deletar) href="#" data-toggle="modal" data-target="#contrato-sr_delete--{{$contratos->id}}" class="btn btn-sm pl-3 pr-3 btn-danger font-weight-bold" target="blank"><i class="fas fa-trash text-light"></i></a>
                       </div>
                   </form>
                   </td>
@@ -81,7 +82,7 @@
                   <div class="badge badge-secondary">Pesquisador</div>
                   @endif
                   </td>
-                  <td><!--a class="" href="{{route('perfil', $contratos->id)}}"-->{{$cr->user->nome}}<!--/a--></td>
+                  <td>{{$cr->user->nome}}</td>
                   <td>{{$cr->nome_ict}} | {{$cr->nome_parceiro}}</td>
                   <td>{{$cr->user->email}}</td>
                   <td>{{$cr->created_at}}</td>
@@ -93,9 +94,10 @@
                         <a @popper(Editar) href="{{route('contratocr_edit', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
                         <a @popper(Baixar) href="#" data-toggle="modal" data-target="#modal-cr-loading" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
                         <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$cr->user->email}}?subject= SGTT - Informações sobre Contrato&body=Caro {{$cr->user->nome}}, " target="blank"><i class="fas fa-paper-plane"></i></a>
-                        @csrf
-                        @method('DELETE')
-                        <button @popper(Excluir) class="btn btn-sm pl-3 pr-3 btn-outline-danger font-weight-bold" type="submit"><i class="fa fa-trash"></i></button>
+                        
+                        @include('pesquisador.modals.contrato-cr_delete') 
+                        
+                        <a @popper(Deletar) href="#" data-toggle="modal" data-target="#contrato-cr_delete--{{$cr->id}}" class="btn btn-sm pl-3 pr-3 btn-danger font-weight-bold" target="blank"><i class="fas fa-trash text-light"></i></a>
                       </div>
                   </form>
                   </td>
