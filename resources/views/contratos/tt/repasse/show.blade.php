@@ -92,7 +92,7 @@
   <div class="container-fluid">
         <div class="tab-pane show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-            <div class="modal-alert modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-alert modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -149,7 +149,7 @@
               <div class="alert alert-warning" role="alert">      
                 <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                 NOTAS EXPLICATIVAS!
-                <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal">Saiba mais</button>
+                <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal1">Saiba mais</button>
               </div>
 
               <form class="p-0 m-0">
@@ -441,7 +441,7 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">2. CLÁUSULA SEGUNDA – DO PLANO DE TRABALHO <a href="#" data-toggle="modal" data-target="#modalExemplo12"><i class="fas fa-fw fa-question-circle float-right"></i></a></h4><hr><br>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">2. CLÁUSULA SEGUNDA – DO PLANO DE TRABALHO</h4><hr><br>
                 <div class="alert alert-warning" role="alert">      
                   <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                     NOTAS EXPLICATIVAS!
@@ -449,7 +449,9 @@
                 </div> 
                 <p><b>2.1 </b>O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
   
-                <p class=""><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a ICT <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
+                <p><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a(o) ICT 
+                <input type="text" class="myform-control text-black" id="handle_ict" disabled placeholder="{{$contratos_cr->nome_ict}}" placeholder="Nome da ICT/Agência de Fomento">
+                <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
                 <div class="alert alert-warning" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
               NOTAS EXPLICATIVAS!
@@ -649,7 +651,7 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">4. CLÁUSULA QUARTA - DOS RECURSOS FINANCEIROS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr><br>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">4. CLÁUSULA QUARTA - DOS RECURSOS FINANCEIROS</h4><hr><br>
                 <div class="alert alert-warning" role="alert">      
                 <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                   NOTAS EXPLICATIVAS!
@@ -810,14 +812,18 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">5. CLÁUSULA QUINTA - DO PESSOAL</h4><hr><br>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">5. CLÁUSULA QUINTA - DO PESSOAL</h4><hr>
                 
-                <p>
-                <b>5.1.</b> Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações trabalhistas, previdenciárias, fundiárias e tributárias
-                 derivadas da relação existente entre si e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem na execução do objeto 
-                 deste Acordo, de forma que não se estabelecerá, em hipótese alguma, vínculo empregatício ou de qualquer outra natureza com a EMPRESA PARCERIA e o pessoal 
-                da  <span class="text-blue">ICT/AGÊNCIA DE FOMENTO (E DA FUNDAÇAO DE APOIO, se houver) </span>  e vice-versa, cabendo a cada PARCEIRO a responsabilidade pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a documentação comprobatória da regularidade na contratação.
-                </p>
+                <p class="mt-3 text-justify text-black">
+                <b>5.1.</b> Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações
+                  trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si 
+                  e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem 
+                  na execução do objeto deste Acordo, de forma que não se estabelecerá, em hipótese alguma,
+                vínculo empregatício ou de qualquer outra natureza com a EMPRESA <input type="text" class="myform-control" id="handle_parceiro" placeholder="{{$contratos_cr->nome_parceiro}}" disabled> e
+                o pessoal <input type="text" class="myform-control" name="nome_ict_parceira" id="handle_ict" placeholder="{{$contratos_cr->nome_ict}}" disabled> vice-versa, cabendo a cada PARCEIRO a responsabilidade 
+                pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a
+                documentação comprobatória da regularidade na contratação.<br>
+              </p>
              
               </div>
             </div>
@@ -1002,10 +1008,10 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-blue">
                 
-              <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">9 CLÁUSULA NONA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h4><hr><br>
+              <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">9 CLÁUSULA NONA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h4><hr>
 
               <!--clausula editavel 9-->
-              <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+              <div class="alert alert-info text-dark font-weight-bold" role="alert">      
               <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                 Edite a(s) cláusula(s) abaixo (se julgar necessário):
               </div>
@@ -1235,7 +1241,7 @@
             <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
               <div class="container-fluid p-0 mt-0 m-0">
                 <div class="text-justify text-black">
-                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">17. CLÁUSULA DÉCIMA QUINTA – DAS NOTIFICAÇÕES  <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr><br>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">17. CLÁUSULA DÉCIMA QUINTA – DAS NOTIFICAÇÕES </h4><hr><br>
                 <p><b>17.1</b> Qualquer comunicação ou notificação relacionada ao Acordo de Parceria poderá ser feita
                               pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no
                               respectivo endereço do PARCEIRO notificado, conforme as seguintes informações:<br>
@@ -1247,12 +1253,12 @@
                       class="form-control text-black" 
                       name="parceiro_contato_endereço"
                       disabled id="endereco" 
-                      placeholder="{{$contratos_cr->parceiro_contato_endereço}}"
+                      placeholder="{{$contratos_cr->parceiro_contato_endereco}}"
                       >
                   </div>
 
                   <div class="form-group col-md-3">
-                    <label for="parceiro_contato_telefone" class= text-black">Telefone</label>
+                    <label for="parceiro_contato_telefone" class="text-black">Telefone</label>
                     <input type="text" 
                       class="form-control text-black"
                       name="parceiro_contato_telefone" 
@@ -1287,7 +1293,7 @@
                       class="form-control text-black " 
                       name="privado_contato_endereço"
                       disabled id="endereco" 
-                      placeholder="{{$contratos_cr->privado_contato_endereço}}"
+                      placeholder="{{$contratos_cr->privado_contato_endereco}}"
                       >
                   </div>
                   <div class="form-group col-md-3">
@@ -1326,9 +1332,9 @@
                       <label for="endereco" class=" text-black">Endereço</label>
                       <input type="text" 
                         class="form-control text-black " 
-                        name="apoio_contato_endereço"
+                        name="apoio_contato_endereco"
                         disabled id="endereco" 
-                        value="{{$contratos_cr->apoio_contato_endereço}}"
+                        value="{{$contratos_cr->apoio_contato_endereco}}"
                         placeholder="Endereço">
                     </div>
         
@@ -1375,7 +1381,7 @@
              <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
               <div class="container-fluid p-0 mt-0 m-0">
                 <div class="text-justify text-black">
-                  <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">18. CLÁUSULA DÉCIMA OITAVA – DISPOSIÇÕES GERAIS <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr><br>
+                  <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">18. CLÁUSULA DÉCIMA OITAVA – DISPOSIÇÕES GERAIS</h4><hr><br>
       
                   <p>
                     <b>18.1.</b> É livre o acesso dos agentes da administração pública, do controle interno e do Tribunal de Contas aos documentos e às informações relacionados a esse Acordo, bem como aos locais de execução do respectivo objeto, ressalvadas as informações tecnológicas e dados das pesquisas que possam culminar com alguma inovação.
@@ -1388,7 +1394,7 @@
           <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
               <div class="container-fluid p-0 mt-0 m-0">
                 <div class="text-justify text-black">
-                  <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">19. CLÁUSULA DÉCIMA NONA - DO FORO <a href="#"><i class="fas fa-fw fa-question-circle ml-2"></i></a></h4><hr><br>
+                  <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">19. CLÁUSULA DÉCIMA NONA - DO FORO </h4><hr><br>
       
                   <p><b>19.1.</b>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de <input class="myform-control text-black"  type="text" name="estado_foro" id="estado_foro" placeholder="{{$contratos_cr->estado_foro}}" disabled="">, cidade de <input  class="myform-control" type="text" name="cidade_foro" id="cidade_foro" placeholder="{{$contratos_cr->cidade_foro}}" disabled="">,
                   para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109
@@ -1505,7 +1511,7 @@
                 
                 <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black bg-light p-2 mb-3">SEU CONTRATO ESTÁ PRONTO. <a href="#"><i class="fas fa-fw fa-check ml-2"></i></a></h5>
   
-                <p>Clique em enviar, e você será redirecionado para a tela inicial onde poderá visualizar seu contrato. </p><br>
+                <p>Você acabou de visualizar seu contrato, clique em Menu e você será redirecionado para tela inicial.</p><br>
                 
               </div>
             </div>
