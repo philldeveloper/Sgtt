@@ -229,58 +229,6 @@ class Contrato_crController extends Controller
      */
     public function update(Request $request, $id)
     {   
-        $request->validate([
-            'nome_ict' => 'required',
-            'nome_parceiro' => 'required',
-            'nome_teste' => 'required',
-            'nat_juridica' => 'required',
-            'cnpj' => 'required',
-            'endereco' => 'required',
-            'cidade' => 'required',
-            'uf' => 'required',
-            'cep' => 'required',
-            'rep_legal' => 'required',
-            'cpf' => 'required',
-            'rg' => 'required',
-            'orgao_exp' => 'required',
-            'nacionalidade' => 'required',
-            'est_civil' => 'required',
-            'ato_nomeacao' => 'required',
-            'doravante_denominado' => 'required',
-            'nome_parceiro_instituicao' => 'required',
-            'parceiro_nat_juridica' => 'required',
-            'parceiro_cnpj' => 'required',
-            'parceiro_endereco' => 'required',
-            'parceiro_cidade' => 'required',
-            'parceiro_uf' => 'required',
-            'parceiro_rep_legal' => 'required',
-            'parceiro_cep' => 'required',
-            'parceiro_cpf' => 'required',
-            'parceiro_rg' => 'required',
-            'parceiro_orgao_exp' => 'required',
-            'parceiro_cargo' => 'required',
-            'parceiro_doravante_denominado' => 'required',
-            'clausula_descricao' => 'required',
-            
-            'nome_coordenador_ict' => 'required',
-            'nome_coordenador_privado' => 'required',
-            'nome_inst_fundacao' => 'required',
-            'nome_fund_apoio' => 'required',
-            'prazo_vigencia' => 'required',
-            'estado_foro' => 'required',
-            'cidade_foro' => 'required',
-            'data_foro' => 'required',
-            'ict_inst_foro' => 'required',
-            'nome_rep_foro' => 'required',
-            'cargo_rep_foro' => 'required',
-            'nome_inst_privado_foro' => 'required',
-            'nome_rep_privado_foro' => 'required',
-            'cargo_rep_privado_foro' => 'required',
-            'nome_testemunha_1' => 'required',
-            'nome_testemunha_2' => 'required',
-        ]);
-    
-
         $contratos_cr = Contrato_cr::find($id); //localizar contrato find (encontrar)
         $contratos_cr->fill ($request->all()); //fill (preencher)
         $contratos_cr->save();

@@ -312,79 +312,6 @@
              </div>
             </div><!--end of content-->
           </div><!--end pane-->
-          {{--<div class="tab-pane " id="contact" role="tabpanel" aria-labelledby="contact-tab">
-            <div class="container-fluid p-0 mt-0 m-0">
-              <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">3º PARCEIRO (Fundação de Apoio)</h5>
-              <div class="form-row">
-                <div class="form-group col-md-4">
-                  <label for="inputEmail4" class="font-weight-bold text-black">Instituição</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputEmail4" value="Nome">
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" value="Natureza Jurídica">
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" value="CNPJ">
-                </div>
-              </div>
-  
-              <div class="form-row">
-                <div class="form-group col-md-5">
-                  <label for="" class="font-weight-bold text-black">Endereço</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="">
-                </div>
-                <div class="form-group col-md-3">
-                  <label for="" class="font-weight-bold text-black">Cidade</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="">
-                </div>
-                <div class="form-group col-md-2">
-                  <label for="inputState" class="font-weight-bold text-black">UF</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold"  id="">
-                </div>
-                <div class="form-group col-md-2">
-                  <label for="inputZip" class="font-weight-bold text-black">CEP</label>
-                  <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold"  id="inputZip">
-                </div>
-              </div>
-  
-             <div class="form-row">
-              <div class="form-group col-md-4">
-                <label for="inputEmail4" class="font-weight-bold text-black">Representante Legal</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputEmail4" value="Nome">
-              </div>
-              <div class="form-group col-md-3">
-                <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" value="">
-              </div>
-              <div class="form-group col-md-3">
-                <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" value="">
-              </div>
-              <div class="form-group col-md-2">
-                <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" value="">
-              </div>
-              <div class="form-group col-md-2">
-                <label for="inputPassword4" class="font-weight-bold text-black">Cargo</label>
-                <a href="#"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <input type="text" class="form-control text-black font-weight-bold"  id="inputPassword4" value="">
-              </div>
-             </div>
-            </div><!--end of content-->
-          </div><!--end pane-->--}}
           
           <!------------------------------------------------------------------------->
   
@@ -474,19 +401,19 @@
               </div>
               <div class="col-md-12 mb-3">
                 <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
-                <textarea class="form-control font-weight-bold" name="clausula_edit_2_3" rows="3">{{$contratos_cr->clausula_edit_2_3}}</textarea>
+                <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_2_3}}" name="clausula_edit_2_3" rows="3">{{$contratos_cr->clausula_edit_2_3}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.4</a>
-                <textarea class="form-control font-weight-bold" name="clausula_edit_2_4" rows="3">{{$contratos_cr->clausula_edit_2_4}}</textarea>
+                <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_2_4}}" name="clausula_edit_2_4" rows="3">{{$contratos_cr->clausula_edit_2_4}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.5</a>
-                <textarea class="form-control font-weight-bold" name="clausula_edit_2_5" rows="3">{{$contratos_cr->clausula_edit_2_5}}</textarea>
+                <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_2_5}}" name="clausula_edit_2_5" rows="3">{{$contratos_cr->clausula_edit_2_5}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.6</a>
-                <textarea class="form-control font-weight-bold" name="clausula_edit_2_6" rows="3">{{$contratos_cr->clausula_edit_2_6}}</textarea>
+                <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_2_6}}" name="clausula_edit_2_6" rows="3">{{$contratos_cr->clausula_edit_2_6}}</textarea>
               </div>
                 
               </div>
@@ -576,72 +503,72 @@
               <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a): <input type="text" class="myform-control" value="{{$contratos_cr->nome_inst_fundacao}}" name="nome_inst_fundacao" id="nome_inst_fundacao" placeholder="Instituição"> <a href="#" data-toggle="modal" data-target="#modalFundApoio"><i class="fas fa-fw fa-question-circle"></i></a>:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p>
               <div class="col-md-12 mb-3">
                 <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">A)</a>
-                <textarea  name="clausula_edit_3a" class="form-control font-weight-bold text-justify" style="background-color: #F6FAFA; resize: none !important;"  id="" cols="30" rows="3">{{$contratos_cr->clausula_edit_3a}}
+                <textarea  value="{{$contratos_cr->clausula_edit_3a}}" name="clausula_edit_3a" class="form-control font-weight-bold text-justify" style="background-color: #F6FAFA; resize: none !important;"  id="" cols="30" rows="3">{{$contratos_cr->clausula_edit_3a}}
               </textarea>
               </div>
               <div class="col-md-12 mb-3">
                 <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">B)</a>
-                <textarea  name="clausula_edit_3b" class="form-control font-weight-bold text-justify" style="background-color: #F6FAFA; resize: none !important;" id="" cols="30" rows="3">{{$contratos_cr->clausula_edit_3b}}
+                <textarea  value="{{$contratos_cr->clausula_edit_3b}}" name="clausula_edit_3b" class="form-control font-weight-bold text-justify" style="background-color: #F6FAFA; resize: none !important;" id="" cols="30" rows="3">{{$contratos_cr->clausula_edit_3b}}
               </textarea>
               </div>
               <div class="col-md-12 mb-3">
                 <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">C)</a>
-              <textarea  name="clausula_edit_3c" class="form-control font-weight-bold text-justify" style="background-color: #F6FAFA; resize: none !important;" id="" cols="30" rows="3">{{$contratos_cr->clausula_edit_3c}}
+              <textarea  value="{{$contratos_cr->clausula_edit_3c}}" name="clausula_edit_3c" class="form-control font-weight-bold text-justify" style="background-color: #F6FAFA; resize: none !important;" id="" cols="30" rows="3">{{$contratos_cr->clausula_edit_3c}}
               </textarea>
               </div>
               <div class="col-md-12 mb-3">
                 <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">D)</a>
-              <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3d" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3d}}
+              <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_cr->clausula_edit_3d}}" name="clausula_edit_3d" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3d}}
               </textarea>
               </div>
               <div class="col-md-12 mb-3">
                 <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">E)</a>
-                <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3e" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3e}}
+                <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_cr->clausula_edit_3e}}" name="clausula_edit_3e" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3e}}
               </textarea>
               </div>
               <div class="col-md-12 mb-3">
                 <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">F)</a>
-                <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3f" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3f}}
+                <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_cr->clausula_edit_3f}}" name="clausula_edit_3f" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3f}}
               </textarea>
               </div>
               <div class="col-md-12 mb-3">
                 <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">G)</a>
-                <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3g" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3g}}
+                <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_cr->clausula_edit_3g}}" name="clausula_edit_3g" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3g}}
               </textarea>
               </div>
               <div class="col-md-12 mb-3">
                 <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">H)</a>
-                <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3h" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3h}}
+                <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_cr->clausula_edit_3h}}" name="clausula_edit_3h" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3h}}
                 </textarea>
               </div>
               <div class="col-md-12 mb-3">
                 <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">I)</a>
-                <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3i" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3i}}
+                <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_cr->clausula_edit_3_}}" name="clausula_edit_3i" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3i}}
               </textarea>
               </div>
               <div class="col-md-12 mb-3">
                 <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">J)</a>
-                <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3j" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3j}}
+                <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_cr->clausula_edit_3j}}" name="clausula_edit_3j" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3j}}
                 </textarea>
               </div>
               <div class="col-md-12 mb-3">
                 <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">K)</a>
-                <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3k" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3k}}
+                <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_cr->clausula_edit_3k}}" name="clausula_edit_3k" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3k}}
                 </textarea>
               </div>
               <div class="col-md-12 mb-3">
                 <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">L)</a>
-                <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3l" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3l}}
+                <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_cr->clausula_edit_3l}}" name="clausula_edit_3l" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3l}}
               </textarea>
               </div>
               <div class="col-md-12 mb-3">
                 <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">M)</a>
-                <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3m" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3m}}
+                <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_cr->clausula_edit_3m}}" name="clausula_edit_3m" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3m}}
               </textarea>
               </div>
               <div class="col-md-12 mb-3">
                 <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">N)</a>
-                <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_3n" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3n}}
+                <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_cr->clausula_edit_3n}}" name="clausula_edit_3n" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3n}}
               </textarea>
               </div>
             </div><!--clausula_apoio_wrapper-->
@@ -649,7 +576,7 @@
             <p><b>3.2.</b> <span id="coord_ict"></span><span id="coord_privado"></span> poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.<br></p>
               <!--clausula editavel 3_3-->
             <div class="col-md-12 mb-3">
-              <textarea class="form-control font-weight-bold" name="clausula_edit_3_3" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3_3}}</textarea>
+              <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_3_3}}" name="clausula_edit_3_3" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3_3}}</textarea>
             </div>
                 </div>
             </div>
@@ -711,27 +638,27 @@
 
                 <div class="col-md-12 mb-3">
                     <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">4.8</a>
-                    <textarea class="form-control font-weight-bold" name="clausula_edit_4_8" rows="4">{{$contratos_cr->clausula_edit_4_8}}</textarea>
+                    <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_4_8}}" name="clausula_edit_4_8" rows="4">{{$contratos_cr->clausula_edit_4_8}}</textarea>
                 </div>
                 <div class="col-md-12 mb-3">
                     <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">4.8.1</a>
-                    <textarea class="form-control font-weight-bold" name="clausula_edit_4_8_1" rows="4">{{$contratos_cr->clausula_edit_4_8_1}}</textarea>
+                    <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_4_8_1}}" name="clausula_edit_4_8_1" rows="4">{{$contratos_cr->clausula_edit_4_8_1}}</textarea>
                 </div>
                 <div class="col-md-12 mb-3">
                     <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">4.8.2</a>
-                    <textarea class="form-control font-weight-bold" name="clausula_edit_4_8_2" rows="4">{{$contratos_cr->clausula_edit_4_8_2}}</textarea>
+                    <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_4_8_2}}" name="clausula_edit_4_8_2" rows="4">{{$contratos_cr->clausula_edit_4_8_2}}</textarea>
                 </div>
                 <div class="col-md-12 mb-3">
                     <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">4.9</a>
-                    <textarea class="form-control font-weight-bold" name="clausula_edit_4_9" rows="4">{{$contratos_cr->clausula_edit_4_9}}</textarea>
+                    <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_4_9}}" name="clausula_edit_4_9" rows="4">{{$contratos_cr->clausula_edit_4_9}}</textarea>
                 </div>
                 <div class="col-md-12 mb-3">
                     <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">4.9.1</a>
-                    <textarea class="form-control font-weight-bold" name="clausula_edit_4_9_1" rows="4">{{$contratos_cr->clausula_edit_4_9_1}}</textarea>
+                    <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_4_9_1}}" name="clausula_edit_4_9_1" rows="4">{{$contratos_cr->clausula_edit_4_9_1}}</textarea>
                 </div>
                 <div class="col-md-12 mb-5">
                     <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">4.10</a>
-                    <textarea class="form-control font-weight-bold" name="clausula_edit_4_10" rows="4">{{$contratos_cr->clausula_edit_4_10}}</textarea>
+                    <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_4_10}}" name="clausula_edit_4_10" rows="4">{{$contratos_cr->clausula_edit_4_10}}</textarea>
                 </div>
                 <div class="alert alert-warning" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
@@ -858,55 +785,55 @@
       
           <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">6.1</a>
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_1" rows="4">{{$contratos_cr->clausula_edit_6_1}}</textarea>
+              <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_6_1}}" name="clausula_edit_6_1" rows="4">{{$contratos_cr->clausula_edit_6_1}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">6.2</a>
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_2" rows="4">{{$contratos_cr->clausula_edit_6_2}}</textarea>
+              <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_6_2}}" name="clausula_edit_6_2" rows="4">{{$contratos_cr->clausula_edit_6_2}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">6.3</a>
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_3" rows="4">{{$contratos_cr->clausula_edit_6_3}}</textarea>
+              <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_6_3}}" name="clausula_edit_6_3" rows="4">{{$contratos_cr->clausula_edit_6_3}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">6.4</a>
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_4" rows="4">{{$contratos_cr->clausula_edit_6_4}}</textarea>
+              <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_6_4}}" name="clausula_edit_6_4" rows="4">{{$contratos_cr->clausula_edit_6_4}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">6.5</a>
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_5" rows="4">{{$contratos_cr->clausula_edit_6_5}}</textarea>
+              <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_6_5}}" name="clausula_edit_6_5" rows="4">{{$contratos_cr->clausula_edit_6_5}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">6.6</a>
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_6" rows="4">{{$contratos_cr->clausula_edit_6_6}}</textarea>
+              <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_6_6}}" name="clausula_edit_6_6" rows="4">{{$contratos_cr->clausula_edit_6_6}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">6.7</a>
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_7" rows="4">{{$contratos_cr->clausula_edit_6_7}}</textarea>
+              <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_6_7}}" name="clausula_edit_6_7" rows="4">{{$contratos_cr->clausula_edit_6_7}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">6.8</a>
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_8" rows="4">{{$contratos_cr->clausula_edit_6_8}}</textarea>
+              <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_6_8}}" name="clausula_edit_6_8" rows="4">{{$contratos_cr->clausula_edit_6_8}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">6.9</a>
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_9" rows="4">{{$contratos_cr->clausula_edit_6_9}}</textarea>
+              <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_6_9}}" name="clausula_edit_6_9" rows="4">{{$contratos_cr->clausula_edit_6_9}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">6.10</a>
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_10" rows="4">{{$contratos_cr->clausula_edit_6_10}}</textarea>
+              <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_6_10}}" name="clausula_edit_6_10" rows="4">{{$contratos_cr->clausula_edit_6_10}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">6.11</a>
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_11" rows="4">{{$contratos_cr->clausula_edit_6_11}}</textarea>
+              <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_6_11}}" name="clausula_edit_6_11" rows="4">{{$contratos_cr->clausula_edit_6_11}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">6.12</a>
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_12" rows="4">{{$contratos_cr->clausula_edit_6_12}}</textarea>
+              <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_6_12}}" name="clausula_edit_6_12" rows="4">{{$contratos_cr->clausula_edit_6_12}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">6.13</a>
-              <textarea class="form-control font-weight-bold" name="clausula_edit_6_13" rows="4">{{$contratos_cr->clausula_edit_6_13}}</textarea>
+              <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_6_13}}" name="clausula_edit_6_13" rows="4">{{$contratos_cr->clausula_edit_6_13}}</textarea>
           </div>
           
                 
@@ -995,15 +922,15 @@
 
           <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">8.6</a>
-              <textarea class="form-control font-weight-bold" name="clausula_edit_8_6" rows="3">{{$contratos_cr->clausula_edit_8_6}}</textarea>
+              <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_8_6}}" name="clausula_edit_8_6" rows="3">{{$contratos_cr->clausula_edit_8_6}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">8.7</a>
-              <textarea class="form-control font-weight-bold" name="clausula_edit_8_7" rows="3">{{$contratos_cr->clausula_edit_8_7}}</textarea>
+              <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_8_7}}" name="clausula_edit_8_7" rows="3">{{$contratos_cr->clausula_edit_8_7}}</textarea>
           </div>
           <div class="col-md-12 mb-3">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">8.8</a>
-              <textarea class="form-control font-weight-bold" name="clausula_edit_8_8" rows="3">{{$contratos_cr->clausula_edit_8_8}}</textarea>
+              <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_8_8}}" name="clausula_edit_8_8" rows="3">{{$contratos_cr->clausula_edit_8_8}}</textarea>
           </div>
                   
               </div>
@@ -1025,39 +952,39 @@
 
               <div class="col-md-12 mb-3">
                   <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">9.1</a>
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_9_1" rows="7">{{$contratos_cr->clausula_edit_9_1}}</textarea>
+                  <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_9_1}}" name="clausula_edit_9_1" rows="7">{{$contratos_cr->clausula_edit_9_1}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
                   <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">9.2</a>
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_9_2" rows="3">{{$contratos_cr->clausula_edit_9_2}}</textarea>
+                  <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_9_2}}" name="clausula_edit_9_2" rows="3">{{$contratos_cr->clausula_edit_9_2}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
                   <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">9.3</a>
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_9_3" rows="3">{{$contratos_cr->clausula_edit_9_3}}</textarea>
+                  <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_9_3}}" name="clausula_edit_9_3" rows="3">{{$contratos_cr->clausula_edit_9_3}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
                   <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">9.4</a>
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_9_4" rows="3">{{$contratos_cr->clausula_edit_9_4}}</textarea>
+                  <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_9_4}}" name="clausula_edit_9_4" rows="3">{{$contratos_cr->clausula_edit_9_4}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
                   <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">A)</a>
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_9_a" rows="5">{{$contratos_cr->clausula_edit_9_a}}</textarea>
+                  <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_9_a}}" name="clausula_edit_9_a" rows="5">{{$contratos_cr->clausula_edit_9_a}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
                   <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">B)</a>
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_9_b" rows="5">{{$contratos_cr->clausula_edit_9_b}}</textarea>
+                  <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_9_b}}" name="clausula_edit_9_b" rows="5">{{$contratos_cr->clausula_edit_9_b}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
                   <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">C)</a>
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_9_c" rows="5">{{$contratos_cr->clausula_edit_9_c}}</textarea>
+                  <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_9_c}}" name="clausula_edit_9_c" rows="5">{{$contratos_cr->clausula_edit_9_c}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
                   <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">D)</a>
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_9_d" rows="5">{{$contratos_cr->clausula_edit_9_d}}</textarea>
+                  <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_9_d}}" name="clausula_edit_9_d" rows="5">{{$contratos_cr->clausula_edit_9_d}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
                   <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">E)</a>
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_9_e" rows="5">{{$contratos_cr->clausula_edit_9_e}}</textarea>
+                  <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_9_e}}" name="clausula_edit_9_e" rows="5">{{$contratos_cr->clausula_edit_9_e}}</textarea>
               </div>
     
               </div>
@@ -1094,7 +1021,7 @@
                 <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_vigencia">Saiba mais</button>
               </div> 
               <p><b>11.1.</b> O presente Acordo de Parceria para PD&I vigerá pelo prazo de 
-              <input class="myform-control text-black" type="text" name="prazo_vigencia" id="prazo_vigencia" value="{{$contratos_cr->prazo_vigencia}}" placeholder="Quantidade de anos" > anos, a partir da data de sua assinatura, prorrogáveis.</p>
+              <input class="myform-control text-black" type="text" name="prazo_vigencia" id="prazo_vigencia" value="{{$contratos_cr->prazo_vigencia}}" placeholder="Quantidade de meses" >, a partir da data de sua assinatura, prorrogáveis.</p>
               <p><b>11.2.</b> Este Acordo de Parceria poderá ser prorrogado por meio de termo aditivo, com as respectivas alterações no Plano de Trabalho, mediante a apresentação de justifica técnica.</p>
             
               </div>
@@ -1125,11 +1052,11 @@
               </div>
               <div class="col-md-12 mb-3">
                   <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">12.4.1</a>
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_12_4_1" rows="6">{{$contratos_cr->clausula_edit_12_4_1}}</textarea>
+                  <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_12_4_1}}" name="clausula_edit_12_4_1" rows="6">{{$contratos_cr->clausula_edit_12_4_1}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
                   <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">12.4.2</a>
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_12_4_2" rows="3">{{$contratos_cr->clausula_edit_12_4_2}}</textarea>
+                  <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_12_4_2}}" name="clausula_edit_12_4_2" rows="3">{{$contratos_cr->clausula_edit_12_4_2}}</textarea>
               </div>
 
               </div>
@@ -1149,15 +1076,15 @@
               </div>
               <div class="col-md-12 mb-3">
                   <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.2</a>
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_13_2" rows="3">{{$contratos_cr->clausula_edit_13_2}}</textarea>
+                  <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_13_2}}" name="clausula_edit_13_2" rows="3">{{$contratos_cr->clausula_edit_13_2}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
                   <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.a</a>
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_13_a" rows="3">{{$contratos_cr->clausula_edit_13_a}}</textarea>
+                  <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_13_a}}" name="clausula_edit_13_a" rows="3">{{$contratos_cr->clausula_edit_13_a}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
                   <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.b</a>
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_13_b" rows="3">{{$contratos_cr->clausula_edit_13_b}}</textarea>
+                  <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_13_b}}" name="clausula_edit_13_b" rows="3">{{$contratos_cr->clausula_edit_13_b}}</textarea>
               </div>
               <p><b>13.3.</b> No Formulário de Resultado de que trata a subcláusula 13.2, deverá ser demonstrada a compatibilidade entre as metas previstas e as alcançadas no período, bem como apontadas as justificativas em caso de discrepância, consolidando dados e valores das ações desenvolvidas.</p>
               <p>
@@ -1188,23 +1115,23 @@
                 </div>
                 <div class="col-md-12 mb-3">
                   <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">14.2</a>
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_14_2"  rows="5">{{$contratos_cr->clausula_edit_14_2}}</textarea>
+                  <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_14_2}}" name="clausula_edit_14_2"  rows="5">{{$contratos_cr->clausula_edit_14_2}}</textarea>
                 </div>
                 <div class="col-md-12 mb-3">
                   <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">14.2.1</a>
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_14_2_1" rows="3">{{$contratos_cr->clausula_edit_14_2_1}}</textarea>
+                  <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_14_2_1}}" name="clausula_edit_14_2_1" rows="3">{{$contratos_cr->clausula_edit_14_2_1}}</textarea>
                 </div>
                 <div class="col-md-12 mb-3">
                   <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">14.2.2</a>
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_14_2_2" rows="3">{{$contratos_cr->clausula_edit_14_2_2}}</textarea>
+                  <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_14_2_2}}" name="clausula_edit_14_2_2" rows="3">{{$contratos_cr->clausula_edit_14_2_2}}</textarea>
                 </div>
                 <div class="col-md-12 mb-3">
                   <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">14.3</a>
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_14_3" rows="3">{{$contratos_cr->clausula_edit_14_3}}</textarea>
+                  <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_14_3}}" name="clausula_edit_14_3" rows="3">{{$contratos_cr->clausula_edit_14_3}}</textarea>
                 </div>
                 <div class="col-md-12 mb-3">
                   <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">14.4</a>
-                  <textarea class="form-control font-weight-bold" name="clausula_edit_14_4" rows="3">{{$contratos_cr->clausula_edit_14_4}}</textarea>
+                  <textarea class="form-control font-weight-bold" value="{{$contratos_cr->clausula_edit_14_4}}" name="clausula_edit_14_4" rows="3">{{$contratos_cr->clausula_edit_14_4}}</textarea>
                 </div>
 
                 </div>
@@ -1261,9 +1188,8 @@
                     <input type="text" 
                       class="form-control text-black" 
                       name="parceiro_contato_endereco"
-                      id="endereco" 
-                      value="{{$contratos_cr->parceiro_contato_endereco}}"
-                      placeholder="Endereço">
+                      id="parceiro_contato_endereco" 
+                      value="{{$contratos_cr->parceiro_contato_endereco}}">
                   </div>
 
                   <div class="form-group col-md-3">
@@ -1272,16 +1198,14 @@
                       class="form-control text-black"
                       name="parceiro_contato_telefone" 
                       id="parceiro_contato_telefone" 
-                      value="{{$contratos_cr->parceiro_contato_telefone}}"
-                      placeholder="Telefone">
+                      value="{{$contratos_cr->parceiro_contato_telefone}}">
                   </div>
                   <div class="form-group col-md-3">
                     <label for="parceiro_contato_celular" class="text-black">Celular</label>
                     <input type="text" 
                       class="form-control text-black" 
                       name="parceiro_contato_celular" id="parceiro_contato_celular"
-                      value="{{$contratos_cr->parceiro_contato_celular}}" 
-                      placeholder="Celular">
+                      value="{{$contratos_cr->parceiro_contato_celular}}" >
                   </div>
                   <div class="form-group col-md-3">
                     <label for="parceiro_contato_email" class="text-black">Email</label>
@@ -1289,8 +1213,7 @@
                       class="form-control text-black"
                       name="parceiro_contato_email" 
                       id="parceiro_contato_email" 
-                      value="{{$contratos_cr->parceiro_contato_email}}"
-                      placeholder="E-mail">
+                      value="{{$contratos_cr->parceiro_contato_email}}">
                   </div>
                 </div><!-- /.row-->
                 <!-- Pariceiro privado -->
@@ -1301,9 +1224,8 @@
                     <input type="text" 
                       class="form-control text-black " 
                       name="privado_contato_endereco"
-                      id="endereco" 
-                      value="{{$contratos_cr->privado_contato_endereco}}"
-                      placeholder="Endereço">
+                      id="privado_contato_endereco" 
+                      value="{{$contratos_cr->privado_contato_endereco}}">
                   </div>
                   <div class="form-group col-md-3">
                     <label for="privado_contato_telefone" class=" text-black">Telefone</label>
@@ -1311,16 +1233,14 @@
                       class="form-control text-black "
                       name="privado_contato_telefone" 
                       id="privado_contato_telefone" 
-                      value="{{$contratos_cr->privado_contato_telefone}}"
-                      placeholder="Telefone">
+                      value="{{$contratos_cr->privado_contato_telefone}}">
                   </div>
                   <div class="form-group col-md-3">
                     <label for="privado_contato_celular" class=" text-black">Celular</label>
                     <input type="text" 
                       class="form-control text-black " 
                       name="privado_contato_celular" id="privado_contato_celular"
-                      value="{{$contratos_cr->privado_contato_celular}}" 
-                      placeholder="Celular">
+                      value="{{$contratos_cr->privado_contato_celular}}" >
                   </div>
                   <div class="form-group col-md-3">
                     <label for="privado_contato_email" class=" text-black">Email</label>
@@ -1328,8 +1248,7 @@
                       class="form-control text-black "
                       name="privado_contato_email" 
                       id="privado_contato_email" 
-                      value="{{$contratos_cr->privado_contato_email}}" 
-                      placeholder="E-mail">
+                      value="{{$contratos_cr->privado_contato_email}}" >
                   </div>
                 </div>
                 <!-- Fundacao de apoio -->
@@ -1342,7 +1261,7 @@
                       <input type="text" 
                         class="form-control text-black " 
                         name="apoio_contato_endereco"
-                        id="endereco" 
+                        id="apoio_contato_endereco" 
                         value="{{$contratos_cr->apoio_contato_endereco}}"
                         placeholder="Endereço">
                     </div>
@@ -1353,16 +1272,14 @@
                         class="form-control text-black "
                         name="priv_contato_telefone" 
                         id="apoio_contato_telefone" 
-                        value="{{$contratos_cr->apoio_contato_telefone}}"
-                        placeholder="Telefone">
+                        value="{{$contratos_cr->apoio_contato_telefone}}">
                     </div>
                     <div class="form-group col-md-3">
                       <label for="apoio_contato_celular" class=" text-black">Celular</label>
                       <input type="text" 
                         class="form-control text-black " 
                         name="apoio_contato_celular" id="apoio_contato_celular"
-                        value="{{$contratos_cr->apoio_contato_celular}}" 
-                        placeholder="Celular">
+                        value="{{$contratos_cr->apoio_contato_celular}}" >
                     </div>
                     <div class="form-group col-md-3">
                       <label for="apoio_contato_email" class=" text-black">Email</label>
@@ -1370,8 +1287,7 @@
                         class="form-control text-black "
                         name="apoio_contato_email" 
                         value="{{$contratos_cr->apoio_contato_email}}"
-                        id="apoio_contato_email" 
-                        placeholder="E-mail">
+                        id="apoio_contato_email" >
                     </div>
                   </div><!-- /.row-->
                 </div>
@@ -1418,8 +1334,8 @@
                       <input type="date" 
                         class="form-control text-black font-weight-bold" 
                         name="data_foro"
-                        id="data_foro"  
-                        placeholder="{{$contratos_cr->data_foro}}">
+                        id="data_foro" 
+                        value="{{$contratos_cr->data_foro}}">
                     </div>
                   </div><!-- /.row-->
 
@@ -1481,7 +1397,7 @@
                       <input type="text" 
                         class="form-control text-black font-weight-bold" 
                         name="nome_testemunha_1" id="nome_testemunha_1" 
-                        placeholder="{{$contratos_cr->nome_testemunha_1}}">
+                        value="{{$contratos_cr->nome_testemunha_1}}">
                     </div>
                     <div class="form-group col-md-3">
                       <label for="nome_testemunha_2" class="font-weight-bold text-black">Testemunha 2:</label>
@@ -1489,7 +1405,7 @@
                         class="form-control text-black font-weight-bold"
                         name="nome_testemunha_2" 
                         id="nome_testemunha_2" 
-                        placeholder="{{$contratos_cr->nome_testemunha_2}}">
+                        value="{{$contratos_cr->nome_testemunha_2}}">
                     </div>
                   </div><!-- /.row-->
 
