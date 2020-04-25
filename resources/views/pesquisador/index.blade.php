@@ -124,7 +124,7 @@
           <a class="float-right" data-toggle="modal" data-target="#semrepasseModal" href=""><i class="fas fa-exclamation-circle text-warning"></i></a>
         </span>
         <hr>
-        <p class="subtitle pt-3 text-justify" style="padding-bottom: 2.7rem!important;">
+        <p class="subtitle pt-3 pb-3 text-justify">
           Esta minuta deve ser utilizada para acordos de parceria para PD&I quando não houver repasse de recursos entre os parceiros.
         </p>
 
