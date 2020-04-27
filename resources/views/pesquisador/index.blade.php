@@ -119,7 +119,7 @@
 <div class="container-fluid py-3">
 <div class="row">
   <div class="col-lg-6">
-    <div class="notice notice-info notice-lg">
+    <div class="notice notice-info notice-lg" style="min-height: 30vh !important">
         <span class="h4 font-weight-bold text-dark text-uppercase">Acordo de Cooperação <span class="text-dark">sem repasse</span>
           <a class="float-right" data-toggle="modal" data-target="#semrepasseModal" href=""><i class="fas fa-exclamation-circle text-warning"></i></a>
         </span>
@@ -139,7 +139,7 @@
     </div>
   </div>
   <div class="col-lg-6">
-    <div class="notice notice-success notice-lg">
+    <div class="notice notice-success notice-lg" style="min-height: 30vh !important">
         <span class="h4 font-weight-bold text-dark text-uppercase">Acordo de Cooperação <span class="text-dark">com repasse</span>
           <a class="float-right" data-toggle="modal" data-target="#repasseModal" href=""><i class="fas fa-exclamation-circle text-warning"></i></a>
         </span>
@@ -185,7 +185,7 @@
       
       <div class="table-responsive">
           <table class="table table-hover mb-0" id="example">
-            <thead class="roboto-font font-weight-bold text-dark border-left-success bg-light shadow-sm" style="font-size: 1.25rem">
+            <thead class="roboto-font font-weight-bold text-dark border-left-success bg-light shadow-sm" style="font-size: 1.25rem;">
               <tr>
                 <!-- <th scope="col">#</th> -->
                 
@@ -203,7 +203,7 @@
               </tr>
               
               @forelse($contratos_sr as $contratos)              
-              <tr class="">
+              <tr class="border-bottom">
                 <!-- <td>{{$contratos->id}}</td> -->
                 <td><div class="badge badge-dark">{{$contratos->nome}}</div></td>
                 <td><div class="badge badge-info">{{$contratos->tipo}}</div></td>
