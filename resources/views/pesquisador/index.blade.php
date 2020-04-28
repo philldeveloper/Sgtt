@@ -413,7 +413,6 @@ function loadingDownloadSR(event){
     },
     beforeSend: function (){
       gif.style.display = 'block'
-      console.log(userMessage)
       userMessage.innerHTML = 'Aguarde um pouco!<br> seu contrato está sendo gerado...'
       button.setAttribute("disabled", true)
     },
