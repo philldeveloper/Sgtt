@@ -232,7 +232,7 @@
                   <div class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title" id="exampleModalLabel">Contrato sem repasse</h5>
-                      <button type="button" class="close" data-dismiss="modal" onclick="modaltoDefault()" aria-label="Close">
+                      <button type="button" class="close" data-dismiss="modal" onclick="modaltoDefaultSR()" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
@@ -288,7 +288,7 @@
                     <div class="modal-content">
                       <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Contrato com Repasse</h5>
-                        <button type="button" class="close" data-dismiss="modal" onclick="modaltoDefault()" aria-label="Close">
+                        <button type="button" class="close" data-dismiss="modal" onclick="modaltoDefaultCR()" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
@@ -379,10 +379,8 @@
 
 <!-- SCRIPT PARA SEM REPASSE -->
 <script>
-var userMessage = document.getElementById('user-message-sr')
-var iconSuccess = document.getElementById('success-icon-sr')
 
-function modaltoDefault(){
+function modaltoDefaultSR(){
   iconSuccess.style.display = 'none'
   userMessage.innerHTML = 'Clique em Baixar para fazer o download do seu PDF.'
 
@@ -391,6 +389,8 @@ function modaltoDefault(){
 function loadingDownloadSR(event){
   event.preventDefault();
 
+  var userMessage = document.getElementById('user-message-sr')
+  var iconSuccess = document.getElementById('success-icon-sr')
   const button = event.target
   const requestUrl = event.target.href
   const gif = document.getElementById('gif-loading-sr')
@@ -439,10 +439,10 @@ function parseFileName(name){
 
 <!-- SCRIPT COM REPASSE -->
 <script>
-var userMessage = document.getElementById('user-message-cr')
-var iconSuccess = document.getElementById('success-icon-cr')
 
-function modaltoDefault(){
+function modaltoDefaultCR(){
+  var userMessage = document.getElementById('user-message-cr')
+  var iconSuccess = document.getElementById('success-icon-cr')
   iconSuccess.style.display = 'none'
   userMessage.innerHTML = 'Clique em Baixar para fazer o download do seu PDF.'
 
@@ -451,6 +451,8 @@ function modaltoDefault(){
 function loadingDownloadCR(event){
   event.preventDefault();
 
+  var userMessage = document.getElementById('user-message-cr')
+  var iconSuccess = document.getElementById('success-icon-cr')
   const button = event.target
   const requestUrl = event.target.href
   const gif = document.getElementById('gif-loading-cr')

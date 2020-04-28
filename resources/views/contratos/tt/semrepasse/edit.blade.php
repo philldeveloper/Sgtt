@@ -41,7 +41,7 @@
 @include('pesquisador.modals.modalCoordenadorPrivado')
 @include('pesquisador.modals.modalPropriedadeIntelectual')
 @include('pesquisador.modals.modalConfidencial')
-@include('pesquisador.modals.ModalAtoNomeacao')
+@include('pesquisador.modals.modalAtoNomeacao')
 @include('pesquisador.modals.modal_clausula_2_3')
 @include('pesquisador.modals.modal_clausula_2_4')
 @include('pesquisador.modals.modal_clausula_2_5')
