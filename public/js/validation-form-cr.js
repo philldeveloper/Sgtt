@@ -171,9 +171,6 @@ $(document).ready(function($){
             cidade_foro: {
                 ...valid_simple_string
             },
-            cidade_uf_dia_foro: {
-                ...valid_simple_string
-            },
             ict_inst_foro: {
                 ...valid_simple_string
             },
