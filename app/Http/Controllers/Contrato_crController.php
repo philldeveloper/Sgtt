@@ -174,6 +174,8 @@ class Contrato_crController extends Controller
         $contrato_cr->prazo_vigencia = $request->prazo_vigencia;
         $contrato_cr->estado_foro = $request->estado_foro;
         $contrato_cr->cidade_foro = $request->cidade_foro;
+        $contrato_cr->cidade_foro = $request->cidade_foro;
+        $contrato_cr->data_foro = $request->data_foro;
         $contrato_cr->ict_inst_foro = $request->ict_inst_foro;
         $contrato_cr->nome_rep_foro = $request->nome_rep_foro;
         $contrato_cr->cargo_rep_foro = $request->cargo_rep_foro;

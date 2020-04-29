@@ -1406,8 +1406,12 @@
 
           <div class="form-row mt-3">
             <div class="form-group col-md-3">
-              <label for="inputZip" class="font-weight-bold text-black">Data:</label>
-              <input type="date" class="form-control text-black font-weight-bold"  id="data_foro" name="data_foro">
+              <label for="data_foro" class="font-weight-bold text-black">Data:</label>
+              <input type="date" 
+                class="form-control text-black font-weight-bold" 
+                name="data_foro"
+                id="data_foro" 
+                placeholder="XX/XX/XXXX">
             </div>
           </div><!--form-row-->
 
@@ -1621,21 +1625,24 @@ function validateStepForm() {
   DADOS_FUNDACAO = Array.from(DADOS_FUNDACAO);
   DADOS_CLAUSULA_3 = Array.from(DADOS_CLAUSULA_3);
   DADOS_ICT_PRIVADO = Array.from(DADOS_ICT_PRIVADO);
-console.log(DADOS_CLAUSULA_3)
+
   for (i = 0; i < inputs.length; i++) {
 
     if (inputs[i].value == "") {
       inputs[i].className += " invalid";
       valid = false;
 
+      if(inputs[i].name === "parceiro_contato_celular" || inputs[i].name === "privado_contato_celular"){
+        inputs[i].className = inputs[i].className.replace(" invalid", "");
+        valid = true
+      }
+
       if(inputs[i].name === "nome_inst_fundacao" && !checkbox.checked &&  DADOS_CLAUSULA_3.every(input => input.value != '')){
         inputs[i].className = inputs[i].className.replace(" invalid", "");
         valid = true
-        console.log('entrou1')
       }
 
       if(inputs[i].classList.contains('ck-hidden') || inputs[i].classList.contains('ck-input')){
-        console.log('entrou2')
         valid = true;
       }
       
@@ -1644,7 +1651,6 @@ console.log(DADOS_CLAUSULA_3)
           && DADOS_FUNDACAO.some(input => input.name === inputs[i].name)
           && DADOS_ICT_PRIVADO.every(input => input.value != '')
       ){
-        console.log('Entrou3!')
         valid = true
       }
     }

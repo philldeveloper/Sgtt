@@ -200,9 +200,9 @@ function modaltoDefaultSR(){
 function loadingDownloadSR(event){
   event.preventDefault();
 
-  var userMessage = document.getElementById('user-message-sr')
+  /* var userMessage = document.getElementById('user-message-sr')
   var iconSuccess = document.getElementById('success-icon-sr')
-  var button = event.target
+  var button = event.target */
   var requestUrl = event.target.href
   var gif = document.getElementById('gif-loading-sr')
   
@@ -223,17 +223,20 @@ function loadingDownloadSR(event){
          link.click();
     },
     beforeSend: function (){
-      
+      let userMessage = document.getElementById('user-message-sr')
+      let iconSuccess = document.getElementById('success-icon-sr')
       gif.style.display = 'block'
       userMessage.innerHTML = 'Aguarde um pouco!<br> seu contrato está sendo gerado...'
-      button.setAttribute("disabled", true)
+      event.target.setAttribute("disabled", true)
     },
     complete: function(){
-   
+      let userMessage = document.getElementById('user-message-sr')
+      let iconSuccess = document.getElementById('success-icon-sr')
+      let button = event.target
       gif.style.display = 'none'
       iconSuccess.style.display = 'block'
       userMessage.innerHTML = 'Download do contrato realizado com sucesso!'
-      button.setAttribute("disabled", false)
+      event.target.setAttribute("disabled", false)
     }
   })
   .catch((err) => console.log(err))

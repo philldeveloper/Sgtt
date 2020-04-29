@@ -1300,7 +1300,6 @@ function validateStepForm() {
   if (window.firstStep !== undefined){
     for (i = 0; i < inputs.length; i++) {
       if(window.firstStep.includes(inputs[i].name)){
-        console.log(inputs[i].name)
         valid = false
       }
     }
