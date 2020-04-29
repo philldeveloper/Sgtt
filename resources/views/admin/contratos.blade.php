@@ -66,7 +66,7 @@
                   </form>
                   </td>
                 </tr>
-              <!-- Modal SEM REPASSE-->
+                  <!-- Modal SEM REPASSE-->
               <div class="modal fade" id="modal-sr-loading--{{$contratos->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
@@ -202,9 +202,9 @@ function loadingDownloadSR(event){
 
   var userMessage = document.getElementById('user-message-sr')
   var iconSuccess = document.getElementById('success-icon-sr')
-  const button = event.target
-  const requestUrl = event.target.href
-  const gif = document.getElementById('gif-loading-sr')
+  var button = event.target
+  var requestUrl = event.target.href
+  var gif = document.getElementById('gif-loading-sr')
   
   $.ajax({
     url: requestUrl,
@@ -223,11 +223,13 @@ function loadingDownloadSR(event){
          link.click();
     },
     beforeSend: function (){
+      
       gif.style.display = 'block'
       userMessage.innerHTML = 'Aguarde um pouco!<br> seu contrato está sendo gerado...'
       button.setAttribute("disabled", true)
     },
     complete: function(){
+   
       gif.style.display = 'none'
       iconSuccess.style.display = 'block'
       userMessage.innerHTML = 'Download do contrato realizado com sucesso!'
