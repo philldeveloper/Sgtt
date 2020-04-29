@@ -381,6 +381,8 @@
 <script>
 
 function modaltoDefaultSR(){
+  var userMessage = document.getElementById('user-message-sr')
+  var iconSuccess = document.getElementById('success-icon-sr')
   iconSuccess.style.display = 'none'
   userMessage.innerHTML = 'Clique em Baixar para fazer o download do seu PDF.'
 
