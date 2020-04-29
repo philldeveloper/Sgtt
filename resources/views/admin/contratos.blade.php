@@ -66,6 +66,32 @@
                   </form>
                   </td>
                 </tr>
+              <!-- Modal SEM REPASSE-->
+              <div class="modal fade" id="modal-sr-loading--{{$contratos->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Contrato sem repasse</h5>
+                      <button type="button" class="close" data-dismiss="modal" onclick="modaltoDefaultSR()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <div class="row justify-content-center p-3">
+                        <i class="far fa-5x fa-file-pdf py-3 mb-1 text-primary"></i>    
+                      </div>
+                      <div class="row justify-content-center">
+                        <img id="gif-loading-sr" style="display: none;" src="{{asset('assets/preloader.gif')}}" alt="loading" width="40px" height="40px" class="text-center">
+                        <img id="success-icon-sr" style="display: none" src="{{asset('assets/success.svg')}}" alt="correct" width="80px" height="80px" >
+                      </div>
+                      <h5 id="user-message-sr" class="font-weight-bold text-dark py-3">Clique em Baixar para fazer o download do seu PDF.</h5>
+                    
+                      <a href="{{route('printpdf', $contratos->id)}}" onclick="loadingDownloadSR(event)" class="btn btn-primary font-weight-bold btn-block py-3 mb-4">Baixar PDF</a>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
                 @empty
                 @endforelse
                 <!--- end of contrato sr-->
@@ -102,6 +128,33 @@
                   </form>
                   </td>
                 </tr>
+                  
+              <!-- Modal COM REPASSE -->
+              <div class="modal fade" id="modal-cr-loading--{{$cr->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Contrato com Repasse</h5>
+                      <button type="button" class="close" data-dismiss="modal" onclick="modaltoDefaultCR()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <div class="row justify-content-center p-3">
+                        <i class="far fa-5x fa-file-pdf py-3 mb-1 text-primary"></i>    
+                      </div>
+                      <div class="row justify-content-center">
+                        <img id="gif-loading-cr" style="display: none;" src="{{asset('assets/preloader.gif')}}" alt="loading" width="40px" height="40px" class="text-center">
+                        <img id="success-icon-cr" style="display: none" src="{{asset('assets/success.svg')}}" alt="correct" width="80px" height="80px" >
+                      </div>
+                      <h5 id="user-message-cr" class="font-weight-bold text-dark py-3">Clique em Baixar para fazer o download do seu PDF.</h5>
+                    
+                          <a href="{{route('repassepdf', $cr->id)}}" onclick="loadingDownloadCR(event)" class="btn btn-primary font-weight-bold btn-block py-3 mb-4">Baixar PDF</a>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
                 @empty
                 @endforelse
 
@@ -134,11 +187,9 @@
 
 <!-- SCRIPT PARA SEM REPASSE -->
 <script>
-var userMessage = document.getElementById('user-message-sr')
-var iconSuccess_SR = document.getElementById('success-icon-sr')
 
-function modaltoDefault(){
-  iconSuccess_SR.style.display = 'none'
+function modaltoDefaultSR(){
+  iconSuccess.style.display = 'none'
   userMessage.innerHTML = 'Clique em Baixar para fazer o download do seu PDF.'
 
 }
@@ -146,6 +197,8 @@ function modaltoDefault(){
 function loadingDownloadSR(event){
   event.preventDefault();
 
+  var userMessage = document.getElementById('user-message-sr')
+  var iconSuccess = document.getElementById('success-icon-sr')
   const button = event.target
   const requestUrl = event.target.href
   const gif = document.getElementById('gif-loading-sr')
@@ -173,7 +226,7 @@ function loadingDownloadSR(event){
     },
     complete: function(){
       gif.style.display = 'none'
-      iconSuccess_SR.style.display = 'block'
+      iconSuccess.style.display = 'block'
       userMessage.innerHTML = 'Download do contrato realizado com sucesso!'
       button.setAttribute("disabled", false)
     }
@@ -194,10 +247,10 @@ function parseFileName(name){
 
 <!-- SCRIPT COM REPASSE -->
 <script>
-var userMessage = document.getElementById('user-message-cr')
-var iconSuccess = document.getElementById('success-icon-cr')
 
-function modaltoDefault(){
+function modaltoDefaultCR(){
+  var userMessage = document.getElementById('user-message-cr')
+  var iconSuccess = document.getElementById('success-icon-cr')
   iconSuccess.style.display = 'none'
   userMessage.innerHTML = 'Clique em Baixar para fazer o download do seu PDF.'
 
@@ -206,6 +259,8 @@ function modaltoDefault(){
 function loadingDownloadCR(event){
   event.preventDefault();
 
+  var userMessage = document.getElementById('user-message-cr')
+  var iconSuccess = document.getElementById('success-icon-cr')
   const button = event.target
   const requestUrl = event.target.href
   const gif = document.getElementById('gif-loading-cr')
