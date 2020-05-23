@@ -101,6 +101,37 @@ class HomeController extends Controller
         return $pdf->download('Contrato - Com Repasse.pdf');
     }
 
+    public function generateRepasseDOC($id)
+    {   
+        $contratos_cr = Contrato_cr::find($id);
+
+        $data = ['title' => '', 'contrato'=> $contratos_cr ];
+
+        $content = view('doc.sem_repasse_doc', $data)->render();
+
+        $phpWord = new \PhpOffice\PhpWord\PhpWord();
+        $section = $phpWord->addSection();
+        \PhpOffice\PhpWord\Shared\Html::addHtml($section, $content, false, false);
+        // Saving the document as OOXML file...
+        $objWriter = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, 'Word2007');
+
+        $filename = 'Contrato - Com Repasse.docx';
+
+        $objWriter->save($filename);
+        header('Content-Description: File Transfer');
+        header('Content-Type: application/octet-stream');
+        header('Content-Disposition: attachment; filename='.$filename);
+        header('Content-Transfer-Encoding: binary');
+        header('Expires: 0');
+        header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+        header('Pragma: public');
+        header('Content-Length: ' . filesize($filename));
+        flush();
+        readfile($filename);
+        unlink($filename); // deletes the temporary file     
+        exit;   
+    }
+
 
     public function contratosindex(){
 
