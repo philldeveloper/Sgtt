@@ -364,13 +364,13 @@ SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA</h4>
 	<p style="text-align: center;">______________________________________________</p>
 	<p style="text-align: center; justify-content:center; align-items: center;">{{$contrato->nome_rep_privado_foro}} <br/> {{$contrato->nome_inst_privado_foro}}
 	</p><br/>
-	<p style="text-align: center;">______________________________________________</p>
-	<p style="text-align: center; justify-content:center; align-items: center; margin-top: 0">{{$contrato->nome_testemunha_1}} <br/> Testemunha 1
-	</p><br/>
 
-	<p style="text-align: center;">______________________________________________</p>
-	<p style="text-align: center; justify-content:center; align-items: center; margin-top: 0 !important">{{$contrato->nome_testemunha_2}} <br/> Testemunha 2
-	</p>
+	<p style="text-align: left;">Testemunha 1:__________________________________________</p>
+	<p style="text-align: left;">CPF n°:__________________________________________</p>
+	<br/>
+
+	<p style="text-align: left;">Testemunha 2:__________________________________________</p>
+	<p style="text-align: left;">CPF n°:__________________________________________</p>
 	<br/>
 
 </div>

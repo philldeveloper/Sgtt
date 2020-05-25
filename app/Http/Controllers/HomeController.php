@@ -110,7 +110,25 @@ class HomeController extends Controller
         $content = view('doc.com_repasse_doc', $data)->render();
 
         $phpWord = new \PhpOffice\PhpWord\PhpWord();
+        \PhpOffice\PhpWord\Settings::setOutputEscapingEnabled(true);
+        $phpWord->setDefaultParagraphStyle(array(
+            'alignment' => 'both'
+        ));
+        $phpWord->addParagraphStyle('Heading4', array('alignment' => 'center'));
+
+        $phpWord->addParagraphStyle('Heading6', array('space' => array('before' => 360), 'indentation' => array('left' => 200)));
+        $phpWord->addParagraphStyle('Heading5', array(
+            'width'       => \PhpOffice\PhpWord\Shared\Converter::cmToPixel(4),
+            'height'      => \PhpOffice\PhpWord\Shared\Converter::cmToPixel(0),
+            'positioning' => 'absolute',
+        ));
+
+        $phpWord->setDefaultFontName('Times New Roman');
+        $phpWord->setDefaultFontSize(12);
         $section = $phpWord->addSection();
+        $section->addImage(asset('assets/brazao.jpg'), array('width' => 54, 'height' => 54, 'alignment' => \PhpOffice\PhpWord\SimpleType\Jc::CENTER));
+        $footer = $section->addFooter();
+        $footer->addImage(asset('assets/sgtt_small1.png'), array('width' => 50, 'alignment' => \PhpOffice\PhpWord\SimpleType\Jc::RIGHT));
         \PhpOffice\PhpWord\Shared\Html::addHtml($section, $content, false, false);
         // Saving the document as OOXML file...
         $objWriter = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, 'Word2007');
@@ -156,7 +174,7 @@ class HomeController extends Controller
         $section = $phpWord->addSection();
         $section->addImage(asset('assets/brazao.jpg'), array('width' => 54, 'height' => 54, 'alignment' => \PhpOffice\PhpWord\SimpleType\Jc::CENTER));
         $footer = $section->addFooter();
-        $footer->addImage(asset('assets/sgtt_small.jpg'), array('width' => 50, 'alignment' => \PhpOffice\PhpWord\SimpleType\Jc::RIGHT));
+        $footer->addImage(asset('assets/sgtt_small1.png'), array('width' => 50, 'alignment' => \PhpOffice\PhpWord\SimpleType\Jc::RIGHT));
         \PhpOffice\PhpWord\Shared\Html::addHtml($section, $content, false, false);
         // Saving the document as OOXML file...
         $objWriter = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, 'Word2007');

@@ -96,7 +96,7 @@
 <h5 class="font-weight-bold">CLÁUSULA TERCEIRA – DAS ATRIBUIÇÕES E RESPONSABILIDADES</h5>
 
 <p><span id="p-title">3.1.</span>São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I:</p>
-<p><span id="p-title" style="text-transform: uppercase !important">3.1.1. Do(a) ICT:</span>{{$contrato->nome_inst_ict}}</p>
+<p><span id="p-title" style="text-transform: uppercase !important">3.1.1. Do(a) ICT:{{$contrato->nome_inst_ict}}</p>
 
 <p style="margin-left: 16px !important"><span style="margin-right: 8px !important">a)</span> Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD&I ;</p>
 <p style="margin-left: 16px !important"><span style="margin-right: 8px !important">b)</span> Manter rigoroso controle das despesas efetuadas e dos respectivos comprovantes com vistas à prestação de contas da execução do objeto deste Acordo;</p>
@@ -498,7 +498,7 @@
 <h5 class="font-weight-bold">CLÁUSULA DÉCIMA NONA - DO FORO</h5>
 
 
-<span class="font-weight-bold">17.1. </span>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de {{$contrato->estado_foro}}, cidade de {{$contrato->cidade_foro}}, para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109 da Constituição Federal. E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais. <br>
+<span class="font-weight-bold">19.1. </span>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de {{$contrato->estado_foro}}, cidade de {{$contrato->cidade_foro}}, para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109 da Constituição Federal. E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais. <br>
 <br>
 <p class="font-weight-bold" style="margin-left: 9px !important">{{$contrato->cidade_foro}}, {{$contrato->estado_foro}}, {{$contrato->data_foro}}</p><br>
 
