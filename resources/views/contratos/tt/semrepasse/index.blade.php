@@ -956,20 +956,20 @@
           <span class="font-weight-bold">PARCEIRO(S) PÚBLICO(S):</span> 
           <a href="#" data-toggle="modal" data-target="#dados_instituicoes"><i class="fas fa-fw fa-question-circle m-2"></i></a>
           <div class="form-row">
-            <div class="form-group col">
+            <div class="form-group col-md-5">
               <label for="endereco" class="font-weight-bold text-black">Endereço</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="parceiro_contato_endereco"
                 id="endereco" 
-                placeholder="Endereço">
+                placeholder="Ex: Rua Nova Iorque, 400, Zona Sul, São Paulo">
             </div>
             <div class="form-group col">
               <label for="parceiro_contato_celular" class="font-weight-bold text-black">Celular</label>
-              <input type="text" 
+              <input type="number" 
                 class="form-control text-black font-weight-bold" 
                 name="parceiro_contato_celular" id="parceiro_contato_celular" 
-                placeholder="Celular">
+                placeholder="Ex: 900000000">
             </div>
             <div class="form-group col">
               <label for="parceiro_contato_email" class="font-weight-bold text-black">Email</label>
@@ -984,20 +984,20 @@
           <span class="font-weight-bold ">PARCEIRO(S) PRIVADO(S):</span> 
           <a href="#" data-toggle="modal" data-target="#dados_instituicoes"><i class="fas fa-fw fa-question-circle m-2"></i></a>
           <div class="form-row mt-3">
-            <div class="form-group col">
+            <div class="form-group col-md-5">
               <label for="endereco" class="font-weight-bold text-black">Endereço</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="privado_contato_endereco"
                 id="endereco" 
-                placeholder="Endereço">
+                placeholder="Ex: Rua Nova Iorque, 400, Zona Sul, São Paulo">
             </div>
             <div class="form-group col">
               <label for="privado_contato_celular" class="font-weight-bold text-black">Celular</label>
-              <input type="text" 
+              <input type="number" 
                 class="form-control text-black font-weight-bold" 
                 name="privado_contato_celular" id="privado_contato_celular" 
-                placeholder="Celular">
+                placeholder="Ex: 900000000">
             </div>
             <div class="form-group col">
               <label for="privado_contato_email" class="font-weight-bold text-black">Email</label>
@@ -1035,7 +1035,7 @@
         <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">17. CLÁUSULA DÉCIMA SÉTIMA - DO FORO</h4><hr>
         <br>
         <div class="text-justify text-black">
-          <p><b>17.1.</b>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de <input class="myform-control text-black"  type="text" name="estado_foro" placeholder="Estado">, cidade de <input  class="myform-control" type="text" name="cidade_foro" placeholder="Cidade">, para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109 da Constituição Federal. E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.</p>
+          <p><b>17.1.</b>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de <input class="myform-control text-black"  type="text" name="estado_foro" placeholder="Estado">, cidade de <input  class="myform-control" type="text" name="cidade_foro" placeholder="cidade">, para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109 da Constituição Federal. E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.</p>
           <br>
           <div class="form-row mt-3">
             <div class="form-group col-md-3">
@@ -1044,26 +1044,26 @@
                 class="form-control text-black font-weight-bold" 
                 name="data_foro"
                 id="data_foro" 
-                placeholder="XX/XX/XXXX">
+                placeholder="">
             </div>
           </div><!-- /.row-->
 
           <div class="form-row mt-3">
             <div class="form-group col-md-3">
               <label for="ict_inst_foro" class="font-weight-bold text-black">ICT:</label>
-              <a href="#" data-toggle="modal" data-target="#ict"><i class="fas fa-fw fa-question-circle m-2"></i></a>
+              <a href="#" data-toggle="modal" data-target="#ict"><i class="fas fa-fw fa-question-circle ml-2"></i></a>
               <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="ict_inst_foro" 
                 id="ict_inst_foro" 
-                placeholder="Instituição">
+                placeholder="Ex: ICTEC">
             </div>
             <div class="form-group col-md-3">
               <label for="nome_rep_foro" class="font-weight-bold text-black">Representante:</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="nome_rep_foro" id="nome_rep_foro" 
-                placeholder="Nome do Representante">
+                placeholder="Ex: João da Silva">
             </div>
             <div class="form-group col-md-3">
               <label for="cargo_rep_foro" class="font-weight-bold text-black">Cargo</label>
@@ -1071,26 +1071,26 @@
                 class="form-control text-black font-weight-bold"
                 name="cargo_rep_foro" 
                 id="cargo_rep_foro" 
-                placeholder="Cargo">
+                placeholder="Ex: Coordenador">
             </div>
           </div><!-- /.row-->
 
           <div class="form-row mt-3">
             <div class="form-group col-md-3">
               <label for="nome_inst_privado_foro" class="font-weight-bold text-black">Parceiro Privado:</label>
-              <a href="#" data-toggle="modal" data-target="#parceiro"><i class="fas fa-fw fa-question-circle m-2"></i></a>
+              <a href="#" data-toggle="modal" data-target="#parceiro"><i class="fas fa-fw fa-question-circle ml-2"></i></a>
               <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="nome_inst_privado_foro" 
                 id="nome_inst_privado_foro" 
-                placeholder="Instituição">
+                placeholder="Ex: X e Y Advocacia">
             </div>
             <div class="form-group col-md-3">
               <label for="nome_rep_privado_foro" class="font-weight-bold text-black">Representante:</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="nome_rep_privado_foro" id="nome_rep_privado_foro" 
-                placeholder="Nome do Representante">
+                placeholder="Ex: Maria da Silva">
             </div>
             <div class="form-group col-md-3">
               <label for="cargo_rep_privado_foro" class="font-weight-bold text-black">Cargo</label>
@@ -1098,7 +1098,7 @@
                 class="form-control text-black font-weight-bold"
                 name="cargo_rep_privado_foro" 
                 id="cargo_rep_privado_foro" 
-                placeholder="Cargo">
+                placeholder="Ex: Coordenador(a)">
             </div>
           </div><!-- /.row-->
 
@@ -1108,7 +1108,7 @@
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="nome_testemunha_1" id="nome_testemunha_1" 
-                placeholder="Nome da testemunha"
+                placeholder="Nome"
                 required="">
             </div>
             <div class="form-group col-md-3">
@@ -1117,7 +1117,7 @@
                 class="form-control text-black font-weight-bold"
                 name="nome_testemunha_2" 
                 id="nome_testemunha_2" 
-                placeholder="Nome da testemunha"
+                placeholder="Nome"
                 required="">
             </div>
           </div><!-- /.row-->
