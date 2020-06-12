@@ -7,7 +7,7 @@
                     respectivo endereço do PARCEIRO notificado, conforme as seguintes informações:
                         <span class="font-weight-bold">PARCEIRO(S) PÚBLICO(S):</span> 
                   <div class="form-row">
-                    <div class="form-group col-md-3">
+                    <div class="form-group col">
                       <label for="endereco" class="font-weight-bold text-black">Endereço</label>
                       <input type="text" 
                         class="form-control text-black font-weight-bold" 
@@ -18,18 +18,7 @@
                         >
                         
                     </div>
-
-                    <div class="form-group col-md-3">
-                      <label for="parceiro_contato_telefone" class="font-weight-bold text-black">Telefone</label>
-                      <input type="text" 
-                        class="form-control text-black font-weight-bold"
-                        name="parceiro_contato_telefone" 
-                        id="parceiro_contato_telefone" 
-                        placeholder="{{$contratos_sr->parceiro_contato_telefone}}"
-                        disabled
-                      >
-                    </div>
-                    <div class="form-group col-md-3">
+                    <div class="form-group col">
                       <label for="parceiro_contato_celular" class="font-weight-bold text-black">Celular</label>
                       <input type="text" 
                         class="form-control text-black font-weight-bold" 
@@ -38,7 +27,7 @@
                         disabled
                       >
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="form-group col">
                       <label for="parceiro_contato_email" class="font-weight-bold text-black">Email</label>
                       <input type="email" 
                         class="form-control text-black font-weight-bold"
@@ -52,7 +41,7 @@
                   <!-- Pariceiro privado -->
                   <span class="font-weight-bold ">PARCEIRO(S) PRIVADO(S):</span> 
                   <div class="form-row mt-3">
-                    <div class="form-group col-md-3">
+                    <div class="form-group col">
                       <label for="endereco" class="font-weight-bold text-black">Endereço</label>
                       <input type="text" 
                         class="form-control text-black font-weight-bold" 
@@ -62,18 +51,7 @@
                         disabled
                       >
                     </div>
-
-                    <div class="form-group col-md-3">
-                      <label for="privado_contato_telefone" class="font-weight-bold text-black">Telefone</label>
-                      <input type="text" 
-                        class="form-control text-black font-weight-bold"
-                        name="privado_contato_telefone" 
-                        id="privado_contato_telefone" 
-                        placeholder="{{$contratos_sr->privado_contato_telefone}}"
-                        disabled
-                      >
-                    </div>
-                    <div class="form-group col-md-3">
+                    <div class="form-group col">
                       <label for="privado_contato_celular" class="font-weight-bold text-black">Celular</label>
                       <input type="text" 
                         class="form-control text-black font-weight-bold" 
@@ -83,7 +61,7 @@
                         disabled
                       >
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="form-group col">
                       <label for="privado_contato_email" class="font-weight-bold text-black">Email</label>
                       <input type="email" 
                         class="form-control text-black font-weight-bold"

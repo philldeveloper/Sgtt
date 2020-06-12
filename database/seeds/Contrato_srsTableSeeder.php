@@ -100,12 +100,10 @@ class Contrato_srsTableSeeder extends Seeder
 			'clausula_edit_13_3' => 'O Acordo de Parceria será rescindido em caso de decretação de falência, liquidação extrajudicial ou judicial, ou insolvência de qualquer dos PARCEIROS, ou, ainda, no caso de  10/11 propositura de quaisquer medidas ou procedimentos contra qualquer dos PARCEIROS para sua liquidação e/ou dissolução;',
 			
 			'parceiro_contato_endereco' => 'Rua Onze',
-			'parceiro_contato_telefone' => '3864-0000',
 			'parceiro_contato_celular' => '87 8832-6362',
 			'parceiro_contato_email' => 'loremipsum@lorem.com',
 
 			'privado_contato_endereco' => 'Rua Doze',
-			'privado_contato_telefone' => '3864-1111',
 			'privado_contato_celular' => '87 9619-5263',
 			'privado_contato_email' => 'loremipsum_privado@lorem.com',
 			

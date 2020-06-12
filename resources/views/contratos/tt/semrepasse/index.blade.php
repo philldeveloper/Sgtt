@@ -171,20 +171,20 @@
 
           <div class="form-row">
             <div class="form-group col-md-4">
-              <label for="inputEmail4" class="font-weight-bold text-black">Nomes</label>
-              <input type="text" name="nome_teste" class="form-control text-black font-weight-bold ofo" id="nome">               
+              <label for="inputEmail4" class="font-weight-bold text-black">Nome do Solicitante</label>
+              <input type="text" name="nome_teste" class="form-control text-black font-weight-bold ofo" id="nome" placeholder="Ex: Instituição Cientifica, Tecnológica e de Inovação - ICT">               
             </div>
             <div class="form-group col-md-4">
               <label for="natureza" class="font-weight-bold text-black">Natureza Jurídica</label>
               <!-- Botão para acionar modal -->
               <a href="#" data-toggle="modal" data-target="#modalExemplo1"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control text-black font-weight-bold" name="nat_juridica" id="natureza" placeholder="">
+              <input type="text" class="form-control text-black font-weight-bold" name="nat_juridica" id="natureza" placeholder="Ex: Pública">
             </div>
             <div class="form-group col-md-4">
               <label for="cpf-cnpj" class="font-weight-bold text-black">CNPJ nº</label>
               <!-- Botão para acionar modal -->
               <a href="#" data-toggle="modal" data-target="#modalExemplo2"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control text-black font-weight-bold cnpj" name="cnpj" id="cpf-cnpj">
+              <input type="text" class="form-control text-black font-weight-bold cnpj" name="cnpj" id="cpf-cnpj" placeholder="ex:11.111.111/1111-11">
             </div>
           </div>
 
@@ -241,7 +241,7 @@
             <label for="representante" class="font-weight-bold text-black">Representante Legal</label>
             <!-- Botão para acionar modal -->
               <a href="#" data-toggle="modal" data-target="#modalExemplo3"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-            <input type="text" class="form-control text-black font-weight-bold" name="rep_legal" id="representante" placeholder="Nome">
+            <input type="text" class="form-control text-black font-weight-bold" name="rep_legal" id="representante" placeholder="Ex: João da Silva">
           </div>
           <div class="form-group col-md-3">
             <label for="cpf-mf" class="font-weight-bold text-black">CPF/M.F</label>
@@ -260,20 +260,20 @@
           <div class="form-row">
           <div class="form-group col-md-3">
             <label for="nacionalidade" class="font-weight-bold text-black">Nacionalidade</label>
-              <input type="text" class="form-control text-black font-weight-bold" name="nacionalidade" id="nacionalidade" placeholder="Nacionalidade">
+              <input type="text" class="form-control text-black font-weight-bold" name="nacionalidade" id="nacionalidade" placeholder="">
           </div>
           <div class="form-group col-md-3">
             <label for="estado-civil" class="font-weight-bold text-black">Estado Civil</label>
-              <input type="text" class="form-control text-black font-weight-bold" name="est_civil" id="estado-civil" placeholder="Estado Civil">
+              <input type="text" class="form-control text-black font-weight-bold" name="est_civil" id="estado-civil" placeholder="">
           </div>
           <div class="form-group col-md-3">
             <label for="ato-nomeacao" class="font-weight-bold text-black">Ato de Nomeação</label>
             <a href="#" data-toggle="modal" data-target="#atoNomeacao"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-            <input type="text" class="form-control text-black font-weight-bold" name="ato_nomeacao" id="ato-nomeacao" placeholder="Ato de Nomeação">
+            <input type="text" class="form-control text-black font-weight-bold" name="ato_nomeacao" id="ato-nomeacao" placeholder="Ex: 10 de Abril de 2020">
           </div>
           <div class="form-group col-md-3">
             <label for="doravante" class="font-weight-bold text-black">Doravante Denominado</label>
-            <input type="text" class="form-control text-black font-weight-bold" name="doravante_denominado" id="doravante" placeholder="ICT/Agência de Fomento">
+            <input type="text" class="form-control text-black font-weight-bold" name="doravante_denominado" id="doravante" placeholder="Ex: ICTEC">
           </div>
           </div><!-- /.row-->
           <br>
@@ -290,26 +290,26 @@
           <div class="form-row">
             <div class="form-group col-md-4">
               <label for="inputEmail4" class="font-weight-bold text-black">Instituição</label>                  
-              <input type="text" class="form-control text-black font-weight-bold"  name="nome_parceiro_instituicao" id="inputEmail4" placeholder="Nome">
+              <input type="text" class="form-control text-black font-weight-bold"  name="nome_parceiro_instituicao" id="inputEmail4" placeholder="Ex: X e Y Advocacia">
             </div>
             <div class="form-group col-md-4">
               <label for="natureza-juridica" class="font-weight-bold text-black">Natureza Jurídica</label>
               <!-- Botão para acionar modal -->
               <a href="#" data-toggle="modal" data-target="#modalExemplo4"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control text-black font-weight-bold" name="parceiro_nat_juridica" id="natureza-juridica" placeholder="Natureza Jurídica">
+              <input type="text" class="form-control text-black font-weight-bold" name="parceiro_nat_juridica" id="natureza-juridica" placeholder="Ex: Privada">
             </div>
             <div class="form-group col-md-4">
               <label for="cnpj-n" class="font-weight-bold text-black">CNPJ nº</label>
               <!-- Botão para acionar modal -->
               <a href="#" data-toggle="modal" data-target="#modalExemplo5"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control text-black font-weight-bold cnpj" name="parceiro_cnpj" id="cnpj-n" placeholder="CNPJ">
+              <input type="text" class="form-control text-black font-weight-bold cnpj" name="parceiro_cnpj" id="cnpj-n" placeholder="Ex:11.111.111/1111-11">
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group col-md-5">
               <label for="parceiro-endereco" class="font-weight-bold text-black">Endereço</label>
-                <input type="text" class="form-control text-black font-weight-bold" name="parceiro_endereco" id="parceiro-endereco">
+                <input type="text" class="form-control text-black font-weight-bold" name="parceiro_endereco" id="parceiro-endereco" placeholder="Ex: Rua Nova Iorque, 400, Zona Sul">
             </div>
             <div class="form-group col-md-3">
               <label for="parceiro_cidade" class="font-weight-bold text-black">Cidade</label>
@@ -359,7 +359,7 @@
             <label for="parceiro_rep_legal" class="font-weight-bold text-black">Representante Legal</label>
             <!-- Botão para acionar modal -->
               <a href="#" data-toggle="modal" data-target="#modalExemplo6"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-            <input type="text" class="form-control text-black font-weight-bold" name="parceiro_rep_legal" id="parceiro_rep_legal" placeholder="Nome">
+            <input type="text" class="form-control text-black font-weight-bold" name="parceiro_rep_legal" id="parceiro_rep_legal" placeholder="Ex: Mário da Silva">
           </div>
           <div class="form-group col-md-3">
             <label for="parceiro_cpf" class="font-weight-bold text-black">CPF/M.F</label>
@@ -375,12 +375,12 @@
           </div>
           <div class="form-group col-md-2">
             <label for="parceiro_cargo" class="font-weight-bold text-black">Cargo</label>
-            <input type="text" class="form-control text-black font-weight-bold" name="parceiro_cargo" id="parceiro_cargo" placeholder="">
+            <input type="text" class="form-control text-black font-weight-bold" name="parceiro_cargo" id="parceiro_cargo" placeholder="Ex: Coordenador">
           </div>
           </div>
-          <div class="form-group col-md-4 mt-5 py-4">
+          <!-- <div class="form-group col-md-4 mt-5 py-4">
             <button class="btn btn-lg btn-light font-weight-bold btn-block" disabled=""> <i class="fa fa-plus text-right mr-auto"></i>  Adicionar parceiro</button>
-          </div>
+          </div> -->
         </div><!--end of content-->
       </div><!--end pane-->
       <!------------------------------------------------------------------------->
@@ -488,7 +488,7 @@
             <div class="form-group row p-2">
               <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador ICT/Público:</label>
               <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
-                <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" placeholder="Nome coordenador ICT/Publico">
+                <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" placeholder="Ex: João da Silva">
               </div>
             </div>
 
@@ -515,7 +515,7 @@
             <div class="form-group row p-2">
               <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador Parceiro Privado:</label>
               <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
-                <input type="text" name="nome_coordenador_privado" onchange="handleCoordenadorPrivado()" id="nome_coordenador_privado" class="form-control" placeholder="Nome do coordenador parceiro privado">
+                <input type="text" name="nome_coordenador_privado" onchange="handleCoordenadorPrivado()" id="nome_coordenador_privado" class="form-control" placeholder="Ex: Maria da Silva">
               </div>
             </div>
 
@@ -888,7 +888,7 @@
             NOTAS EXPLICATIVAS!
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_19">Saiba mais</button>
           </div>
-          <p><b>12.5</b> A prestação de contas será simplificada, privilegiando os resultados da pesquisa, e seguirá as regras previstas no <span class="text-blue">artigo 58 do Decreto nº 9.283/18 e/ou na Política de Inovação da entidade pública. </span></p>
+          <p><b>12.5</b> A prestação de contas será simplificada, privilegiando os resultados da pesquisa, e seguirá as regras previstas no <a href="https://www.jusbrasil.com.br/topicos/180602379/artigo-58-do-decreto-n-9283-de-07-de-fevereiro-de-2018" target="/blank" class="text-primary font-weight-bold">artigo 58 do Decreto nº 9.283/18</a> e/ou na Política de Inovação da entidade pública. </p>
         </div>
       </div>
     </div>
@@ -907,25 +907,25 @@
         <div class="col-md-12 mb-3">
           <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.2</a>
           <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
-          <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13_2" rows="5" style="background-color: #F6FAFA; resize: none !important;">Constituem motivos para rescisão de pleno direito o inadimplemento de quaisquer das cláusulas pactuadas neste Acordo, o descumprimento das normas estabelecidas na legislação vigente ou a superveniência de norma legal ou fato que tome material ou formalmente inexequível o Acordo de Parceria para PD&I, imputando-se aos PARCEIROS as responsabilidades pelas obrigações até então assumidas, devendo o PARCEIRO que se julgar prejudicado notificar o parceiro para que apresente esclarecimentos no prazo de 15 (quinze) dias corridos.</textarea>
+          <textarea class="form-control text-justify" name="clausula_edit_13_2" rows="5" style="background-color: #F6FAFA; resize: none !important;">Constituem motivos para rescisão de pleno direito o inadimplemento de quaisquer das cláusulas pactuadas neste Acordo, o descumprimento das normas estabelecidas na legislação vigente ou a superveniência de norma legal ou fato que tome material ou formalmente inexequível o Acordo de Parceria para PD&I, imputando-se aos PARCEIROS as responsabilidades pelas obrigações até então assumidas, devendo o PARCEIRO que se julgar prejudicado notificar o parceiro para que apresente esclarecimentos no prazo de 15 (quinze) dias corridos.</textarea>
         </div>
         
         <div class="col-md-12 mb-3">
           <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.2.1</a>
           <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
-          <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13_2_1" rows="3" style="background-color: #F6FAFA; resize: none !important;">Prestados os esclarecimentos, os PARCEIROS deverão, por mútuo consenso, decidir pela rescisão ou manutenção do Acordo.</textarea>
+          <textarea class="form-control text-justify" name="clausula_edit_13_2_1" rows="3" style="background-color: #F6FAFA; resize: none !important;">Prestados os esclarecimentos, os PARCEIROS deverão, por mútuo consenso, decidir pela rescisão ou manutenção do Acordo.</textarea>
         </div>
         
         <div class="col-md-12 mb-3">
           <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.2.2</a>
           <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
-          <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13_2_2" rows="3" style="background-color: #F6FAFA; resize: none !important;">Decorrido o prazo para esclarecimentos, caso não haja resposta, o Acordo será rescindido de pleno direito, independentemente de notificações ou interpelações, judiciais ou extrajudiciais.</textarea>
+          <textarea class="form-control text-justify" name="clausula_edit_13_2_2" rows="3" style="background-color: #F6FAFA; resize: none !important;">Decorrido o prazo para esclarecimentos, caso não haja resposta, o Acordo será rescindido de pleno direito, independentemente de notificações ou interpelações, judiciais ou extrajudiciais.</textarea>
         </div>
         
         <div class="col-md-12 mb-3">
           <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.3</a>
           <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
-          <textarea class="form-control font-weight-bold text-justify" name="clausula_edit_13_3" rows="5" style="background-color: #F6FAFA; resize: none !important;">Acordo de Parceria será rescindido em caso de decretação de falência, liquidação extrajudicial ou judicial, ou insolvência de qualquer dos PARCEIROS, ou, ainda, no caso de  10/11 propositura de quaisquer medidas ou procedimentos contra qualquer dos PARCEIROS para sua liquidação e/ou dissolução.</textarea>
+          <textarea class="form-control text-justify" name="clausula_edit_13_3" rows="5" style="background-color: #F6FAFA; resize: none !important;">Acordo de Parceria será rescindido em caso de decretação de falência, liquidação extrajudicial ou judicial, ou insolvência de qualquer dos PARCEIROS, ou, ainda, no caso de  10/11 propositura de quaisquer medidas ou procedimentos contra qualquer dos PARCEIROS para sua liquidação e/ou dissolução.</textarea>
         </div>
         
         
@@ -956,7 +956,7 @@
           <span class="font-weight-bold">PARCEIRO(S) PÚBLICO(S):</span> 
           <a href="#" data-toggle="modal" data-target="#dados_instituicoes"><i class="fas fa-fw fa-question-circle m-2"></i></a>
           <div class="form-row">
-            <div class="form-group col-md-3">
+            <div class="form-group col">
               <label for="endereco" class="font-weight-bold text-black">Endereço</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
@@ -964,23 +964,14 @@
                 id="endereco" 
                 placeholder="Endereço">
             </div>
-
-            <div class="form-group col-md-3">
-              <label for="parceiro_contato_telefone" class="font-weight-bold text-black">Telefone</label>
-              <input type="text" 
-                class="form-control text-black font-weight-bold"
-                name="parceiro_contato_telefone" 
-                id="parceiro_contato_telefone" 
-                placeholder="Telefone">
-            </div>
-            <div class="form-group col-md-3">
+            <div class="form-group col">
               <label for="parceiro_contato_celular" class="font-weight-bold text-black">Celular</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="parceiro_contato_celular" id="parceiro_contato_celular" 
                 placeholder="Celular">
             </div>
-            <div class="form-group col-md-3">
+            <div class="form-group col">
               <label for="parceiro_contato_email" class="font-weight-bold text-black">Email</label>
               <input type="email" 
                 class="form-control text-black font-weight-bold"
@@ -993,7 +984,7 @@
           <span class="font-weight-bold ">PARCEIRO(S) PRIVADO(S):</span> 
           <a href="#" data-toggle="modal" data-target="#dados_instituicoes"><i class="fas fa-fw fa-question-circle m-2"></i></a>
           <div class="form-row mt-3">
-            <div class="form-group col-md-3">
+            <div class="form-group col">
               <label for="endereco" class="font-weight-bold text-black">Endereço</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
@@ -1001,23 +992,14 @@
                 id="endereco" 
                 placeholder="Endereço">
             </div>
-
-            <div class="form-group col-md-3">
-              <label for="privado_contato_telefone" class="font-weight-bold text-black">Telefone</label>
-              <input type="text" 
-                class="form-control text-black font-weight-bold"
-                name="privado_contato_telefone" 
-                id="privado_contato_telefone" 
-                placeholder="Telefone">
-            </div>
-            <div class="form-group col-md-3">
+            <div class="form-group col">
               <label for="privado_contato_celular" class="font-weight-bold text-black">Celular</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="privado_contato_celular" id="privado_contato_celular" 
                 placeholder="Celular">
             </div>
-            <div class="form-group col-md-3">
+            <div class="form-group col">
               <label for="privado_contato_email" class="font-weight-bold text-black">Email</label>
               <input type="email" 
                 class="form-control text-black font-weight-bold"

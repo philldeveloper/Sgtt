@@ -99,13 +99,11 @@ class Contrato_sr extends Model
 
         //15.1 contato publico
         'parceiro_contato_endereco',
-        'parceiro_contato_telefone',
         'parceiro_contato_celular',
         'parceiro_contato_email',
         
         //15.1 contato privado
         'privado_contato_endereco',
-        'privado_contato_telefone',
         'privado_contato_celular',
         'privado_contato_email',
         

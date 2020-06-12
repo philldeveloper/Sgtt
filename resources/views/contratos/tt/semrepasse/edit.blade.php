@@ -957,7 +957,7 @@
           <span class="font-weight-bold">PARCEIRO(S) PÚBLICO(S):</span> 
           <a href="#" data-toggle="modal" data-target="#dados_instituicoes"><i class="fas fa-fw fa-question-circle m-2"></i></a>
           <div class="form-row">
-            <div class="form-group col-md-3">
+            <div class="form-group col">
               <label for="endereco" class="font-weight-bold text-black">Endereço</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
@@ -966,17 +966,7 @@
                 placeholder="{{$contratos_sr->parceiro_contato_endereco}}"
                 value="{{$contratos_sr->parceiro_contato_endereco}}">
             </div>
-
-            <div class="form-group col-md-3">
-              <label for="parceiro_contato_telefone" class="font-weight-bold text-black">Telefone</label>
-              <input type="text" 
-                class="form-control text-black font-weight-bold"
-                name="parceiro_contato_telefone" 
-                id="parceiro_contato_telefone" 
-                placeholder="{{$contratos_sr->parceiro_contato_telefone}}"
-                value="{{$contratos_sr->parceiro_contato_telefone}}">
-            </div>
-            <div class="form-group col-md-3">
+            <div class="form-group col">
               <label for="parceiro_contato_celular" class="font-weight-bold text-black">Celular</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
@@ -984,7 +974,7 @@
                 placeholder="{{$contratos_sr->parceiro_contato_celular}}"
                 value="{{$contratos_sr->parceiro_contato_celular}}">
             </div>
-            <div class="form-group col-md-3">
+            <div class="form-group col">
               <label for="parceiro_contato_email" class="font-weight-bold text-black">Email</label>
               <input type="email" 
                 class="form-control text-black font-weight-bold"
@@ -998,7 +988,7 @@
           <span class="font-weight-bold ">PARCEIRO(S) PRIVADO(S):</span> 
           <a href="#" data-toggle="modal" data-target="#dados_instituicoes"><i class="fas fa-fw fa-question-circle m-2"></i></a>
           <div class="form-row mt-3">
-            <div class="form-group col-md-3">
+            <div class="form-group col">
               <label for="endereco" class="font-weight-bold text-black">Endereço</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
@@ -1007,17 +997,7 @@
                 placeholder="{{$contratos_sr->privado_contato_endereco}}"
                 value="{{$contratos_sr->privado_contato_endereco}}">
             </div>
-
-            <div class="form-group col-md-3">
-              <label for="privado_contato_telefone" class="font-weight-bold text-black">Telefone</label>
-              <input type="text" 
-                class="form-control text-black font-weight-bold"
-                name="privado_contato_telefone" 
-                id="privado_contato_telefone" 
-                placeholder="{{$contratos_sr->privado_contato_telefone}}"
-                value="{{$contratos_sr->privado_contato_telefone}}">
-            </div>
-            <div class="form-group col-md-3">
+            <div class="form-group col">
               <label for="privado_contato_celular" class="font-weight-bold text-black">Celular</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
@@ -1025,7 +1005,7 @@
                 placeholder="{{$contratos_sr->privado_contato_celular}}"
                 value="{{$contratos_sr->privado_contato_celular}}">
             </div>
-            <div class="form-group col-md-3">
+            <div class="form-group col">
               <label for="privado_contato_email" class="font-weight-bold text-black">Email</label>
               <input type="email" 
                 class="form-control text-black font-weight-bold"

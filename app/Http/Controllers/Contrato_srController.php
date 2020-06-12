@@ -135,12 +135,10 @@ class Contrato_srController extends Controller
         $contrato_sr->clausula_edit_13_3 = $request->clausula_edit_13_3;
         
         $contrato_sr->parceiro_contato_endereco = $request->parceiro_contato_endereco;
-        $contrato_sr->parceiro_contato_telefone = $request->parceiro_contato_telefone;
         $contrato_sr->parceiro_contato_celular = $request->parceiro_contato_celular;
         $contrato_sr->parceiro_contato_email = $request->parceiro_contato_email;
 
         $contrato_sr->privado_contato_endereco = $request->privado_contato_endereco;
-        $contrato_sr->privado_contato_telefone = $request->privado_contato_telefone;
         $contrato_sr->privado_contato_celular = $request->privado_contato_celular;
         $contrato_sr->privado_contato_email = $request->privado_contato_email;
         
