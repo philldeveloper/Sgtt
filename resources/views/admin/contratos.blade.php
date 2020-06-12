@@ -2,170 +2,158 @@
 
 @section('content')
 
+<style>
+  body#page-top #wrapper #content-wrapper{
+    background-color: white !important;
+    color: black !important;
+  }
+  .btn{
+    margin: 1px !important;
+  }
+  .bd-example {
+    position: relative;
+    padding: 1rem;
+    /* margin: 1rem -15px 0; */
+    /* border: solid #f8f9fa;
+    border-width: .2rem 0 0; */
+  }
+  @media (min-width: 576px){
+  .bd-example {
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: .2rem;
+    }
+  }
+</style>
 @include('popper::assets')
 
 <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
 
 <div class="container-fluid mt-5 mb-5">
   <span class="h3 font-weight-bold text-black" wfd-id="41">Contratos</span>
-  <span class="font-italic ml-3 mb-3">Visualize informações relacionadas aos contratos gerados.</span>
+  <span class="font-italic ml-3">Visualize informações relacionadas aos contratos gerados.</span>
 </div><hr>
 
-<div class="row m-3 py-4">
-  <div class="col-12 mt-4 rounded-0">
-    <div class="card mb-4 rounded-0 shadow-sm">
-      <div class="card-body p-0 pb-5 rounded-0" style="min-height: 300px">
-        
-        <div class="table-responsive">
-            <table class="table table-hover mb-0" id="example">
-              <thead class="roboto-font font-weight-bold text-dark border-left-success border-bottom shadow-sm" style="font-size: 1.05rem">
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Tipo</th>
-                  <th scope="col">Perfil</th>
-                  <th scope="col">Desenv. por</th>
-                  <th scope="col">ICT | Parceiro</th>
-                  <th scope="col">E-mail</th>
-                  <th scope="col">Criado em</th>
-                  <th scope="col">Ações</th>
-                </tr>
-              </thead>
-              <tbody class="mb-0 font-weight-bold text-dark">
-                <tr>
-                  <td></td>
-                </tr>
-                
-                @forelse($contratos_sr as $contratos) 
-                <tr class="border-bottom">
-                  <td>{{$contratos->id}}</td>
-                  <td><div class="badge badge-info">{{$contratos->tipo}}</div></td>
-                  <td>
-                  @if($contratos->user->admin == 1)
-                  <div class="badge badge-dark">Administrador</div>
-                  @else
-                  <div class="badge badge-secondary">Pesquisador</div>
-                  @endif
-                  </td>
-                  <td><!--a class="" href="{{route('perfil', $contratos->id)}}"-->{{$contratos->user->nome}}<!--/a--></td>
-                  <td>{{$contratos->nome_ict}} | {{$contratos->nome_parceiro}}</td>
-                  <td>{{$contratos->user->email}}</td>
-                  <td>{{$contratos->created_at}}</td>
-                  <td>
-                    <form action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
-                      <div class="btn-group" role="group" aria-label="Basic example">
-                        <a class="btn btn-dark text-light" id="lock-sr-tabs"><i class="fas fa-lock"></i></a>
-                        <a @popper(Ver) href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
-                        <a @popper(Editar) href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
-                        <a @popper(Baixar) href="#" data-toggle="modal" data-target="#modal-sr-loading--{{$contratos->id}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
-                        <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$contratos->user->email}}?subject= SGTT - Informações sobre Contrato&body=Caro {{$contratos->user->nome}}, " target="blank"><i class="fas fa-paper-plane"></i></a>
-                        
-                        @include('pesquisador.modals.contrato-sr_delete') 
-                        
-                        <a @popper(Deletar) href="#" data-toggle="modal" data-target="#contrato-sr_delete--{{$contratos->id}}" class="btn btn-sm pl-3 pr-3 btn-danger font-weight-bold" target="blank"><i class="fas fa-trash text-light"></i></a>
-                      </div>
-                  </form>
-                  </td>
-                </tr>
-                  <!-- Modal SEM REPASSE-->
-                  <div class="modal fade" id="modal-sr-loading--{{$contratos->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Contrato sem repasse</h5>
-                      <button type="button" class="close" data-dismiss="modal" onclick="modaltoDefaultSR()" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body text-center">
-                      <div class="row justify-content-center p-3">
-                        <i class="fas fa-5x fa-file-download py-3 mb-1 text-primary"></i>    
-                      </div>
-                      <div class="row justify-content-center">
-                        <img id="gif-loading-sr" style="display: none;" src="{{asset('assets/preloader.gif')}}" alt="loading" width="40px" height="40px" class="text-center">
-                        <img id="success-icon-sr" style="display: none" src="{{asset('assets/success.svg')}}" alt="correct" width="80px" height="80px" >
-                      </div>
-                      <h5 id="user-message-sr" class="font-weight-bold text-dark py-3">Clique em Baixar para fazer o download.</h5>
-                      <div style="display:flex; flex-direction: row; align-items: center;justify-content:center;">
-                        <a href="{{route('printpdf', $contratos->id)}}" onclick="loadingDownloadSR(event)" class="btn btn-primary font-weight-bold mr-4 py-3 mb-4"><i class="fas fa-file-pdf"></i> Baixar PDF</a>
-                        <a href="{{route('semrepassedoc', $contratos->id)}}" class="btn btn-primary font-weight-bold mr-4 py-3 mb-4"><i class="fas fa-file-word"></i> Baixar DOC</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-                @empty
-                @endforelse
-                <!--- end of contrato sr-->
-              
-            
-                @forelse($contratos_cr as $cr) 
-                <tr class="">
-                  <td>{{$cr->id}}</td>
-                  <td><div class="badge badge-success">{{$cr->tipo}}</div></td>
-                  <td>
-                  @if($cr->user->admin == 1)
-                  <div class="badge badge-dark">Administrador</div>
-                  @else
-                  <div class="badge badge-secondary">Pesquisador</div>
-                  @endif
-                  </td>
-                  <td>{{$cr->user->nome}}</td>
-                  <td>{{$cr->nome_ict}} | {{$cr->nome_parceiro}}</td>
-                  <td>{{$cr->user->email}}</td>
-                  <td>{{$cr->created_at}}</td>
-                  <td>
-                    <form action="{{route('contrato_cr.destroy',$cr->id) }}" method="POST">
-                      <div class="btn-group" role="group" aria-label="Basic example">
-                      <a class="btn btn-dark text-light" id="lock-cr-tabs"><i class="fas fa-lock"></i></a>
-                        <a @popper(Ver) href="{{route('contratocr_show', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
-                        <a @popper(Editar) href="{{route('contratocr_edit', $cr->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
-                        <a @popper(Baixar) href="#" data-toggle="modal" data-target="#modal-cr-loading--{{$cr->id}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
-                        <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$cr->user->email}}?subject= SGTT - Informações sobre Contrato&body=Caro {{$cr->user->nome}}, " target="blank"><i class="fas fa-paper-plane"></i></a>
-                        
-                        @include('pesquisador.modals.contrato-cr_delete') 
-                        
-                        <a @popper(Deletar) href="#" data-toggle="modal" data-target="#contrato-cr_delete--{{$cr->id}}" class="btn btn-sm pl-3 pr-3 btn-danger font-weight-bold" target="blank"><i class="fas fa-trash text-light"></i></a>
-                      </div>
-                  </form>
-                  </td>
-                </tr>
-                  
-              <!-- Modal COM REPASSE -->
-              <div class="modal fade" id="modal-cr-loading--{{$cr->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Contrato com Repasse</h5>
-                        <button type="button" class="close" data-dismiss="modal" onclick="modaltoDefaultCR()" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body text-center">
-                        <div class="row justify-content-center p-3">
-                          <i class="fas fa-5x fa-file-download py-3 mb-1 text-primary"></i>    
-                        </div>
-                        <div class="row justify-content-center">
-                          <img id="gif-loading-cr" style="display: none;" src="{{asset('assets/preloader.gif')}}" alt="loading" width="40px" height="40px" class="text-center">
-                          <img id="success-icon-cr" style="display: none" src="{{asset('assets/success.svg')}}" alt="correct" width="80px" height="80px" >
-                        </div>
-                        <h5 id="user-message-cr" class="font-weight-bold text-dark py-3">Clique em Baixar para fazer o download.</h5>
-                        <div style="display:flex; flex-direction: row; align-items: center;justify-content:center;">
-                          <a href="{{route('repassepdf', $cr->id)}}" onclick="loadingDownloadCR(event)" class="mr-4 btn btn-primary font-weight-bold py-3 mb-4"><i class="fas fa-file-pdf"></i> Baixar PDF</a>
-                          <a href="{{route('repassedoc', $cr->id)}}" class="mr-4 btn btn-primary font-weight-bold py-3 mb-4"><i class="fas fa-file-word"></i> Baixar DOC</a>
-                        </div>
-                  
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                @empty
-                @endforelse
+<div class="m-2">
+<div class="bd-example bg-white table-responsive">
+  <table class="table table-stripped table-hover">
+  <caption class="p-2">Lista de Contratos</caption>
+    <thead class="border-bottom border-dark text-dark">
+      <tr classa="">
+        <th scope="col">#</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Solicitante</th>
+        <th scope="col" colspan="2"><span class="text-left">Parceiros</span></th>
+        <th scope="col">Email</th>
+        <th scope="col">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+    @forelse($contratos_sr as $contratos) 
+      <tr class="text-dark">
+        <th scope="row">{{$contratos->id}}</th>
+        <td>{{$contratos->tipo}}</td>
+        <td>{{$contratos->user->nome}}</td>
+        <td class="">{{$contratos->nome_ict}}</td>
+        <td class="">{{$contratos->nome_parceiro}}</td>
+        <td class="">{{$contratos->user->email}}</td>
+        <td class="d-inline-flex">
+          <form action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
+            @include('pesquisador.modals.contrato-sr_delete')
+            <div class="d-inline-flex">
+              <a @popper(Ver) href="{{route('contratosr_show', $contratos->id)}}" class="d-inline-flex btn btn-outline-dark border-0" target="blank"><i class="fas fa-eye"></i></a>
+              <a @popper(Editar) href="{{route('contratosr_edit', $contratos->id)}}" class="d-inline-flex btn btn-outline-dark border-0" target="blank"><i class="fas fa-pen"></i></a>
+              <a @popper(Baixar) href="#" data-toggle="modal" data-target="#modal-sr-loading--{{$contratos->id}}" class="d-inline-flex btn btn-outline-primary border-0" target="blank"><i class="fas fa-download"></i></a>
+              <a @popper(Enviar Email) href="mailto:{{$contratos->user->email}}?subject= SGTT - Informações sobre Contrato&body=Caro {{$contratos->user->nome}}," class="d-inline-flex btn btn-outline-dark border-0" target="blank"><i class="fas fa-paper-plane"></i></a>
+              <a @popper(Deletar) href="#" data-toggle="modal" data-target="#contrato-sr_delete--{{$contratos->id}}" class="d-inline-flex btn btn-danger border-0" target="blank"><i class="fas fa-trash text-light"></i></a>
+            </div>
+          </form>
+        </td>
+      </tr>
+    @empty
+    @endforelse
 
-                <!--- end of contrato cr-->
+    @forelse($contratos_cr as $cr)
+    <tr class="text-dark">
+        <th scope="row">{{$cr->id}}</th>
+        <td>{{$cr->tipo}}</td>
+        <td>{{$cr->user->nome}}</td>
+        <td class="">{{$cr->nome_ict}}</td>
+        <td class="">{{$cr->nome_parceiro}}</td>
+        <td class="">{{$cr->user->email}}</td>
+        <td class="d-inline-flex">
+          <form action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
+            @include('pesquisador.modals.contrato-cr_delete')
+            <div class="d-inline-flex">
+              <a @popper(Ver) href="{{route('contratocr_show', $cr->id)}}" class="d-inline-flex btn btn-outline-dark border-0" target="blank"><i class="fas fa-eye"></i></a>
+              <a @popper(Editar) href="{{route('contratocr_edit', $cr->id)}}" class="d-inline-flex btn btn-outline-dark border-0" target="blank"><i class="fas fa-pen"></i></a>
+              <a @popper(Baixar) href="#" data-toggle="modal" data-target="#modal-cr-loading--{{$cr->id}}" class="d-inline-flex btn btn-outline-primary border-0" target="blank"><i class="fas fa-download"></i></a>
+              <a @popper(Enviar Email) href="mailto:{{$cr->user->email}}?subject= SGTT - Informações sobre Contrato&body=Caro {{$contratos->user->nome}}," class="d-inline-flex btn btn-outline-dark border-0" target="blank"><i class="fas fa-paper-plane"></i></a>
+              <a @popper(Deletar) href="#" data-toggle="modal" data-target="#contrato-cr_delete--{{$cr->id}}" class="d-inline-flex btn btn-danger" target="blank"><i class="fas fa-trash text-light"></i></a>
+            </div>
+          </form>
+        </td>
+      </tr>
+    @empty
+    @endforelse 
+    </tbody>
+  </table>
+</div>
+</div>
 
-              </tbody>
-            </table>
-          </div>
+<!-- Modal SEM REPASSE-->
+<div class="modal fade" id="modal-sr-loading--{{$contratos->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contrato sem repasse</h5>
+        <button type="button" class="close" data-dismiss="modal" onclick="modaltoDefaultSR()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <div class="row justify-content-center p-3">
+          <i class="fas fa-5x fa-file-download py-3 mb-1 text-primary"></i>    
+        </div>
+        <div class="row justify-content-center">
+          <img id="gif-loading-sr" style="display: none;" src="{{asset('assets/preloader.gif')}}" alt="loading" width="40px" height="40px" class="text-center">
+          <img id="success-icon-sr" style="display: none" src="{{asset('assets/success.svg')}}" alt="correct" width="80px" height="80px" >
+        </div>
+        <h5 id="user-message-sr" class="font-weight-bold text-dark py-3">Clique em Baixar para fazer o download.</h5>
+        <div style="display:flex; flex-direction: row; align-items: center;justify-content:center;">
+          <a href="{{route('printpdf', $contratos->id)}}" onclick="loadingDownloadSR(event)" class="btn btn-primary font-weight-bold mr-4 py-3 mb-4"><i class="fas fa-file-pdf"></i> Baixar PDF</a>
+          <a href="{{route('semrepassedoc', $contratos->id)}}" class="btn btn-primary font-weight-bold mr-4 py-3 mb-4"><i class="fas fa-file-word"></i> Baixar DOC</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<!-- Modal COM REPASSE -->
+<div class="modal fade" id="modal-cr-loading--{{$cr->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contrato com Repasse</h5>
+        <button type="button" class="close" data-dismiss="modal" onclick="modaltoDefaultCR()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <div class="row justify-content-center p-3">
+          <i class="fas fa-5x fa-file-download py-3 mb-1 text-primary"></i>    
+        </div>
+        <div class="row justify-content-center">
+          <img id="gif-loading-cr" style="display: none;" src="{{asset('assets/preloader.gif')}}" alt="loading" width="40px" height="40px" class="text-center">
+          <img id="success-icon-cr" style="display: none" src="{{asset('assets/success.svg')}}" alt="correct" width="80px" height="80px" >
+        </div>
+        <h5 id="user-message-cr" class="font-weight-bold text-dark py-3">Clique em Baixar para fazer o download.</h5>
+        <div style="display:flex; flex-direction: row; align-items: center;justify-content:center;">
+          <a href="{{route('repassepdf', $cr->id)}}" onclick="loadingDownloadCR(event)" class="mr-4 btn btn-primary font-weight-bold py-3 mb-4"><i class="fas fa-file-pdf"></i> Baixar PDF</a>
+          <a href="{{route('repassedoc', $cr->id)}}" class="mr-4 btn btn-primary font-weight-bold py-3 mb-4"><i class="fas fa-file-word"></i> Baixar DOC</a>
+        </div>
+  
       </div>
     </div>
   </div>
