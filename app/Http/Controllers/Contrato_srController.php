@@ -83,6 +83,7 @@ class Contrato_srController extends Controller
         $contrato_sr->clausula_descricao = $request->clausula_descricao;
         $contrato_sr->clausula_objetivo = $request->clausula_objetivo;
 
+        $contrato_sr->clausula_edit_2_2 = $request->clausula_edit_2_2;
         $contrato_sr->clausula_edit_2_3 = $request->clausula_edit_2_3;
         $contrato_sr->clausula_edit_2_4 = $request->clausula_edit_2_4;
         $contrato_sr->clausula_edit_2_5 = $request->clausula_edit_2_5;

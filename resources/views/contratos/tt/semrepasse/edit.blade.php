@@ -442,6 +442,11 @@
           <div class="container-fluid pt-4 pb-4 bg-light">
 
             <div class="col-md-12 mb-3">
+                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.2</a>
+                <textarea class="form-control" name="clausula_edit_2_2" value="{{$contratos_sr->clausula_edit_2_2}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_2}}</textarea>
+            </div>
+
+            <div class="col-md-12 mb-3">
                 <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
                 <a href="#" data-toggle="modal" data-target="#modal_clausula_2_3"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
                 <textarea class="form-control" value="{{$contratos_sr->clausula_edit_2_3}}" name="clausula_edit_2_3" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_3}}</textarea>

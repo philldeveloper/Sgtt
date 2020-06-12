@@ -48,6 +48,7 @@ class CreateContratoSrsTable extends Migration
             $table->string('clausula_descricao')->nullable()->default(null);
             $table->string('clausula_objetivo')->nullable()->default(null);
 
+            $table->longText('clausula_edit_2_2')->nullable()->default(null);
             $table->longText('clausula_edit_2_3')->nullable()->default(null);
             $table->longText('clausula_edit_2_4')->nullable()->default(null);
             $table->longText('clausula_edit_2_5')->nullable()->default(null);

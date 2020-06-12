@@ -45,6 +45,7 @@ class Contrato_sr extends Model
         'clausula_descricao',
         'clausula_objetivo',
 
+        'clausula_edit_2_2',
         'clausula_edit_2_3',
         'clausula_edit_2_4',
         'clausula_edit_2_5',

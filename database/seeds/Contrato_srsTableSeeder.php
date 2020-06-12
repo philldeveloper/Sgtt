@@ -47,7 +47,7 @@ class Contrato_srsTableSeeder extends Seeder
 			
 		    'clausula_descricao' => 'Lorem Ipsum',
 		    'clausula_objetivo' => 'Lorem Ipsum',
-
+			'clausula_edit_2_2' => 'Respeitadas as previsões contidas na legislação em vigor, a(o) ICT/Órgão Publico, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.',
 			'clausula_edit_2_3' => 'Na execução do Plano de Trabalho, a atuação dos PARCEIROS dar-se-á sempre de forma associada. Para tanto, os PARCEIROS indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.',
 			'clausula_edit_2_4' => 'Recaem sobre o Coordenador do Projeto, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.',
 			'clausula_edit_2_5' => 'Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.',
