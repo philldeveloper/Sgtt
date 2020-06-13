@@ -87,7 +87,7 @@ class HomeController extends Controller
 
         $pdf = PDF::loadView('pdf.myPDF', $data);
   
-        return $pdf->download('Contrato - Sem Repasse.pdf');
+        return $pdf->download('Acordo - Sem Repasse.pdf');
     }
 
     public function generateRepassePDF($id)
@@ -98,7 +98,7 @@ class HomeController extends Controller
 
         $pdf = PDF::loadView('pdf.myRepassePDF', $data);
   
-        return $pdf->download('Contrato - Com Repasse.pdf');
+        return $pdf->download('Acordo - Com Repasse.pdf');
     }
 
     public function generateRepasseDOC($id)
@@ -133,7 +133,7 @@ class HomeController extends Controller
         // Saving the document as OOXML file...
         $objWriter = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, 'Word2007');
 
-        $filename = 'Contrato - Com Repasse.docx';
+        $filename = 'Acordo - Com Repasse.docx';
 
         $objWriter->save($filename);
         header('Content-Description: File Transfer');
@@ -179,7 +179,7 @@ class HomeController extends Controller
         // Saving the document as OOXML file...
         $objWriter = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, 'Word2007');
 
-        $filename = 'Contrato - Sem Repasse.docx';
+        $filename = 'Acordo - Sem Repasse.docx';
 
         $objWriter->save($filename);
         header('Content-Description: File Transfer');

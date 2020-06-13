@@ -189,7 +189,7 @@
         <div class="form-row">
           <div class="form-group col-md-5">
             <label for="inputAdress" class="font-weight-bold text-black">Endereço</label>
-            <input type="text" class="form-control text-black font-weight-bold"  id="endereco" name="endereco" value="{{$contratos_cr->endereco}}">
+            <input type="text" class="form-control text-black font-weight-bold" placeholder=" Rua Dois, nº 111, Edifício 12, apt 54 - Alphavile" id="endereco" name="endereco" value="{{$contratos_cr->endereco}}">
           </div>
           <div class="form-group col-md-3">
             <label for="inputCity" class="font-weight-bold text-black">Cidade</label>
@@ -274,14 +274,14 @@
                   <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
                   <!-- Botão para acionar modal -->
                   <a href="#" data-toggle="modal" data-target="#modalExemplo5"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                  <input type="text" class="form-control text-black font-weight-bold cnpj"  id="parceiro_cnpj" name="parceiro_cnpj" value="{{$contratos_cr->parceiro_cnpj}}">
+                  <input type="text" class="form-control text-black font-weight-bold cnpj" placeholder=" 12.345.678/9111-11" id="parceiro_cnpj" name="parceiro_cnpj" value="{{$contratos_cr->parceiro_cnpj}}">
                 </div>
               </div>
   
               <div class="form-row">
                 <div class="form-group col-md-5">
                   <label for="" class="font-weight-bold text-black">Endereço</label>
-                    <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_endereco" name="parceiro_endereco" value="{{$contratos_cr->parceiro_endereco}}">
+                    <input type="text" class="form-control text-black font-weight-bold" placeholder=" Rua Dois, nº 111, Edifício 12, apt 54 - Alphavile"  id="parceiro_endereco" name="parceiro_endereco" value="{{$contratos_cr->parceiro_endereco}}">
                 </div>
                 <div class="form-group col-md-3">
                   <label for="" class="font-weight-bold text-black">Cidade</label>

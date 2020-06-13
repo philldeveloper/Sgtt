@@ -10,7 +10,7 @@
         </button>
       </div>
       <div class="modal-body">
-        Nome do coordenador ou responsável do Projeto no âmbito da Empresa parceira. Por Ex: JOÃO DA SILVA – 
+        Nome do coordenador ou responsável do Projeto no âmbito da Empresa parceira. Por  JOÃO DA SILVA – 
         Coordenador responsável para acompanhar a execução desse acordo, junto à ICT/Agência de Fomento...
       </div>
     </div>

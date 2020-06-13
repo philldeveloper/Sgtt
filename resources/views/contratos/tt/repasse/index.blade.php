@@ -157,26 +157,26 @@
           <div class="form-row">
             <div class="form-group col-md-4">
               <label for="inputPassword4" class="font-weight-bold text-black">Nome do Solicitante</label>
-              <input type="text" name="nome_teste" class="form-control text-black font-weight-bold" id="nome_teste" placeholder="empresa solicitante">               
+              <input type="text" name="nome_teste" class="form-control text-black font-weight-bold" id="nome_teste" placeholder="Empresa solicitante">               
             </div>
             <div class="form-group col-md-4">
               <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
               <!-- Botão para acionar modal -->
               <a href="#" data-toggle="modal" data-target="#modalExemplo1"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control text-black font-weight-bold"  id="nat_juridica" name="nat_juridica" placeholder="">
+              <input type="text" class="form-control text-black font-weight-bold"  id="nat_juridica" name="nat_juridica" placeholder="Ex.: Direito público">
             </div>
             <div class="form-group col-md-4">
               <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
               <!-- Botão para acionar modal -->
               <a href="#" data-toggle="modal" data-target="#modalExemplo2"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control text-black font-weight-bold cnpj"  id="cnpj" name="cnpj">
+              <input type="text" class="form-control text-black font-weight-bold cnpj" placeholder=" 12.345.678/9111-11" id="cnpj" name="cnpj">
             </div>
           </div><!--form-row-->
 
           <div class="form-row">
             <div class="form-group col-md-5">
-              <label for="inputAdress" class="font-weight-bold text-black">Endereço</label>
-              <input type="text" class="form-control text-black font-weight-bold"  id="endereco" name="endereco">
+              <label for="inputAdress" class="font-weight-bold text-black" >Endereço</label>
+              <input type="text" class="form-control text-black font-weight-bold"  onchange="handleEnderecoICT(event)" placeholder=" Rua Dois, nº 111, Edifício 12, apt 54 - Alphavile" id="endereco" name="endereco">
             </div>
             <div class="form-group col-md-3">
               <label for="inputCity" class="font-weight-bold text-black">Cidade</label>
@@ -217,7 +217,7 @@
             </div>
             <div class="form-group col-md-2">
               <label for="inputZip" class="font-weight-bold text-black">CEP</label>
-              <input type="text" class="form-control text-black font-weight-bold cep"  id="cep" name="cep">
+              <input type="text" class="form-control text-black font-weight-bold cep" placeholder=" 56.300-000" id="cep" name="cep">
             </div>
           </div><!--form-row-->
 
@@ -226,19 +226,19 @@
               <label for="inputEmail4" class="font-weight-bold text-black">Representante Legal</label>
               <!-- Botão para acionar modal -->
                 <a href="#" data-toggle="modal" data-target="#modalExemplo3"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control text-black font-weight-bold"  id="rep_legal" name="rep_legal" placeholder="Nome">
+              <input type="text" class="form-control text-black font-weight-bold" onchange="handleRepresentanteICT(event)"  id="rep_legal" name="rep_legal" placeholder="Nome">
             </div>
             <div class="form-group col-md-3">
               <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
-              <input type="text" class="form-control text-black font-weight-bold cpf"  id="cpf" name="cpf" placeholder="">
+              <input type="text" class="form-control text-black font-weight-bold cpf"  id="cpf" name="cpf" placeholder=" 103.987.654-89">
             </div>
             <div class="form-group col-md-3">
               <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
-              <input type="text" class="form-control text-black font-weight-bold rg"  id="rg" name="rg" placeholder="">
+              <input type="text" class="form-control text-black font-weight-bold rg" placeholder=" 16.549.879-9" id="rg" name="rg" placeholder="">
             </div>
             <div class="form-group col-md-2">
               <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
-              <input type="text" class="form-control text-black font-weight-bold"  id="orgao_exp" name="orgao_exp" placeholder="">
+              <input type="text" class="form-control text-black font-weight-bold" placeholder=" SDS" id="orgao_exp" name="orgao_exp" placeholder="">
             </div>
           </div><!--form-row-->
 
@@ -254,11 +254,20 @@
             <div class="form-group col-md-3">
               <label for="inputPassword4" class="font-weight-bold text-black">Ato de Nomeação</label>
             <a href="#" data-toggle="modal" data-target="#atoNomeacao"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control text-black font-weight-bold"  id="ato_nomeacao" name="ato_nomeacao" placeholder="Ato de Nomeação">
+              <input type="text" class="form-control text-black font-weight-bold"  id="ato_nomeacao" name="ato_nomeacao" placeholder="Ex.: PORTARIA Nº 256, DE 10 DE ABRIL De 2019">
             </div>
             <div class="form-group col-md-3">
               <label for="inputPassword4" class="font-weight-bold text-black">Doravante Denominado</label>
-              <input type="text" class="form-control text-black font-weight-bold"  id="doravante_denominado" name="doravante_denominado" placeholder="ICT/Agência de Fomento">
+              <input type="text" class="form-control text-black font-weight-bold"  id="doravante_denominado" name="doravante_denominado" placeholder="Ex.: UNIVASF">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="cargo_rep_foro" class="font-weight-bold text-black">Cargo do representante</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold"
+                name="cargo_rep_foro" 
+                id="cargo_rep_foro" 
+                onchange="handleCargoICT(event)"
+                placeholder="Ex.: Reitor">
             </div>
           </div><!--form-row--><br>
 
@@ -277,19 +286,19 @@
             <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
             <!-- Botão para acionar modal -->
             <a href="#" data-toggle="modal" data-target="#modalExemplo4"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-            <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_nat_juridica" name="parceiro_nat_juridica" placeholder="Natureza Jurídica">
+            <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_nat_juridica" name="parceiro_nat_juridica" placeholder="Ex.: Direito público">
           </div>
           <div class="form-group col-md-4">
             <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
             <!-- Botão para acionar modal -->
             <a href="#" data-toggle="modal" data-target="#modalExemplo5"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-            <input type="text" class="form-control text-black font-weight-bold cnpj"  id="parceiro_cnpj" name="parceiro_cnpj" placeholder="CNPJ">
+            <input type="text" class="form-control text-black font-weight-bold cnpj"  id="parceiro_cnpj" name="parceiro_cnpj" placeholder="12.345.678/9111-11">
           </div>
         </div><!--form-row-->
         <div class="form-row">
           <div class="form-group col-md-5">
             <label for="" class="font-weight-bold text-black">Endereço</label>
-              <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_endereco" name="parceiro_endereco">
+              <input type="text" class="form-control text-black font-weight-bold" onchange="handleEnderecoPrivado(event)" placeholder=" Rua Dois, nº 111, Edifício 12, apt 54 - Alphavile" id="parceiro_endereco" name="parceiro_endereco">
           </div>
           <div class="form-group col-md-3">
             <label for="" class="font-weight-bold text-black">Cidade</label>
@@ -330,7 +339,7 @@
           </div>
           <div class="form-group col-md-2">
             <label for="inputZip" class="font-weight-bold text-black">CEP</label>
-              <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_cep" name="parceiro_cep">
+              <input type="text" class="form-control text-black font-weight-bold" placeholder="56.600-00" id="parceiro_cep" name="parceiro_cep">
           </div>
         </div><!--form-row-->
         <div class="form-row">
@@ -338,27 +347,27 @@
             <label for="inputEmail4" class="font-weight-bold text-black">Representante Legal</label>
             <!-- Botão para acionar modal -->
               <a href="#" data-toggle="modal" data-target="#modalExemplo6"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-            <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_rep_legal" name="parceiro_rep_legal" placeholder="Nome">
+            <input type="text" class="form-control text-black font-weight-bold" onchange="handleRepresentantePrivado(event)" id="parceiro_rep_legal" name="parceiro_rep_legal" placeholder="Nome do representante">
           </div>
           <div class="form-group col-md-3">
             <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
-            <input type="text" class="form-control text-black font-weight-bold cpf"  id="parceiro_cpf" name="parceiro_cpf" placeholder="">
+            <input type="text" class="form-control text-black font-weight-bold cpf"  id="parceiro_cpf" name="parceiro_cpf" placeholder="103.987.654-89">
           </div>
           <div class="form-group col-md-3">
             <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
-            <input type="text" class="form-control text-black font-weight-bold rg"  id="parceiro_rg" name="parceiro_rg" placeholder="">
+            <input type="text" class="form-control text-black font-weight-bold rg"  id="parceiro_rg" name="parceiro_rg" placeholder=" 16.549.879-9">
           </div>
           <div class="form-group col-md-2">
             <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
-            <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_orgao_exp" name="parceiro_orgao_exp" placeholder="">
+            <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_orgao_exp" name="parceiro_orgao_exp" placeholder="Ex.: SDS">
           </div>
-          <div class="form-group col-md-2">
-            <label for="inputPassword4" class="font-weight-bold text-black">Cargo</label>
-            <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_cargo" name="parceiro_cargo" placeholder="">
+          <div class="form-group col-md-4">
+            <label for="inputPassword4" class="font-weight-bold text-black">Cargo do representante</label>
+            <input type="text" class="form-control text-black font-weight-bold" onchange="handleCargoPrivado(event)"  id="parceiro_cargo" name="parceiro_cargo" placeholder="Ex.: Diretor Geral">
           </div>
           <div class="form-group col-md-3">
             <label for="inputPassword4" class="font-weight-bold text-black">Doravante Denominado</label>
-            <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_doravante_denominado" name="parceiro_doravante_denominado" placeholder="ICT/Agência de Fomento">
+            <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_doravante_denominado" name="parceiro_doravante_denominado" placeholder="Ex.: UNIVASF">
           </div>
         </div><!--form-row-->
       </div><!--container-fluid-->
@@ -1246,7 +1255,7 @@
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="parceiro_contato_endereco"
-                id="endereco" 
+                id="endereco_ICT" 
                 placeholder="Endereço"
                 privado-fundacao-false
                 >
@@ -1260,7 +1269,7 @@
                 name="parceiro_contato_telefone" 
                 id="parceiro_contato_telefone" 
                 placeholder="Telefone"
-                privado-fundacao-false
+             
                 >
             </div>
             <div class="form-group col-md-3">
@@ -1291,7 +1300,7 @@
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="privado_contato_endereco"
-                id="endereco" 
+                id="endereco_privado" 
                 placeholder="Endereço"
                 privado-fundacao-false
                 >
@@ -1304,7 +1313,7 @@
                 name="privado_contato_telefone" 
                 id="privado_contato_telefone" 
                 placeholder="Telefone"
-                privado-fundacao-false
+               
                 >
             </div>
             <div class="form-group col-md-3">
@@ -1421,23 +1430,23 @@
               <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="ict_inst_foro" 
-                id="ict_inst_foro" 
+                id="handle_ict" 
                 placeholder="Instituição">
             </div>
             <div class="form-group col-md-3">
               <label for="nome_rep_foro" class="font-weight-bold text-black">Representante:</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
-                name="nome_rep_foro" id="nome_rep_foro" 
+                name="nome_rep_foro" id="rep_ict" 
                 placeholder="Nome do Representante">
             </div>
             <div class="form-group col-md-3">
               <label for="cargo_rep_foro" class="font-weight-bold text-black">Cargo</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold"
-                name="cargo_rep_foro" 
-                id="cargo_rep_foro" 
-                placeholder="Cargo">
+                id="cargo_ICT" 
+                placeholder="Cargo"
+              >
             </div>
           </div><!-- /.row-->
 
@@ -1447,14 +1456,14 @@
               <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="nome_inst_privado_foro" 
-                id="nome_inst_privado_foro" 
+                id="handle_parceiro" 
                 placeholder="Instituição">
             </div>
             <div class="form-group col-md-3">
               <label for="nome_rep_privado_foro" class="font-weight-bold text-black">Representante:</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
-                name="nome_rep_privado_foro" id="nome_rep_privado_foro" 
+                name="nome_rep_privado_foro" id="rep_privado" 
                 placeholder="Nome do Representante">
             </div>
             <div class="form-group col-md-3">
@@ -1462,7 +1471,7 @@
               <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="cargo_rep_privado_foro" 
-                id="cargo_rep_privado_foro" 
+                id="cargo_privado" 
                 placeholder="Cargo">
             </div>
           </div><!-- /.row-->
@@ -1631,30 +1640,30 @@ function validateStepForm() {
     if (inputs[i].value == "") {
       inputs[i].className += " invalid";
       valid = false;
-
-      if(inputs[i].name === "parceiro_contato_celular" || inputs[i].name === "privado_contato_celular"){
-        inputs[i].className = inputs[i].className.replace(" invalid", "");
-        valid = true
-      }
+      console.log('false ', inputs[i].name)
 
       if(inputs[i].name === "nome_inst_fundacao" && !checkbox.checked &&  DADOS_CLAUSULA_3.every(input => input.value != '')){
         inputs[i].className = inputs[i].className.replace(" invalid", "");
         valid = true
+        console.log('1')
       }
 
       if(inputs[i].classList.contains('ck-hidden') || inputs[i].classList.contains('ck-input')){
         valid = true;
       }
-      
-      if(
-          !checkbox.checked 
-          && DADOS_FUNDACAO.some(input => input.name === inputs[i].name)
-          && DADOS_ICT_PRIVADO.every(input => input.value != '')
-      ){
+    //  console.log('t ', DADOS_FUNDACAO[0].name)
+       if(!checkbox.checked && DADOS_FUNDACAO.some(input => input.name == inputs[i].name) && DADOS_ICT_PRIVADO.every(input => input.value != '')){
+        valid = true
+        console.log('2')
+      } 
+
+      if(inputs[i].name === "parceiro_contato_telefone" || inputs[i].name === "privado_contato_telefone"){
+        inputs[i].className = inputs[i].className.replace(" invalid", "");
+        console.log('entrou')
         valid = true
       }
     }
-
+    
     if(i < selects.length){
       if (selects[i].value == "") {
         selects[i].className += " invalid";
