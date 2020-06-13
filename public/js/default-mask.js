@@ -15,7 +15,7 @@ $(document).ready(function($){
     })
 
     $('.cep').keypress(function(event){
-        $('.cep').mask('00000-000');
+        $('.cep').mask('00.000-000');
     })
     
     $('.rg').keypress(function(event){

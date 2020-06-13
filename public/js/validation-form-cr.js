@@ -48,8 +48,6 @@ $(document).ready(function($){
             }, 
             cep:{
                 required: true,
-                maxlength: 9,
-                minlength: 9,
             }, 
             rep_legal:{
                 ...valid_simple_string 
@@ -140,10 +138,12 @@ $(document).ready(function($){
                 minlength: 3,
             },
             clausula_descricao: {
-                ...valid_simple_string
+                required: true,
+                minlength: 3,
             },
             clausula_objetivo: {
-                ...valid_simple_string
+                required: true,
+                minlength: 3,
             },
             nome_inst_ict: {
                 ...valid_simple_string

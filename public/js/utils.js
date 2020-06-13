@@ -62,5 +62,62 @@ function handleCheckBoxTermoDeUso(event){
     }else{
         termo_msg_error.style.display = 'none'
     }
-   
 }
+
+function handleRepresentanteICT(event){
+    const name = event.target.value
+    const campos_rep_ict = document.querySelectorAll('#rep_ict')
+
+    campos_rep_ict.forEach((campo) => {
+        campo.value = name
+    })
+}
+
+function handleRepresentantePrivado(event){
+    const name = event.target.value
+    const campos_rep_privado = document.querySelectorAll('#rep_privado')
+
+    campos_rep_privado.forEach((campo) => {
+        campo.value = name
+    })
+}
+
+function handleEnderecoPrivado(event){
+    const name = event.target.value
+    const campos = document.querySelectorAll('#endereco_privado')
+
+    campos.forEach((campo) => {
+        campo.value = name
+    })
+}
+
+function handleEnderecoICT(event){
+    const name = event.target.value
+    const campos = document.querySelectorAll('#endereco_ICT')
+
+    campos.forEach((campo) => {
+        campo.value = name
+    })
+}
+
+function handleCargoICT(event){
+    const name = event.target.value
+    const campos = document.querySelectorAll('#cargo_ICT')
+
+    campos.forEach((campo) => {
+        campo.value = name
+    })
+}
+
+function handleCargoPrivado(event){
+    const name = event.target.value
+    const campos = document.querySelectorAll('#cargo_privado')
+
+    campos.forEach((campo) => {
+        campo.value = name
+    })
+}
+
+
+
+
