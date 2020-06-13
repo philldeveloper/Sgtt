@@ -98,6 +98,8 @@ class Contrato_sr extends Model
         'clausula_edit_13_3',
         //fim das clausulas editaveis
 
+        'prazo_dias',
+
         //15.1 contato publico
         'parceiro_contato_endereco',
         'parceiro_contato_celular',

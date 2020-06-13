@@ -100,6 +100,8 @@ class CreateContratoSrsTable extends Migration
             $table->longText('clausula_edit_13_2_2')->nullable()->default(null);
             $table->longText('clausula_edit_13_3')->nullable()->default(null);
 
+            $table->integer('prazo_dias');
+
             $table->string('parceiro_contato_endereco');
             $table->string('parceiro_contato_celular');
             $table->string('parceiro_contato_email');

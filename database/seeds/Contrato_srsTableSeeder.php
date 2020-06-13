@@ -99,6 +99,7 @@ class Contrato_srsTableSeeder extends Seeder
 			'clausula_edit_13_2_2' => 'Decorrido o prazo para esclarecimentos, caso não haja resposta, o Acordo será rescindido de pleno direito, independentemente de notificações ou interpelações, judiciais ou extrajudiciais',
 			'clausula_edit_13_3' => 'O Acordo de Parceria será rescindido em caso de decretação de falência, liquidação extrajudicial ou judicial, ou insolvência de qualquer dos PARCEIROS, ou, ainda, no caso de  10/11 propositura de quaisquer medidas ou procedimentos contra qualquer dos PARCEIROS para sua liquidação e/ou dissolução;',
 			
+			'prazo_dias' => '120',
 			'parceiro_contato_endereco' => 'Rua Onze',
 			'parceiro_contato_celular' => '87 8832-6362',
 			'parceiro_contato_email' => 'loremipsum@lorem.com',

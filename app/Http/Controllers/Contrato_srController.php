@@ -135,6 +135,8 @@ class Contrato_srController extends Controller
         $contrato_sr->clausula_edit_13_2_2 = $request->clausula_edit_13_2_2;
         $contrato_sr->clausula_edit_13_3 = $request->clausula_edit_13_3;
         
+        $contrato_sr->prazo_dias = $request->prazo_dias;
+
         $contrato_sr->parceiro_contato_endereco = $request->parceiro_contato_endereco;
         $contrato_sr->parceiro_contato_celular = $request->parceiro_contato_celular;
         $contrato_sr->parceiro_contato_email = $request->parceiro_contato_email;
