@@ -3,7 +3,7 @@
 <h4 style="font-weight: bold; text-transform: uppercase; font-size: 12pt;">
 SERVIÇO PÚBLICO FEDERAL<br/>MINISTÉRIO DA EDUCAÇÃO<br/>
 SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA</h4>
-	<br/><br/>
+	<br/>
 <h4 style="font-weight: bold; text-transform: uppercase !important; font-size: 12pt;">ACORDO DE COOPERAÇÃO TÉCNICA QUE ENTRE SI CELEBRAM {{strtoupper($contrato->nome_ict)}}, POR MEIO DO NÚCLEO DE INOVAÇÃO TECNOLÓGICA E {{strtoupper($contrato->nome_parceiro)}}, PARA FINS QUE ESPECIFICA.</h4>
 	<br/><br/>
 <h5 style="font-weight:bold;">1º PARCEIRO</h5>
@@ -19,8 +19,9 @@ SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA</h4>
 <span style="font-weight:bold;">Órgão expedido:</span> {{$contrato->orgao_exp}}<br/>
 <span style="font-weight:bold;">Nacionalidade:</span> {{$contrato->nacionalidade}}<br/>
 <span style="font-weight:bold;">Estado Civil:</span> {{$contrato->est_civil}}<br/>
-<span style="font-weight:bold;">Cargo:</span> {{$contrato->ato_nomeacao}}<br/>
+<span style="font-weight:bold;">Ato de Nomeação:</span> {{$contrato->ato_nomeacao}}<br/>
 <span style="font-weight:bold;">Doravante denominado:</span> {{$contrato->doravante_denominado}}<br/>
+<span style="font-weight:bold;">Cargo:</span> {{$contrato->cargo_rep_foro}}<br/>
 </p>
 	
 <h5 style="font-weight:bold;">2º PARCEIRO</h5>
@@ -50,7 +51,7 @@ SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA</h4>
 
 
 <p><span style="font-weight:bold;">2.1.</span> O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
-<p><span style="font-weight:bold;">2.2.</span> Respeitadas as previsões contidas na legislação em vigor, a(o) {{$contrato->nome_ict}} ICT com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
+<p><span style="font-weight:bold;">2.2.</span> Respeitadas as previsões contidas na legislação em vigor, a(o) {{ $contrato->nome_ict }} ICT com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
 
 @if($contrato->clausula_edit_2_3 == '')
 @else
@@ -254,7 +255,7 @@ SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA</h4>
 	<h5 style="font-weight:bold;">CLÁUSULA NONA - DO ACOMPANHAMENTO</h5>
 
 	<p><span style="font-weight:bold;">9.1</span> Aos coordenadores indicados pelos PARCEIROS competirá dirimir as dúvidas que surgirem na sua execução e de tudo dará ciência às respectivas autoridades. </p>
-	<p><span style="font-weight:bold;">9.2</span> O coordenador do projeto indicado pela ICT/AGÊNCIA DE FOMENTO anotará, em registro próprio, as ocorrências relacionadas com a execução do objeto, recomendando as medidas necessárias à autoridade competente para regularização das inconsistências observadas. </p>
+	<p><span style="font-weight:bold;">9.2</span> O coordenador do projeto indicado pela {$contrato->nome_ict} anotará, em registro próprio, as ocorrências relacionadas com a execução do objeto, recomendando as medidas necessárias à autoridade competente para regularização das inconsistências observadas. </p>
 	<p><span style="font-weight:bold;">9.3</span> O acompanhamento do projeto pelos coordenadores não exclui nem reduz a responsabilidade dos PARCEIROS perante terceiros. </p>
 	<p><span style="font-weight:bold;">9.4</span> A impossibilidade técnica ou científica quanto ao cumprimento de qualquer fase do Plano de Trabalho, que seja devidamente comprovada e justificada, acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou término do Plano de Trabalho e consequente extinção deste Acordo. </p>
 
@@ -278,7 +279,7 @@ SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA</h4>
 	<h5 style="font-weight:bold;">CLÁUSULA DÉCIMA SEGUNDA – DO MONITORAMENTO, DA AVALIAÇÃO E DA PRESTAÇÃO DE CONTAS</h5>
 
 	<p><span style="font-weight:bold;">12.1</span> Os PARCEIROS exercerão a fiscalização técnico-financeira das atividades do presente Acordo. </p>
-	<p><span style="font-weight:bold;">12.2</span> O pesquisador deverá encaminhar ao Setor responsável ou COMISSÃO DA ICT: </p>
+	<p><span style="font-weight:bold;">12.2</span> O pesquisador deverá encaminhar ao Setor responsável ou COMISSÃO DA ICT: {{ $contrato->nome_ict }}.</p>
 	
 	@if($contrato->clausula_edit_12_a == '')
 	@else

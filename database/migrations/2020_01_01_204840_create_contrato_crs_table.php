@@ -138,12 +138,12 @@ class CreateContratoCrsTable extends Migration
             $table->string('cargo_rep_privado_foro');
 
             $table->string('parceiro_contato_endereco');
-            $table->string('parceiro_contato_telefone');
+            $table->string('parceiro_contato_telefone')->nullable()->default(null);
             $table->string('parceiro_contato_celular')->nullable()->default(null);
             $table->string('parceiro_contato_email');
             
             $table->string('privado_contato_endereco');
-            $table->string('privado_contato_telefone');
+            $table->string('privado_contato_telefone')->nullable()->default(null);
             $table->string('privado_contato_celular')->nullable()->default(null);
             $table->string('privado_contato_email');
 

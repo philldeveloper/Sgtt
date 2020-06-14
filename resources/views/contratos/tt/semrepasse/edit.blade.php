@@ -185,14 +185,14 @@
               <label for="cpf-cnpj" class="font-weight-bold text-black">CNPJ nº</label>
               <!-- Botão para acionar modal -->
               <a href="#" data-toggle="modal" data-target="#modalExemplo2"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-              <input type="text" class="form-control text-black font-weight-bold cnpj" name="cnpj" id="cpf-cnpj" value="{{$contratos_sr->cnpj}}">
+              <input type="text" class="form-control text-black font-weight-bold cnpj" name="cnpj" placeholder=" 12.345.678/9111-11" id="cpf-cnpj" value="{{$contratos_sr->cnpj}}">
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group col-md-5">
               <label for="endereço" class="font-weight-bold text-black">Endereço</label>
-              <input type="text" class="form-control text-black font-weight-bold" value="{{$contratos_sr->endereco}}" name="endereco" id="endereço">
+              <input type="text" class="form-control text-black font-weight-bold" placeholder=" Rua Dois, nº 111, Edifício 12, apt 54 - Alphavile" value="{{$contratos_sr->endereco}}" name="endereco" id="endereço">
             </div>
             <div class="form-group col-md-3">
               <label for="cidade" class="font-weight-bold text-black">Cidade</label>
@@ -310,7 +310,7 @@
 
           <div class="form-row">
             <div class="form-group col-md-5">
-              <label for="parceiro-endereco" class="font-weight-bold text-black">Endereço</label>
+              <label for="parceiro-endereco" placeholder=" Rua Dois, nº 111, Edifício 12, apt 54 - Alphavile" class="font-weight-bold text-black">Endereço</label>
                 <input type="text" class="form-control text-black font-weight-bold" value="{{$contratos_sr->parceiro_endereco}}" name="parceiro_endereco" id="parceiro-endereco">
             </div>
             <div class="form-group col-md-3">

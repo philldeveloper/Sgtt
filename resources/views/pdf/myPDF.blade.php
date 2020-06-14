@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contrato - Sem Repasse</title>
+	<title>Acordo - Sem Repasse</title>
     <!-- Styles -->
     <link href="../public/css/pdf.css" rel="stylesheet">
 	
@@ -11,8 +11,8 @@
 	<div style="justify-content: center; margin-bottom: 20px !important; text-align: center !important">
 		<img src="../public/assets/brazao.jpg" alt="" height="50px !important">
 	</div>
-	<h4 style="text-align:center; justify-content: center; align-itens: center">SERVIÇO PÚBLICO FEDERAL<br>MINISTÉRIO DA EDUCAÇÃO<br>SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA</h4>
-	<br><br>
+	<h4 style="text-align:center; justify-content: center; align-items: center">SERVIÇO PÚBLICO FEDERAL<br>MINISTÉRIO DA EDUCAÇÃO<br>SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA</h4>
+	<br>
 	<h4 style="text-align:justify !important; text-transform: uppercase !important">ACORDO DE COOPERAÇÃO TÉCNICA QUE ENTRE SI CELEBRAM {{$contrato->nome_ict}}, POR MEIO DO NÚCLEO DE INOVAÇÃO TECNOLÓGICA E {{$contrato->nome_parceiro}}, PARA FINS QUE ESPECIFICA.</h5>
 	<br><br><br>
 	<h5 class="text-uppercase display-4 border-bottom border-dark">1º PARCEIRO</h5>
@@ -32,6 +32,7 @@
 	   <span class="font-weight-bold">Estado Civil:</span> {{$contrato->est_civil}}<br>
 	   <span class="font-weight-bold">Cargo:</span> {{$contrato->ato_nomeacao}}<br>
 	   <span class="font-weight-bold">Doravante denominado:</span> {{$contrato->doravante_denominado}}<br>
+	   <span class="font-weight-bold">Ato de Nomeação:</span> {{$contrato->cargo_rep_foro}}<br>
 	</p>
 	<h5 class="text-uppercase">2º PARCEIRO</h5>
 	<p>
@@ -267,7 +268,7 @@
 	<h5 class="font-weight-bold">CLÁUSULA NONA - DO ACOMPANHAMENTO</h5>
 
 	<p><span id="p-title">9.1</span>Aos coordenadores indicados pelos PARCEIROS competirá dirimir as dúvidas que surgirem na sua execução e de tudo dará ciência às respectivas autoridades. </p>
-	<p><span id="p-title">9.2</span>O coordenador do projeto indicado pela ICT/AGÊNCIA DE FOMENTO anotará, em registro próprio, as ocorrências relacionadas com a execução do objeto, recomendando as medidas necessárias à autoridade competente para regularização das inconsistências observadas. </p>
+	<p><span id="p-title">9.2</span>O coordenador do projeto indicado pela {{$contrato->nome_ict}} anotará, em registro próprio, as ocorrências relacionadas com a execução do objeto, recomendando as medidas necessárias à autoridade competente para regularização das inconsistências observadas. </p>
 	<p><span id="p-title">9.3</span>O acompanhamento do projeto pelos coordenadores não exclui nem reduz a responsabilidade dos PARCEIROS perante terceiros. </p>
 	<p><span id="p-title">9.4</span>A impossibilidade técnica ou científica quanto ao cumprimento de qualquer fase do Plano de Trabalho, que seja devidamente comprovada e justificada, acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou término do Plano de Trabalho e consequente extinção deste Acordo. </p>
 
@@ -291,7 +292,7 @@
 	<h5 class="font-weight-bold">CLÁUSULA DÉCIMA SEGUNDA – DO MONITORAMENTO, DA AVALIAÇÃO E DA PRESTAÇÃO DE CONTAS</h5>
 
 	<p><span id="p-title">12.1</span>Os PARCEIROS exercerão a fiscalização técnico-financeira das atividades do presente Acordo. </p>
-	<p><span id="p-title">12.2</span>O pesquisador deverá encaminhar ao Setor responsável ou COMISSÃO DA ICT: </p>
+	<p><span id="p-title">12.2</span>O pesquisador deverá encaminhar ao Setor responsável ou COMISSÃO DA ICT: {{ $contrato->nome_ict }}.</p>
 	
 	@if($contrato->clausula_edit_12_a == '')
 	@else
@@ -369,23 +370,23 @@
 	<br>
 	<p class="font-weight-bold" style="margin-left: 9px !important">{{$contrato->cidade_foro}}, {{$contrato->estado_foro}}, {{$contrato->data_foro}}</p><br>
 
-	<hr style="text-align: center !important; justify-content:center !important; align-itens: center !important" width="40%">		
-	<p style="text-align: center !important; justify-content:center !important; align-itens: center !important">
+	<hr style="text-align: center !important; justify-content:center !important; align-items: center !important" width="40%">		
+	<p style="text-align: center !important; justify-content:center !important; align-items: center !important">
 		{{$contrato->nome_rep_foro}} <br> {{$contrato->cargo_rep_foro}} do(a) {{$contrato->ict_inst_foro}}</p>
 	</p><br>
 
-	<hr style="text-align: center !important; justify-content:center !important; align-itens: center !important" width="40%">		
-	<p style="text-align: center !important; justify-content:center !important; align-itens: center !important">
+	<hr style="text-align: center !important; justify-content:center !important; align-items: center !important" width="40%">		
+	<p style="text-align: center !important; justify-content:center !important; align-items: center !important">
 		{{$contrato->nome_rep_privado_foro}} <br> {{$contrato->nome_inst_privado_foro}}</p>
 	</p><br>
 
-	<hr style="text-align: center !important; justify-content:center !important; align-itens: center !important" width="40%">		
-	<p style="text-align: center !important; justify-content:center !important; align-itens: center !important; margin-top: 0 !important">
+	<hr style="text-align: center !important; justify-content:center !important; align-items: center !important" width="40%">		
+	<p style="text-align: center !important; justify-content:center !important; align-items: center !important; margin-top: 0 !important">
 		{{$contrato->nome_testemunha_1}} <br> Testemunha 1</p>
 	</p><br>
 
-	<hr style="text-align: center !important; justify-content:center !important; align-itens: center !important" width="40%">		
-	<p style="text-align: center !important; justify-content:center !important; align-itens: center !important; margin-top: 0 !important">
+	<hr style="text-align: center !important; justify-content:center !important; align-items: center !important" width="40%">		
+	<p style="text-align: center !important; justify-content:center !important; align-items: center !important; margin-top: 0 !important">
 		{{$contrato->nome_testemunha_2}} <br> Testemunha 2</p>
 	</p>
 	<br>
