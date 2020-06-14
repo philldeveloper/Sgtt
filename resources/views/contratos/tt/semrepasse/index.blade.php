@@ -2,8 +2,14 @@
 
 
 <style type="text/css">
+  .col-md-12.mb-3{
+    padding: 0px;
+  }
+  p{
+    line-height: 1.9 !important;
+  }
   #wrapper #content-wrapper {
-    background-color: white !important;
+    background-color: #e3e6f0 !important;
   }
 
   textarea{
@@ -13,6 +19,12 @@
     box-shadow: 1px 2px 2px #cdcdcd;
     padding: 10px;
     text-align: justify !important;
+    line-height: 1.9 !important;
+    border-radius: 0 !important;
+  }
+
+  a.badge.badge-primary.text-light.font-weight-bold, .alert.alert-info.py-2.text-dark.font-weight-bold, .alert.alert-warning{
+    border-radius: 0 !important;
   }
 </style>
 @section('content')
@@ -70,24 +82,22 @@
 <div class="title-header">
     <span class="h3 ml-3 font-weight-bold">Novo Contrato</span>
     <div class="badge badge-primary lead  mr-auto float-right">sem repasse</div>
-    <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
+    <!-- <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span> -->
 </div>
 
-<div class="card mt-5 mb-5 color-card">
+<div class="card m-2 rounded-0"> <!--color-card-->
 
   <!--form id="regForm" action="/action_page.php"-->
   <form id="regForm" class="form-horizontal" method="POST" action="{{ route('contrato_sr.store') }}">
     {{ csrf_field() }}
-    <div class="card-header py-1">
+    <div class="card-header py-1 border-0">
       <div id="step-container" class="step-container align-items-center py-3 mt-2"></div>
     </div>
-    <div id="tab-here" class="p-5 card-body mb-0"></div>
+    <div id="tab-here" class="p-4 card-body mb-0"></div>
     <!-- Circles which indicates the steps of the form: -->
-    <div class="buttonsControl card-footer bg-transparent p-0 clearfix" style="overflow:auto;">
-      <div class="m-3 mt-0 mb-0">
-        <button type="button" class="btn btn-lg btn-outline-dark font-weight-bold shadow-sm" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
-        <button type="button" class="btn btn-success btn-lg font-weight-bold shadow-sm" id="nextBtn" onclick="nextPrev(1)">Proximo</button>
-      </div>
+    <div class="d-flex justify-content-between mb-3">
+      <div class="p-2"><button type="button" class="btn btn-lg rounded-0 btn-outline-dark font-weight-bold shadow-sm m-3" id="prevBtn" onclick="nextPrev(-1)">Anterior</button></div>
+      <div class="p-2"><button type="button" class="btn btn-lg rounded-0 btn-success font-weight-bold shadow-sm m-3" id="nextBtn" onclick="nextPrev(1)">Proximo</button></div>
     </div>
   </form><!--form-->
 
@@ -103,7 +113,6 @@
         <input type="hidden" name="stepcount" id="stepCount" value="0">
       @endif
      
-
         <div class="modal-alert modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -113,53 +122,53 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-                <div class="modal-body font-weight-bold"><p class="lead">
-                  <span class="font-weight-bold text-dark">ESTA MINUTA DEVE SER UTILIZADA PARA ACORDOS DE PARCERIA PARA
-                  PD&I QUANDO NÃO HOUVER REPASSE DE RECURSOS ENTRE OS PARCEIROS.</span><br>
+              <div class="modal-body font-weight-bold text-justify"><p class="lead">
+                <span class="font-weight-bold text-dark">ESTA MINUTA DEVE SER UTILIZADA PARA ACORDOS DE PARCERIA PARA
+                PD&I QUANDO NÃO HOUVER REPASSE DE RECURSOS ENTRE OS PARCEIROS.</span><br>
 
-                  Este tipo de Acordo é apropriado para ser utilizado na construção de ambientes inovadores
-                  (como parques tecnológico, co-working, entre outras possibilidades), servindo como
-                  instrumento que estabelece as regras de interação entre os parceiros. Pode tanto ser usado em
-                  relações bilaterais como multilaterais.
-                  <b>BASE LEGAL: ARTIGO 9º DA LEI Nº 10.973/04.</b> <br>
-                  Caso se trate da hipótese de Acordo com transferência de recursos do parceiro privado para o
-                  projeto (§§ 6º e 7º do Artigo 35 do Decreto nº 9.283/18.), deverá ser utilizada a outra minuta
-                  apropriada para esta situação. <br>
-                  Alguns itens receberão notas explicativas destacadas para compreensão do agente ou setor
-                  responsável pela elaboração das minutas, que deverão ser devidamente suprimidas quando da
-                  finalização do documento. 
-                  <br/>No modelo a seguir, deve-se observar que há duas cores:<br/>
-                  <br/>- os itens escritos na cor <b>PRETA</b> devem ser mantidos, podendo eventualmente serem alterados ou excluídos diante do caso concreto, e;
-                  <br/>-  aqueles redigidos na cor <span class="text-blue font-weight-bold">AZUL</span> são textos que dependem de situações específicas ou se trata de textos sugestivos. Cabe a cada entidade verificar o que deve ser escrito nestes itens e decidir se eles serão ou não mantidos na redação final do Acordo. 
-                  </p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn-lg btn-primary" data-dismiss="modal">Fechar</button>
-                  </div>
+                Este tipo de Acordo é apropriado para ser utilizado na construção de ambientes inovadores
+                (como parques tecnológico, co-working, entre outras possibilidades), servindo como
+                instrumento que estabelece as regras de interação entre os parceiros. Pode tanto ser usado em
+                relações bilaterais como multilaterais.
+                <b>BASE LEGAL: ARTIGO 9º DA LEI Nº 10.973/04.</b> <br>
+                Caso se trate da hipótese de Acordo com transferência de recursos do parceiro privado para o
+                projeto (§§ 6º e 7º do Artigo 35 do Decreto nº 9.283/18.), deverá ser utilizada a outra minuta
+                apropriada para esta situação. <br>
+                Alguns itens receberão notas explicativas destacadas para compreensão do agente ou setor
+                responsável pela elaboração das minutas, que deverão ser devidamente suprimidas quando da
+                finalização do documento. 
+                <br/>No modelo a seguir, deve-se observar que há duas cores:<br/>
+                <br/>- os itens escritos na cor <b>PRETA</b> devem ser mantidos, podendo eventualmente serem alterados ou excluídos diante do caso concreto, e;
+                <br/>-  aqueles redigidos na cor <span class="text-blue font-weight-bold">AZUL</span> são textos que dependem de situações específicas ou se trata de textos sugestivos. Cabe a cada entidade verificar o que deve ser escrito nestes itens e decidir se eles serão ou não mantidos na redação final do Acordo. 
+                </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn-lg btn-primary" data-dismiss="modal">Fechar</button>
+                </div>
             </div>
           </div>
         </div>
 
         <div class="container-fluid p-0 mt-0 m-0">
-          <div class="container-fluid pb-5 pt-5 mt-0 m-0">
           <div class="text-center row justify-content-center mb-5">
-              <img src="{{asset('assets/brazao.jpg')}}" alt="" width="10%" class="mx-auto text-center">
-            </div>
-            <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">
-            ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI
-              CELEBRAM</h5> 
-              <div class="form-row" style="justify-content: center;">
-                <div class="form-group col-md-4">
-                  <input class="mb-2 text-black form-control" type="text" name="nome_ict" onchange="handleNameICT(event)" placeholder="ICT ou ente público"> 
-                </div>
-                <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">E</h5>
-                <div class="form-group col-md-4">
-                  <input class="mb-2 text-black form-control" type="text" name="nome_parceiro" onchange="handleNameParceiro(event)" placeholder="Nome do parceiro">  
-                </div>
-              </div>
-              <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center">NA FORMA A SEGUIR.</h5><br>
+            <img src="{{asset('assets/brazao.jpg')}}" alt="" width="10%" class="mx-auto text-center">
           </div>
-
+          <div class="text-center">
+            <h5 class="text-uppercase col-md-8 col-lg-8 offset-lg-2 offset-md-2 font-weight-bold roboto-font text-black mt-2 mb-3">
+            ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI
+              CELEBRAM</h5>
+          </div> 
+          <div class="form-row justify-content-center">
+            <div class="form-group col-md-4">
+              <input class="mb-2 text-black form-control" type="text" name="nome_ict" onchange="handleNameICT(event)" placeholder="ICT ou ente público"> 
+            </div>
+            <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">E</h5>
+            <div class="form-group col-md-4">
+              <input class="mb-2 text-black form-control" type="text" name="nome_parceiro" onchange="handleNameParceiro(event)" placeholder="Nome do parceiro">  
+            </div>
+          </div>
+          <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center">NA FORMA A SEGUIR.</h5>
+          <br>
           <div class="alert alert-warning" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             NOTAS EXPLICATIVAS!
@@ -424,7 +433,7 @@
           
           <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">2. CLÁUSULA SEGUNDA – DO PLANO DE TRABALHO </h4><hr>
           <!-- Nota explicativa -->
-          <div class="alert alert-warning mb-5 mt-5" role="alert">      
+          <div class="alert alert-warning mb-3 mt-3" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             NOTAS EXPLICATIVAS!
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modalExemplo12">Saiba mais</button>
@@ -435,43 +444,40 @@
           
           <!--clausula editavel 2-->
 
-          <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+          <div class="alert alert-info py-2 mt-3 mb-4 text-dark font-weight-bold" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
-
-          <div class="container-fluid pt-4 pb-4 bg-light">
             
-            <div class="col-md-12 mb-3">
-                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.2</a>
-                <textarea class="form-control" name="clausula_edit_2_2" rows="4" style="background-color: #F6FAFA; resize: none !important;">Respeitadas as previsões contidas na legislação em vigor, a(o) ICT/Órgão Publico, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</textarea>
-            </div>
+          <div class="col-md-12 mb-3 p-0">
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.2</a>
+              <textarea class="form-control" name="clausula_edit_2_2" rows="4" style="background-color: #F6FAFA; resize: none !important;">Respeitadas as previsões contidas na legislação em vigor, a(o) ICT/Órgão Publico, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</textarea>
+          </div>
 
-            <div class="col-md-12 mb-3">
-                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
-                <a href="#" data-toggle="modal" data-target="#modal_clausula_2_3"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
-                <textarea class="form-control" name="clausula_edit_2_3" rows="3" style="background-color: #F6FAFA; resize: none !important;">Na execução do Plano de Trabalho, a atuação dos PARCEIROS dar-se-á sempre de forma associada. Para tanto, os PARCEIROS indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.</textarea>
-            </div>
+          <div class="col-md-12 mb-3 p-0">
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
+              <a href="#" data-toggle="modal" data-target="#modal_clausula_2_3"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
+              <textarea class="form-control" name="clausula_edit_2_3" rows="3" style="background-color: #F6FAFA; resize: none !important;">Na execução do Plano de Trabalho, a atuação dos PARCEIROS dar-se-á sempre de forma associada. Para tanto, os PARCEIROS indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.</textarea>
+          </div>
 
-            <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.4</a>
-              <a href="#" data-toggle="modal" data-target="#modal_clausula_2_4"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
-              <textarea class="form-control" name="clausula_edit_2_4" rows="3" style="background-color: #F6FAFA; resize: none !important;">Recaem sobre o Coordenador do Projeto, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.</textarea>
-            </div>
-            
-            <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.5</a>
-              <a href="#" data-toggle="modal" data-target="#modal_clausula_2_5"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
-              <textarea class="form-control" name="clausula_edit_2_5" rows="3" style="background-color: #F6FAFA; resize: none !important;">Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.</textarea>
-            </div>
-            
-            <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.6</a>
-              <a href="#" data-toggle="modal" data-target="#modal_clausula_2_6"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
-                <textarea class="form-control" name="clausula_edit_2_6" rows="4" style="background-color: #F6FAFA; resize: none !important;">A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo.</textarea>
-            </div>
+          <div class="col-md-12 mb-3 p-0">
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.4</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_2_4"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
+            <textarea class="form-control" name="clausula_edit_2_4" rows="3" style="background-color: #F6FAFA; resize: none !important;">Recaem sobre o Coordenador do Projeto, designado pela ICT nos termos da alínea c, item 3.1.1., as responsabilidades técnicas e de articulação correspondentes.</textarea>
+          </div>
+          
+          <div class="col-md-12 mb-3 p-0">
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.5</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_2_5"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
+            <textarea class="form-control" name="clausula_edit_2_5" rows="3" style="background-color: #F6FAFA; resize: none !important;">Situações capazes de afetar sensivelmente as especificações ou os resultados esperados para o Plano de Trabalho deverão ser formalmente comunicadas pelos Coordenadores de Projeto ao setor responsável, aos quais competirá avaliá-las e tomar as providências cabíveis.</textarea>
+          </div>
+          
+          <div class="col-md-12 mb-3 p-0">
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.6</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_2_6"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
+              <textarea class="form-control" name="clausula_edit_2_6" rows="4" style="background-color: #F6FAFA; resize: none !important;">A impossibilidade técnica e científica quanto ao cumprimento de qualquer fase do Plano de Trabalho que seja devidamente comprovada e justificada acarretará a suspensão de suas respectivas atividades até que haja acordo entre os PARCEIROS quanto à alteração, à adequação ou ao término do Plano de Trabalho e à consequente extinção deste Acordo.</textarea>
+          </div>
 
-          </div><!--container-fluid-->
 
         </div>
       </div>
@@ -483,7 +489,7 @@
         <div class="text-justify text-black">
           
           <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">3. CLÁUSULA TERCEIRA – DAS ATRIBUIÇÕES E RESPONSABILIDADES</h4><hr>
-          <div class="alert alert-warning mb-5 mt-5" role="alert">      
+          <div class="alert alert-warning mb-3 mt-3" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             NOTAS EXPLICATIVAS!
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_atribuicoes">Saiba mais</button>
@@ -494,43 +500,43 @@
           <hr>      
             <b>A)</b> Indicar um coordenador para acompanhar a sua execução;<a href="#" data-toggle="modal" data-target="#modalCoordenador"><i class="fas fa-fw fa-question-circle"></i></a>
             
-            <div class="form-group row p-2">
-              <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador ICT/Público:</label>
-              <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
+            <div class="form-group row pt-2">
+              <label for="" class="col col-form-label font-weight-bold text-left">Nome do Coordenador ICT/Público:</label>
+              <div class="col-md-7 col-sm-12 col-lg-7 col-xl-7">
                 <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" placeholder="Ex: João da Silva">
               </div>
             </div>
 
-            <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+            <div class="alert alert-info py-2 mt-3 mb-3 text-dark font-weight-bold" role="alert">      
               <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">Edite a(s) cláusula(s) abaixo (se julgar necessário):
             </div>
 
-            <div class="col-md-12 mb-3">
+            <div class="col-md-12 mb-3 p-0">
                 <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA B</a>
                 <textarea class="form-control" name="clausula_edit_3_1_b" rows="3" style="background-color: #F6FAFA; resize: none !important;">Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;</textarea>
             </div>
 
-            <div class="col-md-12 mb-3">
+            <div class="col-md-12 mb-3 p-0">
                 <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA C</a>
                 <a href="#" data-toggle="modal" data-target="#modalExemplo16" class="float-left mt-1 ml-2"><i class="fas fa-fw fa-question-circle"></i></a>
                 <textarea class="form-control" name="clausula_edit_3_1_c" rows="3" style="background-color: #F6FAFA; resize: none !important;" placeholder="demais..."></textarea>
             </div>
 
-            <p class="mt-5 mb-3 roboto-font"><b>3.1.2.  Do(a) <input  class="myform-control" type="text" id="handle_parceiro" placeholder="Instituição" disabled>:(PARCEIRO PRIVADO)</b></p>
+            <p class="mt-3 mb-3 roboto-font"><b>3.1.2.  Do(a) <input  class="myform-control" type="text" id="handle_parceiro" placeholder="Instituição" disabled>:(PARCEIRO PRIVADO)</b></p>
             <hr>
           
             <b>A)</b> Indicar um coordenador para acompanhar a sua execução;<a href="#" data-toggle="modal" data-target="#modalCoordenadorPrivado"><i class="fas fa-fw fa-question-circle"></i></a>
             
             <div class="form-group row p-2">
-              <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador Parceiro Privado:</label>
-              <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
+              <label for="" class="col col-form-label font-weight-bold">Nome do Coordenador Parceiro Privado:</label>
+              <div class="col-lg-7 col-xl-7 col-md-7 col-sm-12">
                 <input type="text" name="nome_coordenador_privado" onchange="handleCoordenadorPrivado()" id="nome_coordenador_privado" class="form-control" placeholder="Ex: Maria da Silva">
               </div>
             </div>
 
             <p><b>B)</b> Colaborar, nos termos do plano de trabalho, para que o Acordo alcance os objetivos nele descritos:</p>
             
-            <div class="col-md-12 mb-3">
+            <div class="col-md-12 mb-3 p-0">
             <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA C</a>
             <a href="#" data-toggle="modal" data-target="#modalExemplo17"><i class="fas fa-fw fa-question-circle float-left mt-1 m-2"></i></a>
                 <textarea placeholder="Demais..." class="form-control font-weight-bold" name="clausula_edit_3_1_2_c" rows="4" style="background-color: #F6FAFA; resize: none !important;"></textarea>
@@ -538,11 +544,11 @@
 
             <p><b>3.2.</b><span id="coord_ict"></span><span id="coord_privado"></span> poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.</p>
 
-            <div class="alert alert-info py-2 mt-5 mb-4 text-dark font-weight-bold" role="alert">      
+            <div class="alert alert-info py-2 mt-3 mb-4 text-dark font-weight-bold" role="alert">      
               <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">Edite a(s) cláusula(s) abaixo (se julgar necessário):
             </div>
 
-            <div class="col-md-12 mb-3">
+            <div class="col-md-12 mb-3 p-0">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 3.3</a>
             <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left mt-1 m-2"></i></a>
             <textarea class="form-control" name="clausula_edit_3_3" rows="4" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente Acordo de Parceria para PD&I ou de publicações a ele referentes.</textarea>
@@ -730,23 +736,21 @@
             Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
 
-          <div class="container-fluid bg-light p-3 pt-4 pb-4">
-            <div class="col-md-12 mb-3">
-                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.6</a>
-                <a href="#" data-toggle="modal" data-target="#modal_clausula_7_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
-                <textarea class="form-control" name="clausula_edit_7_6" rows="3" style="background-color: #F6FAFA; resize: none !important;">As obrigações de sigilo em relação às INFORMAÇÕES CONFIDENCIAIS serão mantidas durante o período de vigência deste Acordo e pelo prazo de 5 (cinco) anos após sua extinção.</textarea>
-              </div>
-              <div class="col-md-12 mb-3">
-                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.7</a>
-                <a href="#" data-toggle="modal" data-target="#modal_clausula_7_7"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
-                <textarea class="form-control" name="clausula_edit_7_7" rows="3" style="background-color: #F6FAFA; resize: none !important;">Para efeito dessa cláusula, todas as informações referentes ao “processo/serviço/projeto........” serão consideradas como INFORMAÇÃO CONFIDENCIAL, retroagindo às informações obtidas antes da assinatura do acordo.</textarea>
-              </div>
-              <div class="col-md-12 mb-3">
-                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.8</a>
-                <a href="#" data-toggle="modal" data-target="#modal_clausula_7_8"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
-                <textarea class="form-control" name="clausula_edit_7_8" rows="3" style="background-color: #F6FAFA; resize: none !important;">Para efeito dessa cláusula, a classificação das informações como confidenciais será de responsabilidade de seu titular, devendo indicar os conhecimentos ou informações classificáveis como CONFIDENCIAIS por qualquer meio.</textarea>
+          <div class="col-md-12 mb-3">
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.6</a>
+              <a href="#" data-toggle="modal" data-target="#modal_clausula_7_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
+              <textarea class="form-control" name="clausula_edit_7_6" rows="3" style="background-color: #F6FAFA; resize: none !important;">As obrigações de sigilo em relação às INFORMAÇÕES CONFIDENCIAIS serão mantidas durante o período de vigência deste Acordo e pelo prazo de 5 (cinco) anos após sua extinção.</textarea>
             </div>
-          </div><!--container-->
+            <div class="col-md-12 mb-3">
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.7</a>
+              <a href="#" data-toggle="modal" data-target="#modal_clausula_7_7"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
+              <textarea class="form-control" name="clausula_edit_7_7" rows="3" style="background-color: #F6FAFA; resize: none !important;">Para efeito dessa cláusula, todas as informações referentes ao “processo/serviço/projeto........” serão consideradas como INFORMAÇÃO CONFIDENCIAL, retroagindo às informações obtidas antes da assinatura do acordo.</textarea>
+            </div>
+            <div class="col-md-12 mb-3">
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.8</a>
+              <a href="#" data-toggle="modal" data-target="#modal_clausula_7_8"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
+              <textarea class="form-control" name="clausula_edit_7_8" rows="3" style="background-color: #F6FAFA; resize: none !important;">Para efeito dessa cláusula, a classificação das informações como confidenciais será de responsabilidade de seu titular, devendo indicar os conhecimentos ou informações classificáveis como CONFIDENCIAIS por qualquer meio.</textarea>
+          </div>
 
         </div>
       </div>
