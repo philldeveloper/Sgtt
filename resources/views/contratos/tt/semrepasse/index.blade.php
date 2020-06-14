@@ -171,33 +171,20 @@
 
           <div class="form-row">
             <div class="form-group col-md-4">
-<<<<<<< HEAD
               <label for="inputEmail4" class="font-weight-bold text-black">Nome do Solicitante</label>
               <input type="text" name="nome_teste" class="form-control text-black font-weight-bold ofo" id="nome" placeholder="Ex: Instituição Cientifica, Tecnológica e de Inovação - ICT">               
-=======
-              <label for="inputEmail4" class="font-weight-bold text-black">Nome</label>
-              <input type="text" name="nome_teste" class="form-control text-black font-weight-bold ofo" id="nome">               
->>>>>>> 59344155d899ecf03606e0697de7a6685da7a2b7
             </div>
             <div class="form-group col-md-4">
               <label for="natureza" class="font-weight-bold text-black">Natureza Jurídica</label>
               <!-- Botão para acionar modal -->
               <a href="#" data-toggle="modal" data-target="#modalExemplo1"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-<<<<<<< HEAD
-              <input type="text" class="form-control text-black font-weight-bold" name="nat_juridica" id="natureza" placeholder="Ex: Pública">
-=======
               <input type="text" class="form-control text-black font-weight-bold" name="nat_juridica" id="natureza" placeholder="Ex.: Direito público">
->>>>>>> 59344155d899ecf03606e0697de7a6685da7a2b7
             </div>
             <div class="form-group col-md-4">
               <label for="cpf-cnpj" class="font-weight-bold text-black">CNPJ nº</label>
               <!-- Botão para acionar modal -->
               <a href="#" data-toggle="modal" data-target="#modalExemplo2"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-<<<<<<< HEAD
-              <input type="text" class="form-control text-black font-weight-bold cnpj" name="cnpj" id="cpf-cnpj" placeholder="ex:11.111.111/1111-11">
-=======
               <input type="text" class="form-control text-black font-weight-bold cnpj" placeholder=" 12.345.678/9111-11" name="cnpj" id="cpf-cnpj">
->>>>>>> 59344155d899ecf03606e0697de7a6685da7a2b7
             </div>
           </div>
 
@@ -254,11 +241,7 @@
             <label for="representante" class="font-weight-bold text-black">Representante Legal</label>
             <!-- Botão para acionar modal -->
               <a href="#" data-toggle="modal" data-target="#modalExemplo3"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-<<<<<<< HEAD
-            <input type="text" class="form-control text-black font-weight-bold" name="rep_legal" id="representante" placeholder="Ex: João da Silva">
-=======
             <input type="text" class="form-control text-black font-weight-bold" onchange="handleRepresentanteICT(event)" name="rep_legal" id="representante" placeholder="Nome do representante">
->>>>>>> 59344155d899ecf03606e0697de7a6685da7a2b7
           </div>
           <div class="form-group col-md-3">
             <label for="cpf-mf" class="font-weight-bold text-black">CPF/M.F</label>
@@ -286,13 +269,6 @@
           <div class="form-group col-md-3">
             <label for="ato-nomeacao" class="font-weight-bold text-black">Ato de Nomeação</label>
             <a href="#" data-toggle="modal" data-target="#atoNomeacao"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-<<<<<<< HEAD
-            <input type="text" class="form-control text-black font-weight-bold" name="ato_nomeacao" id="ato-nomeacao" placeholder="Ex: 10 de Abril de 2020">
-          </div>
-          <div class="form-group col-md-3">
-            <label for="doravante" class="font-weight-bold text-black">Doravante Denominado</label>
-            <input type="text" class="form-control text-black font-weight-bold" name="doravante_denominado" id="doravante" placeholder="Ex: ICTEC">
-=======
             <input type="text" class="form-control text-black font-weight-bold" name="ato_nomeacao" id="ato-nomeacao" placeholder="Ex.: PORTARIA Nº 256, DE 10 DE ABRIL De 2019">
           </div>
           <div class="form-group col-md-3">
@@ -302,7 +278,6 @@
           <div class="form-group col-md-4">
             <label for="parceiro_cargo" class="font-weight-bold text-black">Cargo do representante</label>
             <input type="text" class="form-control text-black font-weight-bold" onchange="handleCargoICT(event)" name="cargo_rep_foro" id="parceiro_cargo" placeholder="Ex.: Reitor">
->>>>>>> 59344155d899ecf03606e0697de7a6685da7a2b7
           </div>
           </div><!-- /.row-->
           <br>
@@ -325,32 +300,20 @@
               <label for="natureza-juridica" class="font-weight-bold text-black">Natureza Jurídica</label>
               <!-- Botão para acionar modal -->
               <a href="#" data-toggle="modal" data-target="#modalExemplo4"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-<<<<<<< HEAD
-              <input type="text" class="form-control text-black font-weight-bold" name="parceiro_nat_juridica" id="natureza-juridica" placeholder="Ex: Privada">
-=======
               <input type="text" class="form-control text-black font-weight-bold" name="parceiro_nat_juridica" id="natureza-juridica" placeholder="Ex.: Direito público">
->>>>>>> 59344155d899ecf03606e0697de7a6685da7a2b7
             </div>
             <div class="form-group col-md-4">
               <label for="cnpj-n" class="font-weight-bold text-black">CNPJ nº</label>
               <!-- Botão para acionar modal -->
               <a href="#" data-toggle="modal" data-target="#modalExemplo5"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-<<<<<<< HEAD
-              <input type="text" class="form-control text-black font-weight-bold cnpj" name="parceiro_cnpj" id="cnpj-n" placeholder="Ex:11.111.111/1111-11">
-=======
               <input type="text" class="form-control text-black font-weight-bold cnpj" placeholder=" 12.345.678/9111-11" name="parceiro_cnpj" id="cnpj-n" placeholder="CNPJ">
->>>>>>> 59344155d899ecf03606e0697de7a6685da7a2b7
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group col-md-5">
               <label for="parceiro-endereco" class="font-weight-bold text-black">Endereço</label>
-<<<<<<< HEAD
-                <input type="text" class="form-control text-black font-weight-bold" name="parceiro_endereco" id="parceiro-endereco" placeholder="Ex: Rua Nova Iorque, 400, Zona Sul">
-=======
                 <input type="text" class="form-control text-black font-weight-bold" onchange="handleEnderecoPrivado(event)" placeholder=" Rua Dois, nº 111, Edifício 12, apt 54 - Alphavile"  name="parceiro_endereco" id="parceiro-endereco">
->>>>>>> 59344155d899ecf03606e0697de7a6685da7a2b7
             </div>
             <div class="form-group col-md-3">
               <label for="parceiro_cidade" class="font-weight-bold text-black">Cidade</label>
@@ -400,11 +363,7 @@
             <label for="parceiro_rep_legal" class="font-weight-bold text-black">Representante Legal</label>
             <!-- Botão para acionar modal -->
               <a href="#" data-toggle="modal" data-target="#modalExemplo6"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-<<<<<<< HEAD
-            <input type="text" class="form-control text-black font-weight-bold" name="parceiro_rep_legal" id="parceiro_rep_legal" placeholder="Ex: Mário da Silva">
-=======
             <input type="text" class="form-control text-black font-weight-bold" name="parceiro_rep_legal" onchange="handleRepresentantePrivado(event)" id="parceiro_rep_legal" placeholder="Nome do representante">
->>>>>>> 59344155d899ecf03606e0697de7a6685da7a2b7
           </div>
           <div class="form-group col-md-3">
             <label for="parceiro_cpf" class="font-weight-bold text-black">CPF/M.F</label>
@@ -418,15 +377,9 @@
             <label for="parceiro_orgao_exp" class="font-weight-bold text-black">Órgão Expedidor</label>
             <input type="text" class="form-control text-black font-weight-bold" name="parceiro_orgao_exp" id="parceiro_orgao_exp" placeholder=" SDS">
           </div>
-<<<<<<< HEAD
-          <div class="form-group col-md-2">
-            <label for="parceiro_cargo" class="font-weight-bold text-black">Cargo</label>
-            <input type="text" class="form-control text-black font-weight-bold" name="parceiro_cargo" id="parceiro_cargo" placeholder="Ex: Coordenador">
-=======
           <div class="form-group col-md-4">
             <label for="parceiro_cargo" class="font-weight-bold text-black">Cargo do representante</label>
             <input type="text" class="form-control text-black font-weight-bold" name="parceiro_cargo" onchange="handleCargoPrivado(event)" id="parceiro_cargo" placeholder="Ex.: Reitor">
->>>>>>> 59344155d899ecf03606e0697de7a6685da7a2b7
           </div>
           </div>
           <!-- <div class="form-group col-md-4 mt-5 py-4">
@@ -1017,13 +970,8 @@
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="parceiro_contato_endereco"
-<<<<<<< HEAD
-                id="endereco" 
-                placeholder="Ex: Rua Nova Iorque, 400, Zona Sul, São Paulo">
-=======
                 id="endereco_ICT" 
                 placeholder="Endereço">
->>>>>>> 59344155d899ecf03606e0697de7a6685da7a2b7
             </div>
             <div class="form-group col">
               <label for="parceiro_contato_celular" class="font-weight-bold text-black">Celular</label>
@@ -1050,22 +998,8 @@
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="privado_contato_endereco"
-<<<<<<< HEAD
                 id="endereco" 
                 placeholder="Ex: Rua Nova Iorque, 400, Zona Sul, São Paulo">
-=======
-                id="endereco_privado" 
-                placeholder="Endereço">
-            </div>
-
-            <div class="form-group col-md-3">
-              <label for="privado_contato_telefone" class="font-weight-bold text-black">Telefone</label>
-              <input type="text" 
-                class="form-control text-black font-weight-bold"
-                name="privado_contato_telefone" 
-                id="privado_contato_telefone" 
-                placeholder="Telefone">
->>>>>>> 59344155d899ecf03606e0697de7a6685da7a2b7
             </div>
             <div class="form-group col">
               <label for="privado_contato_celular" class="font-weight-bold text-black">Celular</label>
@@ -1130,41 +1064,25 @@
               <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="ict_inst_foro" 
-<<<<<<< HEAD
-                id="ict_inst_foro" 
-                placeholder="Ex: ICTEC">
-=======
                 id="handle_ict" 
                 placeholder="Instituição"
                 >
->>>>>>> 59344155d899ecf03606e0697de7a6685da7a2b7
             </div>
             <div class="form-group col-md-3">
               <label for="nome_rep_foro" class="font-weight-bold text-black">Representante:</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
-<<<<<<< HEAD
-                name="nome_rep_foro" id="nome_rep_foro" 
-                placeholder="Ex: João da Silva">
-=======
                 name="nome_rep_foro"
                 placeholder="Nome do Representante"
                 id="rep_ict"
               >
->>>>>>> 59344155d899ecf03606e0697de7a6685da7a2b7
             </div>
             <div class="form-group col-md-3">
               <label for="cargo_rep_foro" class="font-weight-bold text-black">Cargo</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold"
-<<<<<<< HEAD
-                name="cargo_rep_foro" 
-                id="cargo_rep_foro" 
-                placeholder="Ex: Coordenador">
-=======
                 id="cargo_ICT" 
                 placeholder="Cargo">
->>>>>>> 59344155d899ecf03606e0697de7a6685da7a2b7
             </div>
           </div><!-- /.row-->
 
@@ -1175,38 +1093,23 @@
               <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="nome_inst_privado_foro" 
-<<<<<<< HEAD
-                id="nome_inst_privado_foro" 
-                placeholder="Ex: X e Y Advocacia">
-=======
                 id="handle_parceiro" 
                 placeholder="Instituição">
->>>>>>> 59344155d899ecf03606e0697de7a6685da7a2b7
             </div>
             <div class="form-group col-md-3">
               <label for="nome_rep_privado_foro" class="font-weight-bold text-black">Representante:</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
-<<<<<<< HEAD
-                name="nome_rep_privado_foro" id="nome_rep_privado_foro" 
-                placeholder="Ex: Maria da Silva">
-=======
                 name="nome_rep_privado_foro" id="rep_privado" 
                 placeholder="Nome do Representante">
->>>>>>> 59344155d899ecf03606e0697de7a6685da7a2b7
             </div>
             <div class="form-group col-md-3">
               <label for="cargo_rep_privado_foro" class="font-weight-bold text-black">Cargo</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="cargo_rep_privado_foro" 
-<<<<<<< HEAD
-                id="cargo_rep_privado_foro" 
-                placeholder="Ex: Coordenador(a)">
-=======
                 id="cargo_privado" 
                 placeholder="Cargo">
->>>>>>> 59344155d899ecf03606e0697de7a6685da7a2b7
             </div>
           </div><!-- /.row-->
 
