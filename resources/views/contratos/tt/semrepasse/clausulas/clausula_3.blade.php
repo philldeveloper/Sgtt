@@ -8,29 +8,29 @@
         </div> -->
         <p><b>3.1 </b>São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I:</p>
         
-        <p class="mt-3 roboto-font"><b>3.1.1. Do(a) ICT:</b><input type="text" class="myform-control" value="{{$contratos_sr->nome_ict}}" id="handle_ict" placeholder="Instituição" disabled></p>
+        <p class="mt-3 roboto-font text-left"><b>3.1.1. Do(a) ICT:</b><input type="text" class="myform-control" value="{{$contratos_sr->nome_ict}}" id="handle_ict" placeholder="Instituição" disabled></p>
         <hr>      
         <b>A) </b> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução:
         
-        <div class="form-group row p-2">
-            <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador ICT/Público:</label>
-            <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
-            <input type="text" name="nome_coordenador_ict" value="{{$contratos_sr->nome_coordenador_ict}}" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" placeholder="Nome coordenador ICT/Publico" disabled="" >
+        <div class="form-group row pt-2">
+            <label for="" class="col col-form-label font-weight-bold text-left">Nome do Coordenador ICT/Público:</label>
+            <div class="col-md-7 col-sm-12 col-lg-7 col-xl-7">
+            <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" value="{{$contratos_sr->nome_coordenador_ict}}" disabled>
             </div>
         </div>
 
         <p class=""><b>B) </b>{!! $contratos_sr->clausula_edit_3_1_b !!}</p>
         <p class=""><b>C) </b>{!! $contratos_sr->clausula_edit_3_1_c !!}</p>
 
-        <p class="mt-5 mb-3 roboto-font"><b>3.1.2.  Do(a) PARCEIRO PRIVADO: <input  class="myform-control" type="text" value="{{$contratos_sr->nome_parceiro}}" id="handle_parceiro" disabled=""></b></p>
+        <p class="mb-3 roboto-font text-left"><b>3.1.2.  Do(a) PARCEIRO PRIVADO: <input  class="myform-control" type="text" value="{{$contratos_sr->nome_parceiro}}" id="handle_parceiro" disabled=""></b></p>
         <hr>
         
         <b>A) </b> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;
         
-        <div class="form-group row p-2">
-            <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador Parceiro Privado:</label>
-            <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
-            <input type="text" name="nome_coordenador_privado" onchange="handleCoordenadorPrivado()" id="nome_coordenador_privado" class="form-control" placeholder="{{$contratos_sr->nome_coordenador_privado}}" disabled="">
+        <div class="form-group row pt-2">
+            <label for="" class="col col-form-label font-weight-bold text-left">Nome do Coordenador ICT/Público:</label>
+            <div class="col-md-7 col-sm-12 col-lg-7 col-xl-7">
+            <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" value="{{$contratos_sr->nome_coordenador_privado}}" disabled>
             </div>
         </div>
 

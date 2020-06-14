@@ -2,17 +2,29 @@
 
 
 <style type="text/css">
+  .col-md-12.mb-3{
+    padding: 0px;
+  }
+  p{
+    line-height: 1.9 !important;
+  }
   #wrapper #content-wrapper {
-    background-color: white !important;
+    background-color: #e3e6f0 !important;
   }
 
   textarea{
     background-color: white !important;
     color: black !important;
-    border-color: black !important;
+    border-color: #3490dc !important;
     box-shadow: 1px 2px 2px #cdcdcd;
     padding: 10px;
     text-align: justify !important;
+    line-height: 1.9 !important;
+    border-radius: 0 !important;
+  }
+
+  a.badge.badge-primary.text-light.font-weight-bold, .alert.alert-info.py-2.text-dark.font-weight-bold, .alert.alert-warning{
+    border-radius: 0 !important;
   }
 </style>
 @section('content')
@@ -70,7 +82,7 @@
 <div class="title-header">
     <span class="h3 ml-3 font-weight-bold">Editar Contrato</span>
     <div class="badge badge-primary lead  mr-auto float-right">sem repasse</div>
-    <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
+    <!-- <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span> -->
 </div>
 
 @if (session('status_edit'))
@@ -83,22 +95,19 @@
 </div>
 @endif
 
-<div class="card mt-5 mb-5 color-card">
+<div class="card m-2 rounded-0">
 
   <!--form id="regForm" action="/action_page.php"-->
   <form id="regForm" class="form-horizontal" method="POST" action="{{ route('contrato_sr.update', $contratos_sr->id) }}">
     {{ csrf_field() }}
     {{ method_field('PUT') }}
-    <div class="card-header py-1">
+    <div class="card-header py-1 border-0">
       <div id="step-container" class="step-container align-items-center py-3 mt-2"></div>
     </div>
-    <div id="tab-here" class="p-5 card-body mb-0"></div>
-    <!-- Circles which indicates the steps of the form: -->
-    <div class="buttonsControl card-footer bg-transparent p-0 clearfix" style="overflow:auto;">
-      <div class="m-3 mt-0 mb-0">
-        <button type="button" class="btn btn-lg btn-outline-dark font-weight-bold shadow-sm" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
-        <button type="button" class="btn btn-success btn-lg font-weight-bold shadow-sm" id="nextBtn" onclick="nextPrev(1)">Proximo</button>
-      </div>
+    <div id="tab-here" class="p-4 card-body mb-0"></div>
+    <div class="d-flex justify-content-between mb-3">
+      <div class="p-2"><button type="button" class="btn btn-lg rounded-0 btn-outline-dark font-weight-bold shadow-sm m-3" id="prevBtn" onclick="nextPrev(-1)">Anterior</button></div>
+      <div class="p-2"><button type="button" class="btn btn-lg rounded-0 btn-success font-weight-bold shadow-sm m-3" id="nextBtn" onclick="nextPrev(1)">Proximo</button></div>
     </div>
   </form><!--form-->
 
@@ -142,32 +151,32 @@
         </div>
 
         <div class="container-fluid p-0 mt-0 m-0">
-          <div class="container-fluid pb-5 pt-5 mt-0 m-0">
-          <div class="text-center row justify-content-center mb-5">
-              <img src="{{asset('assets/brazao.jpg')}}" alt="" width="10%" class="mx-auto text-center">
-            </div>
-            <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">
-            ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI
-              CELEBRAM</h5> 
-              <div class="form-row" style="justify-content: center;">
-                <div class="form-group col-md-4">
-                  <input class="mb-2 text-black form-control" type="text" name="nome_ict" onchange="handleNameICT(event)" placeholder="ICT ou ente público" value="{{$contratos_sr->nome_ict}}"> 
-                </div>
-                <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">E</h5>
-                <div class="form-group col-md-4">
-                  <input class="mb-2 text-black form-control" type="text" name="nome_parceiro" onchange="handleNameParceiro(event)" placeholder="Nome do parceiro" value="{{$contratos_sr->nome_parceiro}}">  
-                </div>
-              </div>
-              <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center">NA FORMA A SEGUIR.</h5><br>
-          </div>
 
+          <div class="text-center row justify-content-center mb-5">
+            <img src="{{asset('assets/brazao.jpg')}}" alt="" width="10%" class="mx-auto text-center">
+          </div>
+          <div class="text-center">
+            <h5 class="text-uppercase col-md-8 col-lg-8 offset-lg-2 offset-md-2 font-weight-bold roboto-font text-black mt-2 mb-3">
+            ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI
+              CELEBRAM</h5>
+          </div> 
+          <div class="form-row justify-content-center">
+            <div class="form-group col-md-4">
+              <input class="mb-2 text-black form-control" type="text" name="nome_ict" onchange="handleNameICT(event)" placeholder="ICT ou ente público" value="{{$contratos_sr->nome_ict}}"> 
+            </div>
+            <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">E</h5>
+            <div class="form-group col-md-4">
+              <input class="mb-2 text-black form-control" type="text" name="nome_parceiro" onchange="handleNameParceiro(event)" placeholder="Nome do parceiro" value="{{$contratos_sr->nome_parceiro}}">  
+            </div>
+          </div>
+          <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center">NA FORMA A SEGUIR.</h5>
+          <br>
           <div class="alert alert-warning" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             NOTAS EXPLICATIVAS!
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal">Saiba mais</button>
           </div>
-
-          
+         
           <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">ICT/ente público</h5>
 
           <div class="form-row">
@@ -277,6 +286,10 @@
             <label for="doravante" class="font-weight-bold text-black">Doravante Denominado</label>
             <input type="text" class="form-control text-black font-weight-bold" value="{{$contratos_sr->doravante_denominado}}" name="doravante_denominado" id="doravante" placeholder="ICT/Agência de Fomento">
           </div>
+          <div class="form-group col-md-4">
+            <label for="parceiro_cargo" class="font-weight-bold text-black">Cargo do representante</label>
+            <input type="text" class="form-control text-black font-weight-bold" onchange="handleCargoICT(event)" name="cargo_rep_foro" id="parceiro_cargo" value="{{$contratos_sr->cargo_rep_foro}}">
+          </div>
           </div><!-- /.row-->
           <br>
         
@@ -381,9 +394,9 @@
             <input type="text" class="form-control text-black font-weight-bold" value="{{$contratos_sr->parceiro_cargo}}" name="parceiro_cargo" id="parceiro_cargo" placeholder="">
           </div>
           </div>
-          <div class="form-group col-md-4 mt-5 py-4">
+          <!-- <div class="form-group col-md-4 mt-5 py-4">
             <button class="btn btn-lg btn-light font-weight-bold btn-block" disabled=""> <i class="fa fa-plus text-right mr-auto"></i>  Adicionar parceiro</button>
-          </div>
+          </div> -->
         </div><!--end of content-->
       </div><!--end pane-->
       <!------------------------------------------------------------------------->
@@ -423,7 +436,7 @@
           
           <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">2. CLÁUSULA SEGUNDA – DO PLANO DE TRABALHO </h4><hr>
           <!-- Nota explicativa -->
-          <div class="alert alert-warning mb-5 mt-5" role="alert">      
+          <div class="alert alert-warning mb-3 mt-3" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             NOTAS EXPLICATIVAS!
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modalExemplo12">Saiba mais</button>
@@ -434,43 +447,39 @@
           
           <!--clausula editavel 2-->
 
-          <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+          <div class="alert alert-info py-2 mt-3 mb-3 text-dark font-weight-bold" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
 
-          <div class="container-fluid pt-4 pb-4 bg-light">
+          <div class="col-md-12 mb-3">
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.2</a>
+              <textarea class="form-control" name="clausula_edit_2_2" value="{{$contratos_sr->clausula_edit_2_2}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_2}}</textarea>
+          </div>
 
-            <div class="col-md-12 mb-3">
-                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.2</a>
-                <textarea class="form-control" name="clausula_edit_2_2" value="{{$contratos_sr->clausula_edit_2_2}}" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_2}}</textarea>
-            </div>
+          <div class="col-md-12 mb-3">
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
+              <a href="#" data-toggle="modal" data-target="#modal_clausula_2_3"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_edit_2_3}}" name="clausula_edit_2_3" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_3}}</textarea>
+          </div>
 
-            <div class="col-md-12 mb-3">
-                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
-                <a href="#" data-toggle="modal" data-target="#modal_clausula_2_3"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
-                <textarea class="form-control" value="{{$contratos_sr->clausula_edit_2_3}}" name="clausula_edit_2_3" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_3}}</textarea>
-            </div>
+          <div class="col-md-12 mb-3">
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.4</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_2_4"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_edit_2_4}}" name="clausula_edit_2_4" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_4}}</textarea>
+          </div>
 
-            <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.4</a>
-              <a href="#" data-toggle="modal" data-target="#modal_clausula_2_4"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
-                <textarea class="form-control" value="{{$contratos_sr->clausula_edit_2_4}}" name="clausula_edit_2_4" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_4}}</textarea>
-            </div>
+          <div class="col-md-12 mb-3">
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.5</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_2_5"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_edit_2_5}}" name="clausula_edit_2_5" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_5}}</textarea>
+          </div>
 
-            <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.5</a>
-              <a href="#" data-toggle="modal" data-target="#modal_clausula_2_5"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
-                <textarea class="form-control" value="{{$contratos_sr->clausula_edit_2_5}}" name="clausula_edit_2_5" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_5}}</textarea>
-            </div>
-
-            <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.6</a>
-              <a href="#" data-toggle="modal" data-target="#modal_clausula_2_6"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
-                <textarea class="form-control" value="{{$contratos_sr->clausula_edit_2_6}}" name="clausula_edit_2_6" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_6}}</textarea>
-            </div>
-
-          </div><!--container-fluid-->
+          <div class="col-md-12 mb-3">
+            <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.6</a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_2_6"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_edit_2_6}}" name="clausula_edit_2_6" rows="4" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_2_6}}</textarea>
+          </div>
 
         </div>
       </div>
@@ -482,7 +491,7 @@
         <div class="text-justify text-black">
           
           <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">3. CLÁUSULA TERCEIRA – DAS ATRIBUIÇÕES E RESPONSABILIDADES</h4><hr>
-          <div class="alert alert-warning mb-5 mt-5" role="alert">      
+          <div class="alert alert-warning mb-3 mt-3" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             NOTAS EXPLICATIVAS!
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_atribuicoes">Saiba mais</button>
@@ -493,14 +502,14 @@
           <hr>      
             <b>A)</b> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;<a href="#" data-toggle="modal" data-target="#modalCoordenador"><i class="fas fa-fw fa-question-circle"></i></a>
             
-            <div class="form-group row p-2">
-              <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador ICT/Público:</label>
-              <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
-                <input type="text" name="nome_coordenador_ict" value="{{$contratos_sr->nome_coordenador_ict}}" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" placeholder="{{$contratos_sr->nome_coordenador_ict}}">
+            <div class="form-group row pt-2">
+              <label for="" class="col col-form-label font-weight-bold text-left">Nome do Coordenador ICT/Público:</label>
+              <div class="col-md-7 col-sm-12 col-lg-7 col-xl-7">
+                <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" value="{{$contratos_sr->nome_coordenador_ict}}">
               </div>
             </div>
 
-            <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+            <div class="alert alert-info py-2 mt-3 mb-3 text-dark font-weight-bold" role="alert">      
               <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">Edite a(s) cláusula(s) abaixo (se julgar necessário):
             </div>
 
@@ -515,15 +524,15 @@
                 <textarea class="form-control" value="{{$contratos_sr->clausula_edit_3_1_c}}" name="clausula_edit_3_1_c" rows="3" style="background-color: #F6FAFA; resize: none !important;" placeholder="">{{$contratos_sr->clausula_edit_3_1_c}}</textarea>
             </div>
 
-            <p class="mt-5 mb-3 roboto-font"><b>3.1.2.  Do(a) PARCEIRO PRIVADO: <input  class="myform-control" type="text" value="{{$contratos_sr->nome_parceiro}}" id="handle_parceiro" disabled></b></p>
+            <p class="mt-5 mb-3 roboto-font text-left"><b>3.1.2.  Do(a) PARCEIRO PRIVADO: <input  class="myform-control" type="text" value="{{$contratos_sr->nome_parceiro}}" id="handle_parceiro" disabled></b></p>
             <hr>
           
             <b>A)</b> Indicar um coordenador, no prazo de 15 (quinze) dias úteis contados da assinatura deste Acordo, para acompanhar a sua execução;<a href="#" data-toggle="modal" data-target="#modalCoordenadorPrivado"><i class="fas fa-fw fa-question-circle"></i></a>
             
-            <div class="form-group row p-2">
-              <label for="" class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-form-label font-weight-bold">Nome do Coordenador Parceiro Privado:</label>
-              <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
-                <input type="text" name="nome_coordenador_privado" value="{{$contratos_sr->nome_coordenador_privado}}" onchange="handleCoordenadorPrivado()" id="nome_coordenador_privado" class="form-control" placeholder="{{$contratos_sr->nome_coordenador_privado}}">
+            <div class="form-group row pt-2">
+              <label for="" class="col col-form-label font-weight-bold text-left">Nome do Coordenador Parceiro Privado:</label>
+              <div class="col-md-7 col-sm-12 col-lg-7 col-xl-7">
+                <input type="text" name="nome_coordenador_privado" onchange="handleCoordenadorPrivado()" id="nome_coordenador_ict" class="form-control" value="{{$contratos_sr->nome_coordenador_privado}}">
               </div>
             </div>
 
@@ -537,7 +546,7 @@
 
             <p><b>3.2.</b><span id="coord_ict"></span><span id="coord_privado"></span>poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.</p>
 
-            <div class="alert alert-info py-2 mt-5 mb-4 text-dark font-weight-bold" role="alert">      
+            <div class="alert alert-info py-2 mt-3 mb-4 text-dark font-weight-bold" role="alert">      
               <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">Edite a(s) cláusula(s) abaixo (se julgar necessário):
             </div>
 
@@ -600,14 +609,14 @@
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
           <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">5. CLÁUSULA QUINTA - DA PROPRIEDADE INTELECTUAL E DA CRIAÇÃO PROTEGIDA</h4><hr>
-          <div class="alert alert-warning mb-5 mt-5" role="alert">      
+          <div class="alert alert-warning mb-3 mt-3" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             NOTAS EXPLICATIVAS!
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#propriedade_intelectual">Saiba mais</button>
           </div>
         </div><!--text-justify-->
 
-        <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+        <div class="alert alert-info py-2 mt-3 mb-3 text-dark font-weight-bold" role="alert">      
           <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
           Edite a(s) cláusula(s) abaixo (se julgar necessário):
         </div>
@@ -703,7 +712,7 @@
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
           
-          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">7 CLÁUSULA SÉTIMA - DAS INFORMAÇÕES CONFIDENCIAIS E SIGILOSAS</h4><hr>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">7. CLÁUSULA SÉTIMA - DAS INFORMAÇÕES CONFIDENCIAIS E SIGILOSAS</h4><hr>
           <br>
           <p><b>7.1 </b>Os PARCEIROS adotarão todas as medidas necessárias para proteger o sigilo das INFORMAÇÕES CONFIDENCIAIS recebidas em função da celebração, desenvolvimento e execução do presente Acordo de Parceria, inclusive na adoção de medidas que assegurem a tramitação do processo, não as divulgando a terceiros, sem a prévia e escrita autorização da outro PARCEIRO.</p>
           <p><b>7.2 </b>Fica vedado aos PARCEIROS utilizar, no âmbito deste Acordo de Parceria, nomes, símbolos e imagens que caracterizem promoção pessoal de autoridades ou servidores públicos.Os PARCEIROS informarão aos seus funcionários e prestadores de serviços e consultores que necessitem ter acesso às informações e conhecimentos que envolvem o objeto do Acordo, acerca das obrigações de sigilo assumidas, responsabilizando-se integralmente por eventuais infrações que estes possam cometer. </p>
@@ -723,25 +732,23 @@
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#confidencial">Saiba mais</button>
           </div>
 
-          <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+          <div class="alert alert-info py-2 mt-3 mb-3 text-dark font-weight-bold" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
 
-          <div class="container-fluid bg-light p-3 pt-4 pb-4">
-            <div class="col-md-12 mb-3">
-                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.6</a>
-                <textarea class="form-control" value="{{$contratos_sr->clausula_edit_7_6}}" name="clausula_edit_7_6" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_7_6}}</textarea>
-            </div>
-            <div class="col-md-12 mb-3">
-                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.7</a>
-                <textarea class="form-control" value="{{$contratos_sr->clausula_edit_7_7}}" name="clausula_edit_7_7" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_7_7}}</textarea>
-            </div>
-            <div class="col-md-12 mb-3">
-                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.8</a>
-                <textarea class="form-control" value="{{$contratos_sr->clausula_edit_7_8}}" name="clausula_edit_7_8" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_7_8}}</textarea>
-            </div>
-          </div><!--container-->
+          <div class="col-md-12 mb-3">
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.6</a>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_edit_7_6}}" name="clausula_edit_7_6" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_7_6}}</textarea>
+          </div>
+          <div class="col-md-12 mb-3">
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.7</a>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_edit_7_7}}" name="clausula_edit_7_7" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_7_7}}</textarea>
+          </div>
+          <div class="col-md-12 mb-3">
+              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.8</a>
+              <textarea class="form-control" value="{{$contratos_sr->clausula_edit_7_8}}" name="clausula_edit_7_8" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_7_8}}</textarea>
+          </div>
 
         </div>
       </div>
@@ -752,15 +759,15 @@
         
 
         <div class="text-justify text-black">
-          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">8 CLÁUSULA OITAVA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h4><hr>
-          <div class="alert alert-warning mb-5 mt-5" role="alert">      
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">8. CLÁUSULA OITAVA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h4><hr>
+          <div class="alert alert-warning mb-3 mt-3" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             NOTAS EXPLICATIVAS!
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#propriedade_intelectual">Saiba mais</button>
           </div>
         </div><!--text-justify-->
 
-        <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+        <div class="alert alert-info py-2 mt-3 mb-3 text-dark font-weight-bold" role="alert">      
           <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
           Edite a(s) cláusula(s) abaixo (se julgar necessário):
         </div>
@@ -770,7 +777,7 @@
           <div class="col-md-12 mb-3">
             <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.1</a>
             <a href="#" data-toggle="modal" data-target="#modal_clausula_8_all"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
-            <textarea class="form-control" value="{{$contratos_sr->clausula_edit_8_1}}" name="clausula_edit_8_1" rows="8" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_1}}</textarea>
+            <textarea class="form-control" value="{{$contratos_sr->clausula_edit_8_1}}" name="clausula_edit_8_1" rows="6" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_1}}</textarea>
           </div>
 
           <div class="col-md-12 mb-3">
@@ -912,25 +919,25 @@
         <div class="col-md-12 mb-3">
           <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.2</a>
           <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
-          <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_13_2}}" name="clausula_edit_13_2" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_13_2}}</textarea>
+          <textarea class="form-control text-justify" value="{{$contratos_sr->clausula_edit_13_2}}" name="clausula_edit_13_2" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_13_2}}</textarea>
         </div>
 
         <div class="col-md-12 mb-3">
           <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.2.1</a>
           <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
-          <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_13_2_1}}" name="clausula_edit_13_2_1" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_13_2_1}}</textarea>
+          <textarea class="form-control text-justify" value="{{$contratos_sr->clausula_edit_13_2_1}}" name="clausula_edit_13_2_1" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_13_2_1}}</textarea>
         </div>
 
         <div class="col-md-12 mb-3">
           <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.2.2</a>
           <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
-          <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_13_2_2}}" name="clausula_edit_13_2_2" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_13_2_2}}</textarea>
+          <textarea class="form-control text-justify" value="{{$contratos_sr->clausula_edit_13_2_2}}" name="clausula_edit_13_2_2" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_13_2_2}}</textarea>
         </div>
 
         <div class="col-md-12 mb-3">
           <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.3</a>
           <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
-          <textarea class="form-control font-weight-bold text-justify" value="{{$contratos_sr->clausula_edit_13_3}}" name="clausula_edit_13_3" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_13_3}}</textarea>
+          <textarea class="form-control text-justify" value="{{$contratos_sr->clausula_edit_13_3}}" name="clausula_edit_13_3" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_13_3}}</textarea>
         </div>
         
 

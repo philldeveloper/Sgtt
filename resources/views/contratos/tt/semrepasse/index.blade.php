@@ -608,14 +608,14 @@
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
           <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">5. CLÁUSULA QUINTA - DA PROPRIEDADE INTELECTUAL E DA CRIAÇÃO PROTEGIDA</h4><hr>
-          <div class="alert alert-warning mb-5 mt-5" role="alert">      
+          <div class="alert alert-warning mb-3 mt-3" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             NOTAS EXPLICATIVAS!
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#propriedade_intelectual">Saiba mais</button>
           </div>
         </div><!--text-justify-->
 
-        <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+        <div class="alert alert-info py-2 mt-3 mb-3 text-dark font-weight-bold" role="alert">      
           <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
           Edite a(s) cláusula(s) abaixo (se julgar necessário):
         </div>
@@ -711,7 +711,7 @@
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-justify text-black">
           
-          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">7 CLÁUSULA SÉTIMA - DAS INFORMAÇÕES CONFIDENCIAIS E SIGILOSAS</h4><hr>
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">7. CLÁUSULA SÉTIMA - DAS INFORMAÇÕES CONFIDENCIAIS E SIGILOSAS</h4><hr>
           <br>
           <p><b>7.1 </b>Os PARCEIROS adotarão todas as medidas necessárias para proteger o sigilo das INFORMAÇÕES CONFIDENCIAIS recebidas em função da celebração, desenvolvimento e execução do presente Acordo de Parceria, inclusive na adoção de medidas que assegurem a tramitação do processo, não as divulgando a terceiros, sem a prévia e escrita autorização da outro PARCEIRO.</p>
           <p><b>7.2 </b>Fica vedado aos PARCEIROS utilizar, no âmbito deste Acordo de Parceria, nomes, símbolos e imagens que caracterizem promoção pessoal de autoridades ou servidores públicos.Os PARCEIROS informarão aos seus funcionários e prestadores de serviços e consultores que necessitem ter acesso às informações e conhecimentos que envolvem o objeto do Acordo, acerca das obrigações de sigilo assumidas, responsabilizando-se integralmente por eventuais infrações que estes possam cometer. </p>
@@ -731,7 +731,7 @@
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#confidencial">Saiba mais</button>
           </div>
 
-          <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+          <div class="alert alert-info py-2 mt-3 mb-3 text-dark font-weight-bold" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
@@ -762,14 +762,14 @@
 
         <div class="text-justify text-black">
           <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">8 CLÁUSULA OITAVA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h4><hr>
-          <div class="alert alert-warning mb-5 mt-5" role="alert">      
+          <div class="alert alert-warning mb-3 mt-3" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             NOTAS EXPLICATIVAS!
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#anti_corrupcao">Saiba mais</button>
           </div>
         </div><!--text-justify-->
 
-        <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
+        <div class="alert alert-info py-2 mt-3 mb-3 text-dark font-weight-bold" role="alert">      
           <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
           Edite a(s) cláusula(s) abaixo (se julgar necessário):
         </div>
@@ -1141,7 +1141,7 @@
       </div>
     </div>
     <!------------------------------------------------------------------------->
-    <div class="tab-pane " id="clausulaF" role="tabpanel" aria-labelledby="clausulaF-tab">
+    <div class="tab-pane" id="clausulaF" role="tabpanel" aria-labelledby="clausulaF-tab">
       <div class="container-fluid p-0 mt-0 m-0">
         <div class="text-black">
 

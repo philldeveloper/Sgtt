@@ -4,21 +4,28 @@
 <style type="text/css">
 
   #wrapper #content-wrapper {
-    background-color: white !important;
+    background-color: #e3e6f0 !important;
   }
 
   textarea{
     background-color: white !important;
-    /* color: black !important; */
-    border-color: black !important;
+    color: black !important;
+    border-color: #3490dc !important;
     box-shadow: 1px 2px 2px #cdcdcd;
     padding: 10px;
     text-align: justify !important;
-    font-weight: bold !important;
+    line-height: 1.9 !important;
+    border-radius: 0 !important;
   }
   input, span, p{
     /* color: black !important; */
     text-align: justify !important;
+  }
+  p{
+    line-height: 1.9 !important;
+  }
+  a.badge.badge-primary.text-light.font-weight-bold, .alert.alert-info.py-2.text-dark.font-weight-bold, .alert.alert-warning{
+    border-radius: 0 !important;
   }
 
 </style>
@@ -65,87 +72,39 @@
 <div class="title-header">
     <span class="h3 ml-3 font-weight-bold">Exibir Contrato <span class="badge badge-primary">{{$contratos_sr->id}}</span></span>
     <div class="badge badge-primary lead  mr-auto float-right">sem repasse</div>
-    <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
+    <!-- <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>\ -->
 </div>
 
 
-<div class="card mt-5 mb-5 color-card">
+<div class="card m-2 rounded-0">
 
-  <!--form id="regForm" action="/action_page.php"-->
-  <!-- <form id="regForm" class="form-horizontal" method="POST" action="{{ route('contrato_sr.store') }}"> -->
   <form action="">
     {{ csrf_field() }}
-    <div class="card-header py-1">
+    <div class="card-header py-1 border-0">
         <div id="step-container" class="step-container align-items-center py-3 mt-2"></div>
     </div>
-    <div id="tab-here" class="p-5 card-body mb-0"></div>
-    <!-- Circles which indicates the steps of the form: -->
-    <div class="buttonsControl card-footer bg-transparent p-0 clearfix" style="overflow:auto;">
-        <div class="m-3 mt-0 mb-0">
-          <button type="button" class="btn btn-lg btn-outline-dark font-weight-bold shadow-sm" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
-          <button type="button" class="btn btn-success btn-lg font-weight-bold shadow-sm" id="nextBtn" onclick="nextPrev(1)">Proximo</button>
-        </div>
-      </div>
+    <div id="tab-here" class="p-4 card-body mb-0"></div>
+    <div class="d-flex justify-content-between mb-3">
+      <div class="p-2"><button type="button" class="btn btn-lg rounded-0 btn-outline-dark font-weight-bold shadow-sm m-3" id="prevBtn" onclick="nextPrev(-1)">Anterior</button></div>
+      <div class="p-2"><button type="button" class="btn btn-lg rounded-0 btn-success font-weight-bold shadow-sm m-3" id="nextBtn" onclick="nextPrev(1)">Proximo</button></div>
+    </div>
   </form>
 
   <div class="container-fluid">
     <div class="tab-pane show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-      <!-- <div class="modal-alert modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title font-weight-bold" id="exampleModalLabel">NOTAS EXPLICATIVAS</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-              <div class="modal-body font-weight-bold"><p class="lead">
-
-              <span class="font-weight-bold text-dark">ESTA MINUTA DEVE SER UTILIZADA PARA ACORDOS DE PARCERIA PARA
-              PD&I QUANDO NÃO HOUVER REPASSE DE RECURSOS ENTRE OS PARCEIROS.</span><br>
-
-              Este tipo de Acordo é apropriado para ser utilizado na construção de ambientes inovadores
-              (como parques tecnológico, co-working, entre outras possibilidades), servindo como
-              instrumento que estabelece as regras de interação entre os parceiros. Pode tanto ser usado em
-              relações bilaterais como multilaterais.
-              <b>BASE LEGAL: ARTIGO 9º DA LEI Nº 10.973/04.</b> <br>
-              Caso se trate da hipótese de Acordo com transferência de recursos do parceiro privado para o
-              projeto (§§ 6º e 7º do Artigo 35 do Decreto nº 9.283/18.), deverá ser utilizada a outra minuta
-              apropriada para esta situação. <br>
-              Alguns itens receberão notas explicativas destacadas para compreensão do agente ou setor
-              responsável pela elaboração das minutas, que deverão ser devidamente suprimidas quando da
-              finalização do documento. 
-              <br/>No modelo a seguir, deve-se observar que há duas cores:<br/>
-              <br/>- os itens escritos na cor <b>PRETA</b> devem ser mantidos, podendo eventualmente serem alterados ou excluídos diante do caso concreto, e;
-              <br/>-  aqueles redigidos na cor <span class="text-blue font-weight-bold">AZUL</span> são textos que dependem de situações específicas ou se trata de textos sugestivos. Cabe a cada entidade verificar o que deve ser escrito nestes itens e decidir se eles serão ou não mantidos na redação final do Acordo. 
-              </p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn-lg btn-primary" data-dismiss="modal">Fechar</button>
-              </div>
-          </div>
-        </div>
-      </div> -->
-
       <div class="container-fluid p-0 mt-0 m-0">
-        <div class="container-fluid pb-5 pt-5 mt-0 m-0 text-center">
-          <div class="text-center row justify-content-center mb-5">
-            <img src="{{asset('assets/brazao.jpg')}}" alt="" width="10%" class="mx-auto text-center">
-          </div>
-          <h5 class="text-uppercase font-weight-bold roboto-font text-black ">
-            ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI
-            CELEBRAM <input class="mb-2  myform-control text-black" type="text" name="nome_ict" onchange="handleNameICT(event)" placeholder="{{$contratos_sr->nome_ict}}" disabled=""> E 
-            <input class="mb-2  myform-control text-black" type="text" name="nome_parceiro" onchange="handleNameParceiro(event)" placeholder="{{$contratos_sr->nome_parceiro}}" disabled=""> 
-            NA FORMA A SEGUIR.</h5><br>
+        <div class="text-center row justify-content-center mb-5">
+          <img src="{{asset('assets/brazao.jpg')}}" alt="" width="10%" class="mx-auto text-center">
+        </div>
+        <div class="text-center">
+        <h5 class="text-uppercase col-md-10 col-lg-10 offset-lg-1 offset-md-1 font-weight-bold roboto-font text-black mt-2 mb-3">
+          ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI
+          CELEBRAM <span onchange="handleNameICT(event)">{{$contratos_sr->nome_ict}}</span> E 
+          <span onchange="handleNameParceiro(event)">{{$contratos_sr->nome_parceiro}}</span> 
+          NA FORMA A SEGUIR.</h5>
         </div>
 
-        <!-- <div class="alert alert-warning" role="alert">      
-          <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
-          NOTAS EXPLICATIVAS!
-          <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal">Saiba mais</button>
-        </div> -->
-
-        <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">ICT/ente público</h4><hr><br>
+        <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mt-5">ICT/ente público</h4><hr><br>
 
         <div class="form-row">
           <div class="form-group col-md-4">
@@ -222,6 +181,10 @@
         <div class="form-group col-md-3">
           <label for="inputPassword4" class="font-weight-bold text-black">Doravante Denominado</label>
           <input type="text" class="form-control text-black font-weight-bold" name="doravante_denominado" id="inputPassword4" placeholder="{{$contratos_sr->doravante_denominado}}" disabled="">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="parceiro_cargo" class="font-weight-bold text-black">Cargo do representante</label>
+          <input type="text" class="form-control text-black font-weight-bold" onchange="handleCargoICT(event)" name="cargo_rep_foro" id="parceiro_cargo" placeholder="{{$contratos_sr->parceiro_cargo}}" disabled="">
         </div>
         </div><!-- /.row-->
         <br>
@@ -365,13 +328,15 @@
       @include('contratos.tt.semrepasse.clausulas.clausula_17')             
     </div>
     <!------------------------------------------------------------------------->
-    <div class="tab-pane " id="clausulaF" role="tabpanel" aria-labelledby="clausulaF-tab">
-        <div class="container-fluid p-0 mt-0 m-0">
-          <div class="text-black">
-            <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black bg-light p-2 mb-3">SEU CONTRATO ESTÁ PRONTO.<a href="#"><i class="fas fa-fw fa-check ml-2"></i></a></h5>
-            <p>Clique em enviar, e você será redirecionado para a tela inicial onde poderá visualizar seu contrato. </p><br>
-          </div>
+    <div class="tab-pane" id="clausulaF" role="tabpanel" aria-labelledby="clausulaF-tab">
+      <div class="container-fluid p-0 mt-0 m-0">
+        <div class="text-black">
+          <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">SEU CONTRATO ESTÁ PRONTO.<i class="fas fa-fw fa-check ml-2"></i></h4><hr>
+          <br>
+          <p>Clique em enviar, e você será redirecionado para a tela inicial onde poderá visualizar seu contrato. </p><br>
+          <!-- <a href="{{route('home')}}" class="btn btn-primary p-2 btn-lg col-4">Ver Contrato</a> -->
         </div>
+      </div>
     </div>
     <!------------------------------------------------------------------------->   
   </div><!--container-fluid-->
