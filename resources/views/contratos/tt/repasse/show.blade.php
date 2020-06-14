@@ -1,24 +1,29 @@
 @extends('layouts.admin')
 
 <style type="text/css">
+  .col-md-12.mb-3{
+    padding: 0px;
+  }
+  p{
+    line-height: 1.9 !important;
+  }
   #wrapper #content-wrapper {
-    background-color: white !important;
+    background-color: #e3e6f0 !important;
   }
 
-  input{
-    text-transform: uppercase !important;
-    font-weight: bold !important;
-    color: black !important;
-  }
   textarea{
+    background-color: white !important;
     color: black !important;
     border-color: #3490dc !important;
     box-shadow: 1px 2px 2px #cdcdcd;
     padding: 10px;
     text-align: justify !important;
+    line-height: 1.9 !important;
+    border-radius: 0 !important;
   }
-  body, p{
-    line-height: 1cm !important;
+
+  a.badge.badge-primary.text-light.font-weight-bold, .alert.alert-info.py-2.text-dark.font-weight-bold, .alert.alert-warning{
+    border-radius: 0 !important;
   }
 </style>
 
@@ -66,26 +71,21 @@
 <div class="title-header">
     <span class="h3 ml-3 font-weight-bold text-primary">Exibir Contrato <span class="badge badge-primary">{{$contratos_cr->id}}</span></span>
     <div class="badge badge-success lead  mr-auto float-right">Com repasse</div>
-    <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
+    <!-- <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span> -->
 </div>
 
-
-
-<div class="card mt-5 mb-5 color-card">
+<div class="card m-2 rounded-0">
 
 
 <form id="regForm" class="form-horizontal" method="POST" action="">
     {{ csrf_field() }}
-    <div class="card-header py-1">
+    <div class="card-header border-0 py-1">
       <div id="step-container" class="step-container align-items-center py-3 mt-2"></div>
     </div>
-    <div id="tab-here" class="p-5 card-body mb-0"></div>
-    <!-- Circles which indicates the steps of the form: -->
-    <div class="buttonsControl card-footer bg-transparent p-0 clearfix" style="overflow:auto;">
-      <div class="m-3 mt-0 mb-0">
-        <button type="button" class="btn btn-lg btn-outline-dark font-weight-bold shadow-sm" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
-        <button type="button" class="btn btn-success btn-lg font-weight-bold shadow-sm" id="nextBtn" onclick="nextPrev(1)">Proximo</button>
-      </div>
+    <div id="tab-here" class="p-4 card-body mb-0"></div>
+    <div class="d-flex justify-content-between mb-3">
+      <div class="p-2"><button type="button" class="btn btn-lg rounded-0 btn-outline-dark font-weight-bold shadow-sm m-3" id="prevBtn" onclick="nextPrev(-1)">Anterior</button></div>
+      <div class="p-2"><button type="button" class="btn btn-lg rounded-0 btn-success font-weight-bold shadow-sm m-3" id="nextBtn" onclick="nextPrev(1)">Proximo</button></div>
     </div>
   </form><!--form-->
 
@@ -127,33 +127,25 @@
 
             <div class="container-fluid p-0 mt-0 m-0">
 
-              <div class="container-fluid pb-5 pt-5 mt-0 m-0">
-                <div class="text-center row justify-content-center mb-5">
-                  <img src="{{asset('assets/brazao.jpg')}}" alt="" width="10%" class="mx-auto text-center">
-                </div>
-                <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">
+              <div class="text-center row justify-content-center mb-5">
+                <img src="{{asset('assets/brazao.jpg')}}" alt="" width="10%" class="mx-auto text-center">
+              </div>
+              <div class="text-center">
+              <h5 class="text-uppercase col-md-10 col-lg-10 offset-lg-1 offset-md-1 font-weight-bold roboto-font text-black mt-2 mb-3">
                 ACORDO DE  PARCERIA  PARA  PESQUISA, DESENVOLVIMENTO E INOVAÇÃO - PD&I QUE ENTRE SI
-                  CELEBRAM</h5> 
-                  <div class="form-row" style="justify-content: center;">
-                    <div class="form-group col-md-4">
-                      <input class="mb-2 text-black form-control text-uppercase font-weight-bold" disabled readonly="" type="text" name="nome_ict" onchange="handleNameICT(event)" placeholder="{{$contratos_cr->nome_ict}}"> 
-                    </div>
-                    <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">E</h5>
-                    <div class="form-group col-md-4">
-                      <input class="mb-2 text-black form-control text-uppercase font-weight-bold" disabled readonly="" type="text" name="nome_parceiro" onchange="handleNameParceiro(event)"  placeholder="{{$contratos_cr->nome_parceiro}}">  
-                    </div>
-                  </div>
-                 <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center">NA FORMA A SEGUIR.</h5><br>
+                CELEBRAM <span onchange="handleNameICT(event)">{{$contratos_cr->nome_ict}}</span> E 
+                <span onchange="handleNameParceiro(event)">{{$contratos_cr->nome_parceiro}}</span> 
+                NA FORMA A SEGUIR.</h5>
               </div>
 
-              <div class="alert alert-warning" role="alert">      
+              <!-- <div class="alert alert-warning" role="alert">      
                 <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                 NOTAS EXPLICATIVAS!
                 <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal1">Saiba mais</button>
-              </div>
+              </div> -->
 
               <form class="p-0 m-0">
-              <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">ICT/ente público</h5>
+              <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mt-5">ICT/ente público</h4><hr><br>
   
               <div class="form-row">
                 <div class="form-group col-md-4">
@@ -231,6 +223,10 @@
                 <label for="inputPassword4" class="font-weight-bold text-black">Doravante Denominado</label>
                 <input type="text" class="form-control text-black font-weight-bold"  id="doravante_denominado" name="doravante_denominado" placeholder="{{$contratos_cr->doravante_denominado}}" disabled="">
               </div>
+              <div class="form-group col-md-4">
+                <label for="parceiro_cargo" class="font-weight-bold text-black">Cargo do representante</label>
+                <input type="text" class="form-control text-black font-weight-bold" onchange="handleCargoICT(event)" name="cargo_rep_foro" id="parceiro_cargo" placeholder="{{$contratos_cr->parceiro_cargo}}" disabled="">
+              </div>
              </div><!-- /.row-->
              <br>
             </form>
@@ -240,7 +236,7 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <form class="p-0 m-0">
               
-              <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">2º PARCEIRO</h5>
+              <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">2° Parceiro</h4><hr><br>
   
               <div class="form-row">
                 <div class="form-group col-md-4">
@@ -402,16 +398,8 @@
                 <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">1. Cláusula Primeira - do Objeto</h4><hr><br>
     
                 <p><b>1.1</b> O presente Acordo de Parceria para PD&I tem por objeto a cooperação técnica e científica entre os PARTÍCIPES 
-                para desenvolver
-                o <br>
-                
-                <a href="#" data-toggle="modal" data-target="#modalExemplo10"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-                <div class="form-group col-md-12"><textarea class="form-control" name="clausula_descricao" readonly="">{{$contratos_cr->clausula_descricao}}</textarea></div>
-
-
-                <br>a ser executado nos termos do Plano de Trabalho, anexo, visando à transferência de recursos financeiros, à
-                 gestão administrativa e financeira e à execução técnica de projeto de pesquisa, desenvolvimento e inovação – PD&I.
-                </p>
+                para desenvolver o {{$contratos_cr->clausula_descricao}}, a ser executado nos termos do Plano de Trabalho, anexo, visando à 
+                transferência de recursos financeiros, à gestão administrativa e financeira e à execução técnica de projeto de pesquisa, desenvolvimento e inovação – PD&I.</p>
               </div>
             </div>
   
@@ -442,57 +430,47 @@
               <div class="text-justify text-black">
                 
                 <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">2. CLÁUSULA SEGUNDA – DO PLANO DE TRABALHO</h4><hr><br>
-                <div class="alert alert-warning" role="alert">      
+                <!-- <div class="alert alert-warning" role="alert">      
                   <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                     NOTAS EXPLICATIVAS!
                   <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal">Saiba mais</button>
-                </div> 
+                </div>  -->
                 <p><b>2.1 </b>O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
   
                 <p><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a(o) ICT 
                 <input type="text" class="myform-control text-black" id="handle_ict" disabled placeholder="{{$contratos_cr->nome_ict}}" placeholder="Nome da ICT/Agência de Fomento">
                 <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
-                <div class="alert alert-warning" role="alert">      
-            <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
-              NOTAS EXPLICATIVAS!
-            <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal2">Saiba mais</button>
-          </div> 
-            <div class="modal-alert modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title font-weight-bold" id="exampleModalLabel">NOTAS EXPLICATIVAS</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p class="lead">Cláusula abaixo são obrigatórias para ICTs, cabendo as Agências de Fomento verificar se há interesse na sua inclusão no Acordo.</p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn-lg btn-primary" data-dismiss="modal">Fechar</button>
-                  </div>
-                </div>
-              </div><!--modal-dialog-->
-            </div><!--modal-alert-->  
-            
-            <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
-                <textarea class="form-control" disabled name="clausula_edit_2_3" rows="3" disabled>{{$contratos_cr->clausula_edit_2_3}}</textarea>
-              </div>
-              <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.4</a>
-                <textarea class="form-control" disabled name="clausula_edit_2_4" rows="3" disabled>{{$contratos_cr->clausula_edit_2_4}}</textarea>
-              </div>
-              <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.5</a>
-                <textarea class="form-control" disabled name="clausula_edit_2_5" rows="3" disabled>{{$contratos_cr->clausula_edit_2_5}}</textarea>
-              </div>
-              <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.6</a>
-                <textarea class="form-control" disabled name="clausula_edit_2_6" rows="3" disabled>{{$contratos_cr->clausula_edit_2_6}}</textarea>
-              </div>
                 
+                <!-- <div class="alert alert-warning" role="alert">      
+                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+                    NOTAS EXPLICATIVAS!
+                  <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal2">Saiba mais</button>
+                </div> -->
+
+                <div class="modal-alert modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title font-weight-bold" id="exampleModalLabel">NOTAS EXPLICATIVAS</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p class="lead">Cláusula abaixo são obrigatórias para ICTs, cabendo as Agências de Fomento verificar se há interesse na sua inclusão no Acordo.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn-lg btn-primary" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div><!--modal-dialog-->
+                </div><!--modal-alert-->  
+
+                <p><b>2.3 </b>{{$contratos_cr->clausula_edit_2_3}}</p>
+                <p><b>2.3 </b>{{$contratos_cr->clausula_edit_2_4}}</p>
+                <p><b>2.3 </b>{{$contratos_cr->clausula_edit_2_5}}</p>
+                <p><b>2.3 </b>{{$contratos_cr->clausula_edit_2_6}}</p>
+          
               </div>
             </div>
   
@@ -505,8 +483,9 @@
               <div class="text-justify text-black">
                 
                 <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">3 CLÁUSULA TERCEIRA – DAS ATRIBUIÇÕES E RESPONSABILIDADES</h4><hr><br>
+                
                 <!--  Nota explicativa 3 -->
-                <div class="alert alert-warning" role="alert">      
+                <!-- <div class="alert alert-warning" role="alert">      
                   <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
                     NOTAS EXPLICATIVAS!
                   <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal3">Saiba mais</button>
@@ -528,7 +507,8 @@
                           </div>
                       </div>
                     </div>
-                  </div><!--modal-alert-->
+                </div> -->
+
                 <p><b>3.1 </b>São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I:</p>
                 <p class="mt-3 roboto-font"><b>3.1.1. Do(a) ICT:</b><input type="text" disabled readonly="" class="myform-control" id="handle_ict" placeholder="{{$contratos_cr->nome_ict}}" disabled><a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a></p><hr>
                 <p><b>A)</b> Aplicar os recursos repassados exclusivamente nas atividades relacionadas à consecução do objeto deste Acordo de Parceria para PD&I ;</p>
@@ -566,83 +546,27 @@
                 <div class="dropdown-divider"></div>
         
                 @if($contratos_cr->nome_inst_fundacao)
-                <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
-                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
-                  Edite a(s) cláusula(s) abaixo (se julgar necessário):
-                </div>
-
-                <div id="clausula_apoio_wrapper">
-                  <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a): <input disabled readonly="" type="text" class="myform-control" name="nome_inst_fundacao" id="nome_inst_fundacao" value="{{$contratos_cr->nome_inst_fundacao}}" placeholder="Instituição"> <a href="#" data-toggle="modal" data-target="#modalFundApoio"><i class="fas fa-fw fa-question-circle"></i></a>:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p>
-                  <div class="col-md-12 mb-3">
-                    <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 3.1.3 - LETRA A</a>
-                    <textarea  name="clausula_edit_3a" class="form-control text-justify" disabled readonly="" style="background-color: #F6FAFA; resize: none !important;"  id="" cols="30" rows="3">{{$contratos_cr->clausula_edit_3a}}</textarea>
-                  </div>
-                  <div class="col-md-12 mb-3">
-                    <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 3.1.3 - LETRA B</a>
-                    <textarea  name="clausula_edit_3b" class="form-control text-justify" disabled readonly="" style="background-color: #F6FAFA; resize: none !important;" id="" cols="30" rows="3">{{$contratos_cr->clausula_edit_3b}}</textarea>
-                  </div>
-                  <div class="col-md-12 mb-3">
-                    <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 3.1.3 - LETRA C</a>
-                    <textarea  name="clausula_edit_3c" class="form-control text-justify" disabled readonly="" style="background-color: #F6FAFA; resize: none !important;" id="" cols="30" rows="3">{{$contratos_cr->clausula_edit_3c}}</textarea>
-                  </div>
-                  <div class="col-md-12 mb-3">
-                    <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 3.1.3 - LETRA D</a>
-                    <textarea class="form-control text-justify" disabled readonly="" name="clausula_edit_3d" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3d}}</textarea>
-                  </div>
-                  <div class="col-md-12 mb-3">
-                    <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 3.1.3 - LETRA E</a>
-                    <textarea class="form-control text-justify" disabled readonly="" name="clausula_edit_3e" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3e}}</textarea>
-                  </div>
-                  <div class="col-md-12 mb-3">
-                    <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 3.1.3 - LETRA F</a>
-                    <textarea class="form-control text-justify" disabled readonly="" name="clausula_edit_3f" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3f}}</textarea>
-                  </div>
-                  <div class="col-md-12 mb-3">
-                    <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 3.1.3 - LETRA G</a>
-                    <textarea class="form-control text-justify" disabled readonly="" name="clausula_edit_3g" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3g}}</textarea>
-                  </div>
-                  <div class="col-md-12 mb-3">
-                    <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 3.1.3 - LETRA H</a>
-                    <textarea class="form-control text-justify" disabled readonly="" name="clausula_edit_3h" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3h}}</textarea>
-                  </div>
-                  <div class="col-md-12 mb-3">
-                    <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 3.1.3 - LETRA I</a>
-                    <textarea class="form-control text-justify" disabled readonly="" name="clausula_edit_3i" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3i}}</textarea>
-                  </div>
-                  <div class="col-md-12 mb-3">
-                    <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 3.1.3 - LETRA J</a>
-                    <textarea class="form-control text-justify" disabled readonly="" name="clausula_edit_3j" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3j}}</textarea>
-                  </div>
-                  <div class="col-md-12 mb-3">
-                    <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 3.1.3 - LETRA K</a>
-                    <textarea class="form-control text-justify" disabled readonly="" name="clausula_edit_3k" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3k}}</textarea>
-                  </div>
-                  <div class="col-md-12 mb-3">
-                    <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 3.1.3 - LETRA L</a>
-                    <textarea class="form-control text-justify" disabled readonly="" name="clausula_edit_3l" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3l}}</textarea>
-                  </div>
-                  <div class="col-md-12 mb-3">
-                    <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 3.1.3 - LETRA M</a>
-                    <textarea class="form-control text-justify" disabled readonly="" name="clausula_edit_3m" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3m}}</textarea>
-                  </div>
-                  <div class="col-md-12 mb-3">
-                    <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 3.1.3 - LETRA N</a>
-                    <textarea class="form-control text-justify" disabled readonly="" name="clausula_edit_3n" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3n}}</textarea>
-                  </div>
-                </div><!--clausula_apoio_wrapper-->
+                  <div id="clausula_apoio_wrapper">
+                    <p class="ml-2 bg-light roboto-font"><b>3.1.3.  Do(a): <input disabled readonly="" type="text" class="myform-control" name="nome_inst_fundacao" id="nome_inst_fundacao" value="{{$contratos_cr->nome_inst_fundacao}}" placeholder="Instituição"> <a href="#" data-toggle="modal" data-target="#modalFundApoio"><i class="fas fa-fw fa-question-circle"></i></a>:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p>
+                    <p><b>A) </b>{{$contratos_cr->clausula_edit_3a}}</p>
+                    <p><b>B) </b>{{$contratos_cr->clausula_edit_3b}}</p>
+                    <p><b>C) </b>{{$contratos_cr->clausula_edit_3c}}</p>
+                    <p><b>D) </b>{{$contratos_cr->clausula_edit_3d}}</p>
+                    <p><b>E) </b>{{$contratos_cr->clausula_edit_3e}}</p>
+                    <p><b>F) </b>{{$contratos_cr->clausula_edit_3f}}</p>
+                    <p><b>G) </b>{{$contratos_cr->clausula_edit_3g}}</p>
+                    <p><b>H) </b>{{$contratos_cr->clausula_edit_3h}}</p>
+                    <p><b>I) </b>{{$contratos_cr->clausula_edit_3i}}</p>
+                    <p><b>J) </b>{{$contratos_cr->clausula_edit_3j}}</p>
+                    <p><b>K) </b>{{$contratos_cr->clausula_edit_3k}}</p>
+                    <p><b>L) </b>{{$contratos_cr->clausula_edit_3l}}</p>
+                    <p><b>M) </b>{{$contratos_cr->clausula_edit_3m}}</p>
+                    <p><b>N) </b>{{$contratos_cr->clausula_edit_3n}}</p>
+                  </div><!--clausula_apoio_wrapper-->
                 @endif
             
                 <p><b>3.2.</b> <span id="coord_ict"></span><span id="coord_privado"></span> poderão ser substituídos a qualquer tempo, competindo a cada <b>PARCEIRO</b> comunicar ao (s) outro (s) acerca desta alteração.<br></p>
-                <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
-                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
-                  Edite a(s) cláusula(s) abaixo (se julgar necessário):
-                </div>
-
-                <!--clausula editavel 3_3-->
-                <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 3.3</a>
-                  <textarea class="form-control" disabled readonly="" name="clausula_edit_3_3" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_3_3}}</textarea>
-                </div>
+                <p><b>3.3 </b>{{$contratos_cr->clausula_edit_3_3}}</p>
               </div>
             </div><!--end of tab-content: insert all these here!-->
         <!------------------------------------------------------------------------->
@@ -652,11 +576,12 @@
               <div class="text-justify text-black">
                 
                 <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">4. CLÁUSULA QUARTA - DOS RECURSOS FINANCEIROS</h4><hr><br>
-                <div class="alert alert-warning" role="alert">      
-                <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
-                  NOTAS EXPLICATIVAS!
-                <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_clausula_4">Saiba mais</button>
-              </div>
+                <!-- <div class="alert alert-warning" role="alert">      
+                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+                    NOTAS EXPLICATIVAS!
+                  <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_clausula_4">Saiba mais</button>
+                </div> -->
+
                 <p>
                   <b>4.1.</b> O (A) <input class="myform-control text-black font-weight-bold" type="text" placeholder="{{$contratos_cr->nome_ict}}" disabled="">
                    transferirá recursos financeiros no valor total de R$ <input class="myform-control text-black font-weight-bold" type="text" name="valor_financeiro" id="valor_financeiro" placeholder="{{$contratos_cr->valor_financeiro}}" disabled="">
@@ -689,37 +614,14 @@
                   <b>4.7.1.</b>Os valores dos recursos financeiros previstos nesta cláusula poderão ser alterados por meio de termo aditivo, com as necessárias justificativas e de comum acordo entre os PARCEIROS, o que implicará   a revisão das metas pactuadas e a alteração do Plano de Trabalho. 
                 </p>
 
-                <!--clausula editavel 4-->
+              <!--clausula editavel 4-->
+              <p><b>4.8</b> {{$contratos_cr->clausula_edit_4_8}}</p>
+              <p><b>4.8.1</b> {{$contratos_cr->clausula_edit_4_8_1}}</p>
+              <p><b>4.8.2</b> {{$contratos_cr->clausula_edit_4_8_2}}</p>
+              <p><b>4.9</b> {{$contratos_cr->clausula_edit_4_9}}</p>
+              <p><b>4.9.1</b> {{$contratos_cr->clausula_edit_4_9_1}}</p>
+              <p><b>4.10</b> {{$contratos_cr->clausula_edit_4_10}}</p>
 
-              <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
-                <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
-                Edite a(s) cláusula(s) abaixo (se julgar necessário):
-              </div>
-
-              <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 4.8</a>
-                  <textarea class="form-control" name="clausula_edit_4_8" rows="4" disabled>{{$contratos_cr->clausula_edit_4_8}}</textarea>
-              </div>
-              <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 4.8.1</a>
-                  <textarea class="form-control" name="clausula_edit_4_8_1" rows="4" disabled>{{$contratos_cr->clausula_edit_4_8_1}}</textarea>
-              </div>
-              <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 4.8.2</a>
-                  <textarea class="form-control" name="clausula_edit_4_8_2" rows="4" disabled>{{$contratos_cr->clausula_edit_4_8_2}}</textarea>
-              </div>
-              <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 4.9</a>
-                  <textarea class="form-control" name="clausula_edit_4_9" rows="4" disabled>{{$contratos_cr->clausula_edit_4_9}}</textarea>
-              </div>
-              <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 4.9.1</a>
-                  <textarea class="form-control" name="clausula_edit_4_9_1" rows="4" disabled>{{$contratos_cr->clausula_edit_4_9_1}}</textarea>
-              </div>
-              <div class="col-md-12 mb-5">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 4.10</a>
-                  <textarea class="form-control" name="clausula_edit_4_10" rows="4" disabled>{{$contratos_cr->clausula_edit_4_10}}</textarea>
-              </div>
               <div class="alert alert-warning" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
               NOTAS EXPLICATIVAS!
@@ -833,80 +735,26 @@
         <!------------------------------------------------------------------------->
   
         <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
-            <div class="container-fluid p-0 mt-0 m-0">
+          <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
-                
-              <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">6. CLÁUSULA SEXTA - DA PROPRIEDADE INTELECTUAL E DA CRIAÇÃO PROTEGIDA</h4><hr><br>
-          <div class="alert alert-warning" role="alert">      
-            <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
-              NOTAS EXPLICATIVAS!
-            <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#propriedade_intelectual">Saiba mais</button>
-          </div>  
-          <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
-          <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
-          Edite a(s) cláusula(s) abaixo (se julgar necessário):
-        </div>
-          <!--clausula editavel 6-->
-        
-          <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.1</a>
-              <textarea class="form-control" name="clausula_edit_6_1" rows="4" disabled>{{$contratos_cr->clausula_edit_6_1}}</textarea>
-          </div>
-          <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.2</a>
-              <textarea class="form-control" name="clausula_edit_6_2" rows="4" disabled>{{$contratos_cr->clausula_edit_6_2}}</textarea>
-          </div>
-          <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.3</a>
-              <textarea class="form-control" name="clausula_edit_6_3" rows="4" disabled>{{$contratos_cr->clausula_edit_6_3}}</textarea>
-          </div>
-          <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.4</a>
-              <textarea class="form-control" name="clausula_edit_6_4" rows="4" disabled>{{$contratos_cr->clausula_edit_6_4}}</textarea>
-          </div>
-          <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.5</a>
-              <textarea class="form-control" name="clausula_edit_6_5" rows="4" disabled>{{$contratos_cr->clausula_edit_6_5}}</textarea>
-          </div>
-          <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.6</a>
-              <textarea class="form-control" name="clausula_edit_6_6" rows="4" disabled>{{$contratos_cr->clausula_edit_6_6}}</textarea>
-          </div>
-          <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.7</a>
-              <textarea class="form-control" name="clausula_edit_6_7" rows="4" disabled>{{$contratos_cr->clausula_edit_6_7}}</textarea>
-          </div>
-          <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.8</a>
-              <textarea class="form-control" name="clausula_edit_6_8" rows="4" disabled>{{$contratos_cr->clausula_edit_6_8}}</textarea>
-          </div>
-          <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.9</a>
-              <textarea class="form-control" name="clausula_edit_6_9" rows="4" disabled>{{$contratos_cr->clausula_edit_6_9}}</textarea>
-          </div>
-          <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.10</a>
-              <textarea class="form-control" name="clausula_edit_6_10" rows="4" disabled>{{$contratos_cr->clausula_edit_6_10}}</textarea>
-          </div>
-          <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.11</a>
-              <textarea class="form-control" name="clausula_edit_6_11" rows="4" disabled>{{$contratos_cr->clausula_edit_6_11}}</textarea>
-          </div>
-          <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.12</a>
-              <textarea class="form-control" name="clausula_edit_6_12" rows="4" disabled>{{$contratos_cr->clausula_edit_6_12}}</textarea>
-          </div>
-          <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.13</a>
-              <textarea class="form-control" name="clausula_edit_6_13" rows="4" disabled>{{$contratos_cr->clausula_edit_6_13}}</textarea>
-          </div>
-          
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">6. CLÁUSULA SEXTA - DA PROPRIEDADE INTELECTUAL E DA CRIAÇÃO PROTEGIDA</h4><hr><br>
 
-               </div>
-                
+                <p><b>6.1</b> {{$contratos_cr->clausula_edit_6_1}}</p>
+                <p><b>6.2</b> {{$contratos_cr->clausula_edit_6_2}}</p>
+                <p><b>6.3</b> {{$contratos_cr->clausula_edit_6_3}}</p>
+                <p><b>6.4</b> {{$contratos_cr->clausula_edit_6_4}}</p>
+                <p><b>6.5</b> {{$contratos_cr->clausula_edit_6_5}}</p>
+                <p><b>6.6</b> {{$contratos_cr->clausula_edit_6_6}}</p>
+                <p><b>6.7</b> {{$contratos_cr->clausula_edit_6_7}}</p>
+                <p><b>6.8</b> {{$contratos_cr->clausula_edit_6_8}}</p>
+                <p><b>6.9</b> {{$contratos_cr->clausula_edit_6_9}}</p>
+                <p><b>6.10</b> {{$contratos_cr->clausula_edit_6_10}}</p>
+                <p><b>6.11</b> {{$contratos_cr->clausula_edit_6_11}}</p>
+                <p><b>6.12</b> {{$contratos_cr->clausula_edit_6_12}}</p>
+                <p><b>6.13</b> {{$contratos_cr->clausula_edit_6_13}}</p>
+
               </div>
-            </div>
-  
+          </div>
         </div><!--end of tab-content: insert all these here!-->
   
         <!------------------------------------------------------------------------->
@@ -940,124 +788,67 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-              <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">8 CLÁUSULA OITAVA - DAS INFORMAÇÕES CONFIDENCIAIS E SIGILOSAS</h4><hr><br>
-          <p>
-            <b>8.1.</b> Os PARCEIROS adotarão todas as medidas necessárias para proteger o sigilo das INFORMAÇÕES CONFIDENCIAIS recebidas em função da celebração, desenvolvimento e execução do presente Acordo de Parceria, inclusive na adoção de medidas que assegurem a tramitação do processo, não as divulgando a terceiros, sem a prévia e escrita autorização da outro PARCEIRO.
-          </p>
-          <p>
-            <b>8.2.</b> Os PARCEIROS informarão aos seus funcionários e prestadores de serviços e consultores que necessitem ter acesso às informações e conhecimentos que envolvem o objeto do Acordo, acerca das obrigações de sigilo assumidas, responsabilizando-se integralmente por eventuais infrações que estes possam cometer.  
-          </p>
-          <p>
-            <b>8.3.</b> As PARCEIROS farão com que cada pessoa de sua organização, ou sob o seu controle, que receba informações confidenciais, assuma o compromisso de confidencialidade, por meio assinatura de Termo de Confidencialidade. 
-          </p>
-          <p>
-            <b>8.4.</b> Não haverá violação das obrigações de CONFIDENCIALIDADE previstas no Acordo de Parceria nas seguintes hipóteses:
-          </p>
-          <p>
-            <b>8.4.1.</b> informações técnicas ou comerciais que já sejam do conhecimento das PARTES na data da divulgação, ou que tenham sido comprovadamente desenvolvidas de maneira independente e sem relação com o Acordo pela PARCEIRO que a revele; 
-          </p>
-          <p>
-            <b>8.4.2.</b> informações técnicas ou comerciais que sejam ou se tornem de domínio público, sem culpa da(s) PARCEIROS (S);
-          </p>
-          <p>
-            <b>8.4.2.1.</b> qualquer informação que tenha sido revelada somente em termos gerais, não será considerada de conhecimento ou domínio público. 
-          </p>
-          <p>
-            <b>8.4.3.</b> informações técnicas ou comerciais que sejam recebidas de um terceiro que não esteja sob obrigação de manter as informações técnicas ou comerciais em confidencialidade;
-          </p>
-          <p>
-            <b>8.4.4.</b> informações que possam ter divulgação exigida por lei, decisão judicial ou administrativa;
-          </p>
-          <p>
-            <b>8.4.5.</b> revelação expressamente autorizada, por escrito, pelas PARTES.
-          </p>
-          <p>
-            <b>8.5.</b> A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada.
-          </p>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">8 CLÁUSULA OITAVA - DAS INFORMAÇÕES CONFIDENCIAIS E SIGILOSAS</h4><hr><br>
+                <p>
+                  <b>8.1.</b> Os PARCEIROS adotarão todas as medidas necessárias para proteger o sigilo das INFORMAÇÕES CONFIDENCIAIS recebidas em função da celebração, desenvolvimento e execução do presente Acordo de Parceria, inclusive na adoção de medidas que assegurem a tramitação do processo, não as divulgando a terceiros, sem a prévia e escrita autorização da outro PARCEIRO.
+                </p>
+                <p>
+                  <b>8.2.</b> Os PARCEIROS informarão aos seus funcionários e prestadores de serviços e consultores que necessitem ter acesso às informações e conhecimentos que envolvem o objeto do Acordo, acerca das obrigações de sigilo assumidas, responsabilizando-se integralmente por eventuais infrações que estes possam cometer.  
+                </p>
+                <p>
+                  <b>8.3.</b> As PARCEIROS farão com que cada pessoa de sua organização, ou sob o seu controle, que receba informações confidenciais, assuma o compromisso de confidencialidade, por meio assinatura de Termo de Confidencialidade. 
+                </p>
+                <p>
+                  <b>8.4.</b> Não haverá violação das obrigações de CONFIDENCIALIDADE previstas no Acordo de Parceria nas seguintes hipóteses:
+                </p>
+                <p>
+                  <b>8.4.1.</b> informações técnicas ou comerciais que já sejam do conhecimento das PARTES na data da divulgação, ou que tenham sido comprovadamente desenvolvidas de maneira independente e sem relação com o Acordo pela PARCEIRO que a revele; 
+                </p>
+                <p>
+                  <b>8.4.2.</b> informações técnicas ou comerciais que sejam ou se tornem de domínio público, sem culpa da(s) PARCEIROS (S);
+                </p>
+                <p>
+                  <b>8.4.2.1.</b> qualquer informação que tenha sido revelada somente em termos gerais, não será considerada de conhecimento ou domínio público. 
+                </p>
+                <p>
+                  <b>8.4.3.</b> informações técnicas ou comerciais que sejam recebidas de um terceiro que não esteja sob obrigação de manter as informações técnicas ou comerciais em confidencialidade;
+                </p>
+                <p>
+                  <b>8.4.4.</b> informações que possam ter divulgação exigida por lei, decisão judicial ou administrativa;
+                </p>
+                <p>
+                  <b>8.4.5.</b> revelação expressamente autorizada, por escrito, pelas PARTES.
+                </p>
+                <p>
+                  <b>8.5.</b> A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada.
+                </p>
+                
+                <p><b>8.6</b> {{$contratos_cr->clausula_edit_8_6}}</p>
+                <p><b>8.7</b> {{$contratos_cr->clausula_edit_8_7}}</p>
+                <p><b>8.8</b> {{$contratos_cr->clausula_edit_8_8}}</p>
 
-          <div class="alert alert-warning" role="alert">      
-            <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
-              NOTAS EXPLICATIVAS!
-            <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#confidencial">Saiba mais</button>
-          </div> 
-
-          <!--clausula editavel 8-->
-          <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
-            <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
-            Edite a(s) cláusula(s) abaixo (se julgar necessário):
-          </div>
-
-          <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.6</a>
-              <textarea class="form-control" name="clausula_edit_8_6" rows="3" disabled>{{$contratos_cr->clausula_edit_8_6}}</textarea>
-          </div>
-          <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.7</a>
-              <textarea class="form-control" name="clausula_edit_8_7" rows="3" disabled>{{$contratos_cr->clausula_edit_8_7}}</textarea>
-          </div>
-          <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.8</a>
-              <textarea class="form-control" name="clausula_edit_8_8" rows="3" disabled>{{$contratos_cr->clausula_edit_8_8}}</textarea>
-          </div>
               </div>
           </div>
         </div><!--end of tab-content: insert all these here!-->
-            <!------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------->
   
         <div class="tab-pane " id="clausula3" role="tabpanel" aria-labelledby="clausula3-tab">
             <div class="container-fluid p-0 mt-0 m-0">
-              <div class="text-justify text-blue">
-                
-              <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">9 CLÁUSULA NONA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h4><hr>
-
-              <!--clausula editavel 9-->
-              <div class="alert alert-info text-dark font-weight-bold" role="alert">      
-              <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
-                Edite a(s) cláusula(s) abaixo (se julgar necessário):
-              </div>
- 
-              <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.1</a>
-                  <textarea class="form-control" name="clausula_edit_9_1" rows="5" disabled>{{$contratos_cr->clausula_edit_9_1}}</textarea>
-              </div>
-              <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.2</a>
-                  <textarea class="form-control" name="clausula_edit_9_2" rows="3" disabled>{{$contratos_cr->clausula_edit_9_2}}</textarea>
-              </div>
-              <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.3</a>
-                  <textarea class="form-control" name="clausula_edit_9_3" rows="3" disabled>{{$contratos_cr->clausula_edit_9_3}}</textarea>
-              </div>
-              <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.4</a>
-                  <textarea class="form-control" name="clausula_edit_9_4" rows="3" disabled>{{$contratos_cr->clausula_edit_9_4}}</textarea>
-              </div>
-              <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.A)</a>
-                  <textarea class="form-control" name="clausula_edit_9_a" rows="5" disabled>{{$contratos_cr->clausula_edit_9_a}}</textarea>
-              </div>
-              <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.B)</a>
-                  <textarea class="form-control" name="clausula_edit_9_b" rows="5" disabled>{{$contratos_cr->clausula_edit_9_b}}</textarea>
-              </div>
-              <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.C)</a>
-                  <textarea class="form-control" name="clausula_edit_9_c" rows="5" disabled>{{$contratos_cr->clausula_edit_9_c}}</textarea>
-              </div>
-              <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.D)</a>
-                  <textarea class="form-control" name="clausula_edit_9_d" rows="5" disabled>{{$contratos_cr->clausula_edit_9_d}}</textarea>
-              </div>
-              <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 9.E)</a>
-                  <textarea class="form-control" name="clausula_edit_9_e" rows="5" disabled>{{$contratos_cr->clausula_edit_9_e}}</textarea>
-              </div>
-
+              <div class="text-justify">
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">9 CLÁUSULA NONA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h4><hr>
+                <p><b>9.1</b> {{$contratos_cr->clausula_edit_9_1}}</p>
+                <p><b>9.2</b> {{$contratos_cr->clausula_edit_9_2}}</p>
+                <p><b>9.3</b> {{$contratos_cr->clausula_edit_9_3}}</p>
+                <p><b>9.4</b> {{$contratos_cr->clausula_edit_9_4}}</p>
+                <p><b>A)</b> {{$contratos_cr->clausula_edit_9_a}}</p>
+                <p><b>B)</b> {{$contratos_cr->clausula_edit_9_b}}</p>
+                <p><b>C)</b> {{$contratos_cr->clausula_edit_9_c}}</p>
+                <p><b>D)</b> {{$contratos_cr->clausula_edit_9_d}}</p>
+                <p><b>E)</b> {{$contratos_cr->clausula_edit_9_e}}</p>
               </div>
             </div>
-  
         </div><!--end of tab-content: insert all these here!-->
-        <!------------------------------------------------------------------------->
+
          <!------------------------------------------------------------------------->
   
          <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
@@ -1081,11 +872,6 @@
               <div class="text-justify text-black">
                 
               <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">11. CLÁUSULA DÉCIMA PRIMEIRA - DA VIGÊNCIA E DA PRORROGAÇÃO</h4><hr><br>
-              <div class="alert alert-warning" role="alert">     
-                <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
-                  NOTAS EXPLICATIVAS!
-                <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_vigencia">Saiba mais</button>
-              </div> 
               <p><b>11.1.</b> O presente Acordo de Parceria para PD&I vigerá pelo prazo de 
               <input class="myform-control text-black" type="text" name="prazo_vigencia" id="prazo_vigencia" value="{{$contratos_cr->prazo_vigencia}}" disabled placeholder="Quantidade de anos" > anos, a partir da data de sua assinatura, prorrogáveis.</p>
               <p><b>11.2.</b> Este Acordo de Parceria poderá ser prorrogado por meio de termo aditivo, com as respectivas alterações no Plano de Trabalho, mediante a apresentação de justifica técnica.</p>
@@ -1093,37 +879,20 @@
               </div>
             </div>
           </div>
-            <!------------------------------------------------------------------------->
+          <!------------------------------------------------------------------------->
             <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-justify text-black">
                 
-              <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">12. CLÁUSULA DÉCIMA SEGUNDA - DAS ALTERAÇÕES</h4><hr><br>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">12. CLÁUSULA DÉCIMA SEGUNDA - DAS ALTERAÇÕES</h4><hr><br>
 
                 <p><b>12.1.</b> As cláusulas e condições estabelecidas no presente instrumento poderão ser alteradas mediante celebração de termo aditivo.</p>
                 <p><b>12.2.</b> A proposta de alteração, devidamente justificada, deverá ser apresentada por escrito, dentro da vigência do instrumento.</p>
                 <p><b>12.3.</b> É vedado o aditamento do presente Acordo com o intuito de alterar o seu objeto, sob pena de nulidade do ato e responsabilidade do agente que o praticou.</p>
                 <p><b>12.4.</b> São dispensáveis de formalização por meio de Termo Aditivo as alterações que importem em transposição, remanejamento ou transferência de recursos de categoria de programação para outra, com o objetivo de conferir eficácia e eficiência às atividades previstas no Plano de Trabalho, desde que não haja alteração do valor total do projeto.</p>
 
-                <div class="alert alert-warning" role="alert">     
-                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
-                    NOTAS EXPLICATIVAS!
-                  <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_pdi">Saiba mais</button>
-                </div> 
-
-                <!--clausula editavel 12-->
-                <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
-                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
-                  Edite a(s) cláusula(s) abaixo (se julgar necessário):
-                </div>
-                <div class="col-md-12 mb-3">
-                    <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 12.4.1</a>
-                    <textarea class="form-control" disabled="" readonly="" name="clausula_edit_12_4_1" rows="6">{{$contratos_cr->clausula_edit_12_4_1}}</textarea>
-                </div>
-                <div class="col-md-12 mb-3">
-                    <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 12.4.2</a>
-                    <textarea class="form-control" disabled="" readonly="" name="clausula_edit_12_4_2" rows="3">{{$contratos_cr->clausula_edit_12_4_2}}</textarea>
-                </div>
+                <p><b>12.4.1</b> {{$contratos_cr->clausula_edit_12_4_1}}</p>
+                <p><b>12.4.2</b> {{$contratos_cr->clausula_edit_12_4_2}}</p>
 
               </div>
             </div>
@@ -1136,22 +905,10 @@
               <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2"> 13. CLÁUSULA DÉCIMA TERCEIRA – DO MONITORAMENTO, DA AVALIAÇÃO E DA PRESTAÇÃO DE CONTAS</h4><hr><br>
               <p><b>13.1.</b> Os <b>PARCEIROS</b> exercerão a fiscalização técnico-financeira das atividades do presente Acordo. </p>
               <!--clausula editavel 13-->
-              <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
-                <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
-                Edite a(s) cláusula(s) abaixo (se julgar necessário):
-              </div>
-              <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 13.2</a>
-                  <textarea class="form-control" name="clausula_edit_13_2" rows="3" disabled>{{$contratos_cr->clausula_edit_13_2}}</textarea>
-              </div>
-              <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">A)</a>
-                  <textarea class="form-control" name="clausula_edit_13_a" rows="3" disabled>{{$contratos_cr->clausula_edit_13_a}}</textarea>
-              </div>
-              <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">B)</a>
-                  <textarea class="form-control" name="clausula_edit_13_b" rows="3" disabled>{{$contratos_cr->clausula_edit_13_b}}</textarea>
-              </div>
+              <p><b>13.2</b> {{$contratos_cr->clausula_edit_13_2}}</p>
+              <p><b>A)</b> {{$contratos_cr->clausula_edit_13_a}}</p>
+              <p><b>B)</b> {{$contratos_cr->clausula_edit_13_b}}</p>
+
               <p><b>13.3.</b> No Formulário de Resultado de que trata a subcláusula 13.2, deverá ser demonstrada a compatibilidade entre as metas previstas e as alcançadas no período, bem como apontadas as justificativas em caso de discrepância, consolidando dados e valores das ações desenvolvidas.</p>
               <p>
                 <b>13.4.</b> Caberá a cada <b>PARCEIRO</b> adotar as providências necessárias julgadas cabíveis, caso os relatórios parciais de que trata a subcláusula primeira demonstrem inconsistências na execução do objeto deste Acordo.
@@ -1172,33 +929,14 @@
             <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
               <div class="container-fluid p-0 mt-0 m-0">
                 <div class="text-justify text-black">
-                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">14. CLÁUSULA DÉCIMA QUARTA – DA EXTINÇÃO DO ACORDO</h4><hr><br>
-                <p><b>14.1.</b> Este Acordo poderá, a qualquer tempo, ser denunciado pelos <b>PARCEIROS</b>, devendo o interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de <span>60 (sessenta)</span> dias da data em que se pretenda que sejam encerradas as atividades, respeitadas as obrigações assumidas com terceiros entre os <b>PARCEIROS</b>, creditando eventuais benefícios adquiridos no período.</p>
-                <!--clausula editavel 14-->
-                <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
-                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
-                  Edite a(s) cláusula(s) abaixo (se julgar necessário):
-                </div>
-                <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.2</a>
-                  <textarea class="form-control" name="clausula_edit_14_2"  disabled rows="5">{{$contratos_cr->clausula_edit_14_2}}</textarea>
-                </div>
-                <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.2.1</a>
-                  <textarea class="form-control" name="clausula_edit_14_2_1" disabled rows="3">{{$contratos_cr->clausula_edit_14_2_1}}</textarea>
-                </div>
-                <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.2.2</a>
-                  <textarea class="form-control" name="clausula_edit_14_2_2" disabled rows="3">{{$contratos_cr->clausula_edit_14_2_2}}</textarea>
-                </div>
-                <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.3</a>
-                  <textarea class="form-control" name="clausula_edit_14_3" disabled rows="3">{{$contratos_cr->clausula_edit_14_3}}</textarea>
-                </div>
-                <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.4</a>
-                  <textarea class="form-control" name="clausula_edit_14_4" disabled rows="3">{{$contratos_cr->clausula_edit_14_4}}</textarea>
-                </div>
+                  <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">14. CLÁUSULA DÉCIMA QUARTA – DA EXTINÇÃO DO ACORDO</h4><hr><br>
+                  <p><b>14.1.</b> Este Acordo poderá, a qualquer tempo, ser denunciado pelos <b>PARCEIROS</b>, devendo o interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de <span>60 (sessenta)</span> dias da data em que se pretenda que sejam encerradas as atividades, respeitadas as obrigações assumidas com terceiros entre os <b>PARCEIROS</b>, creditando eventuais benefícios adquiridos no período.</p>
+                  <!--clausula editavel 14-->
+                  <p><b>14.2.</b> {{$contratos_cr->clausula_edit_14_2}}</p>
+                  <p><b>14.2.1</b> {{$contratos_cr->clausula_edit_14_2_1}}</p>
+                  <p><b>14.2.2</b> {{$contratos_cr->clausula_edit_14_2_2}}</p>
+                  <p><b>14.3</b> {{$contratos_cr->clausula_edit_14_3}}</p>
+                  <p><b>14.4</b> {{$contratos_cr->clausula_edit_14_4}}</p>
                 </div>
               </div>
             </div>
@@ -1207,33 +945,19 @@
               <div class="container-fluid p-0 mt-0 m-0">
                 <div class="text-justify text-black">
                 <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">15. CLÁUSULA DÉCIMA QUINTA - DA PUBLICIDADE</h4><hr><br>
-                <div class="alert alert-warning" role="alert">     
-                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
-                    NOTAS EXPLICATIVAS!
-                  <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_publicidade">Saiba mais</button>
-                </div>
                 <p><b>15.1.</b> A publicação do extrato do presente Acordo de Parceria para PD&I no Diário Oficial da União (DOU) é condição indispensável para sua eficácia e será providenciada pela ICT no prazo de até 20 (vinte) dias da sua assinatura. </p>
               </div>
               </div>
             </div>
               <!------------------------------------------------------------------------->
            
-              <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
+            <div class="tab-pane " id="clausula2" role="tabpanel" aria-labelledby="clausula2-tab">
               <div class="container-fluid p-0 mt-0 m-0">
                 <div class="text-justify text-black">
-                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">16. CLAUSULA DÉCIMA SEXTA – DOS BENS</h4><hr><br>
-                <div class="alert alert-info py-2 mt-5 mb-5 text-dark font-weight-bold" role="alert">      
-                  <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
-                  Edite a(s) cláusula(s) abaixo (se julgar necessário):
-                </div>
-                <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 16.1</a>
-                  <textarea class="form-control" name="clausula_edit_16_1" disabled rows="3">{{$contratos_cr->clausula_edit_16_1}}</textarea>
-                </div>
-                <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 16.2</a>
-                  <textarea class="form-control" name="clausula_edit_16_2" disabled rows="3">{{$contratos_cr->clausula_edit_16_2}}</textarea>
-                </div>
+                  <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">16. CLAUSULA DÉCIMA SEXTA – DOS BENS</h4><hr>
+                  <br>
+                  <p><b>16.1</b> {{$contratos_cr->clausula_edit_16_1}}</p>
+                  <p><b>16.2</b> {{$contratos_cr->clausula_edit_16_2}}</p>
                 </div>
               </div>
             </div>
@@ -1509,7 +1233,7 @@
             <div class="container-fluid p-0 mt-0 m-0">
               <div class="text-black">
                 
-                <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black bg-light p-2 mb-3">SEU CONTRATO ESTÁ PRONTO. <a href="#"><i class="fas fa-fw fa-check ml-2"></i></a></h5>
+                <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black p-2 mb-3">SEU CONTRATO ESTÁ PRONTO. <a href="#"><i class="fas fa-fw fa-check ml-2"></i></a></h4><hr>
   
                 <p>Você acabou de visualizar seu contrato, clique em Menu e você será redirecionado para tela inicial.</p><br>
                 
