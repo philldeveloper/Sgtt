@@ -52,15 +52,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 <!-- Begin Page Content -->
 
-<div class="container-fluid mt-4 py-4">
-    <span class="h3 font-weight-bold">Dados Gerais</span>
-    <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
-    <a href="{{asset('contratos')}}" class="float-right btn btn-primary col-xl-2 col-lg-2 col-md-4 col-sm-12 font-weight-bold clearfix">Ir para Contratos</a>
+<div class="d-flex justify-content-between py-4">
+  <div class="p-4 pb-0"><span class="h3 font-weight-bold">Dados Gerais</span></div>
+  <div class="p-4 pb-0"><a href="{{asset('contratos')}}" class="btn btn-primary font-weight-bold">Ir para Contratos</a></div>
 </div>
 
 <hr>
 
-<div class="container-fluid my-auto mx-auto">
+{{--<div class="container-fluid my-auto mx-auto">
   <div class="row">
 
     <!-- Pie Chart -->
@@ -108,7 +107,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   <span class="font-italic ml-3">Lorem ipsum dolor sit amet, consectetur adipisicing elis.</span>
 </div>
 
-<hr>
+<hr>--}}
 
 
 <div class="container-fluid my-auto mx-auto mt-5 mb-5">
@@ -162,7 +161,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         </div>
         <div class="card-body">
           <h1 class="text-dark font-weight-bold display-4">0</h1>
-          <p class="text-center h4 text-dark font-weight-bold">Usuários Cadastrados</p>
+          <p class="text-center h5 text-dark font-weight-bold">Usuários Cadastrados</p>
         </div>
       </div>
     </div>
@@ -175,8 +174,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
           </div>
         </div>
         <div class="card-body">
-          <h1 class="text-dark font-weight-bold display-4">{{$contratos_cr->count()}}</h1>
-          <p class="text-center h4 text-dark font-weight-bold">Contratos com repasse</p>
+          <h1 class="text-dark font-weight-bold">{{$contratos_cr->count()}}</h1>
+          <p class="text-center h5 text-dark font-weight-bold">Contratos com repasse</p>
         </div>
       </div>
     </div>
@@ -188,8 +187,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
           </div>
         </div>
         <div class="card-body">
-          <h1 class="text-dark font-weight-bold display-4">{{$contratos_sr->count()}}</h1>
-          <p class="text-center h4 text-dark font-weight-bold">Contratos sem repasse</p>
+          <h1 class="text-dark font-weight-bold">{{$contratos_sr->count()}}</h1>
+          <p class="text-center h5 text-dark font-weight-bold">Contratos sem repasse</p>
         </div>
       </div>
     </div>
@@ -201,8 +200,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
           </div>
         </div>
         <div class="card-body">
-          <h1 class="text-dark font-weight-bold display-4">{{$contratos_sr->count() + $contratos_cr->count()}}</h1>
-          <p class="text-center h4 text-dark font-weight-bold">Total</p>
+          <h1 class="text-dark font-weight-bold">{{$contratos_sr->count() + $contratos_cr->count()}}</h1>
+          <p class="text-center h5 text-dark font-weight-bold">Todos os contratos</p>
         </div>
       </div>
     </div>
@@ -214,8 +213,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
           </div>
         </div>
         <div class="card-body">
-          <h1 class="text-dark font-weight-bold display-4">{{$user->count()}}</h1>
-          <p class="text-center h4 text-dark font-weight-bold">Usuários Cadastrados</p>
+          <h1 class="text-dark font-weight-bold">{{$user->count()}}</h1>
+          <p class="text-center h5 text-dark font-weight-bold">Usuários Cadastrados</p>
         </div>
       </div>
     </div>
