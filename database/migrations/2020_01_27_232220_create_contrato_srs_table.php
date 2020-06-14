@@ -103,21 +103,11 @@ class CreateContratoSrsTable extends Migration
             $table->integer('prazo_dias');
 
             $table->string('parceiro_contato_endereco');
-<<<<<<< HEAD
             $table->string('parceiro_contato_celular');
             $table->string('parceiro_contato_email');
 
             $table->string('privado_contato_endereco');
             $table->string('privado_contato_celular');
-=======
-            $table->string('parceiro_contato_telefone')->nullable()->default(null);
-            $table->string('parceiro_contato_celular')->nullable()->default(null);
-            $table->string('parceiro_contato_email');
-
-            $table->string('privado_contato_endereco');
-            $table->string('privado_contato_telefone')->nullable()->default(null);
-            $table->string('privado_contato_celular')->nullable()->default(null);
->>>>>>> 59344155d899ecf03606e0697de7a6685da7a2b7
             $table->string('privado_contato_email');
 
             
