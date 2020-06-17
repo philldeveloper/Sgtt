@@ -130,7 +130,7 @@
 
         <div class="container-button text-right">
           <a href="{{route('contrato_sr.index')}}" class="btn btn-success btn-lg btn-icon-split">
-            <span class="icon text-white-50">
+            <span class="icon text-white-50" style="display: flex; align-items: center;">
               <i class="fas fa-arrow-right"></i>
             </span>
             <span class="text">Criar Contrato</span>
@@ -149,7 +149,7 @@
         </p>
         <div class="container-button text-right">
           <a href="{{route('contrato_cr.index')}}" class="btn btn-success btn-lg btn-icon-split">
-            <span class="icon text-white-50">
+            <span class="icon text-white-50" style="display: flex; align-items: center;">
               <i class="fas fa-arrow-right"></i>
             </span>
             <span class="text">Criar Contrato</span>
