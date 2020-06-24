@@ -52,25 +52,25 @@ SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA</h4>
 
 <p><span style="font-weight:bold;">2.1.</span> O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
 <p><span style="font-weight:bold;">2.2.</span> Respeitadas as previsões contidas na legislação em vigor, a(o) {{ $contrato->nome_ict }} ICT com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
-
+<!-- <p style="display: none;">{{$count = 2}}</p> -->
 @if($contrato->clausula_edit_2_3 == '')
 @else
-<p><span style="font-weight:bold;">2.3.</span> {!! $contrato->clausula_edit_2_3 !!}</p>
+<p><span style="font-weight:bold;">2.{{++$count}}.</span> {!! $contrato->clausula_edit_2_3 !!}</p>
 @endif
 
 @if($contrato->clausula_edit_2_4 == '')
 @else
-<p><span style="font-weight:bold;">2.4.</span> {!! $contrato->clausula_edit_2_4 !!}</p>
+<p><span style="font-weight:bold;">2.{{++$count}}.</span> {!! $contrato->clausula_edit_2_4 !!}</p>
 @endif
 
 @if($contrato->clausula_edit_2_5 == '')
 @else
-<p><span style="font-weight:bold;">2.5.</span> {!! $contrato->clausula_edit_2_5 !!}</p>
+<p><span style="font-weight:bold;">2.{{++$count}}.</span> {!! $contrato->clausula_edit_2_5 !!}</p>
 @endif
 
 @if($contrato->clausula_edit_2_6 == '')
 @else
-<p><span style="font-weight:bold;">2.6.</span> {!! $contrato->clausula_edit_2_6 !!}</p>
+<p><span style="font-weight:bold;">2.{{++$count}}.</span> {!! $contrato->clausula_edit_2_6 !!}</p>
 @endif
 <h5 style="font-weight:bold;">CLÁUSULA TERCEIRA - DAS ATRIBUIÇÕES E RESPONSABILIDADES</h5>
 		<p><span style="font-weight:bold;">3.1</span> São responsabilidades e obrigações, além dos outros compromissos assumidos neste Acordo de Parceria em PD&I:</p>
@@ -107,70 +107,70 @@ SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA</h4>
 
 
 	<h5 style="font-weight:bold;">CLÁUSULA QUINTA - DA PROPRIEDADE INTELECTUAL E DA CRIAÇÃO PROTEGIDA</h5>
-	
+	<!-- <p style="display: none;">{{$count = 0}}</p> -->
 	@if($contrato->clausula_edit_5_1 == '')
 	@else
-	<p><span style="font-weight:bold;">5.1</span> {!! $contrato->clausula_edit_5_1 !!}</p>
+	<p><span style="font-weight:bold;">5.{{++$count}}</span> {!! $contrato->clausula_edit_5_1 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_2 == '')
 	@else
-	<p><span style="font-weight:bold;">5.2</span> {!! $contrato->clausula_edit_5_2 !!}</p>
+	<p><span style="font-weight:bold;">5.{{++$count}}</span> {!! $contrato->clausula_edit_5_2 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_3 == '')
 	@else
-	<p><span style="font-weight:bold;">5.3</span> {!! $contrato->clausula_edit_5_3 !!}</p>
+	<p><span style="font-weight:bold;">5.{{++$count}}</span> {!! $contrato->clausula_edit_5_3 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_4 == '')
 	@else
-	<p><span style="font-weight:bold;">5.4</span> {!! $contrato->clausula_edit_5_4 !!}</p>
+	<p><span style="font-weight:bold;">5.{{++$count}}</span> {!! $contrato->clausula_edit_5_4 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_5 == '')
 	@else
-	<p><span style="font-weight:bold;">5.5</span> {!! $contrato->clausula_edit_5_5 !!}</p>
+	<p><span style="font-weight:bold;">5.{{++$count}}</span> {!! $contrato->clausula_edit_5_5 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_6 == '')
 	@else
-	<p><span style="font-weight:bold;">5.6</span> {!! $contrato->clausula_edit_5_6 !!}</p>
+	<p><span style="font-weight:bold;">5.{{++$count}}</span> {!! $contrato->clausula_edit_5_6 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_7 == '')
 	@else
-	<p><span style="font-weight:bold;">5.7</span> {!! $contrato->clausula_edit_5_7 !!}</p>
+	<p><span style="font-weight:bold;">5.{{++$count}}</span> {!! $contrato->clausula_edit_5_7 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_8 == '')
 	@else
-	<p><span style="font-weight:bold;">5.8</span> {!! $contrato->clausula_edit_5_8 !!}</p>
+	<p><span style="font-weight:bold;">5.{{++$count}}</span> {!! $contrato->clausula_edit_5_8 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_9 == '')
 	@else
-	<p><span style="font-weight:bold;">5.9</span> {!! $contrato->clausula_edit_5_9 !!}</p>
+	<p><span style="font-weight:bold;">5.{{++$count}}</span> {!! $contrato->clausula_edit_5_9 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_10 == '')
 	@else
-	<p><span style="font-weight:bold;">5.10</span> {!! $contrato->clausula_edit_5_10 !!}</p>
+	<p><span style="font-weight:bold;">5.{{++$count}}</span> {!! $contrato->clausula_edit_5_10 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_11 == '')
 	@else
-	<p><span style="font-weight:bold;">5.11</span> {!! $contrato->clausula_edit_5_11 !!}</p>
+	<p><span style="font-weight:bold;">5.{{++$count}}</span> {!! $contrato->clausula_edit_5_11 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_12 == '')
 	@else
-	<p><span style="font-weight:bold;">5.12</span> {!! $contrato->clausula_edit_5_12 !!}</p>
+	<p><span style="font-weight:bold;">5.{{++$count}}</span> {!! $contrato->clausula_edit_5_12 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_13 == '')
 	@else
-	<p><span style="font-weight:bold;">5.13</span> {!! $contrato->clausula_edit_5_13 !!}</p>
+	<p><span style="font-weight:bold;">5.{{++$count}}</span> {!! $contrato->clausula_edit_5_13 !!}</p>
 	@endif
 
 
@@ -195,59 +195,60 @@ SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA</h4>
 	<p><span style="font-weight:bold;">7.4.4.</span> Informações que possam ter divulgação exigida por lei, decisão judicial ou administrativa; </p>
 	<p><span style="font-weight:bold;">7.4.5.</span> Revelação expressamente autorizada, por escrito, pelos PARCEIROS. </p>
 	<p><span style="font-weight:bold;">7.5.</span> A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada. A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada. </p>
-
+	<!-- <p style="display: none;">{{$count = 5}}</p> -->
 	@if($contrato->clausula_edit_7_6 == '')
 	@else
-	<p><span style="font-weight:bold;">7.6</span> {!! $contrato->clausula_edit_7_6 !!}</p>
+	<p><span style="font-weight:bold;">7.{{++$count}}</span> {!! $contrato->clausula_edit_7_6 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_7_7 == '')
 	@else
-	<p><span style="font-weight:bold;">7.7</span> {!! $contrato->clausula_edit_7_7 !!}</p>
+	<p><span style="font-weight:bold;">7.{{++$count}}</span> {!! $contrato->clausula_edit_7_7 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_7_8 == '')
 	@else
-	<p><span style="font-weight:bold;">7.8</span> {!! $contrato->clausula_edit_7_8 !!}</p>
+	<p><span style="font-weight:bold;">7.{{++$count}}</span> {!! $contrato->clausula_edit_7_8 !!}</p>
 	@endif
 
 
 
 	<h5 style="font-weight:bold;">CLÁUSULA OITAVA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h5>
-	
+	<!-- 	<p style="display: none;">{{ $count = 0 }}</p> -->	
+	<!-- 	<p style="display: none;">{{ $count_letter = 'z' }}</p>	 -->
 	@if($contrato->clausula_edit_8_1 == '')
 	@else
-	<p><span style="font-weight:bold;">8.1</span> {!! $contrato->clausula_edit_8_1 !!}</p>
+	<p><span style="font-weight:bold;">8.{{++$count}}</span> {!! $contrato->clausula_edit_8_1 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_8_2 == '')
 	@else 
-	<p><span style="font-weight:bold;">8.2</span> {!! $contrato->clausula_edit_8_2 !!}</p>
+	<p><span style="font-weight:bold;">8.{{++$count}}</span> {!! $contrato->clausula_edit_8_2 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_8_2_a == '')
 	@else
-	<h6 style="margin-left: 16px !important"><span style="margin-right: 8px !important">a)</span> {!! $contrato->clausula_edit_8_2_a !!}</h6>
+	<p><span style="font-weight:bold;">8.{{++$count}}</span> {!! $contrato->clausula_edit_8_2_a !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_8_2_b == '')
 	@else
-	<h6 style="margin-left: 16px !important"><span style="margin-right: 8px !important">b)</span> {!! $contrato->clausula_edit_8_2_b !!}</h6>
+	<p><span style="font-weight:bold;">8.{{++$count}}</span> {!! $contrato->clausula_edit_8_2_b !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_8_2_c == '')
 	@else
-	<h6 style="margin-left: 16px !important"><span style="margin-right: 8px !important">c)</span> {!! $contrato->clausula_edit_8_2_c !!}</h6>
+	<p><span style="font-weight:bold;">8.{{++$count}}</span> {!! $contrato->clausula_edit_8_2_c !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_8_2_d == '')
 	@else
-	<h6 style="margin-left: 16px !important"><span style="margin-right: 8px !important">d)</span> {!! $contrato->clausula_edit_8_2_d !!}</h6>
+	<p><span style="font-weight:bold;">8.{{++$count}}</span> {!! $contrato->clausula_edit_8_2_d !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_8_2_e == '')
 	@else
-	<h6 style="margin-left: 16px !important"><span style="margin-right: 8px !important">e)</span> {!! $contrato->clausula_edit_8_2_e !!}</h6>
+	<p><span style="font-weight:bold;">8.{{++$count}}</span> {!! $contrato->clausula_edit_8_2_e !!}</p>
 	@endif
 	
 
@@ -280,15 +281,15 @@ SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA</h4>
 
 	<p><span style="font-weight:bold;">12.1</span> Os PARCEIROS exercerão a fiscalização técnico-financeira das atividades do presente Acordo. </p>
 	<p><span style="font-weight:bold;">12.2</span> O pesquisador deverá encaminhar ao Setor responsável ou COMISSÃO DA ICT: {{ $contrato->nome_ict }}.</p>
-	
+		<!-- 	<p style="display: none;">{{ $count_letter = 'z' }}</p>	 -->
 	@if($contrato->clausula_edit_12_a == '')
 	@else
-	<p style="margin-left: 16px !important"><span style="margin-right: 8px !important">a)</span> {!! $contrato->clausula_edit_12_a !!}</p>
+	<p style="margin-left: 16px !important"><span style="margin-right: 8px !important">{{str_split(++$count_letter)[1]}})</span> {!! $contrato->clausula_edit_12_a !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_12_b == '')
 	@else
-	<p style="margin-left: 16px !important"><span style="margin-right: 8px !important">b)</span> {!! $contrato->clausula_edit_12_b !!}</p>
+	<p style="margin-left: 16px !important"><span style="margin-right: 8px !important">{{str_split(++$count_letter)[1]}})</span> {!! $contrato->clausula_edit_12_b !!}</p>
 	@endif
 
 	<p><span style="font-weight:bold;">12.3</span> No Formulário de Resultado de que trata a subcláusula 12.2, deverá ser demonstrada a compatibilidade entre as metas previstas e as alcançadas no período, bem como apontadas as justificativas em caso de discrepância, consolidando dados e valores das ações desenvolvidas. </p>
@@ -301,28 +302,29 @@ SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA</h4>
 	<h5 style="font-weight:bold;">CLÁUSULA DÉCIMA TERCEIRA – DA EXTINÇÃO DO ACORDO</h5>
 
 	<p><span style="font-weight:bold;">13.1</span> Este Acordo poderá, a qualquer tempo, ser denunciado pelos PARCEIROS, devendo o interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de 60 (sessenta) dias da data em que se pretenda que sejam encerradas as atividades, respeitadas as obrigações assumidas com terceiros entre os PARCEIROS, creditando eventuais benefícios adquiridos no período.. </p>
-	
+	<!-- 	<p style="display: none;">{{ $count = 1 }}</p> -->	
+	<!-- <p style="display: none;">{{ $sub_count = 0 }}</p> -->
 	@if($contrato->clausula_edit_13_2 == '')
 	@else
-	<p><span style="font-weight:bold;">13.2</span> {!! $contrato->clausula_edit_13_2 !!}</p>
+	<p><span style="font-weight:bold;">13.{{++$count}}</span> {!! $contrato->clausula_edit_13_2 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_13_2_1 == '')
 	@else
-	<p><span style="font-weight:bold;">13.2.1</span> {!! $contrato->clausula_edit_13_2_1 !!}</p>
+	<p><span style="font-weight:bold;">13.2.{{++$sub_count}}</span> {!! $contrato->clausula_edit_13_2_1 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_13_2_2 == '')
 	@else
-	<p><span style="font-weight:bold;">13.2.2</span> {!! $contrato->clausula_edit_13_2_2 !!}</p>
+	<p><span style="font-weight:bold;">13.2.{{++$sub_count}}</span> {!! $contrato->clausula_edit_13_2_2 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_13_3 == '')
 	@else
-	<p><span style="font-weight:bold;">13.3</span> {!! $contrato->clausula_edit_13_3 !!}</p>
+	<p><span style="font-weight:bold;">13.{{++$count}}</span> {!! $contrato->clausula_edit_13_3 !!}</p>
 	@endif
 
-	<p><span style="font-weight:bold;">13.4 O</span> presente Acordo será extinto com o cumprimento do objeto ou com o decurso de prazo de vigência. </p>
+	<p><span style="font-weight:bold;">13.4</span>O presente Acordo será extinto com o cumprimento do objeto ou com o decurso de prazo de vigência. </p>
 
 
 

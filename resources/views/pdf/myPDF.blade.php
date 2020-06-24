@@ -65,25 +65,26 @@
 
 	<p><span id="p-title">2.1.</span>O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
 	<p><span id="p-title">2.2.</span>Respeitadas as previsões contidas na legislação em vigor, a(o) {{$contrato->nome_ict}} ICT com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
-
+	<p style="display: none;">{{ $count = 2 }}</p>	
 	@if($contrato->clausula_edit_2_3 == '')
 	@else
-	<p><span id="p-title">2.3.</span>{!! $contrato->clausula_edit_2_3 !!}</p>
+	
+	<p><span id="p-title">2.{{++$count}}.</span>{!! $contrato->clausula_edit_2_3 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_2_4 == '')
 	@else
-	<p><span id="p-title">2.4.</span>{!! $contrato->clausula_edit_2_4 !!}</p>
+	<p><span id="p-title">2.{{++$count}}.</span>{!! $contrato->clausula_edit_2_4 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_2_5 == '')
 	@else
-	<p><span id="p-title">2.5.</span>{!! $contrato->clausula_edit_2_5 !!}</p>
+	<p><span id="p-title">2.{{++$count}}.</span>{!! $contrato->clausula_edit_2_5 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_2_6 == '')
 	@else
-	<p><span id="p-title">2.6.</span>{!! $contrato->clausula_edit_2_6 !!}</p>
+	<p><span id="p-title">2.{{++$count}}.</span>{!! $contrato->clausula_edit_2_6 !!}</p>
 	@endif
 
 	<h5 class="font-weight-bold">CLÁUSULA TERCEIRA - DAS ATRIBUIÇÕES E RESPONSABILIDADES</h5>
@@ -120,70 +121,70 @@
 	<!------clausula---->
 
 	<h5 class="font-weight-bold">CLÁUSULA QUINTA - DA PROPRIEDADE INTELECTUAL E DA CRIAÇÃO PROTEGIDA</h5>
-	
+	<p style="display: none;">{{ $count = 0 }}</p>	
 	@if($contrato->clausula_edit_5_1 == '')
 	@else
-	<p><span id="p-title">5.1</span>{!! $contrato->clausula_edit_5_1 !!}</p>
+	<p><span id="p-title">5.{{{++$count}}}</span>{!! $contrato->clausula_edit_5_1 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_2 == '')
 	@else
-	<p><span id="p-title">5.2</span>{!! $contrato->clausula_edit_5_2 !!}</p>
+	<p><span id="p-title">5.{{++$count}}</span>{!! $contrato->clausula_edit_5_2 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_3 == '')
 	@else
-	<p><span id="p-title">5.3</span>{!! $contrato->clausula_edit_5_3 !!}</p>
+	<p><span id="p-title">5.{{++$count}}</span>{!! $contrato->clausula_edit_5_3 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_4 == '')
 	@else
-	<p><span id="p-title">5.4</span>{!! $contrato->clausula_edit_5_4 !!}</p>
+	<p><span id="p-title">5.{{++$count}}</span>{!! $contrato->clausula_edit_5_4 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_5 == '')
 	@else
-	<p><span id="p-title">5.5</span>{!! $contrato->clausula_edit_5_5 !!}</p>
+	<p><span id="p-title">5.{{++$count}}</span>{!! $contrato->clausula_edit_5_5 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_6 == '')
 	@else
-	<p><span id="p-title">5.6</span>{!! $contrato->clausula_edit_5_6 !!}</p>
+	<p><span id="p-title">5.{{++$count}}</span>{!! $contrato->clausula_edit_5_6 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_7 == '')
 	@else
-	<p><span id="p-title">5.7</span>{!! $contrato->clausula_edit_5_7 !!}</p>
+	<p><span id="p-title">5.{{++$count}}</span>{!! $contrato->clausula_edit_5_7 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_8 == '')
 	@else
-	<p><span id="p-title">5.8</span>{!! $contrato->clausula_edit_5_8 !!}</p>
+	<p><span id="p-title">5.{{++$count}}</span>{!! $contrato->clausula_edit_5_8 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_9 == '')
 	@else
-	<p><span id="p-title">5.9</span>{!! $contrato->clausula_edit_5_9 !!}</p>
+	<p><span id="p-title">5.{{++$count}}</span>{!! $contrato->clausula_edit_5_9 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_10 == '')
 	@else
-	<p><span id="p-title">5.10</span>{!! $contrato->clausula_edit_5_10 !!}</p>
+	<p><span id="p-title">5.{{++$count}}</span>{!! $contrato->clausula_edit_5_10 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_11 == '')
 	@else
-	<p><span id="p-title">5.11</span>{!! $contrato->clausula_edit_5_11 !!}</p>
+	<p><span id="p-title">5.{{++$count}}</span>{!! $contrato->clausula_edit_5_11 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_12 == '')
 	@else
-	<p><span id="p-title">5.12</span>{!! $contrato->clausula_edit_5_12 !!}</p>
+	<p><span id="p-title">5.{{++$count}}</span>{!! $contrato->clausula_edit_5_12 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_5_13 == '')
 	@else
-	<p><span id="p-title">5.13</span>{!! $contrato->clausula_edit_5_13 !!}</p>
+	<p><span id="p-title">5.{{++$count}}</span>{!! $contrato->clausula_edit_5_13 !!}</p>
 	@endif
 
 
@@ -208,59 +209,59 @@
 	<p><span id="p-title">7.4.4.</span>Informações que possam ter divulgação exigida por lei, decisão judicial ou administrativa; </p>
 	<p><span id="p-title">7.4.5.</span>Revelação expressamente autorizada, por escrito, pelos PARCEIROS. </p>
 	<p><span id="p-title">7.5.</span>A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada. A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada. </p>
-
+	<p style="display: none;">{{ $count = 5 }}</p>	
 	@if($contrato->clausula_edit_7_6 == '')
 	@else
-	<p><span id="p-title">7.6</span>{!! $contrato->clausula_edit_7_6 !!}</p>
+	<p><span id="p-title">7.{{++$count}}</span>{!! $contrato->clausula_edit_7_6 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_7_7 == '')
 	@else
-	<p><span id="p-title">7.7</span>{!! $contrato->clausula_edit_7_7 !!}</p>
+	<p><span id="p-title">7.{{++$count}}</span>{!! $contrato->clausula_edit_7_7 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_7_8 == '')
 	@else
-	<p><span id="p-title">7.8</span>{!! $contrato->clausula_edit_7_8 !!}</p>
+	<p><span id="p-title">7.{{++$count}}</span>{!! $contrato->clausula_edit_7_8 !!}</p>
 	@endif
 
 	<!------clausula---->
 
 	<h5 class="font-weight-bold">CLÁUSULA OITAVA - CONFORMIDADE COM AS LEIS ANTICORRUPÇÃO</h5>
-	
+	<p style="display: none;">{{ $count = 0 }}</p>	
 	@if($contrato->clausula_edit_8_1 == '')
 	@else
-	<p><span id="p-title">8.1</span>{!! $contrato->clausula_edit_8_1 !!}</p>
+	<p><span id="p-title">8.{{++$count}}</span>{!! $contrato->clausula_edit_8_1 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_8_2 == '')
 	@else
-	<p><span id="p-title">8.2</span>{!! $contrato->clausula_edit_8_2 !!}</p>
+	<p><span id="p-title">8.{{++$count}}</span>{!! $contrato->clausula_edit_8_2 !!}</p>
 	@endif
-
+	<p style="display: none;">{{ $count_letter = 'z' }}</p>	
 	@if($contrato->clausula_edit_8_2_a == '')
 	@else
-	<p style="margin-left: 16px !important"><span style="margin-right: 8px !important">a)</span>{!! $contrato->clausula_edit_8_2_a !!}</p>
+	<p><span id="p-title">8.{{++$count}}</span>{!! $contrato->clausula_edit_8_2_a !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_8_2_b == '')
 	@else
-	<p style="margin-left: 16px !important"><span style="margin-right: 8px !important">b)</span>{!! $contrato->clausula_edit_8_2_b !!}</p>
+	<p><span id="p-title">8.{{++$count}}</span>{!! $contrato->clausula_edit_8_2_b !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_8_2_c == '')
 	@else
-	<p style="margin-left: 16px !important"><span style="margin-right: 8px !important">c)</span>{!! $contrato->clausula_edit_8_2_c !!}</p>
+	<p><span id="p-title">8.{{++$count}}</span>{!! $contrato->clausula_edit_8_2_c !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_8_2_d == '')
 	@else
-	<p style="margin-left: 16px !important"><span style="margin-right: 8px !important">d)</span></b>{!! $contrato->clausula_edit_8_2_d !!}</p>
+	<p><span id="p-title">8.{{++$count}}</span></b>{!! $contrato->clausula_edit_8_2_d !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_8_2_e == '')
 	@else
-	<p style="margin-left: 16px !important"><span style="margin-right: 8px !important">e)</span>{!! $contrato->clausula_edit_8_2_e !!}</p>
+	<p><span id="p-title">8.{{++$count}}</span>{!! $contrato->clausula_edit_8_2_e !!}</p>
 	@endif
 	
 	<!------clausula---->
@@ -293,15 +294,15 @@
 
 	<p><span id="p-title">12.1</span>Os PARCEIROS exercerão a fiscalização técnico-financeira das atividades do presente Acordo. </p>
 	<p><span id="p-title">12.2</span>O pesquisador deverá encaminhar ao Setor responsável ou COMISSÃO DA ICT: {{ $contrato->nome_ict }}.</p>
-	
+	<p style="display: none;">{{ $count_letter = 'z' }}</p>	
 	@if($contrato->clausula_edit_12_a == '')
 	@else
-	<p style="margin-left: 16px !important"><span style="margin-right: 8px !important">a)</span>{!! $contrato->clausula_edit_12_a !!}</p>
+	<p style="margin-left: 16px !important"><span style="margin-right: 8px !important">{{str_split(++$count_letter)[1]}})</span>{!! $contrato->clausula_edit_12_a !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_12_b == '')
 	@else
-	<p style="margin-left: 16px !important"><span style="margin-right: 8px !important">b)</span>{!! $contrato->clausula_edit_12_b !!}</p>
+	<p style="margin-left: 16px !important"><span style="margin-right: 8px !important">{{str_split(++$count_letter)[1]}}))</span>{!! $contrato->clausula_edit_12_b !!}</p>
 	@endif
 
 	<p><span class="font-weight-bold">12.3</span> No Formulário de Resultado de que trata a subcláusula 12.2, deverá ser demonstrada a compatibilidade entre as metas previstas e as alcançadas no período, bem como apontadas as justificativas em caso de discrepância, consolidando dados e valores das ações desenvolvidas. </p>
@@ -314,28 +315,29 @@
 	<h5 class="font-weight-bold">CLÁUSULA DÉCIMA TERCEIRA – DA EXTINÇÃO DO ACORDO</h5>
 
 	<p><span id="p-title">13.1</span>Este Acordo poderá, a qualquer tempo, ser denunciado pelos PARCEIROS, devendo o interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de 60 (sessenta) dias da data em que se pretenda que sejam encerradas as atividades, respeitadas as obrigações assumidas com terceiros entre os PARCEIROS, creditando eventuais benefícios adquiridos no período.. </p>
-	
+	<p style="display: none;">{{ $count = 1 }}</p>
+	<p style="display: none;">{{ $sub_count = 0 }}</p>
 	@if($contrato->clausula_edit_13_2 == '')
 	@else
-	<p><span id="p-title">13.2</span>{!! $contrato->clausula_edit_13_2 !!}</p>
+	<p><span id="p-title">13.{{++$count}}</span>{!! $contrato->clausula_edit_13_2 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_13_2_1 == '')
 	@else
-	<p><span id="p-title">13.2.1</span>{!! $contrato->clausula_edit_13_2_1 !!}</p>
+	<p><span id="p-title">13.2.{{++$sub_count}}</span>{!! $contrato->clausula_edit_13_2_1 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_13_2_2 == '')
 	@else
-	<p><span id="p-title">13.2.2</span>{!! $contrato->clausula_edit_13_2_2 !!}</p>
+	<p><span id="p-title">13.2.{{++$sub_count}}</span>{!! $contrato->clausula_edit_13_2_2 !!}</p>
 	@endif
 
 	@if($contrato->clausula_edit_13_3 == '')
 	@else
-	<p><span id="p-title">13.3</span>{!! $contrato->clausula_edit_13_3 !!}</p>
+	<p><span id="p-title">13.{{++$count}}</span>{!! $contrato->clausula_edit_13_3 !!}</p>
 	@endif
 
-	<p><span span id="p-title">13.4 O</span> presente Acordo será extinto com o cumprimento do objeto ou com o decurso de prazo de vigência. </p>
+	<p><span span id="p-title">13.{{++$count}} O</span> presente Acordo será extinto com o cumprimento do objeto ou com o decurso de prazo de vigência. </p>
 
 
 	<!------clausula---->
@@ -357,7 +359,6 @@
 	<p><span id="p-title">15.2.4</span>Se enviada por e-mail, desde que confirmado o recebimento pelo destinatário, ou, após transcorridos 5 (cinco) dias úteis, o que ocorrer primeiro. Na hipótese de transcurso do prazo sem confirmação, será enviada cópia por correio, considerando-se, todavia, a notificação devidamente realizada. </p>
 	<p><span id="p-title">15.3</span> Qualquer dos PARCEIROS poderá, mediante comunicação por escrito, alterar o endereço para o qual as comunicações ou solicitações deverão ser enviadas. </p>
 	
-	<br><br><br>
 	<!------clausula---->
 	
 	<h5 class="font-weight-bold">CLÁUSULA DÉCIMA SEXTA – DISPOSIÇÕES GERAIS</h5>
@@ -380,15 +381,12 @@
 		{{$contrato->nome_rep_privado_foro}} <br> {{$contrato->nome_inst_privado_foro}}</p>
 	</p><br>
 
-	<hr style="text-align: center !important; justify-content:center !important; align-items: center !important" width="40%">		
-	<p style="text-align: center !important; justify-content:center !important; align-items: center !important; margin-top: 0 !important">
-		{{$contrato->nome_testemunha_1}} <br> Testemunha 1</p>
-	</p><br>
+	<p style="text-align: left;">Testemunha 1:__________________________________________</p>
+	<p style="text-align: left;">CPF n°:__________________________________________</p>
+	<br/>
 
-	<hr style="text-align: center !important; justify-content:center !important; align-items: center !important" width="40%">		
-	<p style="text-align: center !important; justify-content:center !important; align-items: center !important; margin-top: 0 !important">
-		{{$contrato->nome_testemunha_2}} <br> Testemunha 2</p>
-	</p>
+	<p style="text-align: left;">Testemunha 2:__________________________________________</p>
+	<p style="text-align: left;">CPF n°:__________________________________________</p>
 	<br>
 
 </div><!--big-div-->

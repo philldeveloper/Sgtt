@@ -112,3 +112,50 @@ label.error{
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(218, 54, 25, 0.25);
 }
+.bg-undo{
+ background-color:  #1cc88a !important;
+}
+
+.bg-trash{
+  background-color: #e3342f !important;
+}
+
+.remove-box{
+  /* display: flex; */
+  width: 28px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3342f;
+  transition: opacity ease-in 200ms;
+  cursor: pointer;
+  padding: 6px;
+  vertical-align: super;
+}
+
+.remove-box::before{
+  color: white;
+}
+
+.remove-box:hover{
+  opacity: 0.8;
+}
+
+.remove-box > i{
+  color: #f8f9fa;
+}
+
+.badge_sub {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}

@@ -118,6 +118,57 @@ function handleCargoPrivado(event){
     })
 }
 
+/*Lógica para removação* das Clausulas opcionais */
+var clausulas = []
+var calsula2_count = 0
+var tabs = document.getElementsByClassName("tab-pane");
 
+function handleClausulasOpt(event){
+    let badges = Array.from(tabs[currentTab].getElementsByClassName("badge"));
+    let id = event.target.id
+    let CurrentBadge = event.target.parentNode.children[0] 
+    const textarea = document.querySelector(`[name="${id}"]`)
+    if(event.target.classList[2] == 'fa-trash'){
+       console.log(calsula2_count + 1, badges.length)
+        if(calsula2_count + 1 == badges.length){
+            Toastify({
+                text: "Você não pode remover todas as clausulas.",
+                backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
+                duration: 3000
+            }).showToast(); 
+            return false
+        }
+   
+        event.target.classList.value = 'remove-box fas fa-undo bg-undo'
+        clausulas.push({ name: id, text: textarea.value})
+        textarea.value = ''
+        textarea.style.display = 'none'
+        CurrentBadge.text = 'Removido'
+        ++calsula2_count
+    }else{
+        event.target.classList.value = 'remove-box fas fa-trash bg-trash'
+        textarea.style.display = 'block'
+        --calsula2_count
+        clausulas.forEach((cl, index) => {
+            if(cl.name == id){
+                textarea.value = cl.text
+                clausulas.splice(index, 1)
+            }
+        });
+        CurrentBadge.text = ''
+    }
+    handleCountBadges(badges)
+}
+
+
+function handleCountBadges(badges){
+    let aux = 1;
+    badges.forEach((badge, index) => {
+        if(badge.text != 'Removido' && badge.id){
+            badge.text = `Cláusula ${badge.id.match(/\d+/g)[0]}.${aux}`;
+            ++aux;
+        }
+    })
+}
 
 
