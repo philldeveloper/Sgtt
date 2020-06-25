@@ -214,13 +214,13 @@
                 <td>
                     <form action="{{route('contrato_sr.destroy',$contratos->id) }}" method="POST">
                       <div class="btn-group" role="group" aria-label="Basic example">
-                        <a @popper(Ver) href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-eye"></i></a>
-                        <a @popper(Editar) href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-pen"></i></a>
-                        <a @popper(Baixar) href="#" data-toggle="modal" data-target="#modal-sr-loading--{{$contratos->id}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" target="blank"><i class="fas fa-download"></i></a>
+                        <a @popper(Ver) href="{{route('contratosr_show', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold"><i class="fas fa-eye"></i></a>
+                        <a @popper(Editar) href="{{route('contratosr_edit', $contratos->id)}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold"><i class="fas fa-pen"></i></a>
+                        <a @popper(Baixar) href="#" data-toggle="modal" data-target="#modal-sr-loading--{{$contratos->id}}" class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold"><i class="fas fa-download"></i></a>
                         
                         @include('pesquisador.modals.contrato-sr_delete') 
                         
-                        <a @popper(Deletar) href="#" data-toggle="modal" data-target="#contrato-sr_delete--{{$contratos->id}}" class="btn btn-sm pl-3 pr-3 btn-danger font-weight-bold" target="blank"><i class="fas fa-trash text-light"></i></a>
+                        <a @popper(Deletar) href="#" data-toggle="modal" data-target="#contrato-sr_delete--{{$contratos->id}}" class="btn btn-sm pl-3 pr-3 btn-danger font-weight-bold"><i class="fas fa-trash text-light"></i></a>
                         <!-- <a @popper(Enviar Email) class="btn btn-sm pl-3 pr-3 btn-outline-dark font-weight-bold" href="mailto:{{$contratos->email}}?subject= SGTT - Informações sobre Contrato SEM Repasse&body=Caro {{$contratos->nome}}, " target="blank"><i class="fas fa-paper-plane"></i></a> -->
                       </div>
                   </form>
@@ -383,23 +383,20 @@
 <!-- SCRIPT PARA SEM REPASSE -->
 <script>
 
-function modaltoDefaultSR(){
-  var userMessage = document.getElementById('user-message-sr')
-  var iconSuccess = document.getElementById('success-icon-sr')
-  iconSuccess.style.display = 'none'
-  userMessage.innerHTML = 'Clique em Baixar para fazer o download do seu PDF.'
+var userMessageSR = document.querySelectorAll('#user-message-sr')
+var iconSuccessSR = document.querySelectorAll('#success-icon-sr')
+var gifSR = document.querySelectorAll('#gif-loading-sr')
 
+function modaltoDefaultSR(){
+  iconSuccessSR.forEach((item) => item.style.display = 'none')
+  userMessageSR.forEach((item) => item.innerHTML = 'Clique em Baixar para fazer o download do seu PDF.')
 }
 
-function loadingDownloadSR(event){
+async function loadingDownloadSR(event){
   event.preventDefault();
-
-  var userMessage = document.getElementById('user-message-sr')
-  var iconSuccess = document.getElementById('success-icon-sr')
   const button = event.target
   const requestUrl = event.target.href
-  const gif = document.getElementById('gif-loading-sr')
-  
+
   $.ajax({
     url: requestUrl,
     type: 'GET',
@@ -407,7 +404,7 @@ function loadingDownloadSR(event){
 			responseType : 'arraybuffer'
 		},
     dataType : 'binary',
-    success: function(data,textStatus, request) {
+    success: await function(data,textStatus, request) {
       var MyBlob = new Blob([data], {type: "application/pdf"});
       var title = request.getResponseHeader('Content-Disposition').match(/filename="(.+)"/)[1]; 
       title = parseFileName(title);
@@ -416,15 +413,15 @@ function loadingDownloadSR(event){
          link.download= title;
          link.click();
     },
-    beforeSend: function (){
-      gif.style.display = 'block'
-      userMessage.innerHTML = 'Aguarde um pouco!<br> seu contrato está sendo gerado...'
+    beforeSend: await function (){
+      gifSR.forEach((item) => item.style.display = 'block' )
+      userMessageSR.forEach((item) => item.innerHTML = 'Aguarde um pouco!<br> seu contrato está sendo gerado...')
       button.setAttribute("disabled", true)
     },
-    complete: function(){
-      gif.style.display = 'none'
-      iconSuccess.style.display = 'block'
-      userMessage.innerHTML = 'Download do contrato realizado com sucesso!'
+    complete: await function(){
+      gifSR.forEach((item) => item.style.display = 'none' )
+      iconSuccessSR.forEach((item) => item.style.display = 'block')
+      userMessageSR.forEach((item) => item.innerHTML = 'Download do contrato realizado com sucesso!')
       button.setAttribute("disabled", false)
     }
   })
@@ -433,7 +430,7 @@ function loadingDownloadSR(event){
 }
 
 function parseFileName(name){
-  var title = name
+  let title = name
   while(title.includes('_')){
     title = title.replace('_', '')
   }
@@ -445,22 +442,20 @@ function parseFileName(name){
 <!-- SCRIPT COM REPASSE -->
 <script>
 
-function modaltoDefaultCR(){
-  var userMessage = document.getElementById('user-message-cr')
-  var iconSuccess = document.getElementById('success-icon-cr')
-  iconSuccess.style.display = 'none'
-  userMessage.innerHTML = 'Clique em Baixar para fazer o download do seu PDF.'
+  var userMessage = document.querySelectorAll('#user-message-cr')
+  var iconSuccess = document.querySelectorAll('#success-icon-cr')
+  var gif = document.querySelectorAll('#gif-loading-cr')
 
+function modaltoDefaultCR(){
+  iconSuccess.forEach((item) => item.style.display = 'none' )
+  userMessage.forEach((item) => item.innerHTML = 'Clique em Baixar para fazer o download do seu PDF.')
 }
 
 function loadingDownloadCR(event){
   event.preventDefault();
 
-  var userMessage = document.getElementById('user-message-cr')
-  var iconSuccess = document.getElementById('success-icon-cr')
   const button = event.target
   const requestUrl = event.target.href
-  const gif = document.getElementById('gif-loading-cr')
   
   $.ajax({
     url: requestUrl,
@@ -470,23 +465,23 @@ function loadingDownloadCR(event){
 		},
     dataType : 'binary',
     success: function(data,textStatus, request) {
-      var MyBlob = new Blob([data], {type: "application/pdf"});
-      var title = request.getResponseHeader('Content-Disposition').match(/filename="(.+)"/)[1]; 
+      let MyBlob = new Blob([data], {type: "application/pdf"});
+      let title = request.getResponseHeader('Content-Disposition').match(/filename="(.+)"/)[1]; 
       title = parseFileName(title);
-      var link = document.createElement('a');
+      let link = document.createElement('a');
          link.href= window.URL.createObjectURL(MyBlob);
          link.download= title;
          link.click();
     },
     beforeSend: function (){
-      gif.style.display = 'block'
-      userMessage.innerHTML = 'Aguarde um pouco!<br> seu contrato está sendo gerado...'
+      gif.forEach((item) => item .style.display = 'block')
+      userMessage.forEach((item) => item.innerHTML = 'Aguarde um pouco!<br> seu contrato está sendo gerado...')
       button.setAttribute("disabled", true)
     },
     complete: function(){
-      gif.style.display = 'none'
-      iconSuccess.style.display = 'block'
-      userMessage.innerHTML = 'Download do contrato realizado com sucesso!'
+      gif.forEach((item) => item.style.display = 'none')
+      iconSuccess.forEach((item) => item.style.display = 'block')
+      userMessage.forEach((item) => item.innerHTML = 'Download do contrato realizado com sucesso!')
       button.setAttribute("disabled", false)
     }
   })

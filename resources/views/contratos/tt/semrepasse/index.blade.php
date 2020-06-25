@@ -1179,7 +1179,7 @@
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="privado_contato_endereco"
-                id="endereco" 
+                id="endereco_privado" 
                 placeholder="Ex: Rua Nova Iorque, 400, Zona Sul, São Paulo">
             </div>
             <div class="form-group col">
