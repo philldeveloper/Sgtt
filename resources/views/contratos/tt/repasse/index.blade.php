@@ -1317,7 +1317,7 @@
                 id="clausula_edit_9_a"
             >
             </span>
-          <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle m-2"></i></a>
           <textarea class="form-control" name="clausula_edit_9_a" rows="5">Os PARCEIROS não poderão, em hipótese alguma, dar ou oferecer nenhum tipo de presente, viagens, vantagens a qualquer empregado, servidor, preposto ou diretor de outro PARCEIRO, especialmente àqueles responsáveis pela fiscalização do presente Acordo. Serão admitidos apenas, em épocas específicas, a entrega de brindes, tais como canetas, agendas, folhinhas, cadernos etc;</textarea>
         </div>
         <div class="col-md-12 mb-3">
@@ -1328,7 +1328,7 @@
               id="clausula_edit_9_b"
           >
           </span>
-          <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle m-2"></i></a>
           <textarea class="form-control" name="clausula_edit_9_b" rows="5">Os PARCEIROS somente poderão representar outro PARCEIRO perante órgãos públicos quando devidamente autorizado para tal, seja no corpo do próprio Acordo, seja mediante autorização prévia, expressa e escrita de seu representante com poderes para assim proceder;</textarea>
         </div>
         <div class="col-md-12 mb-3">

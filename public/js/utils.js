@@ -176,6 +176,9 @@ const letterIncrement = (letter) =>  String.fromCharCode(letter.charCodeAt(0) + 
 
 function handleCountBadgesWithLateter(badges) { 
     let aux = 'A';
+    if(badges[0].dataset.init){
+        aux = badges[0].dataset.init
+    }
     badges.forEach((badge, index) => {
         if(badge.text != 'Removido' && badge.id){
             badge.text = `${aux})`;

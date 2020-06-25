@@ -545,13 +545,25 @@
             </div>
 
             <div class="col-md-12 mb-3 p-0">
-                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA B</a>
+            <a id="9_a" data-init="B" class="badge_letter badge-primary text-light font-weight-bold float-left mb-2 p-2">B)</a>
+              <span
+                  onclick="handleClausulasOptWithLetter(event)" 
+                  class="remove-box fas fa-trash"
+                  id="clausula_edit_3_1_b"
+              >
+              </span>
                 <textarea class="form-control" name="clausula_edit_3_1_b" rows="3" style="background-color: #F6FAFA; resize: none !important;">Prestar ao(s) parceiro(s) informações sobre os recursos recebidos e a respectiva situação de execução dos projetos aprovados, nos termos deste Acordo;</textarea>
             </div>
 
             <div class="col-md-12 mb-3 p-0">
-                <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA C</a>
-                <a href="#" data-toggle="modal" data-target="#modalExemplo16" class="float-left mt-1 ml-2"><i class="fas fa-fw fa-question-circle"></i></a>
+                <a id="9_a" class="badge_letter badge-primary text-light font-weight-bold float-left mb-2 p-2">C)</a>
+                <span
+                    onclick="handleClausulasOptWithLetter(event)" 
+                    class="remove-box fas fa-trash"
+                    id="clausula_edit_3_1_b"
+                >
+                </span>
+                <a href="#" data-toggle="modal" data-target="#modalExemplo16" class="mt-1 ml-2"><i class="fas fa-fw fa-question-circle"></i></a>
                 <textarea class="form-control" name="clausula_edit_3_1_c" rows="3" style="background-color: #F6FAFA; resize: none !important;" placeholder="demais..."></textarea>
             </div>
 
@@ -848,18 +860,36 @@
           </div>
 
           <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.6</a>
-              <a href="#" data-toggle="modal" data-target="#modal_clausula_7_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
+              <a data-opt2="6" id="clausula_7" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.6</a>
+              <span
+                onclick="handleClausulasOpt(event)" 
+                class="remove-box fas fa-trash"
+                id="clausula_edit_7_6"
+                >
+              </span>
+              <a href="#" data-toggle="modal" data-target="#modal_clausula_7_6"><i class="fas fa-fw m-2"></i></a>
               <textarea class="form-control" name="clausula_edit_7_6" rows="3" style="background-color: #F6FAFA; resize: none !important;">As obrigações de sigilo em relação às INFORMAÇÕES CONFIDENCIAIS serão mantidas durante o período de vigência deste Acordo e pelo prazo de 5 (cinco) anos após sua extinção.</textarea>
             </div>
             <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.7</a>
-              <a href="#" data-toggle="modal" data-target="#modal_clausula_7_7"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
+              <a id="clausula_7" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.7</a>
+              <span
+                onclick="handleClausulasOpt(event)" 
+                class="remove-box fas fa-trash"
+                id="clausula_edit_7_7"
+                >
+              </span>
+              <a href="#" data-toggle="modal" data-target="#modal_clausula_7_7"><i class="fas fa-fw m-2"></i></a>
               <textarea class="form-control" name="clausula_edit_7_7" rows="3" style="background-color: #F6FAFA; resize: none !important;">Para efeito dessa cláusula, todas as informações referentes ao “processo/serviço/projeto........” serão consideradas como INFORMAÇÃO CONFIDENCIAL, retroagindo às informações obtidas antes da assinatura do acordo.</textarea>
             </div>
             <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.8</a>
-              <a href="#" data-toggle="modal" data-target="#modal_clausula_7_8"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
+            <a id="clausula_7" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 7.8</a>
+              <span
+                onclick="handleClausulasOpt(event)" 
+                class="remove-box fas fa-trash"
+                id="clausula_edit_7_8"
+                >
+              </span>
+              <a href="#" data-toggle="modal" data-target="#modal_clausula_7_8"><i class="fas fa-fw m-2"></i></a>
               <textarea class="form-control" name="clausula_edit_7_8" rows="3" style="background-color: #F6FAFA; resize: none !important;">Para efeito dessa cláusula, a classificação das informações como confidenciais será de responsabilidade de seu titular, devendo indicar os conhecimentos ou informações classificáveis como CONFIDENCIAIS por qualquer meio.</textarea>
           </div>
 
