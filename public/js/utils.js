@@ -120,7 +120,6 @@ function handleCargoPrivado(event){
 
 /*Lógica para removação* das Clausulas opcionais */
 var clausulas = []
-var calsula2_count = 0
 var tabs = document.getElementsByClassName("tab-pane");
 
 function handleClausulasOpt(event){
@@ -129,8 +128,7 @@ function handleClausulasOpt(event){
     let CurrentBadge = event.target.parentNode.children[0] 
     const textarea = document.querySelector(`[name="${id}"]`)
     if(event.target.classList[2] == 'fa-trash'){
-       console.log(calsula2_count + 1, badges.length)
-        if(calsula2_count + 1 == badges.length){
+        if(countClaulsasActive(badges) + 1 == badges.length){
             Toastify({
                 text: "Você não pode remover todas as clausulas.",
                 backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
@@ -144,11 +142,9 @@ function handleClausulasOpt(event){
         textarea.value = ''
         textarea.style.display = 'none'
         CurrentBadge.text = 'Removido'
-        ++calsula2_count
     }else{
         event.target.classList.value = 'remove-box fas fa-trash bg-trash'
         textarea.style.display = 'block'
-        --calsula2_count
         clausulas.forEach((cl, index) => {
             if(cl.name == id){
                 textarea.value = cl.text
@@ -160,9 +156,13 @@ function handleClausulasOpt(event){
     handleCountBadges(badges)
 }
 
+const countClaulsasActive = (badges) => badges.filter((badge) => badge.text === 'Removido').length
 
 function handleCountBadges(badges){
     let aux = 1;
+    if(badges[0].dataset.opt2){
+        aux = Number(badges[0].dataset.opt2)
+    }
     badges.forEach((badge, index) => {
         if(badge.text != 'Removido' && badge.id){
             badge.text = `Cláusula ${badge.id.match(/\d+/g)[0]}.${aux}`;
@@ -171,4 +171,50 @@ function handleCountBadges(badges){
     })
 }
 
+
+const letterIncrement = (letter) =>  String.fromCharCode(letter.charCodeAt(0) + 1); 
+
+function handleCountBadgesWithLateter(badges) { 
+    let aux = 'A';
+    badges.forEach((badge, index) => {
+        if(badge.text != 'Removido' && badge.id){
+            badge.text = `${aux})`;
+            aux = letterIncrement(aux);
+        }
+    })
+} 
+
+function handleClausulasOptWithLetter(event){
+    let badges = Array.from(tabs[currentTab].getElementsByClassName("badge_letter"));
+    let id = event.target.id
+    let CurrentBadge = event.target.parentNode.children[0] 
+    const textarea = document.querySelector(`[name="${id}"]`)
+    if(event.target.classList[2] == 'fa-trash'){
+       /*  if(countClaulsasActive(badges) + 1  == badges.length){
+            Toastify({
+                text: "Você não pode remover todas as clausulas.",
+                backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
+                duration: 3000
+            }).showToast(); 
+            return false
+        } */
+   
+        event.target.classList.value = 'remove-box fas fa-undo bg-undo'
+        clausulas.push({ name: id, text: textarea.value})
+        textarea.value = ''
+        textarea.style.display = 'none'
+        CurrentBadge.text = 'Removido'
+    }else{
+        event.target.classList.value = 'remove-box fas fa-trash bg-trash'
+        textarea.style.display = 'block'
+        clausulas.forEach((cl, index) => {
+            if(cl.name == id){
+                textarea.value = cl.text
+                clausulas.splice(index, 1)
+            }
+        });
+        CurrentBadge.text = ''
+    }
+    handleCountBadgesWithLateter(badges)
+}
 

@@ -450,7 +450,7 @@
           </div>
             
           <div class="col-md-12 mb-3 p-0">
-              <a id="clausula_2" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">
+              <a data-opt2="2" id="clausula_2" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">
                 Cláusula 2.2
               </a>
               <span
@@ -464,7 +464,7 @@
           </div>
 
           <div class="col-md-12 mb-3 p-0">
-              <a id="clausula_2" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
+              <a data-opt2="true" id="clausula_2" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
               <span
                 onclick="handleClausulasOpt(event)" 
                 class="remove-box fas fa-trash"
@@ -476,7 +476,7 @@
           </div>
 
           <div class="col-md-12 mb-3 p-0">
-            <a id="clausula_2" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.4</a>
+            <a data-opt2="true" id="clausula_2" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.4</a>
             <span
                 onclick="handleClausulasOpt(event)" 
                 class="remove-box fas fa-trash"
@@ -488,7 +488,7 @@
           </div>
           
           <div class="col-md-12 mb-3 p-0">
-            <a id="clausula_2" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.5</a>
+            <a data-opt2="true" id="clausula_2" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.5</a>
             <span
                 onclick="handleClausulasOpt(event)" 
                 class="remove-box fas fa-trash"
@@ -500,7 +500,7 @@
           </div>
           
           <div class="col-md-12 mb-3 p-0">
-            <a id="clausula_2" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.6</a>
+            <a data-opt2="true" id="clausula_2" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.6</a>
             <span
                 onclick="handleClausulasOpt(event)" 
                 class="remove-box fas fa-trash"
