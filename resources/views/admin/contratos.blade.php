@@ -66,7 +66,7 @@
               <a @popper(Editar) href="{{route('contratosr_edit', $contratos->id)}}" class="d-inline-flex btn btn-outline-dark border-0" target="blank"><i class="fas fa-pen"></i></a>
               <a @popper(Baixar) href="#" data-toggle="modal" data-target="#modal-sr-loading--{{$contratos->id}}" class="d-inline-flex btn btn-outline-primary border-0" target="blank"><i class="fas fa-download"></i></a>
               <a @popper(Enviar Email) href="mailto:{{$contratos->user->email}}?subject= SGTT - Informações sobre Contrato&body=Caro {{$contratos->user->nome}}," class="d-inline-flex btn btn-outline-dark border-0" target="blank"><i class="fas fa-paper-plane"></i></a>
-              <a @popper(Deletar) href="#" data-toggle="modal" data-target="#contrato-sr_delete--{{$contratos->id}}" class="d-inline-flex btn btn-outline-danger border-0" target="blank"><i class="fas fa-trash"></i></a>
+              <a @popper(Deletar) href="#" data-toggle="modal" data-target="#contrato-sr_delete--{{$contratos->id}}" class="d-inline-flex btn btn-danger border-0" target="blank"><i class="fas fa-trash"></i></a>
             </div>
           </form>
         </td>
@@ -117,7 +117,7 @@
               <a @popper(Editar) href="{{route('contratocr_edit', $cr->id)}}" class="d-inline-flex btn btn-outline-dark border-0" target="blank"><i class="fas fa-pen"></i></a>
               <a @popper(Baixar) href="#" data-toggle="modal" data-target="#modal-cr-loading--{{$cr->id}}" class="d-inline-flex btn btn-outline-primary border-0" target="blank"><i class="fas fa-download"></i></a>
               <a @popper(Enviar Email) href="mailto:{{$cr->user->email}}?subject= SGTT - Informações sobre Contrato&body=Caro {{$contratos->user->nome}}," class="d-inline-flex btn btn-outline-dark border-0" target="blank"><i class="fas fa-paper-plane"></i></a>
-              <a @popper(Deletar) href="#" data-toggle="modal" data-target="#contrato-cr_delete--{{$cr->id}}" class="d-inline-flex btn btn-outline-danger border-0" target="blank"><i class="fas fa-trash"></i></a>
+              <a @popper(Deletar) href="#" data-toggle="modal" data-target="#contrato-cr_delete--{{$cr->id}}" class="d-inline-flex btn btn-danger border-0" target="blank"><i class="fas fa-trash"></i></a>
             </div>
           </form>
         </td>
