@@ -1340,7 +1340,7 @@
           >
           </span>
         
-          <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle m-2"></i></a>
           <textarea class="form-control" name="clausula_edit_9_c" rows="5">Os PARCEIROS e seus empregados/prepostos, quando agirem em nome ou defendendo interesses deste Acordo perante órgãos, autoridades ou agentes públicos, não poderão dar, receber ou oferecer quaisquer presentes, vantagens ou favores a agentes públicos, sobretudo no intuito de obter qualquer tipo de favorecimento para os PARCEIROS;</textarea>
         </div>
         <div class="col-md-12 mb-3">
@@ -1351,7 +1351,7 @@
             id="clausula_edit_9_d"
           >
           </span>
-          <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle m-2"></i></a>
           <textarea class="form-control" name="clausula_edit_9_d" rows="5">Os PARCEIROS, quando agirem em nome ou defendendo seus interesses, não poderão fornecer informações sigilosas a terceiros ou a agentes públicos, mesmo que isso venha a facilitar, de alguma forma, o cumprimento desse Acordo;</textarea>
         </div>
         <div class="col-md-12 mb-3">
@@ -1362,7 +1362,7 @@
             id="clausula_edit_9_e"
           >
           </span>
-          <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle m-2"></i></a>
           <textarea class="form-control" name="clausula_edit_9_e" rows="5">Os PARCEIROS, ao tomar conhecimento de que algum de seus prepostos ou empregados descumpriram as premissas e obrigações acima pactuadas, denunciarão espontaneamente o fato, de forma que, juntas, elaborem e executem um plano de ação para (i) afastar o empregado ou preposto imediatamente; (ii) evitar que tais atos se repitam e (iii) garantir que o Acordo tenha condições de continuar vigente.</textarea>
         </div>
         
