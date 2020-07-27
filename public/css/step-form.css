@@ -145,6 +145,13 @@ label.error{
   color: #f8f9fa;
 }
 
+.duvida-in-input{
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
 .badge_sub, .badge_letter {
   display: inline-block;
   padding: .25em .4em;

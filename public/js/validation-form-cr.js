@@ -210,8 +210,8 @@ $(document).ready(function($){
             maxlength: 'O cep deve conter 8 numeros.',
         },
         cpf: {
-            minlength: 'O cep deve conter 11 numeros.',
-            maxlength: 'O cep deve conter 11 numeros.',
+            minlength: 'O cpf deve conter 11 numeros.',
+            maxlength: 'O cpf deve conter 11 numeros.',
         }
     },
     onfocusout: function(element) {

@@ -106,7 +106,7 @@
 	box-shadow: 1px 1px #cdcdcd !important;
 }
 .text-black{
-	color: black;
+	color: black !important;
 }
 .card-res-hover:hover{
 	background-color: #f8f9fc !important;

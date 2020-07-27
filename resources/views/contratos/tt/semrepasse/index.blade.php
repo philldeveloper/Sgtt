@@ -66,6 +66,23 @@
 @include('pesquisador.modals.modal_clausula_10_1')
 @include('pesquisador.modals.modal_clausula_default')
 @include('pesquisador.modals.modal_anti_corrupcao')
+@include('pesquisador.modals.modal_modelo')
+@include('pesquisador.modals.modal_nome_inst')
+@include('pesquisador.modals.modal_nome_ict')
+@include('pesquisador.modals.modal_cpf')
+@include('pesquisador.modals.modal_rg')
+@include('pesquisador.modals.modal_cnpj')
+@include('pesquisador.modals.modal_orgao')
+@include('pesquisador.modals.modal_nacionalidade')
+@include('pesquisador.modals.modal_cargo')
+@include('pesquisador.modals.modal_doravante')
+@include('pesquisador.modals.modal_natureza_juridica')
+@include('pesquisador.modals.modal_endereco')
+@include('pesquisador.modals.modal_cep')
+@include('pesquisador.modals.modal_representante')
+@include('pesquisador.modals.modal_representante_privado')
+@include('pesquisador.modals.modal_cpf_rep')
+@include('pesquisador.modals.modal_cargo_privado')
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
@@ -103,6 +120,13 @@
 
   <div class="container-fluid">
     <div class="tab-pane show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+    <script type="text/javascript">
+      $(window).load(function() {
+          $('#modal_modelo').modal('show');
+      });
+    </script>
+
       <!-- TIPO do CONTRATO -->
       <input type="hidden" name="tipo" value="Sem repasse">
       <!-- Campo para o step correto caso o cadastro tenha sido realizado com sucesso -->
@@ -160,11 +184,15 @@
           </div> 
           <div class="form-row justify-content-center">
             <div class="form-group col-md-4">
+              <a href="#" data-toggle="modal" data-target="#modal_nome_inst"><i class="fas fa-fw fa-question-circle float-right duvida-in-input"></i></a>
               <input class="mb-2 text-black form-control" type="text" name="nome_ict" onchange="handleNameICT(event)" placeholder="ICT ou ente público"> 
+              
             </div>
             <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">E</h5>
             <div class="form-group col-md-4">
+              <a href="#" data-toggle="modal" data-target="#modal_nome_inst"><i class="fas fa-fw fa-question-circle float-right duvida-in-input"></i></a>
               <input class="mb-2 text-black form-control" type="text" name="nome_parceiro" onchange="handleNameParceiro(event)" placeholder="Nome do parceiro">  
+
             </div>
           </div>
           <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center">NA FORMA A SEGUIR.</h5>
@@ -180,7 +208,8 @@
 
           <div class="form-row">
             <div class="form-group col-md-4">
-              <label for="inputEmail4" class="font-weight-bold text-black">Nome do Solicitante</label>
+              <label for="inputEmail4" class="font-weight-bold text-black">Nome da ICT</label>
+              <a href="#" data-toggle="modal" data-target="#modal_nome_ict"><i class="fas fa-fw fa-question-circle float-right"></i></a>
               <input type="text" name="nome_teste" class="form-control text-black font-weight-bold ofo" id="nome" placeholder="Ex: Instituição Cientifica, Tecnológica e de Inovação - ICT">               
             </div>
             <div class="form-group col-md-4">
@@ -191,8 +220,8 @@
             </div>
             <div class="form-group col-md-4">
               <label for="cpf-cnpj" class="font-weight-bold text-black">CNPJ nº</label>
+              <a href="#" data-toggle="modal" data-target="#modal_cnpj"><i class="fas fa-fw fa-question-circle float-right"></i></a>
               <!-- Botão para acionar modal -->
-              <a href="#" data-toggle="modal" data-target="#modalExemplo2"><i class="fas fa-fw fa-question-circle float-right"></i></a>
               <input type="text" class="form-control text-black font-weight-bold cnpj" placeholder=" 12.345.678/9111-11" name="cnpj" id="cpf-cnpj">
             </div>
           </div>
@@ -200,6 +229,7 @@
           <div class="form-row">
             <div class="form-group col-md-5">
               <label for="endereço" class="font-weight-bold text-black">Endereço</label>
+              <a href="#" data-toggle="modal" data-target="#modal_endereco"><i class="fas fa-fw fa-question-circle float-right"></i></a>
               <input type="text" class="form-control text-black font-weight-bold" onchange="handleEnderecoICT(event)" placeholder=" Rua Dois, nº 111, Edifício 12, apt 54 - Alphavile" name="endereco" id="endereço">
             </div>
             <div class="form-group col-md-3">
@@ -241,6 +271,7 @@
             </div>
             <div class="form-group col-md-2">
               <label for="cep" class="font-weight-bold text-black">CEP</label>
+              <a href="#" data-toggle="modal" data-target="#modal_cep"><i class="fas fa-fw fa-question-circle float-right"></i></a>
               <input type="text" class="form-control text-black font-weight-bold cep" placeholder=" 56.300-000" name="cep" id="cep">
             </div>
           </div>
@@ -249,19 +280,24 @@
           <div class="form-group col-md-4">
             <label for="representante" class="font-weight-bold text-black">Representante Legal</label>
             <!-- Botão para acionar modal -->
-              <a href="#" data-toggle="modal" data-target="#modalExemplo3"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+              <a href="#" data-toggle="modal" data-target="#modal_representante"><i class="fas fa-fw fa-question-circle float-right"></i></a>
             <input type="text" class="form-control text-black font-weight-bold" onchange="handleRepresentanteICT(event)" name="rep_legal" id="representante" placeholder="Nome do representante">
           </div>
           <div class="form-group col-md-3">
             <label for="cpf-mf" class="font-weight-bold text-black">CPF/M.F</label>
+            <a href="#" data-toggle="modal" data-target="#modal_cpf"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+            
             <input type="text" class="form-control text-black font-weight-bold cpf" name="cpf" id="cpf-mf" placeholder=" 103.987.654-89">
           </div>
           <div class="form-group col-md-3">
             <label for="rg" class="font-weight-bold text-black">Identidade nº</label>
+            <a href="#" data-toggle="modal" data-target="#modal_rg"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+
             <input type="text" class="form-control text-black font-weight-bold rg" placeholder=" 16.549.879-9" name="rg" id="rg" placeholder="">
           </div>
           <div class="form-group col-md-2">
             <label for="orgao-expedidor" class="font-weight-bold text-black">Órgão Expedidor</label>
+            <a href="#" data-toggle="modal" data-target="#modal_orgao"><i class="fas fa-fw fa-question-circle float-right"></i></a>
             <input type="text" class="form-control text-black font-weight-bold" name="orgao_exp" placeholder=" SDS" id="orgao-expedidor" placeholder="">
           </div>
           </div>
@@ -269,10 +305,14 @@
           <div class="form-row">
           <div class="form-group col-md-3">
             <label for="nacionalidade" class="font-weight-bold text-black">Nacionalidade</label>
+            <a href="#" data-toggle="modal" data-target="#modal_nacionalidade"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+
               <input type="text" class="form-control text-black font-weight-bold" name="nacionalidade" id="nacionalidade" placeholder="">
           </div>
           <div class="form-group col-md-3">
             <label for="estado-civil" class="font-weight-bold text-black">Estado Civil</label>
+            <a href="#" data-toggle="modal" data-target="#modal_estado_civil"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+
               <input type="text" class="form-control text-black font-weight-bold" name="est_civil" id="estado-civil" placeholder="">
           </div>
           <div class="form-group col-md-3">
@@ -282,10 +322,14 @@
           </div>
           <div class="form-group col-md-3">
             <label for="doravante" class="font-weight-bold text-black">Doravante Denominado</label>
+            <a href="#" data-toggle="modal" data-target="#modal_doravante"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+
             <input type="text" class="form-control text-black font-weight-bold" name="doravante_denominado" id="doravante" placeholder="Ex.: UNIVASF">
           </div>
           <div class="form-group col-md-4">
             <label for="parceiro_cargo" class="font-weight-bold text-black">Cargo do representante</label>
+            <a href="#" data-toggle="modal" data-target="#modal_cargo"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+
             <input type="text" class="form-control text-black font-weight-bold" onchange="handleCargoICT(event)" name="cargo_rep_foro" id="parceiro_cargo" placeholder="Ex.: Reitor">
           </div>
           </div><!-- /.row-->
@@ -302,19 +346,20 @@
 
           <div class="form-row">
             <div class="form-group col-md-4">
-              <label for="inputEmail4" class="font-weight-bold text-black">Instituição</label>                  
+              <label for="inputEmail4" class="font-weight-bold text-black">Instituição</label> 
+              <a href="#" data-toggle="modal" data-target="#modal_nome_inst"><i class="fas fa-fw fa-question-circle float-right"></i></a>
               <input type="text" class="form-control text-black font-weight-bold"  name="nome_parceiro_instituicao" id="inputEmail4" placeholder="Ex: X e Y Advocacia">
             </div>
             <div class="form-group col-md-4">
               <label for="natureza-juridica" class="font-weight-bold text-black">Natureza Jurídica</label>
-              <!-- Botão para acionar modal -->
-              <a href="#" data-toggle="modal" data-target="#modalExemplo4"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+
+              <a href="#" data-toggle="modal" data-target="#modal_natureza_juridica"><i class="fas fa-fw fa-question-circle float-right"></i></a>
               <input type="text" class="form-control text-black font-weight-bold" name="parceiro_nat_juridica" id="natureza-juridica" placeholder="Ex.: Direito público">
             </div>
             <div class="form-group col-md-4">
               <label for="cnpj-n" class="font-weight-bold text-black">CNPJ nº</label>
               <!-- Botão para acionar modal -->
-              <a href="#" data-toggle="modal" data-target="#modalExemplo5"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+              <a href="#" data-toggle="modal" data-target="#modal_cnpj"><i class="fas fa-fw fa-question-circle float-right"></i></a>
               <input type="text" class="form-control text-black font-weight-bold cnpj" placeholder=" 12.345.678/9111-11" name="parceiro_cnpj" id="cnpj-n" placeholder="CNPJ">
             </div>
           </div>
@@ -322,6 +367,7 @@
           <div class="form-row">
             <div class="form-group col-md-5">
               <label for="parceiro-endereco" class="font-weight-bold text-black">Endereço</label>
+              <a href="#" data-toggle="modal" data-target="#modal_endereco"><i class="fas fa-fw fa-question-circle float-right"></i></a>
                 <input type="text" class="form-control text-black font-weight-bold" onchange="handleEnderecoPrivado(event)" placeholder=" Rua Dois, nº 111, Edifício 12, apt 54 - Alphavile"  name="parceiro_endereco" id="parceiro-endereco">
             </div>
             <div class="form-group col-md-3">
@@ -363,6 +409,7 @@
             </div>
             <div class="form-group col-md-2">
               <label for="parceiro_cep" class="font-weight-bold text-black">CEP</label>
+              <a href="#" data-toggle="modal" data-target="#modal_cep"><i class="fas fa-fw fa-question-circle float-right"></i></a>
                 <input type="text" class="form-control text-black font-weight-bold cep" placeholder=" 56.300-000"  name="parceiro_cep" id="parceiro_cep">
             </div>
           </div>
@@ -371,15 +418,17 @@
           <div class="form-group col-md-4">
             <label for="parceiro_rep_legal" class="font-weight-bold text-black">Representante Legal</label>
             <!-- Botão para acionar modal -->
-              <a href="#" data-toggle="modal" data-target="#modalExemplo6"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+              <a href="#" data-toggle="modal" data-target="#modal_representante_privado"><i class="fas fa-fw fa-question-circle float-right"></i></a>
             <input type="text" class="form-control text-black font-weight-bold" name="parceiro_rep_legal" onchange="handleRepresentantePrivado(event)" id="parceiro_rep_legal" placeholder="Nome do representante">
           </div>
           <div class="form-group col-md-3">
             <label for="parceiro_cpf" class="font-weight-bold text-black">CPF/M.F</label>
+            <a href="#" data-toggle="modal" data-target="#modal_cpf_rep"><i class="fas fa-fw fa-question-circle float-right"></i></a>
             <input type="text" class="form-control text-black font-weight-bold cpf" placeholder=" 103.987.654-89" name="parceiro_cpf" id="parceiro_cpf" placeholder="">
           </div>
           <div class="form-group col-md-3">
             <label for="parceiro_rg" class="font-weight-bold text-black">Identidade nº</label>
+            <a href="#" data-toggle="modal" data-target="#modal_carmodal_rg"><i class="fas fa-fw fa-question-circle float-right"></i></a>
             <input type="text" class="form-control text-black font-weight-bold rg" placeholder=" 16.549.879-9" name="parceiro_rg" id="parceiro_rg" placeholder="">
           </div>
           <div class="form-group col-md-2">
@@ -388,6 +437,7 @@
           </div>
           <div class="form-group col-md-4">
             <label for="parceiro_cargo" class="font-weight-bold text-black">Cargo do representante</label>
+            <a href="#" data-toggle="modal" data-target="#modal_cargo_privado"><i class="fas fa-fw fa-question-circle float-right"></i></a>
             <input type="text" class="form-control text-black font-weight-bold" name="parceiro_cargo" onchange="handleCargoPrivado(event)" id="parceiro_cargo" placeholder="Ex.: Reitor">
           </div>
           </div>
