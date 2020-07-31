@@ -99,7 +99,6 @@ class HomeController extends Controller
     {   
         $contratos_sr = Contrato_sr::find($id);
         $contratos_sr->data_foro = $this->handleDate($contratos_sr->data_foro);
-        dd($contratos_sr->data_foro);
         $data = ['title' => '', 'contrato'=> $contratos_sr ];
 
         $pdf = PDF::loadView('pdf.myPDF', $data);
