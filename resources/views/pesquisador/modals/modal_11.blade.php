@@ -10,7 +10,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <p class="lead">Nesse item, é oportuno ao pesquisador descrever, com cautela, o (s) produto (s) resultante (s) do trabalho que será desenvolvido em conjunto a partir de então. </p>
+        <p class="lead">Neste item, é oportuno ao pesquisador descrever, com cautela, o (s) produto (s) resultante (s) do trabalho que será desenvolvido em parceria.</p>
       </div>
     </div>
   </div>

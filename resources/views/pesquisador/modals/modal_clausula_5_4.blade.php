@@ -11,8 +11,7 @@
       </div>
       <div class="modal-body">
         <p class="lead">
-        Os custos relativos à preparação, depósito, acompanhamento e manutenção dos pedidos de 
-        patentes, porventura decorrentes do desenvolvimento da pesquisa, serão pagos pelo IF SERTÃO-PE.
+        As Cláusulas 5.5, 5.6, 5.7 e 5.8 são para negociação entre a ICT e a Empresa Parceira. Essas cláusulas devem ser editadas de acordo com a Política de Inovação de cada ICT.
         </p>
       </div>
     </div>

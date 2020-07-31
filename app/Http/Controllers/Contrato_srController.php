@@ -79,6 +79,7 @@ class Contrato_srController extends Controller
         $contrato_sr->parceiro_rg = $request->parceiro_rg;
         $contrato_sr->parceiro_orgao_exp = $request->parceiro_orgao_exp;
         $contrato_sr->parceiro_cargo = $request->parceiro_cargo;
+        $contrato_sr->doravante_denominado_privado = $request->doravante_denominado_privado;
         
         $contrato_sr->clausula_descricao = $request->clausula_descricao;
         $contrato_sr->clausula_objetivo = $request->clausula_objetivo;
@@ -128,14 +129,26 @@ class Contrato_srController extends Controller
         $contrato_sr->prazo_vigencia = $request->prazo_vigencia;
 
         $contrato_sr->clausula_edit_12_a = $request->clausula_edit_12_a;
+        $contrato_sr->nome_setor_comissao = $request->nome_setor_comissao;
         $contrato_sr->clausula_prazo_12_b = $request->clausula_prazo_12_b;
 
+        $contrato_sr->clausula_prazo_13_1 = $request->clausula_prazo_13_1;
         $contrato_sr->clausula_edit_13_2 = $request->clausula_edit_13_2;
         $contrato_sr->clausula_edit_13_2_1 = $request->clausula_edit_13_2_1;
         $contrato_sr->clausula_edit_13_2_2 = $request->clausula_edit_13_2_2;
         $contrato_sr->clausula_edit_13_3 = $request->clausula_edit_13_3;
-        
-        $contrato_sr->prazo_dias = $request->prazo_dias;
+
+        $contrato_sr->clausula_edit_14_1 = $request->clausula_edit_14_1;
+
+        $contrato_sr->clausula_edit_15_1 = $request->clausula_edit_15_1;
+        $contrato_sr->clausula_edit_15_2 = $request->clausula_edit_15_2;
+        $contrato_sr->clausula_edit_15_3 = $request->clausula_edit_15_3;
+        $contrato_sr->clausula_edit_15_4 = $request->clausula_edit_15_4;
+        $contrato_sr->clausula_edit_15_5 = $request->clausula_edit_15_5;
+        $contrato_sr->clausula_edit_15_6 = $request->clausula_edit_15_6;
+        $contrato_sr->clausula_edit_15_7 = $request->clausula_edit_15_7;
+        $contrato_sr->clausula_edit_16_1 = $request->clausula_edit_16_1;
+        $contrato_sr->clausula_edit_17_1 = $request->clausula_edit_17_1;
 
         $contrato_sr->parceiro_contato_endereco = $request->parceiro_contato_endereco;
         $contrato_sr->parceiro_contato_celular = $request->parceiro_contato_celular;

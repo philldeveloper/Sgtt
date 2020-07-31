@@ -153,8 +153,7 @@ I) O IF Sertão-PE como Titular, a UFMG como Cotitular o Professor e aluno como 
         </button>
       </div>
       <div class="modal-body">
-        <p class="">Caberá à empresa parceira em conjunto com os inventores, no entanto, divulgar nos seus rótulos ou interfaces gráficas e 
-          em espaços de distribuição do produto, a logomarca do IF SERTÃO-PE como empresa apoiadora do desenvolvimento do produto.
+        <p class="">As Cláusulas 5.9, 5.10, 5.11, 5.12 e 5.13 são para negociação entre a ICT e a Empresa Parceira. Essas cláusulas devem ser editadas de acordo com a Política de Inovação de cada ICT.
         </p>
       </div>
     </div>

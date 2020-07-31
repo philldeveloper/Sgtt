@@ -44,6 +44,7 @@ class CreateContratoSrsTable extends Migration
             $table->string('parceiro_rg');
             $table->string('parceiro_orgao_exp');
             $table->string('parceiro_cargo');
+            $table->string('doravante_denominado_privado');
 
             $table->string('clausula_descricao')->nullable()->default(null);
             $table->string('clausula_objetivo')->nullable()->default(null);
@@ -93,14 +94,27 @@ class CreateContratoSrsTable extends Migration
             $table->string('prazo_vigencia');
 
             $table->longText('clausula_edit_12_a')->nullable()->default(null);
+            $table->string('nome_setor_comissao');
             $table->string('clausula_prazo_12_b');
-            
+
+            $table->string('clausula_prazo_13_1');           
             $table->longText('clausula_edit_13_2')->nullable()->default(null);
             $table->longText('clausula_edit_13_2_1')->nullable()->default(null);
             $table->longText('clausula_edit_13_2_2')->nullable()->default(null);
             $table->longText('clausula_edit_13_3')->nullable()->default(null);
+            
+            $table->longText('clausula_edit_14_1')->nullable()->default(null);
 
-            $table->integer('prazo_dias');
+            $table->longText('clausula_edit_15_1')->nullable()->default(null);
+            $table->longText('clausula_edit_15_2')->nullable()->default(null);
+            $table->longText('clausula_edit_15_3')->nullable()->default(null);
+            $table->longText('clausula_edit_15_4')->nullable()->default(null);
+            $table->longText('clausula_edit_15_5')->nullable()->default(null);
+            $table->longText('clausula_edit_15_6')->nullable()->default(null);
+            $table->longText('clausula_edit_15_7')->nullable()->default(null);
+            $table->longText('clausula_edit_16_1')->nullable()->default(null);
+            $table->longText('clausula_edit_17_1')->nullable()->default(null);
+
 
             $table->string('parceiro_contato_endereco');
             $table->string('parceiro_contato_celular');

@@ -10,7 +10,7 @@
         </button>
       </div>
       <div class="modal-body">
-      Nome do coordenador do Projeto da ICT. Por  JANAINA DA SILVA BRANDÃO – Coordenador responsável para acompanhar a execução desse acordo, junto à Empresa parceira.
+      Nome do coordenador do Projeto da ICT. Por Ex: JANAINA DA SILVA BRANDÃO – Coordenadora responsável para acompanhar a execução desse acordo.
       </div>
     </div>
   </div>

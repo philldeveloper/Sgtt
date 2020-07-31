@@ -11,6 +11,7 @@
       </div>
       <div class="modal-body">
         <p class="lead">
+  <b>Clausula dupla! escolher apenas uma opção.</b>
         Recomenda-se a edição dessa cláusula para o modelo disponibilizado pelo NIT – IF sertão, da seguinte forma:<br>
         5.3 As PARTES notificarão uma à outra sobre qualquer invenção ou descoberta concebida ou feita durante o Prazo de 
         Execução, que surja da pesquisa efetuada sob este Convênio e deverão cooperar para a preparação, depósito e acompanhamento de tal pedido

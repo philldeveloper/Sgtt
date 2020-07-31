@@ -11,8 +11,9 @@
       </div>
       <div class="modal-body">
         <p class="">
-        Cláusulas para negociação entre a ICT (IF-Sertão-PE ou UNIVASF) e a Empresa parceira (Verificar o caso concreto).<br>
-        - Estimativa com base no Cronograma do plano de trabalho, o prazo deve ser colocado em <b>MESES</b>.
+        Cláusula para negociação entre a ICT e a Empresa parceira.
+Na estimativa do prazo de vigência e da prorrogação do Acordo de Parceria, deve-se levar em consideração a natureza da pesquisa, o produto de Propriedade Intelectual gerado e as etapas concluídas no Cronograma de execução do Plano de Trabalho.
+        o prazo deve ser colocado em <b>MESES</b>.
 
         </p>
       </div>

@@ -1,6 +1,6 @@
 
 <!-- Modal -->
-<div class="modal fade" id="modalCoordenadorPrivado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal_clausula_3_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -10,7 +10,7 @@
         </button>
       </div>
       <div class="modal-body">
-        Nome do coordenador ou responsável pelo Projeto no âmbito da Empresa parceira. Por Ex: JOÃO DA SILVA – Coordenador responsável para acompanhar a execução desse acordo, junto à ICT...
+      A Cláusula 3.3 é para negociação entre a ICT e a Empresa parceira (p.ex. UNIVASF e Agrovale).
       </div>
     </div>
   </div>

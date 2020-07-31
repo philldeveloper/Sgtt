@@ -10,7 +10,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <p class="lead">Nesse item, é interessante o pesquisador ser objetivo na descrição do projeto para desenvolvimento do produto.</p>
+        <p class="lead">Neste item, o pesquisador deve ser objetivo na descrição do projeto. Por exemplo: Projeto de execução de pesquisa...; Projeto para desenvolvimento de novos produtos...; Projeto para a fabricação de protótipos...; etc..</p>
       </div>
     </div>
   </div>

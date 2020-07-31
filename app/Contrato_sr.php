@@ -39,6 +39,7 @@ class Contrato_sr extends Model
         'parceiro_rg',
         'parceiro_orgao_exp',
         'parceiro_cargo',
+        'doravante_denominado_privado',
 
         //clausulas e variaveis na ordem em que aparecem no sistema.
 
@@ -90,15 +91,24 @@ class Contrato_sr extends Model
         'prazo_vigencia',
 
         'clausula_edit_12_a',
+        'nome_setor_comissao',
         'clausula_prazo_12_b',
-
+        'clausula_prazo_13_1',
         'clausula_edit_13_2',
         'clausula_edit_13_2_1',
         'clausula_edit_13_2_2',
         'clausula_edit_13_3',
+        'clausula_edit_14_1',
+        'clausula_edit_15_2',
+        'clausula_edit_15_3',
+        'clausula_edit_15_4',
+        'clausula_edit_15_5',
+        'clausula_edit_15_6',
+        'clausula_edit_15_7',
+        'clausula_edit_16_1',
+        'clausula_edit_17_1',
         //fim das clausulas editaveis
 
-        'prazo_dias',
 
         //15.1 contato publico
         'parceiro_contato_endereco',

@@ -10,7 +10,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <p class="lead">Cláusulas para negociação entre a ICT (IF-Sertão-PE ou UNIVASF) e a Empresa parceira (Verificar o caso concreto).</p>
+        <p class="lead">As Cláusulas 2.3, 2.4, 2.5 e 2.6 escritas na cor AZUL são para negociação entre a ICT e a Empresa Parceira.</p>
       </div>
     </div>
   </div>

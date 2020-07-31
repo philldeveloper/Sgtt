@@ -4,7 +4,7 @@
         <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">12. CLÁUSULA DÉCIMA SEGUNDA – DO MONITORAMENTO, DA AVALIAÇÃO E DA PRESTAÇÃO DE CONTAS</h4><hr><br>
 
         <p><b>12.1</b> Os <b>PARCEIROS</b> exercerão a fiscalização técnico-financeira das atividades do presente Acordo. </p>
-        <p><b>12.2</b>  O pesquisador deverá encaminhar ao Setor responsável ou COMISSÃO DA ICT:</p>
+        <p><b>12.2</b>  O pesquisador deverá encaminhar ao Setor responsável ou COMISSÃO DA ICT: <input class="mb-2 text-black myform-control" name="nome_setor_comissao"  value="{{$contratos_sr->nome_setor_comissao}}" type="text" disabled></p>
 
         
         <div class="col-md-12 mb-3">
@@ -13,7 +13,8 @@
         </div>
         
         <p><b>12.3</b> No Formulário de Resultado de que trata a subcláusula 12.2, deverá ser demonstrada a compatibilidade entre as metas previstas e as alcançadas no período, bem como apontadas as justificativas em caso de discrepância, consolidando dados e valores das ações desenvolvidas.</p>
-        <p><b>12.4</b> Caberá a cada <b>PARCEIRO</b> adotar as providências necessárias julgadas cabíveis, caso os
+        <p><b>12.4</b> Caberá a cada <b>PARCEIRO</b> adotar as providências necessárias julgadas cabíveis, caso os relatórios parciais de que trata a subcláusula primeira demonstrem inconsistências na execução do objeto deste Acordo.
+
         <p><b>12.5</b> A prestação de contas será simplificada, privilegiando os resultados da pesquisa, e seguirá as regras previstas no artigo 58 do Decreto nº 9.283/18 e/ou na Política de Inovação da entidade pública.</p>
 
     </div>

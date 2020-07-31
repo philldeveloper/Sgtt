@@ -1,6 +1,6 @@
 
 <!-- Modal -->
-<div class="modal fade" id="modalCoordenadorPrivado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal_demais_3_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -10,7 +10,7 @@
         </button>
       </div>
       <div class="modal-body">
-        Nome do coordenador ou responsável pelo Projeto no âmbito da Empresa parceira. Por Ex: JOÃO DA SILVA – Coordenador responsável para acompanhar a execução desse acordo, junto à ICT...
+      Nesse item, “Demais”, deve-se inserir alíneas, caso haja mais atribuições ou funções que serão desempenhadas na execução do Acordo de Cooperação Técnica, pela Empresa Parceira.
       </div>
     </div>
   </div>

@@ -716,7 +716,7 @@
           <br>
           <p><b>7.1 </b>Os PARCEIROS adotarão todas as medidas necessárias para proteger o sigilo das INFORMAÇÕES CONFIDENCIAIS recebidas em função da celebração, desenvolvimento e execução do presente Acordo de Parceria, inclusive na adoção de medidas que assegurem a tramitação do processo, não as divulgando a terceiros, sem a prévia e escrita autorização da outro PARCEIRO.</p>
           <p><b>7.2 </b>Fica vedado aos PARCEIROS utilizar, no âmbito deste Acordo de Parceria, nomes, símbolos e imagens que caracterizem promoção pessoal de autoridades ou servidores públicos.Os PARCEIROS informarão aos seus funcionários e prestadores de serviços e consultores que necessitem ter acesso às informações e conhecimentos que envolvem o objeto do Acordo, acerca das obrigações de sigilo assumidas, responsabilizando-se integralmente por eventuais infrações que estes possam cometer. </p>
-          <p><b>7.3 </b>As PARCEIROS farão com que cada pessoa de sua organização, ou sob o seu controle, que receba informações confidenciais, assuma o compromisso de confidencialidade, por meio assinatura de Termo de Confidencialidade.</p>
+          <p><b>7.3 </b>Os PARCEIROS farão com que cada pessoa de sua organização, ou sob o seu controle, que receba informações confidenciais, assuma o compromisso de confidencialidade, por meio assinatura de Termo de Confidencialidade.</p>
           <p><b>7.4 </b>Não haverá violação das obrigações de CONFIDENCIALIDADE previstas no Acordo de Parceria nas seguintes hipóteses: </p>
           <p><b>7.4.1.</b> Informações técnicas ou comerciais que já sejam do conhecimento dos PARCEIROS na data da divulgação, ou que tenham sido comprovadamente desenvolvidas de maneira independente e sem relação com o Acordo pelo PARCEIRO que a revele; </p>
           <p><b>7.4.2.</b> Informações técnicas ou comerciais que sejam ou se tornem de domínio público, sem culpa da(s) PARCEIROS (S);</p>
@@ -724,7 +724,7 @@
           <p><b>7.4.3.</b> Informações técnicas ou comerciais que sejam recebidas de um terceiro que não esteja sob obrigação de manter as informações técnicas ou comerciais em confidencialidade;</p>
           <p><b>7.4.4.</b> Informações que possam ter divulgação exigida por lei, decisão judicial ou administrativa;</p>
           <p><b>7.4.5.</b> Revelação expressamente autorizada, por escrito, pelos PARCEIROS.</p>
-          <p><b>7.5.</b> A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada. A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada. </p>
+          <p><b>7.5.</b> A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada. </p>
           
           <div class="alert alert-warning" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
@@ -877,7 +877,7 @@
               AVALIAÇÃO E DA PRESTAÇÃO DE CONTAS</h4><hr>
           <br>
           <p><b>12.1</b> Os <b>PARCEIROS</b> exercerão a fiscalização técnico-financeira das atividades do presente Acordo. </p>
-          <p><b>12.2</b>  O pesquisador deverá encaminhar ao <span class="font-weight-bold">Setor responsável ou COMISSÃO DA ICT/AGÊNCIA DE FOMENTO:</span>  </p>
+          <p><b>12.2</b>  O pesquisador deverá encaminhar ao <span class="font-weight-bold">Setor responsável ou COMISSÃO DA ICT/AGÊNCIA DE FOMENTO: <input class="mb-2 text-black myform-control" name="nome_setor_comissao"  value="{{$contratos_sr->nome_setor_comissao}}" type="text"></span>  </p>
 
           <!--clausula editavel 12-->
           <div class="alert alert-info py-2 mt-5 mb-4 text-dark font-weight-bold" role="alert">      
@@ -894,7 +894,8 @@
           </div>
 
           <p><b>12.3</b> No Formulário de Resultado de que trata a subcláusula 12.2, deverá ser demonstrada a compatibilidade entre as metas previstas e as alcançadas no período, bem como apontadas as justificativas em caso de discrepância, consolidando dados e valores das ações desenvolvidas.</p>
-          <p><b>12.4</b> Caberá a cada <b>PARCEIRO</b> adotar as providências necessárias julgadas cabíveis, caso os
+          <p><b>12.4</b> Caberá a cada <b>PARCEIRO</b> adotar as providências necessárias julgadas cabíveis, caso os relatórios parciais de que trata a subcláusula primeira demonstrem inconsistências na execução do objeto deste Acordo.
+
           <div class="alert alert-warning" role="alert">      
             <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
             NOTAS EXPLICATIVAS!
@@ -912,7 +913,7 @@
           <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">13. CLÁUSULA DÉCIMA TERCEIRA – DA EXTINÇÃO DO ACORDO</h4><hr>
           <br>
 
-          <p><b>13.1</b> Este Acordo poderá, a qualquer tempo, ser denunciado pelos <b>PARCEIROS</b>, devendo o interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de <span>60 (sessenta)</span> dias da data em que se pretenda que sejam encerradas as atividades, respeitadas as obrigações assumidas com terceiros entre os <b>PARCEIROS</b>, creditando eventuais benefícios adquiridos no período.</p>
+          <p><b>13.1</b> Este Acordo poderá, a qualquer tempo, ser denunciado pelos <b>PARCEIROS</b>, devendo o interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de  <input class="myform-control text-black" type="text" name="clausula_prazo_13_1" value="{{$contratos_sr->clausula_prazo_13_1}}" placeholder="Prazo em dias"> dias da data em que se pretenda que sejam encerradas as atividades, respeitadas as obrigações assumidas com terceiros entre os <b>PARCEIROS</b>, creditando eventuais benefícios adquiridos no período.</p>
 
         <!--clausula editavel 13-->
 
@@ -952,7 +953,8 @@
         <div class="text-justify text-black">
           <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">14. CLÁUSULA DÉCIMA QUARTA - DA PUBLICIDADE</h4><hr>
           <br>
-          <p><b>14.1</b> A publicação do extrato do presente Acordo de Parceria para PD&I no Diário Oficial da União (DOU) é condição indispensável para sua eficácia e será providenciada pela(o) <input type="text" class="myform-control" id="handle_ict" value="{{$contratos_sr->nome_ict}}" disabled> no prazo de até <input type="number" class="myform-control" id="prazo_dias" value="{{$contratos_sr->prazo_dias}}"> dias da sua assinatura. </p>
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 14.1</a>
+          <textarea class="form-control text-justify" name="clausula_edit_14_1" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_14_1}}</textarea>
         </div>
       </div>
     </div>
@@ -962,11 +964,10 @@
         <div class="text-justify text-black">
           <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">15. CLÁUSULA DÉCIMA QUINTA – DAS NOTIFICAÇÕES </h4><hr>
           <br>
-
-          <p><b>15.1</b> Qualquer comunicação ou notificação relacionada ao Acordo de Parceria poderá ser feita
-                        pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no
-                        respectivo endereço do PARCEIRO notificado, conforme as seguintes informações:<br>
-          <span class="font-weight-bold">PARCEIRO(S) PÚBLICO(S):</span> 
+          <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 15.1</a>
+          <textarea class="form-control text-justify" name="clausula_edit_15_1" rows="5" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_15_1}}</textarea>
+          <br>
+          <span class="font-weight-bold ">PARCEIRO(S) PUBLICO(S):</span> 
           <a href="#" data-toggle="modal" data-target="#dados_instituicoes"><i class="fas fa-fw fa-question-circle m-2"></i></a>
           <div class="form-row">
             <div class="form-group col">
@@ -1055,6 +1056,7 @@
         <br>
         <div class="text-justify text-black">
           <p><b>17.1.</b>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de <input class="myform-control font-weight-bold"  type="text" value="{{$contratos_sr->estado_foro}}" name="estado_foro" placeholder="{{$contratos_sr->estado_foro}}">, cidade de <input  class="myform-control font-weight-bold" type="text" value="{{$contratos_sr->cidade_foro}}" name="cidade_foro" placeholder="{{$contratos_sr->cidade_foro}}">, para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109 da Constituição Federal. E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.</p>
+          <textarea class="form-control text-justify" name="clausula_edit_17_1" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_17_1}}</textarea>
           <br>
           <div class="form-row mt-3">
             <div class="form-group col-md-3">

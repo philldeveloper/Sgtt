@@ -9,10 +9,10 @@ use Auth;
 use App\User;
 
 use App\Contrato_sr;
-
+use DateTime;
 use App\Contrato_cr;
 use PDF;
-
+use IntlDateFormatter;
 use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
@@ -79,10 +79,26 @@ class HomeController extends Controller
         }
     }
 
+   public function handleDate($date){
+    date_default_timezone_set('America/Sao_Paulo');
+
+    $formatter = new IntlDateFormatter('pt_BR',
+                                        IntlDateFormatter::MEDIUM,
+                                        IntlDateFormatter::NONE,
+                                        'America/Sao_Paulo',          
+                                        IntlDateFormatter::GREGORIAN);
+    $data = DateTime::createFromFormat('d/m/Y', $date);
+   // $timestamp = $formatter->parse($date);
+    return $formatter->format($data);
+
+   // return $dateTime;
+
+    }
+
     public function generatePDF($id)
     {   
         $contratos_sr = Contrato_sr::find($id);
-
+        $contratos_sr->data_foro = $this->handleDate($contratos_sr->data_foro);
         $data = ['title' => '', 'contrato'=> $contratos_sr ];
 
         $pdf = PDF::loadView('pdf.myPDF', $data);
@@ -93,7 +109,7 @@ class HomeController extends Controller
     public function generateRepassePDF($id)
     {   
         $contratos_cr = Contrato_cr::find($id);
-
+        $contratos_cr->data_foro = $this->handleDate($contratos_cr->data_foro);
         $data = ['title' => '', 'contrato'=> $contratos_cr ];
 
         $pdf = PDF::loadView('pdf.myRepassePDF', $data);
@@ -104,6 +120,7 @@ class HomeController extends Controller
     public function generateRepasseDOC($id)
     {   
         $contratos_cr = Contrato_cr::find($id);
+        $contratos_cr->data_foro = $this->handleDate($contratos_cr->data_foro);
 
         $data = ['title' => '', 'contrato'=> $contratos_cr ];
 
@@ -153,6 +170,7 @@ class HomeController extends Controller
     public function generateSemRepasseDOC($id)
     {   
         $contratos_cr = Contrato_sr::find($id);
+        $contratos_cr->data_foro = $this->handleDate($contratos_cr->data_foro);
 
         $data = ['title' => '', 'contrato'=> $contratos_cr ];
 

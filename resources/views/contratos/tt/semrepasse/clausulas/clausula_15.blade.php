@@ -1,11 +1,9 @@
 <div class="container-fluid p-0 mt-0 m-0">
     <div class="text-justify text-black">
         <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">15. CLÁUSULA DÉCIMA QUINTA – DAS NOTIFICAÇÕES</h4><hr><br>
-
-        <p><b>15.1</b> Qualquer comunicação ou notificação relacionada ao Acordo de Parceria poderá ser feita
-                    pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no
-                    respectivo endereço do PARCEIRO notificado, conforme as seguintes informações:
-                        <span class="font-weight-bold">PARCEIRO(S) PÚBLICO(S):</span> 
+        <p><b>15.1</b> {{$contratos_sr->clausula_edit_15_1}}
+        <br/>
+        <span class="font-weight-bold">PARCEIRO(S) PÚBLICO(S):</span> 
                   <div class="form-row">
                     <div class="form-group col">
                       <label for="endereco" class="font-weight-bold text-black">Endereço</label>

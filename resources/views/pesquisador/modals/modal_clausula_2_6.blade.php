@@ -10,7 +10,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <p class="lead">Cláusulas para negociação entre a ICT (IF-Sertão-PE ou UNIVASF) e a Empresa parceira (Verificar o caso concreto).</p>
+        <p class="lead">É interessante verificar se a medida de suspender as atividades do projeto é a mais adequando ao caso concreto. Por isso, esta Cláusula deve ser negociada entre a ICT e o Parceiro.</p>
       </div>
     </div>
   </div>

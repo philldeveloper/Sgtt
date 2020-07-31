@@ -11,7 +11,7 @@
       </div>
       <div class="modal-body">
         <p class="">
-        Cláusulas para negociação entre a ICT (IF-Sertão-PE ou UNIVASF) e a Empresa parceira (Verificar o caso concreto).
+        As Cláusulas 7.6, 7.7 e 7.8 se referem às informações confidenciais que serão produzidas ao longo do projeto. Essas Cláusulas são para negociação entre a ICT e a Empresa Parceira acerca de qual (is) cláusulas se adequam ao objeto da pesquisa.
         </p>
       </div>
     </div>

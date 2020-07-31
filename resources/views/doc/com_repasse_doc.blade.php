@@ -474,7 +474,7 @@
     <b>19.1.</b> Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de {{$contrato->estado_foro}}, cidade de {{$contrato->cidade_foro}}, para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109 da Constituição Federal. E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.
 </p>
 <br/>
-<p style="font-weight: bold;">{{$contrato->cidade_foro}}, {{$contrato->estado_foro}}, {{$contrato->data_foro}}</p><br/>
+<p style="font-weight: bold;">{{$contrato->cidade_foro}}/{{$contrato->estado_foro}}, {{$contrato->data_foro}}.</p><br/>
 
 <p style="text-align: center;">______________________________________________</p>
 <p style="text-align: center; justify-content:center; align-items: center;">{{$contrato->nome_rep_foro}} <br/> {{$contrato->cargo_rep_foro}} do(a) {{$contrato->ict_inst_foro}}

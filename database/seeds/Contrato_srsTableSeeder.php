@@ -44,6 +44,7 @@ class Contrato_srsTableSeeder extends Seeder
 		    'parceiro_rg' => '46798123',
 		    'parceiro_orgao_exp' => 'Lorem Ipsum',
 			'parceiro_cargo' => 'Lorem Ipsum',
+			'doravante_denominado_privado' => 'Lorem Ipsum',
 			
 		    'clausula_descricao' => 'Lorem Ipsum',
 		    'clausula_objetivo' => 'Lorem Ipsum',
@@ -93,13 +94,24 @@ class Contrato_srsTableSeeder extends Seeder
 
 			'clausula_edit_12_a' => 'Formulário de Resultado Parcial: anualmente, até o último dia útil do mês de dezembro de cada ano de vigência deste Acordo, em conformidade com os indicadores estabelecidos no respectivo Plano de Trabalho;',
 			'clausula_prazo_12_b' => '120 (cento e vinte)',
+			'nome_setor_comissao' => 'IfSertão',
 
+			'clausula_prazo_13_1' => '999',
 			'clausula_edit_13_2' => 'Constituem motivos para rescisão de pleno direito o inadimplemento de quaisquer das cláusulas pactuadas neste Acordo, o descumprimento das normas estabelecidas na legislação vigente ou a superveniência de norma legal ou fato que tome material ou formalmente inexequível o Acordo de Parceria para PD&I, imputando-se aos PARCEIROS as responsabilidades pelas obrigações até então assumidas, devendo o PARCEIRO que se julgar prejudicado notificar o parceiro para que apresente esclarecimentos no prazo de 15 (quinze) dias corridos.',
 			'clausula_edit_13_2_1' => 'Prestados os esclarecimentos, os PARCEIROS deverão, por mútuo consenso, decidir pela rescisão ou manutenção do Acordo.',
 			'clausula_edit_13_2_2' => 'Decorrido o prazo para esclarecimentos, caso não haja resposta, o Acordo será rescindido de pleno direito, independentemente de notificações ou interpelações, judiciais ou extrajudiciais',
 			'clausula_edit_13_3' => 'O Acordo de Parceria será rescindido em caso de decretação de falência, liquidação extrajudicial ou judicial, ou insolvência de qualquer dos PARCEIROS, ou, ainda, no caso de  10/11 propositura de quaisquer medidas ou procedimentos contra qualquer dos PARCEIROS para sua liquidação e/ou dissolução;',
 			
-			'prazo_dias' => '120',
+			'clausula_edit_14_1' => 'A publicação do extrato do presente Acordo de Parceria para PD&I no Diário Oficial da União (DOU) é condição indispensável para sua eficácia e será providenciada pela Univasf no prazo de até 20 (vinte) dias da sua assinatura.',
+			'clausula_edit_15_1' => 'Qualquer comunicação ou notificação relacionada ao Acordo de Parceria poderá ser feita pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no respectivo endereço do PARCEIRO notificado, conforme as seguintes informações:',
+			'clausula_edit_15_2' => 'Qualquer comunicação ou solicitação prevista neste Acordo de Parceria será considerada como tendo sido legalmente entregue:',
+			'clausula_edit_15_4' => 'Quando entregue em mão a quem destinada, com o comprovante de recebimento;',
+			'clausula_edit_15_5' => 'Quando entregue em mão a quem destinada, com o comprovante de recebimento;',
+			'clausula_edit_15_6' => 'Quando entregue em mão a quem destinada, com o comprovante de recebimento;',
+			'clausula_edit_15_7' => 'Quando entregue em mão a quem destinada, com o comprovante de recebimento;',
+			'clausula_edit_16_1' => 'É livre o acesso dos agentes da administração pública, do controle interno e do Tribunal de Contas aos documentos e às informações relacionados a esse Acordo, bem como aos locais de execução do respectivo objeto, ressalvadas as informações tecnológicas e dados das pesquisas que possam culminar em alguma inovação.',
+			'clausula_edit_17_1' => 'E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.',
+			
 			'parceiro_contato_endereco' => 'Rua Onze',
 			'parceiro_contato_celular' => '87 8832-6362',
 			'parceiro_contato_email' => 'loremipsum@lorem.com',

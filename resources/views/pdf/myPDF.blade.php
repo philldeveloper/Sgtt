@@ -58,7 +58,7 @@
 
 	<h5 class="font-weight-bold">CLÁUSULA PRIMEIRA - DO OBJETO</h5>
 	
-	<p><span id="p-title">1.1.</span>O presente Acordo de Parceria para PD&I tem por objeto a cooperação técnica e científica entre os PARCEIROS para desenvolver o {{$contrato->clausula_descricao}}, a ser executado nos termos do Plano de Trabalho, anexo, visando {{$contrato->clausula_objetivo}} e à execução técnica de projeto de pesquisa, desenvolvimento e inovação – PD&I.</p>
+	<p><span id="p-title">1.1.</span>O presente Acordo de Parceria para PD&I tem por objeto a cooperação técnica e científica entre os PARCEIROS para desenvolver {{$contrato->clausula_descricao}}, a ser executado nos termos do Plano de Trabalho, anexo, visando {{$contrato->clausula_objetivo}} e à execução técnica de projeto de pesquisa, desenvolvimento e inovação – PD&I.</p>
 	
 	<h5 class="font-weight-bold">CLÁUSULA SEGUNDA - DO PLANO DE TRABALHO</h5>
 	
@@ -200,7 +200,7 @@
 
 	<p><span id="p-title">7.1</span>Os PARCEIROS adotarão todas as medidas necessárias para proteger o sigilo das INFORMAÇÕES CONFIDENCIAIS recebidas em função da celebração, desenvolvimento e execução do presente Acordo de Parceria, inclusive na adoção de medidas que assegurem a tramitação do processo, não as divulgando a terceiros, sem a prévia e escrita autorização da outro PARCEIRO. </p>
 	<p><span id="p-title">7.2</span>Fica vedado aos PARCEIROS utilizar, no âmbito deste Acordo de Parceria, nomes, símbolos e imagens que caracterizem promoção pessoal de autoridades ou servidores públicos.Os PARCEIROS informarão aos seus funcionários e prestadores de serviços e consultores que necessitem ter acesso às informações e conhecimentos que envolvem o objeto do Acordo, acerca das obrigações de sigilo assumidas, responsabilizando-se integralmente por eventuais infrações que estes possam cometer. </p>
-	<p><span id="p-title">7.3</span>As PARCEIROS farão com que cada pessoa de sua organização, ou sob o seu controle, que receba informações confidenciais, assuma o compromisso de confidencialidade, por meio assinatura de Termo de Confidencialidade. </p>
+	<p><span id="p-title">7.3</span>Os PARCEIROS farão com que cada pessoa de sua organização, ou sob o seu controle, que receba informações confidenciais, assuma o compromisso de confidencialidade, por meio assinatura de Termo de Confidencialidade. </p>
 	<p><span id="p-title">7.4</span>Não haverá violação das obrigações de CONFIDENCIALIDADE previstas no Acordo de Parceria nas seguintes hipóteses: </p>
 	<p><span id="p-title">7.4.1.</span>Informações técnicas ou comerciais que já sejam do conhecimento dos PARCEIROS na data da divulgação, ou que tenham sido comprovadamente desenvolvidas de maneira independente e sem relação com o Acordo pelo PARCEIRO que a revele; </p>
 	<p><span id="p-title">7.4.2.</span>Informações técnicas ou comerciais que sejam ou se tornem de domínio público, sem culpa da(s) PARCEIROS (S); </p>
@@ -208,7 +208,7 @@
 	<p><span id="p-title">7.4.3.</span>Informações técnicas ou comerciais que sejam recebidas de um terceiro que não esteja sob obrigação de manter as informações técnicas ou comerciais em confidencialidade; </p>
 	<p><span id="p-title">7.4.4.</span>Informações que possam ter divulgação exigida por lei, decisão judicial ou administrativa; </p>
 	<p><span id="p-title">7.4.5.</span>Revelação expressamente autorizada, por escrito, pelos PARCEIROS. </p>
-	<p><span id="p-title">7.5.</span>A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada. A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada. </p>
+	<p><span id="p-title">7.5.</span>A divulgação científica, por meio de artigos em congressos, revistas e outros meios, relacionada ao objeto deste instrumento poderá ser realizada mediante autorização por escrito dos PARCEIROS, e não deverá, em nenhum caso, exceder ao estritamente necessário para a execução das tarefas, deveres ou contratos relacionados com a informação divulgada.</p>
 	<p style="display: none;">{{ $count = 5 }}</p>	
 	@if($contrato->clausula_edit_7_6 == '')
 	@else
@@ -293,7 +293,7 @@
 	<h5 class="font-weight-bold">CLÁUSULA DÉCIMA SEGUNDA – DO MONITORAMENTO, DA AVALIAÇÃO E DA PRESTAÇÃO DE CONTAS</h5>
 
 	<p><span id="p-title">12.1</span>Os PARCEIROS exercerão a fiscalização técnico-financeira das atividades do presente Acordo. </p>
-	<p><span id="p-title">12.2</span>O pesquisador deverá encaminhar ao Setor responsável ou COMISSÃO DA ICT: {{ $contrato->nome_ict }}.</p>
+	<p><span id="p-title">12.2</span>O pesquisador deverá encaminhar ao Setor responsável ou COMISSÃO DA ICT: {{ $contrato->nome_setor_comissao }}.</p>
 	<p style="display: none;">{{ $count_letter = 'z' }}</p>	
 	@if($contrato->clausula_edit_12_a == '')
 	@else
@@ -314,7 +314,7 @@
 
 	<h5 class="font-weight-bold">CLÁUSULA DÉCIMA TERCEIRA – DA EXTINÇÃO DO ACORDO</h5>
 
-	<p><span id="p-title">13.1</span>Este Acordo poderá, a qualquer tempo, ser denunciado pelos PARCEIROS, devendo o interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de 60 (sessenta) dias da data em que se pretenda que sejam encerradas as atividades, respeitadas as obrigações assumidas com terceiros entre os PARCEIROS, creditando eventuais benefícios adquiridos no período.. </p>
+	<p><span id="p-title">13.1</span>Este Acordo poderá, a qualquer tempo, ser denunciado pelos PARCEIROS, devendo o interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de {{$contrato->clausula_prazo_13_1}} da data em que se pretenda que sejam encerradas as atividades, respeitadas as obrigações assumidas com terceiros entre os PARCEIROS, creditando eventuais benefícios adquiridos no período.. </p>
 	<p style="display: none;">{{ $count = 1 }}</p>
 	<p style="display: none;">{{ $sub_count = 0 }}</p>
 	@if($contrato->clausula_edit_13_2 == '')
@@ -350,14 +350,36 @@
 	<!------clausula---->
 	
 	<h5 class="font-weight-bold">CLÁUSULA DÉCIMA QUINTA – DAS NOTIFICAÇÕES</h5>
-	
-	<p><span id="p-title">15.1</span>Qualquer comunicação ou notificação relacionada ao Acordo de Parceria poderá ser feita pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no respectivo endereço do PARCEIRO notificado, conforme as seguintes informações: PARCEIRO(S) PÚBLICO(S): (endereço completo, telefone, celular e e-mail) PARCEIRO(S) PÚBLICO(S): (endereço completo, telefone, celular e e-mail). </p>
-	<p><span id="p-title">15.2</span>Qualquer comunicação ou solicitação prevista neste Acordo de Parceria será considerada como tendo sido legalmente entregue: </p>
-	<p><span id="p-title">15.2.1</span>Quando entregue em mão a quem destinada, com o comprovante de recebimento; </p>
-	<p><span id="p-title">15.2.2</span>Se enviada por correio, registrada ou certificada, porte pago e devidamente endereçada, quando recebida pelo destinatário ou no 5° (quinto) dia seguinte à data do despacho, o que ocorrer primeiro; </p>
-	<p><span id="p-title">15.2.3</span>Se enviada por fax, quando recebida pelo destinatário; </p>
-	<p><span id="p-title">15.2.4</span>Se enviada por e-mail, desde que confirmado o recebimento pelo destinatário, ou, após transcorridos 5 (cinco) dias úteis, o que ocorrer primeiro. Na hipótese de transcurso do prazo sem confirmação, será enviada cópia por correio, considerando-se, todavia, a notificação devidamente realizada. </p>
-	<p><span id="p-title">15.3</span> Qualquer dos PARCEIROS poderá, mediante comunicação por escrito, alterar o endereço para o qual as comunicações ou solicitações deverão ser enviadas. </p>
+	<p><span id="p-title">15.1</span>{!! $contrato->clausula_edit_15_1 !!}</p>
+	<p>	
+		PARCEIRO(S) PÚBLICO(S): ({!! $contrato->parceiro_contato_endereco !!}, {!! $contrato->parceiro_contato_celular !!}, {!! $contrato->parceiro_contato_email !!})
+		PARCEIRO(S) PRIVADO(S): ({!! $contrato->privado_contato_endereco !!}, {!! $contrato->privado_contato_celular !!}, {!! $contrato->privado_contato_email !!})
+	</p>
+	<!-- <p style="display: none;">{{ $count = 1 }}</p> -->
+	@if($contrato->clausula_edit_15_2 == '')
+	@else
+	<p><span id="p-title">15.{{++$count}}</span>{!! $contrato->clausula_edit_15_2 !!}</p>
+	@endif
+	@if($contrato->clausula_edit_15_3 == '')
+	@else
+	<p><span id="p-title">15.{{++$count}}</span>{!! $contrato->clausula_edit_15_3 !!}</p>
+	@endif
+	@if($contrato->clausula_edit_15_4 == '')
+	@else
+	<p><span id="p-title">15.{{++$count}}</span>{!! $contrato->clausula_edit_15_4 !!}</p>
+	@endif
+	@if($contrato->clausula_edit_15_5 == '')
+	@else
+	<p><span id="p-title">15.{{++$count}}</span>{!! $contrato->clausula_edit_15_5 !!}</p>
+	@endif
+	@if($contrato->clausula_edit_15_6 == '')
+	@else
+	<p><span id="p-title">15.{{++$count}}</span>{!! $contrato->clausula_edit_15_6 !!}</p>
+	@endif
+	@if($contrato->clausula_edit_15_7 == '')
+	@else
+	<p><span id="p-title">15.{{++$count}}</span>{!! $contrato->clausula_edit_15_7 !!}</p>
+	@endif
 	
 	<!------clausula---->
 	
@@ -367,9 +389,9 @@
 	<!------clausula---->
 	
 	<h5 class="font-weight-bold">CLÁUSULA DÉCIMA SETIMA – DO FORO</h5>
-	<span class="font-weight-bold">17.1. </span>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de {{$contrato->estado_foro}}, cidade de {{$contrato->cidade_foro}}, para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109 da Constituição Federal. E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais. <br>
+	<span class="font-weight-bold">17.1. </span>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de {{$contrato->estado_foro}}, cidade de {{$contrato->cidade_foro}}, para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109 da Constituição Federal. {{$contrato->clausula_edit_17_1}} <br>
 	<br>
-	<p class="font-weight-bold" style="margin-left: 9px !important">{{$contrato->cidade_foro}}, {{$contrato->estado_foro}}, {{$contrato->data_foro}}</p><br>
+	<p class="font-weight-bold" style="margin-left: 9px !important">{{$contrato->cidade_foro}}/{{$contrato->estado_foro}}, {{$contrato->data_foro}}.</p><br>
 
 	<hr style="text-align: center !important; justify-content:center !important; align-items: center !important" width="40%">		
 	<p style="text-align: center !important; justify-content:center !important; align-items: center !important">
