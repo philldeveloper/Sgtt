@@ -81,13 +81,13 @@ class HomeController extends Controller
 
    public function handleDate($date){
     date_default_timezone_set('America/Sao_Paulo');
-
     $formatter = new IntlDateFormatter('pt_BR',
                                         IntlDateFormatter::MEDIUM,
                                         IntlDateFormatter::NONE,
                                         'America/Sao_Paulo',          
                                         IntlDateFormatter::GREGORIAN);
-    $data = DateTime::createFromFormat('d/m/Y', $date);
+   // $data = DateTime::createFromFormat('d/m/Y', $date);
+    $data = DateTime::createFromFormat('Y-m-d', $date);
    // $timestamp = $formatter->parse($date);
     return $formatter->format($data);
 
@@ -99,6 +99,7 @@ class HomeController extends Controller
     {   
         $contratos_sr = Contrato_sr::find($id);
         $contratos_sr->data_foro = $this->handleDate($contratos_sr->data_foro);
+        dd($contratos_sr->data_foro);
         $data = ['title' => '', 'contrato'=> $contratos_sr ];
 
         $pdf = PDF::loadView('pdf.myPDF', $data);
