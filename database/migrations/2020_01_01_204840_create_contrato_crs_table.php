@@ -47,11 +47,13 @@ class CreateContratoCrsTable extends Migration
             $table->string('parceiro_doravante_denominado');
             $table->string('clausula_descricao')->nullable()->default(null);
 
+            $table->longText('clausula_edit_2_2')->nullable()->default(null);
             $table->longText('clausula_edit_2_3')->nullable()->default(null);
             $table->longText('clausula_edit_2_4')->nullable()->default(null);
             $table->longText('clausula_edit_2_5')->nullable()->default(null);
             $table->longText('clausula_edit_2_6')->nullable()->default(null);
 
+            
             $table->longText('clausula_edit_3a')->nullable()->default(null);
             $table->longText('clausula_edit_3b')->nullable()->default(null);
             $table->longText('clausula_edit_3c')->nullable()->default(null);
@@ -67,7 +69,8 @@ class CreateContratoCrsTable extends Migration
             $table->longText('clausula_edit_3m')->nullable()->default(null);
             $table->longText('clausula_edit_3n')->nullable()->default(null);
             $table->longText('clausula_edit_3_3')->nullable()->default(null);
-
+            
+            $table->longText('clausula_edit_4_3')->nullable()->default(null);
             $table->longText('clausula_edit_4_8')->nullable()->default(null);
             $table->longText('clausula_opcional_4_6')->nullable()->default(null);
             $table->longText('clausula_edit_4_8_1')->nullable()->default(null);
@@ -75,7 +78,10 @@ class CreateContratoCrsTable extends Migration
             $table->longText('clausula_edit_4_9')->nullable()->default(null);
             $table->longText('clausula_edit_4_9_1')->nullable()->default(null);
             $table->longText('clausula_edit_4_10')->nullable()->default(null);
+            $table->string('input_4_10_parceiro');
 
+            $table->string('nome_ict_com_fund_apoio');
+            
             $table->longText('clausula_edit_6_1')->nullable()->default(null);
             $table->longText('clausula_edit_6_2')->nullable()->default(null);
             $table->longText('clausula_edit_6_3')->nullable()->default(null);
@@ -111,6 +117,8 @@ class CreateContratoCrsTable extends Migration
             $table->longText('clausula_edit_13_2')->nullable()->default(null);
             $table->longText('clausula_edit_13_a')->nullable()->default(null);
             $table->longText('clausula_edit_13_b')->nullable()->default(null);
+            $table->longText('clausula_edit_13_5')->nullable()->default(null);
+            $table->longText('clausula_edit_13_6')->nullable()->default(null);
 
             $table->longText('clausula_edit_14_2')->nullable()->default(null);
             $table->longText('clausula_edit_14_2_1')->nullable()->default(null);
@@ -118,8 +126,18 @@ class CreateContratoCrsTable extends Migration
             $table->longText('clausula_edit_14_3')->nullable()->default(null);
             $table->longText('clausula_edit_14_4')->nullable()->default(null);
 
+            $table->longText('clausula_edit_15_1')->nullable()->default(null);
+
             $table->longText('clausula_edit_16_1')->nullable()->default(null);
             $table->longText('clausula_edit_16_2')->nullable()->default(null);
+
+            $table->longText('clausula_edit_17_1')->nullable()->default(null);
+            $table->longText('clausula_edit_17_2')->nullable()->default(null);
+            $table->longText('clausula_edit_17_2_1')->nullable()->default(null);
+            $table->longText('clausula_edit_17_2_2')->nullable()->default(null);
+            $table->longText('clausula_edit_17_2_3')->nullable()->default(null);
+            $table->longText('clausula_edit_17_2_4')->nullable()->default(null);
+            $table->longText('clausula_edit_17_3')->nullable()->default(null);
 
             $table->string('nome_coordenador_ict');
             $table->string('nome_coordenador_privado');
@@ -137,23 +155,26 @@ class CreateContratoCrsTable extends Migration
             $table->string('nome_rep_privado_foro');
             $table->string('cargo_rep_privado_foro');
 
-            $table->string('parceiro_contato_endereco');
+            $table->string('parceiro_contato_endereco')->nullable()->default(null);
             $table->string('parceiro_contato_telefone')->nullable()->default(null);
             $table->string('parceiro_contato_celular')->nullable()->default(null);
-            $table->string('parceiro_contato_email');
+            $table->string('parceiro_contato_email')->nullable()->default(null);
             
-            $table->string('privado_contato_endereco');
+            $table->string('privado_contato_endereco')->nullable()->default(null);
             $table->string('privado_contato_telefone')->nullable()->default(null);
             $table->string('privado_contato_celular')->nullable()->default(null);
-            $table->string('privado_contato_email');
+            $table->string('privado_contato_email')->nullable()->default(null);
 
             $table->string('apoio_contato_endereco')->nullable()->default(null);
             $table->string('apoio_contato_telefone')->nullable()->default(null);
             $table->string('apoio_contato_celular')->nullable()->default(null);
             $table->string('apoio_contato_email')->nullable()->default(null);
 
-            $table->string('nome_testemunha_1');
-            $table->string('nome_testemunha_2');
+            $table->string('nome_rep_fund_apoio')->nullable()->default(null);
+            $table->string('cargo_rep_fund_apoio')->nullable()->default(null);
+
+            /* $table->string('nome_testemunha_1');
+            $table->string('nome_testemunha_2'); */
 
 
             $table->string('tipo')->nullable()->default(null);

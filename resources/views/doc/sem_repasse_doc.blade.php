@@ -1,9 +1,7 @@
 
 <div style="width: 100%; margin-top: 1.5cm !important; margin-left: 1.5cm !important; margin-right:1cm !important; margin-bottom: 1cm !important">
 <h4 style="font-weight: bold; text-transform: uppercase; font-size: 12pt;">
-SERVIÇO PÚBLICO FEDERAL<br/>MINISTÉRIO DA EDUCAÇÃO<br/>
-SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA</h4>
-	<br/>
+SERVIÇO PÚBLICO FEDERAL<br/>MINISTÉRIO DA EDUCAÇÃO<br/></h4>
 <h4 style="font-weight: bold; text-transform: uppercase !important; font-size: 12pt;">ACORDO DE COOPERAÇÃO TÉCNICA QUE ENTRE SI CELEBRAM {{strtoupper($contrato->nome_ict)}}, POR MEIO DO NÚCLEO DE INOVAÇÃO TECNOLÓGICA E {{strtoupper($contrato->nome_parceiro)}}, PARA FINS QUE ESPECIFICA.</h4>
 	<br/><br/>
 <h5 style="font-weight:bold;">1º PARCEIRO</h5>
@@ -102,7 +100,7 @@ SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA</h4>
 
 	<h5 style="font-weight:bold;">CLÁUSULA QUARTA - DO PESSOAL</h5>
 
-	<p><span style="font-weight:bold;">4.1</span> Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem na execução do objeto deste Acordo, de forma que não se estabelecerá, em hipótese alguma, vínculo empregatício ou de qualquer outra natureza com a <span style="text-transform: uppercase !important; font-weight: bold !important">{{$contrato->nome_parceiro}}</span> e o pessoal da <span style="text-transform: uppercase !important; font-weight: bold !important">{!! $contrato->nome_ict !!}</span> e vice-versa, cabendo a cada PARCEIRO a responsabilidade pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a documentação comprobatória da regularidade na contratação.</p>
+	<p><span style="font-weight:bold;">4.1</span> Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem na execução do objeto deste Acordo, de forma que não se estabelecerá, em hipótese alguma, vínculo empregatício ou de qualquer outra natureza com a <span style="text-transform: uppercase !important; font-weight: bold !important">{{$contrato->nome_parceiro}}</span> e o pessoal do(a) <span style="text-transform: uppercase !important; font-weight: bold !important">{!! $contrato->nome_ict !!}</span> e vice-versa, cabendo a cada PARCEIRO a responsabilidade pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a documentação comprobatória da regularidade na contratação.</p>
 
 
 
@@ -381,20 +379,17 @@ SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA</h4>
 	</p>
 	<br/>
 	<p style="font-weight:bold;margin-left: 9px !important">{{$contrato->cidade_foro}}, {{$contrato->estado_foro}}, {{$contrato->data_foro}}.</p><br/>
+	
+	<p style="text-align: center;">Pelo(a) {{$contrato->nome_ict}}:</p>
 	<p style="text-align: center;">______________________________________________</p>
-	<p style="text-align: center; justify-content:center; align-items: center;">{{$contrato->nome_rep_foro}} <br/> {{$contrato->cargo_rep_foro}} do(a) {{$contrato->ict_inst_foro}}
-	</p><br/>
-
+	<p style="text-align: center;">{{$contrato->rep_legal}}</p>
+	<p style="text-align: center;">{{$contrato->cargo_rep_foro}}</p>
+	<br/>
+	<p style="text-align: center;">Pelo(a) {{$contrato->nome_parceiro}}:</p>
 	<p style="text-align: center;">______________________________________________</p>
-	<p style="text-align: center; justify-content:center; align-items: center;">{{$contrato->nome_rep_privado_foro}} <br/> {{$contrato->nome_inst_privado_foro}}
-	</p><br/>
-
-	<p style="text-align: left;">Testemunha 1:__________________________________________</p>
-	<p style="text-align: left;">CPF n°:__________________________________________</p>
+	<p style="text-align: center;">{{$contrato->parceiro_rep_legal}}</p>
+	<p style="text-align: center;">{{$contrato->parceiro_cargo}}</p>
 	<br/>
 
-	<p style="text-align: left;">Testemunha 2:__________________________________________</p>
-	<p style="text-align: left;">CPF n°:__________________________________________</p>
-	<br/>
 
 </div>

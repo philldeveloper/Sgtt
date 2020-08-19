@@ -50,6 +50,7 @@
 @include('pesquisador.modals.modalCoordenador')
 @include('pesquisador.modals.modalCoordenadorPrivado')
 @include('pesquisador.modals.modalPropriedadeIntelectual')
+@include('pesquisador.modals.modalRecursoPrivado')
 @include('pesquisador.modals.modalConfidencial')
 @include('pesquisador.modals.modalAtoNomeacao')
 @include('pesquisador.modals.modal_clausula_2_3')
@@ -67,6 +68,29 @@
 @include('pesquisador.modals.modal_clausula_default')
 @include('pesquisador.modals.modal_anti_corrupcao')
 @include('pesquisador.modals.modalVigencia')
+@include('pesquisador.modals.modal_modelo')
+@include('pesquisador.modals.modal_nome_inst')
+@include('pesquisador.modals.modal_nome_ict')
+@include('pesquisador.modals.modal_cpf')
+@include('pesquisador.modals.modal_rg')
+@include('pesquisador.modals.modal_cnpj')
+@include('pesquisador.modals.modal_orgao')
+@include('pesquisador.modals.modal_nacionalidade')
+@include('pesquisador.modals.modal_cargo')
+@include('pesquisador.modals.modal_doravante')
+@include('pesquisador.modals.modal_natureza_juridica')
+@include('pesquisador.modals.modal_endereco')
+@include('pesquisador.modals.modal_estado_civil')
+@include('pesquisador.modals.modal_cep')
+@include('pesquisador.modals.modal_representante')
+@include('pesquisador.modals.modal_representante_privado')
+@include('pesquisador.modals.modal_cpf_rep')
+@include('pesquisador.modals.modal_cargo_privado')
+@include('pesquisador.modals.modal_demais_3_2')
+@include('pesquisador.modals.modal_clausula_3_3')
+@include('pesquisador.modals.modal_novos')
+@include('pesquisador.modals.modalPDI')
+@include('pesquisador.modals.modalPublicidade')
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
@@ -101,6 +125,11 @@
   </form><!--form-->
 
   <div class="container-fluid" style="text-align: justify !important">
+  <script type="text/javascript">
+      $(window).load(function() {
+          $('#modal_modelo_repasse').modal('show');
+      });
+    </script>
     <div class="tab-pane show active" id="home" role="tabpanel" aria-labelledby="home-tab">
         <div class="modal-alert modal fade" id="minuta-inicial" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
@@ -146,10 +175,12 @@
           </div> 
           <div class="form-row justify-content-center">
             <div class="form-group col-md-4">
-              <input class="mb-2 text-black form-control" type="text" name="nome_ict" onchange="handleNameICT(event)" placeholder="ICT ou ente público"> 
+            <a href="#" data-toggle="modal" data-target="#modal_nome_inst"><i class="fas fa-fw fa-question-circle float-right duvida-in-input"></i></a>
+              <input class="mb-2 text-black form-control" type="text" name="nome_ict" id="nome_ict" onchange="handleNameICT(event)" placeholder="ICT ou ente público"> 
             </div>
             <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">E</h5>
             <div class="form-group col-md-4">
+            <a href="#" data-toggle="modal" data-target="#modal_nome_inst"><i class="fas fa-fw fa-question-circle float-right duvida-in-input"></i></a>
               <input class="mb-2 text-black form-control" type="text" name="nome_parceiro" onchange="handleNameParceiro(event)" placeholder="Nome do parceiro">  
             </div>
           </div>
@@ -166,7 +197,8 @@
 
           <div class="form-row">
             <div class="form-group col-md-4">
-              <label for="inputPassword4" class="font-weight-bold text-black">Nome do Solicitante</label>
+              <label for="inputPassword4" class="font-weight-bold text-black">Nome da ICT</label>
+              <a href="#" data-toggle="modal" data-target="#modal_nome_ict"><i class="fas fa-fw fa-question-circle float-right"></i></a>
               <input type="text" name="nome_teste" class="form-control text-black font-weight-bold" id="nome_teste" placeholder="Empresa solicitante">               
             </div>
             <div class="form-group col-md-4">
@@ -186,6 +218,7 @@
           <div class="form-row">
             <div class="form-group col-md-5">
               <label for="inputAdress" class="font-weight-bold text-black" >Endereço</label>
+              <a href="#" data-toggle="modal" data-target="#modal_endereco"><i class="fas fa-fw fa-question-circle float-right"></i></a>
               <input type="text" class="form-control text-black font-weight-bold"  onchange="handleEnderecoICT(event)" placeholder=" Rua Dois, nº 111, Edifício 12, apt 54 - Alphavile" id="endereco" name="endereco">
             </div>
             <div class="form-group col-md-3">
@@ -227,6 +260,7 @@
             </div>
             <div class="form-group col-md-2">
               <label for="inputZip" class="font-weight-bold text-black">CEP</label>
+              <a href="#" data-toggle="modal" data-target="#modal_cep"><i class="fas fa-fw fa-question-circle float-right"></i></a>
               <input type="text" class="form-control text-black font-weight-bold cep" placeholder=" 56.300-000" id="cep" name="cep">
             </div>
           </div><!--form-row-->
@@ -240,14 +274,17 @@
             </div>
             <div class="form-group col-md-3">
               <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
+              <a href="#" data-toggle="modal" data-target="#modal_cpf"><i class="fas fa-fw fa-question-circle float-right"></i></a>
               <input type="text" class="form-control text-black font-weight-bold cpf"  id="cpf" name="cpf" placeholder=" 103.987.654-89">
             </div>
             <div class="form-group col-md-3">
               <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
+              <a href="#" data-toggle="modal" data-target="#modal_rg"><i class="fas fa-fw fa-question-circle float-right"></i></a>
               <input type="text" class="form-control text-black font-weight-bold rg" placeholder=" 16.549.879-9" id="rg" name="rg" placeholder="">
             </div>
             <div class="form-group col-md-2">
               <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
+              <a href="#" data-toggle="modal" data-target="#modal_orgao"><i class="fas fa-fw fa-question-circle float-right"></i></a>
               <input type="text" class="form-control text-black font-weight-bold" placeholder=" SDS" id="orgao_exp" name="orgao_exp" placeholder="">
             </div>
           </div><!--form-row-->
@@ -255,10 +292,13 @@
           <div class="form-row">
             <div class="form-group col-md-3">
               <label for="inputEmail4" class="font-weight-bold text-black">Nacionalidade</label>
+              <a href="#" data-toggle="modal" data-target="#modal_orgao"><i class="fas fa-fw fa-question-circle float-right"></i></a>
               <input type="text" class="form-control text-black font-weight-bold"  id="nacionalidade" name="nacionalidade" placeholder="Nacionalidade">
             </div>
             <div class="form-group col-md-3">
               <label for="inputPassword4" class="font-weight-bold text-black">Estado Civil</label>
+              <a href="#" data-toggle="modal" data-target="#modal_estado_civil"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+
               <input type="text" class="form-control text-black font-weight-bold"  id="est_civil" name="est_civil" placeholder="Estado Civil">
             </div>
             <div class="form-group col-md-3">
@@ -268,10 +308,12 @@
             </div>
             <div class="form-group col-md-3">
               <label for="inputPassword4" class="font-weight-bold text-black">Doravante Denominado</label>
+              <a href="#" data-toggle="modal" data-target="#modal_doravante"><i class="fas fa-fw fa-question-circle float-right"></i></a>
               <input type="text" class="form-control text-black font-weight-bold"  id="doravante_denominado" name="doravante_denominado" placeholder="Ex.: UNIVASF">
             </div>
             <div class="form-group col-md-4">
               <label for="cargo_rep_foro" class="font-weight-bold text-black">Cargo do representante</label>
+              <a href="#" data-toggle="modal" data-target="#modal_cargo"><i class="fas fa-fw fa-question-circle float-right"></i></a>
               <input type="text" 
                 class="form-control text-black font-weight-bold"
                 name="cargo_rep_foro" 
@@ -289,25 +331,27 @@
         <h5 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 bg-light p-2">2º PARCEIRO</h5>
         <div class="form-row">
           <div class="form-group col-md-4">
-            <label for="inputEmail4" class="font-weight-bold text-black">Instituição</label>                  
+            <label for="inputEmail4" class="font-weight-bold text-black">Instituição</label>        
+            <a href="#" data-toggle="modal" data-target="#modal_nome_inst"><i class="fas fa-fw fa-question-circle float-right"></i></a>          
             <input type="text" class="form-control text-black font-weight-bold"  id="nome_parceiro_instituicao" name="nome_parceiro_instituicao" placeholder="Nome">
           </div>
           <div class="form-group col-md-4">
             <label for="inputPassword4" class="font-weight-bold text-black">Natureza Jurídica</label>
             <!-- Botão para acionar modal -->
-            <a href="#" data-toggle="modal" data-target="#modalExemplo4"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+            <a href="#" data-toggle="modal" data-target="#modal_natureza_juridica"><i class="fas fa-fw fa-question-circle float-right"></i></a>
             <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_nat_juridica" name="parceiro_nat_juridica" placeholder="Ex.: Direito público">
           </div>
           <div class="form-group col-md-4">
             <label for="inputPassword4" class="font-weight-bold text-black">CNPJ nº</label>
             <!-- Botão para acionar modal -->
-            <a href="#" data-toggle="modal" data-target="#modalExemplo5"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+            <a href="#" data-toggle="modal" data-target="#modal_cnpj"><i class="fas fa-fw fa-question-circle float-right"></i></a>
             <input type="text" class="form-control text-black font-weight-bold cnpj"  id="parceiro_cnpj" name="parceiro_cnpj" placeholder="12.345.678/9111-11">
           </div>
         </div><!--form-row-->
         <div class="form-row">
           <div class="form-group col-md-5">
             <label for="" class="font-weight-bold text-black">Endereço</label>
+            <a href="#" data-toggle="modal" data-target="#modal_endereco"><i class="fas fa-fw fa-question-circle float-right"></i></a>
               <input type="text" class="form-control text-black font-weight-bold" onchange="handleEnderecoPrivado(event)" placeholder=" Rua Dois, nº 111, Edifício 12, apt 54 - Alphavile" id="parceiro_endereco" name="parceiro_endereco">
           </div>
           <div class="form-group col-md-3">
@@ -349,6 +393,7 @@
           </div>
           <div class="form-group col-md-2">
             <label for="inputZip" class="font-weight-bold text-black">CEP</label>
+            <a href="#" data-toggle="modal" data-target="#modal_cep"><i class="fas fa-fw fa-question-circle float-right"></i></a>
               <input type="text" class="form-control text-black font-weight-bold" placeholder="56.600-00" id="parceiro_cep" name="parceiro_cep">
           </div>
         </div><!--form-row-->
@@ -356,27 +401,32 @@
           <div class="form-group col-md-4">
             <label for="inputEmail4" class="font-weight-bold text-black">Representante Legal</label>
             <!-- Botão para acionar modal -->
-              <a href="#" data-toggle="modal" data-target="#modalExemplo6"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+            <a href="#" data-toggle="modal" data-target="#modal_representante_privado"><i class="fas fa-fw fa-question-circle float-right"></i></a>
             <input type="text" class="form-control text-black font-weight-bold" onchange="handleRepresentantePrivado(event)" id="parceiro_rep_legal" name="parceiro_rep_legal" placeholder="Nome do representante">
           </div>
           <div class="form-group col-md-3">
             <label for="inputPassword4" class="font-weight-bold text-black">CPF/M.F</label>
+            <a href="#" data-toggle="modal" data-target="#modal_cpf_rep"><i class="fas fa-fw fa-question-circle float-right"></i></a>
             <input type="text" class="form-control text-black font-weight-bold cpf"  id="parceiro_cpf" name="parceiro_cpf" placeholder="103.987.654-89">
           </div>
           <div class="form-group col-md-3">
             <label for="inputPassword4" class="font-weight-bold text-black">Identidade nº</label>
+            <a href="#" data-toggle="modal" data-target="#modal_rg"><i class="fas fa-fw fa-question-circle float-right"></i></a>
             <input type="text" class="form-control text-black font-weight-bold rg"  id="parceiro_rg" name="parceiro_rg" placeholder=" 16.549.879-9">
           </div>
           <div class="form-group col-md-2">
             <label for="inputPassword4" class="font-weight-bold text-black">Órgão Expedidor</label>
+            <a href="#" data-toggle="modal" data-target="#modal_orgao"><i class="fas fa-fw fa-question-circle float-right"></i></a>
             <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_orgao_exp" name="parceiro_orgao_exp" placeholder="Ex.: SDS">
           </div>
           <div class="form-group col-md-4">
             <label for="inputPassword4" class="font-weight-bold text-black">Cargo do representante</label>
+            <a href="#" data-toggle="modal" data-target="#modal_cargo_privado"><i class="fas fa-fw fa-question-circle float-right"></i></a>
             <input type="text" class="form-control text-black font-weight-bold" onchange="handleCargoPrivado(event)"  id="parceiro_cargo" name="parceiro_cargo" placeholder="Ex.: Diretor Geral">
           </div>
           <div class="form-group col-md-3">
             <label for="inputPassword4" class="font-weight-bold text-black">Doravante Denominado</label>
+            <a href="#" data-toggle="modal" data-target="#modal_doravante"><i class="fas fa-fw fa-question-circle float-right"></i></a>
             <input type="text" class="form-control text-black font-weight-bold"  id="parceiro_doravante_denominado" name="parceiro_doravante_denominado" placeholder="Ex.: UNIVASF">
           </div>
         </div><!--form-row-->
@@ -391,11 +441,12 @@
           <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">1. Cláusula Primeira - do Objeto </h4><hr>
 
           <p><b>1.1</b> O presente Acordo de Parceria para PD&I tem por objeto a cooperação técnica e científica entre os PARTÍCIPES 
-          para desenvolver o:</p>
+          para desenvolver:</p>
           <br>
           <div class="text-center d-flex">
             <p class="h4 font-italic text-primary font-weight-bold">Insira o Objetivo abaixo:</p>
           </div>
+          <a href="#" data-toggle="modal" data-target="#modalExemplo10"><i class="fas fa-fw fa-question-circle float-right"></i></a>
           <div class="col-md-12 mb-3 bg-light border border-primary shadow mb-4 mt-4 p-1">
             <textarea class="form-control" name="clausula_descricao" id="editor"></textarea>
           </div>
@@ -436,9 +487,9 @@
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal">Saiba mais</button>
           </div>   
           <p><b>2.1 </b>O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
-          <p><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a(o) ICT 
+         <!--  <p><b>2.2 </b>Respeitadas as previsões contidas na legislação em vigor, a(o) ICT 
           <input type="text" class="myform-control text-black" id="handle_ict" disabled placeholder="Nome da ICT/Agência de Fomento">
-          <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
+          <a href="#" data-toggle="modal" data-target="#modalExemplo13"><i class="fas fa-fw fa-question-circle"></i></a>, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p> -->
 
           <!--clausula editavel 2-->
             <div class="alert alert-warning" role="alert">      
@@ -469,15 +520,25 @@
             Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
           <div class="col-md-12 mb-3">
-          <a id="clausula_2" data-opt2="3" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
-          <span
-              onclick="handleClausulasOpt(event)" 
-              class="remove-box fas fa-trash"
-              id="clausula_edit_2_3"
-            >
-          </span>
-          <a href="#" data-toggle="modal" data-target="#modal_clausula_2_3"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
-          <textarea class="form-control" name="clausula_edit_2_3" rows="3">Na execução do Plano de Trabalho, a atuação dos PARCEIROS dar-se-á sempre de forma associada. Para tanto, os PARCEIROS indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.</textarea>
+            <a id="clausula_2" data-opt2="2" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.2</a>
+            <span
+                onclick="handleClausulasOpt(event)" 
+                class="remove-box fas fa-trash"
+                id="clausula_edit_2_2"
+              >
+            </span>
+            <textarea class="form-control" name="clausula_edit_2_2" rows="3">Respeitadas as previsões contidas na legislação em vigor, a ICT/Agência de Fomento, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</textarea>
+          </div>
+          <div class="col-md-12 mb-3">
+            <a id="clausula_2" data-opt2="true" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.3</a>
+            <span
+                onclick="handleClausulasOpt(event)" 
+                class="remove-box fas fa-trash"
+                id="clausula_edit_2_3"
+              >
+            </span>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_2_3"><i class="fas fa-fw fa-question-circle mt-1 ml-2"></i></a>
+            <textarea class="form-control" name="clausula_edit_2_3" rows="3">Na execução do Plano de Trabalho, a atuação dos PARCEIROS dar-se-á sempre de forma associada. Para tanto, os PARCEIROS indicam, na forma do item 3.1, seus respectivos Coordenadores de Projeto, que serão responsáveis pela supervisão e pela gerência das atividades correspondentes ao Plano de Trabalho.</textarea>
           </div>
           <div class="col-md-12 mb-3">
           <a id="clausula_2" data-opt2="true" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 2.4</a>
@@ -588,7 +649,7 @@
           </div>
 
           <div id="clausula_apoio_wrapper" style="display: none;">
-            <p class="ml-2 roboto-font"><b>3.1.3.  Do(a): <input type="text" class="myform-control" name="nome_inst_fundacao" onchange="handleFundacaoNameApoio(event)" id="nome_inst_fundacao" placeholder="Instituição"> <a href="#" data-toggle="modal" data-target="#modalFundApoio"><i class="fas fa-fw fa-question-circle"></i></a>:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p><hr>
+            <p class="ml-2 roboto-font"><b>3.1.3.  Do(a): <input type="text" class="myform-control" name="nome_inst_fundacao" onchange="handleFundacaoNameApoio(event)" id="nome_inst_fundacao" placeholder="Instituição"> <a href="#" data-toggle="modal" data-target="#modal_clausula_3_apoio"><i class="fas fa-fw fa-question-circle"></i></a>:(FUNDAÇÃO DE APOIO – QUANDO HOUVER)</b></p><hr>
             <div class="col-md-12 mb-3">
             <a id="clausula_3" class="badge_letter badge-primary text-light font-weight-bold float-left mb-2 p-2">A)</a>
             <span
@@ -824,9 +885,9 @@
               <textarea class="form-control" name="clausula_edit_4_8" rows="4">A transposição, o remanejamento ou a transferência de recursos de categoria de programação para outra poderão ocorrer com o objetivo de conferir eficácia e eficiência às atividades de ciência, tecnologia e inovação.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-          <a id="clausula_4" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 4.9</a>
+          <a id="clausula_4" data-subparam="8" class="badge_sub badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 4.8.1</a>
           <span
-            onclick="handleClausulasOpt(event)" 
+            onclick="handleSubClausulasOpt(event)" 
             class="remove-box fas fa-trash"
             id="clausula_edit_4_8_1"
             >
@@ -835,9 +896,9 @@
               <textarea class="form-control" name="clausula_edit_4_8_1" rows="4">No âmbito deste projeto de pesquisa, desenvolvimento e inovação, o coordenador geral indicará a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-          <a id="clausula_4" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 4.10</a>
+          <a id="clausula_4" data-subparam="8" class="badge_sub badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 4.8.2</a>
           <span
-            onclick="handleClausulasOpt(event)" 
+            onclick="handleSubClausulasOpt(event)" 
             class="remove-box fas fa-trash"
             id="clausula_edit_4_8_2"
             >
@@ -847,7 +908,7 @@
           </div>
           <div class="col-md-12 mb-3">
         
-          <a id="clausula_4" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 4.11</a>
+          <a id="clausula_4" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 4.9</a>
           <span
             onclick="handleClausulasOpt(event)" 
             class="remove-box fas fa-trash"
@@ -858,9 +919,9 @@
               <textarea class="form-control" name="clausula_edit_4_9" rows="4">São dispensáveis de formalização por meio de Termo Aditivo as alterações previstas no item 4.8 que importem em transposição, remanejamento ou transferência de recursos de categoria de programação para outra, com o objetivo de conferir eficácia e eficiência às atividades previstas no Plano de Trabalho, desde que não haja alteração do valor total do projeto.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-          <a id="clausula_4" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 4.12</a>
+          <a id="clausula_4"  data-subparam="8"  class="badge_sub badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 4.9.1</a>
           <span
-            onclick="handleClausulasOpt(event)" 
+            onclick="handleSubClausulasOpt(event)" 
             class="remove-box fas fa-trash"
             id="clausula_edit_4_9_1"
             >
@@ -869,7 +930,7 @@
               <textarea class="form-control" name="clausula_edit_4_9_1" rows="4">Alterações na distribuição entre grupos de natureza de despesa e alterações de rubricas ou itens de despesas, necessárias para efetiva execução do, ficarão dispensadas de prévia anuência d PARCEIRO PRIVADO, hipótese em que o coordenador do projeto solicitará a alteração à ICT, devendo constar as razões que ensejaram as alterações, indicando a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.</textarea>
           </div>
           <div class="col-md-12 mb-3">
-          <a id="clausula_4" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 4.13</a>
+          <a id="clausula_4" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 4.10</a>
           <span
             onclick="handleClausulasOpt(event)" 
             class="remove-box fas fa-trash"
@@ -887,43 +948,41 @@
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#recurso_privado">Saiba mais</button>
           </div>  
           <p>
-            <b>4.1.</b> O (A) <input class="myform-control text-black"type="text" id="handle_parceiro" placeholder="Parceiro privado">
+            <b>4.1.</b> O(A) <input class="myform-control text-black"type="text" id="handle_parceiro" placeholder="Parceiro privado">
               transferirá recursos financeiros no valor total de R$ <input class="myform-control text-black" type="text" name="valor_financeiro" id="valor_financeiro" placeholder="Valor por Extenso">
               , conforme cronograma de desembolso constante no Plano de Trabalho, anexo a este Acordo. 
           </p>
           <p>
-            <b>4.2.</b> Os recursos financeiros serão transferidos à ICT/AGÊNCIA DE FOMENTO mediante depósito(s) no Banco do Brasil, por meio de Guia de 
-            Recolhimento da União-GRU, na qual deverá constar o código da UG, gestão e código do recolhimento indicados pela ICT/AGÊNCIA DE FOMENTO.
+            <b>4.2.</b> Os recursos financeiros serão transferidos <input class="myform-control text-black" type="text" id="handle_ict" placeholder="ICT/AGÊNCIA DE FOMENTO" disabled> mediante depósito(s) no Banco do Brasil, por meio de Guia de 
+            Recolhimento da União-GRU, na qual deverá constar o código da UG, gestão e código do recolhimento indicados pela(o) <input class="myform-control text-black" type="text" id="handle_ict" placeholder="ICT/AGÊNCIA DE FOMENTO" disabled>.
+          </p>
+          <div class="col-md-12 mb-3">
+            <a id="clausula_4" class="badge_fake badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 4.3</a>
+            <a href="#" data-toggle="modal" data-target="#modal_cr_4_3"><i class="fas fa-fw fa-question-circle mt-1 m-2"></i></a>
+              <textarea class="form-control" name="clausula_edit_4_3" rows="3">O PARCEIRO PRIVADO deverá comunicar a ICT/AGÊNCIA DE FOMENTO as transferências financeiras até o primeiro dia útil seguinte à(s) data(s) do (s) depósito(s) bancário(s). (SE HOUVER NECESSIDADE, ESPECIFICAR A FORMA DE COMUNICAÇÃO: por meio de ...).</textarea>
+          </div>
+          <p>
+            <b>4.4.</b> O(A) <input class="myform-control text-black" type="text" id="handle_ict" placeholder="ICT/AGÊNCIA DE FOMENTO" disabled> solicitará autorização orçamentária para incorporação dos valores transferidos.
           </p>
           <p>
-            <b>4.3.</b> O PARCEIRO PRIVADO deverá comunicar a ICT/AGÊNCIA DE FOMENTO as transferências financeiras até o primeiro dia útil 
-            seguinte à(s) data(s) do (s) depósito(s) bancário(s). (SE HOUVER NECESSIDADE, ESPECIFICAR A FORMA DE COMUNICAÇÃO: por meio de ...).
+            <b>4.5.</b >Caso não seja possível a incorporação dos valores transferidos dentro do tempo hábil para a execução das ações previstas no Plano de Trabalho, o presente instrumento será rescindido de comum acordo e a(o) <input class="myform-control text-black" type="text" id="handle_ict" placeholder="ICT/AGÊNCIA DE FOMENTO"> devolverá os recursos repassados.
           </p>
           <p>
-            <b>4.4.</b> A ICT/AGÊNCIA DE FOMENTO solicitará autorização orçamentária para incorporação dos valores transferidos.
+            <b>4.6.</b> Os recursos transferidos à <input class="myform-control text-black" type="text" id="handle_ict" placeholder="ICT/AGÊNCIA DE FOMENTO" disabled>, enquanto não utilizados, seguirão as normas da Secretaria do Tesouro Nacional – STN, no que tange à aplicação, rendimentos e outras formas de correção.
           </p>
           <p>
-            <b>4.5.</b >Caso não seja possível a incorporação dos valores transferidos dentro do tempo hábil para a execução das ações previstas no Plano de Trabalho, o presente instrumento será rescindido de comum acordo e a ICT/AGÊNCIA DE FOMENTO devolverá os recursos repassados.
-          </p>
-          <p>
-            <b>4.6.</b> Os recursos transferidos à ICT/AGÊNCIA DE FOMENTO, enquanto não utilizados, seguirão as normas da Secretaria do Tesouro Nacional – STN, no que tange à aplicação, rendimentos e outras formas de correção.
-          </p>
-          <p>
-            <b>4.7.</b> Eventual saldo de recurso transferido pelo parceiro ao ICT/AGÊNCIA DE FOMENTO, não utilizado no objeto deste Acordo, 
+            <b>4.7.</b> Eventual saldo de recurso transferido pelo parceiro ao <input class="myform-control text-black" type="text" id="handle_ict" placeholder="ICT/AGÊNCIA DE FOMENTO" disabled>, não utilizado no objeto deste Acordo, 
             após a sua conclusão, será restituído ao parceiro, corrigidos nos termos da Secretaria do Tesouro Nacional - STN.
           </p>
           <p>
-            <b>4.8.</b> A ICT/AGÊNCIA DE FOMENTO não disponibilizará recursos orçamentários e financeiros próprios na execução deste Acordo de Parceria, 
+            <b>4.8.</b> A(O) <input class="myform-control text-black" type="text" id="handle_ict" placeholder="ICT/AGÊNCIA DE FOMENTO" disabled> não disponibilizará recursos orçamentários e financeiros próprios na execução deste Acordo de Parceria, 
             suspendendo sua execução, caso o repasse não seja efetivado conforme previsto no Plano de Trabalho.
           </p>
           <p>
-            <b>4.9.</b> A ICT/AGÊNCIA DE FOMENTO não disponibilizará recursos orçamentários e financeiros próprios na execução deste Acordo de Parceria, 
-            suspendendo sua execução, caso o repasse não seja efetivado conforme previsto no Plano de Trabalho.
+            <b>4.9.</b> Os valores dos recursos financeiros previstos nesta cláusula poderão ser alterados por meio de termo aditivo, com as necessárias justificativas e de comum acordo entre os PARCEIROS, o que implicará na revisão das metas pactuadas e alteração do Plano de Trabalho. 
           </p>
           <p>
-            <b>4.10.</b> Qualquer aumento ao orçamento do Plano de Trabalho executado por este Acordo de Parceria, que torne necessário o
-              aporte de recursos adicionais pelo  PARCEIRO PRIVADO deverá ser prévia e formalmente analisado e aprovado pelas Parceiros, 
-              devendo ser implementado tão somente após celebração de termo aditivo a este Acordo de Parceria.
+            <b>4.10.</b> Qualquer aumento ao orçamento do Plano de Trabalho executado por este Acordo de Parceria, que torne necessário o aporte de recursos adicionais pelo  <input class="myform-control text-black"type="text" id="handle_parceiro" placeholder="Parceiro privado" disabled> deverá ser prévia e formalmente analisado e aprovado pelo(a)s<input class="myform-control text-black" type="text" name="input_4_10_parceiro" placeholder="Parceiros, devendo ser" value="Parceiros, devendo ser"> implementado tão somente após celebração de termo aditivo a este Acordo de Parceria.
           </p>
           <p>
             <b>4.11.</b> A transposição, o remanejamento ou a transferência de recursos de categoria de programação para outra poderão ocorrer 
@@ -935,7 +994,7 @@
               referência ao projeto de pesquisa aprovado originalmente. 
           </p>
           <p>
-            <b>4.11.2</b> Por ocasião da ocorrência de quaisquer das ações previstas no item anterior, a ICT/AGÊNCIA DE FOMENTO poderá alterar a distribuição 
+            <b>4.11.2</b> Por ocasião da ocorrência de quaisquer das ações previstas no item anterior, a <input class="myform-control text-black" type="text" id="handle_ict" disabled placeholder="ICT/AGÊNCIA DE FOMENTO"> poderá alterar a distribuição 
             inicialmente acordada, promover modificações internas ao seu orçamento, alterar rubricas ou itens de despesas, desde
               que não modifique o valor total do projeto.
           </p>
@@ -950,17 +1009,17 @@
           </p>
           <p>
             <b>4.12.1</b> Alterações na distribuição entre grupos de natureza de despesa e alterações de rubricas ou itens de despesas, 
-            necessárias para efetiva execução do projeto, ficarão dispensadas de prévia anuência do PARCEIRO PRIVADO, 
-            hipótese em que o coordenador do projeto solicitará a alteração à ICT, devendo constar as razões que ensejaram as alterações, 
+            necessárias para efetiva execução do projeto, ficarão dispensadas de prévia anuência do <input class="myform-control text-black"type="text" id="handle_parceiro" placeholder="Parceiro privado" disabled>, 
+            hipótese em que o coordenador do projeto solicitará a alteração à <input class="myform-control text-black" type="text" id="handle_ict" placeholder="ICT/AGÊNCIA DE FOMENTO" disabled>, devendo constar as razões que ensejaram as alterações, 
             indicando a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de 
             natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.
           </p>
           <p>
-            <b>4.13</b> A  ICT/AGÊNCIA DE FOMENTO não responderá pela suplementação de recursos para fazer frente a despesas decorrentes de
+            <b>4.13</b> A(O)  <input class="myform-control text-black" type="text" id="handle_ict" placeholder="ICT/AGÊNCIA DE FOMENTO" disabled> não responderá pela suplementação de recursos para fazer frente a despesas decorrentes de
               quaisquer fatores externos ao seu controle, como flutuação cambial e alterações nos valores de taxas escolares.
           </p>
           <p>
-            <b>4.14</b> Do valor total repassado, à ICT/AGÊNCIA DE FOMENTO poderá utilizar até 15% (quinze por cento) para custear despesas 
+            <b>4.14</b> Do valor total repassado, à <input class="myform-control text-black" type="text" id="handle_ict" placeholder="ICT/AGÊNCIA DE FOMENTO" disabled> poderá utilizar até 15% (quinze por cento) para custear despesas 
             operacionais, definidas e justificadas no Plano de Trabalho.
           </p>
         </div><!--text-justify-->
@@ -972,14 +1031,13 @@
         <div class="text-justify text-black">
           <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">5. CLÁUSULA QUINTA - DO PESSOAL</h4><hr>
           <p class="text-justify text-black">
-            <b>5.1.</b> Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações
-              trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si 
-              e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem 
-              na execução do objeto deste Acordo, de forma que não se estabelecerá, em hipótese alguma,
-            vínculo empregatício ou de qualquer outra natureza com a EMPRESA <input type="text" class="myform-control" id="handle_parceiro" placeholder="Empresa parceira" disabled> e
-            o pessoal <input type="text" class="myform-control" name="nome_ict_parceira" id="handle_ict" placeholder="ICT ou Agência de fomento" disabled> vice-versa, cabendo a cada PARCEIRO a responsabilidade 
-            pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a
-            documentação comprobatória da regularidade na contratação.<br>
+            <b>5.1.</b> 
+            Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação 
+            existente entre si e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem na execução do objeto deste Acordo, de forma que
+             não se estabelecerá, em hipótese alguma, vínculo empregatício ou de qualquer outra natureza com a EMPRESA PARCERIA e o pessoal 
+             da <input type="text" class="myform-control" name="nome_ict_com_fund_apoio" id="handle_ict_fund" placeholder="ICT ou Agência de fomento"> e vice-versa, cabendo a cada PARCEIRO a responsabilidade pela condução, coordenação e 
+             remuneração de seu pessoal, e por administrar e arquivar toda a documentação comprobatória da regularidade na contratação.
+           <br>
           </p>
         </div><!-- text-justify -->
       </div><!-- container-fluid -->
@@ -1032,6 +1090,11 @@
               <a href="#" data-toggle="modal" data-target="#modal_clausula_6_3"><i class="fas fa-fw fa-question-circle m-2"></i></a>
               <textarea class="form-control" name="clausula_edit_6_3" rows="4">divisão da titularidade sobre a propriedade intelectual prevista na cláusula anterior será definida por meio de instrumento próprio, respeitando-se o percentual de x% (x por cento) para o ICT/AGÊNCIA DE FOMENTO. Todo desenvolvimento tecnológico passível de proteção intelectual, em qualquer modalidade, proveniente da execução do presente Acordo de Parceria, deverá ter a sua propriedade compartilhada entre as parceiras, por meio de instrumento próprio, respeitando-se o percentual de x% (x por cento) para o ICT/AGÊNCIA DE FOMENTO.</textarea>
             </div>
+            <div class="alert alert-warning" role="alert">      
+            <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+              NOTAS EXPLICATIVAS!
+              <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#nota_6_3">Saiba mais</button>
+            </div> 
             <div class="col-md-12 mb-3">
             <a id="clausula_6" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.4</a>
               <span
@@ -1072,20 +1135,25 @@
                 id="clausula_edit_6_7"
                 >
               </span>
-              <a href="#" data-toggle="modal" data-target="#modal_clausula_6_7"><i class="fas fa-fw fa-question-circle m-2"></i></a>
+              <a href="#" data-toggle="modal" data-target="#modal_clausula_6_78><i class="fas fa-fw fa-question-circle m-2"></i></a>
               <textarea class="form-control" name="clausula_edit_6_7" rows="4">Na hipótese de eventual infração de qualquer direito de propriedade intelectual relacionada às tecnologias resultantes, os parceiros concordam que as medidas judiciais cabíveis visando coibir a infração do respectivo direito podem ser adotadas em conjunto ou separadamente.</textarea>
             </div>
             <div class="col-md-12 mb-3">
               <a id="clausula_6" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.8</a>
               <span
-                onclick="handleClausulasOpt(event)" 
-                class="remove-box fas fa-trash"
-                id="clausula_edit_6_8"
-                >
-              </span>
-              <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle m-2"></i></a>
-              <textarea class="form-control" name="clausula_edit_6_8" rows="4">Os depósitos de pedidos de proteção de propriedade intelectual devem ser iniciados necessariamente junto ao Instituto Nacional de Propriedade Industrial - INPI e registrados no sistema de acompanhamento d o  ICT/AGÊNCIA DE FOMENTO.</textarea>
-            </div>
+              onclick="handleClausulasOpt(event)" 
+              class="remove-box fas fa-trash"
+              id="clausula_edit_6_8"
+              >
+            </span>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_6"><i class="fas fa-fw fa-question-circle m-2"></i></a>
+            <textarea class="form-control" name="clausula_edit_6_8" rows="4">Os depósitos de pedidos de proteção de propriedade intelectual devem ser iniciados necessariamente junto ao Instituto Nacional de Propriedade Industrial - INPI e registrados no sistema de acompanhamento d o  ICT/AGÊNCIA DE FOMENTO.</textarea>
+           </div>
+            <div class="alert alert-warning" role="alert">      
+            <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+              NOTAS EXPLICATIVAS!
+              <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#nota_6_8">Saiba mais</button>
+            </div> 
             <div class="col-md-12 mb-3">
             <a id="clausula_6" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 6.9</a>
               <span
@@ -1457,7 +1525,7 @@
             Edite a(s) cláusula(s) abaixo (se julgar necessário):
           </div>
           <div class="col-md-12 mb-3">
-              <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 13.2</a>
+              <a class="badge_fake badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 13.2</a>
               <textarea class="form-control" name="clausula_edit_13_2" rows="3">O pesquisador deverá encaminhar ao Setor responsável ou COMISSÃO DA ICT ou à FUNDAÇÃO DE APOIO: </textarea>
           </div>
           <div class="col-md-12 mb-3">
@@ -1485,12 +1553,31 @@
             <b>13.4.</b> Caberá a cada <b>PARCEIRO</b> adotar as providências necessárias julgadas cabíveis, caso os relatórios parciais de que trata a subcláusula primeira demonstrem inconsistências na execução do objeto deste Acordo.
           </p>
           <p>
-          <p>
-            <b>13.5.</b> O <b>pesquisador</b> deverá apresentar a prestação de contas financeira, em <b>até 180 (cento e oitenta) dias</b>, contados do termo final do prazo de vigência previsto neste Acordo.
-          </p>
-          <p>
-            <b>13.6.</b> A prestação de contas será simplificada, privilegiando os resultados da pesquisa, e seguirá as regras previstas no <span class="text-blue">artigo 58 do Decreto nº 9.283/18 e/ou na Política de Inovação da entidade pública. </span> 
-          </p>
+          <div class="col-md-12 mb-3">
+            <a id="clausula_13" data-opt2="5" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 13.5</a>
+            <span
+                onclick="handleClausulasOpt(event)" 
+                class="remove-box fas fa-trash"
+                id="clausula_edit_13_5"
+            >
+            </span>
+              <textarea class="form-control" name="clausula_edit_13_5" rows="3">O pesquisador deverá apresentar a prestação de contas financeira, em até 180 (cento e oitenta) dias, contados do termo final do prazo de vigência previsto neste Acordo.</textarea>
+          </div>
+          <div class="col-md-12 mb-3">
+            <a id="clausula_13" data-opt2="true" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 13.6</a>
+            <span
+                onclick="handleClausulasOpt(event)" 
+                class="remove-box fas fa-trash"
+                id="clausula_edit_13_6"
+            >
+            </span>
+              <textarea class="form-control" name="clausula_edit_13_6" rows="3">A prestação de contas será simplificada, privilegiando os resultados da pesquisa, e seguirá as regras previstas no artigo 58 do Decreto nº 9.283/18 e/ou na Política de Inovação da entidade pública.</textarea>
+          </div>
+          <div class="alert alert-warning" role="alert">     
+            <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+              NOTAS EXPLICATIVAS!
+            <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#nota_13_9">Saiba mais</button>
+          </div> 
         </div>
       </div>
     </div><!--tab-pane-->
@@ -1572,7 +1659,10 @@
               NOTAS EXPLICATIVAS!
             <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_publicidade">Saiba mais</button>
           </div>
-          <p><b>15.1.</b> A publicação do extrato do presente Acordo de Parceria para PD&I no Diário Oficial da União (DOU) é condição indispensável para sua eficácia e será providenciada pela ICT no prazo de até 20 (vinte) dias da sua assinatura. </p>
+          <a id="clausula_15" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 15.1</a>
+
+            <textarea class="form-control" name="clausula_edit_15_1" rows="3">A publicação do extrato do presente Acordo de Parceria para PD&I no Diário Oficial da União (DOU) é condição indispensável para sua eficácia e será providenciada pelo  ICT/AGÊNCIA DE FOMENTO no prazo de até 20 (vinte) dias da sua assinatura.</textarea>
+          </div>
         </div>
       </div>
     </div><!--tab-pane-->
@@ -1750,13 +1840,66 @@
               </div>
             </div><!-- /.row-->
           </div>
-          <p><b>17.2</b> Qualquer comunicação ou solicitação prevista neste Acordo de Parceria será considerada como tendo sido legalmente entregue: </p>
-          <p><b>17.2.1</b> Quando entregue em mão a quem destinada, com o comprovante de recebimento;  </p>
-          <p><b>17.2.2</b> Se enviada por correio, registrada ou certificada, porte pago e devidamente endereçada, quando recebida pelo destinatário ou no 5° (quinto) dia seguinte à data do despacho, o que ocorrer primeiro; </p>
-          <p><b>17.2.3</b>  Se enviada por fax, quando recebida pelo destinatário; </p>
-          <p><b>17.2.4</b>  Se enviada por e-mail, desde que confirmado o recebimento pelo destinatário, ou, após transcorridos 5 (cinco) dias úteis, o que ocorrer primeiro. Na hipótese de transcurso do prazo sem confirmação, será enviada cópia por correio, considerando-se, todavia, a notificação devidamente realizada.  </p>
-          <p><b>17.3</b>  Qualquer dos PARCEIROS poderá, mediante comunicação por escrito, alterar o endereço para o qual as comunicações ou solicitações deverão ser enviadas. </p>
-      
+          <div class="col-md-12 mb-3">
+            <a id="clausula_17" data-opt2="2" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 17.2</a>
+              <span
+                onclick="handleClausulasOpt(event)" 
+                class="remove-box fas fa-trash"
+                id="clausula_edit_17_2"
+                >
+              </span>
+            <textarea class="form-control" name="clausula_edit_17_2" rows="3">Qualquer comunicação ou solicitação prevista neste Acordo de Parceria será considerada como tendo sido legalmente entregue:</textarea>
+          </div>
+          <div class="col-md-12 mb-3">
+            <a id="clausula_17" data-subparam="2"  class="badge_sub badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 17.2.1</a>
+              <span
+                onclick="handleSubClausulasOpt(event)" 
+                class="remove-box fas fa-trash"
+                id="clausula_edit_17"
+                >
+              </span>
+            <textarea class="form-control" name="clausula_edit_17" rows="3"> Quando entregue em mão a quem destinada, com o comprovante de recebimento;</textarea>
+          </div>
+          <div class="col-md-12 mb-3">
+            <a id="clausula_17" data-subparam="2"  class="badge_sub badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 17.2.2</a>
+              <span
+                onclick="handleSubClausulasOpt(event)" 
+                class="remove-box fas fa-trash"
+                id="clausula_edit_17_2_2"
+                >
+              </span>
+            <textarea class="form-control" name="clausula_edit_17_2_2" rows="3">Se enviada por correio, registrada ou certificada, porte pago e devidamente endereçada, quando recebida pelo destinatário ou no 5° (quinto) dia seguinte à data do despacho, o que ocorrer primeiro;</textarea>
+          </div>
+          <div class="col-md-12 mb-3">
+            <a id="clausula_17" data-subparam="2" class="badge_sub badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 17.2.3</a>
+              <span
+                onclick="handleSubClausulasOpt(event)" 
+                class="remove-box fas fa-trash"
+                id="clausula_edit_17_2_3"
+                >
+              </span>
+            <textarea class="form-control" data-subparam="2" name="clausula_edit_17_2_3" rows="3">Se enviada por fax, quando recebida pelo destinatário; </textarea>
+          </div>
+          <div class="col-md-12 mb-3">
+            <a id="clausula_17" data-subparam="2" class="badge_sub badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 17.2.4</a>
+              <span
+                onclick="handleSubClausulasOpt(event)" 
+                class="remove-box fas fa-trash"
+                id="clausula_edit_17_2_4"
+                >
+              </span>
+            <textarea class="form-control" name="clausula_edit_17_2_4" rows="3">Se enviada por e-mail, desde que confirmado o recebimento pelo destinatário, ou, após transcorridos 5 (cinco) dias úteis, o que ocorrer primeiro. Na hipótese de transcurso do prazo sem confirmação, será enviada cópia por correio, considerando-se, todavia, a notificação devidamente realizada.  </textarea>
+          </div>
+          <div class="col-md-12 mb-3">
+            <a id="clausula_17" data-opt2="true" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 17.3</a>
+              <span
+                onclick="handleClausulasOpt(event)" 
+                class="remove-box fas fa-trash"
+                id="clausula_edit_17_3"
+                >
+              </span>
+            <textarea class="form-control" name="clausula_edit_17_3" rows="3">Qualquer dos PARCEIROS poderá, mediante comunicação por escrito, alterar o endereço para o qual as comunicações ou solicitações deverão ser enviadas.</textarea>
+          </div>
         </div>
       </div>
     </div><!--tab-pane-->
@@ -1779,9 +1922,8 @@
           <p><b>19.1.</b>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de <input class="myform-control text-black"  type="text" name="estado_foro" id="estado_foro" placeholder="Estado">, cidade de <input  class="myform-control" type="text" name="cidade_foro" id="cidade_foro" placeholder="Cidade">,
             para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109
             da Constituição Federal.
-            E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente
-            instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.
           </p>
+          <textarea class="form-control text-justify" name="clausula_edit_17_1" rows="3" style="background-color: #F6FAFA; resize: none !important;">E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.</textarea>
 
           <div class="form-row mt-3">
             <div class="form-group col-md-3">
@@ -1845,25 +1987,32 @@
                 placeholder="Cargo">
             </div>
           </div><!-- /.row-->
-
-          <div class="form-row mt-3">
+      
+          <div class="form-row mt-3" id="fund_apoio_final" style="display: none;">
             <div class="form-group col-md-3">
-              <label for="nome_testemunha_1" class="font-weight-bold text-black">Testemunha 1:</label>
-              <input type="text" 
-                class="form-control text-black font-weight-bold" 
-                name="nome_testemunha_1" id="nome_testemunha_1" 
-                placeholder="Nome da Testemunha 1">
-            </div>
-            <div class="form-group col-md-3">
-              <label for="nome_testemunha_2" class="font-weight-bold text-black">Testemunha 2:</label>
+              <label for="" class="font-weight-bold text-black">Fundação Apoio:</label>
               <input type="text" 
                 class="form-control text-black font-weight-bold"
-                name="nome_testemunha_2" 
-                id="nome_testemunha_2" 
-                placeholder="nome da Testemunha 2">
+                id="handle_apoio" 
+                placeholder="Instituição">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="nome_rep_privado_foro" class="font-weight-bold text-black">Representante:</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold" 
+                name="nome_rep_fund_apoio" id="rep_privado" 
+                placeholder="Nome do Representante">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="cargo_rep_privado_foro" class="font-weight-bold text-black">Cargo</label>
+              <input type="text" 
+                class="form-control text-black font-weight-bold"
+                name="cargo_rep_fund_apoio" 
+                id="cargo_privado" 
+                placeholder="Cargo">
             </div>
           </div><!-- /.row-->
-
+       
         </div><!--text-justify-->
       </div><!--container-fl-->
     </div><!--tab-pane-->
@@ -2027,9 +2176,8 @@ function validateStepForm() {
         console.log('2')
       } 
 
-      if(inputs[i].name === "parceiro_contato_telefone" || inputs[i].name === "privado_contato_telefone"){
+      if(currentTab === 18 ){
         inputs[i].className = inputs[i].className.replace(" invalid", "");
-        console.log('entrou')
         valid = true
       }
     }

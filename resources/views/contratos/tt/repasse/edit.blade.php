@@ -709,8 +709,8 @@
                 , conforme cronograma de desembolso constante no Plano de Trabalho, anexo a este Acordo. 
             </p>
             <p>
-              <b>4.2.</b> Os recursos financeiros serão transferidos à ICT/AGÊNCIA DE FOMENTO mediante depósito(s) no Banco do Brasil, por meio de Guia de 
-              Recolhimento da União-GRU, na qual deverá constar o código da UG, gestão e código do recolhimento indicados pela ICT/AGÊNCIA DE FOMENTO.
+            <b>4.2.</b> Os recursos financeiros serão transferidos <input class="myform-control text-black" type="text" id="handle_ict" placeholder="ICT/AGÊNCIA DE FOMENTO" disabled> mediante depósito(s) no Banco do Brasil, por meio de Guia de 
+              Recolhimento da União-GRU, na qual deverá constar o código da UG, gestão e código do recolhimento indicados pela(o) <input class="myform-control text-black" disabled type="text"  value="{{$contratos_cr->valor_financeiro}}" placeholder="ICT/AGÊNCIA DE FOMENTO">.
             </p>
             <p>
               <b>4.3.</b> O PARCEIRO PRIVADO deverá comunicar a ICT/AGÊNCIA DE FOMENTO as transferências financeiras até o primeiro dia útil 
@@ -1144,15 +1144,15 @@
                 Edite a(s) cláusula(s) abaixo (se julgar necessário):
               </div>
               <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.2</a>
+                  <a class="badge_fake badge-primary text-light font-weight-bold float-left mb-2 p-2">13.2</a>
                   <textarea class="form-control" value="{{$contratos_cr->clausula_edit_13_2}}" name="clausula_edit_13_2" rows="3">{{$contratos_cr->clausula_edit_13_2}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.a</a>
+                  <a class="badge_fake  badge-primary text-light font-weight-bold float-left mb-2 p-2">13.a</a>
                   <textarea class="form-control" value="{{$contratos_cr->clausula_edit_13_a}}" name="clausula_edit_13_a" rows="3">{{$contratos_cr->clausula_edit_13_a}}</textarea>
               </div>
               <div class="col-md-12 mb-3">
-                  <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.b</a>
+                  <a class="badge_fake badge-primary text-light font-weight-bold float-left mb-2 p-2">13.b</a>
                   <textarea class="form-control" value="{{$contratos_cr->clausula_edit_13_b}}" name="clausula_edit_13_b" rows="3">{{$contratos_cr->clausula_edit_13_b}}</textarea>
               </div>
               <p><b>13.3.</b> No Formulário de Resultado de que trata a subcláusula 13.2, deverá ser demonstrada a compatibilidade entre as metas previstas e as alcançadas no período, bem como apontadas as justificativas em caso de discrepância, consolidando dados e valores das ações desenvolvidas.</p>
@@ -1160,12 +1160,26 @@
                 <b>13.4.</b> Caberá a cada <b>PARCEIRO</b> adotar as providências necessárias julgadas cabíveis, caso os relatórios parciais de que trata a subcláusula primeira demonstrem inconsistências na execução do objeto deste Acordo.
               </p>
               <p>
-              <p>
-                <b>13.5.</b> O <b>pesquisador</b> deverá apresentar a prestação de contas financeira, em <b>até 180 (cento e oitenta) dias</b>, contados do termo final do prazo de vigência previsto neste Acordo.
-              </p>
-              <p>
-                <b>13.6.</b> A prestação de contas será simplificada, privilegiando os resultados da pesquisa, e seguirá as regras previstas no <span class="text-blue">artigo 58 do Decreto nº 9.283/18 e/ou na Política de Inovação da entidade pública. </span> 
-              </p>
+              <div class="col-md-12 mb-3">
+                <a data-opt2="5" id="clausula_13"  class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.5</a>
+                <span
+                    onclick="handleClausulasOpt(event)" 
+                    class="remove-box fas fa-trash"
+                    id="clausula_edit_13_5"
+                >
+                </span>
+                  <textarea class="form-control" name="clausula_edit_13_5" rows="3">{{$contratos_cr->clausula_edit_13_5}}</textarea>
+              </div>
+              <div class="col-md-12 mb-3">
+                <a id="clausula_13" data-opt2="true" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">13.6</a>
+                <span
+                    onclick="handleClausulasOpt(event)" 
+                    class="remove-box fas fa-trash"
+                    id="clausula_edit_13_6"
+                >
+                </span>
+              <textarea class="form-control" name="clausula_edit_13_6" rows="3">{{$contratos_cr->clausula_edit_13_6}}</textarea>
+              </div>
             
               </div>
             </div>
@@ -1220,8 +1234,8 @@
                     NOTAS EXPLICATIVAS!
                   <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_publicidade">Saiba mais</button>
                 </div>
-                <p><b>15.1.</b> A publicação do extrato do presente Acordo de Parceria para PD&I no Diário Oficial da União (DOU) é condição indispensável para sua eficácia e será providenciada pela ICT no prazo de até 20 (vinte) dias da sua assinatura. </p>
-        
+                <a id="clausula_15" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 15.1</a>
+                <textarea class="form-control" name="clausula_edit_15_1" rows="3">{{$contratos_cr->clausula_edit_15_1}}</textarea>
                 </div>
               </div>
             </div>
@@ -1254,7 +1268,7 @@
                 <div class="text-justify text-black">
                 <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">17. CLÁUSULA DÉCIMA QUINTA – DAS NOTIFICAÇÕES </h4><hr><br>
                 <p><b>17.1</b> Qualquer comunicação ou notificação relacionada ao Acordo de Parceria poderá ser feita
-                              pelos PARCEIROS, por e-mail, fax, correio ou entregue pessoalmente, diretamente no
+                              pelos PARCEIROS, por e-mail, correio ou entregue pessoalmente, diretamente no
                               respectivo endereço do PARCEIRO notificado, conforme as seguintes informações:<br>
                 <span class="font-weight-bold">PARCEIRO(S) PÚBLICO(S):</span> 
                 <div class="form-row">
@@ -1367,13 +1381,66 @@
                   </div><!-- /.row-->
                 </div>
                 @endif
-                <p><b>17.2</b> Qualquer comunicação ou solicitação prevista neste Acordo de Parceria será considerada como tendo sido legalmente entregue: </p>
-                <p><b>17.2.1</b> Quando entregue em mão a quem destinada, com o comprovante de recebimento;  </p>
-                <p><b>17.2.2</b> Se enviada por correio, registrada ou certificada, porte pago e devidamente endereçada, quando recebida pelo destinatário ou no 5° (quinto) dia seguinte à data do despacho, o que ocorrer primeiro; </p>
-                <p><b>17.2.3</b>  Se enviada por fax, quando recebida pelo destinatário; </p>
-                <p><b>17.2.4</b>  Se enviada por e-mail, desde que confirmado o recebimento pelo destinatário, ou, após transcorridos 5 (cinco) dias úteis, o que ocorrer primeiro. Na hipótese de transcurso do prazo sem confirmação, será enviada cópia por correio, considerando-se, todavia, a notificação devidamente realizada.  </p>
-                <p><b>17.3</b>  Qualquer dos PARCEIROS poderá, mediante comunicação por escrito, alterar o endereço para o qual as comunicações ou solicitações deverão ser enviadas. </p>
-            
+                <div class="col-md-12 mb-3">
+            <a id="clausula_17" data-opt2="2" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 17.2</a>
+              <span
+                onclick="handleClausulasOpt(event)" 
+                class="remove-box fas fa-trash"
+                id="clausula_edit_17_2"
+                >
+              </span>
+            <textarea class="form-control" name="clausula_edit_17_2" rows="3">{!! $contratos_cr->clausula_edit_17_2 !!}</textarea>
+          </div>
+          <div class="col-md-12 mb-3">
+            <a id="clausula_17" data-subparam="2"  class="badge_sub badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 17.2.1</a>
+              <span
+                onclick="handleSubClausulasOpt(event)" 
+                class="remove-box fas fa-trash"
+                id="clausula_edit_17"
+                >
+              </span>
+            <textarea class="form-control" name="clausula_edit_17" rows="3"> {!! $contratos_cr->clausula_edit_17_2_1 !!}</textarea>
+          </div>
+          <div class="col-md-12 mb-3">
+            <a id="clausula_17" data-subparam="2"  class="badge_sub badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 17.2.2</a>
+              <span
+                onclick="handleSubClausulasOpt(event)" 
+                class="remove-box fas fa-trash"
+                id="clausula_edit_17_2_2"
+                >
+              </span>
+            <textarea class="form-control" name="clausula_edit_17_2_2" rows="3">{!! $contratos_cr->clausula_edit_17_2_3 !!}</textarea>
+          </div>
+          <div class="col-md-12 mb-3">
+            <a id="clausula_17" data-subparam="2" class="badge_sub badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 17.2.3</a>
+              <span
+                onclick="handleSubClausulasOpt(event)" 
+                class="remove-box fas fa-trash"
+                id="clausula_edit_17_2_3"
+                >
+              </span>
+            <textarea class="form-control" data-subparam="2" name="clausula_edit_17_2_3" rows="3">{!! $contratos_cr->clausula_edit_17_2_3 !!}</textarea>
+          </div>
+          <div class="col-md-12 mb-3">
+            <a id="clausula_17" data-subparam="2" class="badge_sub badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 17.2.4</a>
+              <span
+                onclick="handleSubClausulasOpt(event)" 
+                class="remove-box fas fa-trash"
+                id="clausula_edit_17_2_4"
+                >
+              </span>
+            <textarea class="form-control" name="clausula_edit_17_2_4" rows="3">{!! $contratos_cr->clausula_edit_17_2_4 !!}</textarea>
+          </div>
+          <div class="col-md-12 mb-3">
+            <a id="clausula_17" data-opt2="true" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 17.3</a>
+              <span
+                onclick="handleClausulasOpt(event)" 
+                class="remove-box fas fa-trash"
+                id="clausula_edit_17_3"
+                >
+              </span>
+            <textarea class="form-control" name="clausula_edit_17_3" rows="3">{!! $contratos_cr->clausula_edit_17_3 !!}</textarea>
+          </div>
                 </div>
               </div>
             </div>
@@ -1399,9 +1466,8 @@
                   <p><b>19.1.</b>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de <input class="myform-control text-dark"  type="text" name="estado_foro" id="estado_foro" value="{{$contratos_cr->estado_foro}}">, cidade de <input  class="myform-control font-weight-bold" type="text" name="cidade_foro" id="cidade_foro" value="{{$contratos_cr->cidade_foro}}">,
                   para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109
                   da Constituição Federal.
-                  E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente
-                  instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.
-                  </p>
+                </p>
+                <textarea class="form-control text-justify" name="clausula_edit_17_1" rows="3" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_cr->clausula_edit_17_1}}</textarea>
 
                   <div class="form-row mt-3">
                     <div class="form-group col-md-3">
@@ -1466,7 +1532,7 @@
                     </div>
                   </div><!-- /.row-->
                   
-                  <div class="form-row mt-3">
+                 <!--  <div class="form-row mt-3">
                     <div class="form-group col-md-3">
                       <label for="nome_testemunha_1" class="font-weight-bold text-black">Testemunha 1:</label>
                       <input type="text" 
@@ -1482,7 +1548,7 @@
                         id="nome_testemunha_2" 
                         value="{{$contratos_cr->nome_testemunha_2}}">
                     </div>
-                  </div><!-- /.row-->
+                  </div> --><!-- /.row-->
 
                 </div>
               </div>

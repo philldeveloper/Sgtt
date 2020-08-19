@@ -10,7 +10,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <p class="lead">No caso de Universidade e Institutos Federais esses são representados por seus respectivos Reitores.</p>
+        <p class="lead">Inserir o nome do respectivo representante legal da ICT (p. ex.: Nome do Reitor da UNIVASF ou o nome do Reitor do IF Sertão-PE).</p>
       </div>
     </div>
   </div>

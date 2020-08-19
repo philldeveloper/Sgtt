@@ -5,6 +5,8 @@
 
     <p><b class="mr-2">8.</b>{!! $contratos_sr->clausula_edit_8_1 !!}</p>
     <p><b class="mr-2">8.2</b>{!! $contratos_sr->clausula_edit_8_2 !!}</p>
+    <p><b class="mr-2">8.3</b>{!! $contratos_sr->clausula_edit_8_3 !!}</p>
+    <p><b class="mr-2">8.4</b>{!! $contratos_sr->clausula_edit_8_4 !!}</p>
     <p><b class="mr-2">A)</b>{!! $contratos_sr->clausula_edit_8_2_a !!}</p>
     <p><b class="mr-2">B)</b>{!! $contratos_sr->clausula_edit_8_2_b !!}</p>
     <p><b class="mr-2">C)</b>{!! $contratos_sr->clausula_edit_8_2_c !!}</p>

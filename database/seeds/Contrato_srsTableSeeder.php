@@ -84,6 +84,8 @@ class Contrato_srsTableSeeder extends Seeder
 			
 		    'clausula_edit_8_1' => 'Os PARCEIROS obrigam-se a observar rigidamente as condições contidas nos itens abaixo, sob pena de imediata e justificada rescisão do acordo.',
 			'clausula_edit_8_2' => 'Os PARCEIROS declaram-se cientes de que seus Departamentos Jurídicos e/ou advogados contratados estão autorizados, em caso de práticas que atentem contra os preceitos dessa cláusula, a solicitar a imediata abertura dos procedimentos criminais, cíveis e administrativos cabíveis à cada hipótese:',
+			'clausula_edit_8_3' => 'Os PARCEIROS obrigam-se a observar rigidamente as condições contidas nos itens abaixo, sob pena de imediata e justificada rescisão do acordo.',
+			'clausula_edit_8_4' => 'Os PARCEIROS declaram-se cientes de que seus Departamentos Jurídicos e/ou advogados contratados estão autorizados, em caso de práticas que atentem contra os preceitos dessa cláusula, a solicitar a imediata abertura dos procedimentos criminais, cíveis e administrativos cabíveis à cada hipótese:',
 			'clausula_edit_8_2_a' => 'Os PARCEIROS não poderão, em hipótese alguma, dar ou oferecer nenhum tipo de presente, viagens, vantagens a qualquer empregado, servidor, preposto ou diretor de outro PARCEIRO, especialmente àqueles responsáveis pela fiscalização do presente Acordo. Serão admitidos apenas, em épocas específicas, a entrega de brindes, tais como canetas, agendas, folhinhas, cadernos etc;',
 			'clausula_edit_8_2_b' => 'Os PARCEIROS somente poderão representar outro PARCEIRO perante órgãos públicos quando devidamente autorizado para tal, seja no corpo do próprio Acordo, seja mediante autorização prévia, expressa e escrita de seu representante com poderes para assim proceder;',
 			'clausula_edit_8_2_c' => 'Os PARCEIROS e seus empregados/prepostos, quando agirem em nome ou defendendo interesses deste Acordo perante órgãos, autoridades ou agentes públicos, não poderão dar, receber ou oferecer quaisquer presentes, vantagens ou favores a agentes públicos, sobretudo no intuito de obter qualquer tipo de favorecimento para os PARCEIROS;',
@@ -131,8 +133,8 @@ class Contrato_srsTableSeeder extends Seeder
 		    'nome_rep_privado_foro' => 'Lorem Ipsum',
 			'cargo_rep_privado_foro' => 'Lorem Ipsum',
 
-			'nome_testemunha_1' => 'Philip Ramon',
-			'nome_testemunha_2' => 'Mark Zukenberg',
+			/* 'nome_testemunha_1' => 'Philip Ramon',
+			'nome_testemunha_2' => 'Mark Zukenberg', */
 			
 		    'user_id' => '2',
 		    'tipo' => 'Sem Repasse',

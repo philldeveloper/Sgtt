@@ -10,7 +10,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <p class="lead">Por ser tratar de uma ICT pública (Univasf ou IF sertão) possuem natureza jurídica de Direito público.</p>
+        <p class="lead">ICTs públicas (UNIVASF e IF Sertão-PE) possuem Natureza Jurídica de DIREITO PÚBLICO.</p>
       </div>
     </div>
   </div>

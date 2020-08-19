@@ -915,13 +915,12 @@
               </p>
               <p>
               <p>
-                <b>13.5.</b> O <b>pesquisador</b> deverá apresentar a prestação de contas financeira, em <b>até 180 (cento e oitenta) dias</b>, contados do termo final do prazo de vigência previsto neste Acordo.
+                <b>13.5.</b> {{$contratos_cr->clausula_edit_13_5}}
               </p>
               <p>
-                <b>13.6.</b> A prestação de contas será simplificada, privilegiando os resultados da pesquisa, e seguirá as regras previstas no <span class="text-blue">artigo 58 do Decreto nº 9.283/18 e/ou na Política de Inovação da entidade pública. </span> 
+                <b>13.6.</b> {{$contratos_cr->clausula_edit_13_6}} </span> 
               </p>
-            
-              </div>
+                          </div>
             </div>
             </div>
             <!------------------------------------------------------------------------->
@@ -945,7 +944,7 @@
               <div class="container-fluid p-0 mt-0 m-0">
                 <div class="text-justify text-black">
                 <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">15. CLÁUSULA DÉCIMA QUINTA - DA PUBLICIDADE</h4><hr><br>
-                <p><b>15.1.</b> A publicação do extrato do presente Acordo de Parceria para PD&I no Diário Oficial da União (DOU) é condição indispensável para sua eficácia e será providenciada pela ICT no prazo de até 20 (vinte) dias da sua assinatura. </p>
+                <p><b>15.1.</b> {{$contratos_cr->clausula_edit_15_1}}</p>
               </div>
               </div>
             </div>
@@ -1122,10 +1121,8 @@
       
                   <p><b>19.1.</b>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de <input class="myform-control text-black"  type="text" name="estado_foro" id="estado_foro" placeholder="{{$contratos_cr->estado_foro}}" disabled="">, cidade de <input  class="myform-control" type="text" name="cidade_foro" id="cidade_foro" placeholder="{{$contratos_cr->cidade_foro}}" disabled="">,
                   para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109
-                  da Constituição Federal.
-                  E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente
-                  instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.
-                  </p>
+                  da Constituição Federal. {{$contratos_cr->clausula_edit_17_1}}
+                </p>
 
                   <div class="form-row mt-3">
                     <div class="form-group col-md-3">
@@ -1204,7 +1201,7 @@
                     </div>
                   </div><!-- /.row-->
 
-                  <div class="form-row mt-3">
+             <!--      <div class="form-row mt-3">
                     <div class="form-group col-md-3">
                       <label for="nome_testemunha_1" class="font-weight-bold text-black">Testemunha 1:</label>
                       <input type="text" 
@@ -1224,7 +1221,7 @@
                         readonly="" 
                         placeholder="{{$contratos_cr->nome_testemunha_2}}">
                     </div>
-                  </div><!-- /.row-->
+                  </div> --><!-- /.row-->
 
                 </div><!--text-justify-->
               </div>

@@ -85,6 +85,8 @@ class CreateContratoSrsTable extends Migration
 
             $table->longText('clausula_edit_8_1')->nullable()->default(null);
             $table->longText('clausula_edit_8_2')->nullable()->default(null);
+            $table->longText('clausula_edit_8_3')->nullable()->default(null);
+            $table->longText('clausula_edit_8_4')->nullable()->default(null);
             $table->longText('clausula_edit_8_2_a')->nullable()->default(null);
             $table->longText('clausula_edit_8_2_b')->nullable()->default(null);
             $table->longText('clausula_edit_8_2_c')->nullable()->default(null);
@@ -136,8 +138,8 @@ class CreateContratoSrsTable extends Migration
             $table->string('nome_rep_privado_foro');
             $table->string('cargo_rep_privado_foro');
 
-            $table->string('nome_testemunha_1');
-            $table->string('nome_testemunha_2');
+           /*  $table->string('nome_testemunha_1');
+            $table->string('nome_testemunha_2'); */
            
             $table->string('tipo')->nullable()->default(null);
 

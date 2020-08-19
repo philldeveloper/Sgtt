@@ -396,7 +396,7 @@ async function loadingDownloadSR(event){
   event.preventDefault();
   const button = event.target
   const requestUrl = event.target.href
-
+  iconSuccessSR.forEach((item) => item.style.display = 'none');
   $.ajax({
     url: requestUrl,
     type: 'GET',
@@ -456,7 +456,7 @@ function loadingDownloadCR(event){
 
   const button = event.target
   const requestUrl = event.target.href
-  
+  iconSuccess.forEach((item) => item.style.display = 'none')
   $.ajax({
     url: requestUrl,
     type: 'GET',

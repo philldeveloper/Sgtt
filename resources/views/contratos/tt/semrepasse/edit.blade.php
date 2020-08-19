@@ -598,7 +598,7 @@
             e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem 
             na execução do objeto deste Acordo, de forma que não se estabelecerá, em hipótese alguma,
           vínculo empregatício ou de qualquer outra natureza com a EMPRESA <input type="text" class="myform-control font-weight-bold" value="{{$contratos_sr->nome_parceiro}}"  id="handle_parceiro" disabled> e
-          o pessoal <input type="text" class="myform-control font-weight-bold" value="{{$contratos_sr->nome_ict}}" id="handle_ict" disabled> vice-versa, cabendo a cada PARCEIRO a responsabilidade 
+          o pessoal do(a)<input type="text" class="myform-control font-weight-bold" value="{{$contratos_sr->nome_ict}}" id="handle_ict" disabled> vice-versa, cabendo a cada PARCEIRO a responsabilidade 
           pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a documentação comprobatória da regularidade na contratação.<br>
         </p>
       </div>
@@ -785,7 +785,17 @@
           <a href="#" data-toggle="modal" data-target="#modal_clausula_8_all"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
             <textarea class="form-control" value="{{$contratos_sr->clausula_edit_8_2}}" name="clausula_edit_8_2" rows="6" style="background-color: #F6FAFA; resize: none !important;">{{$contratos_sr->clausula_edit_8_2}}</textarea>
           </div>
-
+          <div class="col-md-12 mb-3">
+            <a id="clausula_8"  class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.3</a>
+          
+              <a href="#" data-toggle="modal" data-target="#modal_clausula_8_1"><i class="fas fa-fw fa-question-circle  m-2"></i></a>
+              <textarea class="form-control" name="clausula_edit_8_3" value="{{$contratos_sr->clausula_edit_8_3}}" rows="8" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS obrigam-se a observar rigidamente as condições contidas nos itens abaixo, sob pena de imediata e justificada rescisão do acordo. </textarea>
+          </div>
+          
+          <div class="col-md-12 mb-3">
+            <a id="clausula_8"  class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.4</a>
+            <textarea class="form-control" name="clausula_edit_8_4" value="{{$contratos_sr->clausula_edit_8_4}}"  rows="6" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS declaram-se cientes de que seus Departamentos Jurídicos e/ou advogados contratados estão autorizados, em caso de práticas que atentem contra os preceitos dessa cláusula, a solicitar a imediata abertura dos procedimentos criminais, cíveis e administrativos cabíveis à cada hipótese:</textarea>
+          </div>
           <div class="col-md-12 mb-3">
             <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">LETRA A)</a>
             <a href="#" data-toggle="modal" data-target="#modal_clausula_8_all"><i class="fas fa-fw fa-question-circle float-left m-2"></i></a>
@@ -877,7 +887,9 @@
               AVALIAÇÃO E DA PRESTAÇÃO DE CONTAS</h4><hr>
           <br>
           <p><b>12.1</b> Os <b>PARCEIROS</b> exercerão a fiscalização técnico-financeira das atividades do presente Acordo. </p>
-          <p><b>12.2</b>  O pesquisador deverá encaminhar ao <span class="font-weight-bold">Setor responsável ou COMISSÃO DA ICT/AGÊNCIA DE FOMENTO: <input class="mb-2 text-black myform-control" name="nome_setor_comissao"  value="{{$contratos_sr->nome_setor_comissao}}" type="text"></span>  </p>
+          <p><b>12.2</b>  O pesquisador deverá encaminhar ao <span class="font-weight-bold">Setor responsável ou COMISSÃO DO(A): <input class="mb-2 text-black myform-control" name="nome_setor_comissao"  value="{{$contratos_sr->nome_setor_comissao}}" type="text"></span> 
+          
+         </p>
 
           <!--clausula editavel 12-->
           <div class="alert alert-info py-2 mt-5 mb-4 text-dark font-weight-bold" role="alert">      
@@ -1130,7 +1142,7 @@
             </div>
             <input type="hidden" id="tipo" name="{{$contratos_sr->tipo}}" value="Sem Repasse">
           </div><!-- /.row-->
-          <div class="form-row mt-5">
+          <!-- <div class="form-row mt-5">
             <div class="form-group col-md-3">
               <label for="nome_testemunha_1" class="font-weight-bold text-black">Testemunha 1:</label>
               <input type="text" 
@@ -1148,7 +1160,7 @@
                 placeholder="{{$contratos_sr->nome_testemunha_2}}"
                 value="{{$contratos_sr->nome_testemunha_2}}">
             </div>
-          </div><!-- /.row-->
+          </div> --><!-- /.row-->
         </div>
       </div>
     </div>

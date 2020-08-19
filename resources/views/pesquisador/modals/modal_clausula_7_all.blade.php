@@ -30,7 +30,7 @@
       </div>
       <div class="modal-body">
         <p class="">
-        Cláusulas para negociação entre a ICT (IF-Sertão-PE ou UNIVASF) e a Empresa parceira (Verificar o caso concreto).
+        Em “processo/serviço/projeto........” Inserir o título do Projeto de Pesquisa.
         </p>
       </div>
     </div>

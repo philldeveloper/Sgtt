@@ -31,7 +31,6 @@
   a#teste:hover{color:white !important;}
   #wrapper #content-wrapper {background-color: #f5f5f5}
 </style>
-
 <body id="page-top">
 
   <!-- Page Wrapper -->
@@ -51,6 +50,11 @@
           <a class="nav-link" href="{{route('home')}}">
             <i class="fas fa-chart-bar" style="color: white !important"></i>
             <span>Início</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#modelo-plano-trabalho">
+            <i class="fas fa-briefcase"></i>
+            <span>Plano de Trabalho</span></a>
         </li>
 
         @if(Auth::user()->admin == 1)
@@ -167,6 +171,35 @@
   <script src="{{asset('js/chart.js')}}"></script>
   
 
+<div class="modal fade" id="modelo-plano-trabalho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Plano de Trabalho</h5>
+        <button type="button" class="close" data-dismiss="modal" onclick="modaltoDefaultSR()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+<!--         <div class="row justify-content-center p-3">
+          <i class="fas fa-5x fa-file-download py-3 mb-1 text-primary"></i>    
+        </div> -->
+        <h5 id="user-message-sr" class="font-weight-bold text-dark py-3">Clique em Baixar para fazer o download do modelo de plano de trabalho para acordo.</h5>
+        <div style="display:flex; flex-direction: row; align-items: center;justify-content:center;">
+      <!--     <div class="container-button text-right">
+            <a href="#" class="btn btn-success btn-lg btn-icon-split">
+              <span class="icon text-white-50" style="display: flex; align-items: center;">
+                <i class="fas fa-arrow-down"></i>
+              </span>
+              <span class="text">Baixar</span>
+            </a>
+          </div> -->
+          <a href="{{asset('assets/Plano-de-Trabalho-Modelo-Acordo.docx')}}" class="btn btn-primary font-weight-bold mr-4 py-3 mb-4" download><i class="fas fa-file-word"></i> Baixar DOC</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>

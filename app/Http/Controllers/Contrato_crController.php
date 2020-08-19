@@ -76,6 +76,7 @@ class Contrato_crController extends Controller
         $contrato_cr->parceiro_doravante_denominado = $request->parceiro_doravante_denominado;
         $contrato_cr->clausula_descricao = $request->clausula_descricao;
 
+        $contrato_cr->clausula_edit_2_2 = $request->clausula_edit_2_2;
         $contrato_cr->clausula_edit_2_3 = $request->clausula_edit_2_3;
         $contrato_cr->clausula_edit_2_4 = $request->clausula_edit_2_4;
         $contrato_cr->clausula_edit_2_5 = $request->clausula_edit_2_5;
@@ -97,6 +98,7 @@ class Contrato_crController extends Controller
         $contrato_cr->clausula_edit_3n = $request->clausula_edit_3n;
         $contrato_cr->clausula_edit_3_3 = $request->clausula_edit_3_3;
 
+        $contrato_cr->clausula_edit_4_3 = $request->clausula_edit_4_3;
         $contrato_cr->clausula_edit_4_8 = $request->clausula_edit_4_8;
         $contrato_cr->clausula_opcional_4_6 = $request->clausula_opcional_4_6;
 
@@ -106,6 +108,9 @@ class Contrato_crController extends Controller
         $contrato_cr->clausula_edit_4_9 = $request->clausula_edit_4_9;
         $contrato_cr->clausula_edit_4_9_1 = $request->clausula_edit_4_9_1;
         $contrato_cr->clausula_edit_4_10 = $request->clausula_edit_4_10;
+        $contrato_cr->input_4_10_parceiro = $request->input_4_10_parceiro;
+        
+        $contrato_cr->nome_ict_com_fund_apoio = $request->nome_ict_com_fund_apoio;
 
         $contrato_cr->clausula_edit_6_1 = $request->clausula_edit_6_1;
         $contrato_cr->clausula_edit_6_2 = $request->clausula_edit_6_2;
@@ -141,12 +146,16 @@ class Contrato_crController extends Controller
         $contrato_cr->clausula_edit_13_2 = $request->clausula_edit_13_2;
         $contrato_cr->clausula_edit_13_a = $request->clausula_edit_13_a;
         $contrato_cr->clausula_edit_13_b = $request->clausula_edit_13_b;
+        $contrato_cr->clausula_edit_13_5 = $request->clausula_edit_13_5;
+        $contrato_cr->clausula_edit_13_6 = $request->clausula_edit_13_6;
 
         $contrato_cr->clausula_edit_14_2 = $request->clausula_edit_14_2;
         $contrato_cr->clausula_edit_14_2_1 = $request->clausula_edit_14_2_1;
         $contrato_cr->clausula_edit_14_2_2 = $request->clausula_edit_14_2_2;
         $contrato_cr->clausula_edit_14_3 = $request->clausula_edit_14_3;
         $contrato_cr->clausula_edit_14_4 = $request->clausula_edit_14_4;
+
+        $contrato_cr->clausula_edit_15_1 = $request->clausula_edit_15_1;
 
         $contrato_cr->parceiro_contato_endereco = $request->parceiro_contato_endereco;
         $contrato_cr->parceiro_contato_telefone = $request->parceiro_contato_telefone;
@@ -165,6 +174,14 @@ class Contrato_crController extends Controller
         
         $contrato_cr->clausula_edit_16_1 = $request->clausula_edit_16_1;
         $contrato_cr->clausula_edit_16_2 = $request->clausula_edit_16_2;
+        
+        $contrato_cr->clausula_edit_17_1 = $request->clausula_edit_17_1;
+        $contrato_cr->clausula_edit_17_2 = $request->clausula_edit_17_2;
+        $contrato_cr->clausula_edit_17_2_1 = $request->clausula_edit_17_2_1;
+        $contrato_cr->clausula_edit_17_2_2 = $request->clausula_edit_17_2_2;
+        $contrato_cr->clausula_edit_17_2_3 = $request->clausula_edit_17_2_3;
+        $contrato_cr->clausula_edit_17_2_4 = $request->clausula_edit_17_2_4;
+        $contrato_cr->clausula_edit_17_3 = $request->clausula_edit_17_3;
 
         $contrato_cr->nome_coordenador_ict = $request->nome_coordenador_ict;
         $contrato_cr->nome_coordenador_privado = $request->nome_coordenador_privado;
@@ -183,8 +200,11 @@ class Contrato_crController extends Controller
         $contrato_cr->nome_rep_privado_foro = $request->nome_rep_privado_foro;
         $contrato_cr->cargo_rep_privado_foro = $request->cargo_rep_privado_foro;
 
-        $contrato_cr->nome_testemunha_1 = $request->nome_testemunha_1;
-        $contrato_cr->nome_testemunha_2 = $request->nome_testemunha_2;
+        $contrato_cr->nome_rep_fund_apoio = $request->nome_rep_fund_apoio;
+        $contrato_cr->cargo_rep_fund_apoio = $request->cargo_rep_fund_apoio;
+
+       /*  $contrato_cr->nome_testemunha_1 = $request->nome_testemunha_1;
+        $contrato_cr->nome_testemunha_2 = $request->nome_testemunha_2; */
 
         $contrato_cr->tipo = 'Com Repasse';
         

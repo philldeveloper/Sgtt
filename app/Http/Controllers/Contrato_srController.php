@@ -120,6 +120,8 @@ class Contrato_srController extends Controller
 
         $contrato_sr->clausula_edit_8_1 = $request->clausula_edit_8_1;
         $contrato_sr->clausula_edit_8_2 = $request->clausula_edit_8_2;
+        $contrato_sr->clausula_edit_8_3 = $request->clausula_edit_8_3;
+        $contrato_sr->clausula_edit_8_4 = $request->clausula_edit_8_4;
         $contrato_sr->clausula_edit_8_2_a = $request->clausula_edit_8_2_a;
         $contrato_sr->clausula_edit_8_2_b = $request->clausula_edit_8_2_b;
         $contrato_sr->clausula_edit_8_2_c = $request->clausula_edit_8_2_c;
@@ -166,11 +168,11 @@ class Contrato_srController extends Controller
         $contrato_sr->cargo_rep_foro = $request->cargo_rep_foro;
 
         $contrato_sr->nome_inst_privado_foro = $request->nome_inst_privado_foro;
-        $contrato_sr->nome_rep_privado_foro = $request->nome_rep_privado_foro;
-        $contrato_sr->cargo_rep_privado_foro = $request->cargo_rep_privado_foro;
 
-        $contrato_sr->nome_testemunha_1 = $request->nome_testemunha_1;
-        $contrato_sr->nome_testemunha_2 = $request->nome_testemunha_2;
+        $contrato_sr->nome_rep_privado_foro = $request->nome_rep_privado_foro;
+
+       /*  $contrato_sr->nome_testemunha_1 = $request->nome_testemunha_1;
+        $contrato_sr->nome_testemunha_2 = $request->nome_testemunha_2; */
 
         $contrato_sr->tipo = $request->tipo;
         $contrato_sr->user_id = Auth::id();      

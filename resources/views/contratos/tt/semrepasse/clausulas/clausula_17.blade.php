@@ -74,7 +74,7 @@
             disabled="">
         </div>
         </div><!-- /.row-->
-        <div class="form-row mt-5">
+        <!-- <div class="form-row mt-5">
             <div class="form-group col-md-3">
               <label for="nome_testemunha_1" class="font-weight-bold text-black">Testemunha 1:</label>
               <input type="text" 
@@ -92,6 +92,6 @@
                 placeholder="{{$contratos_sr->nome_testemunha_2}}"
                 disabled="">
             </div>
-        </div><!-- /.row-->
+        </div> --><!-- /.row-->
     </div>
 </div>

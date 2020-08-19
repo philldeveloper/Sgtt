@@ -78,6 +78,7 @@
 @include('pesquisador.modals.modal_doravante')
 @include('pesquisador.modals.modal_natureza_juridica')
 @include('pesquisador.modals.modal_endereco')
+@include('pesquisador.modals.modal_estado_civil')
 @include('pesquisador.modals.modal_cep')
 @include('pesquisador.modals.modal_representante')
 @include('pesquisador.modals.modal_representante_privado')
@@ -431,7 +432,7 @@
           </div>
           <div class="form-group col-md-3">
             <label for="parceiro_rg" class="font-weight-bold text-black">Identidade nº</label>
-            <a href="#" data-toggle="modal" data-target="#modal_carmodal_rg"><i class="fas fa-fw fa-question-circle float-right"></i></a>
+            <a href="#" data-toggle="modal" data-target="#modal_rg"><i class="fas fa-fw fa-question-circle float-right"></i></a>
             <input type="text" class="form-control text-black font-weight-bold rg" placeholder=" 16.549.879-9" name="parceiro_rg" id="parceiro_rg" placeholder="">
           </div>
           <div class="form-group col-md-2">
@@ -657,7 +658,7 @@
 
             <div class="col-md-12 mb-3 p-0">
               <a class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">CLAUSULA 3.3</a>
-            <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle float-left mt-1 m-2"></i></a>
+            <a href="#" data-toggle="modal" data-target="#modal_clausula_3_3"><i class="fas fa-fw fa-question-circle float-left mt-1 m-2"></i></a>
             <textarea class="form-control" name="clausula_edit_3_3" rows="4" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS são responsáveis, nos limites de suas obrigações, respondendo por perdas e danos quando causarem prejuízo em razão da inexecução do objeto do presente Acordo de Parceria para PD&I ou de publicações a ele referentes.</textarea>
             </div>
 
@@ -705,10 +706,9 @@
           vínculo empregatício ou de qualquer outra natureza com o(a) 
           <input type="text" class="myform-control" id="handle_parceiro" placeholder="Empresa parceira" disabled>
           <a href="#" data-toggle="modal" data-target="#modal_clausula_4_1"><i class="fas fa-fw fa-question-circle mt-1"></i></a>
-           e
-          o pessoal 
+           eo pessoal do(a)
           <input type="text" class="myform-control" name="modal_clausula_4_1_ict" id="handle_ict" placeholder="ICT ou Agência de fomento" disabled> 
-          <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle mt-1"></i></a>
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_4_1_ict"><i class="fas fa-fw fa-question-circle mt-1"></i></a>
 
           vice-versa, cabendo a cada PARCEIRO a responsabilidade 
           pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a
@@ -771,6 +771,11 @@
 Ou 
 5.3. Todo desenvolvimento tecnológico passível de proteção intelectual, em qualquer modalidade, proveniente da execução do presente Acordo de Parceria, deverá ter a sua propriedade compartilhada entre as parceiras, por meio de instrumento próprio, respeitando-se o percentual de x% (x por cento) para a ICT/AGÊNCIA DE FOMENTO.</textarea>
             </div>
+            <div class="alert alert-warning mb-3 mt-3" role="alert">      
+              <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+               NOTAS EXPLICATIVAS!
+              <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_alert_5_3">Saiba mais</button>
+            </div>
             <div class="col-md-12 mb-3">
               <a id="clausula_5" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.4</a>
               <span
@@ -814,6 +819,11 @@ Ou
               </span>
             <!--   <a href="#" data-toggle="modal" data-target="#modal_clausula_5_7"><i class="fas fa-fw fa-question-circle"></i></a> -->
               <textarea class="form-control" name="clausula_edit_5_7" rows="3" style="background-color: #F6FAFA; resize: none !important;">Na hipótese de eventual infração de qualquer direito de propriedade intelectual relacionada às tecnologias resultantes, os parceiros concordam que as medidas judiciais cabíveis visando coibir a infração do respectivo direito podem ser adotadas em conjunto ou separadamente.</textarea>
+            </div>
+            <div class="alert alert-warning mb-3 mt-3" role="alert">      
+              <img class="img-alert mr-2" src="https://image.flaticon.com/icons/svg/1680/1680012.svg" alt="attention" style="width:32px;">
+               NOTAS EXPLICATIVAS!
+              <button type="button" class="ml-2 btn-sm btn-warning" data-toggle="modal" data-target="#modal_alert_5_8">Saiba mais</button>
             </div>
             <div class="col-md-12 mb-3">
               <a id="clausula_5" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 5.8</a>
@@ -950,7 +960,7 @@ Ou
                 id="clausula_edit_7_7"
                 >
               </span>
-              <a href="#" data-toggle="modal" data-target="#modal_clausula_7_7"><i class="fas fa-fw m-2"></i></a>
+              <a href="#" data-toggle="modal" data-target="#modal_clausula_7_7"><i class="fas fa-fw fa-question-circle"></i></a>
               <textarea class="form-control" name="clausula_edit_7_7" rows="3" style="background-color: #F6FAFA; resize: none !important;">Para efeito dessa cláusula, todas as informações referentes ao “processo/serviço/projeto........” serão consideradas como INFORMAÇÃO CONFIDENCIAL, retroagindo às informações obtidas antes da assinatura do acordo.</textarea>
             </div>
             <div class="col-md-12 mb-3">
@@ -1009,12 +1019,33 @@ Ou
               id="clausula_edit_8_2"
             >
           </span>
-            <a href="#" data-toggle="modal" data-target="#modal_clausula_8_all"><i class="fas fa-fw fa-question-circle m-2"></i></a>
             <textarea class="form-control" name="clausula_edit_8_2" rows="6" style="background-color: #F6FAFA; resize: none !important;">Um PARCEIRO deverá notificar imediatamente o outro sobre eventual suspeita de qualquer fraude tenha ocorrido, esteja ocorrendo, ou provavelmente ocorrerá, para que sejam tomadas as medidas necessárias para apurá-las. Os PARCEIROS declaram-se cientes de que seus Departamentos Jurídicos e/ou advogados contratados estão autorizados, em caso de práticas que atentem contra os preceitos dessa cláusula, a solicitar a imediata abertura dos procedimentos criminais, cíveis e administrativos cabíveis à cada hipótese:</textarea>
+          </div>
+          <div class="col-md-12 mb-3">
+            <a id="clausula_8"  class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.3</a>
+            <span
+              onclick="handleClausulasOpt(event)" 
+              class="remove-box fas fa-trash"
+              id="clausula_edit_8_3"
+              >
+            </span>
+              <a href="#" data-toggle="modal" data-target="#modal_clausula_8_3"><i class="fas fa-fw fa-question-circle  m-2"></i></a>
+              <textarea class="form-control" name="clausula_edit_8_3" rows="3" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS obrigam-se a observar rigidamente as condições contidas nos itens abaixo, sob pena de imediata e justificada rescisão do acordo. </textarea>
           </div>
           
           <div class="col-md-12 mb-3">
-          <a id="clausula_8"  class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.3</a>
+            <a id="clausula_8"  class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.4</a>
+            <span
+              onclick="handleClausulasOpt(event)" 
+              class="remove-box fas fa-trash"
+              id="clausula_edit_8_4"
+            >
+          </span>
+            <textarea class="form-control" name="clausula_edit_8_4" rows="3" style="background-color: #F6FAFA; resize: none !important;">Os PARCEIROS declaram-se cientes de que seus Departamentos Jurídicos e/ou advogados contratados estão autorizados, em caso de práticas que atentem contra os preceitos dessa cláusula, a solicitar a imediata abertura dos procedimentos criminais, cíveis e administrativos cabíveis à cada hipótese:</textarea>
+          </div>
+          
+          <div class="col-md-12 mb-3">
+          <a id="clausula_8"  class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.5</a>
             <span
               onclick="handleClausulasOpt(event)" 
               class="remove-box fas fa-trash"
@@ -1026,7 +1057,7 @@ Ou
           </div>
           
           <div class="col-md-12 mb-3">
-            <a id="clausula_8"  class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.4</a>
+            <a id="clausula_8"  class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.6</a>
             <span
               onclick="handleClausulasOpt(event)" 
               class="remove-box fas fa-trash"
@@ -1038,7 +1069,7 @@ Ou
           </div>
           
           <div class="col-md-12 mb-3">
-            <a id="clausula_8" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.5</a>
+            <a id="clausula_8" class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.7</a>
             <span
               onclick="handleClausulasOpt(event)" 
               class="remove-box fas fa-trash"
@@ -1050,7 +1081,7 @@ Ou
           </div>
           
           <div class="col-md-12 mb-3">
-            <a id="clausula_8"  class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.6</a>
+            <a id="clausula_8"  class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.8</a>
             <span
               onclick="handleClausulasOpt(event)" 
               class="remove-box fas fa-trash"
@@ -1062,7 +1093,7 @@ Ou
           </div>
           
           <div class="col-md-12 mb-3">
-            <a id="clausula_8"  class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.7</a>
+            <a id="clausula_8"  class="badge badge-primary text-light font-weight-bold float-left mb-2 p-2">Cláusula 8.9</a>
             <span
               onclick="handleClausulasOpt(event)" 
               class="remove-box fas fa-trash"
@@ -1133,7 +1164,9 @@ Ou
               AVALIAÇÃO E DA PRESTAÇÃO DE CONTAS</h4><hr>
           <br>
           <p><b>12.1</b> Os <b>PARCEIROS</b> exercerão a fiscalização técnico-financeira das atividades do presente Acordo. </p>
-          <p><b>12.2</b>  O pesquisador deverá encaminhar ao <span class="font-weight-bold">Setor responsável ou COMISSÃO DA: </span><input class="mb-2 text-black myform-control" name="nome_setor_comissao" type="text"> </p>
+          <p><b>12.2</b>  O pesquisador deverá encaminhar ao <span class="font-weight-bold">Setor responsável ou COMISSÃO DO(A): </span><input class="mb-2 text-black myform-control" name="nome_setor_comissao" type="text">
+          <a href="#" data-toggle="modal" data-target="#modal_clausula_12_2"><i class="fas fa-fw fa-question-circle m-2"></i></a>
+         </p>
 
           <!--clausula editavel 12-->
           <div class="alert alert-info py-2 mt-5 mb-4 text-dark font-weight-bold" role="alert">      
@@ -1171,7 +1204,9 @@ Ou
           <h4 class="text-uppercase font-weight-bold roboto-font text-left text-black mb-3 p-2">13. CLÁUSULA DÉCIMA TERCEIRA – DA EXTINÇÃO DO ACORDO</h4><hr>
           <br>
 
-          <p><b>13.1</b> Este Acordo poderá, a qualquer tempo, ser denunciado pelos <b>PARCEIROS</b>, devendo o interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de  <input class="myform-control text-black" type="text" name="clausula_prazo_13_1" placeholder="Prazo em dias"> dias da data em que se pretenda que sejam encerradas as atividades, respeitadas as obrigações assumidas com terceiros entre os <b>PARCEIROS</b>, creditando eventuais benefícios adquiridos no período.</p>
+          <p><b>13.1</b> Este Acordo poderá, a qualquer tempo, ser denunciado pelos <b>PARCEIROS</b>, devendo o interessado externar formalmente a sua intenção nesse sentido, com a antecedência mínima de  <input class="myform-control text-black" type="text" name="clausula_prazo_13_1" placeholder="Prazo em dias">
+          <a href="#" data-toggle="modal" data-target="#modal_13_prazo"><i class="fas fa-fw fa-question-circle"></i></a>
+           dias da data em que se pretenda que sejam encerradas as atividades, respeitadas as obrigações assumidas com terceiros entre os <b>PARCEIROS</b>, creditando eventuais benefícios adquiridos no período.</p>
 
         <!--clausula editavel 13-->
 
@@ -1195,7 +1230,6 @@ Ou
             id="clausula_edit_13_2_1"
             >
           </span>
-          <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle"></i></a>
           <textarea class="form-control text-justify" name="clausula_edit_13_2_1" rows="3" style="background-color: #F6FAFA; resize: none !important;">Prestados os esclarecimentos, os PARCEIROS deverão, por mútuo consenso, decidir pela rescisão ou manutenção do Acordo.</textarea>
         </div>
         
@@ -1207,7 +1241,6 @@ Ou
             id="clausula_edit_13_2_2"
             >
           </span>
-          <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle"></i></a>
           <textarea class="form-control text-justify" name="clausula_edit_13_2_2" rows="3" style="background-color: #F6FAFA; resize: none !important;">Decorrido o prazo para esclarecimentos, caso não haja resposta, o Acordo será rescindido de pleno direito, independentemente de notificações ou interpelações, judiciais ou extrajudiciais.</textarea>
         </div>
         
@@ -1219,7 +1252,6 @@ Ou
             id="clausula_edit_13_3"
             >
           </span>
-          <a href="#" data-toggle="modal" data-target="#modal_clausula_default"><i class="fas fa-fw fa-question-circle"></i></a>
           <textarea class="form-control text-justify" name="clausula_edit_13_3" rows="5" style="background-color: #F6FAFA; resize: none !important;">O Acordo de Parceria será rescindido em caso de decretação de falência, liquidação extrajudicial ou judicial, ou insolvência de qualquer dos PARCEIROS, ou, ainda, no caso de propositura de quaisquer medidas ou procedimentos contra qualquer dos PARCEIROS para sua liquidação e/ou dissolução;</textarea>
         </div>
         
@@ -1264,7 +1296,7 @@ Ou
             </div>
             <div class="form-group col">
               <label for="parceiro_contato_celular" class="font-weight-bold text-black">Celular</label>
-              <input type="number" 
+              <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="parceiro_contato_celular" id="parceiro_contato_celular" 
                 placeholder="Ex: 900000000">
@@ -1292,7 +1324,7 @@ Ou
             </div>
             <div class="form-group col">
               <label for="privado_contato_celular" class="font-weight-bold text-black">Celular</label>
-              <input type="number" 
+              <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="privado_contato_celular" id="privado_contato_celular" 
                 placeholder="Ex: 900000000">
@@ -1456,26 +1488,6 @@ Ou
                 name="cargo_rep_privado_foro" 
                 id="cargo_privado" 
                 placeholder="Cargo">
-            </div>
-          </div><!-- /.row-->
-
-          <div class="form-row mt-5">
-            <div class="form-group col-md-3">
-              <label for="nome_testemunha_1" class="font-weight-bold text-black">Testemunha 1:</label>
-              <input type="text" 
-                class="form-control text-black font-weight-bold" 
-                name="nome_testemunha_1" id="nome_testemunha_1" 
-                placeholder="Nome"
-                required="">
-            </div>
-            <div class="form-group col-md-3">
-              <label for="nome_testemunha_2" class="font-weight-bold text-black">Testemunha 2:</label>
-              <input type="text" 
-                class="form-control text-black font-weight-bold"
-                name="nome_testemunha_2" 
-                id="nome_testemunha_2" 
-                placeholder="Nome"
-                required="">
             </div>
           </div><!-- /.row-->
 

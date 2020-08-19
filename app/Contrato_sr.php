@@ -82,6 +82,8 @@ class Contrato_sr extends Model
 
         'clausula_edit_8_1',
         'clausula_edit_8_2',
+        'clausula_edit_8_3',
+        'clausula_edit_8_4',
         'clausula_edit_8_2_a',
         'clausula_edit_8_2_b',
         'clausula_edit_8_2_c',
@@ -130,8 +132,8 @@ class Contrato_sr extends Model
         'nome_inst_privado_foro',
         'nome_rep_privado_foro',
         'cargo_rep_privado_foro',
-        'nome_testemunha_1',
-        'nome_testemunha_2',
+        /* 'nome_testemunha_1',
+        'nome_testemunha_2', */
         
         'tipo',
         'user_id'

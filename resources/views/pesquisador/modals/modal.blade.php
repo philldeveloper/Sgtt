@@ -1,6 +1,6 @@
 
 <!-- Modal -->
-<div class="modal-alert modal fade" id="modal_19" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-alert modal fade" id="recurso_privado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -9,9 +9,9 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-        <div class="modal-body text-justify"><p class="lead">
-        O artigo 58 do Decreto nº 9.283/18 pode servir de parâmetro de análise da prestação de contas, sendo obrigatórios em convênios para PD&I e termos de outorga.
-      </div>
+        <div class="modal-body"><p class="lead">
+        Cláusulas para hipótese do recurso financeiro ser repassado do parceiro privado <b>DIRETAMENTE PARA O PARCEIRO PÚBLICO</b> (Sem intermédio de Fundação de Apoio)
+        </div>
         <div class="modal-footer">
           <button type="button" class="btn-lg btn-primary" data-dismiss="modal">Fechar</button>
         </div>

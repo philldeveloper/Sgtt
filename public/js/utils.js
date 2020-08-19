@@ -1,10 +1,9 @@
 function handleNameICT(event){
     const name = event.target.value
     const campos_icts = document.querySelectorAll('#handle_ict')
-
+    handleICTFundApoio()
     campos_icts.forEach((campo) => {
         campo.value = name
-        console.log(campo)
     })
 }
 
@@ -20,21 +19,24 @@ function handleNameParceiro(event){
 
 function handleFundacaoNameApoio(event){
     const name = event.target.value
+    handleICTFundApoio(name)
     const campos_fund_apoio = document.querySelectorAll('#handle_apoio')
     campos_fund_apoio.forEach((campo) => {
         campo.value = name
-        console.log(campo)
     })
 }
 
 function handleCheckbox(){
     const checkBox = document.getElementById("possui_apoio")
     const clausulas = document.querySelectorAll("#clausula_apoio_wrapper")
+    const final = document.getElementById("fund_apoio_final")
     if (checkBox.checked == true){
         console.log(clausulas)
         clausulas.forEach( clausula => clausula.style.display = "block")
+        final.style.display = "flex";
     } else {
         clausulas.forEach( clausula => clausula.style.display = "none")
+        final.style.display = "none";
     }
 }
 
@@ -119,7 +121,7 @@ function handleCargoPrivado(event){
 }
 
 /*Lógica para removação* das Clausulas opcionais */
-var clausulas = []
+var clausulas = [];
 var tabs = document.getElementsByClassName("tab-pane");
 
 function handleClausulasOpt(event){
@@ -156,6 +158,40 @@ function handleClausulasOpt(event){
     handleCountBadges(badges)
 }
 
+function handleSubClausulasOpt(event){
+    let badges = Array.from(tabs[currentTab].getElementsByClassName("badge_sub"));
+    let id = event.target.id
+    let CurrentBadge = event.target.parentNode.children[0] 
+    const textarea = document.querySelector(`[name="${id}"]`)
+    if(event.target.classList[2] == 'fa-trash'){
+     /*    if(countClaulsasActive(badges) + 1 == badges.length){
+            Toastify({
+                text: "Você não pode remover todas as clausulas.",
+                backgroundColor: "linear-gradient(to right, #FEB692, #EA5455)",
+                duration: 3000
+            }).showToast(); 
+            return false
+        } */
+   
+        event.target.classList.value = 'remove-box fas fa-undo bg-undo'
+        clausulas.push({ name: id, text: textarea.value})
+        textarea.value = ''
+        textarea.style.display = 'none'
+        CurrentBadge.text = 'Removido'
+    }else{
+        event.target.classList.value = 'remove-box fas fa-trash bg-trash'
+        textarea.style.display = 'block'
+        clausulas.forEach((cl, index) => {
+            if(cl.name == id){
+                textarea.value = cl.text
+                clausulas.splice(index, 1)
+            }
+        });
+        CurrentBadge.text = ''
+    }
+    handleCountBadges(badges)
+}
+
 const countClaulsasActive = (badges) => badges.filter((badge) => badge.text === 'Removido').length
 
 function handleCountBadges(badges){
@@ -163,6 +199,19 @@ function handleCountBadges(badges){
     if(badges[0].dataset.opt2){
         aux = Number(badges[0].dataset.opt2)
     }
+    console.log(badges[0])
+
+    if(badges[0].dataset.subparam){
+        console.log('entrou')
+        badges.forEach((badge, index) => {
+            if(badge.text != 'Removido' && badge.id){
+                badge.text = `Cláusula ${badge.id.match(/\d+/g)[0]}.${badges[0].dataset.subparam}.${aux}`;
+                ++aux;
+            }
+        })
+        return true
+    }
+
     badges.forEach((badge, index) => {
         if(badge.text != 'Removido' && badge.id){
             badge.text = `Cláusula ${badge.id.match(/\d+/g)[0]}.${aux}`;
@@ -221,3 +270,13 @@ function handleClausulasOptWithLetter(event){
     handleCountBadgesWithLateter(badges)
 }
 
+function handleICTFundApoio(nomeFundacao){
+    const nome_ict = document.getElementById("nome_ict").value;
+    const currentInput = document.getElementById('handle_ict_fund');
+    const checkBox = document.getElementById("possui_apoio");
+
+    if (checkBox.checked == true){
+      currentInput.value = `${nome_ict} e ${nomeFundacao}`;
+    }
+        currentInput.value = `${nome_ict}`;
+}

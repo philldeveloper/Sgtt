@@ -44,6 +44,7 @@ class Contrato_cr extends Model
 
         'clausula_descricao', //clausula_1
 
+        'clausula_edit_2_2',
         'clausula_edit_2_3',
         'clausula_edit_2_4',
         'clausula_edit_2_5',
@@ -64,7 +65,7 @@ class Contrato_cr extends Model
         'clausula_edit_3m',
         'clausula_edit_3n',
         'clausula_edit_3_3',
-
+        'clausula_edit_4_3',
         'clausula_edit_4_8',
         'clausula_opcional_4_6',
         'clausula_edit_4_8_1',
@@ -72,7 +73,8 @@ class Contrato_cr extends Model
         'clausula_edit_4_9',
         'clausula_edit_4_9_1',
         'clausula_edit_4_10',
-
+        'input_4_10_parceiro',
+        'nome_ict_com_fund_apoio',
         'clausula_edit_6_1',
         'clausula_edit_6_2',
         'clausula_edit_6_3',
@@ -107,6 +109,8 @@ class Contrato_cr extends Model
         'clausula_edit_13_2',
         'clausula_edit_13_a',
         'clausula_edit_13_b',
+        'clausula_edit_13_5',
+        'clausula_edit_13_6',
 
         'clausula_edit_14_2',
         'clausula_edit_14_2_1',
@@ -114,8 +118,11 @@ class Contrato_cr extends Model
         'clausula_edit_14_3',
         'clausula_edit_14_4',
 
+        'clausula_edit_15_1',
+
         'clausula_edit_16_1',
         'clausula_edit_16_2',
+
         //17.1 contato publico
         'parceiro_contato_endereco',
         'parceiro_contato_telefone',
@@ -131,6 +138,13 @@ class Contrato_cr extends Model
         'apoio_contato_telefone',
         'apoio_contato_celular',
         'apoio_contato_email',
+        'clausula_edit_17_1',
+        'clausula_edit_17_2',
+        'clausula_edit_17_2_1',
+        'clausula_edit_17_2_2',
+        'clausula_edit_17_2_3',
+        'clausula_edit_17_2_4',
+        'clausula_edit_17_3',
         
         'nome_inst_ict', //clausula_3
         'nome_coordenador_ict', //clausula_3 *Novo
@@ -152,8 +166,11 @@ class Contrato_cr extends Model
         'nome_rep_privado_foro', //clausula_19
         'cargo_rep_privado_foro', //clausula_19
 
-        'nome_testemunha_1', 
-        'nome_testemunha_2', 
+        'nome_rep_fund_apoio', //clausula_19
+        'cargo_rep_fund_apoio', //clausula_19
+
+       /*  'nome_testemunha_1', 
+        'nome_testemunha_2',  */
         
         'tipo',
         'user_id'

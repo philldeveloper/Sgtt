@@ -1,5 +1,5 @@
-<h4 style="font-weight: bold;">SERVIÇO PÚBLICO FEDERAL<br/>MINISTÉRIO DA EDUCAÇÃO<br/>SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA</h4>
-<br/><br/>
+<h4 style="font-weight: bold;">SERVIÇO PÚBLICO FEDERAL<br/>MINISTÉRIO DA EDUCAÇÃO<br/></h4>
+<br/>
 <h4 style="font-weight: bold;">ACORDO DE COOPERAÇÃO TÉCNICA QUE ENTRE SI CELEBRAM {{strtoupper($contrato->nome_ict)}}, POR MEIO DO NÚCLEO DE INOVAÇÃO TECNOLÓGICA E {{strtoupper($contrato->nome_parceiro)}}, PARA FINS QUE ESPECIFICA.</h4>
 <br/><br/>
 
@@ -51,8 +51,12 @@
 <h5 style="font-weight: bold;">CLÁUSULA SEGUNDA – DO PLANO DE TRABALHO</h5>
 
 <p><span style="font-weight: bold;">2.1.</span> O Plano de Trabalho define os objetivos a serem atingidos com o presente Acordo de Parceria, apresenta o planejamento dos trabalhos que serão desenvolvidos, detalha as atividades e as atribuições de cada um dos PARCEIROS, a alocação de recursos humanos, materiais e financeiros, bem como o cronograma físico-financeiro do projeto, a fim de possibilitar a fiel consecução do objeto desta parceria, estabelecendo objetivos, metas e indicadores.</p>
-<p><span style="font-weight: bold;">2.2.</span> Respeitadas as previsões contidas na legislação em vigor, a ICT, com a interveniência da FUNDAÇÃO DE APOIO, fomentará/executará as atividades de pesquisa e desenvolvimento, conforme o Plano de Trabalho, sob as condições aqui acordadas, sendo parte integrante e indissociável deste Acordo.</p>
-<!-- <p style="display: none;">{{$count = 2}}</p> -->
+
+<!-- <p style="display: none;">{{$count = 1}}</p> -->
+@if($contrato->clausula_edit_2_2 == '')
+@else
+<p><span style="font-weight: bold;">2.{{++$count}}.</span> {!! $contrato->clausula_edit_2_2 !!}</p>
+@endif
 @if($contrato->clausula_edit_2_3 == '')
 @else
 <p><span style="font-weight: bold;">2.{{++$count}}.</span> {!! $contrato->clausula_edit_2_3 !!}</p>
@@ -119,7 +123,7 @@
 
 <h5 style="font-weight: bold;">CLÁUSULA QUARTA - DOS RECURSOS FINANCEIROS</h5>
 
-<p><span style="font-weight: bold;">4.1</span> O(A) {!! $contrato->nome_parceiro_privado!!} transferirá recursos financeiros no valor total de R$ {!! $contrato->valor_financeiro !!}, conforme cronograma de desembolso constante no Plano de Trabalho, anexo a este Acordo.</p>
+<p><span style="font-weight: bold;">4.1</span> O(A) {!! $contrato->nome_parceiro  !!} transferirá recursos financeiros no valor total de R$ {!! $contrato->valor_financeiro !!}, conforme cronograma de desembolso constante no Plano de Trabalho, anexo a este Acordo.</p>
 <p><span style="font-weight: bold;">4.2</span> Os valores especificados no item acima serão recebidos pela {!! $contrato->nome_fund_apoio !!} em conta específica.</p>
 <p><span style="font-weight: bold;">4.3</span> O Parceiro Privado efetuará os aportes financeiros previstos no Plano de Trabalho através de depósitos em conta- corrente específica, servindo o comprovante da operação bancária como recibo, para fins de direito, do repasse dos recursos financeiros previstos por este Acordo de Parceria.</p>
 <p><span style="font-weight: bold;">4.4</span> Após execução total do projeto, havendo ainda saldos provenientes das receitas obtidas de aplicações financeiras, esses serão devolvidos para o Parceiro Privado ou destinados para ação congênere, nos termos de instrumento jurídico próprio a ser firmado pelas partes.</p>
@@ -128,6 +132,7 @@
 <p><span style="font-weight: bold;">4.7</span> Do valor total repassado, (a) fundação de apoio poderá utilizar até 15% (quinze por cento) para custear despesas operacionais, definidas e justificadas no Plano de Trabalho.</p>
 <p><span style="font-weight: bold;">4.7.1</span> Os valores dos recursos financeiros previstos nesta cláusula poderão ser alterados por meio de termo aditivo, com as necessárias justificativas e de comum acordo entre os PARCEIROS, o que implicará a revisão das metas pactuadas e a alteração do Plano de Trabalho.</p>
 <!-- <p style="display: none;">{{$count = 7}}</p> -->
+<!-- <p style="display: none;">{{$sub_count = 0}}</p> -->
 @if($contrato->clausula_edit_4_8 == '')
 @else
 <p><span style="font-weight: bold;">4.{{++$count}}</span> {!! $contrato->clausula_edit_4_8 !!}</p>
@@ -135,22 +140,22 @@
 
 @if($contrato->clausula_edit_4_8_1 == '')
 @else
-<p><span style="font-weight: bold;">4.{{++$count}}</span> {!! $contrato->clausula_edit_4_8_1 !!}</p>
+<p><span style="font-weight: bold;">4.8.{{++$sub_count}}</span> {!! $contrato->clausula_edit_4_8_1 !!}</p>
 @endif
 
 @if($contrato->clausula_edit_4_8_2 == '')
 @else
-<p><span style="font-weight: bold;">4.{{++$count}}</span> {!! $contrato->clausula_edit_4_8_2 !!}</p>
+<p><span style="font-weight: bold;">4.8.{{++$sub_count}}</span> {!! $contrato->clausula_edit_4_8_2 !!}</p>
 @endif
 
 @if($contrato->clausula_edit_4_9 == '')
 @else
 <p><span style="font-weight: bold;">4.{{++$count}}</span> {!! $contrato->clausula_edit_4_9 !!}</p>
 @endif
-
+<!-- <p style="display: none;">{{$sub_count = 0}}</p> -->
 @if($contrato->clausula_edit_4_9_1 == '')
 @else
-<p><span style="font-weight: bold;">4.{{++$count}}</span> {!! $contrato->clausula_edit_4_9_1 !!}</p>
+<p><span style="font-weight: bold;">4.9.{{++$sub_count}}</span> {!! $contrato->clausula_edit_4_9_1 !!}</p>
 @endif
 
 @if($contrato->clausula_edit_4_10 == '')
@@ -158,30 +163,30 @@
 <p><span style="font-weight: bold;">4.{{++$count}}</span> {!! $contrato->clausula_edit_4_10 !!}</p>
 @endif
 
-<p><span style="font-weight: bold;">4.1</span> O(A) {!! $contrato->nome_parceiro_privado!!} transferirá recursos financeiros no valor total de R$ {!! $contrato->valor_financeiro !!}, conforme cronograma de desembolso constante no Plano de Trabalho, anexo a este Acordo.</p>
-<p><span style="font-weight: bold;">4.2</span> Os recursos financeiros serão transferidos à ICT/AGÊNCIA DE FOMENTO mediante depósito(s) no Banco do Brasil, por meio de Guia de Recolhimento da União-GRU, na qual deverá constar o código da UG, gestão e código do recolhimento indicados pela ICT/AGÊNCIA DE FOMENTO.</p>
-<p><span style="font-weight: bold;">4.3</span> O PARCEIRO PRIVADO deverá comunicar a ICT/AGÊNCIA DE FOMENTO as transferências financeiras até o primeiro dia útil seguinte à(s) data(s) do (s) depósito(s) bancário(s). (SE HOUVER NECESSIDADE, ESPECIFICAR A FORMA DE COMUNICAÇÃO: por meio de ...).</p>
-<p><span style="font-weight: bold;">4.4</span> A ICT/AGÊNCIA DE FOMENTO solicitará autorização orçamentária para incorporação dos valores transferidos.</p>
-<p><span style="font-weight: bold;">4.5</span> Caso não seja possível a incorporação dos valores transferidos dentro do tempo hábil para a execução das ações previstas no Plano de Trabalho, o presente instrumento será rescindido de comum acordo e a ICT/AGÊNCIA DE FOMENTO devolverá os recursos repassados.</p>
-<p><span style="font-weight: bold;">4.6</span> Os recursos transferidos à ICT/AGÊNCIA DE FOMENTO, enquanto não utilizados, seguirão as normas da Secretaria do Tesouro Nacional – STN, no que tange à aplicação, rendimentos e outras formas de correção.</p>
-<p><span style="font-weight: bold;">4.7</span> Eventual saldo de recurso transferido pelo parceiro ao ICT/AGÊNCIA DE FOMENTO, não utilizado no objeto deste Acordo, após a sua conclusão, será restituído ao parceiro, corrigidos nos termos da Secretaria do Tesouro Nacional - STN.</p>
-<p><span style="font-weight: bold;">4.8</span> A ICT/AGÊNCIA DE FOMENTO não disponibilizará recursos orçamentários e financeiros próprios na execução deste Acordo de Parceria, suspendendo sua execução, caso o repasse não seja efetivado conforme previsto no Plano de Trabalho.</p>
-<p><span style="font-weight: bold;">4.9</span> A ICT/AGÊNCIA DE FOMENTO não disponibilizará recursos orçamentários e financeiros próprios na execução deste Acordo de Parceria, suspendendo sua execução, caso o repasse não seja efetivado conforme previsto no Plano de Trabalho.</p>
-<p><span style="font-weight: bold;">4.10</span> Qualquer aumento ao orçamento do Plano de Trabalho executado por este Acordo de Parceria, que torne necessário o aporte de recursos adicionais pelo PARCEIRO PRIVADO deverá ser prévia e formalmente analisado e aprovado pelas Parceiros, devendo ser implementado tão somente após celebração de termo aditivo a este Acordo de Parceria.</p>
+<p><span style="font-weight: bold;">4.1</span> O(A) {!! $contrato->nome_parceiro !!} transferirá recursos financeiros no valor total de R$ {!! $contrato->valor_financeiro !!}, conforme cronograma de desembolso constante no Plano de Trabalho, anexo a este Acordo.</p>
+<p><span style="font-weight: bold;">4.2</span> Os recursos financeiros serão transferidos à {!! $contrato->nome_parceiro !!} mediante depósito(s) no Banco do Brasil, por meio de Guia de Recolhimento da União-GRU, na qual deverá constar o código da UG, gestão e código do recolhimento indicados pela {!! $contrato->nome_parceiro !!}.</p>
+<p><span style="font-weight: bold;">4.3</span> {!! $contrato->clausula_edit_4_3 !!}</p>
+<p><span style="font-weight: bold;">4.4</span> A(O) {!! $contrato->nome_ict!!} solicitará autorização orçamentária para incorporação dos valores transferidos.</p>
+<p><span style="font-weight: bold;">4.5</span> Caso não seja possível a incorporação dos valores transferidos dentro do tempo hábil para a execução das ações previstas no Plano de Trabalho, o presente instrumento será rescindido de comum acordo e a {!! $contrato->nome_ict!!} devolverá os recursos repassados.</p>
+<p><span style="font-weight: bold;">4.6</span> Os recursos transferidos à {!! $contrato->nome_ict!!}, enquanto não utilizados, seguirão as normas da Secretaria do Tesouro Nacional – STN, no que tange à aplicação, rendimentos e outras formas de correção.</p>
+<p><span style="font-weight: bold;">4.7</span> Eventual saldo de recurso transferido pelo parceiro ao {!! $contrato->nome_ict!!}, não utilizado no objeto deste Acordo, após a sua conclusão, será restituído ao parceiro, corrigidos nos termos da Secretaria do Tesouro Nacional - STN.</p>
+<p><span style="font-weight: bold;">4.8</span> A(O) {!! $contrato->nome_ict!!} não disponibilizará recursos orçamentários e financeiros próprios na execução deste Acordo de Parceria, suspendendo sua execução, caso o repasse não seja efetivado conforme previsto no Plano de Trabalho.</p>
+<p><span style="font-weight: bold;">4.9</span> A(O) {!! $contrato->nome_ict!!} não disponibilizará recursos orçamentários e financeiros próprios na execução deste Acordo de Parceria, suspendendo sua execução, caso o repasse não seja efetivado conforme previsto no Plano de Trabalho.</p>
+<p><span style="font-weight: bold;">4.10</span> Qualquer aumento ao orçamento do Plano de Trabalho executado por este Acordo de Parceria, que torne necessário o aporte de recursos adicionais pelo {!! $contrato->nome_parceiro !!} deverá ser prévia e formalmente analisado e aprovado pelas Parceiros, devendo ser implementado tão somente após celebração de termo aditivo a este Acordo de Parceria.</p>
 <p><span style="font-weight: bold;">4.11</span> A transposição, o remanejamento ou a transferência de recursos de categoria de programação para outra poderão ocorrer com o objetivo de conferir eficácia e eficiência às atividades de ciência, tecnologia e inovação.</p>
 <p><span style="font-weight: bold;">4.11.1</span> No âmbito deste projeto de pesquisa, desenvolvimento e inovação, o coordenador indicará a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.</p>
-<p><span style="font-weight: bold;">4.11.2</span> Por ocasião da ocorrência de quaisquer das ações previstas no item anterior, a ICT/AGÊNCIA DE FOMENTO poderá alterar a distribuição inicialmente acordada, promover modificações internas ao seu orçamento, alterar rubricas ou itens de despesas, desde que não modifique o valor total do projeto.</p>
+<p><span style="font-weight: bold;">4.11.2</span> Por ocasião da ocorrência de quaisquer das ações previstas no item anterior, a {!! $contrato->nome_ict!!} poderá alterar a distribuição inicialmente acordada, promover modificações internas ao seu orçamento, alterar rubricas ou itens de despesas, desde que não modifique o valor total do projeto.</p>
 
 <p><b>4.12</b> São dispensáveis de formalização por meio de Termo Aditivo as alterações previstas no item 4.9 que importem em transposição, remanejamento ou transferência de recursos de categoria de programação para outra, com o objetivo de conferir eficácia e eficiência às atividades previstas no Plano de Trabalho, desde que não haja alteração do valor total do projeto.</p>
 
-<p><span style="font-weight: bold;">4.12.1</span> Alterações na distribuição entre grupos de natureza de despesa e alterações de rubricas ou itens de despesas, necessárias para efetiva execução do projeto, ficarão dispensadas de prévia anuência do PARCEIRO PRIVADO, hipótese em que o coordenador do projeto solicitará a alteração à ICT, devendo constar as razões que ensejaram as alterações, indicando a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.</p>
-<p><span style="font-weight: bold;">4.13</span> A ICT/AGÊNCIA DE FOMENTO não responderá pela suplementação de recursos para fazer frente a despesas decorrentes de quaisquer fatores externos ao seu controle, como flutuação cambial e alterações nos valores de taxas escolares.</p>
-<p><span style="font-weight: bold;">4.14</span> Do valor total repassado, à ICT/AGÊNCIA DE FOMENTO poderá utilizar até 15% (quinze por cento) para custear despesas operacionais, definidas e justificadas no Plano de Trabalho.</p>
+<p><span style="font-weight: bold;">4.12.1</span> Alterações na distribuição entre grupos de natureza de despesa e alterações de rubricas ou itens de despesas, necessárias para efetiva execução do projeto, ficarão dispensadas de prévia anuência do {!! $contrato->nome_parceiro !!}, hipótese em que o coordenador do projeto solicitará a alteração à {!! $contrato->nome_ict!!}, devendo constar as razões que ensejaram as alterações, indicando a necessidade de alteração das categorias de programação, as dotações orçamentárias e a distribuição entre grupos de natureza de despesa em referência ao projeto de pesquisa aprovado originalmente.</p>
+<p><span style="font-weight: bold;">4.13</span> A(O) {!! $contrato->nome_ict!!} não responderá pela suplementação de recursos para fazer frente a despesas decorrentes de quaisquer fatores externos ao seu controle, como flutuação cambial e alterações nos valores de taxas escolares.</p>
+<p><span style="font-weight: bold;">4.14</span> Do valor total repassado, à {!! $contrato->nome_ict!!} poderá utilizar até 15% (quinze por cento) para custear despesas operacionais, definidas e justificadas no Plano de Trabalho.</p>
 
 
 
 <h5 style="font-weight: bold;">CLÁUSULA QUINTA - DO PESSOAL</h5>
-<p><span style="font-weight: bold;">5.1</span> Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem na execução do objeto deste Acordo, de forma que não se estabelecerá, em hipótese alguma, vínculo empregatício ou de qualquer outra natureza com a EMPRESA PARCERIA e o pessoal da ICT/AGÊNCIA DE FOMENTO (E DA FUNDAÇAO DE APOIO, se houver) e vice-versa, cabendo a cada PARCEIRO a responsabilidade pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a documentação comprobatória da regularidade na contratação.</p>
+<p><span style="font-weight: bold;">5.1</span> Cada PARCEIRO se responsabiliza, individualmente, pelo cumprimento das obrigações trabalhistas, previdenciárias, fundiárias e tributárias derivadas da relação existente entre si e seus empregados, servidores, administradores, prepostos e/ou contratados, que colaborarem na execução do objeto deste Acordo, de forma que não se estabelecerá, em hipótese alguma, vínculo empregatício ou de qualquer outra natureza com a EMPRESA PARCERIA e o pessoal da {!! $contrato->nome_ict_com_fund_apoio!!}  e vice-versa, cabendo a cada PARCEIRO a responsabilidade pela condução, coordenação e remuneração de seu pessoal, e por administrar e arquivar toda a documentação comprobatória da regularidade na contratação.</p>
 
 
 
@@ -394,8 +399,16 @@
 
 <p><b>13.3</b> No Formulário de Resultado de que trata a subcláusula 13.2, deverá ser demonstrada a compatibilidade entre as metas previstas e as alcançadas no período, bem como apontadas as justificativas em caso de discrepância, consolidando dados e valores das ações desenvolvidas.</p>
 <p><b>13.4</b> Caberá a cada PARCEIRO adotar as providências necessárias julgadas cabíveis, caso os relatórios parciais de que trata a subcláusula primeira demonstrem inconsistências na execução do objeto deste Acordo.</p>
-<p><b>13.5</b> O pesquisador deverá apresentar a prestação de contas financeira, em até 180 (cento e oitenta) dias, contados do termo final do prazo de vigência previsto neste Acordo.</p>
-<p><b>13.6</b> A prestação de contas será simplificada, privilegiando os resultados da pesquisa, e seguirá as regras previstas no artigo 58 do Decreto nº 9.283/18 e/ou na Política de Inovação da entidade pública.</p>
+
+<!-- <p style="display: none;">{{$count = 4}}</p> -->
+@if($contrato->clausula_edit_13_5 == '')
+@else
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">13.{{++$count}}</b> {!! $contrato->clausula_edit_13_5 !!}</p>
+@endif
+@if($contrato->clausula_edit_13_6 == '')
+@else
+<p style="margin-left: 16px !important"><b style="margin-right: 8px !important">13.{{++$count}}</b> {!! $contrato->clausula_edit_13_6 !!}</p>
+@endif
 
 <h5 style="font-weight: bold;">CLÁUSULA DÉCIMA QUARTA – DA EXTINÇÃO DO ACORDO</h5>
 
@@ -428,7 +441,7 @@
 
 <h5 style="font-weight: bold;">CLÁUSULA DÉCIMA QUINTA - DA PUBLICIDADE</h5>
 
-<p><span style="font-weight: bold;">15.1</span> A publicação do extrato do presente Acordo de Parceria para PD&I no Diário Oficial da União (DOU) é condição indispensável para sua eficácia e será providenciada pela ICT no prazo de até 20 (vinte) dias da sua assinatura.</p>
+<p><span style="font-weight: bold;">15.1</span> {!! $contrato->clausula_edit_15_1 !!}</p>
 
 <h5 style="font-weight: bold;">CLAUSULA DÉCIMA SEXTA – DOS BENS</h5>
 <!-- <p style="display: none;">{{$count = 0}}</p> -->
@@ -456,14 +469,32 @@
 
 <p><b>Da FUNDAÇÃO DE APOIO:</b></p>
 <p><b>Endereço:</b> {!! $contrato->apoio_contato_endereço !!}, <b>Telefone:</b> {!! $contrato->apoio_contato_telefone !!}, <b>Celular:</b> {!! $contrato->apoio_contato_celular !!}, <b>E-mail:</b> {!! $contrato->apoio_contato_email !!}</p>
-
-<p><span style="font-weight: bold;">17.2</span> Qualquer comunicação ou solicitação prevista neste Acordo de Parceria será considerada como tendo sido legalmente entregue:</p>
-<p><span style="font-weight: bold;">17.2.1</span> Quando entregue em mão a quem destinada, com o comprovante de recebimento;</p>
-<p><span style="font-weight: bold;">17.2.2</span> Se enviada por correio, registrada ou certificada, porte pago e devidamente endereçada, quando recebida pelo destinatário ou no 5° (quinto) dia seguinte à data do despacho, o que ocorrer primeiro;</p>
-<p><span style="font-weight: bold;">17.2.3</span> Se enviada por fax, quando recebida pelo destinatário;</p>
-<p><span style="font-weight: bold;">17.2.4</span> Se enviada por e-mail, desde que confirmado o recebimento pelo destinatário, ou, após transcorridos 5 (cinco) dias úteis, o que ocorrer primeiro. Na hipótese de transcurso do prazo sem confirmação, será enviada cópia por correio, considerando-se, todavia, a notificação devidamente realizada.</p>
-<p><span style="font-weight: bold;">17.3</span> Qualquer dos PARCEIROS poderá, mediante comunicação por escrito, alterar o endereço para o qual as comunicações ou solicitações deverão ser enviadas.</p>
-
+<!-- <p style="display: none;">{{$count = 1}}</p> -->
+<!-- <p style="display: none;">{{$sub_count = 0}}</p> -->
+@if($contrato->clausula_edit_17_2 == '')
+@else
+<p><span style="font-weight: bold;">17.{{++$count}}</span> {!! $contrato->clausula_edit_17_2 !!}</p>
+@endif
+@if($contrato->clausula_edit_17_2_1 == '')
+@else
+<p><span style="font-weight: bold;">17.2.{{++$sub_count}}</span> {!! $contrato->clausula_edit_17_2_1 !!}</p>
+@endif
+@if($contrato->clausula_edit_17_2_2 == '')
+@else
+<p><span style="font-weight: bold;">17.2.{{++$sub_count}}</span> {!! $contrato->clausula_edit_17_2_2 !!}</p>
+@endif
+@if($contrato->clausula_edit_17_2_3 == '')
+@else
+<p><span style="font-weight: bold;">17.2.{{++$sub_count}}</span> {!! $contrato->clausula_edit_17_2_3 !!}</p>
+@endif
+@if($contrato->clausula_edit_17_2_4 == '')
+@else
+<p><span style="font-weight: bold;">17.2.{{++$sub_count}}</span> {!! $contrato->clausula_edit_17_2_4 !!}</p>
+@endif
+@if($contrato->clausula_edit_17_3 == '')
+@else
+<p><span style="font-weight: bold;">17.{{++$count}}</span> {!! $contrato->clausula_edit_17_3 !!}</p>
+@endif
 
 <h5 style="font-weight: bold;">CLÁUSULA DÉCIMA OITAVA – DISPOSIÇÕES GERAIS</h5>
 <p><b>18.1</b> É livre o acesso dos agentes da administração pública, do controle interno e do Tribunal de Contas aos documentos e às informações relacionados a esse Acordo, bem como aos locais de execução do respectivo objeto, ressalvadas as informações tecnológicas e dados das pesquisas que possam culminar com alguma inovação.</p>
@@ -471,22 +502,25 @@
 <h5 style="font-weight: bold;">CLÁUSULA DÉCIMA NONA - DO FORO</h5>
 
 <p>
-    <b>19.1.</b> Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de {{$contrato->estado_foro}}, cidade de {{$contrato->cidade_foro}}, para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109 da Constituição Federal. E como prova de assim haverem livremente pactuado, firmam os PARCEIROS o presente instrumento em 3 (três) vias, de igual teor e forma, para que produza entre si os efeitos legais.
+<span style="font-weight:bold;">19.1. </span>Fica eleito o foro da Justiça Federal, Seção Judiciária do Estado de {{$contrato->estado_foro}}, cidade de {{$contrato->cidade_foro}}, para dirimir quaisquer litígios oriundos deste ACORDO, nos termos do inciso I do artigo 109 da Constituição Federal.  {{$contrato->clausula_edit_17_1}}<br/>
 </p>
 <br/>
 <p style="font-weight: bold;">{{$contrato->cidade_foro}}/{{$contrato->estado_foro}}, {{$contrato->data_foro}}.</p><br/>
 
+<p style="text-align: center;">Pelo(a) {{$contrato->nome_ict}}:</p>
 <p style="text-align: center;">______________________________________________</p>
-<p style="text-align: center; justify-content:center; align-items: center;">{{$contrato->nome_rep_foro}} <br/> {{$contrato->cargo_rep_foro}} do(a) {{$contrato->ict_inst_foro}}
-</p><br/>
-
-<p style="text-align: center;">______________________________________________</p>
-<p style="text-align: center; justify-content:center; align-items: center;">{{$contrato->nome_rep_privado_foro}} <br/> {{$contrato->nome_inst_privado_foro}}
-</p><br/>
-
-<p style="text-align: left;">Testemunha 1:__________________________________________</p>
-<p style="text-align: left;">CPF n°:__________________________________________</p>
+<p style="text-align: center;">{{$contrato->rep_legal}}</p>
+<p style="text-align: center;">{{$contrato->cargo_rep_foro}}</p>
 <br/>
-
-<p style="text-align: left;">Testemunha 2:__________________________________________</p>
-<p style="text-align: left;">CPF n°:__________________________________________</p>
+<p style="text-align: center;">Pelo(a) {{$contrato->nome_parceiro}}:</p>
+<p style="text-align: center;">______________________________________________</p>
+<p style="text-align: center;">{{$contrato->parceiro_rep_legal}}</p>
+<p style="text-align: center;">{{$contrato->parceiro_cargo}}</p>
+<br/>
+@if($contrato->nome_inst_fundacao == '')
+@else
+<p style="text-align: center;">Pelo(a) {{$contrato->nome_inst_fundacao}}:</p>
+<p style="text-align: center;">______________________________________________</p>
+<p style="text-align: center;">{{$contrato->nome_rep_fund_apoio}}</p>
+<p style="text-align: center;">{{$contrato->cargo_rep_fund_apoio}}</p>
+@endif
