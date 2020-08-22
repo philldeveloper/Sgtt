@@ -1,10 +1,13 @@
-function handleNameICT(event){
-    const name = event.target.value
-    const campos_icts = document.querySelectorAll('#handle_ict')
-    handleICTFundApoio()
-    campos_icts.forEach((campo) => {
-        campo.value = name
-    })
+function handleNameICT(event, isContratoCR = false){
+    if(isContratoCR){
+        handleICTFundApoio()
+    }
+        const name = event.target.value
+        const campos_icts = document.querySelectorAll('#handle_ict')
+        campos_icts.forEach((campo) => {
+            campo.value = name
+        })
+
 }
 
 function handleNameParceiro(event){

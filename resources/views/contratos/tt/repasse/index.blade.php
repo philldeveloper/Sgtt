@@ -176,7 +176,7 @@
           <div class="form-row justify-content-center">
             <div class="form-group col-md-4">
             <a href="#" data-toggle="modal" data-target="#modal_nome_inst"><i class="fas fa-fw fa-question-circle float-right duvida-in-input"></i></a>
-              <input class="mb-2 text-black form-control" type="text" name="nome_ict" id="nome_ict" onchange="handleNameICT(event)" placeholder="ICT ou ente público"> 
+              <input class="mb-2 text-black form-control" type="text" name="nome_ict" id="nome_ict" onchange="handleNameICT(event, true)" placeholder="ICT ou ente público"> 
             </div>
             <h5 class="text-uppercase font-weight-bold roboto-font text-black text-center mt-2">E</h5>
             <div class="form-group col-md-4">
