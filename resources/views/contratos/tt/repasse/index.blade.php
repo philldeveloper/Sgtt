@@ -617,7 +617,7 @@
           <div class="form-group row pt-2">
             <label for="" class="col col-form-label font-weight-bold text-left">Nome do Coordenador ICT/Público:</label>
             <div class="col-md-7 col-sm-12 col-lg-7 col-xl-7">
-              <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorICT()" id="nome_coordenador_ict" class="form-control" placeholder="Ex: João da Silva">
+              <input type="text" name="nome_coordenador_ict" onchange="handleCoordenadorICT()" not-empty id="nome_coordenador_ict" class="form-control" placeholder="Ex: João da Silva">
             </div>
           </div>
 
@@ -634,7 +634,7 @@
           <div class="form-group row pt-2">
             <label for="" class="col col-form-label font-weight-bold text-left">Nome do Coordenador Privado:</label>
             <div class="col-md-7 col-sm-12 col-lg-7 col-xl-7">
-              <input type="text" name="nome_coordenador_privado" onchange="handleCoordenadorPrivado()" id="nome_coordenador_privado" class="form-control" placeholder="Ex: João da Silva">
+              <input type="text" name="nome_coordenador_privado" not-empty onchange="handleCoordenadorPrivado()" id="nome_coordenador_privado" class="form-control" placeholder="Ex: João da Silva">
             </div>
           </div>
 
@@ -2151,10 +2151,12 @@ function validateStepForm() {
   //caso não tenha tenha fund. apoio pular todos esses campos da variavel 'dados_privados'
   var DADOS_FUNDACAO = document.querySelectorAll('[privado-fundacao-true]');
   var DADOS_CLAUSULA_3 = document.querySelectorAll('[is-empty]');
+  var CLAUSULAS_PARA_N_PULAR = document.querySelectorAll('[not-empty]');
   var DADOS_ICT_PRIVADO = document.querySelectorAll('[privado-fundacao-false]');
   DADOS_FUNDACAO = Array.from(DADOS_FUNDACAO);
   DADOS_CLAUSULA_3 = Array.from(DADOS_CLAUSULA_3);
   DADOS_ICT_PRIVADO = Array.from(DADOS_ICT_PRIVADO);
+  CLAUSULAS_PARA_N_PULAR = Array.from(CLAUSULAS_PARA_N_PULAR);
 
   for (i = 0; i < inputs.length; i++) {
 
@@ -2163,7 +2165,7 @@ function validateStepForm() {
       valid = false;
       console.log('false ', inputs[i].name)
 
-      if(inputs[i].name === "nome_inst_fundacao" && !checkbox.checked &&  DADOS_CLAUSULA_3.every(input => input.value != '')){
+      if(inputs[i].name === "nome_inst_fundacao" && !checkbox.checked &&  DADOS_CLAUSULA_3.every(input => input.value != '') && CLAUSULAS_PARA_N_PULAR.every( input => input.value != '')){
         inputs[i].className = inputs[i].className.replace(" invalid", "");
         valid = true
         console.log('1')
