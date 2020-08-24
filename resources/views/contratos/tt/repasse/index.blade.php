@@ -444,12 +444,11 @@
           para desenvolver:</p>
           <br>
           <div class="text-center d-flex">
-            <p class="h4 font-italic text-primary font-weight-bold">Insira o Objetivo abaixo:</p>
+            <p class="h4 font-italic text-primary font-weight-bold">Insira o Objetivo abaixo: <a href="#" data-toggle="modal" data-target="#modalExemplo10"><i class="fas fa-fw fa-question-circle float-right"></i></a></p>
           </div>
-          <a href="#" data-toggle="modal" data-target="#modalExemplo10"><i class="fas fa-fw fa-question-circle float-right"></i></a>
-          <div class="col-md-12 mb-3 bg-light border border-primary shadow mb-4 mt-4 p-1">
-            <textarea class="form-control" name="clausula_descricao" id="editor"></textarea>
-          </div>
+          
+          <textarea class="form-control" name="clausula_descricao" rows="3"></textarea>
+   
           <br>
           <p>a ser executado nos termos do Plano de Trabalho, anexo, visando à transferência de recursos financeiros, à
             gestão administrativa e financeira e à execução técnica de projeto de pesquisa, desenvolvimento e inovação – PD&I.
@@ -1994,6 +1993,7 @@
               <input type="text" 
                 class="form-control text-black font-weight-bold"
                 id="handle_apoio" 
+                privado-fundacao-true
                 placeholder="Instituição">
             </div>
             <div class="form-group col-md-3">
@@ -2001,6 +2001,7 @@
               <input type="text" 
                 class="form-control text-black font-weight-bold" 
                 name="nome_rep_fund_apoio" id="rep_privado" 
+                privado-fundacao-true
                 placeholder="Nome do Representante">
             </div>
             <div class="form-group col-md-3">
@@ -2009,6 +2010,7 @@
                 class="form-control text-black font-weight-bold"
                 name="cargo_rep_fund_apoio" 
                 id="cargo_privado" 
+                privado-fundacao-true
                 placeholder="Cargo">
             </div>
           </div><!-- /.row-->
@@ -2171,10 +2173,16 @@ function validateStepForm() {
         valid = true;
       }
     //  console.log('t ', DADOS_FUNDACAO[0].name)
+       if(!checkbox.checked && DADOS_FUNDACAO.some(input => input.name == inputs[i].name)){
+        valid = true
+        console.log('2')
+      } 
+
        if(!checkbox.checked && DADOS_FUNDACAO.some(input => input.name == inputs[i].name) && DADOS_ICT_PRIVADO.every(input => input.value != '')){
         valid = true
         console.log('2')
       } 
+
 
       if(currentTab === 18 ){
         inputs[i].className = inputs[i].className.replace(" invalid", "");
