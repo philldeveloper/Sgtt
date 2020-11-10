@@ -2069,7 +2069,7 @@
 
 
 var currentTab = 0;
-var lastTab = 99;
+var lastTab = 0;
 
 
  // Current tab is set to be the first tab (0)

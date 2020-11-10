@@ -1546,7 +1546,7 @@ Ou
 var stepCount = document.getElementById('stepCount')
 
 var currentTab = 0;
-var lastTab = 99;
+var lastTab = 0;
 if(stepCount.value > 0){
   currentTab = stepCount;
 }
