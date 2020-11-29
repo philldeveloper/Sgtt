@@ -17,6 +17,9 @@
         <div class="flex-center position-ref full-height" style="flex-direction: column;">
 
             <div class="content">
+            @if(Session::has('message')) 
+                <div class="alert alert-success position-absolute"> {{Session::get('message')}}. </div> 
+            @endif
                 <div class="title mb-3">
                     <img src="{{ asset('assets/new_sgtt.svg') }}" alt="sgtt" style="opacity: 95%">
                 </div>

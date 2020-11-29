@@ -18,7 +18,17 @@
 @section('content')
 <div class="container-fluid mt-5 mb-5">
     <span class="h3 font-weight-bold text-dark">Meu Perfil</span>
-    <span class="font-italic ml-3">Lorem Ipsum.</span>
+    <button  
+    class="btn btn-danger btn-md btn-md btn-icon-split" 
+    data-toggle="modal" 
+    data-target="#deleteUser" 
+    style="position: absolute;right: 15px;"
+    >
+        <span class="icon text-white-50" style="display: flex; justify-content:center; align-items:center;">
+        <i class="fas fa-trash"></i>
+        </span>
+        <span class="text">Excluir Perfil</span>
+    </button>
 </div>
 <hr> 
 
@@ -98,14 +108,41 @@
                 @endif
             </div>
         </div>
+        <div style="display: flex; align-items:center; justify-content:space-between;">
         <button type="submit" class="btn btn-success btn-md btn-lg btn-icon-split">
-            <span class="icon text-white-50">
+            <span class="icon text-white-50" style="display: flex; justify-content:center; align-items:center;">
             <i class="fas fa-arrow-right"></i>
             </span>
             <span class="text">Salvar</span>
         </button>
+       
+        </div>
     </form>
 </div>
 </div>
 </div>
+<!-- Modal sr delete -->
+<div class="modal fade" id="deleteUser" tabindex="-1" role="dialog" aria-labelledby="contrato-cr_delete" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title font-weight-bold" id="contrato-cr_delete">AVISO</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-center">Todos seus dados e contratos criados serão DELETADOS desse sistema.</p>
+        <p class="text-center">Você concorda com isso?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark font-weight-bold" data-dismiss="modal">Não.</button>
+        <form action="{{ route('userUpdate.destroy', Auth::user()->id) }}" method="post">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="btn btn-danger font-weight-bold">SIM, confirmar.</button>
+        </form>
+      </div>
+    </div>
+  </div>
 @endsection

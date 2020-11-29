@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use App\User;
-
+use App\Contrato_sr;
+use App\Contrato_cr;
 class UserController extends Controller
 {
     public function __construct()
@@ -28,5 +29,17 @@ class UserController extends Controller
         $user->update($request->all());
 
         return redirect('meuperfil')->with('message', 'Perfil editado com Sucesso');
+    }
+
+    public function destroy($id){
+        $user = User::find($id);
+        $user_deleted = $user;
+        Contrato_cr::where('user_id', $id)->delete();
+        Contrato_sr::where('user_id', $id)->delete();
+        $user->delete();
+
+
+
+        return redirect('/')->with('message', 'Seu usuário e seus contratos foram deletado com sucesso');
     }
 }
